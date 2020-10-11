@@ -1,0 +1,9 @@
+[Default Applications]
+text/plain=nvim.desktop
+image/png=feh.desktop
+image/jpeg=feh.desktop
+
+[Added Associations]
+text/plain=nvim.desktop;
+image/png=feh.desktop;
+image/jpeg=feh.desktop;
