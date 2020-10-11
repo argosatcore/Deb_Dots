@@ -1,2 +1,2 @@
-# Deb-Dots
+# Deb-dots
 Debian dot files.
