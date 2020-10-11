@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/carlos/Biblioteca de calibre'
+let g:netrw_dirhist_2='/home/carlos/.config/picom'
+let g:netrw_dirhist_1='/home/carlos/.config/i3'

@@ -1,0 +1,158 @@
+!URxvt configutation:
+
+!Locale
+	URxvt*locale: es_CR.UTF-8
+
+!Glyphs
+	URxvt*skipBuiltInGlyphs: true
+
+!Detect 256 colors
+	URxvt.termName: rxvt-unicode-256color
+
+!! URxvt Appearance
+!	URxvt.geometry: 	80x25
+	URxvt.internalBorder: 	12 
+	URxvt.cursorBlink: 	true
+	URxvt.cursorUnderline: 	false
+	URxvt.saveline: 	2048
+!	URxvt.urgentOnBell: 	false	
+	URxvt.iso14755: 	false	
+	URxvt.iso14755_52:	false
+	URxvt.intensity.Styles:	false
+
+
+!	 Color palette: Grey Scale
+!		*.foreground:  #b9b9b9
+!		*.background:  #101010
+!		*.cursorColor:  #b9b9b9
+!		! black
+!		*.color0:      #101010
+!		*.color8:      #525252
+!		! red
+!		*.color1:      #7c7c7c
+!		*.color9:      #cccccc
+!		! green
+!		*.color2:      #8e8e8e
+!		*.color10:     #e5e5e5
+!		! yellow
+!		*.color3:      #a0a0a0
+!		*.color11:     #f2f2f2
+!		! blue
+!		*.color4:      #686868
+!		*.color12:     #b2b2b2
+!		! magenta
+!		*.color5:      #747474
+!		*.color13:     #bfbfbf
+!		! cyan
+!		*.color6:      #868686
+!		*.color14:     #d9d9d9
+!		! white
+!		*.color7:      #b9b9b9
+!		*.color15:     #f7f7f7
+
+
+!! Color palette Gruvbox 
+	*.foreground:  		#ebdbb2
+	*.background:  		#1d2021
+	*.cursorColor: 		#ebdbb2
+	*.highlightColor:	#5294e2
+
+	! black
+		*.color0:      	#282828
+		*.color8:      	#928374
+	! red
+		*.color1:      	#cc241d
+		*.color9:      	#fb4934
+	! green
+		*.color2:      	#98971a
+		*.color10:     	#b8bb26
+	! yellow
+		*.color3:      	#d79921
+		*.color11:     	#fabd2f
+	! blue
+		*.color4:      	#458588
+		*.color12:     	#83a598
+	! magenta
+		*.color5:     	#b16286
+		*.color13:     	#d3869b
+	! cyan
+		*.color6:    	#689d6a
+		*.color14:    	#8ec07c
+	! white
+		*.color7:     	#a89984
+		*.color15:    	#ebdbb2
+
+!Transparency
+	URxvt*transparent:      false 
+	URxvt*depth:		32
+	URxvt.background: 	[75]#101010
+
+
+!Scrollbar: Disabled
+	URxvt*scrollBar:      	false
+	URxvt*scrollBar_right: 	false
+
+!Fonts
+!URxvt.font:xft:SauceCodePro Nerd Font Mono:size=10
+	URxvt.font:xft:Dejavu Sans Mono:size=11
+!	URxvt.font:xft:Iconoslata:size=10
+!	URxvt.font:xft:Fira Code Retina:size=12
+!	URxvt.font:xft:Monospace:size=12
+
+
+	URxvt.letterSpace: 	0 
+	URxvt.lineSpace: 	1
+
+	*antialias:  true
+	*autohint:   true
+	Xft.antialias:		1
+	Xft.hinting:		1
+	Xft.autohint:		0
+	Xft.hintstyle:		hintslight
+	Xft.rgba:		rgb
+	Xft.lcdfilter:		lcddefault
+
+!Scroll back position
+	! do not scroll with output
+	URxvt*scrollTtyOutput: false
+
+	! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+	URxvt*scrollWithBuffer: true
+
+	! scroll back to the bottom on keypress
+	URxvt*scrollTtyKeypress: true
+:
+	! Scroll like rxvt
+	URxvt*scrollstyle: rxvt
+
+! Common Keybinds for Navigations
+	URxvt.keysym.Shift-Up: 	command:\033]720;1\007
+	URxvt.keysym.Shift-Down: command:\033]721;1\007
+	URxvt.keysym.Control-Up: \033[1;5A
+	URxvt.keysym.Control-Down: \033[1;5B
+	URxvt.keysym.Control-Right: \033[1;5C
+	URxvt.keysym.Control-Left: \033[1;5D
+	URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+	URxvt.keysym.M-x: perl:clipboard:paste_xsel
+
+!Perl Extensions:
+
+!	Clickables urls
+		URxvt.perl-ext-common:  default,matcher,clipboard
+!		URxvt.url-launcher:	 /usr/bin/xdg-open 
+	
+		URxvt.matcher.button:	 1
+    
+    		URxvt.underlineURLs: 	true
+		URxvt.perl-ext:     	 default,url-select
+		URxvt.keysym.M-u: 	   perl:url-select:select_next
+		URxvt.urlLauncher:  	 firefox
+		URxvt.underlineURLs: 	true
+
+!	Bidirectional support
+		URxvt.perl-ext: 	[other extensions],bidi
+		URxvt.bidi.enabled: 	1
+!	
+!	Clipboard
+		URxvt.keysym.Shift-Control-C:       perl:clipboard:copy
+		URxvt.keysym.Shift-Control-V:       perl:clipboard:paste
