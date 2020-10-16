@@ -39,21 +39,10 @@
 	alias x='startx'
 	alias t='tmux'
 	alias n='nnn'
-	alias xq='xbps-query -Rs'
-	alias xu='sudo xbps-install -Su'
-	alias xi='sudo xbps-install -S'
-	alias xr='sudo xbps-remove -R'
-	alias packages='xbps-query -Rs \* | wc -l'
-	alias clean='sudo xbps-remove -Oo'
-	alias lk='vkpurge list'
-	alias kk='sudo vkpurge rm'
 	alias sbrc='source /home/carlos/.bashrc'
 	alias svrc='source /home/carlos/.vimrc'
-	alias trim='sudo fstrim /'
 	alias screencast='ffmpeg -f x11grab -r 50 -s 1366x768 -i :0.0 -acodec aac -vcodec libx264 -crf 0 screencast.mkv'
 	alias sec='xmodmap /home/carlos/.speedswapper'
-	alias i3st='v /home/carlos/.config/i3status/config'
-	alias light='sudo brightnessctl s 5%' 
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
