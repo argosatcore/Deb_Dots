@@ -614,21 +614,21 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 -- Gaps
-beautiful.useless_gap = 5
+beautiful.useless_gap = 7
 	
 	-- Autorun programs
 autorun = true
 autorunApps =
 {
-   "volti",
-   "nm-applet",
+--   "volti",
+--   "nm-applet",
    "cbatticon",
    "setxkbmap latam",
    "xmodmap .speedswapper",
    "xmodmap .mouseconfig",
    "compton --config /home/carlos/.config/compton/compton.conf",
    "feh --bg-fill --randomize /home/carlos/Imágenes/Wallpapers/",
-   "xbacklight -set 5",
+--   "xbacklight -set 5",
 }
 if autorun then
    for app = 1, #autorunApps do
