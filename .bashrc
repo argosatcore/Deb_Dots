@@ -16,7 +16,7 @@
 	export PAGER="less"
 	export MANPAGER='nvim +Man!'
 	export BROWSER="firefox"
-#	export TERM='sakura'
+	export TERM="xterm-color"
 	bind 'set completion-ignore-case on'
 	shopt -s cdspell
 	complete -d cd
@@ -37,6 +37,9 @@
 	alias svrc='source /home/carlos/.vimrc'
 	alias screencast='ffmpeg -f x11grab -r 50 -s 1366x768 -i :0.0 -acodec aac -vcodec libx264 -crf 0 screencast.mkv'
 	alias sec='xmodmap /home/carlos/.speedswapper'
+	alias rxterm='xrdb -merge .Xresources'
+
+
 
 # If not running interactively, don't do anything
 	case $- in
@@ -73,8 +76,6 @@
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 	case "$TERM" in
-	    urxvt) color_prompt=yes;;
-	    rxvt-unicode) color_prompt=yes;;
 	    xterm-color|*-256color) color_prompt=yes;;
 	esac
 
@@ -115,7 +116,7 @@
 
 # If this is an xterm set the title to user@host:dir
 	case "$TERM" in
-	xterm*|rxvt*)
+	xterm*)
 	    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
 	    ;;
 	*)

@@ -1,0 +1,10 @@
+( if
+	(or
+		( contains ( application_name ) "xterm" )
+	)
+	( begin
+		(
+			spawn_async (str "transset -i" (window_xid) " 0.90" )	
+		)
+	)
+)
