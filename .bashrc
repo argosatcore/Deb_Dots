@@ -16,7 +16,7 @@
 	export PAGER="less"
 	export MANPAGER='nvim +Man!'
 	export BROWSER="firefox"
-	export TERM="xterm-color"
+	export TERM="xterm-256color"
 	bind 'set completion-ignore-case on'
 	shopt -s cdspell
 	complete -d cd
@@ -106,7 +106,7 @@
 		PS1+='\[\033[01;97m\]['; 
 		PS1+='\[\033[01;96m\]\w';
 		PS1+='\[\033[01;97m\]]';
-		PS1+='\[\033[00;91m\]⨕ ';
+		PS1+='\[\033[00;91m\]ꙮ ';
 		PS1+='\[\033[00;00m\]';
 	
 	else

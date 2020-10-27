@@ -12,7 +12,8 @@ theme.wallpaper = themes_path .. "zenburn/zenburn-background.png"
 -- }}}
 
 -- {{{ Styles
-theme.font      = "sans 8"
+--theme.font      = "sans 8"
+theme.font      = "FontAwesome 8"
 
 -- {{{ Colors
 theme.fg_normal  = "#DCDCCC"
