@@ -1,0 +1,6 @@
+; evince GtkAccelMap rc-file         -*- scheme -*-
+; this file is an automated accelerator map dump
+;
+; (gtk_accel_path "<Actions>/BookmarsPopupActions/RenameBookmark" "")
+; (gtk_accel_path "<Actions>/BookmarsPopupActions/RemoveBookmark" "")
+; (gtk_accel_path "<Actions>/BookmarsPopupActions/OpenBookmark" "<Primary>o")

@@ -19,6 +19,7 @@
 	export TERM="xterm-256color"
 	bind 'set completion-ignore-case on'
 	shopt -s cdspell
+	shopt -s autocd
 	complete -d cd
 
 #Aliases:
@@ -106,7 +107,7 @@
 		PS1+='\[\033[01;97m\]['; 
 		PS1+='\[\033[01;96m\]\w';
 		PS1+='\[\033[01;97m\]]';
-		PS1+='\[\033[00;91m\]ꙮ ';
+		PS1+='\[\033[00;91m\]⨕ ';
 		PS1+='\[\033[00;00m\]';
 	
 	else
