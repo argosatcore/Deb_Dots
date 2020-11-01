@@ -1,0 +1,62 @@
+#!/usr/bin/bash
+# Outputs a configuration for lemonbar
+
+trap 'Update' 1
+
+background="#383c4a"
+
+Format() {
+	echo "%{+u}%{B$background} $1 %{B}%{-u}"
+}
+
+Workspaces() {
+	desktops=$(bspc query -D --names)
+  focused=$(bspc query -D --names -d focused)
+
+	for desktop in $desktops; do
+		desktop=$(echo "$desktop")
+		nodes=$(bspc query -N -d $desktop)
+
+		if [ ! -z "$nodes" ]; then
+			desktops=$(echo $desktops | sed "s/$desktop/%{F#ff0000}$desktop%{F-}/")
+    fi
+
+  done
+  desktops=$(echo $desktops | sed "s/$focused/%{B$background}%{+u}_$focused\_%{-u}%{B-}/")
+
+  echo $desktops | sed "s/_/ /g"
+}
+
+
+Clock(){
+	DATE=$(date "+%d/%m/%y")
+	TIME=$(date "+%I:%M:%S")
+
+	Format "${DATE} ${TIME}"
+}
+
+ActiveWindow(){
+	printf " $(xdotool getwindowfocus getwindowname)"
+}
+
+
+Battery() {
+        BATPERC=$(acpi --battery | cut -d, -f2)
+        echo "$BATPERC"
+}
+
+
+NewModule() {
+	echo "%{B#aef4e3}%{+u}Hello World%{-u}%{B}"
+}
+
+Update() {
+	echo -e "%{l}$(Workspaces) $(ActiveWindow) %{r} $(Clock) $(Battery)"
+	#echo -e "%{r} $(NewModule)"
+}
+
+while true; do
+	Update
+	sleep 1s &
+	wait
+done

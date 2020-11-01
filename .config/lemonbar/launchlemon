@@ -1,0 +1,7 @@
+#!/bin/bash
+# Launches an instance of lemonbar
+killall -q lemonbar
+killall -q lemonconfig
+
+/home/carlos/.config/lemonbar/lemonconfig | lemonbar -p -g 1366x20+0+0 -F "#FFFFFF" -B "#383c4a"  
+
