@@ -1,24 +1,50 @@
-#
-# wm independent hotkeys
-#
-
-# terminal emulator
-super + @space
-	sakura
-
-# program launcher
-super + @space d
-	rofi -show drun -show-icons
+#----BSPWM general settings-----------------------------------------------------
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
-#
-# bspwm hotkeys
+# reload bspwm:
+super + shift + r 
+	xterm -e /home/carlos/.config/bspwm/bspwmrc 
 
-# media controls
-# ----------------------------
+#Screenlock
+super + {shift + x}
+	i3lock -i /home/carlos/Imágenes/Wallpapers/debian_dark_blue.png
+
+# quit bspwm normally
+super + shift + e
+	bspc quit
+
+#Change Wallpaper
+super + ctrl + b 
+	feh --bg-fill --randomize /home/carlos/Imágenes/Wallpapers/ 	
+
+
+  
+
+#----Apps-----------------------------------------------------------------------
+
+# terminal emulator
+super + @space
+	xterm
+
+# program launcher
+super + @space d
+	rofi -show drun -show-icons -columns 2 -width 50 -lines 15
+
+#File manager
+super + a
+	pcmanfm	
+
+#Web Browser
+super + i
+	firefox
+
+
+
+
+#----media controls-------------------------------------------------------------
 
 # mpd
 # XF86Audio{Play,Prev,Next}
@@ -40,35 +66,18 @@ super + XF86Audio{Mute,LowerVolume,RaiseVolume}
 XF86MonBrightness{Down,Up}
     xbacklight {-dec 5,-inc 5}
 
-#File manager
-super + a
-	pcmanfm	
 
-#Web Browser
-super + i
-	firefox
 
-#Change Wallpaper
-super + ctrl + b 
-	feh --bg-fill --randomize /home/carlos/Imágenes/Wallpapers/ 	
 
-#Screenlock
-super + {shift + x}
-	i3lock -i /home/carlos/Imágenes/Wallpapers/debian_dark_blue.png
+#----BSPWM's hotkeys------------------------------------------------------------
 
-# quit bspwm normally
-super + shift + e
-	bspc quit
 
 # close and kill
 super + q
 	bspc node -{c,k}
 
-# dynamic gaps
-super + shift + bracket{left,right}
-	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
-	
 
+	
 # alternate between the tiled and monocle layout
 super + m
 	bspc desktop -l next
@@ -81,9 +90,10 @@ super + y
 super + g
 	bspc node -s biggest
 
-#
-# state/flags
-#
+
+
+
+#----State/flags----------------------------------------------------------------
 
 # set the window state
 super + {t,shift + t,s,f}
@@ -93,9 +103,10 @@ super + {t,shift + t,s,f}
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
-#
-# focus/swap
-#
+
+
+
+#----Focus/swap-----------------------------------------------------------------
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
@@ -127,9 +138,14 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
-#
-# preselect
-#
+#rotate desktop
+super + ctrl + r
+    bspc node @/ --rotate {90,-90}
+
+
+
+
+#----Preselect------------------------------------------------------------------
 
 # preselect the direction
 super + ctrl + {h,j,k,l}
@@ -147,9 +163,10 @@ super + ctrl + space
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
-#
-# move/resize
-#
+
+
+
+#----Move/resize----------------------------------------------------------------
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
@@ -162,3 +179,11 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# dynamic gaps
+super + shift + bracket{left,right}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
+
+# switch between gap presets
+super + shift + {y,u,i,o}
+    bspc config window_gap {0,5,10,20}
