@@ -6,7 +6,7 @@ super + Escape
 
 # reload bspwm:
 super + shift + r 
-	urxvt -e /home/carlos/.config/bspwm/bspwmrc 
+	xterm -e /home/carlos/.config/bspwm/bspwmrc 
 
 #Screenlock
 super + {shift + x}
@@ -27,7 +27,7 @@ super + ctrl + b
 
 # terminal emulator
 super + @space
-	urxvt
+	xterm
 
 # program launcher
 super + @space d
