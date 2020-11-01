@@ -76,9 +76,7 @@ XF86MonBrightness{Down,Up}
 super + q
 	bspc node -{c,k}
 
-# dynamic gaps
-super + shift + bracket{left,right}
-	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
+
 	
 # alternate between the tiled and monocle layout
 super + m
@@ -140,6 +138,10 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
+#rotate desktop
+super + ctrl + r
+    bspc node @/ --rotate {90,-90}
+
 
 
 
@@ -177,3 +179,11 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# dynamic gaps
+super + shift + bracket{left,right}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
+
+# switch between gap presets
+super + shift + {y,u,i,o}
+    bspc config window_gap {0,5,10,20}

@@ -3,5 +3,5 @@
 killall -q lemonbar
 killall -q lemonconfig
 
-/home/carlos/.config/lemonbar/lemonconfig | lemonbar -p -g 1366x20+0+0 -F "#FFFFFF" -B "#383c4a"  
+/home/carlos/.config/lemonbar/lemonconfig | lemonbar -p -g 1366x20+0+0 -F "#FFFFFF" -B "#383c4a" -U "#5294e2" -f "FontAwesome" | $SHELL 
 

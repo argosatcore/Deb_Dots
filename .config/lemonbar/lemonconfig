@@ -6,7 +6,7 @@ trap 'Update' 1
 background="#383c4a"
 
 Format() {
-	echo "%{+u}%{B$background} $1 %{B}%{-u}"
+	echo "%{+o}%{B$background} $1 %{B}%{-o}"
 }
 
 Workspaces() {
@@ -42,17 +42,12 @@ ActiveWindow(){
 
 Battery() {
         BATPERC=$(acpi --battery | cut -d, -f2)
-        echo "$BATPERC"
+        echo " $BATPERC"
 }
 
-
-NewModule() {
-	echo "%{B#aef4e3}%{+u}Hello World%{-u}%{B}"
-}
 
 Update() {
-	echo -e "%{l}$(Workspaces) $(ActiveWindow) %{r} $(Clock) $(Battery)"
-	#echo -e "%{r} $(NewModule)"
+	echo -f "%{l}$(Workspaces) $(ActiveWindow) %{c}$(Clock)  %{r} $(Battery)"
 }
 
 while true; do
@@ -60,3 +55,6 @@ while true; do
 	sleep 1s &
 	wait
 done
+
+
+
