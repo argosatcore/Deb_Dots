@@ -1,7 +1,7 @@
 #----BSPWM general settings-----------------------------------------------------
 
 # make sxhkd reload its configuration files:
-super + Escape
+super + {shift + z}
 	pkill -USR1 -x sxhkd
 
 # reload bspwm:
@@ -20,8 +20,11 @@ super + shift + e
 super + ctrl + b 
 	feh --bg-fill --randomize /home/carlos/Imágenes/Wallpapers/ 	
 
-
+#Swap Caps Lock with the Esc key:
+super + z
+	xmodmap .speedswapper
   
+
 
 #----Apps-----------------------------------------------------------------------
 
@@ -31,7 +34,7 @@ super + @space
 
 # program launcher
 super + @space d
-	rofi -show drun -show-icons -columns 2 -width 50 -lines 15
+	rofi -show drun -show-icons -columns 3 -width 50 -lines 15
 
 #File manager
 super + a
@@ -45,12 +48,6 @@ super + i
 
 
 #----media controls-------------------------------------------------------------
-
-# mpd
-# XF86Audio{Play,Prev,Next}
-    # mpc {toggle,prev,next}
-XF86Audio{Play,Prev,Next,Stop}
-    mpc {toggle,prev && notify-send -i /usr/share/icons/Papirus-Dark/16x16/apps/musique.svg "Now Playing" "$(mpc --format '%artist% ~ %title% \[%album%\]' current)",next && notify-send -i /usr/share/icons/Papirus-Dark/16x16/apps/musique.svg "Now Playing" "$(mpc --format '%artist% ~ %title% \[%album%\]' current)",stop}
 
 # speaker volume
 XF86Audio{Mute,LowerVolume,RaiseVolume}
@@ -71,12 +68,9 @@ XF86MonBrightness{Down,Up}
 
 #----BSPWM's hotkeys------------------------------------------------------------
 
-
 # close and kill
 super + q
 	bspc node -{c,k}
-
-
 	
 # alternate between the tiled and monocle layout
 super + m
