@@ -8,15 +8,15 @@ super + {shift + z}
 super + shift + r 
 	xterm -e /home/carlos/.config/bspwm/bspwmrc 
 
-#Screenlock
+#Screenlock:
 super + {shift + x}
 	i3lock -i /home/carlos/Imágenes/Wallpapers/debian_dark_blue.png
 
-# quit bspwm normally
+# quit bspwm normally:
 super + shift + e
 	bspc quit
 
-#Change Wallpaper
+#Change Wallpaper:
 super + ctrl + b 
 	feh --bg-fill --randomize /home/carlos/Imágenes/Wallpapers/ 	
 
@@ -28,19 +28,19 @@ super + z
 
 #----Apps-----------------------------------------------------------------------
 
-# terminal emulator
+# terminal emulator:
 super + @space
 	xterm
 
-# program launcher
+# program launcher:
 super + @space d
-	rofi -show drun -show-icons -columns 3 -width 50 -lines 15
+	rofi -show drun -show-icons -columns 1 -width 47 -lines 15
 
-#File manager
+#File manager:
 super + a
 	pcmanfm	
 
-#Web Browser
+#Web Browser:
 super + i
 	firefox
 
@@ -49,17 +49,17 @@ super + i
 
 #----media controls-------------------------------------------------------------
 
-# speaker volume
+# speaker volume:
 XF86Audio{Mute,LowerVolume,RaiseVolume}
     amixer set Master {toggle,5%-,5%+}
 
-# microphone volume
+# microphone volume:
 XF86AudioMicMute
     amixer set Capture toggle
 super + XF86Audio{Mute,LowerVolume,RaiseVolume}
     amixer set Capture {toggle,5%-,5%+}
     
-# screen brightness
+# screen brightness:
 XF86MonBrightness{Down,Up}
     xbacklight {-dec 5,-inc 5}
 
@@ -68,19 +68,19 @@ XF86MonBrightness{Down,Up}
 
 #----BSPWM's hotkeys------------------------------------------------------------
 
-# close and kill
+# close and kill:
 super + q
 	bspc node -{c,k}
 	
-# alternate between the tiled and monocle layout
+# alternate between the tiled and monocle layout:
 super + m
 	bspc desktop -l next
 
-# send the newest marked node to the newest preselected node
+# send the newest marked node to the newest preselected node:
 super + y
 	bspc node newest.marked.local -n newest.!automatic.local
 
-# swap the current node and the biggest node
+# swap the current node and the biggest node:
 super + g
 	bspc node -s biggest
 
@@ -89,11 +89,11 @@ super + g
 
 #----State/flags----------------------------------------------------------------
 
-# set the window state
+# set the window state:
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
-# set the node flags
+# set the node flags:
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
@@ -102,37 +102,37 @@ super + ctrl + {m,x,y,z}
 
 #----Focus/swap-----------------------------------------------------------------
 
-# focus the node in the given direction
+# focus the node in the given direction:
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
-# focus the node for the given path jump
+# focus the node for the given path jump:
 super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
-# focus the next/previous node in the current desktop
+# focus the next/previous node in the current desktop:
 super + {_,shift + }c
 	bspc node -f {next,prev}.local
 
-# focus the next/previous desktop in the current monitor
+# focus the next/previous desktop in the current monitor:
 ctrl + {Left,Right}
 	bspc desktop -f {prev,next}.local
 
-# focus the last node/desktop
+# focus the last node/desktop:
 super + {grave,Tab}
 	bspc {node,desktop} -f last
 
-# focus the older or newer node in the focus history
+# focus the older or newer node in the focus history:
 super + {o,i}
 	bspc wm -h off; \
 	bspc node {older,newer} -f; \
 	bspc wm -h on
 
-# focus or send to the given desktop
+# focus or send to the given desktop:
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
-#rotate desktop
+#rotate desktop:
 super + ctrl + r
     bspc node @/ --rotate {90,-90}
 
@@ -141,19 +141,19 @@ super + ctrl + r
 
 #----Preselect------------------------------------------------------------------
 
-# preselect the direction
+# preselect the direction:
 super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
-# preselect the ratio
+# preselect the ratio:
 super + ctrl + {1-9}
 	bspc node -o 0.{1-9}
 
-# cancel the preselection for the focused node
+# cancel the preselection for the focused node:
 super + ctrl + space
 	bspc node -p cancel
 
-# cancel the preselection for the focused desktop
+# cancel the preselection for the focused desktop:
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
@@ -162,22 +162,22 @@ super + ctrl + shift + space
 
 #----Move/resize----------------------------------------------------------------
 
-# expand a window by moving one of its side outward
+# expand a window by moving one of its side outward:
 super + alt + {h,j,k,l}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
-# contract a window by moving one of its side inward
+# contract a window by moving one of its side inward:
 super + alt + shift + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
-# move a floating window
+# move a floating window:
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# dynamic gaps
+# dynamic gaps:
 super + shift + bracket{left,right}
 	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
 
-# switch between gap presets
+# switch between gap presets:
 super + shift + {y,u,i,o}
     bspc config window_gap {0,5,10,20}

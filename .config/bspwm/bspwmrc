@@ -1,21 +1,22 @@
 #! /bin/sh
 
-#----Autostart
+#----Autostart:
 sxhkd &
 compton --config /home/carlos/.config/compton/compton.conf &
-xmodmap .mouseconfig &
 xmodmap .speedswapper &
+setxkbmap latam &
 feh --bg-fill --randomize /home/carlos/Imágenes/Wallpapers/ &
 #killall "tint2" 
 tint2 &
-xsetroot -cursor_name left_ptr &
+xsetroot -cursor_name right_ptr &
 devilspie &
+xmodmap .mouseconfig &
 
-#----Workspace distribution per monitor
+#----Workspace distribution per monitor:
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 
-#----BSPWM's graphical appearance
+#----BSPWM's graphical appearance:
 bspc config border_width         2
 bspc config window_gap          10
 bspc config normal_border_color "#7c818c"
@@ -38,3 +39,6 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Xmessage state=floating
+bspc rule -a galculator state=flotaing
+bspc rule -a arandr state=flotaing
+
