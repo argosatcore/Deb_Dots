@@ -6,7 +6,7 @@ super + {shift + z}
 
 # reload bspwm:
 super + shift + r 
-	xterm -e /home/carlos/.config/bspwm/bspwmrc 
+	bspc {wm -r} 
 
 #Screenlock:
 super + {shift + x}
@@ -34,7 +34,7 @@ super + @space
 
 # program launcher:
 super + @space d
-	rofi -show drun -show-icons -columns 1 -width 47 -lines 15
+	rofi -show drun -show-icons -columns 1 -width 30 -lines 15
 
 #File manager:
 super + a

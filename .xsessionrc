@@ -1,0 +1,38 @@
+#----Set keyboard layout
+setxkbmap latam &
+
+
+#----Start compositor
+compton --config /home/carlos/.config/compton/compton.conf &
+
+
+#----Enable transparency for Xterm
+devilspie &
+
+
+#----Set screen brightness to 5%
+xbacklight -set 5
+
+
+#----start the Tint2 panel
+tint2 &
+
+
+#----Lefthanded mouse
+xmodmap .mouseconfig &
+
+
+#----Swap Esc with Caps Lock
+xmodmap .speedswapper &
+
+
+#----Set curssor
+xsetroot -cursor_name right_ptr &
+
+
+#----Set random wallpapers
+feh --bg-fill --randomize /home/carlos/Imágenes/Wallpapers/ &
+
+
+#----Start window manager
+exec bspwm
