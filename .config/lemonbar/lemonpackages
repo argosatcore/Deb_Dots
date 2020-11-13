@@ -1,2 +1,0 @@
-#!/bin/sh
-sudo pacman -Qu | wc -l
