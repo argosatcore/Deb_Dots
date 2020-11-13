@@ -18,6 +18,10 @@ xbacklight -set 5
 tint2 &
 
 
+#Start notification daemon
+dunst &
+
+
 #----Lefthanded mouse
 xmodmap .mouseconfig &
 
@@ -26,8 +30,9 @@ xmodmap .mouseconfig &
 xmodmap .speedswapper &
 
 
-#----Set curssor
+#----Set cursor
 xsetroot -cursor_name right_ptr &
+
 
 #----Start the Simple X Hot Key Daemon
 pgrep -x sxhkd > /dev/null || sxhkd &
