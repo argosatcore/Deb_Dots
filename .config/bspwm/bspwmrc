@@ -1,15 +1,7 @@
 #! /bin/sh
 
 #----Autostart:
-pgrep -x sxhkd > /dev/null || sxhkd &
-#compton --config /home/carlos/.config/compton/compton.conf &
-#xmodmap .speedswapper &
-#setxkbmap latam &
-#feh --bg-fill --randomize /home/carlos/Imágenes/Wallpapers/ &
-#tint2 &
-#xsetroot -cursor_name right_ptr &
-#devilspie &
-#xmodmap .mouseconfig &
+#Moved everything to ~/.xsessionrc file. This removed some inconsistencies for some autostart commands, specifically those in regards to "xmodmap .speedswapper".
 
 #----Workspace distribution per monitor:
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
@@ -40,5 +32,5 @@ bspc rule -a Screenkey manage=off
 bspc rule -a Xmessage state=floating
 bspc rule -a Galculator state=floating
 bspc rule -a Arandr state=floating
-bspc rule -a Pavucontrol state=floating #rectangle=80x10
+bspc rule -a Pavucontrol state=floating rectangle=100x25
 bspc rule -a Nm-connection-editor state=floating rectangle=80x10

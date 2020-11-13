@@ -29,9 +29,13 @@ xmodmap .speedswapper &
 #----Set curssor
 xsetroot -cursor_name right_ptr &
 
+#----Start the Simple X Hot Key Daemon
+pgrep -x sxhkd > /dev/null || sxhkd &
+
 
 #----Set random wallpapers
-feh --bg-fill --randomize /home/carlos/Imágenes/Wallpapers/ &
+#feh --bg-fill --randomize /home/carlos/Imágenes/Wallpapers/ &
+feh --bg-fill /home/carlos/Imágenes/Wallpapers/arcdeb.png &
 
 
 #----Start window manager
