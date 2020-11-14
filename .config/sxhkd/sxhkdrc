@@ -26,7 +26,7 @@ super + ctrl + b
 #----Apps-----------------------------------------------------------------------
 
 # Terminal emulator with or without a tmux session:
-super + {@space, shift}
+super + {_,shift + }@space
 	{xterm, xterm -e tmux}
 
 # Program launcher:
@@ -69,8 +69,8 @@ XF86MonBrightness{Down,Up}
 
 #----BSPWM's hotkeys------------------------------------------------------------
 
-# Close and kill:
-super + q
+# Close or kill a focused node:
+super + {_,shift +}q
 	bspc node -{c,k}
 	
 # Alternate between the tiled and monocle layout:
@@ -134,8 +134,8 @@ super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
 # Rotate desktop:
-super + ctrl + r
-    bspc node @/ --rotate {90,90,90,90}
+super + {_,ctrl +} r
+    bspc node @/ --rotate {90,-90}
 
 
 

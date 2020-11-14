@@ -34,3 +34,4 @@ bspc rule -a Galculator state=floating
 bspc rule -a Arandr state=floating
 bspc rule -a Pavucontrol state=floating rectangle=100x25
 bspc rule -a Nm-connection-editor state=floating rectangle=80x10
+bspc rule -a Pcmanfm state=floating rectangle=600x600
