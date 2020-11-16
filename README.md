@@ -3,7 +3,7 @@
 ⢀⣴⠾⠻⢶⣦⠀  
 ⣾⠁⢠⠒⠀⣿⡁  
 ⢿⡄⠘⠷⠚⠋⠀  
-.⠈⠳⣄
+⠈⠳⣄
 
 At the kernel of my computing environment, there are two irreducible components: the stable branch of the Debian GNU/ Linux Operating System, as a solid foundation to build on, and the Binary Space Partition Window Manager (BSPWM), as one of the most extensible, flexible and, at the same time, minimal frameworks to manage the layout of my computing space.The Debian GNU/Linux OS can be obtained at: https://www.debian.org/. BSPWM is included in Debian's vast repositories; in order to get the latest development version go to https://github.com/baskerville/bspwm
 
