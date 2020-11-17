@@ -3,9 +3,11 @@ text/plain=nvim.desktop
 image/png=feh.desktop
 image/jpeg=feh.desktop
 application/pdf=org.gnome.Evince.desktop
+image/svg+xml=org.inkscape.Inkscape.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;
 image/png=feh.desktop;
 image/jpeg=feh.desktop;
 application/pdf=org.gnome.Evince.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;
