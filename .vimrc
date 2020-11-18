@@ -78,16 +78,24 @@
 " -------Apariencia visual de Vim:
 
 " Esquema de color, para escoger un tema remueva las comillas de citación del tema a escoger.
-	"colorscheme nord
+	
+	"Nord 
+		let g:nord_bold = '1'
+		let g:nord_italic = '1'
+		let g:nord_underline = '1'
+		let g:nord_undercurl = '1'
+		let g:nord_termcolor = '256'
+		colorscheme nord 
+
 
 	" Gruvbox
-		let g:gruvbox_contrast_dark = 'hard'
-		let g:gruvbox_bold = '1'
-		let g:gruvbox_italic = '1'
-		let g:gruvbox_underline = '1'
-		let g:gruvbox_undercurl = '1'
-		let g:gruvbox_termcolor = '256'
-		colorscheme gruvbox 
+"		let g:gruvbox_contrast_dark = 'hard'
+"		let g:gruvbox_bold = '1'
+"		let g:gruvbox_italic = '1'
+"		let g:gruvbox_underline = '1'
+"		let g:gruvbox_undercurl = '1'
+"		let g:gruvbox_termcolor = '256'
+"		colorscheme gruvbox 
 
 " Cambiar esquema de color
 "	map <F1> :colorscheme gruvbox<CR>
@@ -98,9 +106,9 @@
 "	highlight Visual term=reverse cterm=reverse ctermbg=Black ctermfg=NONE guibg=NONE guifg=NONE gui=reverse 
 
 " Tema usado en airline:
-	let g:airline_theme='base16_gruvbox_dark_hard'
+"	let g:airline_theme='base16_gruvbox_dark_hard'
 "	let g:airline_theme='base16_nord'
-"	let g:airline_theme='monochrome'
+	let g:airline_theme='monochrome'
 
 " Configuración de Goyo 
 	function! s:goyo_enter()
