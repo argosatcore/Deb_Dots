@@ -3,7 +3,7 @@ configuration {
 	width: 100;
 	lines: 8;
 	columns: 1;
-	font: "FontAwesome 13";
+	font: "FontAwesome 12";
 	location: 2;
 	yoffset: 0;
 	xoffset: 0;

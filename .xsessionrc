@@ -1,47 +1,53 @@
-#----Set keyboard layout
+#----Set keyboard layout:
 setxkbmap latam &
 
 
-#----Start compositor
+#----Start compositor:
 compton --config /home/carlos/.config/compton/compton.conf &
 
 
-#----Enable transparency for Xterm
-devilspie &
+#----Enable transparency for Xterm:
+#devilspie &
 
 
-#----Set screen brightness to 5%
+#----Set screen brightness to 5%:
 xbacklight -set 5
 
 
-#----start the Tint2 panel
+#----Start the Tint2 panel:
 tint2 &
 
 
-#Start notification daemon
+#----Start notification daemon:
 dunst &
 
 
-#----Lefthanded mouse
+#----Lefthanded mouse:
 xmodmap .mouseconfig &
 
 
-#----Swap Esc with Caps Lock
+#----Swap Esc with Caps Lock:
 xmodmap .speedswapper &
 
 
-#----Set cursor
+#----Set cursor:
 xsetroot -cursor_name right_ptr &
 
 
-#----Start the Simple X Hot Key Daemon
+#----Start the Simple X Hot Key Daemon:
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 
-#----Set random wallpapers
+#----Set random wallpapers:
 #feh --bg-fill --randomize /home/carlos/Imágenes/Wallpapers/ &
-feh --bg-fill /home/carlos/Imágenes/Wallpapers/arcdeb.png &
 
 
-#----Start window manager
+#----Set fixed wallpaper:
+feh --bg-fill /home/carlos/Imágenes/Wallpapers/debnord.png &
+
+#----Set nord palette for temrinal:
+xrdb .Xresources &
+
+
+#----Start window manager:
 exec bspwm
