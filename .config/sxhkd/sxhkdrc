@@ -27,7 +27,7 @@ super + ctrl + b
 
 # Terminal emulator with or without a tmux session:
 super + {_,shift + }@space
-	{xterm, xterm -e tmux}
+	{urxvt, urxvt -e tmux}
 
 # Program launcher:
 super + @space d
