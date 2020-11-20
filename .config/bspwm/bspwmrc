@@ -8,7 +8,7 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 
 #----BSPWM's graphical appearance
-bspc config border_width         2
+bspc config border_width         1
 bspc config window_gap          10
 bspc config normal_border_color "#7c818c"
 bspc config active_border_color "#4c566a"
