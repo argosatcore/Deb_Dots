@@ -11,10 +11,10 @@
 
 !! URxvt Appearance
 !	URxvt.geometry: 	80x25
-	URxvt.internalBorder: 	12 
+	URxvt.internalBorder: 	11 
 	URxvt.cursorBlink: 	true
 	URxvt.cursorUnderline: 	false
-	URxvt.saveline: 	2048
+	URxvt.saveLines: 	9999
 !	URxvt.urgentOnBell: 	false	
 	URxvt.iso14755: 	false	
 	URxvt.iso14755_52:	false
@@ -55,8 +55,7 @@
 	*.foreground:  		#ebdbb2
 	*.background:  		#1d2021
 	*.cursorColor: 		#ebdbb2
-	*.highlightColor:	#5294e2
-
+	*.highlightColor:	#8fbcbb
 	! black
 		*.color0:      	#282828
 		*.color8:      	#928374
@@ -94,13 +93,13 @@
 
 !Fonts
 !URxvt.font:xft:SauceCodePro Nerd Font Mono:size=10
-	URxvt.font:xft:Dejavu Sans Mono:size=11
+	URxvt.font:xft:Hack:size=10.5
 !	URxvt.font:xft:Iconoslata:size=10
 !	URxvt.font:xft:Fira Code Retina:size=12
 !	URxvt.font:xft:Monospace:size=12
 
 
-	URxvt.letterSpace: 	0 
+	URxvt.letterSpace: 	-1 
 	URxvt.lineSpace: 	1
 
 	*antialias:  true
