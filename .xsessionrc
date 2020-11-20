@@ -7,7 +7,7 @@ compton --config /home/carlos/.config/compton/compton.conf &
 
 
 #----Enable transparency for Xterm:
-#devilspie &
+devilspie &
 
 
 #----Set screen brightness to 5%:
@@ -43,7 +43,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 #----Set fixed wallpaper:
-feh --bg-fill /home/carlos/Imágenes/Wallpapers/debnord.png &
+feh --bg-fill /home/carlos/Imágenes/Wallpapers/debnord2.png &
 
 #----Set nord palette for temrinal:
 xrdb .Xresources &
