@@ -9,8 +9,8 @@
 
 * {
     /* Custom colours */
-    tempus-bg-alt:         #312e30ff;
-    tempus-bg-main:        #232323ff;
+    tempus-bg-alt:         #3b4252ff;
+    tempus-bg-main:        #2e3440ff;
     tempus-fg-alt:         #949d9fff;
     tempus-fg-main:        #aeadafff;
     tempus-red:            #d2813dff;

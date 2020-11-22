@@ -3,7 +3,7 @@ configuration {
 	width: 100;
 	lines: 8;
 	columns: 1;
-	font: "FontAwesome 12";
+	font: "FontAwesome 11";
 	location: 2;
 	yoffset: 0;
 	xoffset: 0;
@@ -26,7 +26,7 @@ configuration {
 /*	tokenize: true;*/
 /*	m: "-5";*/
 /*	filter: ;*/
-	hide-scrollbar: true;
+	hide-scrollbar: false;
 	fullscreen: false;
 /*	dpi: -1;*/
 	threads: 0;
@@ -38,11 +38,11 @@ configuration {
 	max-history-size: 25;
 	combi-hide-mode-prefix: true;
 /*	pid: "/run/user/1000/rofi.pid";*/
-	display-window: "Windows";
+	display-window: "Ventanas";
 /*	display-windowcd: ;*/
-	display-run: "Executables";
+	display-run: "Ejecutables";
 /*	display-ssh: ;*/
-	display-drun: "Applications";
+	display-drun: "Aplicaciones";
 	display-combi: "Combined";
 /*	display-keys: ;*/
 	kb-primary-paste: "Control+Y";
