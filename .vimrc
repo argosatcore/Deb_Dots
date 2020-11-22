@@ -80,11 +80,11 @@
 " Esquema de color, para escoger un tema remueva las comillas de citación del tema a escoger.
 	
 	"Nord 
-		let g:nord_bold = '1'
-		let g:nord_italic = '1'
-		let g:nord_underline = '1'
-		let g:nord_undercurl = '1'
-		let g:nord_termcolor = '256'
+	"	let g:nord_bold = '1'
+	"	let g:nord_italic = '1'
+	"	let g:nord_underline = '1'
+	"	let g:nord_undercurl = '1'
+	"	let g:nord_termcolor = '256'
 		colorscheme nord 
 
 
