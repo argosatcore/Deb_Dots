@@ -43,7 +43,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 #----Set fixed wallpaper:
-feh --bg-fill /home/carlos/Imágenes/Wallpapers/debnord2.png &
+feh --bg-fill /home/carlos/Imágenes/Wallpapers/AgnosticNord.png &
 
 #----Set nord palette for temrinal:
 #xrdb .Xresources &
