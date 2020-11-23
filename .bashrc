@@ -24,7 +24,7 @@
 
 
 
-#Aliases:
+#Handy aliases:
 	alias ll='ls -alF'
 	alias la='ls -A'
 	alias l='ls -CF'
@@ -206,6 +206,12 @@
 
 	#Search for a package:
 	alias lookapt='apt search'
+
+	#Remove a program:
+	alias throwapt='sudo apt remove'
+
+	#Install a program:
+	alias capture='sudo apt install'
 
 
 # Vim mode:

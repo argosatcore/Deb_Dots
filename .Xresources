@@ -31,9 +31,8 @@ xterm*dynamicColors: true
 ! UI components
 xterm*toolBar: false
 xterm*scrollBar: false
-xterm*geometry: 90x25
+xterm*geometry: 80x25
 xterm*internalBorder: 6 
-!xterm*externalBorder: 0
 
 ! Cursor
 ! Allowing the cursor to use the reverse colour of the background or
@@ -41,9 +40,9 @@ xterm*internalBorder: 6
 ! be virtually impossible to see.  Note that this does not work when the
 ! cursor is not a block character (cursorUnderLine: true).
 xterm*cursorColor: reverse
-xterm*cursorBlink: true
-xterm*cursorOffTime: 300
-xterm*cursorOnTime: 800
+xterm*cursorBlink:false 
+!xterm*cursorOffTime: 300
+!xterm*cursorOnTime: 800
 xterm*cursorUnderLine: false
 xterm*pointerShape: XTerm
 
@@ -60,19 +59,20 @@ xterm*highlightSelection: true
 xterm*highlightTextColor: XtDefaultBackground
 
 ! Font settings
-xterm*faceName: Monospace
-xterm*faceSize: 12
+xterm*faceName: Hack 
+xterm*faceSize: 11.5
 xterm*renderFont: true
 xterm*boldColors: true
-xterm*faceSize1: 9.5
-xterm*faceSize2: 12
-xterm*faceSize3: 15
-xterm*faceSize4: 18.25
-xterm*faceSize5: 20.5
-xterm*faceSize6: 25.5
-xterm*forceBoxChars: false
+!xterm*faceSize1: 9.5
+!xterm*faceSize2: 12
+!xterm*faceSize3: 15
+!xterm*faceSize4: 18.25
+!xterm*faceSize5: 20.5
+!xterm*faceSize6: 25.5
+!xterm*forceBoxChars: false
 xterm*limitFontsets: 5
 xterm*scaleHeight: 1.0
+xterm*scaleWidth: 1.0
 
 ! Scroll and output
 xterm*jumpScroll: true
@@ -99,5 +99,54 @@ xterm*translations: #override \n\
 
 ! DO NOT EDIT THIS.  IT IS CONTROLLED PROGRAMMATICALLY.
 ! Use my active Tempus theme.
-#include ".local/share/my_colours/active-tempus-theme.Xcolors"
+! #include ".local/share/my_colours/active-tempus-theme.Xcolors"
+! #include ".local/share/my_colours/nord-xresources-develop/src/nord.Xcolors"
+
+! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+! Copyright (c) 2016-present Sven Greb <code@svengreb.de>
+
+! Project:    Nord XResources
+! Version:    0.1.0
+! Repository: https://github.com/arcticicestudio/nord-xresources
+! License:    MIT
+
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
+
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord4
+*fading: 35
+*fadeColor: nord3
+
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
 
