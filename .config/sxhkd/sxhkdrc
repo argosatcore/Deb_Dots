@@ -182,3 +182,37 @@ super + shift + bracket{left,right}
 # Switch between gap presets:
 super + shift + {y,u,i,o}
     bspc config window_gap {0,5,10,20}
+
+
+
+
+#----Xdotools's mapping of the cursor to the arrow keys:
+# Map Alt key + arrow keys to mouse cursor.
+
+#Move cursor up:
+super + ctrl + Up
+ 	xdotool mousemove_relative -- 0 -15 
+
+#Move cursor down:
+super + ctrl + Down 
+ 	xdotool mousemove_relative 0 15 
+
+#Move cursor to the right:
+super + ctrl + Right
+ 	xdotool mousemove_relative 15 0  
+
+# Move cursor to the left:
+super + ctrl + Left
+ 	xdotool mousemove_relative -- -15 0 
+
+# Right click (for a left handed person):
+super + ctrl + Return
+ 	xdotool click 3  
+
+# Left click (for a left handed person):
+super + ctrl + Esc
+ 	xdotool click 1
+
+# Middle click
+super + ctrl + Tab
+ 	xdotool click 2  

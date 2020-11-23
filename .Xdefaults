@@ -10,7 +10,7 @@
 	URxvt.termName: rxvt-unicode-256color
 
 !! URxvt Appearance
-!	URxvt.geometry: 	80x25
+	URxvt.geometry: 	80x25
 	URxvt.internalBorder: 	11 
 	URxvt.cursorBlink: 	true
 	URxvt.cursorUnderline: 	false
@@ -55,7 +55,7 @@
 	*.foreground:  		#ebdbb2
 	*.background:  		#1d2021
 	*.cursorColor: 		#ebdbb2
-	*.highlightColor:	#8fbcbb
+!!	*.highlightColor:	#8fbcbb
 	! black
 		*.color0:      	#282828
 		*.color8:      	#928374
@@ -83,8 +83,8 @@
 
 !Transparency
 	URxvt*transparent:      false 
-	URxvt*depth:		32
-	URxvt.background: 	[75]#101010
+!	URxvt*depth:		32
+	URxvt.background: 	[95]#101010
 
 
 !Scrollbar: Disabled
