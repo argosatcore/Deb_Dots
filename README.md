@@ -9,7 +9,6 @@ At the kernel of my computing environment, there are two irreducible components:
 
   The design decisions implemented in these dot files, while at the time of writing this text have taken some distance from, were initially based on the work of Protesilaos Stavrou. His writings, as well as his videos on free and open source software, remain, in my opinion, an invaluable resource, both technically and philosophically, for those interested in examining that which, for better or worse, has become an inescapable aspect of contemporary life. To learn more about his work, visit https://protesilaos.com/
   
-  If you find any of this useful, go ahead and borrow any or all of it.
   
 ![Captura de pantalla_2020-11-21_21-14-40](https://user-images.githubusercontent.com/64110504/99892902-d733f380-2c3f-11eb-9b91-427c445be625.png)
 
