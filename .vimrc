@@ -54,7 +54,8 @@
 	set mouse=a
 
 " Resaltar la línea en donde se encuentra posicionado el cursor.
-	set background=dark cursorline
+"	set background=dark cursorline
+	set cursorline
 "	highlight! link CursorLine Visual
 
 " Detectar la sintaxis de un determinado tipo de documento, indicado en la extensión del archivo mismo.
@@ -85,17 +86,17 @@
 	"	let g:nord_underline = '1'
 	"	let g:nord_undercurl = '1'
 	"	let g:nord_termcolor = '256'
-		colorscheme nord 
+	"	colorscheme nord 
 
 
 	" Gruvbox
-"		let g:gruvbox_contrast_dark = 'hard'
-"		let g:gruvbox_bold = '1'
-"		let g:gruvbox_italic = '1'
-"		let g:gruvbox_underline = '1'
-"		let g:gruvbox_undercurl = '1'
-"		let g:gruvbox_termcolor = '256'
-"		colorscheme gruvbox 
+		let g:gruvbox_contrast_dark = 'hard'
+		let g:gruvbox_bold = '1'
+		let g:gruvbox_italic = '1'
+		let g:gruvbox_underline = '1'
+		let g:gruvbox_undercurl = '1'
+		let g:gruvbox_termcolor = '256'
+		colorscheme gruvbox 
 
 " Cambiar esquema de color
 "	map <F1> :colorscheme gruvbox<CR>
@@ -104,6 +105,8 @@
 	hi! Normal ctermbg=NONE guibg=NONE 
 	hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 
 "	highlight Visual term=reverse cterm=reverse ctermbg=Black ctermfg=NONE guibg=NONE guifg=NONE gui=reverse 
+"	highlight cursorline term=reverse cterm=reverse ctermbg=Black ctermfg=NONE guibg=NONE guifg=NONE gui=reverse 
+
 
 " Tema usado en airline:
 "	let g:airline_theme='base16_gruvbox_dark_hard'

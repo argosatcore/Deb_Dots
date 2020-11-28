@@ -4,6 +4,7 @@ image/png=feh.desktop
 image/jpeg=feh.desktop
 application/pdf=org.gnome.Evince.desktop
 image/svg+xml=org.inkscape.Inkscape.desktop
+application/epub+zip=calibre-ebook-viewer.desktop
 
 [Added Associations]
 text/plain=nvim.desktop;
@@ -11,3 +12,4 @@ image/png=feh.desktop;
 image/jpeg=feh.desktop;
 application/pdf=org.gnome.Evince.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
+application/epub+zip=org.gnome.Evince.desktop;org.pwmt.zathura.desktop;calibre-ebook-viewer.desktop;
