@@ -20,37 +20,6 @@
 	URxvt.iso14755_52:	false
 	URxvt.intensity.Styles:	false
 
-
-!	 Color palette: Grey Scale
-!		*.foreground:  #b9b9b9
-!		*.background:  #101010
-!		*.cursorColor:  #b9b9b9
-!		! black
-!		*.color0:      #101010
-!		*.color8:      #525252
-!		! red
-!		*.color1:      #7c7c7c
-!		*.color9:      #cccccc
-!		! green
-!		*.color2:      #8e8e8e
-!		*.color10:     #e5e5e5
-!		! yellow
-!		*.color3:      #a0a0a0
-!		*.color11:     #f2f2f2
-!		! blue
-!		*.color4:      #686868
-!		*.color12:     #b2b2b2
-!		! magenta
-!		*.color5:      #747474
-!		*.color13:     #bfbfbf
-!		! cyan
-!		*.color6:      #868686
-!		*.color14:     #d9d9d9
-!		! white
-!		*.color7:      #b9b9b9
-!		*.color15:     #f7f7f7
-
-
 !! Color palette Gruvbox 
 	*.foreground:  		#ebdbb2
 	*.background:  		#1d2021
@@ -83,8 +52,8 @@
 
 !Transparency
 	URxvt*transparent:      false 
-!	URxvt*depth:		32
-	URxvt.background: 	[95]#101010
+	URxvt*depth:		32
+	URxvt.background: 	[95]#000000
 
 
 !Scrollbar: Disabled
