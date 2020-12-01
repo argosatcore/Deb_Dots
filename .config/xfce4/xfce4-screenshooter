@@ -1,6 +1,6 @@
 delay=2
 region=1
-show_mouse=1
+show_mouse=0
 screenshot_dir=file:/home/carlos/Imágenes/Capturas de Pantalla
 app=feh
 last_user=
