@@ -1,15 +1,15 @@
 configuration {
 	modi: "run,drun,window";
-	width: 100;
-	lines: 8;
+	width: 45;
+	lines: 5;
 	columns: 1;
-	font: "FontAwesome 11";
+	font: "FontAwesome 12";
 	location: 2;
-	yoffset: 0;
+	yoffset: 20;
 	xoffset: 0;
 	fixed-num-lines: false;
 	show-icons: true;
-	terminal: "xterm";
+	terminal: "urxvt";
 /*	run-command: "{cmd}";*/
 /*	run-list-command: "";*/
 /*	run-shell-command: "{terminal} -e {cmd}";*/
@@ -26,7 +26,7 @@ configuration {
 /*	tokenize: true;*/
 /*	m: "-5";*/
 /*	filter: ;*/
-	hide-scrollbar: false;
+	hide-scrollbar: true;
 	fullscreen: false;
 /*	dpi: -1;*/
 	threads: 0;
@@ -38,11 +38,11 @@ configuration {
 	max-history-size: 25;
 	combi-hide-mode-prefix: true;
 /*	pid: "/run/user/1000/rofi.pid";*/
-	display-window: "Ventanas";
+	display-window: "";
 /*	display-windowcd: ;*/
-	display-run: "Ejecutables";
+	display-run: "";
 /*	display-ssh: ;*/
-	display-drun: "Aplicaciones";
+	display-drun: "";
 	display-combi: "Combined";
 /*	display-keys: ;*/
 	kb-primary-paste: "Control+Y";

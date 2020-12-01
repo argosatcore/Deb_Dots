@@ -31,11 +31,11 @@ super + {_,shift + }@space
 
 # Program launcher:
 super + @space d
-	rofi -show drun -show-icons -columns 1 -width 30 -lines 15
+	rofi -show drun #-show-icons -columns 1 -width 30 -lines 15
 
 # Window switcher:
 super + Tab
-	rofi -show window -show-icons -columns 1 -width 30 -lines 15
+	rofi -show window #-show-icons -columns 1 -width 30 -lines 15
 
 # File manager:
 super + a
@@ -44,6 +44,10 @@ super + a
 # Web Browser:
 super + i
 	firefox
+
+#Fullscreen Screenshooter
+super + n
+	xfce4-screenshooter -f
 
 
 
