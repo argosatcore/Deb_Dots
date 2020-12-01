@@ -9,6 +9,7 @@ configuration {
 	xoffset: 0;
 	fixed-num-lines: false;
 	show-icons: true;
+	drun-icon-theme: "korla";
 	terminal: "urxvt";
 /*	run-command: "{cmd}";*/
 /*	run-list-command: "";*/
@@ -16,7 +17,7 @@ configuration {
 /*	window-command: "xkill -id {window}";*/
 	window-match-fields: "all";
 	drun-match-fields: "name,exec";
-	case-sensitive: true;
+	case-sensitive: false;
 	cycle: false;
 	sidebar-mode: true;
 /*	eh: 1;*/
