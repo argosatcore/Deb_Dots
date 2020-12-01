@@ -39,7 +39,7 @@ super + Tab
 
 # File manager:
 super + a
-	pcmanfm	
+	thunar
 
 # Web Browser:
 super + i

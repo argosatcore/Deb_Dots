@@ -3,6 +3,12 @@
 #----Autostart:
 #Moved everything to ~/.xsessionrc file. This removed some inconsistencies for some autostart commands, specifically those in regards to "xmodmap .speedswapper".
 
+if [ -x /usr/bin/flatpak ]; then
+	if [ -x /usr/bin/xfsettingsd ]; then
+		xfsettingsd
+	fi
+fi
+
 #----Workspace distribution per monitor:
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
@@ -51,3 +57,4 @@ bspc rule -a Arandr state=floating
 bspc rule -a Pavucontrol state=floating rectangle=100x25
 bspc rule -a Nm-connection-editor state=floating rectangle=80x10
 bspc rule -a Pcmanfm state=floating rectangle=800x600
+bspc rule -a Thunar state=floating rectangle=800x600
