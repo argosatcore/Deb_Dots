@@ -13,6 +13,7 @@ At the kernel of my computing environment, there are two irreducible components:
   
 These dot files were started on a minimal Debian installation, but should work with any Debian installation or Debian-based distribution. Feel free to take them as a starting point for your own dot files.
 
+![agnosticdebnord](https://user-images.githubusercontent.com/64110504/101113353-d0dd3a00-35a4-11eb-8c84-53a6d8cb4858.png)
 
  
  **BSPWM Layout** | **Rofi Config**
