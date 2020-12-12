@@ -9,22 +9,22 @@
 
 * {
     /* Custom colours */
-    tempus-bg-alt:         #3b4252ff;
-    tempus-bg-main:        #2e3440ff;
-    tempus-fg-alt:         #949d9fff;
-    tempus-fg-main:        #aeadafff;
-    tempus-red:            #d2813dff;
-    tempus-green:          #8c9e3dff;
-    tempus-yellow:         #b1942bff;
-    tempus-blue:           #6e9cb0ff;
-    tempus-magenta:        #b58d88ff;
-    tempus-cyan:           #6da280ff;
-    tempus-red-bright:     #d0913dff;
-    tempus-green-bright:   #96a42dff;
-    tempus-yellow-bright:  #a8a030ff;
-    tempus-blue-bright:    #8e9cc0ff;
-    tempus-magenta-bright: #d58888ff;
-    tempus-cyan-bright:    #7aa880ff;
+    tempus-bg-alt:         #3b4252BF;
+    tempus-bg-main:        #2e3440BF;
+    tempus-fg-alt:         #949d9fFF;
+    tempus-fg-main:        #aeadafFF;
+    tempus-red:            #d2813dBF;
+    tempus-green:          #8c9e3dBF;
+    tempus-yellow:         #b1942bBF;
+    tempus-blue:           #6e9cb0BF;
+    tempus-magenta:        #b58d88BF;
+    tempus-cyan:           #6da280BF;
+    tempus-red-bright:     #d0913dBF;
+    tempus-green-bright:   #96a42dBF;
+    tempus-yellow-bright:  #a8a030BF;
+    tempus-blue-bright:    #8e9cc0BF;
+    tempus-magenta-bright: #d58888BF;
+    tempus-cyan-bright:    #7aa880BF;
 
     /* Global properties */
     background-color: rgba      (0,0,0, 0%);
@@ -49,10 +49,10 @@
 }
 #listview {
     fixed-height: 0;
-    border:       2px solid 0px 0px;
+    border:       0px solid 0px 0px;
     border-color: @tempus-fg-alt;
-    spacing:      4px;
-    scrollbar:    true;
+    spacing:      0px;
+    scrollbar:    false;
     padding:      2px 0px 0px;
 }
 #element {
@@ -96,10 +96,10 @@
     text-color:       @tempus-bg-alt;
 }
 #scrollbar {
-    width:        4px;
+    width:        0px;
     border:       0;
     handle-color: @tempus-fg-alt;
-    handle-width: 8px;
+    handle-width: 0px;
     padding:      0;
 }
 #sidebar {

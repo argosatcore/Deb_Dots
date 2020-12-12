@@ -190,7 +190,7 @@ super + shift + {y,u,i,o}
 
 
 
-#----Xdotools's mapping of the cursor to the arrow keys:
+#----Xdotools's mapping of the cursor to the arrow keys--------------------
 # Map Alt key + arrow keys to mouse cursor.
 
 #Move cursor up:

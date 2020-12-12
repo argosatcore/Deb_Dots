@@ -18,7 +18,7 @@ configuration {
 	window-match-fields: "all";
 	drun-match-fields: "name,exec";
 	case-sensitive: false;
-	cycle: false;
+	cycle: true;
 	sidebar-mode: true;
 /*	eh: 1;*/
 	auto-select: false;

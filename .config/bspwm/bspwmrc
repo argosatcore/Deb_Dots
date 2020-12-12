@@ -1,13 +1,7 @@
 #! /bin/sh
 
 #----Autostart:
-#Moved everything to ~/.xsessionrc file. This removed some inconsistencies for some autostart commands, specifically those in regards to "xmodmap .speedswapper".
-
-if [ -x /usr/bin/flatpak ]; then
-	if [ -x /usr/bin/xfsettingsd ]; then
-		xfsettingsd
-	fi
-fi
+#Moved most of it to ~/.xsessionrc file. This removed some inconsistencies for some autostart commands, specifically those in regards to "xmodmap" and ".speedswapper".
 
 #----Workspace distribution per monitor:
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
@@ -37,6 +31,15 @@ if [ "$(bspwm -v)" -gt '0.9.5' ]; then
     unset i
 fi
 
+
+#----Use xfsettings to apply the nord theme across all applications, be them Debian native packages or flatpaks.
+if [ -x /usr/bin/flatpak ]; then
+	if [ -x /usr/bin/xfsettingsd ]; then
+		xfsettingsd
+	fi
+fi
+
+
 #----BSPWM's tiling rules:
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
@@ -47,7 +50,6 @@ bspc config focus_follows_pointer true
       
 #----BSPWM's applications rules:
 bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
@@ -56,5 +58,4 @@ bspc rule -a Galculator state=floating
 bspc rule -a Arandr state=floating
 bspc rule -a Pavucontrol state=floating rectangle=100x25
 bspc rule -a Nm-connection-editor state=floating rectangle=80x10
-bspc rule -a Pcmanfm state=floating rectangle=800x600
 bspc rule -a Thunar state=floating rectangle=800x600
