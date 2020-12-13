@@ -45,10 +45,6 @@ super + a
 super + i
 	firefox
 
-#Fullscreen Screenshooter
-super + n
-	xfce4-screenshooter -f
-
 
 
 
@@ -89,7 +85,12 @@ super + y
 super + g
 	bspc node -s biggest
 
-
+# Hide focused window:
+super + v
+	bspc node focused -g hidden=on
+#Unhide hidden windows:
+super + n
+	bspc node $(bspc query -N -n .hidden -d focused) -g hidden=off
 
 
 #----State/flags----------------------------------------------------------------
