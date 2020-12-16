@@ -10,7 +10,7 @@
 	URxvt.termName: rxvt-unicode-256color
 
 !! URxvt Appearance
-	URxvt.geometry: 	80x25
+	URxvt.geometry: 	50x20
 	URxvt.internalBorder: 	11 
 	URxvt.cursorBlink: 	true
 	URxvt.cursorUnderline: 	false
@@ -22,9 +22,11 @@
 
 !! Color palette Gruvbox 
 	*.foreground:  		#ebdbb2
-	*.background:  		#1d2021
+!!	*.background:  		#1d2021
 	*.cursorColor: 		#ebdbb2
-!!	*.highlightColor:	#8fbcbb
+	*.fading:		35
+	*.highlightColor:	#fb4934
+
 	! black
 		*.color0:      	#282828
 		*.color8:      	#928374
@@ -51,9 +53,9 @@
 		*.color15:    	#ebdbb2
 
 !Transparency
-	URxvt*transparent:      false 
+	URxvt*transparent:      true 
 	URxvt*depth:		32
-	URxvt.background: 	[95]#000000
+	URxvt.background: 	[90]#101010
 
 
 !Scrollbar: Disabled
@@ -68,7 +70,7 @@
 !	URxvt.font:xft:Monospace:size=12
 
 
-	URxvt.letterSpace: 	-1 
+	URxvt.letterSpace:	0 
 	URxvt.lineSpace: 	1
 
 	*antialias:  true
@@ -124,3 +126,7 @@
 !	Clipboard
 		URxvt.keysym.Shift-Control-C:       perl:clipboard:copy
 		URxvt.keysym.Shift-Control-V:       perl:clipboard:paste
+		
+
+
+
