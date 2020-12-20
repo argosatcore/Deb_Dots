@@ -15,6 +15,7 @@ These dot files were started on a minimal Debian installation, but should work w
  
  **BSPWM Layout** | **Rofi Config**
 :-------: | :-------:
-![Captura de pantalla_2020-11-21_21-14-40](https://user-images.githubusercontent.com/64110504/99892902-d733f380-2c3f-11eb-9b91-427c445be625.png) | ![Captura de pantalla_2020-11-30_18-10-16](https://user-images.githubusercontent.com/64110504/100681631-ce2adc80-3339-11eb-8225-467c989bc054.png)
+![Captura de pantalla_2020-12-20_14-40-08](https://user-images.githubusercontent.com/64110504/102723982-b4920a80-42d1-11eb-82e5-f41e6cd6619f.png) | ![Captura de pantalla_2020-12-20_14-18-32](https://user-images.githubusercontent.com/64110504/102723968-9fb57700-42d1-11eb-95da-cdc61a88d3b9.png)
  **Shell Config** | **.Xdefaults Config**
-![Captura de pantalla_2020-11-30_18-32-21](https://user-images.githubusercontent.com/64110504/100681927-7640a580-333a-11eb-89d5-8a5d239f215f.png) | ![Captura de pantalla_2020-11-30_18-35-58](https://user-images.githubusercontent.com/64110504/100682137-02eb6380-333b-11eb-8eb2-5ef3b31ca358.png)
+![Captura de pantalla_2020-12-20_14-41-48](https://user-images.githubusercontent.com/64110504/102724008-d7242380-42d1-11eb-9b0d-145b00b0f997.png) | ![Captura de pantalla_2020-12-20_14-40-44](https://user-images.githubusercontent.com/64110504/102723996-c96e9e00-42d1-11eb-9319-7c51377a2416.png)
+
