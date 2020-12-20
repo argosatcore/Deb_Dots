@@ -1,7 +1,7 @@
-delay=8
+delay=5
 region=1
 show_mouse=0
-screenshot_dir=file:/home/carlos/Imágenes
+screenshot_dir=file:/home/carlos/Imágenes/Capturas de Pantalla
 app=feh
 last_user=
 action=1

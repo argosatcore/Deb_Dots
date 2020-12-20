@@ -5,7 +5,7 @@ configuration {
 	columns: 1;
 	font: "FontAwesome 12";
 	location: 2;
-	yoffset: 20;
+	yoffset: 200;
 	xoffset: 0;
 	fixed-num-lines: false;
 	show-icons: true;
