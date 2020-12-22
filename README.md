@@ -57,7 +57,7 @@ All of which are `apt install`able:
 - `Super+f`: fullscreen
 - `Super+s`: floating
 - `Super+t`: tile
-- `Super+t`: pseudotile
+- `Super+Shift+t`: pseudotile
 - `Super+m`: monocle layout
 - `Super+v`: hide window
 - `Super+n`: unhide window
