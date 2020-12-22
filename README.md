@@ -64,7 +64,7 @@ All of which are `apt install`able:
 - `Super+r`: rotate windows clockwise
 - `Super+Shift+r`: rotate windows counterclockwise
 - `Super+(h,j,k,l)`: select an active window
-- `Super+Shift+(h,j,k,l)`: move window on a designated direction
+- `Super+Shift+(h,j,k,l)`: move window in a designated direction
 
 ### Running things
 - `Super+Space`: run a terminal
