@@ -13,7 +13,7 @@ At the kernel of my computing environment, there are two irreducible components:
  
 The layout for this README.md was heavely influenced by that of [Spencer Tipping](https://github.com/spencertipping/dotfiles/blob/master/README.md).
   
-These dot files were started with a minimal Debian installation, but they should work with any Debian installation or Debian-based distribution. Feel free to use them as a starting point for your own dot files.
+These dot files were started with a minimal Debian installation, but they should work with any Debian installation or Debian-based distribution. Also, even though I use these dots on Debian, I've made an effort to keep them as distribution agnostic as possible, meaning they are very likely to work on other distributions. As of now, I've tried them succesfully on Arch Linux and Void Linux. Feel free to use them as a starting point for your own dot files.
  
  **BSPWM Layout** | **Rofi Config**
 :-------: | :-------:
