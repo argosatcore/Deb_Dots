@@ -19,3 +19,13 @@ These dot files were started with a minimal Debian installation, but they should
  **Shell Config** | **.Xdefaults Config**
 ![Captura de pantalla_2020-12-20_14-41-48](https://user-images.githubusercontent.com/64110504/102724008-d7242380-42d1-11eb-9b0d-145b00b0f997.png) | ![Captura de pantalla_2020-12-20_14-40-44](https://user-images.githubusercontent.com/64110504/102723996-c96e9e00-42d1-11eb-9319-7c51377a2416.png)
 
+## Stuff referenced by these configs
+...almost all of which are `apt-get install`able.
+
+- `rxvt-unicode`: terminal emulator
+- `bspwm`: window manager
+- 'sxhkd': keybinfing program
+- `compton`: compositing for window transparency
+- `tmux`: persistent SSH shell sessions
+- `feh`: set the desktop background
+- `i3lock`: screen locking
