@@ -46,7 +46,8 @@ All of which are `apt install`able:
 - `Ctrl+[left or right arrow key]`: change desktops on an horizontal layout.
 - `Super+Shift[ionm,]`: go to specific desktops
 - `Super+Shift+x`: lock screen
-- `Super+d`: show openbox menu
+- `Super+(1,2,3,4,5,67,8,9,0)`: go to a desginated desktop
+- `Super+Shift+(1,2,3,4,5,67,8,9,0)`: move an active application to a desginated desktop
 
 ### Windows
 - `Super+q`: close a window
@@ -60,4 +61,5 @@ All of which are `apt install`able:
 - `Super+Shift+Space`: run a terminal in a tmux session
 - `Super+i`: run firefox
 - `Super+a`: run thunar
-- `Super+d`: run rofi
+- `Super+d`: run rofi as an application launcher
+- `Super+Tab`: run rofi as a window switcher
