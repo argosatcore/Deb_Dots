@@ -38,6 +38,10 @@ All of which are `apt install`able:
 
 ## (Some) Sxhkd keybindings
 
+### BSPWM
+- `Super+Shift-r`: reload bspwm
+- `Super+z`: reload sxhkd
+
 ### Desktops
 - `Ctrl+[left or right arrow key]`: change desktops on an horizontal layout.
 - `Super+Shift[ionm,]`: go to specific desktops
@@ -53,6 +57,7 @@ All of which are `apt install`able:
 
 ### Running things
 - `Super+Space`: run a terminal
+- `Super+Shift+Space`: run a terminal in a tmux session
 - `Super+i`: run firefox
-- `Super+a`: thunar
-- `Super+d`: rofi
+- `Super+a`: run thunar
+- `Super+d`: run rofi
