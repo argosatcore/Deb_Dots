@@ -6,7 +6,7 @@ super + z
 
 # Reload bspwm:
 super + shift + r 
-	bspc {wm -r} 
+	/home/carlos/.config/bspwm/bspwmrc 
 
 # Screenlock:
 super + {shift + x}

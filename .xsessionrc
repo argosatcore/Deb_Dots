@@ -6,10 +6,6 @@ setxkbmap latam &
 compton --config /home/carlos/.config/compton/compton.conf &
 
 
-#----Enable transparency for Xterm:
-#devilspie &
-
-
 #----Set screen brightness to 5%:
 xbacklight -set 5
 
@@ -43,7 +39,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 #----Set fixed wallpaper:
-feh --bg-fill /home/carlos/Imágenes/Wallpapers/AgnosticNord.png &
+feh --bg-fill /home/carlos/Imágenes/Wallpapers/Nord\ Mountain.jpeg &
 
 #----Set nord palette for temrinal:
 #xrdb .Xresources &
