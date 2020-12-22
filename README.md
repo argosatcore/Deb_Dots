@@ -22,12 +22,16 @@ These dot files were started with a minimal Debian installation, but they should
 ## Stuff referenced by these configs
 All of which are `apt install`able:
 
+- `neovim`: text editor
 - `rxvt-unicode`: terminal emulator
 - `bspwm`: window manager
-- 'sxhkd': keybinfing program
-- 'rofi': application launcher, window switcher, commad executor and many more
-- 'tint2': panel
+- `sxhkd`: keybinfing daemon
+- `rofi`: application launcher, window switcher, commad executor and many more
+- `tint2`: panel
+- `thunar`: file manager
+- `dunst`: notification daemon
 - `compton`: compositing for window transparency
 - `tmux`: persistent SSH shell sessions
 - `feh`: set the desktop background
 - `i3lock`: screen locking
+
