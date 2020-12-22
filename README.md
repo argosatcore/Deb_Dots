@@ -45,7 +45,7 @@ All of which are `apt install`able:
 - `Super+z`: reload sxhkd
 
 ### Desktops
-- `Ctrl+[left or right arrow key]`: change desktops on an horizontal layout.
+- `Ctrl+[left arrow key, right arrow key]`: change desktops on a horizontal layout.
 - `Super+(1,2,3,4,5,67,8,9,0)`: go to a desginated desktop
 - `Super+Shift+(1,2,3,4,5,67,8,9,0)`: move an active application to a desginated desktop
 - `Super+Shift+x`: lock screen
