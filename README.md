@@ -11,7 +11,7 @@ At the kernel of my computing environment, there are two irreducible components:
 
   The design decisions implemented in these dot files, while at the time of writing this text have taken some distance from, were initially based on the work of [Protesilaos Stavrou](https://protesilaos.com/). His writings, as well as his videos on free and open source software, remain, in my opinion, an invaluable resource, both technically and philosophically, for those interested in examining that which, for better or worse, has become an inescapable aspect of contemporary life.
   
-These dot files were started with a minimal Debian installation, but they should work with any Debian installation or Debian-based distribution. Also, even though I use these dots on Debian, I've made an effort to keep them as distribution agnostic as possible, meaning they are very likely to work on other distributions. As of now, I've tried them succesfully on Arch Linux and Void Linux. Feel free to use them as a starting point for your own dot files.
+These dot files were started with a minimal Debian installation, but they should work with any Debian installation or Debian-based distribution. Also, even though I use these dots on Debian, I've made an effort to keep them as distribution agnostic as possible, meaning they are very likely to work on other distributions. As of now, I've succesfully been able to deploy them on Arch Linux and Void Linux. Feel free to use them as a starting point for your own dot files.
 
 The layout for this README.md was heavely influenced by that of [Spencer Tipping](https://github.com/spencertipping/dotfiles/blob/master/README.md).
  
