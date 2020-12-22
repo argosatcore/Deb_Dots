@@ -46,17 +46,25 @@ All of which are `apt install`able:
 - `Super+Shift+e`: exit bspwm session
 
 ### Workspaces
-- `Ctrl+[left arrow key, right arrow key]`: Move between workspaces in a horizontal layout.
+- `Ctrl+[left arrow key, right arrow key]`: Move to the next or previous workspace 
 - `Super+(1,2,3,4,5,67,8,9,0)`: go to a desginated workspace
 - `Super+Shift+(1,2,3,4,5,67,8,9,0)`: move an active application to a desginated workspace
 - `Super+Shift+x`: lock screen
 
 ### Windows
 - `Super+q`: close a window
+- `Super+Shift+q`: kill a window
 - `Super+f`: fullscreen
 - `Super+s`: floating
 - `Super+t`: tile
 - `Super+t`: pseudotile
+- `Super+m`: monocle layout
+- `Super+v`: hide window
+- `Super+n`: unhide window
+- `Super+r`: rotate windows clockwise
+- `Super+Shift+r`: rotate windows counterclockwise
+- `Super+(h,j,k,l)`: select an active window
+- `Super+Shift+(h,j,k,l)`: move window on a designated direction
 
 ### Running things
 - `Super+Space`: run a terminal
