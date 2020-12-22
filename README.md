@@ -35,3 +35,24 @@ All of which are `apt install`able:
 - `feh`: set the desktop background
 - `i3lock`: screen locking
 
+
+## (Some) Sxhkd keybindings
+
+### Desktops
+- `Ctrl+[left or right arrow key]`: change desktops on an horizontal layout.
+- `Super+Shift[ionm,]`: go to specific desktops
+- `Super+Shift+x`: lock screen
+- `Super+d`: show openbox menu
+
+### Windows
+- `Super+q`: close a window
+- `Super+f`: fullscreen
+- `Super+s`: floating
+- `Super+t`: tile
+- `Super+t`: pseudotile
+
+### Running things
+- `Super+Space`: run a terminal
+- `Super+i`: run firefox
+- `Super+a`: thunar
+- `Super+d`: rofi
