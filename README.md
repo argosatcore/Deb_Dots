@@ -46,7 +46,7 @@ All of which are `apt install`able:
 - `Super+Shift+e`: exit bspwm session
 
 ### Workspaces
-- `Ctrl+[left arrow key, right arrow key]`: move to the next or previous workspace 
+- `Ctrl+(left arrow key, right arrow key)`: move to the next or previous workspace 
 - `Super+(1,2,3,4,5,6,7,8,9,0)`: go to a desginated workspace
 - `Super+Shift+(1,2,3,4,5,6,7,8,9,0)`: move an active window to a desginated workspace
 - `Super+Shift+x`: lock screen
