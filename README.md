@@ -43,6 +43,7 @@ All of which are `apt install`able:
 ### BSPWM
 - `Super+Shift-r`: reload bspwm
 - `Super+z`: reload sxhkd
+- `Super+Shift-e`: exit bspwm session
 
 ### Workspaces
 - `Ctrl+[left arrow key, right arrow key]`: Move between workspaces in a horizontal layout.
