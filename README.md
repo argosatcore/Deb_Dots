@@ -27,7 +27,7 @@ All of which are `apt install`able:
 - `neovim`: text editor
 - `rxvt-unicode`: terminal emulator
 - `bspwm`: window manager
-- `sxhkd`: keybinfing daemon
+- `sxhkd`: keybinding daemon
 - `rofi`: application launcher, window switcher, commad executor and many more
 - `tint2`: panel
 - `thunar`: file manager
