@@ -10,7 +10,7 @@
 	URxvt.termName: rxvt-unicode-256color
 
 !! URxvt Appearance
-	URxvt.geometry: 	50x20
+	URxvt.geometry: 	86x22
 	URxvt.internalBorder: 	11 
 	URxvt.cursorBlink: 	true
 	URxvt.cursorUnderline: 	false
@@ -21,36 +21,69 @@
 	URxvt.intensity.Styles:	false
 
 !! Color palette Gruvbox 
-	*.foreground:  		#ebdbb2
+!!	*.foreground:  		#ebdbb2
 !!	*.background:  		#1d2021
-	*.cursorColor: 		#ebdbb2
-	*.fading:		35
-	*.highlightColor:	#fb4934
+!!	*.cursorColor: 		#ebdbb2
+!!	*.fading:		35
+!!	*.highlightColor:	#fb4934
+!!
+!!	! black
+!!		*.color0:      	#282828
+!!		*.color8:      	#928374
+!!	! red
+!!		*.color1:      	#cc241d
+!!		*.color9:      	#fb4934
+!!	! green
+!!		*.color2:      	#98971a
+!!		*.color10:     	#b8bb26
+!!	! yellow
+!!		*.color3:      	#d79921
+!!		*.color11:     	#fabd2f
+!!	! blue
+!!		*.color4:      	#458588
+!!		*.color12:     	#83a598
+!!	! magenta
+!!		*.color5:     	#b16286
+!!		*.color13:     	#d3869b
+!!	! cyan
+!!		*.color6:    	#689d6a
+!!		*.color14:    	#8ec07c
+!!	! white
+!!		*.color7:     	#a89984
+!!		*.color15:    	#ebdbb2
+
+!! Color palette Nord
+	*.foreground:  		#D8DEE9
+	*.background:  		#2E3440
+	*.cursorColor: 		#D8DEE9
+	*.highlightColor:	#8fbcbb
+	*fading: 35
 
 	! black
-		*.color0:      	#282828
-		*.color8:      	#928374
+  		*.color0:      	#3B4252
+   		*.color8:      	#4C566A
 	! red
-		*.color1:      	#cc241d
-		*.color9:      	#fb4934
+		*.color1:      	#BF616A
+		*.color9:      	#BF616A
 	! green
-		*.color2:      	#98971a
-		*.color10:     	#b8bb26
+		*.color2:      	#A3BE8C
+		*.color10:     	#A3BE8C
 	! yellow
-		*.color3:      	#d79921
-		*.color11:     	#fabd2f
+		*.color3:      	#EBCB8B
+		*.color11:     	#EBCB8B
 	! blue
-		*.color4:      	#458588
-		*.color12:     	#83a598
+		*.color4:      	#81A1C1
+		*.color12:     	#81A1C1
 	! magenta
-		*.color5:     	#b16286
-		*.color13:     	#d3869b
+		*.color5:     	#B48EAD
+		*.color13:     	#ECEFF4
 	! cyan
-		*.color6:    	#689d6a
-		*.color14:    	#8ec07c
+		*.color6:    	#88C0D0
+		*.color14:    	#8FBCBB
 	! white
-		*.color7:     	#a89984
-		*.color15:    	#ebdbb2
+		*.color7:     	#E5E9F0
+		*.color15:    	#ECEFF4
+
 
 !Transparency
 	URxvt*transparent:      true 
