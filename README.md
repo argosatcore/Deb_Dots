@@ -11,7 +11,7 @@ At the kernel of my computing environment, there are two irreducible components:
 
   The design decisions implemented in these dot files, while at the time of writing this text have taken some distance from, were initially based on the work of Protesilaos Stavrou. His writings, as well as his videos on free and open source software, remain, in my opinion, an invaluable resource, both technically and philosophically, for those interested in examining that which, for better or worse, has become an inescapable aspect of contemporary life. To learn more about his work, visit https://protesilaos.com/
   
-These dot files were started on a minimal Debian installation, but should work with any Debian installation or Debian-based distribution. Feel free to take them as a starting point for your own dot files.
+These dot files were started with a minimal Debian installation, but they should work with any Debian installation or Debian-based distribution. Feel free to take them as a starting point for your own dot files.
  
  **BSPWM Layout** | **Rofi Config**
 :-------: | :-------:
