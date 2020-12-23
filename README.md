@@ -15,12 +15,18 @@ These dot files were started with a minimal Debian installation, but they should
 
 The layout for this README.md was heavely influenced by that of [Spencer Tipping](https://github.com/spencertipping/dotfiles).
  
- **BSPWM Layout** | **Rofi Config**
+ **bspwm Layout** | **Rofi Config**
 :-------: | :-------:
 ![Captura de pantalla_2020-12-20_14-40-08](https://user-images.githubusercontent.com/64110504/102723982-b4920a80-42d1-11eb-82e5-f41e6cd6619f.png) | ![Captura de pantalla_2020-12-20_14-18-32](https://user-images.githubusercontent.com/64110504/102723968-9fb57700-42d1-11eb-95da-cdc61a88d3b9.png)
  **Shell Config** | **.Xdefaults Config**
 ![Captura de pantalla_2020-12-20_14-41-48](https://user-images.githubusercontent.com/64110504/102724008-d7242380-42d1-11eb-9b0d-145b00b0f997.png) | ![Captura de pantalla_2020-12-20_14-40-44](https://user-images.githubusercontent.com/64110504/102723996-c96e9e00-42d1-11eb-9319-7c51377a2416.png)
 
+## Unexpedted xtra features you get right out of the gate:
+- `Bash's vim mode`: When in _normal_ mode, you will see a "+" at the beginning of your prompt. When in _insert_ mode you will see a "-" at the beginning of the bash prompt. 
+- `Caps Lock key is swapped with Esc key`: Caps Lock has too much of a good position for the function it provides. If you are a vim user (or someone that just uses the crap out of the Esc key), you how handy this is.
+- `Mouse is set for left handed people`: Because I'm a lefty. That's it. If you happen to be part of the 90% of the rest of the population, just delete the  ".Mouseconfig".  
+- `Change directories without the need to type the "cd" command`: Just type the name of the directory to move into it. 
+- `Bash completion is no longer case sensitive`: No more wasted time pressing keys to get capital letters.
 ## Stuff referenced by these configs
 All of which are `apt install`able:
 
