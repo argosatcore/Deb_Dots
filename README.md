@@ -52,15 +52,15 @@ All of which are `apt install`able:
 - `Super+Shift+x`: lock screen
 
 ### Windows
-- `Super+q`: close a window
-- `Super+Shift+q`: kill a window
-- `Super+f`: fullscreen
-- `Super+s`: floating
-- `Super+t`: tile
-- `Super+Shift+t`: pseudotile
+- `Super+q`: close
+- `Super+Shift+q`: kill 
+- `Super+f`: fullscreen 
+- `Super+s`: float 
+- `Super+t`: tile 
+- `Super+Shift+t`: pseudotile 
 - `Super+m`: monocle layout
-- `Super+v`: hide window
-- `Super+n`: unhide window
+- `Super+v`: hide 
+- `Super+n`: unhide 
 - `Super+r`: rotate windows clockwise
 - `Super+Shift+r`: rotate windows counterclockwise
 - `Super+(h,j,k,l)`: select an active window
