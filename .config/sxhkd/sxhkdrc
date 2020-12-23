@@ -45,6 +45,10 @@ super + a
 super + i
 	firefox
 
+# Fullsreen/Region Screenshot:
+Print + {_,shift}
+	{xfce4-screenshooter -f -d 2, xfce4-screenshooter -r}
+
 
 
 
@@ -91,6 +95,8 @@ super + v
 #Unhide hidden windows:
 super + n
 	bspc node $(bspc query -N -n .hidden -d focused) -g hidden=off
+
+
 
 
 #----State/flags----------------------------------------------------------------

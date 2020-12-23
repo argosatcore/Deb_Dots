@@ -13,12 +13,12 @@
     tempus-bg-main:        #2e3440BF;
     tempus-fg-alt:         #949d9fFF;
     tempus-fg-main:        #aeadafFF;
-    tempus-red:            #d2813dBF;
-    tempus-green:          #8c9e3dBF;
-    tempus-yellow:         #b1942bBF;
-    tempus-blue:           #6e9cb0BF;
-    tempus-magenta:        #b58d88BF;
-    tempus-cyan:           #6da280BF;
+    tempus-red:            #BF616ABF;
+    tempus-green:          #A3BE6CBF;
+    tempus-yellow:         #EBCB8BBF;
+    tempus-blue:           #81A1C1BF;
+    tempus-magenta:        #B48EADBF;
+    tempus-cyan:           #88C0D0BF;
     tempus-red-bright:     #d0913dBF;
     tempus-green-bright:   #96a42dBF;
     tempus-yellow-bright:  #a8a030BF;
