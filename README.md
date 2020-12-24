@@ -13,7 +13,9 @@ At the kernel of my computing environment, there are two irreducible components:
  
  The layout for this README.md was heavely influenced by that of [Spencer Tipping](https://github.com/spencertipping/dotfiles). Also, he (along with some contributors) created an amazing tool for data processing pipelines in bash called [**_`ni`_**](https://github.com/spencertipping/ni). You should definetively check it out.
  
-These dot files were started with a minimal Debian installation, but they should work with any Debian installation or Debian-based distribution. Also, although I use these dots on Debian, I've made an effort to keep them as distribution agnostic as possible, meaning they are very likely to work on other distributions; they have been succesfully deployed on [Arch Linux](https://archlinux.org/) (btw) and [Void Linux](https://voidlinux.org/). If you find any of this useful, feel free to grab any part or all of it.
+These dot files were started with a minimal Debian installation, but they should work with any Debian installation or Debian-based distribution. Also, although I use these dots on Debian, I've made an effort to keep them as distribution agnostic as possible, meaning they are very likely to work on other distributions; they have been succesfully deployed on [Arch Linux](https://archlinux.org/) (btw) and [Void Linux](https://voidlinux.org/). 
+
+If you find any of this useful, feel free to grab any part or all of it.
  
  **bspwm Layout** | **Rofi Config**
 :-------: | :-------:
