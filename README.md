@@ -26,7 +26,7 @@ The layout for this README.md was heavely influenced by that of [Spencer Tipping
 - **Caps Lock key is swapped with Esc key:** Caps Lock has way too much of a good position for the function it provides. If you are a vim user (or someone that just uses the crap out of the Esc key), you know how handy this is. If you don't want this, just delete the ".speedswapper" file.
 - **Mouse set for left handed people:** Because I'm a lefty. That's it. If you happen to be part of the other 90% of the human population, just delete the  ".mouseconfig" file.  
 - **Change directories without using the "cd" command:** Just type the name of the directory to move into it. 
-- **Bash completion is no longer case sensitive:** No more wasted time pressing keys to get capital letters.
+- **Bash completion is no longer case sensitive:** No more wasted time pressing keys to get upper case letters.
 
 ## Stuff referenced by these configs
 All of which are `apt install`able:
@@ -51,12 +51,12 @@ All of which are `apt install`able:
 - `Super+Shift+r`: reload bspwm
 - `Super+z`: reload sxhkd
 - `Super+Shift+e`: exit bspwm session
+- `Super+Shift+x`: lock screen
 
 ### Workspaces
 - `Ctrl+(left arrow key, right arrow key)`: move to the next or previous workspace 
 - `Super+(1,2,3,4,5,6,7,8,9,0)`: go to a desginated workspace
 - `Super+Shift+(1,2,3,4,5,6,7,8,9,0)`: move an active window to a desginated workspace
-- `Super+Shift+x`: lock screen
 
 ### Windows
 - `Super+q`: close
