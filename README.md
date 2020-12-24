@@ -11,7 +11,7 @@ At the kernel of my computing environment, there are two irreducible components:
 
   The design decisions implemented in these dot files, while at the time of writing this text have taken some distance from, were initially based on the work of [Protesilaos Stavrou](https://protesilaos.com/). His writings, as well as his videos on free and open source software, remain, in my opinion, an invaluable resource, both technically and philosophically, for those interested in examining that which, for better or worse, has become an inescapable aspect of contemporary life.
  
- The layout for this README.md was heavely influenced by that of [Spencer Tipping](https://github.com/spencertipping/dotfiles). He has created an amazing tool for data processing pipelines in bash called [`**_ni_**`](https://github.com/spencertipping/ni). You should definetively check it out.
+ The layout for this README.md was heavely influenced by that of [Spencer Tipping](https://github.com/spencertipping/dotfiles). He has created an amazing tool for data processing pipelines in bash called [**_`ni`_**](https://github.com/spencertipping/ni). You should definetively check it out.
  
 These dot files were started with a minimal Debian installation, but they should work with any Debian installation or Debian-based distribution. Also, although I use these dots on Debian, I've made an effort to keep them as distribution agnostic as possible, meaning they are very likely to work on other distributions; they succesfully deployed on [Arch Linux](https://archlinux.org/) (btw) and [Void Linux](https://voidlinux.org/). If you find any of this useful, feel free to grab any part or all of it.
  
