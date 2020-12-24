@@ -20,4 +20,5 @@ image/x-xcf=org.gimp.GIMP.desktop;
 application/zip=xarchiver.desktop;
 application/vnd.oasis.opendocument.presentation=org.libreoffice.LibreOffice.impress.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=org.libreoffice.LibreOffice.writer.desktop;
-text/markdown=calibre-gui.desktop;
+text/markdown=nvim.desktop;calibre-gui.desktop;
+application/x-shellscript=vim.desktop;

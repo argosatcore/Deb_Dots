@@ -6,7 +6,7 @@
 "                                                                  
 
 
-" Estimado Lector: Este archivo de configuración para el editor de texto conocido como Vim es liberado al dominio público para ser modificado según su conveniencia. Aunque me adjudiqué la autoría de este documento, debo confesar que esto es, en parte, una mentira. Si bien el acomodo, la inclusión -y la exclusión- de ciertos parámetros de configuración es artificio mío, el conocimiento necesario para lograr armar este documento fue tomado de otros escritores que, ahora como yo, decidieron, de manera desinteresada, el poner a la disposición de otros parte del bagaje acumulado en el tiempo en relación con este singular programa. Espero que les sea tan provechoso como lo ha sido conmigo, sino es que más. 
+" Lector: Este archivo de configuración para el editor de texto conocido como Vim es liberado al dominio público para ser modificado según su conveniencia. Aunque me adjudiqué la autoría de este documento, debo confesar que esto es, en parte, una mentira. Si bien el acomodo, la inclusión -y la exclusión- de ciertos parámetros de configuración es artificio mío, el conocimiento necesario para lograr armar este documento fue tomado de otros escritores que, ahora como yo, decidieron, de manera desinteresada, el poner a la disposición de otros parte del bagaje acumulado en el tiempo en relación con este singular programa. Espero que les sea tan provechoso como lo ha sido conmigo, sino es que más. 
 
 " -------Atajos del teclado:
 
@@ -81,22 +81,22 @@
 " Esquema de color, para escoger un tema remueva las comillas de citación del tema a escoger.
 	
 	"Nord 
-	"	let g:nord_bold = '1'
-	"	let g:nord_italic = '1'
-	"	let g:nord_underline = '1'
-	"	let g:nord_undercurl = '1'
-	"	let g:nord_termcolor = '256'
-	"	colorscheme nord 
+		let g:nord_bold = '1'
+		let g:nord_italic = '1'
+		let g:nord_underline = '1'
+		let g:nord_undercurl = '1'
+		let g:nord_termcolor = '256'
+		colorscheme nord 
 
 
 	" Gruvbox
-		let g:gruvbox_contrast_dark = 'hard'
-		let g:gruvbox_bold = '1'
-		let g:gruvbox_italic = '1'
-		let g:gruvbox_underline = '1'
-		let g:gruvbox_undercurl = '1'
-		let g:gruvbox_termcolor = '256'
-		colorscheme gruvbox 
+"		let g:gruvbox_contrast_dark = 'hard'
+"		let g:gruvbox_bold = '1'
+"		let g:gruvbox_italic = '1'
+"		let g:gruvbox_underline = '1'
+"		let g:gruvbox_undercurl = '1'
+"		let g:gruvbox_termcolor = '256'
+"		colorscheme gruvbox 
 
 " Cambiar esquema de color
 "	map <F1> :colorscheme gruvbox<CR>

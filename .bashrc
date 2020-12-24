@@ -16,7 +16,7 @@
 	export PAGER="less"
 	export MANPAGER='nvim +Man!'
 	export BROWSER="firefox"
-	export TERM="xterm-256color"
+#	export TERM="rxvt-unicode-256color"
 	bind 'set completion-ignore-case on'
 	shopt -s cdspell
 	shopt -s autocd
