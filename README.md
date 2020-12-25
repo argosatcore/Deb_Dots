@@ -59,7 +59,7 @@ All of which are `apt install`able:
 - `Super+Shift+x`: lock screen
 
 ### Workspaces
-- `Ctrl+(left arrow key, right arrow key)`: move to the next or previous workspace 
+- `Ctrl+(left arrow key, right arrow key)`: move to the previous or next workspace 
 - `Super+(1,2,3,4,5,6,7,8,9,0)`: go to a desginated workspace
 - `Super+Shift+(1,2,3,4,5,6,7,8,9,0)`: move an active window to a desginated workspace
 
@@ -75,7 +75,7 @@ All of which are `apt install`able:
 - `Super+n`: unhide 
 - `Super+r`: rotate windows clockwise
 - `Super+Shift+r`: rotate windows counterclockwise
-- `Super+(h,j,k,l)`: select an active window
+- `Super+(h,j,k,l)`: change the selection of a window in a designated direction
 - `Super+Shift+(h,j,k,l)`: move window in a designated direction
 
 ### Running things
