@@ -29,6 +29,7 @@ If you find any of this useful, feel free to grab any part or all of it.
 - **Mouse set for left handed people:** Because I'm a lefty. That's it. If you happen to be part of the other 90% of the human population, just delete the  ".mouseconfig" file.  
 - **Change directories without using the "cd" command:** Just type the name of the directory to move into it. 
 - **Bash completion is no longer case sensitive:** No more wasted time pressing keys to get upper case letters.
+- **Combined less and neovim as a pager for man pages:** Because man pages deserve better.
 
 ## Stuff referenced by these configs
 All of which are `apt install`able:
