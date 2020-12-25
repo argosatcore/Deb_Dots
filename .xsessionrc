@@ -35,11 +35,11 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 #----Set random wallpapers:
-#feh --bg-fill --randomize /home/carlos/Imágenes/Wallpapers/ &
+#feh --bg-fill --randomize /home/carlos/Pictures/Wallpapers/ &
 
 
 #----Set fixed wallpaper:
-feh --bg-fill /home/carlos/Imágenes/Wallpapers/Nord\ Mountain.jpeg &
+feh --bg-fill /home/carlos/Pictures/Wallpapers/Nord\ Mountain.jpeg &
 
 #----Set nord palette for temrinal:
 #xrdb .Xresources &
