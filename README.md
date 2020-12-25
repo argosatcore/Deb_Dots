@@ -25,7 +25,7 @@ If you find any of this useful, feel free to grab any part or all of it.
 
 ## Unexpected features you get right out of the gate:
 - **Bash's vim mode:** When in _normal_ mode, you will see a "-" at the beginning of your prompt. When in _insert_ mode, you will see a "+" at the beginning of the prompt. 
-- **Caps Lock key is swapped with Esc key:** Caps Lock has way too much of a good position for the function it provides. If you are a vim user (or someone that just uses the crap out of the Esc key), you know how handy this is. If you don't want this, just delete the ".speedswapper" file.
+- **Caps Lock key is swapped with Esc key:** Caps Lock has way too much of a good position in they keyboard for the function it provides. If you are a vim user (or someone that just uses the crap out of the Esc key), you know how handy this is. If you don't want this, just delete the ".speedswapper" file.
 - **Mouse set for left handed people:** Because I'm a lefty. That's it. If you happen to be part of the other 90% of the human population, just delete the  ".mouseconfig" file.  
 - **Change directories without using the "cd" command:** Just type the name of the directory to move into it. 
 - **Bash completion is no longer case sensitive:** No more wasted time pressing keys to get upper case letters.
