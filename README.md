@@ -70,7 +70,7 @@ All of which are `apt install`able:
 - `Super+s`: float 
 - `Super+t`: tile 
 - `Super+Shift+t`: pseudotile 
-- `Super+m`: monocle layout
+- `Super+m`: monocle 
 - `Super+v`: hide 
 - `Super+n`: unhide 
 - `Super+r`: rotate windows clockwise
