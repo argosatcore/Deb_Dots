@@ -50,7 +50,7 @@ All of which are `apt install`able:
 - `i3lock`: screen locking
 
 
-## (Some) Sxhkd keybindings
+## (Some) sxhkd keybindings
 
 ### bspwm
 - `Super+Shift+r`: reload bspwm
