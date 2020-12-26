@@ -4,8 +4,7 @@
 ⢿⡄⠘⠷⠚⠋⠀  
 ⠈⠳⣄⠀⠀⠀
    
-     
-
+---     
 
 At the kernel of my computing environment, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/), as a solid foundation to build on, and the [Binary Space Partition Window Manager (bspwm)](https://github.com/baskerville/bspwm), as one of the most extensible, flexible and, at the same time, minimal frameworks to manage the layout of my computing space.
 
