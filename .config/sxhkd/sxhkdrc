@@ -39,7 +39,7 @@ super + Tab
 
 # File manager:
 super + a
-	nautilus
+	nautilus -w
 
 # Web Browser:
 super + i

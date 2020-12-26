@@ -16,7 +16,7 @@
 	export PAGER="less"
 	export MANPAGER='nvim +Man!'
 	export BROWSER="firefox"
-#	export TERM="rxvt-unicode-256color"
+	export TERM="rxvt-unicode-256color"
 	bind 'set completion-ignore-case on'
 	shopt -s cdspell
 	shopt -s autocd
@@ -108,8 +108,7 @@
 		PS1+='\[\033[01;97m\]['; 
 		PS1+='\[\033[01;96m\]\w';
 		PS1+='\[\033[01;97m\]]';
-		PS1+='\[\033[00;91m\]⨕ ';
-		PS1+='\[\033[00;00m\]';
+		PS1+='\[\033[00;00m\] ';
 	
 	else
 	    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
