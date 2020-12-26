@@ -58,4 +58,4 @@ bspc rule -a Galculator state=floating
 bspc rule -a Arandr state=floating
 bspc rule -a Pavucontrol state=floating rectangle=100x25
 bspc rule -a Nm-connection-editor state=floating rectangle=80x10
-bspc rule -a Thunar state=floating rectangle=800x600
+bspc rule -a Nautilus state=floating rectangle=800x600

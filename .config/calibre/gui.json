@@ -1,7 +1,7 @@
 {
   "quick_start_guide_added": true, 
   "library_usage_stats": {
-    "/home/carlos/Calibre Library": 2
+    "/home/carlos/Calibre Library": 1
   }, 
   "book_details_splitter_horizontal_state": [
     true, 
@@ -9,7 +9,7 @@
   ], 
   "book_list_pin_splitter_state": {
     "__class__": "bytearray", 
-    "__value__": "AAAA/wAAAAEAAAACAAABAAAAAEYA/////wEAAAABAA=="
+    "__value__": "AAAA/wAAAAEAAAACAAABAP////8A/////wEAAAABAA=="
   }, 
   "grid view visible": false, 
   "search bar visible": true, 
@@ -18,10 +18,6 @@
     false, 
     300
   ], 
-  "duplicates-question-dialog-geometry": {
-    "__class__": "bytearray", 
-    "__value__": "AdnQywACAAAAAAFSAAAAwQAABAIAAAI9AAABUwAAAMIAAAQBAAACPAAAAAAAAAAABVY="
-  }, 
   "tag_browser_splitter_horizontal_state": [
     true, 
     200

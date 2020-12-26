@@ -10,7 +10,7 @@ super + shift + r
 
 # Screenlock:
 super + {shift + x}
-	i3lock -i /home/carlos/Imágenes/Wallpapers/debian_dark_blue.png
+	i3lock -i /home/carlos/Pictures/Wallpapers/debian_dark_blue.png
 
 # Quit bspwm normally:
 super + shift + e
@@ -18,7 +18,7 @@ super + shift + e
 
 # Change Wallpaper:
 super + ctrl + b 
-	feh --bg-fill --randomize /home/carlos/Imágenes/Wallpapers/ 	
+	feh --bg-fill --randomize /home/carlos/Pictures/Wallpapers/ 	
 
 
 
@@ -39,7 +39,7 @@ super + Tab
 
 # File manager:
 super + a
-	thunar
+	nautilus
 
 # Web Browser:
 super + i
@@ -47,7 +47,7 @@ super + i
 
 # Fullsreen/Region Screenshot:
 Print + {_,shift}
-	{xfce4-screenshooter -f -d 2, xfce4-screenshooter -r}
+	{gnome-screenshot, gnome-screenshot -a}
 
 
 

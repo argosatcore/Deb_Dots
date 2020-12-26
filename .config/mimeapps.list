@@ -1,24 +1,11 @@
-[Default Applications]
-text/plain=nvim.desktop
-image/png=feh.desktop
-image/jpeg=feh.desktop
-application/pdf=org.gnome.Evince.desktop
-image/svg+xml=org.inkscape.Inkscape.desktop
-application/epub+zip=calibre-ebook-viewer.desktop
-
 [Added Associations]
-text/plain=nvim.desktop;
-image/png=feh.desktop;
-image/jpeg=feh.desktop;
-application/pdf=org.gnome.Evince.desktop;
-image/svg+xml=org.inkscape.Inkscape.desktop;
-application/epub+zip=org.gnome.Evince.desktop;org.pwmt.zathura.desktop;calibre-ebook-viewer.desktop;
-application/vnd.oasis.opendocument.text=org.libreoffice.LibreOffice.writer.desktop;
+text/x-apt-sources-list=org.gnome.gedit.desktop;
+application/x-trash=org.gnome.gedit.desktop;
 video/x-matroska=vlc.desktop;
-video/mp4=vlc.desktop;
-image/x-xcf=org.gimp.GIMP.desktop;
-application/zip=xarchiver.desktop;
-application/vnd.oasis.opendocument.presentation=org.libreoffice.LibreOffice.impress.desktop;
-application/vnd.openxmlformats-officedocument.wordprocessingml.document=org.libreoffice.LibreOffice.writer.desktop;
-text/markdown=nvim.desktop;calibre-gui.desktop;
-application/x-shellscript=vim.desktop;
+image/jpeg=feh.desktop;
+image/png=feh.desktop;
+text/plain=nvim.desktop;
+text/markdown=nvim.desktop;org.gnome.gedit.desktop;
+
+[Default Applications]
+image/png=feh.desktop
