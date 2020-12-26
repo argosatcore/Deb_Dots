@@ -4,8 +4,7 @@
 ⢿⡄⠘⠷⠚⠋⠀  
 ⠈⠳⣄⠀⠀⠀
    
-     
-
+---     
 
 At the kernel of my computing environment, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/), as a solid foundation to build on, and the [Binary Space Partition Window Manager (bspwm)](https://github.com/baskerville/bspwm), as one of the most extensible, flexible and, at the same time, minimal frameworks to manage the layout of my computing space.
 
@@ -25,7 +24,9 @@ If you find any of this useful, feel free to grab any part or all of it.
  **Shell Config** | **.Xdefaults Config**
 ![Captura de pantalla_2020-12-20_14-41-48](https://user-images.githubusercontent.com/64110504/102724008-d7242380-42d1-11eb-9b0d-145b00b0f997.png) | ![Captura de pantalla_2020-12-20_14-40-44](https://user-images.githubusercontent.com/64110504/102723996-c96e9e00-42d1-11eb-9319-7c51377a2416.png)
 
-## Unexpected features you get right out of the gate:
+---
+
+## Unexpected features you get right out of the gate
 - **Bash's vim mode:** When in _normal_ mode, you will see a "-" at the beginning of your prompt. When in _insert_ mode, you will see a "+" at the beginning of the prompt. 
 - **Caps Lock key is swapped with Esc key:** Caps Lock has way too much of a good position in they keyboard for the function it provides. If you are a vim user (or someone that just uses the crap out of the Esc key), you know how handy this is. If you don't want this, just delete the ".speedswapper" file.
 - **Mouse set for left handed people:** Because I'm a lefty. That's it. If you happen to be part of the other 90% of the human population, just delete the  ".mouseconfig" file.  
