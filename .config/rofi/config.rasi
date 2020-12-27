@@ -1,15 +1,15 @@
 configuration {
 	modi: "run,drun,window";
-	width: 45;
-	lines: 5;
-	columns: 1;
-	font: "FontAwesome 12";
+	width: 50;
+	lines: 3;
+	columns: 2;
+	font: "FontAwesome 13";
 	location: 2;
 	yoffset: 200;
 	xoffset: 0;
 	fixed-num-lines: false;
 	show-icons: true;
-	drun-icon-theme: "korla";
+	drun-icon-theme: "kora";
 	terminal: "urxvt";
 /*	run-command: "{cmd}";*/
 /*	run-list-command: "";*/
@@ -35,7 +35,7 @@ configuration {
 	window-format: "{w:0}	{n:0}	{t:0}";
 	click-to-exit: true;
 	show-match: true;
-    theme: "~/.config/rofi/themes/tempus_classic.rasi";
+    theme: "~/.config/rofi/themes/tempus_nord.rasi";
 	max-history-size: 25;
 	combi-hide-mode-prefix: true;
 /*	pid: "/run/user/1000/rofi.pid";*/

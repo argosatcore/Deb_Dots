@@ -33,11 +33,11 @@ fi
 
 
 #----Use xfsettings to apply the nord theme across all applications, be them Debian native packages or flatpaks.
-if [ -x /usr/bin/flatpak ]; then
-	if [ -x /usr/bin/xfsettingsd ]; then
-		xfsettingsd
-	fi
-fi
+#if [ -x /usr/bin/flatpak ]; then
+#	if [ -x /usr/bin/xfsettingsd ]; then
+#		xfsettingsd
+#	fi
+#fi
 
 
 #----BSPWM's tiling rules:
