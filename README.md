@@ -20,9 +20,10 @@ If you find any of this useful, feel free to grab any part or all of it.
  
  **bspwm Layout** | **Rofi Config**
 :-------: | :-------:
-![Captura de pantalla_2020-12-20_14-40-08](https://user-images.githubusercontent.com/64110504/102723982-b4920a80-42d1-11eb-82e5-f41e6cd6619f.png) | ![Captura de pantalla_2020-12-20_14-18-32](https://user-images.githubusercontent.com/64110504/102723968-9fb57700-42d1-11eb-95da-cdc61a88d3b9.png)
+![Screenshot from 2020-12-26 19-46-45](https://user-images.githubusercontent.com/64110504/103162269-1d86f000-47b4-11eb-995c-228e557cd9ed.png) | ![Screenshot from 2020-12-26 19-45-51](https://user-images.githubusercontent.com/64110504/103162278-31325680-47b4-11eb-914f-7d8f9ff8dde3.png)
  **Shell Config** | **.Xdefaults Config**
-![Captura de pantalla_2020-12-20_14-41-48](https://user-images.githubusercontent.com/64110504/102724008-d7242380-42d1-11eb-9b0d-145b00b0f997.png) | ![Captura de pantalla_2020-12-20_14-40-44](https://user-images.githubusercontent.com/64110504/102723996-c96e9e00-42d1-11eb-9319-7c51377a2416.png)
+![Captura de pantalla_2020-12-20_14-41-48](https://user-images.githubusercontent.com/64110504/102724008-d7242380-42d1-11eb-9b0d-145b00b0f997.png) | 
+![Screenshot from 2020-12-26 19-47-26](https://user-images.githubusercontent.com/64110504/103162289-47401700-47b4-11eb-8d4e-5b34aae40dab.png)
 
 ---
 
