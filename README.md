@@ -8,7 +8,7 @@
 
 At the kernel of my computing environment, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/), as a solid foundation to build on, and the [Binary Space Partition Window Manager (bspwm)](https://github.com/baskerville/bspwm), as one of the most extensible, flexible and, at the same time, minimal frameworks to manage the layout of my computing space.
 
-  The design decisions implemented in these dot files, while at the time of writing this text have taken some distance from, were initially based on the work of [Protesilaos Stavrou](https://protesilaos.com/). His writings, as well as his videos on free and open source software, remain, in my opinion, an invaluable resource, both technically and philosophically, for those interested in examining that which, for better or worse, has become an inescapable aspect of contemporary life.
+  The design decisions implemented in these dot files, while at the time of writing this text have taken some distance from, were initially based on the work of [Protesilaos Stavrou](https://protesilaos.com/). His writings, as well as his videos on free and open source software may be of interest for those interested in examining, both technically and philosophically, that which, for better or worse, has become an inescapable aspect of contemporary life.
  
  The layout for this README.md was heavely influenced by that of [Spencer Tipping](https://github.com/spencertipping/dotfiles). Also, he (along with some contributors) created an amazing tool for data processing pipelines in bash called [**_`ni`_**](https://github.com/spencertipping/ni). You should definetively check it out.
  
