@@ -21,7 +21,6 @@ If you find any of this useful, feel free to grab any part or all of it.
  **bspwm Default Layout** | **Tiled + Floating Windows Layout**
 :-------: | :-------:
 ![Screenshot from 2020-12-30 18-31-39](https://user-images.githubusercontent.com/64110504/103388321-073ba580-4ace-11eb-8c66-3d6a243069ed.png) | ![Screenshot from 2020-12-30 16-24-02](https://user-images.githubusercontent.com/64110504/103388297-e70be680-4acd-11eb-93c7-a849977355b9.png)
-
  **Neofetch** | **.Xdefaults Config**
 ![Screenshot from 2020-12-30 18-31-52](https://user-images.githubusercontent.com/64110504/103388275-c80d5480-4acd-11eb-9790-690a570ea734.png) | ![Screenshot from 2020-12-30 18-34-15](https://user-images.githubusercontent.com/64110504/103388266-b88e0b80-4acd-11eb-8d9e-f89fee9f7d1c.png)
 
