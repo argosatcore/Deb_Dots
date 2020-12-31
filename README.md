@@ -20,9 +20,10 @@ If you find any of this useful, feel free to grab any part or all of it.
  
  **bspwm Default Layout** | **Tiled + Floating Windows Layout**
 :-------: | :-------:
-![Screenshot from 2020-12-26 19-46-45](https://user-images.githubusercontent.com/64110504/103162269-1d86f000-47b4-11eb-995c-228e557cd9ed.png) | ![Screenshot from 2020-12-26 19-45-51](https://user-images.githubusercontent.com/64110504/103162278-31325680-47b4-11eb-914f-7d8f9ff8dde3.png)
+![Screenshot from 2020-12-30 18-31-39](https://user-images.githubusercontent.com/64110504/103388321-073ba580-4ace-11eb-8c66-3d6a243069ed.png) | ![Screenshot from 2020-12-30 16-24-02](https://user-images.githubusercontent.com/64110504/103388297-e70be680-4acd-11eb-93c7-a849977355b9.png)
+
  **Neofetch** | **.Xdefaults Config**
-![Screenshot from 2020-12-26 20-21-12](https://user-images.githubusercontent.com/64110504/103162580-fa5e3f80-47b7-11eb-84e8-f7fa624e4a18.png) | ![Screenshot from 2020-12-27 01-55-39](https://user-images.githubusercontent.com/64110504/103166361-db2ad680-47e6-11eb-8841-646854fb36bf.png)
+![Screenshot from 2020-12-30 18-31-52](https://user-images.githubusercontent.com/64110504/103388275-c80d5480-4acd-11eb-9790-690a570ea734.png) | ![Screenshot from 2020-12-30 18-34-15](https://user-images.githubusercontent.com/64110504/103388266-b88e0b80-4acd-11eb-8d9e-f89fee9f7d1c.png)
 
 ---
 
