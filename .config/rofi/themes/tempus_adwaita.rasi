@@ -33,16 +33,20 @@
     background-color: @tempus-bg-main;
     border:           0px 0 0;
     border-color:     @tempus-bg-alt;
+    border-radius:    12px;
     padding:          0px;
 }
 #mainbox {
     border:  0;
-    padding: 10;
+    padding: 20;
+    background-color: @tempus-bg-main;
     border-color: @tempus-fg-alt;
+    border-radius:    12px;
 }
 #message {
     border:       2px solid 0px 0px;
     border-color: @tempus-fg-alt;
+    border-radius:    12px;
     padding:      1px ;
 }
 #textbox {
@@ -52,62 +56,75 @@
     fixed-height: 0;
     border:       0px solid 0px 0px;
     border-color: @tempus-fg-alt;
-    spacing:      0px;
+    spacing:      10px;
     scrollbar:    false;
     padding:      2px 0px 0px;
 }
 #element {
     border: 0;
-    padding: 0px;
+    padding: 4px;
+
 }
 #element.normal.normal {
     background-color: @tempus-bg-main;
     text-color:       @tempus-fg-alt;
+    border-radius:    12px;
 }
 #element.normal.urgent {
     background-color: @tempus-red;
     text-color:       @tempus-bg-alt;
+    border-radius:    12px;
 }
 #element.normal.active {
     background-color: @tempus-blue;
     text-color:       @tempus-bg-alt;
+    border-radius:    12px;
 }
 #element.selected.normal {
     background-color: @tempus-fg-alt;
     text-color:       @tempus-bg-alt;
+    border-radius:    12px;
 }
 #element.selected.urgent {
     background-color: @tempus-red-bright;
     text-color:       @tempus-bg-main;
+    border-radius:    12px;
 }
 #element.selected.active {
     background-color: @tempus-blue-bright;
     text-color:       @tempus-bg-main;
+    border-radius:    12px;
 }
 #element.alternate.normal {
     background-color: @tempus-bg-main;
     text-color:       @tempus-fg-alt;
+    border-radius:    12px;
 }
 #element.alternate.urgent {
     background-color: @tempus-red-bright;
     text-color:       @tempus-bg-alt;
+    border-radius:    12px;
 }
 #element alternate.active {
     background-color: @tempus-blue-bright;
     text-color:       @tempus-bg-alt;
+    border-radius:    12px;
 }
 #sidebar {
-    border:       2px solid 0px 0px;
+    border:       0px solid 0px 0px;
     border-color: @tempus-fg-alt;
+    spacing:    10;
 }
 #button {
     spacing: 0;
     background-color: @tempus-bg-alt;
     text-color:       @tempus-fg-alt;
+    border-radius:    12px;
 }
 #button.selected {
     background-color: @tempus-cyan;
     text-color:       @tempus-bg-main;
+    border-radius:    12px;
 }
 #inputbar {
     spacing:    10;
@@ -119,12 +136,14 @@
 #button.selected {
     background-color: @tempus-fg-main;
     text-color:       @tempus-bg-alt;
+    border-radius:    12px;
 }
 #inputbar {
     spacing:    10;
-    padding:    1px;
+    padding:    5px;
     text-color: @tempus-fg-main;
     children:   [ prompt,entry ];
+    border-radius:    12px;
 }
 #prompt {
     spacing:    0;
