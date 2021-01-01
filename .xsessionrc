@@ -39,10 +39,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 #----Set fixed wallpaper:
-feh --bg-fill /home/carlos/Pictures/Wallpapers/Nord\ Mountain.jpeg &
-
-#----Set nord palette for temrinal:
-#xrdb .Xresources &
+feh --bg-fill /home/carlos/Pictures/Wallpapers/ocean.jpg &
 
 
 #----Start window manager:
