@@ -16,8 +16,7 @@ These dot files were started with a minimal Debian installation, so they should 
 
 If you find any of this useful, feel free to grab any part or all of it.
 
-![Screenshot from 2021-01-02 00-05-10](https://user-images.githubusercontent.com/64110504/103451828-47e21d00-4c8e-11eb-8b1d-ad7ff00544fb.png)
-
+![Screenshot from 2021-01-02 00-48-08](https://user-images.githubusercontent.com/64110504/103452379-4a477580-4c94-11eb-94cc-1402b70a9038.png)
 
  ---
  
