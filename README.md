@@ -16,6 +16,9 @@ These dot files were started with a minimal Debian installation, so they should 
 
 If you find any of this useful, feel free to grab any part or all of it.
 
+![Screenshot from 2021-01-02 00-05-10](https://user-images.githubusercontent.com/64110504/103451828-47e21d00-4c8e-11eb-8b1d-ad7ff00544fb.png)
+
+
  ---
  
  **bspwm Default Layout** | **Tiled + Floating Windows Layout**
