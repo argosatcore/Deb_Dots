@@ -16,13 +16,15 @@ These dot files were started with a minimal Debian installation, so they should 
 
 If you find any of this useful, feel free to grab any part or all of it.
 
+![Screenshot from 2021-01-03 19-13-48](https://user-images.githubusercontent.com/64110504/103493592-e1790e00-4df7-11eb-9407-eb324faa97b0.png)
+
  ---
  
  **bspwm Default Layout** | **Tiled + Floating Windows Layout**
 :-------: | :-------:
-![Screenshot from 2020-12-30 18-31-39](https://user-images.githubusercontent.com/64110504/103388321-073ba580-4ace-11eb-8c66-3d6a243069ed.png) | ![Screenshot from 2020-12-31 18-31-03](https://user-images.githubusercontent.com/64110504/103431506-78469000-4b96-11eb-89fb-052287a967e7.png)
- **Neofetch** | **.Xdefaults Config**
-![Screenshot from 2020-12-30 18-31-52](https://user-images.githubusercontent.com/64110504/103388275-c80d5480-4acd-11eb-9790-690a570ea734.png) | ![Screenshot from 2020-12-30 18-34-15](https://user-images.githubusercontent.com/64110504/103388565-428aa400-4acf-11eb-8a8f-6b5a61bc81bd.png)
+![Screenshot from 2021-01-03 19-40-05](https://user-images.githubusercontent.com/64110504/103494454-8d245d00-4dfc-11eb-8702-c81c9f651aaa.png) | ![Screenshot from 2021-01-03 19-42-19](https://user-images.githubusercontent.com/64110504/103494472-a6c5a480-4dfc-11eb-80d2-4e49e65b12f9.png)
+ **Have you mooed today?** | **.Xdefaults Config**
+![Screenshot from 2021-01-03 19-45-34](https://user-images.githubusercontent.com/64110504/103494494-bf35bf00-4dfc-11eb-8734-dfa1d403a958.png) | ![Screenshot from 2021-01-03 19-44-20](https://user-images.githubusercontent.com/64110504/103494515-d70d4300-4dfc-11eb-9178-c2b05d5f5d70.png)
 
 ---
 
