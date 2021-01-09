@@ -11,7 +11,7 @@
     /* Custom colours */
     tempus-bg-alt:         #404040BF;
     tempus-bg-main:        #101010BF;
-    tempus-fg-alt:         #949d9fFF;
+    tempus-fg-alt:         #2EB398FF;
     tempus-fg-main:        #aeadafFF;
     tempus-red:            #BF616ABF;
     tempus-green:          #A3BE6CBF;
@@ -38,7 +38,7 @@
 }
 #mainbox {
     border:  0;
-    padding: 20;
+    padding: 15;
     background-color: @tempus-bg-main;
     border-color: @tempus-fg-alt;
     border-radius:    12px;
@@ -67,7 +67,7 @@
 }
 #element.normal.normal {
     background-color: @tempus-bg-main;
-    text-color:       @tempus-fg-alt;
+    text-color:       @tempus-fg-main;
     border-radius:    12px;
 }
 #element.normal.urgent {
@@ -97,7 +97,7 @@
 }
 #element.alternate.normal {
     background-color: @tempus-bg-main;
-    text-color:       @tempus-fg-alt;
+    text-color:       @tempus-fg-main;
     border-radius:    12px;
 }
 #element.alternate.urgent {
@@ -111,8 +111,8 @@
     border-radius:    12px;
 }
 #sidebar {
-    border:       0px solid 0px 0px;
-    border-color: @tempus-fg-alt;
+    border:       4px solid 0px 0px;
+    border-color: @tempus-bg-main;
     spacing:    10;
 }
 #button {

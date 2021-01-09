@@ -1,0 +1,3 @@
+ORIGIN=$UNO_USER_PACKAGES_CACHE/registry/com.sun.star.comp.deployment.component.PackageRegistryBackend
+UNO_JAVA_CLASSPATH=$UNO_USER_PACKAGES_CACHE/uno_packages/lu150786m2vre.tmp_/Zotero_OpenOffice_Integration.oxt/Zotero.jar
+UNO_SERVICES=?$ORIGIN/common.rdb ${$ORIGIN/${_OS}_${_ARCH}rc:UNO_SERVICES}

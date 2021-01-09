@@ -34,7 +34,7 @@ super + @space d
 	rofi -show drun #-show-icons -columns 1 -width 30 -lines 15
 
 # Window switcher:
-super + Tab
+alt + Tab
 	rofi -show window #-show-icons -columns 1 -width 30 -lines 15
 
 # File manager:
@@ -91,10 +91,11 @@ super + g
 
 # Hide focused window:
 super + v
-	bspc node focused -g hidden=on
+	xdo hide 
+
 #Unhide hidden windows:
 super + n
-	bspc node $(bspc query -N -n .hidden -d focused) -g hidden=off
+	xdo show -d
 
 
 

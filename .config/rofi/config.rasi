@@ -1,15 +1,15 @@
 configuration {
 	modi: "run,drun,window";
 	width: 55;
-	lines: 3;
+	lines: 2;
 	columns: 3;
-	font: "FontAwesome 12";
+	font: "FontAwesome 13";
 	location: 2;
 	yoffset: 200;
 	xoffset: 0;
 	fixed-num-lines: false;
 	show-icons: true;
-	drun-icon-theme: "Yaru++ Dark";
+	drun-icon-theme: "Qogir-manjaro-dark";
 	terminal: "urxvt";
 /*	run-command: "{cmd}";*/
 /*	run-list-command: "";*/

@@ -12,8 +12,8 @@ bspc config border_width         1
 bspc config window_gap          10
 bspc config normal_border_color "#7c818c"
 bspc config active_border_color "#4c566a"
-bspc config focused_border_color "#8fbcbb"
-bspc config presel_feedback_color "#8fbcbb"
+bspc config focused_border_color "#ffffff"
+bspc config presel_feedback_color "#ffffff"
 
 
 #----Prot's additions:
@@ -55,7 +55,14 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Xmessage state=floating
 bspc rule -a Galculator state=floating
+bspc rule -a feh state=floating rectangle=600x600
+bspc rule -a Gnome-calculator state=floating
 bspc rule -a Arandr state=floating
 bspc rule -a Pavucontrol state=floating rectangle=100x25
 bspc rule -a Nm-connection-editor state=floating rectangle=80x10
 bspc rule -a Nautilus state=floating rectangle=800x600
+
+
+#---External Rules
+bspc config external_rules_command "$(which external_rules)"
+
