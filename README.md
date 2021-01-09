@@ -39,52 +39,58 @@ If you find any of this useful, feel free to grab any part or all of it.
 ## Stuff referenced by these configs
 All of which are `apt install`able:
 
-- `neovim`: text editor
-- `rxvt-unicode`: terminal emulator
-- `bspwm`: window manager
-- `sxhkd`: keybinding daemon
-- `rofi`: application launcher, window switcher, commad executor and many more
-- `tint2`: panel
-- `nautilus`: file manager
-- `dunst`: notification daemon
-- `compton`: compositing for window transparency
-- `tmux`: persistent SSH shell sessions
-- `feh`: set the desktop background
-- `i3lock`: screen locking
+- `neovim`: text editor.
+- `rxvt-unicode`: terminal emulator.
+- `bspwm`: window manager.
+- `sxhkd`: keybinding daemon.
+- `rofi`: application launcher, window switcher, commad executor and many more.
+- `tint2`: panel.
+- `nautilus`: file manager.
+- `dunst`: notification daemon.
+- `compton`: compositing for window transparency.
+- `tmux`: persistent SSH shell sessions.
+- `feh`: set the desktop background.
+- `i3lock`: screen locking.
 
 
 ## (Some) sxhkd keybindings
 
-### bspwm
-- `Super+Shift+r`: reload bspwm
-- `Super+z`: reload sxhkd
-- `Super+Shift+e`: exit bspwm session
-- `Super+Shift+x`: lock screen
+### bspwm:
+- `Super+Shift+r`: reload bspwm.
+- `Super+z`: reload sxhkd.
+- `Super+Shift+e`: exit bspwm session.
+- `Super+Shift+x`: lock screen.
+- `Super+Ctrl+b`: change to random background.
 
-### Workspaces
-- `Ctrl+(left arrow key, right arrow key)`: move to the previous or next workspace 
-- `Super+(1,2,3,4,5,6,7,8,9,0)`: go to a desginated workspace
-- `Super+Shift+(1,2,3,4,5,6,7,8,9,0)`: move an active window to a desginated workspace
+### Workspaces:
+- `Ctrl+(left arrow key, right arrow key)`: move to the previous or next workspace. 
+- `Super+(1,2,3,4,5,6,7,8,9,0)`: go to a desginated workspace.
+- `Super+Shift+(1,2,3,4,5,6,7,8,9,0)`: move an active window to a desginated workspace.
 
-### Windows
-- `Super+q`: close
-- `Super+Shift+q`: kill 
-- `Super+f`: fullscreen 
-- `Super+s`: float 
-- `Super+t`: tile 
-- `Super+Shift+t`: pseudotile 
-- `Super+m`: monocle 
-- `Super+v`: hide 
-- `Super+n`: unhide 
-- `Super+r`: rotate windows clockwise
-- `Super+Shift+r`: rotate windows counterclockwise
-- `Super+(h,j,k,l)`: change the selection of a window in a designated direction
-- `Super+Shift+(h,j,k,l)`: move window in a designated direction
+### Windows:
+- `Super+q`: close.
+- `Super+Shift+q`: kill. 
+- `Super+f`: fullscreen. 
+- `Super+s`: float. 
+- `Super+t`: tile. 
+- `Super+Shift+t`: pseudotile.
+- `Super+m`: monocle.
+- `Super+v`: hide.
+- `Super+n`: unhide all windows on a specific workspace.
+- `Super+r`: rotate windows clockwise.
+- `Super+Shift+r`: rotate windows counterclockwise.
+- `Super+(h,j,k,l)`: change the selection of a window in a designated direction.
+- `Super+Shift+(h,j,k,l)`: move window in a designated direction.
 
-### Running things
-- `Super+Space`: run a terminal
-- `Super+Shift+Space`: run a terminal in a tmux session
-- `Super+i`: run firefox
-- `Super+a`: run nautilus
-- `Super+d`: run rofi as an application launcher
-- `Alt+Tab`: run rofi as a window switcher
+### Running things:
+- `Super+Space`: run a terminal.
+- `Super+Shift+Space`: run a terminal in a tmux session.
+- `Super+i`: run firefox.
+- `Super+a`: run nautilus.
+- `Super+d`: run rofi as an application launcher.
+- `Alt+Tab`: run rofi as a window switcher.
+
+### Mouse:
+- `Shift+click2`: float a tiled window and viceversa.
+- `Ctrl+click2`: move window.
+- `Ctrl+click3`: resize window.
