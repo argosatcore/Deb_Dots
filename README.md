@@ -35,7 +35,7 @@ If you find any of this useful, feel free to grab any part or all of it.
 - **Change directories without using the "cd" command:** Just type the name of the directory to move into it. 
 - **Bash completion is no longer case sensitive:** No more wasted time pressing keys to get upper case letters.
 - **Combined less and neovim as a pager for man pages:** Because man pages deserve better.
-- **Keybord layout set to Latin American:** Unless you need to type Spanish accents accents, you might want to take a look at the .xsessionrc file and chage the keyboard layout to your preferred one.
+- **Keybord layout set to Latin American:** Unless you need to type Spanish accents, you might want to take a look at the ".xsessionrc" file and chage the keyboard layout to your preferred one. Probably changing  `latam` for something like `us_intl` will do the job.
 
 
 ## Stuff referenced by these configs
