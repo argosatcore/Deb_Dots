@@ -87,4 +87,4 @@ All of which are `apt install`able:
 - `Super+i`: run firefox
 - `Super+a`: run nautilus
 - `Super+d`: run rofi as an application launcher
-- `Super+Tab`: run rofi as a window switcher
+- `Alt+Tab`: run rofi as a window switcher
