@@ -11,6 +11,7 @@ application/vnd.openofficeorg.extension=libreoffice-startcenter.desktop;
 application/octet-stream=nvim.desktop;
 application/x-tint2-theme=nvim.desktop;
 video/mp4=vlc.desktop;
+application/x-shellscript=org.gnome.gedit.desktop;
 
 [Default Applications]
 image/png=feh.desktop

@@ -3,7 +3,7 @@ setxkbmap latam &
 
 
 #----Start compositor:
-compton --config /home/carlos/.config/compton/compton.conf &
+compton --config ~/.config/compton/compton.conf &
 
 
 #----Set screen brightness to 5%:
@@ -35,11 +35,11 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 #----Set random wallpapers:
-#feh --bg-fill --randomize /home/carlos/Pictures/Wallpapers/ &
+#feh --bg-fill --randomize ~/Pictures/Wallpapers/ &
 
 
 #----Set fixed wallpaper:
-feh --bg-fill /home/carlos/Pictures/Wallpapers/greendunes.jpg &
+feh --bg-fill ~/Pictures/Wallpapers/greendunes.jpg &
 
 
 #----Start window manager:
