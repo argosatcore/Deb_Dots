@@ -1,0 +1,27 @@
+#! /bin/sh
+
+fwid=$(bspc query -N -n focused.automatic)
+
+echo "$@" >~/log
+xwininfo -id "$1" >>~/log
+xprop -id "$1" >>~/log
+
+if [ "$fwid" ]
+then
+    xwininfo -id "$fwid" | awk -F'[: ]+' '
+    /(Width|Height): / {val[$2] = $3}
+    END {print val["Width"], val["Height"]}' | \
+        {
+            read width height
+            if [ $width -gt $height ]
+            then
+                out="split_dir=east"
+            else
+                out="split_dir=south"
+            fi
+            out="$out focus=on"
+          
+            echo "$out"
+        }
+fi
+
