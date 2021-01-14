@@ -72,4 +72,4 @@ _br -a Nautilus state=floating rectangle=800x600
 
 
 #---External Rules:
-_bc external_rules_command ~/.config/bspwm/external_rules/binary_partition_rule #this rule overrides Debian's automatic spiral partitioning in favor of a case by case binary partition scenario, thus honoring bspwm's acronym in a more suitable way than its predecessor. 
+_bc external_rules_command ~/.config/bspwm/external_rules/binary_partition_rule # This rule overrides Debian's automatic spiral partitioning in favor of a case by case binary partition scenario, thus honoring bspwm's acronym in a more suitable way than its predecessor. The feature provided by this external rule will be unnecessary in the next version of Debian; simply setting `_bc automatic_scheme longest side` will achieve the same functionality. This rule will be deprecated as of Debian 11 Bullseye's official release.` 
