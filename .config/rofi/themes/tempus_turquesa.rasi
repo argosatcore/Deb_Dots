@@ -66,7 +66,6 @@
 
 }
 #element.normal.normal {
-    background-color: @tempus-bg-main;
     text-color:       @tempus-fg-main;
     border-radius:    12px;
 }
@@ -82,7 +81,7 @@
 }
 #element.selected.normal {
     background-color: @tempus-fg-alt;
-    text-color:       @tempus-bg-alt;
+    text-color:       @tempus-fg-main;
     border-radius:    12px;
 }
 #element.selected.urgent {
@@ -96,7 +95,6 @@
     border-radius:    12px;
 }
 #element.alternate.normal {
-    background-color: @tempus-bg-main;
     text-color:       @tempus-fg-main;
     border-radius:    12px;
 }

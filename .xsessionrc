@@ -39,7 +39,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 #----Set fixed wallpaper:
-feh --bg-fill ~/Pictures/Wallpapers/greendunes.jpg &
+feh --bg-fill ~/Pictures/Wallpapers/yosemite3.jpg &
 
 
 #----Start window manager:
