@@ -23,7 +23,7 @@ At the kernel of my computing environment, there are two irreducible components:
  **Floating** | **Tiled + Floating Windows Layout**
 :-------: | :-------:
 ![Screenshot from 2021-01-14 19-35-27](https://user-images.githubusercontent.com/64110504/104671807-23317080-56a4-11eb-8287-4443e38e62cc.png) | ![Screenshot from 2021-01-14 19-59-04](https://user-images.githubusercontent.com/64110504/104671929-62f85800-56a4-11eb-9713-310194ca9358.png)
- **Binary Space Partinioning** | **Horizontal Float*
+ **Binary Space Partinioning** | **Horizontal Float**
 ![Screenshot from 2021-01-14 20-13-29](https://user-images.githubusercontent.com/64110504/104672299-237e3b80-56a5-11eb-996b-b73b16c40d61.png) | ![Screenshot from 2021-01-14 19-47-47](https://user-images.githubusercontent.com/64110504/104671976-7efbf980-56a4-11eb-9ae4-16b1f317d34c.png)
 
 
