@@ -23,7 +23,6 @@ At the kernel of my computing environment, there are two irreducible components:
  **Floating** | **Rofi + Tiled + Floating Windows Layout**
 :-------: | :-------:
 ![Screenshot from 2021-01-14 19-35-27](https://user-images.githubusercontent.com/64110504/104671807-23317080-56a4-11eb-8287-4443e38e62cc.png) | ![Screenshot from 2021-01-15 15-49-57](https://user-images.githubusercontent.com/64110504/104782277-917c3e80-5749-11eb-9841-494e35e4d0a7.png)
-
  **Binary Space Partinioning** | **Horizontal Float**
 ![Screenshot from 2021-01-14 20-13-29](https://user-images.githubusercontent.com/64110504/104672299-237e3b80-56a5-11eb-996b-b73b16c40d61.png) | ![Screenshot from 2021-01-14 19-47-47](https://user-images.githubusercontent.com/64110504/104671976-7efbf980-56a4-11eb-9ae4-16b1f317d34c.png)
 
