@@ -18,8 +18,6 @@ At the kernel of my computing environment, there are two irreducible components:
 
    If you find any of this useful, feel free to grab any part or all of it.
 
-![Screenshot from 2021-01-03 19-13-48](https://user-images.githubusercontent.com/64110504/103493592-e1790e00-4df7-11eb-9407-eb324faa97b0.png)
-
  ---
  
  **Floating** | **Tiled + Floating Windows Layout**
@@ -27,8 +25,7 @@ At the kernel of my computing environment, there are two irreducible components:
 ![Screenshot from 2021-01-14 19-35-27](https://user-images.githubusercontent.com/64110504/104671807-23317080-56a4-11eb-8287-4443e38e62cc.png) | ![Screenshot from 2021-01-14 19-59-04](https://user-images.githubusercontent.com/64110504/104671929-62f85800-56a4-11eb-9713-310194ca9358.png)
 
  **Binary Space Partinioning** | **Horizontal Float*
-![Screenshot from 2021-01-14 19-50-13](https://user-images.githubusercontent.com/64110504/104671950-6d1a5680-56a4-11eb-86b3-615293996ef8.png) | 
-![Screenshot from 2021-01-14 19-47-47](https://user-images.githubusercontent.com/64110504/104671976-7efbf980-56a4-11eb-9ae4-16b1f317d34c.png)
+![Screenshot from 2021-01-14 19-50-13](https://user-images.githubusercontent.com/64110504/104671950-6d1a5680-56a4-11eb-86b3-615293996ef8.png) | ![Screenshot from 2021-01-14 19-47-47](https://user-images.githubusercontent.com/64110504/104671976-7efbf980-56a4-11eb-9ae4-16b1f317d34c.png)
 
 
 ## Unexpected features you get right out of the gate
