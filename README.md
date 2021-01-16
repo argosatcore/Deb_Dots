@@ -83,7 +83,7 @@ All of which are `apt install`able:
 - `Super+(h,j,k,l)`: change the selection of a window in a designated direction.
 - `Super+Shift+(h,j,k,l)`: move window in a designated direction.
 
-#### Mouse's window commands::
+### Mouse:
 - `Shift+click2`: float a tiled window and viceversa.
 - `Ctrl+click2`: move window.
 - `Ctrl+click3`: resize window.
