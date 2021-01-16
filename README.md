@@ -18,17 +18,14 @@ At the kernel of my computing environment, there are two irreducible components:
 
    If you find any of this useful, feel free to grab any part or all of it.
 
-![Screenshot from 2021-01-03 19-13-48](https://user-images.githubusercontent.com/64110504/103493592-e1790e00-4df7-11eb-9407-eb324faa97b0.png)
-
  ---
  
- **bspwm Default Layout** | **Tiled + Floating Windows Layout**
+ **Floating** | **Rofi + Tiled + Floating Windows Layout**
 :-------: | :-------:
-![Screenshot from 2021-01-03 19-40-05](https://user-images.githubusercontent.com/64110504/103494454-8d245d00-4dfc-11eb-8702-c81c9f651aaa.png) | ![Screenshot from 2021-01-03 19-42-19](https://user-images.githubusercontent.com/64110504/103494472-a6c5a480-4dfc-11eb-80d2-4e49e65b12f9.png)
- **Have you mooed today?** | **.Xdefaults Config**
-![Screenshot from 2021-01-03 19-45-34](https://user-images.githubusercontent.com/64110504/103494494-bf35bf00-4dfc-11eb-8734-dfa1d403a958.png) | ![Screenshot from 2021-01-03 19-44-20](https://user-images.githubusercontent.com/64110504/103494515-d70d4300-4dfc-11eb-9178-c2b05d5f5d70.png)
+![Screenshot from 2021-01-14 19-35-27](https://user-images.githubusercontent.com/64110504/104671807-23317080-56a4-11eb-8287-4443e38e62cc.png) | ![Screenshot from 2021-01-15 15-49-57](https://user-images.githubusercontent.com/64110504/104782277-917c3e80-5749-11eb-9841-494e35e4d0a7.png)
+ **Binary Space Partinioning** | **Horizontal Float**
+![Screenshot from 2021-01-14 20-13-29](https://user-images.githubusercontent.com/64110504/104672299-237e3b80-56a5-11eb-996b-b73b16c40d61.png) | ![Screenshot from 2021-01-14 19-47-47](https://user-images.githubusercontent.com/64110504/104671976-7efbf980-56a4-11eb-9ae4-16b1f317d34c.png)
 
----
 
 ## Unexpected features you get right out of the gate
 - **Bash's vim mode:** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
