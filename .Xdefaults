@@ -10,7 +10,7 @@
 	URxvt.termName: rxvt-unicode-256color
 
 !! URxvt Appearance
-	URxvt.geometry: 	86x22
+	URxvt.geometry: 	50x41
 	URxvt.internalBorder: 	11 
 	URxvt.cursorBlink: 	true
 	URxvt.cursorUnderline: 	false
@@ -26,7 +26,7 @@
 	*.background:  		#121212
 	*.cursorColor: 		#D8DEE9
 !!	*.highlightColor:	#8fbcbb
-	*fading: 35
+	*fading: 45
 
 
 	! black

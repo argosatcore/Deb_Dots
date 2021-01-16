@@ -10,7 +10,7 @@
 * {
     /* Custom colours */
     tempus-bg-alt:         #404040BF;
-    tempus-bg-main:        #101010BF;
+    tempus-bg-main:        #12121266;
     tempus-fg-alt:         #2EB398FF;
     tempus-fg-main:        #ffffffFF;
     tempus-red:            #BF616ABF;
@@ -109,7 +109,7 @@
     border-radius:    12px;
 }
 #sidebar {
-    border:       4px solid 0px 0px;
+    border:       0px solid 0px 0px;
     border-color: @tempus-bg-main;
     spacing:    10;
 }
@@ -126,10 +126,9 @@
 }
 #inputbar {
     spacing:    10;
-    padding:    1px;
+    padding:    9px;
     text-color: @tempus-fg-main;
-    background-color: @tempus-bg-alt;
-    text-color:       @tempus-fg-alt;
+    background-color: @tempus-bg-main;
 }
 #button.selected {
     background-color: @tempus-fg-main;

@@ -22,7 +22,7 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 #----BSPWM's graphical appearance
 _bc border_width         0
-_bc window_gap          15
+_bc window_gap          10
 _bc normal_border_color "#7c818c"
 _bc active_border_color "#4c566a"
 _bc focused_border_color "#ffffff"
