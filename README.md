@@ -83,6 +83,11 @@ All of which are `apt install`able:
 - `Super+(h,j,k,l)`: change the selection of a window in a designated direction.
 - `Super+Shift+(h,j,k,l)`: move window in a designated direction.
 
+### Mouse:
+- `Shift+click2`: float a tiled window and viceversa.
+- `Ctrl+click2`: move window.
+- `Ctrl+click3`: resize window.
+
 ### Running things:
 - `Super+Space`: run a terminal.
 - `Super+Shift+Space`: run a terminal in a tmux session.
@@ -90,8 +95,3 @@ All of which are `apt install`able:
 - `Super+a`: run nautilus.
 - `Super+d`: run rofi as an application launcher.
 - `Alt+Tab`: run rofi as a window switcher.
-
-### Mouse:
-- `Shift+click2`: float a tiled window and viceversa.
-- `Ctrl+click2`: move window.
-- `Ctrl+click3`: resize window.
