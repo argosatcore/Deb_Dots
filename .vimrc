@@ -1,13 +1,3 @@
-"__     ___                __  _   _                 _             
-"\ \   / (_)_ __ ___      / / | \ | | ___  _____   _(_)_ __ ___    
-" \ \ / /| | '_ ` _ \    / /  |  \| |/ _ \/ _ \ \ / / | '_ ` _ \   
-"  \ V / | | | | | | |  / /   | |\  |  __/ (_) \ V /| | | | | | |_ 
-"   \_/  |_|_| |_| |_| /_/    |_| \_|\___|\___/ \_/ |_|_| |_| |_(_)
-"                                                                  
-
-
-" Lector: Este archivo de configuración para el editor de texto conocido como Vim es liberado al dominio público para ser modificado según su conveniencia. Aunque me adjudiqué la autoría de este documento, debo confesar que esto es, en parte, una mentira. Si bien el acomodo, la inclusión -y la exclusión- de ciertos parámetros de configuración es artificio mío, el conocimiento necesario para lograr armar este documento fue tomado de otros escritores que, ahora como yo, decidieron, de manera desinteresada, el poner a la disposición de otros parte del bagaje acumulado en el tiempo en relación con este singular programa. Espero que les sea tan provechoso como lo ha sido conmigo, sino es que más. 
-
 " -------Atajos del teclado:
 
 " Mapaer 'ff' para ser utilizada como 'Esc'. Esto permite el salir de los modos 'Insert' y 'Visual'  para entrar en el modo 'Normal'.
@@ -105,8 +95,7 @@
 	hi! Normal ctermbg=NONE guibg=NONE 
 	hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 
 "	highlight Visual term=reverse cterm=reverse ctermbg=Black ctermfg=NONE guibg=NONE guifg=NONE gui=reverse 
-"	highlight cursorline term=reverse cterm=reverse ctermbg=Black ctermfg=NONE guibg=NONE guifg=NONE gui=reverse 
-
+"	hi! cursorline ctermbg=Black ctermfg=White guibg=NONE guifg=NONE gui=reverse 
 
 " Tema usado en airline:
 "	let g:airline_theme='base16_gruvbox_dark_hard'
@@ -128,6 +117,7 @@
 	set showmode
 	set showcmd
 	set cursorline
+"	hi! cursorline ctermbg=Black ctermfg=White guibg=NONE guifg=NONE gui=reverse 
 "	highlight! link CursorLine Visual
 	hi! Normal ctermbg=NONE guibg=NONE 
 	hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE

@@ -20,47 +20,81 @@
 	URxvt.iso14755_52:	false
 	URxvt.intensity.Styles:	false
 
-!! Manet Color Pallete:
+!! Manet Color Palette version 0:
 !
-	*.foreground:  		#D3CEB4
-	*.background:  		#121212
-	*.cursorColor: 		#D8DEE9
+!!	*.foreground:  		#D3CEB4
+!!	*.background:  		#121212
+!!	*.cursorColor: 		#D8DEE9
+!!!!	*.highlightColor:	#8fbcbb
+!!	*fading: 45
+!!
+!!
+!!	! black
+!!  		*.color0:      	#121212
+!!   		*.color8:      	#52514C
+!!	! red
+!!		*.color1:      	#E76720
+!!		*.color9:      	#FCA159
+!!	! green
+!!		*.color2:      	#407C4F
+!!		*.color10:     	#88A54A
+!!	! yellow
+!!		*.color3:      	#E4CC62
+!!		*.color11:     	#FFEE87
+!!	! blue
+!!		*.color4:      	#81A1C1
+!!		*.color12:     	#75A7D3
+!!
+!!	! magenta
+!!		*.color5:     	#755A3D
+!!		*.color13:     	#A38E71
+!!	! cyan
+!!		*.color6:    	#88C0D0
+!!		*.color14:    	#8FBCBB
+!!	! white
+!!		*.color7:     	#A2A089
+!!		*.color15:    	#D3CEB4
+
+!! Manet Color Palette version 0.1:
+!
+	*.foreground:  		#C5C9B2
+	*.background:  		#191919
+	*.cursorColor: 		#C5C9B2
 !!	*.highlightColor:	#8fbcbb
 	*fading: 45
 
 
 	! black
-  		*.color0:      	#121212
-   		*.color8:      	#52514C
+  		*.color0:      	#191919
+   		*.color8:      	#6C6E63
 	! red
-		*.color1:      	#E76720
-		*.color9:      	#FCA159
+		*.color1:      	#B92A38
+		*.color9:      	#D97A67
 	! green
-		*.color2:      	#407C4F
-		*.color10:     	#88A54A
+		*.color2:      	#569F66
+		*.color10:     	#98C552
 	! yellow
-		*.color3:      	#E4CC62
+		*.color3:      	#D1BE7C
 		*.color11:     	#FFEE87
 	! blue
-		*.color4:      	#81A1C1
-		*.color12:     	#75A7D3
+		*.color4:      	#4885BE
+		*.color12:     	#7CA3C0
 
 	! magenta
-		*.color5:     	#755A3D
-		*.color13:     	#A38E71
+		*.color5:     	#7164AD
+		*.color13:     	#7C77AB
 	! cyan
-		*.color6:    	#88C0D0
-		*.color14:    	#8FBCBB
+		*.color6:    	#309798
+		*.color14:    	#78ADAF
 	! white
 		*.color7:     	#A2A089
-		*.color15:    	#D3CEB4
 
-
+		*.color15:    	#DEE0D5
 
 !Transparency
 	URxvt*transparent:      true 
 	URxvt*depth:		32
-	URxvt.background: 	[85]#121212
+	URxvt.background: 	[90]#191919
 
 
 !Scrollbar: Disabled

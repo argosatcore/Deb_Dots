@@ -11,7 +11,7 @@
     /* Custom colours */
     tempus-bg-alt:         #404040BF;
     tempus-bg-main:        #12121266;
-    tempus-fg-alt:         #FCA159FF;
+    tempus-fg-alt:         #00A9A5FF;
     tempus-fg-main:        #ffffffFF;
     tempus-red:            #E76720BF;
     tempus-green:          #A3BE6CBF;

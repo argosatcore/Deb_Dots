@@ -2,6 +2,9 @@
 setxkbmap latam &
 
 
+#---Set mouse's speed to 4 times faster:
+xset m 4 0 &
+
 #----Start compositor:
 compton --config ~/.config/compton/compton.conf &
 
@@ -39,7 +42,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 #----Set fixed wallpaper:
-feh --bg-fill ~/Pictures/Wallpapers/permafrost.jpg &
+feh --bg-fill ~/Pictures/Wallpapers/gracier2.jpg &
 
 
 #----Start window manager:

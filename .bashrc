@@ -1,22 +1,9 @@
-# _____ _            ____                              
-#|_   _| |__   ___  | __ )  ___  _   _ _ __ _ __   ___ 
-#  | | | '_ \ / _ \ |  _ \ / _ \| | | | '__| '_ \ / _ \
-#  | | | | | |  __/ | |_) | (_) | |_| | |  | | | |  __/
-#  |_| |_| |_|\___| |____/ \___/ \__,_|_|  |_| |_|\___|
-#                                                      
-#    _               _         ____  _          _ _   
-#   / \   __ _  __ _(_)_ __   / ___|| |__   ___| | |  
-#  / _ \ / _` |/ _` | | '_ \  \___ \| '_ \ / _ \ | |  
-# / ___ \ (_| | (_| | | | | |  ___) | | | |  __/ | |_ 
-#/_/   \_\__, |\__,_|_|_| |_| |____/|_| |_|\___|_|_(_)
-#        |___/                                        
-
 #Environmental Variables:
 	export EDITOR="nvim"
 	export PAGER="less"
 	export MANPAGER='nvim +Man!'
 	export BROWSER="firefox"
-	export TERM="rxvt-unicode-256color"
+	export TERM="rxvt-256color"
 	bind 'set completion-ignore-case on'
 	shopt -s cdspell
 	shopt -s autocd
@@ -29,6 +16,7 @@
 	alias la='ls -A'
 	alias l='ls -CF'
 	alias c='clear'
+	alias rm='rm -I'
 	alias poweroff='systemctl poweroff'
 	alias reboot='systemctl reboot'
 	alias suspend='systemctl suspend'
@@ -108,7 +96,7 @@
 		PS1+='\[\033[01;97m\]['; 
 		PS1+='\[\033[01;96m\]\w';
 		PS1+='\[\033[01;97m\]]';
-		PS1+='\[\033[00;00m\] ';
+		PS1+='\[\033[00;00m\]: ';
 	
 	else
 	    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
