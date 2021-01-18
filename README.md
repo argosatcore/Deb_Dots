@@ -20,11 +20,11 @@ At the kernel of my computing environment, there are two irreducible components:
 
  ---
  
- **Floating** | **Rofi + Tiled + Floating Windows Layout**
+ **Floating** | **Tiled + Floating Windows Layout**
 :-------: | :-------:
-![Screenshot from 2021-01-14 19-35-27](https://user-images.githubusercontent.com/64110504/104671807-23317080-56a4-11eb-8287-4443e38e62cc.png) | ![Screenshot from 2021-01-15 15-49-57](https://user-images.githubusercontent.com/64110504/104782277-917c3e80-5749-11eb-9841-494e35e4d0a7.png)
- **Binary Space Partinioning** | **Horizontal Float**
-![Screenshot from 2021-01-14 20-13-29](https://user-images.githubusercontent.com/64110504/104672299-237e3b80-56a5-11eb-996b-b73b16c40d61.png) | ![Screenshot from 2021-01-14 19-47-47](https://user-images.githubusercontent.com/64110504/104671976-7efbf980-56a4-11eb-9ae4-16b1f317d34c.png)
+![Screenshot from 2021-01-17 18-56-00](https://user-images.githubusercontent.com/64110504/104861762-bd88f280-58f6-11eb-8abb-a9f2c8f9fe38.png) | ![Screenshot from 2021-01-17 18-54-38](https://user-images.githubusercontent.com/64110504/104861789-d691a380-58f6-11eb-82e7-6a3175948c46.png)
+ **Binary Space Partition** | **Rofi**
+![Screenshot from 2021-01-17 18-54-11](https://user-images.githubusercontent.com/64110504/104861849-06d94200-58f7-11eb-9455-ae5e5beb551f.png) | ![Screenshot from 2021-01-17 16-54-23](https://user-images.githubusercontent.com/64110504/104861873-1b1d3f00-58f7-11eb-8961-aed490bb985f.png)
 
 
 ## Unexpected features you get right out of the gate
