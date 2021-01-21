@@ -57,9 +57,9 @@
 
 !! Manet Color Palette version 0.1:
 !
-	*.foreground:  		#C5C9B2
-	*.background:  		#191919
-	*.cursorColor: 		#C5C9B2
+	*.foreground:  		#FFFFFF
+	*.background:  		#212121
+	*.cursorColor: 		#FFFFFF
 !!	*.highlightColor:	#8fbcbb
 	*fading: 45
 
@@ -94,7 +94,7 @@
 !Transparency
 	URxvt*transparent:      true 
 	URxvt*depth:		32
-	URxvt.background: 	[90]#191919
+	URxvt.background: 	[90]#212121
 
 
 !Scrollbar: Disabled
