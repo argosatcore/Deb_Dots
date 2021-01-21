@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<oor:component-data oor:name="OptionsDialog"
+  oor:package="org.openoffice.Office"
+  xmlns:oor="http://openoffice.org/2001/registry"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <node oor:name="Nodes">
+    <node oor:name="LanguageSettings" oor:op="fuse">
+      <node oor:name="Leaves">
+        <node oor:name="org.puimula.ooovoikko.Settings" oor:op="fuse">
+          <prop oor:name="Id">
+            <value>org.puimula.ooovoikko</value>
+          </prop>
+          <prop oor:name="Label">
+            <value xml:lang="en-US">Voikko</value>
+            <value xml:lang="fi">Voikko</value>
+          </prop>
+          <prop oor:name="OptionsPage">
+            <value>vnd.sun.star.expand:$BUNDLED_EXTENSIONS/voikko/SettingsDialog.xdl</value>
+          </prop>
+          <prop oor:name="EventHandlerService">
+            <value>org.puimula.ooovoikko.SettingsEventHandlerImplementation</value>
+          </prop>
+        </node>
+      </node>
+    </node>
+  </node>
+</oor:component-data>
+

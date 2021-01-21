@@ -1,0 +1,18 @@
+[Added Associations]
+text/x-apt-sources-list=org.gnome.gedit.desktop;
+application/x-trash=org.gnome.gedit.desktop;
+video/x-matroska=vlc.desktop;org.gnome.Totem.desktop;
+image/jpeg=feh.desktop;
+image/png=feh.desktop;eog.desktop;
+text/plain=nvim.desktop;
+text/markdown=nvim.desktop;org.gnome.gedit.desktop;
+application/pdf=org.gnome.Evince.desktop;
+application/vnd.openofficeorg.extension=libreoffice-startcenter.desktop;
+application/octet-stream=nvim.desktop;
+application/x-tint2-theme=nvim.desktop;
+video/mp4=vlc.desktop;
+application/x-shellscript=org.gnome.gedit.desktop;
+
+[Default Applications]
+image/png=feh.desktop
+video/mp4=vlc.desktop
