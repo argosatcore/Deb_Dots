@@ -1,0 +1,10 @@
+2021/01/20-15:12:41.139 7951 Reusing MANIFEST /home/carlos/.config/Microsoft/Microsoft Teams/Local Storage/leveldb/MANIFEST-000001
+2021/01/20-15:13:50.839 7c74 Level-0 table #5: started
+2021/01/20-15:13:50.845 7c74 Level-0 table #5: 47541 bytes OK
+2021/01/20-15:13:50.846 7c74 Delete type=0 #3
+2021/01/20-15:14:41.141 7c74 Level-0 table #7: started
+2021/01/20-15:14:41.153 7c74 Level-0 table #7: 225761 bytes OK
+2021/01/20-15:14:41.154 7c74 Delete type=0 #4
+2021/01/20-15:15:41.141 7c74 Level-0 table #9: started
+2021/01/20-15:15:41.149 7c74 Level-0 table #9: 69537 bytes OK
+2021/01/20-15:15:41.151 7c74 Delete type=0 #6

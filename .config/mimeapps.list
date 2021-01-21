@@ -12,7 +12,11 @@ application/octet-stream=nvim.desktop;
 application/x-tint2-theme=nvim.desktop;
 video/mp4=vlc.desktop;
 application/x-shellscript=org.gnome.gedit.desktop;
+application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;
+application/vnd.debian.binary-package=gnome-software-local-file.desktop;
 
 [Default Applications]
 image/png=feh.desktop
 video/mp4=vlc.desktop
+x-scheme-handler/msteams=teams.desktop

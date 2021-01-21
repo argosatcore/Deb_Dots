@@ -1,0 +1,22 @@
+(electron) The default value of app.allowRendererProcessReuse is deprecated, it is currently "false".  It will change to be "true" in Electron 9.  For more information please check https://github.com/electron/electron/issues/18397
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) ProtocolDeprecateCallback: The callback argument of protocol module APIs is no longer needed.
+(node:1449) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 ecsSettingsUpdated listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit
+(node:1449) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 appInitialized listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit
+(node:1449) UnhandledPromiseRejectionWarning: undefined
+(node:1449) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:1449) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
