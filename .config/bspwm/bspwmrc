@@ -21,7 +21,7 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 
 #----BSPWM's graphical appearance
-_bc border_width         0
+_bc border_width         1
 _bc window_gap          10
 _bc normal_border_color "#7c818c"
 _bc active_border_color "#4c566a"
@@ -39,7 +39,7 @@ _bc pointer_action3 move
 _bc pointer_action2 resize_corner
 _bc pointer_action1 none
 _bc ignore_ewmh_focus false
-_bc single_monocle false 
+_bc single_monocle true 
 _bc pointer_modifier control
 
 

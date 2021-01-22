@@ -20,6 +20,10 @@ super + shift + e
 super + ctrl + b 
 	feh --bg-fill --randomize ~/Pictures/Wallpapers/ 	
 
+# Launch power menu:
+super + e
+	rofi -show power-menu -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi-power-menu-master/./rofi-power-menu
+
 
 
 
@@ -31,11 +35,11 @@ super + {_,shift + }@space
 
 # Program launcher:
 super + @space d
-	rofi -show drun #-show-icons -columns 1 -width 30 -lines 15
+	rofi -show drun 
 
 # Window switcher:
 alt + Tab
-	rofi -show window #-show-icons -columns 1 -width 30 -lines 15
+	rofi -show window 
 
 # File manager:
 super + a
