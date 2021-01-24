@@ -24,8 +24,6 @@
 	alias x='startx'
 	alias t='tmux'
 	alias n='nnn'
-	alias sbrc='source /home/carlos/.bashrc'
-	alias svrc='source /home/carlos/.vimrc'
 	alias screencast='ffmpeg -f x11grab -r 50 -s 1366x768 -i :0.0 -acodec aac -vcodec libx264 -crf 0 screencast.mkv'
 	alias rxterm='xrdb -merge .Xresources'
 
@@ -211,7 +209,10 @@
 	set bell-style none
 
 
-# NNN's environmental variables:
+# NNN's environmental variables:o
+
+	#Texteditor:
+	export NNN_USE_EDITOR=1
 
 	#Bookmarks:
 #	export NNN_BMS='t:/home/carlos/Desktop/Proyecto Final de Graduación Arquitectura/;p:/home/argos/Desktop/Proyectos Personales/;d:/home/argos/Downloads/;i:/home/argos/Pictures/'

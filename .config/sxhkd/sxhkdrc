@@ -22,7 +22,7 @@ super + ctrl + b
 
 # Launch power menu:
 super + e
-	rofi -show power-menu -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi-power-menu-master/./rofi-power-menu
+	rofi -show power-menu -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi/rofi-power-menu-master/./rofi-power-menu
 
 
 
@@ -42,8 +42,8 @@ alt + Tab
 	rofi -show window 
 
 # File manager:
-super + a
-	nautilus -w
+super {_,shift + }a
+	{nautilus -w, urxvt -e nnn}
 
 # Web Browser:
 super + i

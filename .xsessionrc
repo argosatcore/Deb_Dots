@@ -42,7 +42,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 #----Set fixed wallpaper:
-feh --bg-fill ~/Pictures/Wallpapers/debcrunch.png &
+feh --bg-fill ~/Pictures/Wallpapers/elcapitan3.jpg &
 
 
 #----Start window manager:

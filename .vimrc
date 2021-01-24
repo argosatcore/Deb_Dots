@@ -35,7 +35,7 @@
 
 " Configurar los diccionarios de vim para inglés y español.
 	set spell spelllang=es,en_us  	
-
+"	map <F3> :set spelllang=es,en_us<CR>
 " Habilitar autocompletado en la barra de estado.
 	set wildmenu
 	set autoread wildmode=longest,list,full
@@ -100,7 +100,8 @@
 " Tema usado en airline:
 "	let g:airline_theme='base16_gruvbox_dark_hard'
 "	let g:airline_theme='base16_nord'
-	let g:airline_theme='monochrome'
+"	let g:airline_theme='monochrome'
+	let g:airline_theme='base16_adwaita'
 
 " Configuración de Goyo 
 	function! s:goyo_enter()

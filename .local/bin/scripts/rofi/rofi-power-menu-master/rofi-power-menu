@@ -19,18 +19,18 @@ all=(shutdown reboot suspend hibernate logout lockscreen)
 show=("${all[@]}")
 
 declare -A texts
-texts[lockscreen]="lock screen"
-texts[switchuser]="switch user"
-texts[logout]="log out"
-texts[suspend]="suspend"
-texts[hibernate]="hibernate"
-texts[reboot]="reboot"
-texts[shutdown]="shut down"
+texts[lockscreen]="lock screen."
+texts[switchuser]="switch user."
+texts[logout]="log out."
+texts[suspend]="suspend."
+texts[hibernate]="hibernate."
+texts[reboot]="reboot."
+texts[shutdown]="shut down."
 
 declare -A icons
 icons[lockscreen]=""
 icons[switchuser]=""
-icons[logout]=""
+icons[logout]=""
 icons[suspend]=""
 icons[hibernate]=""
 icons[reboot]=""
@@ -178,7 +178,7 @@ for entry in "${all[@]}"
 do
     confirmationMessages[$entry]=$(write_message "${icons[$entry]}" "Yes, ${texts[$entry]}")
 done
-confirmationMessages[cancel]=$(write_message "${icons[cancel]}" "No, cancel")
+confirmationMessages[cancel]=$(write_message "${icons[cancel]}" "No, cancel.")
 
 if [ $# -gt 0 ]
 then
@@ -215,7 +215,7 @@ else
                 if [ "$entry" = "$confirmation" ]
                 then
                     # Ask for confirmation
-                    echo -e "\0prompt\x1fAre you sure"
+                    echo -e "\0prompt\x1fAre you sure?"
                     echo -e "${confirmationMessages[$entry]}\0icon\x1f${icons[$entry]}"
                     echo -e "${confirmationMessages[cancel]}\0icon\x1f${icons[cancel]}"
                     exit 0

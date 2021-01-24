@@ -29,7 +29,7 @@
     # the top and down respectively.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "0x0-10+30"
+    geometry = "0x0+595+30"
 
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = yes
@@ -61,10 +61,10 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 0
+    frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#7c818c"
+    frame_color = "#ffffff"
 
     # Define a color for the separator.
     # possible values are:
@@ -85,7 +85,7 @@
 
     ### Text ###
 
-    font = FontAwesome 9
+    font = FontAwesome 12
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -245,26 +245,26 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#afb1b6"
-    foreground = "#16181d"
-    timeout = 10
+    background = "#6c6e63"
+    foreground = "#ffffff"
+    timeout = 15
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#383c4a"
+    background = "#191919"
     foreground = "#ffffff"
-    timeout = 10
+    timeout = 30
     # Icon for notifications with normal urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_critical]
-    background = "#fb4934"
+    background = "#d97a67"
     foreground = "#ffffff"
     frame_color = "#ebdbb2"
     timeout = 0
     # Icon for notifications with critical urgency, uncomment to enable
-    icon = /home/carlos/.local/share/icons/Newaita-dark/status/24/dialog-warning.svg 
+   #icon = /home/carlos/.local/share/icons/Newaita-dark/status/24/dialog-warning.svg 
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
