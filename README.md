@@ -20,11 +20,11 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 
  ---
  
- **Floating Windows** | **Tiled + Floating Windows Layout**
+ **Floating Windows** |  **Binary Space Partition**
 :-------: | :-------:
-![Screenshot from 2021-01-17 18-56-00](https://user-images.githubusercontent.com/64110504/104861762-bd88f280-58f6-11eb-8abb-a9f2c8f9fe38.png) | ![Screenshot from 2021-01-17 18-54-38](https://user-images.githubusercontent.com/64110504/104861789-d691a380-58f6-11eb-82e7-6a3175948c46.png)
- **Binary Space Partition** | **Rofi**
-![Screenshot from 2021-01-17 18-54-11](https://user-images.githubusercontent.com/64110504/104861849-06d94200-58f7-11eb-9455-ae5e5beb551f.png) | ![Screenshot from 2021-01-17 16-54-23](https://user-images.githubusercontent.com/64110504/104861873-1b1d3f00-58f7-11eb-8961-aed490bb985f.png)
+![Screenshot from 2021-02-02 18-17-52](https://user-images.githubusercontent.com/64110504/106680321-0d68ea00-6584-11eb-8cb3-aed9eb32d4ab.png) | ![Screenshot from 2021-02-02 18-19-09](https://user-images.githubusercontent.com/64110504/106680351-1ce83300-6584-11eb-9879-5e06d667182d.png)
+**Tiled + Floating Windows Layout** | **Rofi's modes**
+![Screenshot from 2021-02-02 18-19-22](https://user-images.githubusercontent.com/64110504/106680387-2e313f80-6584-11eb-8a23-83eb9832173f.png) | ![Rofi_Modes](https://user-images.githubusercontent.com/64110504/106680416-38ebd480-6584-11eb-8a56-037dee5a34ce.gif)
 
 
 ## Unexpected features you get right out of the gate
