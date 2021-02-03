@@ -20,7 +20,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 
  ---
  
- **Floating Windows** |  **Binary Space Partition**
+ **Floating Layout** |  **Binary Space Layout**
 :-------: | :-------:
 ![Screenshot from 2021-02-02 18-17-52](https://user-images.githubusercontent.com/64110504/106680321-0d68ea00-6584-11eb-8cb3-aed9eb32d4ab.png) | ![Screenshot from 2021-02-02 18-19-09](https://user-images.githubusercontent.com/64110504/106680351-1ce83300-6584-11eb-9879-5e06d667182d.png)
 **Tiled + Floating Windows Layout** | **Rofi's modes**
