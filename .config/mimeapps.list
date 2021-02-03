@@ -1,18 +1,30 @@
 [Added Associations]
 text/x-apt-sources-list=org.gnome.gedit.desktop;
 application/x-trash=org.gnome.gedit.desktop;
-video/x-matroska=vlc.desktop;org.gnome.Totem.desktop;
+video/x-matroska=mpv.desktop;vlc.desktop;org.gnome.Totem.desktop;
 image/jpeg=feh.desktop;
+image/jpg=feh.desktop;
 image/png=feh.desktop;eog.desktop;
-text/plain=nvim.desktop;
+text/plain=org.gnome.gedit.desktop;nvim.desktop;
 text/markdown=nvim.desktop;org.gnome.gedit.desktop;
-application/pdf=org.gnome.Evince.desktop;
+application/pdf=org.gnome.Evince.desktop;org.inkscape.Inkscape.desktop;libreoffice-draw.desktop;
 application/vnd.openofficeorg.extension=libreoffice-startcenter.desktop;
 application/octet-stream=nvim.desktop;
 application/x-tint2-theme=nvim.desktop;
 video/mp4=vlc.desktop;
 application/x-shellscript=org.gnome.gedit.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
+application/xml=nvim.desktop;
+application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;
 
 [Default Applications]
 image/png=feh.desktop
+image/jpeg=feh.desktop
+image/jpg=feh.desktop
 video/mp4=vlc.desktop
+application/vnd.oasis.opendocument.text=libreoffice-writer.desktop
+image/svg+xml=org.inkscape.Inkscape.desktop
+text/plain=org.gnome.gedit.desktop;nvim.desktop
+text/markdown=nvim.desktop;org.gnome.gedit.desktop
+

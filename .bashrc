@@ -16,6 +16,7 @@
 	alias la='ls -A'
 	alias l='ls -CF'
 	alias c='clear'
+	alias ea='exa -F --color=always --color-scale --extended -l'
 	alias rm='rm -I'
 	alias poweroff='systemctl poweroff'
 	alias reboot='systemctl reboot'

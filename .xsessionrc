@@ -29,6 +29,14 @@ xmodmap .mouseconfig &
 xmodmap .speedswapper &
 
 
+#----Transform the Menu key into another Super key:
+#xmodmap .menuassuper &
+
+
+#----Start Redshift:
+redshift-gtk &
+
+
 #----Set cursor:
 xsetroot -cursor_name right_ptr &
 
@@ -42,7 +50,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 #----Set fixed wallpaper:
-feh --bg-fill ~/Pictures/Wallpapers/elcapitan3.jpg &
+feh --bg-fill ~/Pictures/Wallpapers/ATLAS-OF-PLACES-EDWARD-THEODORE-COMPTON-ALPINE_SCENERY-GPH-7.jpg &
 
 
 #----Start window manager:

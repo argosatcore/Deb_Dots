@@ -43,7 +43,7 @@ alt + Tab
 
 # File manager:
 super {_,shift + }a
-	{nautilus -w, urxvt -e nnn}
+	{nautilus -w, urxvt -e sh -c "nnn"}
 
 # Web Browser:
 super + i

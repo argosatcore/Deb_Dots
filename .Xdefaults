@@ -1,16 +1,20 @@
 !URxvt configutation:
 
 !Locale
-	URxvt*locale: es_CR.UTF-8
+!	URxvt*locale:		es_CR.UTF-8
+
+!Enable taskber icon
+	URxvt.iconFile:		~/.local/share/icons/Flat-Remix-Blue-Dark/apps/scalable/urxvt.svg 
+
 
 !Glyphs
 	URxvt*skipBuiltInGlyphs: true
 
 !Detect 256 colors
-	URxvt.termName: rxvt-unicode-256color
+	URxvt.termName:		rxvt-unicode-256color
 
 !! URxvt Appearance
-	URxvt.geometry: 	50x41
+	URxvt.geometry: 	50x39
 	URxvt.internalBorder: 	11 
 	URxvt.cursorBlink: 	true
 	URxvt.cursorUnderline: 	false
@@ -56,12 +60,12 @@
 !!		*.color15:    	#D3CEB4
 
 !! Manet Color Palette version 0.1:
-!
+
 	*.foreground:  		#FFFFFF
 	*.background:  		#212121
 	*.cursorColor: 		#FFFFFF
-!!	*.highlightColor:	#8fbcbb
-	*fading: 45
+	*.highlightColor:	#CE0056
+	*fading:		35
 
 
 	! black
@@ -94,7 +98,7 @@
 !Transparency
 	URxvt*transparent:      true 
 	URxvt*depth:		32
-	URxvt.background: 	[90]#212121
+	URxvt.background: 	[75]#101010
 
 
 !Scrollbar: Disabled
@@ -103,17 +107,17 @@
 
 !Fonts
 !URxvt.font:xft:SauceCodePro Nerd Font Mono:size=10
-	URxvt.font:xft:Hack:size=10.5
+	URxvt.font:xft:Hack Nerd Font:size=11
 !	URxvt.font:xft:Iconoslata:size=10
 !	URxvt.font:xft:Fira Code Retina:size=12
 !	URxvt.font:xft:Monospace:size=12
 
 
 	URxvt.letterSpace:	-1 
-	URxvt.lineSpace: 	0
+	URxvt.lineSpace:	0
 
-	*antialias:  true
-	*autohint:   true
+	*antialias:		true
+	*autohint:		true
 	Xft.antialias:		1
 	Xft.hinting:		1
 	Xft.autohint:		0
@@ -122,17 +126,18 @@
 	Xft.lcdfilter:		lcddefault
 
 !Scroll back position
-	! do not scroll with output
+! 	do not scroll with output
 	URxvt*scrollTtyOutput: false
 
-	! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+! 	scroll in relation to buffer (with mouse scroll or Shift+Page Up)
 	URxvt*scrollWithBuffer: true
 
-	! scroll back to the bottom on keypress
+! 	scroll back to the bottom on keypress
 	URxvt*scrollTtyKeypress: true
-:
-	! Scroll like rxvt
+
+!	Scroll like rxvt
 	URxvt*scrollstyle: rxvt
+
 
 ! Common Keybinds for Navigations:
 	URxvt.keysym.Shift-Up: 	command:\033]720;1\007
@@ -157,13 +162,13 @@
 		URxvt.perl-ext-common:  default,matcher,clipboard
 !		URxvt.url-launcher:	 /usr/bin/xdg-open 
 	
-		URxvt.matcher.button:	 1
+		URxvt.matcher.button:	1
     
-    		URxvt.underlineURLs: 	true
-		URxvt.perl-ext:     	 default,url-select
-		URxvt.keysym.M-u: 	   perl:url-select:select_next
-		URxvt.urlLauncher:  	 firefox
-		URxvt.underlineURLs: 	true
+    		URxvt.underlineURLs:	true
+		URxvt.perl-ext:		default,url-select
+		URxvt.keysym.M-u:	perl:url-select:select_next
+		URxvt.urlLauncher:	firefox
+		URxvt.underlineURLs:	true
 
 !	Bidirectional support
 		URxvt.perl-ext: 	[other extensions],bidi
