@@ -227,3 +227,5 @@
 	#Trash:
 	export NNN_TRASH=1
 
+#Kitty's bash completion:
+	source <(kitty + complete setup bash)

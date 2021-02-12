@@ -61,44 +61,79 @@
 
 !! Manet Color Palette version 0.1:
 
-	*.foreground:  		#FFFFFF
-	*.background:  		#212121
-	*.cursorColor: 		#FFFFFF
+!!	*.foreground:  		#FFFFFF
+!!	*.background:  		#212121
+!!	*.cursorColor: 		#FFFFFF
+!!	*.highlightColor:	#CE0056
+!!	*fading:		35
+!!
+!!
+!!	! black
+!!  		*.color0:      	#191919
+!!   		*.color8:      	#6C6E63
+!!	! red
+!!		*.color1:      	#B92A38
+!!		*.color9:      	#D97A67
+!!	! green
+!!		*.color2:      	#569F66
+!!		*.color10:     	#98C552
+!!	! yellow
+!!		*.color3:      	#D1BE7C
+!!		*.color11:     	#FFEE87
+!!	! blue
+!!		*.color4:      	#4885BE
+!!		*.color12:     	#7CA3C0
+!!
+!!	! magenta
+!!		*.color5:     	#7164AD
+!!		*.color13:     	#7C77AB
+!!	! cyan
+!!		*.color6:    	#309798
+!!		*.color14:    	#78ADAF
+!!	! white
+!!		*.color7:     	#A2A089
+!!
+!!		*.color15:    	#DEE0D5
+
+!! Tomorrow Night Bright:
+
+	*.foreground:  		#eaeaea
+	*.background:  		#000000
+	*.cursorColor: 		#eaeaea
 	*.highlightColor:	#CE0056
 	*fading:		35
 
 
 	! black
-  		*.color0:      	#191919
-   		*.color8:      	#6C6E63
+  		*.color0:      	#000000
+   		*.color8:      	#666666
 	! red
-		*.color1:      	#B92A38
-		*.color9:      	#D97A67
+		*.color1:      	#d54e53
+		*.color9:      	#ff3334
 	! green
-		*.color2:      	#569F66
-		*.color10:     	#98C552
+		*.color2:      	#b9ca4a
+		*.color10:     	#9ec400
 	! yellow
-		*.color3:      	#D1BE7C
-		*.color11:     	#FFEE87
+		*.color3:      	#e6c547
+		*.color11:     	#e7c547
 	! blue
-		*.color4:      	#4885BE
-		*.color12:     	#7CA3C0
+		*.color4:      	#7aa6da
+		*.color12:     	#7aa6da
 
 	! magenta
-		*.color5:     	#7164AD
-		*.color13:     	#7C77AB
+		*.color5:     	#c397d8
+		*.color13:     	#b77ee0
 	! cyan
-		*.color6:    	#309798
-		*.color14:    	#78ADAF
+		*.color6:    	#70c0ba
+		*.color14:    	#54ced6
 	! white
-		*.color7:     	#A2A089
-
-		*.color15:    	#DEE0D5
+		*.color7:     	#eaeaea
+		*.color15:    	#ffffff
 
 !Transparency
 	URxvt*transparent:      true 
 	URxvt*depth:		32
-	URxvt.background: 	[75]#101010
+	URxvt.background: 	[75]#000000
 
 
 !Scrollbar: Disabled
