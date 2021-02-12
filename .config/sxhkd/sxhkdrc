@@ -24,7 +24,9 @@ super + ctrl + b
 super + e
 	rofi -show power-menu -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi/rofi-power-menu-master/./rofi-power-menu
 
-
+#Launch wifi menu:
+super + w
+	bash ~/.local/bin/scripts/rofi/rofi-wifi-menu/rofi-wifi-menu.sh
 
 
 #----Apps-----------------------------------------------------------------------
