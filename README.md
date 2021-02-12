@@ -22,9 +22,9 @@ At the kernel of my computing milieu, there are two irreducible components: the 
  
  **Floating Layout** |  **Binary Space Layout**
 :-------: | :-------:
-![Screenshot from 2021-02-02 18-17-52](https://user-images.githubusercontent.com/64110504/106680321-0d68ea00-6584-11eb-8cb3-aed9eb32d4ab.png) | ![Screenshot from 2021-02-02 18-19-09](https://user-images.githubusercontent.com/64110504/106680351-1ce83300-6584-11eb-9879-5e06d667182d.png)
+![Screenshot from 2021-02-11 23-11-49](https://user-images.githubusercontent.com/64110504/107733053-9e943b00-6cbf-11eb-9e38-9c44a0704079.png) | ![Screenshot from 2021-02-11 23-11-26](https://user-images.githubusercontent.com/64110504/107733105-c1beea80-6cbf-11eb-9d95-1d175e721660.png)
 **Tiled + Floating Windows Layout** | **Rofi's modes**
-![Screenshot from 2021-02-02 18-19-22](https://user-images.githubusercontent.com/64110504/106680387-2e313f80-6584-11eb-8a23-83eb9832173f.png) | ![Rofi_Modes](https://user-images.githubusercontent.com/64110504/106680416-38ebd480-6584-11eb-8a56-037dee5a34ce.gif)
+![Screenshot from 2021-02-11 23-12-30](https://user-images.githubusercontent.com/64110504/107733137-d602e780-6cbf-11eb-8060-2672cd0b2a06.png) | ![rofi](https://user-images.githubusercontent.com/64110504/107733162-e4e99a00-6cbf-11eb-9c1e-b7737ede8433.gif)
 
 
 ## Unexpected features you get right out of the gate
