@@ -96,4 +96,4 @@ All of which are `apt install`able:
 - `Super+d`: run rofi as an application launcher.
 - `Alt+Tab`: run rofi as a window switcher.
 - `Super+e`: run rofi as a power menu. 
-- `Super+w`: run rofi as a window switcher.
+- `Super+w`: run rofi as a wifi menu.
