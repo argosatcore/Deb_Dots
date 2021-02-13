@@ -93,7 +93,7 @@ super + y
 
 # Swap the current node and the biggest local node:
 super + g
-	bspc node -s biggest.local
+	bspc node -{s biggest.local,s last.local}
 
 # Hide focused window:
 super + v
@@ -113,7 +113,7 @@ super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # Float a tiled window using the mouse
-button3 + {shift,shift}  
+button3 + shift  
 	bspc node -t {floating,tiled}
 
 # Set the node flags:
