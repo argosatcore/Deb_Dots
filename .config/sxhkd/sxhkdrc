@@ -93,7 +93,7 @@ super + y
 
 # Swap the current node and the biggest local node:
 super + g
-	bspc node -{s biggest.local,s last.local}
+	bspc node -s {biggest.local,last.local}
 
 # Hide focused window:
 super + v
