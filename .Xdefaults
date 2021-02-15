@@ -14,12 +14,12 @@
 	URxvt.termName:		rxvt-unicode-256color
 
 !! URxvt Appearance
-	URxvt.geometry: 	50x39
+	URxvt.geometry: 	85x25
 	URxvt.internalBorder: 	11 
 	URxvt.cursorBlink: 	true
 	URxvt.cursorUnderline: 	false
 	URxvt.saveLines: 	100000
-!	URxvt.urgentOnBell: 	false	
+	URxvt.urgentOnBell: 	true	
 	URxvt.iso14755: 	false	
 	URxvt.iso14755_52:	false
 	URxvt.intensity.Styles:	false
@@ -100,7 +100,7 @@
 	*.foreground:  		#eaeaea
 	*.background:  		#000000
 	*.cursorColor: 		#eaeaea
-	*.highlightColor:	#CE0056
+	*.highlightColor:	#1793d1
 	*fading:		35
 
 
