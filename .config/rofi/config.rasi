@@ -9,7 +9,7 @@ configuration {
 	xoffset: 0;
 	fixed-num-lines: false;
 	show-icons: true;
-	drun-icon-theme: "Flat-Remix-Blue-Dark";
+	drun-icon-theme: "Tela circle dark";
 	terminal: "urxvt";
 /*	run-command: "{cmd}";*/
 /*	run-list-command: "";*/

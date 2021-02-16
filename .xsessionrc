@@ -5,6 +5,7 @@ setxkbmap latam &
 #----Set mouse's speed to 9 times faster:
 xset m 9 0 &
 
+
 #----Start compositor:
 compton --config ~/.config/compton/compton.conf &
 
@@ -34,7 +35,7 @@ xmodmap .speedswapper &
 
 
 #----Start Redshift:
-redshift-gtk &
+redshift -l 9.83333:-83.75 &
 
 
 #----Set cursor:
@@ -50,7 +51,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 #----Set fixed wallpaper:
-feh --bg-fill ~/Pictures/Wallpapers/ATLAS-OF-PLACES-EDWARD-THEODORE-COMPTON-ALPINE_SCENERY-GPH-7.jpg &
+feh --bg-fill ~/Pictures/Wallpapers/tile.jpeg &
 
 
 #----Start window manager:

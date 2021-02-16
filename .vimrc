@@ -101,7 +101,8 @@
 "	let g:airline_theme='base16_gruvbox_dark_hard'
 "	let g:airline_theme='base16_nord'
 "	let g:airline_theme='monochrome'
-	let g:airline_theme='base16_adwaita'
+"	let g:airline_theme='monochrome'
+	let g:airline_theme='base16_chalk'
 
 " Configuración de Goyo 
 	function! s:goyo_enter()
