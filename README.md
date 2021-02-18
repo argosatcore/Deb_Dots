@@ -47,11 +47,12 @@ All of which are `apt install`able:
 - `rofi`: application launcher, window switcher, commad executor and many more.
 - `tint2`: panel.
 - `nautilus`: file manager.
-- `dunst`: notification daemon.
+- `dunst`: notifications daemon.
 - `compton`: compositing for window transparency.
 - `tmux`: persistent SSH shell sessions.
-- `feh`: set the desktop background.
+- `feh`: sets the desktop background.
 - `i3lock`: screen locking.
+- `redshift`: sets screen's temperature color according to time of day.
 
 
 ## (Some) sxhkd keybindings
