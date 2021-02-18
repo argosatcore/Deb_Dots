@@ -4,7 +4,8 @@
 #Moved most of it to ~/.xsessionrc file. This removed some inconsistencies for some autostart commands, specifically those in regards to "xmodmap" and ".speedswapper".
 
 
-# Truncate a couple of common commands that are used herein.
+
+#----Truncate a couple of common commands that are used herein.
 _bc() {
 	bspc config "$@"
 }
@@ -25,8 +26,8 @@ _bc border_width         1
 _bc window_gap          10
 _bc normal_border_color "#7c818c"
 _bc active_border_color "#4c566a"
-_bc focused_border_color "#ffffff"
-_bc presel_feedback_color "#ffffff"
+_bc focused_border_color "#D3DAE3"
+_bc presel_feedback_color "#3C414E"
 
 
 
@@ -54,7 +55,6 @@ if [ "$(bspwm -v)" -gt '0.9.5' ]; then
 fi
 
 
-
 #----BSPWM's applications rules:
 _br -a Gimp desktop='^8' state=floating follow=on
 _br -a mplayer2 state=floating
@@ -68,7 +68,6 @@ _br -a Arandr state=floating
 _br -a Pavucontrol state=floating rectangle=100x25
 _br -a Nm-connection-editor state=floating rectangle=80x10
 _br -a Nautilus state=floating rectangle=800x600
-
 
 
 #---External Rules:
