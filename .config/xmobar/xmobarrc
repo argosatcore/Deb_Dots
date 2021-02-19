@@ -1,3 +1,4 @@
+
 Config {font = "xft:Ubuntu Nerd Font:size=11:antialias=true,Noto Sans CJK SC:size=9:antialias=true"
        , bgColor = "#283339"
        , fgColor = "#F9fAF9"
@@ -26,24 +27,21 @@ Config {font = "xft:Ubuntu Nerd Font:size=11:antialias=true,Noto Sans CJK SC:siz
                                        -- discharging status
                                        , "-o"	, "<left>% (<timeleft>)"
                                        -- AC "on" status
-                                       , "-O"	, "<fc=#dAA520>Charging</fc>"
+                                       , "-O"	, "<fc=#dAA520>Charging</fc>"
                                        -- charged status
-                                       , "-i"	, "<fc=#1ABC9C>Charged</fc>"
+                                       , "-i"	, "<fc=#1ABC9C>Charged</fc>"
                                 ] 50
-                    , Run Network "eth0" ["-L","0","-H","32",
-                                          "--normal","green","--high","red"] 10
-                    , Run Network "eth1" ["-L","0","-H","32",
-                                          "--normal","green","--high","red"] 10
                     , Run Cpu ["-L","3","-H","50",
                                "--normal","green","--high","red"] 10
                     , Run Memory ["-t","Mem: <used>M"] 10
-                    , Run Swap [] 10
-                    , Run Com "uname" ["-s","-r"] "" 36000
                     , Run Date "%a - %b - %_d - %Y %l:%M:%P" "date" 10
                     , Run DiskU [("/", "D: <free>")] ["-L", "20", "-H", "60"] 10
+		    ,  Run CoreTemp ["-t", "Temp:<core0>°C",
+                  "-L", "40", "-H", "60",
+                  "-l", "lightblue", "-n", "gray90", "-h", "red"] 50
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "        %cpu%      %memory%  *  %swap%      %disku%  }\
-\{ %date%                                                                                                                    %uname%         %battery%  "
+       , template = "          }\
+\{ %date%                                                  %cpu%      %memory%      %disku%     %coretemp%      %battery%    "
        }
