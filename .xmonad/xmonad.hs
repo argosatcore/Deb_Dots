@@ -146,6 +146,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- launch rofi
     , ((modm,               xK_d     ), spawn "rofi -show drun")
 
+    -- launch rofi as a window switcher 
+    , ((mod1Mask,               xK_Tab     ), spawn "rofi -show window")
+
    -- launch rofi as a power menu
     , ((modm,               xK_x     ), spawn "rofi -show power-menu -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi/rofi-power-menu-master/./rofi-power-menu")
 
@@ -374,7 +377,7 @@ myStartupHook = return ()
 --
 main = do
 	xmproc <- spawnPipe "xmobar ~/.config/xmobar/xmobarrc"
-	xmonad def {
+	xmonad $ ewmh def {
       -- simple stuff
         terminal           = myTerminal,
         focusFollowsMouse  = myFocusFollowsMouse,
@@ -396,10 +399,10 @@ main = do
         startupHook        = myStartupHook,
         logHook            = workspaceHistoryHook <+> myLogHook <+> dynamicLogWithPP xmobarPP
                         { ppOutput = hPutStrLn xmproc 
-                        , ppCurrent = xmobarColor "#c3e88d" "" . wrap "[" "]" -- Current workspace in xmobar
+                        , ppCurrent = xmobarColor "#ffffff" "" . wrap "[" "]" -- Current workspace in xmobar
                         , ppVisible = xmobarColor "#c3e88d" ""                -- Visible but not current workspace
-                        , ppHidden = xmobarColor "#82AAFF" "" . wrap "*" ""   -- Hidden workspaces in xmobar
-                        , ppHiddenNoWindows = xmobarColor "#F07178" ""        -- Hidden workspaces (no windows)
+                        , ppHidden = xmobarColor "#97beed" "" . wrap "°" ""   -- Hidden workspaces in xmobar
+                        , ppHiddenNoWindows = xmobarColor "#7c818c" ""        -- Hidden workspaces (no windows)
                         , ppTitle = xmobarColor "#d0d0d0" "" . shorten 60     -- Title of active window in xmobar
                         , ppSep =  "<fc=#666666> | </fc>"                     -- Separators in xmobar
                         , ppUrgent = xmobarColor "#C45500" "" . wrap "!" "!"  -- Urgent workspace
