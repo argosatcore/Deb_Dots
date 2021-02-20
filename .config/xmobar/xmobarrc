@@ -1,6 +1,6 @@
 
-Config {font = "xft:Ubuntu Nerd Font:size=11:antialias=true,Noto Sans CJK SC:size=9:antialias=true"
-       , bgColor = "#283339"
+Config {font = "xft:Ubuntu Nerd Font:bold:size=10:antialias=true,Noto Sans CJK SC:size=9:antialias=true"
+       , bgColor = "#383c4a"
        , fgColor = "#F9fAF9"
        , additionalFonts = []
        , borderColor = "black"
@@ -36,12 +36,13 @@ Config {font = "xft:Ubuntu Nerd Font:size=11:antialias=true,Noto Sans CJK SC:siz
                     , Run Memory ["-t","Mem: <used>M"] 10
                     , Run Date "%a - %b - %_d - %Y %l:%M:%P" "date" 10
                     , Run DiskU [("/", "D: <free>")] ["-L", "20", "-H", "60"] 10
-		    ,  Run CoreTemp ["-t", "Temp:<core0>°C",
+		    , Run CoreTemp ["-t", "Temp:<core0>°C",
                   "-L", "40", "-H", "60",
                   "-l", "lightblue", "-n", "gray90", "-h", "red"] 50
+                    , Run UnsafeStdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "          }\
-\{ %date%                                                  %cpu%      %memory%      %disku%     %coretemp%      %battery%    "
+       , template = "     %UnsafeStdinReader%  }\
+\{ %date%                                                  %cpu%      %memory%      %disku%     %coretemp%     %battery%    "
        }

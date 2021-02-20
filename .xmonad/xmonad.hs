@@ -6,25 +6,90 @@
 --
 -- Normally, you'd only override those defaults you care about.
 --
-
+------------------------------------------------------------------------
+-- IMPORTS
+------------------------------------------------------------------------
+    -- Base
 import XMonad
-import Data.Monoid
-import XMonad.Util.Run
-import System.Exit
 import XMonad.Hooks.ManageDocks
-import XMonad.Layout.NoBorders
+import System.IO (hPutStrLn)
+import System.Exit 
 import qualified XMonad.StackSet as W
-import qualified Data.Map        as M
-import Graphics.X11.ExtraTypes.XF86 (xF86XK_AudioLowerVolume, xF86XK_AudioRaiseVolume, xF86XK_AudioMute, xF86XK_MonBrightnessDown, xF86XK_MonBrightnessUp, xF86XK_AudioPlay, xF86XK_AudioPrev, xF86XK_AudioNext)
-import XMonad.Hooks.DynamicLog
 
+    -- Actions
+import XMonad.Actions.CopyWindow (kill1, killAllOtherCopies)
+import XMonad.Actions.CycleWS (moveTo, shiftTo, WSType(..), nextScreen, prevScreen)
+import XMonad.Actions.GridSelect
+import XMonad.Actions.MouseResize
+import XMonad.Actions.Promote
+import XMonad.Actions.RotSlaves (rotSlavesDown, rotAllDown)
+import qualified XMonad.Actions.TreeSelect as TS
+import XMonad.Actions.WindowGo (runOrRaise)
+import XMonad.Actions.WithAll (sinkAll, killAll)
+import qualified XMonad.Actions.Search as S
+
+    -- Data
+import Data.Char (isSpace)
+import Data.Monoid
+import Data.Maybe (isJust)
+import Data.Tree
+--import qualified Data.Tuple.Extra as TE
+import qualified Data.Map as M
+
+    -- Hooks
+import XMonad.Hooks.DynamicLog (dynamicLogWithPP, wrap, xmobarPP, xmobarColor, shorten, PP(..))
+import XMonad.Hooks.EwmhDesktops  -- for some fullscreen events, also for xcomposite in obs.
+import XMonad.Hooks.FadeInactive
+--import XMonad.Hooks.ManageDocks (avoidStruts, docksEventHook, manageDocks, ToggleStruts(..))
+import XMonad.Hooks.ManageHelpers (isFullscreen, doFullFloat)
+import XMonad.Hooks.ServerMode
+import XMonad.Hooks.SetWMName
+import XMonad.Hooks.WorkspaceHistory
+
+    -- Layouts
+import XMonad.Layout.GridVariants (Grid(Grid))
+import XMonad.Layout.SimplestFloat
+import XMonad.Layout.Spiral
+import XMonad.Layout.ResizableTile
+import XMonad.Layout.Tabbed
+import XMonad.Layout.ThreeColumns
+
+    -- Layouts modifiers
+import XMonad.Layout.LayoutModifier
+import XMonad.Layout.LimitWindows (limitWindows, increaseLimit, decreaseLimit)
+import XMonad.Layout.Magnifier
+import XMonad.Layout.MultiToggle (mkToggle, single, EOT(EOT), (??))
+import XMonad.Layout.MultiToggle.Instances (StdTransformers(NBFULL, MIRROR, NOBORDERS))
+import XMonad.Layout.NoBorders
+import XMonad.Layout.Renamed (renamed, Rename(Replace))
+import XMonad.Layout.ShowWName
+import XMonad.Layout.Spacing
+import XMonad.Layout.WindowArranger (windowArrange, WindowArrangerMsg(..))
+import qualified XMonad.Layout.ToggleLayouts as T (toggleLayouts, ToggleLayout(Toggle))
+import qualified XMonad.Layout.MultiToggle as MT (Toggle(..))
 import XMonad.Layout.Gaps
     ( Direction2D(D, L, R, U),
       gaps,
       setGaps,
       GapMessage(DecGap, ToggleGaps, IncGap) )
 
-import XMonad.Layout.Spacing ( spacingRaw, Border(Border) )
+    -- Prompt
+import XMonad.Prompt
+import XMonad.Prompt.Input
+import XMonad.Prompt.FuzzyMatch
+import XMonad.Prompt.Man
+import XMonad.Prompt.Pass
+import XMonad.Prompt.Shell (shellPrompt)
+import XMonad.Prompt.Ssh
+import XMonad.Prompt.XMonad
+import Control.Arrow (first)
+
+    -- Utilities
+import XMonad.Util.EZConfig (additionalKeysP)
+import XMonad.Util.NamedScratchpad
+import XMonad.Util.Run (runProcessWithInput, safeSpawn, spawnPipe)
+import XMonad.Util.SpawnOnce
+import Graphics.X11.ExtraTypes.XF86 (xF86XK_AudioLowerVolume, xF86XK_AudioRaiseVolume, xF86XK_AudioMute, xF86XK_MonBrightnessDown, xF86XK_MonBrightnessUp, xF86XK_AudioPlay, xF86XK_AudioPrev, xF86XK_AudioNext)
 
 
 -- The preferred terminal program, which is used in a binding below and by
@@ -84,7 +149,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
    -- launch rofi as a power menu
     , ((modm,               xK_x     ), spawn "rofi -show power-menu -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi/rofi-power-menu-master/./rofi-power-menu")
 
-  -- launch rofi
+    -- launch rofi
     , ((modm,               xK_z     ), spawn "bash ~/.local/bin/scripts/rofi/rofi-wifi-menu/rofi-wifi-menu.sh")
 
     -- launch nautilus
@@ -96,7 +161,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- close focused window
     , ((modm .|. shiftMask, xK_c     ), kill)
 
-     -- Rotate through the available layout algorithms
+    -- Rotate through the available layout algorithms
     , ((modm,               xK_space ), sendMessage NextLayout)
 
     --  Reset the layouts on the current workspace to default
@@ -107,12 +172,11 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((0,                    xF86XK_AudioLowerVolume), spawn "amixer set Master 5%-")
     , ((0,                    xF86XK_AudioMute), spawn "amixer set Master toggle") 
 
-   -- Brightness keys
+    -- Brightness keys
     , ((0,                    xF86XK_MonBrightnessUp), spawn "xbacklight -inc 5")
     , ((0,                    xF86XK_MonBrightnessDown), spawn "xbacklight -dec 5")
 
-
-     -- GAPS!!!
+    -- GAPS!!!
     , ((modm .|. controlMask, xK_g), sendMessage $ ToggleGaps)               -- toggle all gaps
     , ((modm .|. shiftMask, xK_g), sendMessage $ setGaps [(L,30), (R,30), (U,40), (D,60)]) -- reset the GapSpec
     
@@ -128,7 +192,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. controlMask, xK_i), sendMessage $ IncGap 10 R)              -- increment the right-hand gap
     , ((modm .|. shiftMask, xK_i     ), sendMessage $ DecGap 10 R)           -- decrement the right-hand gap
   
-  -- Resize viewed windows to the correct size
+    -- Resize viewed windows to the correct size
     , ((modm,               xK_n     ), refresh)
 
     -- Move focus to the next window
@@ -172,7 +236,6 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- See also the statusBar function from Hooks.DynamicLog.
     --
     , ((modm              , xK_b     ), sendMessage ToggleStruts)
-   -- , ((modm .|. shiftMask, xK_b     ), sendMessage $ Toggle NOBORDERS)
 
     -- Quit xmonad
     , ((modm .|. shiftMask, xK_q     ), io (exitWith ExitSuccess))
@@ -235,10 +298,10 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 --
 --
 --
-myGaps       = gaps [(U, 1), (R, 1), (L, 1), (D, 1)]
+myGaps       = gaps [(U, 0), (R, 0), (L, 0), (D, 0)]
 
 
-myLayout = myGaps $ spacingRaw True (Border 2 2 2 2) True (Border 2 2 2 2) True $ smartBorders $ avoidStruts $ (tiled ||| Mirror tiled ||| Full)
+myLayout = myGaps $ spacingRaw True (Border 4 4 4 4) True (Border 4 4 4 4) True $ smartBorders $ avoidStruts $ (tiled ||| Mirror tiled ||| Full)
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
@@ -309,15 +372,9 @@ myStartupHook = return ()
 
 -- Run xmonad with the settings you specify. No need to modify this.
 --
-main = xmonad $ docks defaults
-
--- A structure containing your configuration settings, overriding
--- fields in the default config. Any you don't override, will
--- use the defaults defined in xmonad/XMonad/Config.hs
---
--- No need to modify this.
---
-defaults = def {
+main = do
+	xmproc <- spawnPipe "xmobar ~/.config/xmobar/xmobarrc"
+	xmonad def {
       -- simple stuff
         terminal           = myTerminal,
         focusFollowsMouse  = myFocusFollowsMouse,
@@ -334,10 +391,21 @@ defaults = def {
 
       -- hooks, layouts
         layoutHook         = myLayout,
-        manageHook         = myManageHook,
-        handleEventHook    = myEventHook,
-        logHook            = myLogHook,
-        startupHook        = myStartupHook
+        manageHook         =  myManageHook <+>( isFullscreen --> doFullFloat ) <+> manageDocks,
+        handleEventHook    = myEventHook <+> docksEventHook <+> fullscreenEventHook,
+        startupHook        = myStartupHook,
+        logHook            = workspaceHistoryHook <+> myLogHook <+> dynamicLogWithPP xmobarPP
+                        { ppOutput = hPutStrLn xmproc 
+                        , ppCurrent = xmobarColor "#c3e88d" "" . wrap "[" "]" -- Current workspace in xmobar
+                        , ppVisible = xmobarColor "#c3e88d" ""                -- Visible but not current workspace
+                        , ppHidden = xmobarColor "#82AAFF" "" . wrap "*" ""   -- Hidden workspaces in xmobar
+                        , ppHiddenNoWindows = xmobarColor "#F07178" ""        -- Hidden workspaces (no windows)
+                        , ppTitle = xmobarColor "#d0d0d0" "" . shorten 60     -- Title of active window in xmobar
+                        , ppSep =  "<fc=#666666> | </fc>"                     -- Separators in xmobar
+                        , ppUrgent = xmobarColor "#C45500" "" . wrap "!" "!"  -- Urgent workspace
+                        , ppOrder  = \(ws:l:t:ex) -> [ws,l]++ex++[t]
+                        }
+
     }
 
 -- | Finally, a copy of the default bindings in simple textual tabular format.
