@@ -17,7 +17,7 @@ Config {font = "xft:Ubuntu Nerd Font:bold:size=10:antialias=true,Noto Sans CJK S
        , allDesktops = True
        , overrideRedirect = True
        , commands = [
-                    Run Battery [ "--template" , "B: <acstatus>"
+                    Run Battery [ "--template" , ": <acstatus>"
                                 , "--L" , "15"
                                 , "--H" , "75"
                                 , "--low"      , "darkred"
@@ -27,16 +27,16 @@ Config {font = "xft:Ubuntu Nerd Font:bold:size=10:antialias=true,Noto Sans CJK S
                                        -- discharging status
                                        , "-o"	, "<left>% (<timeleft>)"
                                        -- AC "on" status
-                                       , "-O"	, "<fc=#dAA520>Charging</fc>"
+                                       , "-O"	, "<fc=#dAA520>Charging</fc> "
                                        -- charged status
                                        , "-i"	, "<fc=#1ABC9C>Charged</fc>"
                                 ] 50
                     , Run Cpu ["-L","3","-H","50",
                                "--normal","green","--high","red"] 10
-                    , Run Memory ["-t","Mem: <used>M"] 10
+                    , Run Memory ["-t",": <used>M"] 10
                     , Run Date "%a - %b - %_d - %Y %l:%M:%P" "date" 10
-                    , Run DiskU [("/", "D: <free>")] ["-L", "20", "-H", "60"] 10
-		    , Run CoreTemp ["-t", "Temp:<core0>°C",
+                    , Run DiskU [("/", ": <free>")] ["-L", "20", "-H", "60"] 10
+		    , Run CoreTemp ["-t", ": <core0>°C",
                   "-L", "40", "-H", "60",
                   "-l", "lightblue", "-n", "gray90", "-h", "red"] 50
                     , Run UnsafeStdinReader
@@ -44,5 +44,5 @@ Config {font = "xft:Ubuntu Nerd Font:bold:size=10:antialias=true,Noto Sans CJK S
        , sepChar = "%"
        , alignSep = "}{"
        , template = "     %UnsafeStdinReader%  }\
-\{ %date%                                                  %cpu%      %memory%      %disku%     %coretemp%     %battery%    "
+\{ %date%                                                  %cpu%      %memory%      %disku%     %coretemp%     %battery%    "
        }
