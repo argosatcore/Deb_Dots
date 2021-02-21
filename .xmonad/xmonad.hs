@@ -141,8 +141,12 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
 
 
+----------------
+--Applications--
+----------------
 
---Applications
+
+
     -- launch a terminal
     [ ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
 
@@ -210,8 +214,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
 -- Increase/decrease spacing (gaps)
 --
-    , ((modm,                xK_d     ), decWindowSpacing 4)           -- Decrease window spacing
-    , ((modm .|. controlMask, xK_d    ), incWindowSpacing 4)           -- Increase window spacing
+    , ((modm,                xK_g     ), decWindowSpacing 4)           -- Decrease window spacing
+    , ((modm .|. controlMask, xK_g    ), incWindowSpacing 4)           -- Increase window spacing
 
     , ((modm,                xK_s     ), decScreenSpacing 4)         -- Decrease screen spacing
     , ((modm .|. controlMask, xK_s), incScreenSpacing 4)         -- Increase screen spacing
