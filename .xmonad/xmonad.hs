@@ -251,7 +251,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_m     ), windows W.focusMaster  )
 
     -- Swap the focused window and the master window
-    , ((modm,               xK_Return), windows W.swapMaster)
+    , ((modm,               xK_Return), windows W.shiftMaster)
 
     -- Swap the focused window with the next window
     , ((modm .|. shiftMask, xK_j     ), windows W.swapDown  )
@@ -373,12 +373,14 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
     -- mod-button2, Raise the window to the top of the stack
     , ((modm, button2), (\w -> focus w >> windows W.shiftMaster))
 
-    -- Experiment 
-    -- , ((modm, button4), (\w -> focus w >> mouseToggleFloating))
-
     -- mod-button3, Set the window to floating mode and resize by dragging
     , ((modm, button3), (\w -> focus w >> mouseResizeWindow w
                                        >> windows W.shiftMaster))
+
+    -- mod-forward scroll whell, Push focused window into tilig 
+     --, ((modm, button4), (\w -> focus w >> W.sink))
+    , ((modm, button4), (windows . W.sink ))
+
 
     -- you may also bind events to the mouse scroll wheel (button4 and button5)
     ]   
