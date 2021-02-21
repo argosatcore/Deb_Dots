@@ -8,9 +8,10 @@
 --                                                                       --
 ---------------------------------------------------------------------------
 
-------------------------------------------------------------------------
--- IMPORTS
-------------------------------------------------------------------------
+-------------
+-- IMPORTS--
+-------------
+
     -- Base
 import XMonad
 import XMonad.Hooks.ManageDocks
@@ -20,7 +21,7 @@ import qualified XMonad.StackSet as W
 
     -- Actions
 import XMonad.Actions.CopyWindow (kill1, killAllOtherCopies)
-import XMonad.Actions.CycleWS (moveTo, shiftTo, WSType(..), nextScreen, prevScreen)
+import XMonad.Actions.CycleWS 
 import XMonad.Actions.GridSelect
 import XMonad.Actions.MouseResize
 import XMonad.Actions.Promote
@@ -43,18 +44,20 @@ import XMonad.Hooks.DynamicLog (dynamicLogWithPP, wrap, xmobarPP, xmobarColor, s
 import XMonad.Hooks.EwmhDesktops  -- for some fullscreen events, also for xcomposite in obs.
 import XMonad.Hooks.FadeInactive
 --import XMonad.Hooks.ManageDocks (avoidStruts, docksEventHook, manageDocks, ToggleStruts(..))
-import XMonad.Hooks.ManageHelpers (isFullscreen, doFullFloat)
+import XMonad.Hooks.ManageHelpers 
 import XMonad.Hooks.ServerMode
 import XMonad.Hooks.SetWMName
 import XMonad.Hooks.WorkspaceHistory
+import XMonad.Hooks.FloatNext
 
     -- Layouts
 import XMonad.Layout.GridVariants (Grid(Grid))
-import XMonad.Layout.SimplestFloat
+import XMonad.Layout.SimpleFloat
 import XMonad.Layout.Spiral
 import XMonad.Layout.ResizableTile
 import XMonad.Layout.Tabbed
 import XMonad.Layout.ThreeColumns
+import XMonad.Layout.BinarySpacePartition
 
     -- Layouts modifiers
 import XMonad.Layout.LayoutModifier
@@ -94,12 +97,16 @@ import XMonad.Util.SpawnOnce
 import Graphics.X11.ExtraTypes.XF86 (xF86XK_AudioLowerVolume, xF86XK_AudioRaiseVolume, xF86XK_AudioMute, xF86XK_MonBrightnessDown, xF86XK_MonBrightnessUp, xF86XK_AudioPlay, xF86XK_AudioPrev, xF86XK_AudioNext)
 
 
--- The preferred terminal program, which is used in a binding below and by
--- certain contrib modules.
---
+
+-----------------------
+--General Preferences--
+-----------------------
+
+    -- The preferred terminal program, which is used in a binding below and by certain contrib modules.
+
 myTerminal      = "urxvt"
 
--- Whether focus follows the mouse pointer.
+    -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
 myFocusFollowsMouse = True
 
@@ -107,35 +114,37 @@ myFocusFollowsMouse = True
 myClickJustFocuses :: Bool
 myClickJustFocuses = False
 
--- Width of the window border in pixels.
---
+    -- Width of the window border in pixels.
+
 myBorderWidth   = 1
 
--- modMask lets you specify which modkey you want to use. The default
--- is mod1Mask ("left alt").  You may also consider using mod3Mask
--- ("right alt"), which does not conflict with emacs keybindings. The
--- "windows key" is usually mod4Mask.
---
+    -- modMask lets you specify which modkey you want to use. The default
+    -- is mod1Mask ("left alt").  You may also consider using mod3Mask
+    -- ("right alt"), which does not conflict with emacs keybindings. The
+    -- "windows key" is usually mod4Mask.
+    --
 myModMask       = mod4Mask
 
--- The default number of workspaces (virtual screens) and their names.
--- By default we use numeric strings, but any string may be used as a
--- workspace name. The number of workspaces is determined by the length
--- of this list.
---
--- A tagging example:
---
--- > workspaces = ["web", "irc", "code" ] ++ map show [4..9]
---
+    --Worspaces
 myWorkspaces    = [" 1 "," 2 "," 3 "," 4 "," 5 "," 6 "," 7 "," 8 "," 9 "]
 
--- Border colors for unfocused and focused windows, respectively.
---
+    -- Border colors for unfocused and focused windows, respectively.
+
 myNormalBorderColor  = "#7C818C"
 myFocusedBorderColor = "#D3DAE3"
 
-------------------------------------------------------------------------
--- Key bindings. Add, modify or remove key bindings here.
+
+
+
+-----------------------------------------------------------
+-- Key bindings. Add, modify or remove key bindings here.--
+-----------------------------------------------------------
+
+
+
+------------------
+--Modkey's Alias--
+------------------
 --
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
@@ -144,8 +153,6 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 ----------------
 --Applications--
 ----------------
-
-
 
     -- launch a terminal
     [ ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
@@ -176,9 +183,10 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
 
 
+---------------------
+-- Multimedia Keys:--
+---------------------
 
--- Multimedia Keys:
---
     -- Volume keys
     , ((0,                    xF86XK_AudioRaiseVolume), spawn "amixer set Master 5%+")
     , ((0,                    xF86XK_AudioLowerVolume), spawn "amixer set Master 5%-")
@@ -191,8 +199,11 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
 
 
+-------------------
+--Gaps Management--
+-------------------
 
--- External Gaps:
+    -- External Gaps:
 
     , ((modm .|. controlMask, xK_g), sendMessage $ ToggleGaps)               -- toggle all gaps
     , ((modm .|. shiftMask, xK_g), sendMessage $ setGaps [(L,30), (R,30), (U,40), (D,60)]) -- reset the GapSpec
@@ -209,11 +220,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. controlMask, xK_i), sendMessage $ IncGap 10 R)              -- increment the right-hand gap
     , ((modm .|. shiftMask, xK_i     ), sendMessage $ DecGap 10 R)           -- decrement the right-hand gap
  
+    -- Increase/decrease spacing (gaps)
 
-
-
--- Increase/decrease spacing (gaps)
---
     , ((modm,                xK_g     ), decWindowSpacing 4)           -- Decrease window spacing
     , ((modm .|. controlMask, xK_g    ), incWindowSpacing 4)           -- Increase window spacing
 
@@ -221,7 +229,10 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. controlMask, xK_s), incScreenSpacing 4)         -- Increase screen spacing
 
   
--- Window Movement
+
+----------------------  
+-- Window Management--
+----------------------
 
     -- Resize viewed windows to the correct size
     , ((modm,               xK_n     ), refresh)
@@ -253,14 +264,36 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Expand the master area
     , ((modm,               xK_l     ), sendMessage Expand)
 
-   
-   
+    -- Move to next workspace
+    , ((modm,               xK_Down),  nextWS)
+    
+    --Move to previous workspace
+    , ((modm,               xK_Up),    prevWS)   
 
---Layout Modifiers:
-   
+    --Float and move windows   
+    , ((modm .|. controlMask              , xK_s    ), sendMessage  Arrange         )
+    , ((modm .|. controlMask .|. shiftMask, xK_s    ), sendMessage  DeArrange       )
+    , ((modm .|. controlMask              , xK_Left ), sendMessage (MoveLeft      10))
+    , ((modm .|. controlMask              , xK_Right), sendMessage (MoveRight     10))
+    , ((modm .|. controlMask              , xK_Down ), sendMessage (MoveDown      10))
+    , ((modm .|. controlMask              , xK_Up   ), sendMessage (MoveUp        10))
+
+    --Float and redimension windows
+    , ((modm                 .|. shiftMask, xK_Left ), sendMessage (IncreaseLeft  10))
+    , ((modm                 .|. shiftMask, xK_Right), sendMessage (IncreaseRight 10))
+    , ((modm                 .|. shiftMask, xK_Down ), sendMessage (IncreaseDown  10))
+    , ((modm                 .|. shiftMask, xK_Up   ), sendMessage (IncreaseUp    10))
+    , ((modm .|. controlMask .|. shiftMask, xK_Left ), sendMessage (DecreaseLeft  10))
+    , ((modm .|. controlMask .|. shiftMask, xK_Right), sendMessage (DecreaseRight 10))
+    , ((modm .|. controlMask .|. shiftMask, xK_Down ), sendMessage (DecreaseDown  10))
+    , ((modm .|. controlMask .|. shiftMask, xK_Up   ), sendMessage (DecreaseUp    10))
+
+
+--------------------
+--Layout Modifiers--
+--------------------   
     -- Float all the windows in a given workspace
-    , ((modm,               xK_f     ),  sendMessage (T.Toggle "simplestFloat")) --For some reason, it doesn't work...
-
+    , ((modm,               xK_f     ), toggleFloatAllNew)
     -- Sink all the windows in a given workspace
     , ((modm .|. shiftMask, xK_f     ), sinkAll)
    
@@ -288,9 +321,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
 
 
-
---Xmonad's session modifiers:
-
+------------------------------
+--Xmonad's session modifiers--
+------------------------------
     -- Quit xmonad
     , ((modm .|. shiftMask, xK_q     ), io (exitWith ExitSuccess))
 
@@ -320,22 +353,30 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
         , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]]
 
 
-------------------------------------------------------------------------
--- Mouse bindings: default actions bound to mouse events
---
+
+
+-------------------
+-- Mouse bindings--
+-------------------
+
 myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- mod-button1, Set the window to floating mode and move by dragging
-    [ ((modm, button1), (\w -> focus w >> mouseMoveWindow w))
+    [ ((modm, button1), (\w -> focus w >> mouseMoveWindow w
+                                       >> windows W.shiftMaster))
 
     -- mod-button2, Raise the window to the top of the stack
     , ((modm, button2), (\w -> focus w >> windows W.shiftMaster))
 
+    -- Experiment 
+    -- , ((modm, button4), (\w -> focus w >> mouseToggleFloating))
+
     -- mod-button3, Set the window to floating mode and resize by dragging
-    , ((modm, button3), (\w -> focus w >> mouseResizeWindow w))
+    , ((modm, button3), (\w -> focus w >> mouseResizeWindow w
+                                       >> windows W.shiftMaster))
 
     -- you may also bind events to the mouse scroll wheel (button4 and button5)
-    ]
+    ]   
 
 ------------------------------------------------------------------------
 -- Layouts:
@@ -353,7 +394,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 myGaps       = gaps [(U, 0), (R, 0), (L, 0), (D, 0)]
 
 
-myLayout = T.toggleLayouts simplestFloat $ mouseResize $ myGaps $ spacingRaw True (Border 4 4 4 4) True (Border 4 4 4 4) True $ smartBorders . avoidStruts $ (tiled ||| Mirror tiled ||| Full ||| simplestFloat)
+myLayout = mouseResize $ windowArrange $ myGaps $ spacingRaw True (Border 4 4 4 4) True (Border 4 4 4 4) True $ smartBorders . avoidStruts $ (tiled ||| Mirror tiled ||| Full ||| simpleFloat ||| emptyBSP)
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
@@ -443,7 +484,7 @@ main = do
 
       -- hooks, layouts
         layoutHook         = myLayout,
-        manageHook         =  myManageHook <+> ( isFullscreen --> doFullFloat ) <+> manageDocks,
+        manageHook         =  myManageHook <+> ( isFullscreen --> doFullFloat ) <+> manageDocks <+> floatNextHook,
         handleEventHook    = myEventHook <+> docksEventHook <+> fullscreenEventHook,
         startupHook        = myStartupHook,
         logHook            = workspaceHistoryHook <+> myLogHook <+> dynamicLogWithPP xmobarPP
