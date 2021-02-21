@@ -58,6 +58,7 @@ import XMonad.Layout.ResizableTile
 import XMonad.Layout.Tabbed
 import XMonad.Layout.ThreeColumns
 import XMonad.Layout.BinarySpacePartition
+import XMonad.Layout.ThreeColumns
 
     -- Layouts modifiers
 import XMonad.Layout.LayoutModifier
@@ -264,6 +265,10 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Expand the master area
     , ((modm,               xK_l     ), sendMessage Expand)
 
+    , ((modm,               xK_o     ), sendMessage MirrorShrink)
+    
+    , ((modm .|. shiftMask, xK_o     ), sendMessage MirrorExpand)
+
     -- Move to next workspace
     , ((modm,               xK_Down),  nextWS)
     
@@ -394,7 +399,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 myGaps       = gaps [(U, 0), (R, 0), (L, 0), (D, 0)]
 
 
-myLayout = mouseResize $ windowArrange $ myGaps $ spacingRaw True (Border 4 4 4 4) True (Border 4 4 4 4) True $ smartBorders . avoidStruts $ (tiled ||| Mirror tiled ||| Full ||| simpleFloat ||| emptyBSP)
+myLayout = mouseResize $ windowArrange $ myGaps $ spacingRaw True (Border 4 4 4 4) True (Border 4 4 4 4) True $ smartBorders . avoidStruts $ (ResizableTall 1 (3/100) (1/2) [] ||| ThreeColMid 1 (3/100) (1/2) ||| Mirror tiled ||| Full ||| simpleFloat ||| emptyBSP)
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
