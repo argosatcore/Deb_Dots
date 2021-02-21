@@ -1,3 +1,13 @@
+---------------------------------------------------------------------------
+--                                                                       --
+--     _|      _|  _|      _|                                      _|    --
+--       _|  _|    _|_|  _|_|    _|_|    _|_|_|      _|_|_|    _|_|_|    --
+--         _|      _|  _|  _|  _|    _|  _|    _|  _|    _|  _|    _|    --
+--       _|  _|    _|      _|  _|    _|  _|    _|  _|    _|  _|    _|    --
+--     _|      _|  _|      _|    _|_|    _|    _|    _|_|_|    _|_|_|    --
+--                                                                       --
+---------------------------------------------------------------------------
+
 ------------------------------------------------------------------------
 -- IMPORTS
 ------------------------------------------------------------------------
@@ -129,6 +139,10 @@ myFocusedBorderColor = "#D3DAE3"
 --
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
+
+
+
+--Applications
     -- launch a terminal
     [ ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
 
@@ -156,13 +170,12 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- close focused window
     , ((modm .|. shiftMask, xK_c     ), kill)
 
-    -- Rotate through the available layout algorithms
-    , ((modm,               xK_space ), sendMessage NextLayout)
 
-    --  Reset the layouts on the current workspace to default
-    , ((modm .|. shiftMask, xK_space ), setLayout $ XMonad.layoutHook conf)
-    
-    -- Multimedia Keys
+
+
+-- Multimedia Keys:
+--
+    -- Volume keys
     , ((0,                    xF86XK_AudioRaiseVolume), spawn "amixer set Master 5%+")
     , ((0,                    xF86XK_AudioLowerVolume), spawn "amixer set Master 5%-")
     , ((0,                    xF86XK_AudioMute), spawn "amixer set Master toggle") 
@@ -171,7 +184,12 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((0,                    xF86XK_MonBrightnessUp), spawn "xbacklight -inc 5")
     , ((0,                    xF86XK_MonBrightnessDown), spawn "xbacklight -dec 5")
 
-    -- GAPS!!!
+
+
+
+
+-- External Gaps:
+
     , ((modm .|. controlMask, xK_g), sendMessage $ ToggleGaps)               -- toggle all gaps
     , ((modm .|. shiftMask, xK_g), sendMessage $ setGaps [(L,30), (R,30), (U,40), (D,60)]) -- reset the GapSpec
     
@@ -186,7 +204,21 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     , ((modm .|. controlMask, xK_i), sendMessage $ IncGap 10 R)              -- increment the right-hand gap
     , ((modm .|. shiftMask, xK_i     ), sendMessage $ DecGap 10 R)           -- decrement the right-hand gap
+ 
+
+
+
+-- Increase/decrease spacing (gaps)
+--
+    , ((modm,                xK_d     ), decWindowSpacing 4)           -- Decrease window spacing
+    , ((modm .|. controlMask, xK_d    ), incWindowSpacing 4)           -- Increase window spacing
+
+    , ((modm,                xK_s     ), decScreenSpacing 4)         -- Decrease screen spacing
+    , ((modm .|. controlMask, xK_s), incScreenSpacing 4)         -- Increase screen spacing
+
   
+-- Window Movement
+
     -- Resize viewed windows to the correct size
     , ((modm,               xK_n     ), refresh)
 
@@ -217,7 +249,18 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Expand the master area
     , ((modm,               xK_l     ), sendMessage Expand)
 
-    -- Push window back into tiling
+   
+   
+
+--Layout Modifiers:
+   
+    -- Float all the windows in a given workspace
+    , ((modm,               xK_f     ),  sendMessage (T.Toggle "simplestFloat")) --For some reason, it doesn't work...
+
+    -- Sink all the windows in a given workspace
+    , ((modm .|. shiftMask, xK_f     ), sinkAll)
+   
+    -- Push focused window back into tiling
     , ((modm,               xK_t     ), withFocused $ windows . W.sink)
 
     -- Increment the number of windows in the master area
@@ -226,11 +269,23 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Deincrement the number of windows in the master area
     , ((modm              , xK_period), sendMessage (IncMasterN (-1)))
 
+    -- Rotate through the available layout algorithms
+    , ((modm,               xK_space ), sendMessage NextLayout)
+
+    --  Reset the layouts on the current workspace to default
+    , ((modm .|. shiftMask, xK_space ), setLayout $ XMonad.layoutHook conf)
+
+
     -- Toggle the status bar gap
     -- Use this binding with avoidStruts from Hooks.ManageDocks.
     -- See also the statusBar function from Hooks.DynamicLog.
     --
     , ((modm              , xK_b     ), sendMessage ToggleStruts)
+
+
+
+
+--Xmonad's session modifiers:
 
     -- Quit xmonad
     , ((modm .|. shiftMask, xK_q     ), io (exitWith ExitSuccess))
@@ -294,7 +349,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 myGaps       = gaps [(U, 0), (R, 0), (L, 0), (D, 0)]
 
 
-myLayout = myGaps $ spacingRaw True (Border 4 4 4 4) True (Border 4 4 4 4) True $ smartBorders $ avoidStruts $ (tiled ||| Mirror tiled ||| Full)
+myLayout = T.toggleLayouts simplestFloat $ mouseResize $ myGaps $ spacingRaw True (Border 4 4 4 4) True (Border 4 4 4 4) True $ smartBorders . avoidStruts $ (tiled ||| Mirror tiled ||| Full ||| simplestFloat)
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
@@ -384,7 +439,7 @@ main = do
 
       -- hooks, layouts
         layoutHook         = myLayout,
-        manageHook         =  myManageHook <+>( isFullscreen --> doFullFloat ) <+> manageDocks,
+        manageHook         =  myManageHook <+> ( isFullscreen --> doFullFloat ) <+> manageDocks,
         handleEventHook    = myEventHook <+> docksEventHook <+> fullscreenEventHook,
         startupHook        = myStartupHook,
         logHook            = workspaceHistoryHook <+> myLogHook <+> dynamicLogWithPP xmobarPP
