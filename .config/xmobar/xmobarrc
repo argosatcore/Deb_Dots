@@ -39,10 +39,11 @@ Config {font = "xft:Ubuntu Nerd Font:bold:size=10:antialias=true,Noto Sans CJK S
 		    , Run CoreTemp ["-t", ": <core0>°C",
                   "-L", "40", "-H", "60",
                   "-l", "lightblue", "-n", "gray90", "-h", "red"] 50
-                    , Run UnsafeStdinReader
+		    , Run Com "/bin/bash" ["-c", "~/.local/bin/scripts/Xmobar/Volume/get-volume.sh"] "myvolume" 1
+                    , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "     %UnsafeStdinReader%  }\
-\{ %date%                                                  %cpu%      %memory%      %disku%     %coretemp%     %battery%    "
+       , template = "     %StdinReader%  }\
+\{ %date%                                                  %cpu%      %memory%      %disku%     %coretemp%  %myvolume%   %battery%    "
        }
