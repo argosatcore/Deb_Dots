@@ -147,8 +147,8 @@ local taglist_buttons = gears.table.join(
                                                   client.focus:toggle_tag(t)
                                               end
                                           end),
-                    awful.button({ }, 4, function(t) awful.tag.viewnext(t.screen) end),
-                    awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end)
+                    awful.button({ }, 4, function(t) awful.tag.viewprev(t.screen) end),
+                    awful.button({ }, 5, function(t) awful.tag.viewnext(t.screen) end)
                 )
 
 local tasklist_buttons = gears.table.join(
@@ -682,16 +682,7 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 
 -- Gaps
 beautiful.useless_gap = 4
+beautiful.gap_single_client = false
 
-
--- Autorun programs
-autorun = true
-autorunApps =
-{
-   "feh --bg-fill ~/Pictures/Wallpapers/tile.jpeg",
-}
-if autorun then
-   for app = 1, #autorunApps do
-       awful.util.spawn(autorunApps[app])
-   end
-end
+--Autostart
+awful.spawn.with_shell("feh --bg-fill ~/Pictures/Wallpapers/tile.jpeg")
