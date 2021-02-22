@@ -147,8 +147,8 @@ local taglist_buttons = gears.table.join(
                                                   client.focus:toggle_tag(t)
                                               end
                                           end),
-                    awful.button({ }, 4, function(t) awful.tag.viewprev(t.screen) end),
-                    awful.button({ }, 5, function(t) awful.tag.viewnext(t.screen) end)
+                    awful.button({ }, 5, function(t) awful.tag.viewnext(t.screen) end),
+                    awful.button({ }, 4, function(t) awful.tag.viewprev(t.screen) end)
                 )
 
 local tasklist_buttons = gears.table.join(
@@ -263,8 +263,8 @@ end)
 -- {{{ Mouse bindings
 root.buttons(gears.table.join(
     awful.button({ }, 3, function () mymainmenu:toggle() end),
-    awful.button({ }, 4, awful.tag.viewnext),
-    awful.button({ }, 5, awful.tag.viewprev)
+    awful.button({ }, 5, awful.tag.viewnext),
+    awful.button({ }, 4, awful.tag.viewprev)
 ))
 -- }}}
 
@@ -372,6 +372,17 @@ globalkeys = gears.table.join(
   
   --Brightness up 
    awful.key({ }, "XF86MonBrightnessUp", function () awful.util.spawn("xbacklight -inc 5") end),
+
+-- Volume Keys
+
+  --Volume Up 
+   awful.key({ }, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 5%+") end),
+  
+  --Volume down 
+   awful.key({ }, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 5%-") end),
+
+  --Mute Volume 
+   awful.key({ }, "XF86AudioMute", function () awful.util.spawn("amixer set Master toggle") end),
 
     -- Prompt
     awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
@@ -607,7 +618,7 @@ awful.rules.rules = {
 
     -- Add titlebars to normal clients and dialogs
     { rule_any = {type = { "normal", "dialog" }
-      }, properties = { titlebars_enabled = true }
+      }, properties = { titlebars_enabled = false }
     },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
@@ -628,6 +639,20 @@ client.connect_signal("manage", function (c)
       and not c.size_hints.program_position then
         -- Prevent clients from being unreachable after screen count changes.
         awful.placement.no_offscreen(c)
+    end
+end)
+
+
+--Show titlebars only for floating windows
+client.connect_signal("property::floating", function(c)
+    local b = false;
+    if c.first_tag ~= nil then
+        b = c.first_tag.layout.name == "floating"
+    end
+    if c.floating or b then
+        awful.titlebar.show(c)
+    else
+        awful.titlebar.hide(c)
     end
 end)
 
