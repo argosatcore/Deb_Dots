@@ -100,11 +100,11 @@ local scrlocker    = "slock"
 awful.util.terminal = terminal
 awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8" ,"9" }
 awful.layout.layouts = {
-    awful.layout.suit.floating,
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
     awful.layout.suit.tile.bottom,
     awful.layout.suit.tile.top,
+    awful.layout.suit.floating,
     --awful.layout.suit.fair,
     --awful.layout.suit.fair.horizontal,
     --awful.layout.suit.spiral,
@@ -229,17 +229,32 @@ screen.connect_signal("property::geometry", function(s)
     end
 end)
 
+
+
+----------------------------------------------------------------------
+--------------------------WARNING!!----------------------------------- 
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+--------THIS CODE SECTION CAUSES AWESOME TO FREE IF UNCOMMENTED-------
+----------------------------------------------------------------------
+--
 -- No borders when rearranging only 1 non-floating or maximized client
-screen.connect_signal("arrange", function (s)
-    local only_one = #s.tiled_clients == 1
-    for _, c in pairs(s.clients) do
-        if only_one and not c.floating or c.maximized then
-            c.border_width = 0
-        else
-            c.border_width = beautiful.border_width
-        end
-    end
-end)
+-- screen.connect_signal("arrange", function (s)
+--     local only_one = #s.tiled_clients == 1
+--     for _, c in pairs(s.clients) do
+--         if only_one and not c.floating or c.maximized then
+--             c.border_width = 0
+--         else
+--             c.border_width = beautiful.border_width
+--         end
+--     end
+-- end)
+----------------------------------------------------------------------
+--------------------------WARNING!------------------------------------
+----------------------------------------------------------------------
+
+
+
 -- Create a wibox for each screen and add it
 awful.screen.connect_for_each_screen(function(s) beautiful.at_screen_connect(s) end)
 -- }}}
