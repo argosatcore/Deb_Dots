@@ -98,7 +98,7 @@ local browser      = os.getenv("BROWSER") or "firefox"
 local scrlocker    = "slock"
 
 awful.util.terminal = terminal
-awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8" ,"9" }
+awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8" ,"9" } 
 awful.layout.layouts = {
     awful.layout.suit.tile,
     awful.layout.suit.tile.left,
@@ -119,9 +119,9 @@ awful.layout.layouts = {
     --lain.layout.cascade,
     --lain.layout.cascade.tile,
     lain.layout.centerwork,
-    lain.layout.centerwork.horizontal,
-    lain.layout.termfair,
-    lain.layout.termfair.center,
+    --lain.layout.centerwork.horizontal,
+    --lain.layout.termfair,
+    --lain.layout.termfair.center,
 }
 
 awful.util.taglist_buttons = my_table.join(
@@ -137,8 +137,8 @@ awful.util.taglist_buttons = my_table.join(
             client.focus:toggle_tag(t)
         end
     end),
-    awful.button({ }, 4, function(t) awful.tag.viewnext(t.screen) end),
-    awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end)
+    awful.button({ }, 5, function(t) awful.tag.viewnext(t.screen) end),
+    awful.button({ }, 4, function(t) awful.tag.viewprev(t.screen) end)
 )
 
 awful.util.tasklist_buttons = my_table.join(
@@ -262,8 +262,8 @@ awful.screen.connect_for_each_screen(function(s) beautiful.at_screen_connect(s) 
 -- {{{ Mouse bindings
 root.buttons(my_table.join(
     awful.button({ }, 3, function () awful.util.mymainmenu:toggle() end),
-    awful.button({ }, 4, awful.tag.viewnext),
-    awful.button({ }, 5, awful.tag.viewprev)
+    awful.button({ }, 5, awful.tag.viewnext),
+    awful.button({ }, 4, awful.tag.viewprev)
 ))
 -- }}}
 
