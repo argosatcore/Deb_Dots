@@ -628,7 +628,55 @@ clientkeys = my_table.join(
             c.maximized = not c.maximized
             c:raise()
         end ,
-        {description = "maximize", group = "client"})
+        {description = "maximize", group = "client"}),
+
+  -- Resize windows
+    awful.key({ modkey, "Control" }, "Up", function (c)
+      if c.floating then
+        c:relative_move( 0, 0, 0, -10)
+      else
+        awful.client.incwfact(0.025)
+      end
+    end,
+    {description = "Floating Resize Vertical -", group = "client"}),
+    awful.key({ modkey, "Control" }, "Down", function (c)
+      if c.floating then
+        c:relative_move( 0, 0, 0,  10)
+      else
+        awful.client.incwfact(-0.025)
+      end
+    end,
+    {description = "Floating Resize Vertical +", group = "client"}),
+    awful.key({ modkey, "Control" }, "Left", function (c)
+      if c.floating then
+        c:relative_move( 0, 0, -10, 0)
+      else
+        awful.tag.incmwfact(-0.025)
+      end
+    end,
+    {description = "Floating Resize Horizontal -", group = "client"}),
+    awful.key({ modkey, "Control" }, "Right", function (c)
+      if c.floating then
+        c:relative_move( 0, 0,  10, 0)
+      else
+        awful.tag.incmwfact(0.025)
+      end
+    end,
+    {description = "Floating Resize Horizontal +", group = "client"}),
+
+    -- Moving floating windows
+    awful.key({ altkey, "Shift"   }, "Down", function (c)
+      c:relative_move(  0,  10,   0,   0) end,
+    {description = "Floating Move Down", group = "client"}),
+    awful.key({ altkey, "Shift"   }, "Up", function (c)
+      c:relative_move(  0, -10,   0,   0) end,
+    {description = "Floating Move Up", group = "client"}),
+    awful.key({ altkey, "Shift"   }, "Left", function (c)
+      c:relative_move(-10,   0,   0,   0) end,
+    {description = "Floating Move Left", group = "client"}),
+    awful.key({ altkey, "Shift"   }, "Right", function (c)
+      c:relative_move( 10,   0,   0,   0) end,
+    {description = "Floating Move Right", group = "client"})
 )
 
 -- Bind all key numbers to tags.
