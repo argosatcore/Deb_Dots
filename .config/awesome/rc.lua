@@ -93,7 +93,7 @@ local terminal     = "urxvtc"
 local vi_focus     = false -- vi-like client focus - https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev   = true -- cycle trough all previous client or just the first -- https://github.com/lcpz/awesome-copycats/issues/274
 local editor       = os.getenv("EDITOR") or "nvim"
-local gui_editor   = os.getenv("GUI_EDITOR") or "gvim"
+local gui_editor   = os.getenv("gedit") or "gedit"
 local browser      = os.getenv("BROWSER") or "firefox"
 local scrlocker    = "slock"
 
@@ -544,12 +544,20 @@ globalkeys = my_table.join(
     awful.key({ modkey }, "v", function () awful.spawn.with_shell("xsel -b | xsel") end,
               {description = "copy gtk to terminal", group = "hotkeys"}),
 
-    -- User programs
+
+-- User programs
+   
+   --Firefox
     awful.key({ modkey }, "i", function () awful.spawn(browser) end,
               {description = "run browser", group = "launcher"}),
-    awful.key({ modkey }, "a", function () awful.spawn(gui_editor) end,
-              {description = "run gui editor", group = "launcher"}),
 
+   --Gedit	      
+    awful.key({ modkey }, "e", function () awful.spawn(gui_editor) end,
+              {description = "run gui editor", group = "launcher"}),
+   
+   --Nautilus 
+    awful.key({ modkey },            "a",     function () awful.util.spawn("nautilus -w") end,
+              {description = "run pcmanfm", group = "Apps"}),
     -- Default
     --[[ Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
@@ -633,7 +641,7 @@ clientkeys = my_table.join(
   -- Resize windows
     awful.key({ modkey, "Control" }, "Up", function (c)
       if c.floating then
-        c:relative_move( 0, 0, 0, -10)
+        c:relative_move( 0, 0, 0, -20)
       else
         awful.client.incwfact(0.025)
       end
@@ -641,7 +649,7 @@ clientkeys = my_table.join(
     {description = "Floating Resize Vertical -", group = "client"}),
     awful.key({ modkey, "Control" }, "Down", function (c)
       if c.floating then
-        c:relative_move( 0, 0, 0,  10)
+        c:relative_move( 0, 0, 0,  20)
       else
         awful.client.incwfact(-0.025)
       end
@@ -649,7 +657,7 @@ clientkeys = my_table.join(
     {description = "Floating Resize Vertical +", group = "client"}),
     awful.key({ modkey, "Control" }, "Left", function (c)
       if c.floating then
-        c:relative_move( 0, 0, -10, 0)
+        c:relative_move( 0, 0, -20, 0)
       else
         awful.tag.incmwfact(-0.025)
       end
@@ -657,7 +665,7 @@ clientkeys = my_table.join(
     {description = "Floating Resize Horizontal -", group = "client"}),
     awful.key({ modkey, "Control" }, "Right", function (c)
       if c.floating then
-        c:relative_move( 0, 0,  10, 0)
+        c:relative_move( 0, 0,  20, 0)
       else
         awful.tag.incmwfact(0.025)
       end
@@ -666,16 +674,16 @@ clientkeys = my_table.join(
 
     -- Moving floating windows
     awful.key({ altkey, "Shift"   }, "Down", function (c)
-      c:relative_move(  0,  10,   0,   0) end,
+      c:relative_move(  0,  20,   0,   0) end,
     {description = "Floating Move Down", group = "client"}),
     awful.key({ altkey, "Shift"   }, "Up", function (c)
-      c:relative_move(  0, -10,   0,   0) end,
+      c:relative_move(  0, -20,   0,   0) end,
     {description = "Floating Move Up", group = "client"}),
     awful.key({ altkey, "Shift"   }, "Left", function (c)
-      c:relative_move(-10,   0,   0,   0) end,
+      c:relative_move(-20,   0,   0,   0) end,
     {description = "Floating Move Left", group = "client"}),
     awful.key({ altkey, "Shift"   }, "Right", function (c)
-      c:relative_move( 10,   0,   0,   0) end,
+      c:relative_move( 20,   0,   0,   0) end,
     {description = "Floating Move Right", group = "client"})
 )
 
@@ -775,6 +783,38 @@ awful.rules.rules = {
                      size_hints_honor = false
      }
     },
+
+    -- Floating clients.
+    { rule_any = {
+        instance = {
+          "DTA",  -- Firefox addon DownThemAll.
+          "copyq",  -- Includes session name in class.
+          "pinentry",
+        },
+        class = {
+          "Arandr",
+	  "Nautilus",
+          "Blueman-manager",
+          "Gpick",
+          "Kruler",
+          "MessageWin",  -- kalarm.
+          "Sxiv",
+          "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
+          "Wpa_gui",
+          "veromix",
+          "xtightvncviewer"},
+
+        -- Note that the name property shown in xprop might be set slightly after creation of the client
+        -- and the name shown there might not match defined rules here.
+        name = {
+          "Event Tester",  -- xev.
+        },
+        role = {
+          "AlarmWindow",  -- Thunderbird's calendar.
+          "ConfigManager",  -- Thunderbird's about:config.
+          "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
+        }
+      }, properties = { floating = true }},
 
     -- Titlebars
     { rule_any = { type = { "dialog", "normal" } },
