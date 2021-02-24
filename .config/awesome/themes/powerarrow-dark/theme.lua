@@ -17,12 +17,12 @@ local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 local theme                                     = {}
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-dark"
 theme.wallpaper                                 = theme.dir .. "/tile.jpeg"
-theme.font                                      = "FontAwesome bold 8"
+theme.font                                      = "Ubuntu Hack Nerd Font bold 8"
 theme.fg_normal                                 = "#DDDDFF"
 theme.fg_focus                                  = "#ffffff"
 theme.fg_urgent                                 = "#CC9393"
 theme.bg_normal                                 = "#383c4aBF"
-theme.bg_focus                                  = "#383c4a"
+theme.bg_focus                                  = "#323944"
 theme.bg_urgent                                 = "#1A1A1A"
 theme.border_width                              = dpi(1)
 theme.border_normal                             = "#3F3F3F"
@@ -49,6 +49,9 @@ theme.layout_max                                = theme.dir .. "/icons/max.png"
 theme.layout_fullscreen                         = theme.dir .. "/icons/fullscreen.png"
 theme.layout_magnifier                          = theme.dir .. "/icons/magnifier.png"
 theme.layout_floating                           = theme.dir .. "/icons/floating.png"
+theme.layout_centerwork                         = theme.dir .. "/icons/centerwork.png"
+theme.layout_centerworkh                        = theme.dir .. "/icons/centerworkh.png"
+theme.layout_centerfair                         = theme.dir .. "/icons/centerfair.png"
 theme.widget_ac                                 = theme.dir .. "/icons/ac.png"
 theme.widget_battery                            = theme.dir .. "/icons/battery.png"
 theme.widget_battery_low                        = theme.dir .. "/icons/battery_low.png"
@@ -106,7 +109,7 @@ local clock = awful.widget.watch(
 theme.cal = lain.widget.cal({
     attach_to = { clock },
     notification_preset = {
-        font = "FontAwesome 10",
+        font = "Ubuntu Hack Nerd Font 10",
         fg   = theme.fg_normal,
         bg   = theme.bg_normal
     }
@@ -256,6 +259,7 @@ theme.volume.widget:buttons(awful.util.table.join(
 
 -- Net
 local neticon = wibox.widget.imagebox(theme.widget_net)
+--[[
 local net = lain.widget.net({
     settings = function()
         widget:set_markup(markup.font(theme.font,
@@ -264,6 +268,7 @@ local net = lain.widget.net({
                           markup("#46A8C3", " " .. string.format("%06.1f", net_now.sent) .. " ")))
     end
 })
+--]]
 
 -- Separators
 local spr     = wibox.widget.textbox(' ')
@@ -346,7 +351,7 @@ function theme.at_screen_connect(s)
             bat.widget,
             arrl_ld,
             wibox.container.background(neticon, theme.bg_focus),
-            wibox.container.background(net.widget, theme.bg_focus),
+            --wibox.container.background(net.widget, theme.bg_focus),
             arrl_dl,
             clock,
             spr,
