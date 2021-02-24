@@ -21,13 +21,15 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 1. In the recent past, I used [bspwm](https://github.com/baskerville/bspwm) as my default window manager. I still regard it as one of the best tiling window managers out there, but I found in awesome some features that made the switch worthwhile like the use of tags instead of workspaces (a word that, like the so called "productivity", is a word I really hate), the extensibility provided by its use of the Lua programming language, the integration of components like widgets and an status bar as part of awesome and the combination of an stablished set of layouts and some manual control over them. If you are interested in giving bspwm a try, you can take a look at my dotfiles. Alson, a far more comprehensive and rigurous source on running bspwm on Debina is a book written by the greek philosopher,[Protesilaos Stavrou](https://protesilaos.com/), apropiately called _[Prot's Dots For Debian](https://protesilaos.com/pdfd/)_. His writings and videos on free and open source software may be of interest to those who wish to examine, both technically and philosophically, what, for better or for worse, has become an inescapable aspect of contemporary life. 
 
  ---
+ ## Layouts:
  
- **Floating Layout** |  **Binary Space Layout**
+ **Master & Stack** |  **Master & Stack Left**
 :-------: | :-------:
-![Screenshot from 2021-02-16 15-38-46](https://user-images.githubusercontent.com/64110504/108127531-f987b280-7070-11eb-9075-1f406b222c73.png) | ![Screenshot from 2021-02-16 15-37-13](https://user-images.githubusercontent.com/64110504/108127578-0dcbaf80-7071-11eb-9055-0297cc7d1eb3.png)
-**Tiled + Floating Windows Layout** | **Rofi's modes**
-![Screenshot from 2021-02-16 16-05-40](https://user-images.githubusercontent.com/64110504/108127628-24720680-7071-11eb-8504-49a7d652d007.png) | ![Rofimodi](https://user-images.githubusercontent.com/64110504/108127676-36ec4000-7071-11eb-9b05-57f046b326d7.gif)
-
+![Screenshot from 2021-02-23 19-39-51](https://user-images.githubusercontent.com/64110504/108935764-d9796580-7613-11eb-80bf-1c87f4a2914c.png) | ![Screenshot from 2021-02-23 19-39-57](https://user-images.githubusercontent.com/64110504/108936095-eeee8f80-7613-11eb-852b-c15e74690953.png)
+**Tile Bottom** | **Tile Top**
+![Screenshot from 2021-02-23 19-40-00](https://user-images.githubusercontent.com/64110504/108936354-ff066f00-7613-11eb-88ed-fa7d585402f5.png) | ![Screenshot from 2021-02-23 19-40-03](https://user-images.githubusercontent.com/64110504/108936642-12b1d580-7614-11eb-911f-7d03eb49ed56.png)
+**Floating** | **Centered Master**
+![Screenshot from 2021-02-23 19-40-56](https://user-images.githubusercontent.com/64110504/108937011-2b21f000-7614-11eb-8c4b-19aa0fb35975.png) | ![Screenshot from 2021-02-23 19-42-01](https://user-images.githubusercontent.com/64110504/108937247-39700c00-7614-11eb-89f8-59d242d592bb.png)
 
 ## Unexpected features you get right out of the gate
 - **Bash's vim mode:** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
@@ -94,4 +96,4 @@ All of which are `apt install`able:
 - `Super+d`: run rofi as an application launcher.
 - `Alt+Tab`: run rofi as a window switcher.
 - `Super+e`: run rofi as a power menu. 
-- `Super+w`: run rofi as a wifi menu.
+- `Super+Shitf+e`: run rofi as a wifi menu.
