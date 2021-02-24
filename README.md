@@ -6,9 +6,8 @@
    
 ---     
 
-At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/), as a solid foundation to build on, and the [Binary Space Partition Window Manager (bspwm)](https://github.com/baskerville/bspwm), as one of the most extensible, flexible and, at the same time, minimal frameworks to manage the layout of my computing space.
-
-   The design decisions implemented in these dot files were initially based on the work of [Protesilaos Stavrou](https://protesilaos.com/). His writings and videos on free and open source software may be of interest to those who wish to examine, both technically and philosophically, what, for better or for worse, has become an inescapable aspect of contemporary life.
+At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/), as a solid foundation to build on, and the [awesome](https://awesomewm.org/) window manager, as one of the most flexible and extensible frameworks to manage what probably is both, the most common way of interactaing with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.<sup>1</sup> 
+In combination with awesome, I use my own variation of the [Awesome WM Copycats](https://github.com/lcpz/awesome-copycats), specifically of the powerarrow-dark theme. Its color scheme is based on the [Arc-Theme](https://github.com/horst3180/Arc-theme).
  
    The layout for this README.md was heavely influenced by that of [Spencer Tipping](https://github.com/spencertipping/dotfiles). Also, he (along with some [contributors](https://github.com/spencertipping/ni/graphs/contributors)) created an amazing tool for data processing pipelines in bash called [**_`ni`_**](https://github.com/spencertipping/ni). You should definetively check it out.
  
@@ -17,15 +16,21 @@ At the kernel of my computing milieu, there are two irreducible components: the 
    It is worth mentioning that although I use these dots on Debian, I've made an effort to keep them as distribution agnostic as possible. I have managed to deploy them succesfully in other distributions, especifically on [Arch Linux](https://archlinux.org/) (_btw_) and [Void Linux](https://voidlinux.org/). 
 
    If you find any of this useful, feel free to grab any part or all of it.
+   
+   \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+1. In the recent past, I used [bspwm](https://github.com/baskerville/bspwm) as my default window manager. I still regard it as one of the best tiling window managers out there, but I found in awesome some features that made the switch worthwhile. Some of these include, but are no limited to, the use of tags instead of workspaces (a word that, like the so called "productivity", is a word I really hate), the extensibility provided by its use of the Lua programming language, the integration of components like widgets and an status bar as part of awesome and the combination of an stablished set of layouts and some manual control over them. If you are interested in giving bspwm a try, you can take a look at my dotfiles. Alson, a far more comprehensive and rigurous source on running bspwm on Debina is a book written by the greek philosopher, [Protesilaos Stavrou](https://protesilaos.com/), apropiately called _[Prot's Dots For Debian](https://protesilaos.com/pdfd/)_. His writings and videos on free and open source software may be of interest to those who wish to examine, both technically and philosophically, what, for better or for worse, has become an inescapable aspect of contemporary life. 
 
  ---
- 
- **Floating Layout** |  **Binary Space Layout**
+ ## Layouts:
+ Awesome comes with even more than the ones shown here, these are just the ones that I have chosen for myself. Also, by using the [Lain library](https://github.com/lcpz/lain/tree/33c0e0c2360a04fcc6f51bccb0ad2a7a9e9c07b3) (an unofficial succesor to the Vain library), you get access to other layouts and features that are not included in the default version of awesome. 
+ **Master & Stack** |  **Master & Stack Left**
 :-------: | :-------:
-![Screenshot from 2021-02-16 15-38-46](https://user-images.githubusercontent.com/64110504/108127531-f987b280-7070-11eb-9075-1f406b222c73.png) | ![Screenshot from 2021-02-16 15-37-13](https://user-images.githubusercontent.com/64110504/108127578-0dcbaf80-7071-11eb-9055-0297cc7d1eb3.png)
-**Tiled + Floating Windows Layout** | **Rofi's modes**
-![Screenshot from 2021-02-16 16-05-40](https://user-images.githubusercontent.com/64110504/108127628-24720680-7071-11eb-8504-49a7d652d007.png) | ![Rofimodi](https://user-images.githubusercontent.com/64110504/108127676-36ec4000-7071-11eb-9b05-57f046b326d7.gif)
-
+![Screenshot from 2021-02-23 19-39-51](https://user-images.githubusercontent.com/64110504/108935764-d9796580-7613-11eb-80bf-1c87f4a2914c.png) | ![Screenshot from 2021-02-23 19-39-57](https://user-images.githubusercontent.com/64110504/108936095-eeee8f80-7613-11eb-852b-c15e74690953.png)
+**Tile Bottom** | **Tile Top**
+![Screenshot from 2021-02-23 19-40-00](https://user-images.githubusercontent.com/64110504/108936354-ff066f00-7613-11eb-88ed-fa7d585402f5.png) | ![Screenshot from 2021-02-23 19-40-03](https://user-images.githubusercontent.com/64110504/108936642-12b1d580-7614-11eb-911f-7d03eb49ed56.png)
+**Floating** | **Centered Master**
+![Screenshot from 2021-02-23 19-40-56](https://user-images.githubusercontent.com/64110504/108937011-2b21f000-7614-11eb-8c4b-19aa0fb35975.png) | ![Screenshot from 2021-02-23 19-42-01](https://user-images.githubusercontent.com/64110504/108937247-39700c00-7614-11eb-89f8-59d242d592bb.png)
 
 ## Unexpected features you get right out of the gate
 - **Bash's vim mode:** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
@@ -42,10 +47,9 @@ All of which are `apt install`able:
 
 - `neovim`: text editor.
 - `rxvt-unicode`: terminal emulator.
-- `bspwm`: window manager.
-- `sxhkd`: keybinding daemon.
+- `awesome`: window manager.
+- `awesome-extra`: additional modules for awesome.
 - `rofi`: application launcher, window switcher, commad executor and many more.
-- `tint2`: panel.
 - `nautilus`: file manager.
 - `dunst`: notifications daemon.
 - `compton`: compositing for window transparency.
@@ -55,46 +59,42 @@ All of which are `apt install`able:
 - `redshift`: sets screen's temperature color according to time of day.
 
 
-## (Some) sxhkd keybindings
+## (Some) keybindings
 
-### bspwm:
-- `Super+Shift+r`: reload bspwm.
-- `Super+z`: reload sxhkd.
-- `Super+Shift+e`: exit bspwm session.
-- `Super+Shift+x`: lock screen.
-- `Super+Ctrl+b`: change to random background.
+### List of keybindings:
+- `Super+Ctrl+r`: show a list with all keybindings. 
 
-### Workspaces:
-- `Ctrl+(left arrow key, right arrow key)`: move to the previous or next workspace. 
-- `Super+(1,2,3,4,5,6,7,8,9,0)`: go to a desginated workspace.
-- `Super+Shift+(1,2,3,4,5,6,7,8,9,0)`: move an active window to a desginated workspace.
+### Awesome:
+- `Super+Ctrll+r`: reload awesome.
+- `Super+Shift+q`: exit awesome session.
+- `Alt+Ctrl+l`: lock screen.
+
+### Tags:
+- `Super+(left arrow key, right arrow key)`: move to the previous or next workspace. 
+- `Super+(1,2,3,4,5,6,7,8,9,0)`: go to a desginated tag.
+- `Super+Shift+(1,2,3,4,5,6,7,8,9,0)`: move an active window to a desginated tag.
 
 ### Windows:
 - `Super+q`: close.
-- `Super+Shift+q`: kill. 
 - `Super+f`: fullscreen. 
-- `Super+s`: float. 
-- `Super+t`: tile. 
-- `Super+Shift+t`: pseudotile.
-- `Super+m`: monocle.
-- `Super+v`: hide.
-- `Super+n`: unhide all windows on a specific workspace.
+- `Super+Ctrl+space`: toggle floating. 
+- `Super+n`: minimize.
+- `Super+Ctrl+n`: restore minimized.
 - `Super+r`: rotate windows clockwise.
-- `Super+Shift+r`: rotate windows counterclockwise.
 - `Super+(h,j,k,l)`: change the selection of a window in a designated direction.
 - `Super+Shift+(h,j,k,l)`: move window in a designated direction.
 
 ### Mouse:
-- `Shift+click2`: float a tiled window and viceversa.
-- `Ctrl+click2`: move window.
-- `Ctrl+click3`: resize window.
+- `Shift+click4`: float a tiled window and viceversa.
+- `Super+click1`: move window.
+- `Ctrl+click2`: resize window.
 
 ### Running things:
-- `Super+Space`: run a terminal.
+- `Super+Return`: run a terminal.
 - `Super+Shift+Space`: run a terminal in a tmux session.
 - `Super+i`: run firefox.
 - `Super+a`: run nautilus.
 - `Super+d`: run rofi as an application launcher.
 - `Alt+Tab`: run rofi as a window switcher.
 - `Super+e`: run rofi as a power menu. 
-- `Super+w`: run rofi as a wifi menu.
+- `Super+Shitf+e`: run rofi as a wifi menu.
