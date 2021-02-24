@@ -61,7 +61,7 @@ All of which are `apt install`able:
 ## (Some) keybindings
 
 ### List of keybindings:
-- `Super+Ctrl+r`: show a list with all keybindings. 
+- `Super+s`: show a list with all keybindings. 
 
 ### Awesome:
 - `Super+Ctrll+r`: reload awesome.
