@@ -23,7 +23,7 @@ In combination with awesome, I use my own variation of the [Awesome WM Copycats]
 
  ---
  ## Layouts:
- Awesome comes with even more than the ones shown here, these are just the ones that I have chosen for myself. Also, by using the [Lain library](https://github.com/lcpz/lain/tree/33c0e0c2360a04fcc6f51bccb0ad2a7a9e9c07b3) (an unofficial succesor to the Vain Library), you get access other layouts that are not included in the default version of awesome 
+ Awesome comes with even more than the ones shown here, these are just the ones that I have chosen for myself. Also, by using the [Lain library](https://github.com/lcpz/lain/tree/33c0e0c2360a04fcc6f51bccb0ad2a7a9e9c07b3) (an unofficial succesor to the Vain library), you get access to other layouts and features that are not included in the default version of awesome. 
  **Master & Stack** |  **Master & Stack Left**
 :-------: | :-------:
 ![Screenshot from 2021-02-23 19-39-51](https://user-images.githubusercontent.com/64110504/108935764-d9796580-7613-11eb-80bf-1c87f4a2914c.png) | ![Screenshot from 2021-02-23 19-39-57](https://user-images.githubusercontent.com/64110504/108936095-eeee8f80-7613-11eb-852b-c15e74690953.png)
