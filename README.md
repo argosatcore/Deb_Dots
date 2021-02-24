@@ -1,4 +1,4 @@
-# Deb_Dots
+# Deb_Dots<sup>1</sup> 
 ⢀⣴⠾⠻⢶⣦⠀  
 ⣾⠁⢠⠒⠀⣿⡁  
 ⢿⡄⠘⠷⠚⠋⠀  
@@ -6,10 +6,8 @@
    
 ---     
 
-At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/), as a solid foundation to build on, and the [awesome](https://awesomewm.org/) window manager, as one of the most flexible and extensible frameworks to manage what probably is both, the most common way of interactaing with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.<sup>1</sup> 
+At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/), as a solid foundation to build on, and the [awesome](https://awesomewm.org/) window manager, as one of the most flexible and extensible frameworks to manage what probably is both, the most common way of interactaing with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.<sup>2</sup> 
 In combination with awesome, I use my own variation of the [Awesome WM Copycats](https://github.com/lcpz/awesome-copycats), specifically of the powerarrow-dark theme. Its color scheme is based on the [Arc-Theme](https://github.com/horst3180/Arc-theme).
- 
-   The layout for this README.md was heavely influenced by that of [Spencer Tipping](https://github.com/spencertipping/dotfiles). Also, he (along with some [contributors](https://github.com/spencertipping/ni/graphs/contributors)) created an amazing tool for data processing pipelines in bash called [**_`ni`_**](https://github.com/spencertipping/ni). You should definetively check it out.
  
    These dot files were started with a minimal Debian 10 Buster installation, so they should work with any Debian installation or Debian-based distribution. 
      
@@ -18,8 +16,9 @@ In combination with awesome, I use my own variation of the [Awesome WM Copycats]
    If you find any of this useful, feel free to grab any part or all of it.
    
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+1.  The layout for this README.md was heavely influenced by that of [Spencer Tipping](https://github.com/spencertipping/dotfiles). Also, he (along with some [contributors](https://github.com/spencertipping/ni/graphs/contributors)) created an amazing tool for data processing pipelines in bash called [**_`ni`_**](https://github.com/spencertipping/ni). You should definetively check it out.
 
-1. In the recent past, I used [bspwm](https://github.com/baskerville/bspwm) as my default window manager. I still regard it as one of the best tiling window managers out there, but I found in awesome some features that made the switch worthwhile. Some of these include, but are no limited to, the use of tags instead of workspaces (a word that, like the so called "productivity", is a word I really hate), the extensibility provided by its use of the Lua programming language, the integration of components like widgets and an status bar as part of awesome and the combination of an stablished set of layouts and some manual control over them. If you are interested in giving bspwm a try, you can take a look at my dotfiles. Alson, a far more comprehensive and rigurous source on running bspwm on Debina is a book written by the greek philosopher, [Protesilaos Stavrou](https://protesilaos.com/), apropiately called _[Prot's Dots For Debian](https://protesilaos.com/pdfd/)_. His writings and videos on free and open source software may be of interest to those who wish to examine, both technically and philosophically, what, for better or for worse, has become an inescapable aspect of contemporary life. 
+2. In the recent past, I used [bspwm](https://github.com/baskerville/bspwm) as my default window manager. I still regard it as one of the best tiling window managers out there, but I found in awesome some features that made the switch worthwhile. Some of these include, but are no limited to, the use of tags instead of workspaces (a word that, like the so called "productivity", is a word I really hate), the extensibility provided by its use of the Lua programming language, the integration of components like widgets and an status bar as part of awesome and the combination of an stablished set of layouts and some manual control over them. If you are interested in giving bspwm a try, you can take a look at my dotfiles. Alson, a far more comprehensive and rigurous source on running bspwm on Debina is a book written by the greek philosopher, [Protesilaos Stavrou](https://protesilaos.com/), apropiately called _[Prot's Dots For Debian](https://protesilaos.com/pdfd/)_. His writings and videos on free and open source software may be of interest to those who wish to examine, both technically and philosophically, what, for better or for worse, has become an inescapable aspect of contemporary life. 
 
  ---
  ## Layouts:
