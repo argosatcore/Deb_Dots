@@ -6,7 +6,7 @@
    
 ---     
 
-At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/), as a solid foundation to build on, and the [awesome] window managar, as one of the most flexible and extensible frameworks to manage what probably is both, the most common ways of interactaing with with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space. ^(1)
+At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/), as a solid foundation to build on, and the [awesome] window managar, as one of the most flexible and extensible frameworks to manage what probably is both, the most common ways of interactaing with with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.^(1)
  
    The layout for this README.md was heavely influenced by that of [Spencer Tipping](https://github.com/spencertipping/dotfiles). Also, he (along with some [contributors](https://github.com/spencertipping/ni/graphs/contributors)) created an amazing tool for data processing pipelines in bash called [**_`ni`_**](https://github.com/spencertipping/ni). You should definetively check it out.
  
