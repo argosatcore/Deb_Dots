@@ -44,10 +44,9 @@ All of which are `apt install`able:
 
 - `neovim`: text editor.
 - `rxvt-unicode`: terminal emulator.
-- `bspwm`: window manager.
-- `sxhkd`: keybinding daemon.
+- `awesome`: window manager.
+- `awesome-extra`: additional modules for awesome.
 - `rofi`: application launcher, window switcher, commad executor and many more.
-- `tint2`: panel.
 - `nautilus`: file manager.
 - `dunst`: notifications daemon.
 - `compton`: compositing for window transparency.
@@ -57,42 +56,38 @@ All of which are `apt install`able:
 - `redshift`: sets screen's temperature color according to time of day.
 
 
-## (Some) sxhkd keybindings
+## (Some) keybindings
 
-### bspwm:
-- `Super+Shift+r`: reload bspwm.
-- `Super+z`: reload sxhkd.
-- `Super+Shift+e`: exit bspwm session.
-- `Super+Shift+x`: lock screen.
-- `Super+Ctrl+b`: change to random background.
+### List of keybindgs:
+- `Super+Ctrll+r`: showo a complete list of keybindings. 
 
-### Workspaces:
-- `Ctrl+(left arrow key, right arrow key)`: move to the previous or next workspace. 
-- `Super+(1,2,3,4,5,6,7,8,9,0)`: go to a desginated workspace.
-- `Super+Shift+(1,2,3,4,5,6,7,8,9,0)`: move an active window to a desginated workspace.
+### Awesome:
+- `Super+Ctrll+r`: reload awesome.
+- `Super+Shift+q`: exit awesome session.
+- `Alt+Ctrl+l`: lock screen.
+
+### Tags:
+- `Super+(left arrow key, right arrow key)`: move to the previous or next workspace. 
+- `Super+(1,2,3,4,5,6,7,8,9,0)`: go to a desginated tag.
+- `Super+Shift+(1,2,3,4,5,6,7,8,9,0)`: move an active window to a desginated tag.
 
 ### Windows:
 - `Super+q`: close.
-- `Super+Shift+q`: kill. 
 - `Super+f`: fullscreen. 
-- `Super+s`: float. 
-- `Super+t`: tile. 
-- `Super+Shift+t`: pseudotile.
-- `Super+m`: monocle.
-- `Super+v`: hide.
-- `Super+n`: unhide all windows on a specific workspace.
+- `Super+Ctrl+space`: toggle floating. 
+- `Super+n`: minimize.
+- `Super+Ctrl+n`: restore minimized.
 - `Super+r`: rotate windows clockwise.
-- `Super+Shift+r`: rotate windows counterclockwise.
 - `Super+(h,j,k,l)`: change the selection of a window in a designated direction.
 - `Super+Shift+(h,j,k,l)`: move window in a designated direction.
 
 ### Mouse:
-- `Shift+click2`: float a tiled window and viceversa.
-- `Ctrl+click2`: move window.
-- `Ctrl+click3`: resize window.
+- `Shift+click4`: float a tiled window and viceversa.
+- `Super+click1`: move window.
+- `Ctrl+click2`: resize window.
 
 ### Running things:
-- `Super+Space`: run a terminal.
+- `Super+Return`: run a terminal.
 - `Super+Shift+Space`: run a terminal in a tmux session.
 - `Super+i`: run firefox.
 - `Super+a`: run nautilus.
