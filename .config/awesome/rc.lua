@@ -466,6 +466,11 @@ globalkeys = my_table.join(
    awful.key({ }, "XF86AudioMute", function () awful.util.spawn("amixer set Master toggle") end),
 
 
+    --Screenshooting:
+    awful.key({ }, "Print", function () awful.util.spawn("gnome-screenshot") end,
+              {description = "take a screenshot", group = "hotkeys"}),
+
+
     -- ALSA volume control
     awful.key({ altkey }, "Up",
         function ()
@@ -552,12 +557,12 @@ globalkeys = my_table.join(
               {description = "run browser", group = "launcher"}),
 
    --Gedit	      
-    awful.key({ modkey }, "e", function () awful.spawn(gui_editor) end,
-              {description = "run gui editor", group = "launcher"}),
+--     awful.key({ modkey }, "e", function () awful.spawn(gui_editor) end,
+--               {description = "run gui editor", group = "launcher"}),
    
    --Nautilus 
     awful.key({ modkey },            "a",     function () awful.util.spawn("nautilus -w") end,
-              {description = "run pcmanfm", group = "Apps"}),
+              {description = "run file manager", group = "Apps"}),
     -- Default
     --[[ Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
@@ -582,11 +587,21 @@ globalkeys = my_table.join(
 
    --Rofi 
     awful.key({ modkey },            "d",     function () awful.util.spawn("rofi -show drun") end,
-              {description = "run rofi", group = "launcher"}),
+              {description = "app launcher", group = "launcher"}),
 
     --Rofi as Window Switcher 
     awful.key({ altkey },            "Tab",     function () awful.util.spawn("rofi -show window") end,
               {description = "switch apps", group = "launcher"}),
+
+    --Rofi as a power menu
+    awful.key({ modkey },            "e",     function () awful.util.spawn("rofi -show power-menu -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi/rofi-power-menu-master/./rofi-power-menu") end,
+              {description = "power menu", group = "launcher"}),
+
+    --Rofi as a wifi menu 
+    awful.key({ modkey, "Shift" },            "e",     function () awful.spawn.with_shell("bash ~/.local/bin/scripts/rofi/rofi-wifi-menu/rofi-wifi-menu.sh") end,
+              {description = "wifi menu", group = "launcher"}),
+
+
 
     -- Prompt
     awful.key({ modkey }, "r", function () awful.screen.focused().mypromptbox:run() end,
