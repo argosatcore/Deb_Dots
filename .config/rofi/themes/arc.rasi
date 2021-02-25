@@ -116,12 +116,12 @@
 #button {
     spacing: 0;
     background-color: @tempus-bg-main;
-    text-color:       @tempus-fg-alt;
+    text-color:       @tempus-fg-main;
     border-radius:    12px;
 }
 #button.selected {
     background-color: @tempus-cyan;
-    text-color:       @tempus-bg-main;
+    text-color:       @tempus-bg-alt;
     border-radius:    12px;
 }
 #inputbar {

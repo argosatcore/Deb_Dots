@@ -26,9 +26,9 @@ theme.bg_focus                                  = "#323944"
 theme.bg_urgent                                 = "#1A1A1A"
 theme.border_width                              = dpi(1)
 theme.border_normal                             = "#3F3F3F"
-theme.border_focus                              = "#7F7F7F"
+theme.border_focus                              = "#5294E2"
 theme.border_marked                             = "#CC9393"
-theme.tasklist_bg_focus                         = "#5294e2"
+theme.tasklist_bg_focus                         = "#5294E2"
 theme.titlebar_bg_focus                         = theme.bg_focus
 theme.titlebar_bg_normal                        = theme.bg_normal
 theme.titlebar_fg_focus                         = theme.fg_focus
@@ -37,6 +37,7 @@ theme.menu_width                                = dpi(140)
 theme.menu_submenu_icon                         = theme.dir .. "/icons/submenu.png"
 theme.taglist_squares_sel                       = theme.dir .. "/icons/square_sel.png"
 theme.taglist_squares_unsel                     = theme.dir .. "/icons/square_unsel.png"
+theme.taglist_bg_focus                          = "#5294E2"
 theme.layout_tile                               = theme.dir .. "/icons/tile.png"
 theme.layout_tileleft                           = theme.dir .. "/icons/tileleft.png"
 theme.layout_tilebottom                         = theme.dir .. "/icons/tilebottom.png"
@@ -94,7 +95,7 @@ local keyboardlayout = awful.widget.keyboardlayout:new()
 -- Textclock
 local clockicon = wibox.widget.imagebox(theme.widget_clock)
 local clock = awful.widget.watch(
-    "date +'%a %d %b %l:%M %P'", 60,
+    "date +'%a %d %b %l:%M %P   '", 60,
     function(widget, stdout)
         widget:set_markup(" " .. markup.font(theme.font, stdout))
     end
@@ -198,6 +199,12 @@ theme.volume.widget:buttons(awful.util.table.join(
                                awful.button({}, 4, function ()
                                      awful.util.spawn("amixer set Master 1%+")
                                      theme.volume.update()
+                               end),
+                               awful.button({}, 1, function ()
+                                     awful.util.spawn("pavucontrol")
+                               end),
+                               awful.button({}, 3, function ()
+                                     awful.util.spawn("pkill pavucontrol")
                                end),
                                awful.button({}, 5, function ()
                                      awful.util.spawn("amixer set Master 1%-")

@@ -216,7 +216,7 @@
 	export NNN_USE_EDITOR=1
 
 	#Bookmarks:
-#	export NNN_BMS='t:/home/carlos/Desktop/Proyecto Final de Graduación Arquitectura/;p:/home/argos/Desktop/Proyectos Personales/;d:/home/argos/Downloads/;i:/home/argos/Pictures/'
+	export NNN_BMS='p:~/Documents/;d:~/Downloads/;i:~/Pictures/'
 
 	#Plugins:
 	export NNN_PLUG='f:finder;o:fzopen;p:mocplay;d:dragdrop;t:nmount;v:preview-tui;z:fzcd'
