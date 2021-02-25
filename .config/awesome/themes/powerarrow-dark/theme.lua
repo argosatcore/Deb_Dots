@@ -21,7 +21,7 @@ theme.font                                      = "Ubuntu Hack Nerd Font bold 8"
 theme.fg_normal                                 = "#DDDDFF"
 theme.fg_focus                                  = "#ffffff"
 theme.fg_urgent                                 = "#CC9393"
-theme.bg_normal                                 = "#383c4aBF"
+theme.bg_normal                                 = "#323944BF"
 theme.bg_focus                                  = "#323944"
 theme.bg_urgent                                 = "#1A1A1A"
 theme.border_width                              = dpi(1)
@@ -92,7 +92,7 @@ theme.titlebar_maximized_button_focus_inactive  = theme.dir .. "/icons/titlebar/
 theme.titlebar_maximized_button_normal_inactive = theme.dir .. "/icons/titlebar/maximized_normal_inactive.png"
 
 local markup = lain.util.markup
-local separators = lain.util.separators
+-- local separators = lain.util.separators
 
 local keyboardlayout = awful.widget.keyboardlayout:new()
 
@@ -176,7 +176,7 @@ theme.mpd = lain.widget.mpd({
 local memicon = wibox.widget.imagebox(theme.widget_mem)
 local mem = lain.widget.mem({
     settings = function()
-        widget:set_markup(markup.font(theme.font, " " .. mem_now.used .. "MB "))
+        widget:set_markup(markup.font(theme.font, " " .. mem_now.used .. "MB   "))
     end
 })
 
@@ -184,7 +184,7 @@ local mem = lain.widget.mem({
 local cpuicon = wibox.widget.imagebox(theme.widget_cpu)
 local cpu = lain.widget.cpu({
     settings = function()
-        widget:set_markup(markup.font(theme.font, " " .. cpu_now.usage .. "% "))
+        widget:set_markup(markup.font(theme.font, " " .. cpu_now.usage .. "%   "))
     end
 })
 
@@ -192,7 +192,7 @@ local cpu = lain.widget.cpu({
 local tempicon = wibox.widget.imagebox(theme.widget_temp)
 local temp = lain.widget.temp({
     settings = function()
-        widget:set_markup(markup.font(theme.font, " " .. coretemp_now .. "°C "))
+        widget:set_markup(markup.font(theme.font, " " .. coretemp_now .. "°C   "))
     end
 })
 
@@ -209,7 +209,7 @@ theme.fs = lain.widget.fs({
 
 -- Battery
 local baticon = wibox.widget.imagebox(theme.widget_battery)
-local bat = lain.widget.bat({
+theme.bat = lain.widget.bat({
     settings = function()
         if bat_now.status and bat_now.status ~= "N/A" then
             if bat_now.ac_status == 1 then
@@ -221,13 +221,23 @@ local bat = lain.widget.bat({
             else
                 baticon:set_image(theme.widget_battery)
             end
-            widget:set_markup(markup.font(theme.font, " " .. bat_now.perc .. "% "))
+            widget:set_markup(markup.font(theme.font, " " .. bat_now.perc .. "%   "))
         else
-            widget:set_markup(markup.font(theme.font, " AC "))
+            widget:set_markup(markup.font(theme.font, " AC   "))
             baticon:set_image(theme.widget_ac)
         end
     end
 })
+theme.bat.widget:buttons(awful.util.table.join(
+                               awful.button({}, 4, function ()
+                                     awful.util.spawn("xbacklight -inc 5")
+                                     theme.bat.update()
+                               end),
+                               awful.button({}, 5, function ()
+                                     awful.util.spawn("xbacklight -dec 5")
+                                     theme.bat.update()
+                               end)
+))
 
 -- ALSA volume
 local volicon = wibox.widget.imagebox(theme.widget_vol)
@@ -243,7 +253,7 @@ theme.volume = lain.widget.alsa({
             volicon:set_image(theme.widget_vol)
         end
 
-        widget:set_markup(markup.font(theme.font, " " .. volume_now.level .. "% "))
+        widget:set_markup(markup.font(theme.font, " " .. volume_now.level .. "%   "))
     end
 })
 theme.volume.widget:buttons(awful.util.table.join(
@@ -271,9 +281,9 @@ local net = lain.widget.net({
 --]]
 
 -- Separators
-local spr     = wibox.widget.textbox(' ')
-local arrl_dl = separators.arrow_left(theme.bg_focus, "alpha")
-local arrl_ld = separators.arrow_left("alpha", theme.bg_focus)
+-- local spr     = wibox.widget.textbox(' ')
+-- local arrl_dl = separators.arrow_left(theme.bg_focus, "alpha")
+-- local arrl_ld = separators.arrow_left("alpha", theme.bg_focus)
 
 function theme.at_screen_connect(s)
     -- Quake application
@@ -348,7 +358,7 @@ function theme.at_screen_connect(s)
             --wibox.container.background(theme.fs.widget, theme.bg_focus),
             arrl_dl,
             baticon,
-            bat.widget,
+	    theme.bat.widget,
             arrl_ld,
             --wibox.container.background(neticon, theme.bg_focus),
             --wibox.container.background(net.widget, theme.bg_focus),
