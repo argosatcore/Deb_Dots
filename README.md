@@ -29,7 +29,7 @@ In combination with awesome, I use my own variation of the [Awesome WM Copycats]
  
  ---
  
- ##" Layouts:
+ ## Layouts:
  Awesome comes with even more than the ones shown here, these are just the ones that I have chosen for myself. Also, by using the [Lain](https://github.com/lcpz/lain/tree/33c0e0c2360a04fcc6f51bccb0ad2a7a9e9c07b3) module (an unofficial succesor to the Vain module), you get access to other layouts and features that are not included in the default version of awesome. 
  **Master & Stack** |  **Master & Stack Left**
 :-------: | :-------:
