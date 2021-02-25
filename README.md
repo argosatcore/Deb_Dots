@@ -8,7 +8,7 @@
 
 At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/), as a solid foundation to build on, and the [awesome](https://awesomewm.org/) window manager, as one of the most flexible and extensible frameworks to manage what probably is both, the most common way of interactaing with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.<sup>2</sup> 
 
-In combination with awesome, I use my own variation of the [Awesome WM Copycats](https://github.com/lcpz/awesome-copycats), specifically of the powerarrow-dark theme. Its color scheme is based on the [Arc-Theme](https://github.com/horst3180/Arc-theme). As a side effect of using this, awesome is exposed to th Lain library, which grants it a whole bunch of useful features like a set of custom widgets for the wibar, new tiling capabilities and extra layouts, among other things.
+In combination with awesome, I use my own variation of the [Awesome WM Copycats](https://github.com/lcpz/awesome-copycats), specifically of the powerarrow-dark theme. Its color scheme is based on the [Arc-Theme](https://github.com/horst3180/Arc-theme). As a side effect of using this, awesome is exposed to th Lain module, which grants it a whole bunch of useful features like a set of custom widgets for the wibar, new tiling capabilities and extra layouts, among other things.
  
    These dot files were started with a minimal Debian 10 Buster installation, so they should work with any Debian installation or Debian-based distribution. 
      
@@ -23,7 +23,7 @@ In combination with awesome, I use my own variation of the [Awesome WM Copycats]
 
  ---
  ## Layouts:
- Awesome comes with even more than the ones shown here, these are just the ones that I have chosen for myself. Also, by using the [Lain library](https://github.com/lcpz/lain/tree/33c0e0c2360a04fcc6f51bccb0ad2a7a9e9c07b3) (an unofficial succesor to the Vain library), you get access to other layouts and features that are not included in the default version of awesome. 
+ Awesome comes with even more than the ones shown here, these are just the ones that I have chosen for myself. Also, by using the [Lain](https://github.com/lcpz/lain/tree/33c0e0c2360a04fcc6f51bccb0ad2a7a9e9c07b3) module (an unofficial succesor to the Vain module), you get access to other layouts and features that are not included in the default version of awesome. 
  **Master & Stack** |  **Master & Stack Left**
 :-------: | :-------:
 ![Screenshot from 2021-02-23 19-39-51](https://user-images.githubusercontent.com/64110504/108935764-d9796580-7613-11eb-80bf-1c87f4a2914c.png) | ![Screenshot from 2021-02-23 19-39-57](https://user-images.githubusercontent.com/64110504/108936095-eeee8f80-7613-11eb-852b-c15e74690953.png)
