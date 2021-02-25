@@ -8,7 +8,7 @@
 
 At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/), as a solid foundation to build on, and the [awesome](https://awesomewm.org/) window manager, as one of the most flexible and extensible frameworks to manage what probably is both, the most common way of interactaing with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.<sup>2</sup> 
 
-In combination with awesome, I use my own variation of the [Awesome WM Copycats](https://github.com/lcpz/awesome-copycats), specifically of the powerarrow-dark theme. Its color scheme is based on the [Arc-Theme](https://github.com/horst3180/Arc-theme). As a side effect of using this, awesome is exposed to th Lain module, which grants it a whole bunch of useful features like a set of custom widgets for the wibar, new tiling capabilities and extra layouts, among other things.
+In combination with awesome, I use my own variation of the [Awesome WM Copycats](https://github.com/lcpz/awesome-copycats), specifically of the powerarrow-dark theme. Its color scheme is based on the [Arc-Theme](https://github.com/horst3180/Arc-theme). As a side effect of using this, awesome is exposed to the [Lain](https://github.com/lcpz/lain/tree/33c0e0c2360a04fcc6f51bccb0ad2a7a9e9c07b3) module, which grants it a whole bunch of useful features like a set of custom widgets for the wibar, new tiling capabilities and extra layouts, among other things.
  
    These dot files were started with a minimal Debian 10 Buster installation, so they should work with any Debian installation or Debian-based distribution. 
      
