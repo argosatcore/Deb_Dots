@@ -99,7 +99,7 @@ local keyboardlayout = awful.widget.keyboardlayout:new()
 -- Textclock
 local clockicon = wibox.widget.imagebox(theme.widget_clock)
 local clock = awful.widget.watch(
-    "date +'%a %d %b %R'", 60,
+    "date +'%a %d %b %l:%M %P'", 60,
     function(widget, stdout)
         widget:set_markup(" " .. markup.font(theme.font, stdout))
     end
@@ -116,7 +116,7 @@ theme.cal = lain.widget.cal({
 })
 
 -- Mail IMAP check
-local mailicon = wibox.widget.imagebox(theme.widget_mail)
+-- local mailicon = wibox.widget.imagebox(theme.widget_mail)
 --[[ commented because it needs to be set before use
 mailicon:buttons(my_table.join(awful.button({ }, 1, function () awful.spawn(mail) end)))
 theme.mail = lain.widget.imap({
@@ -137,8 +137,8 @@ theme.mail = lain.widget.imap({
 --]]
 
 -- MPD
-local musicplr = awful.util.terminal .. " -title Music -g 130x34-320+16 -e ncmpcpp"
-local mpdicon = wibox.widget.imagebox(theme.widget_music)
+--local musicplr = awful.util.terminal .. " -title Music -g 130x34-320+16 -e ncmpcpp"
+--[[ local mpdicon = wibox.widget.imagebox(theme.widget_music)
 mpdicon:buttons(my_table.join(
     awful.button({ modkey }, 1, function () awful.spawn.with_shell(musicplr) end),
     awful.button({ }, 1, function ()
@@ -171,7 +171,7 @@ theme.mpd = lain.widget.mpd({
         widget:set_markup(markup.font(theme.font, markup("#EA6F81", artist) .. title))
     end
 })
-
+--]]
 -- MEM
 local memicon = wibox.widget.imagebox(theme.widget_mem)
 local mem = lain.widget.mem({
@@ -326,13 +326,13 @@ function theme.at_screen_connect(s)
             keyboardlayout,
             spr,
             arrl_ld,
-            wibox.container.background(mpdicon, theme.bg_focus),
-            wibox.container.background(theme.mpd.widget, theme.bg_focus),
+            --wibox.container.background(mpdicon, theme.bg_focus),
+           -- wibox.container.background(theme.mpd.widget, theme.bg_focus),
             arrl_dl,
             volicon,
             theme.volume.widget,
             arrl_ld,
-            wibox.container.background(mailicon, theme.bg_focus),
+            --wibox.container.background(mailicon, theme.bg_focus),
             --wibox.container.background(theme.mail.widget, theme.bg_focus),
             arrl_dl,
             memicon,
@@ -344,13 +344,13 @@ function theme.at_screen_connect(s)
             tempicon,
             temp.widget,
             arrl_ld,
-            wibox.container.background(fsicon, theme.bg_focus),
+            --wibox.container.background(fsicon, theme.bg_focus),
             --wibox.container.background(theme.fs.widget, theme.bg_focus),
             arrl_dl,
             baticon,
             bat.widget,
             arrl_ld,
-            wibox.container.background(neticon, theme.bg_focus),
+            --wibox.container.background(neticon, theme.bg_focus),
             --wibox.container.background(net.widget, theme.bg_focus),
             arrl_dl,
             clock,

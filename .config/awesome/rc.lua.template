@@ -86,26 +86,25 @@ local themes = {
     "vertex",          -- 10
 }
 
-local chosen_theme = themes[7]
+local chosen_theme = themes[5]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
 local terminal     = "urxvtc"
 local vi_focus     = false -- vi-like client focus - https://github.com/lcpz/awesome-copycats/issues/275
 local cycle_prev   = true -- cycle trough all previous client or just the first -- https://github.com/lcpz/awesome-copycats/issues/274
-local editor       = os.getenv("EDITOR") or "nvim"
-local gui_editor   = os.getenv("gedit") or "gedit"
+local editor       = os.getenv("EDITOR") or "vim"
+local gui_editor   = os.getenv("GUI_EDITOR") or "gvim"
 local browser      = os.getenv("BROWSER") or "firefox"
 local scrlocker    = "slock"
 
 awful.util.terminal = terminal
-awful.util.tagnames = { "1", "2", "3", "4", "5", "6", "7", "8" ,"9" } 
+awful.util.tagnames = { "1", "2", "3", "4", "5" }
 awful.layout.layouts = {
-    awful.layout.suit.tile,
-    awful.layout.suit.tile.bottom,
-    awful.layout.suit.tile.left,
-    awful.layout.suit.tile.top,
-    lain.layout.centerwork,
     awful.layout.suit.floating,
+    awful.layout.suit.tile,
+    awful.layout.suit.tile.left,
+    awful.layout.suit.tile.bottom,
+    awful.layout.suit.tile.top,
     --awful.layout.suit.fair,
     --awful.layout.suit.fair.horizontal,
     --awful.layout.suit.spiral,
@@ -119,6 +118,7 @@ awful.layout.layouts = {
     --awful.layout.suit.corner.se,
     --lain.layout.cascade,
     --lain.layout.cascade.tile,
+    --lain.layout.centerwork,
     --lain.layout.centerwork.horizontal,
     --lain.layout.termfair,
     --lain.layout.termfair.center,
@@ -137,8 +137,8 @@ awful.util.taglist_buttons = my_table.join(
             client.focus:toggle_tag(t)
         end
     end),
-    awful.button({ }, 5, function(t) awful.tag.viewnext(t.screen) end),
-    awful.button({ }, 4, function(t) awful.tag.viewprev(t.screen) end)
+    awful.button({ }, 4, function(t) awful.tag.viewnext(t.screen) end),
+    awful.button({ }, 5, function(t) awful.tag.viewprev(t.screen) end)
 )
 
 awful.util.tasklist_buttons = my_table.join(
@@ -229,32 +229,17 @@ screen.connect_signal("property::geometry", function(s)
     end
 end)
 
-
-
-----------------------------------------------------------------------
---------------------------WARNING!!----------------------------------- 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
---------THIS CODE SECTION CAUSES AWESOME TO FREE IF UNCOMMENTED-------
-----------------------------------------------------------------------
---
 -- No borders when rearranging only 1 non-floating or maximized client
--- screen.connect_signal("arrange", function (s)
---     local only_one = #s.tiled_clients == 1
---     for _, c in pairs(s.clients) do
---         if only_one and not c.floating or c.maximized then
---             c.border_width = 0
---         else
---             c.border_width = beautiful.border_width
---         end
---     end
--- end)
-----------------------------------------------------------------------
---------------------------WARNING!------------------------------------
-----------------------------------------------------------------------
-
-
-
+screen.connect_signal("arrange", function (s)
+    local only_one = #s.tiled_clients == 1
+    for _, c in pairs(s.clients) do
+        if only_one and not c.floating or c.maximized then
+            c.border_width = 0
+        else
+            c.border_width = beautiful.border_width
+        end
+    end
+end)
 -- Create a wibox for each screen and add it
 awful.screen.connect_for_each_screen(function(s) beautiful.at_screen_connect(s) end)
 -- }}}
@@ -262,8 +247,8 @@ awful.screen.connect_for_each_screen(function(s) beautiful.at_screen_connect(s) 
 -- {{{ Mouse bindings
 root.buttons(my_table.join(
     awful.button({ }, 3, function () awful.util.mymainmenu:toggle() end),
-    awful.button({ }, 5, awful.tag.viewnext),
-    awful.button({ }, 4, awful.tag.viewprev)
+    awful.button({ }, 4, awful.tag.viewnext),
+    awful.button({ }, 5, awful.tag.viewprev)
 ))
 -- }}}
 
@@ -449,27 +434,10 @@ globalkeys = my_table.join(
               {description = "show weather", group = "widgets"}),
 
     -- Brightness
-    awful.key({ }, "XF86MonBrightnessUp", function () os.execute("xbacklight -inc 5") end,
-              {description = "+5", group = "hotkeys"}),
-    awful.key({ }, "XF86MonBrightnessDown", function () os.execute("xbacklight -dec 5") end,
-              {description = "-5%", group = "hotkeys"}),
-
--- Volume Keys
-
-  --Volume Up 
-   awful.key({ }, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 5%+") end),
-  
-  --Volume down 
-   awful.key({ }, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 5%-") end),
-
-  --Mute Volume 
-   awful.key({ }, "XF86AudioMute", function () awful.util.spawn("amixer set Master toggle") end),
-
-
-    --Screenshooting:
-    awful.key({ }, "Print", function () awful.util.spawn("gnome-screenshot") end,
-              {description = "take a screenshot", group = "hotkeys"}),
-
+    awful.key({ }, "XF86MonBrightnessUp", function () os.execute("xbacklight -inc 10") end,
+              {description = "+10%", group = "hotkeys"}),
+    awful.key({ }, "XF86MonBrightnessDown", function () os.execute("xbacklight -dec 10") end,
+              {description = "-10%", group = "hotkeys"}),
 
     -- ALSA volume control
     awful.key({ altkey }, "Up",
@@ -549,20 +517,12 @@ globalkeys = my_table.join(
     awful.key({ modkey }, "v", function () awful.spawn.with_shell("xsel -b | xsel") end,
               {description = "copy gtk to terminal", group = "hotkeys"}),
 
-
--- User programs
-   
-   --Firefox
-    awful.key({ modkey }, "i", function () awful.spawn(browser) end,
+    -- User programs
+    awful.key({ modkey }, "q", function () awful.spawn(browser) end,
               {description = "run browser", group = "launcher"}),
+    awful.key({ modkey }, "a", function () awful.spawn(gui_editor) end,
+              {description = "run gui editor", group = "launcher"}),
 
-   --Gedit	      
---     awful.key({ modkey }, "e", function () awful.spawn(gui_editor) end,
---               {description = "run gui editor", group = "launcher"}),
-   
-   --Nautilus 
-    awful.key({ modkey },            "a",     function () awful.util.spawn("nautilus -w") end,
-              {description = "run file manager", group = "Apps"}),
     -- Default
     --[[ Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
@@ -584,25 +544,6 @@ globalkeys = my_table.join(
         end,
         {description = "show rofi", group = "launcher"}),
     --]]
-
-   --Rofi 
-    awful.key({ modkey },            "d",     function () awful.util.spawn("rofi -show drun") end,
-              {description = "app launcher", group = "launcher"}),
-
-    --Rofi as Window Switcher 
-    awful.key({ altkey },            "Tab",     function () awful.util.spawn("rofi -show window") end,
-              {description = "switch apps", group = "launcher"}),
-
-    --Rofi as a power menu
-    awful.key({ modkey },            "e",     function () awful.util.spawn("rofi -show power-menu -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi/rofi-power-menu-master/./rofi-power-menu") end,
-              {description = "power menu", group = "launcher"}),
-
-    --Rofi as a wifi menu 
-    awful.key({ modkey, "Shift" },            "e",     function () awful.spawn.with_shell("bash ~/.local/bin/scripts/rofi/rofi-wifi-menu/rofi-wifi-menu.sh") end,
-               {description = "wifi menu", group = "launcher"}),
-
-
-
     -- Prompt
     awful.key({ modkey }, "r", function () awful.screen.focused().mypromptbox:run() end,
               {description = "run prompt", group = "launcher"}),
@@ -629,7 +570,7 @@ clientkeys = my_table.join(
             c:raise()
         end,
         {description = "toggle fullscreen", group = "client"}),
-    awful.key({ modkey,           }, "q",      function (c) c:kill()                         end,
+    awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end,
               {description = "close", group = "client"}),
     awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ,
               {description = "toggle floating", group = "client"}),
@@ -651,55 +592,7 @@ clientkeys = my_table.join(
             c.maximized = not c.maximized
             c:raise()
         end ,
-        {description = "maximize", group = "client"}),
-
-  -- Resize windows
-    awful.key({ modkey, "Control" }, "Up", function (c)
-      if c.floating then
-        c:relative_move( 0, 0, 0, -20)
-      else
-        awful.client.incwfact(0.025)
-      end
-    end,
-    {description = "Floating Resize Vertical -", group = "client"}),
-    awful.key({ modkey, "Control" }, "Down", function (c)
-      if c.floating then
-        c:relative_move( 0, 0, 0,  20)
-      else
-        awful.client.incwfact(-0.025)
-      end
-    end,
-    {description = "Floating Resize Vertical +", group = "client"}),
-    awful.key({ modkey, "Control" }, "Left", function (c)
-      if c.floating then
-        c:relative_move( 0, 0, -20, 0)
-      else
-        awful.tag.incmwfact(-0.025)
-      end
-    end,
-    {description = "Floating Resize Horizontal -", group = "client"}),
-    awful.key({ modkey, "Control" }, "Right", function (c)
-      if c.floating then
-        c:relative_move( 0, 0,  20, 0)
-      else
-        awful.tag.incmwfact(0.025)
-      end
-    end,
-    {description = "Floating Resize Horizontal +", group = "client"}),
-
-    -- Moving floating windows
-    awful.key({ altkey, "Shift"   }, "Down", function (c)
-      c:relative_move(  0,  20,   0,   0) end,
-    {description = "Floating Move Down", group = "client"}),
-    awful.key({ altkey, "Shift"   }, "Up", function (c)
-      c:relative_move(  0, -20,   0,   0) end,
-    {description = "Floating Move Up", group = "client"}),
-    awful.key({ altkey, "Shift"   }, "Left", function (c)
-      c:relative_move(-20,   0,   0,   0) end,
-    {description = "Floating Move Left", group = "client"}),
-    awful.key({ altkey, "Shift"   }, "Right", function (c)
-      c:relative_move( 20,   0,   0,   0) end,
-    {description = "Floating Move Right", group = "client"})
+        {description = "maximize", group = "client"})
 )
 
 -- Bind all key numbers to tags.
@@ -771,10 +664,6 @@ clientbuttons = gears.table.join(
     awful.button({ modkey }, 3, function (c)
         c:emit_signal("request::activate", "mouse_click", {raise = true})
         awful.mouse.client.resize(c)
-    end),
-    awful.button({ modkey }, 4, function (c)
-        c:emit_signal("request::activate", "mouse_click", {raise = true})
-        awful.client.floating.toggle(c)
     end)
 )
 
@@ -799,46 +688,14 @@ awful.rules.rules = {
      }
     },
 
-    -- Floating clients.
-    { rule_any = {
-        instance = {
-          "DTA",  -- Firefox addon DownThemAll.
-          "copyq",  -- Includes session name in class.
-          "pinentry",
-        },
-        class = {
-          "Arandr",
-	  "Nautilus",
-          "Blueman-manager",
-          "Gpick",
-          "Kruler",
-          "MessageWin",  -- kalarm.
-          "Sxiv",
-          "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
-          "Wpa_gui",
-          "veromix",
-          "xtightvncviewer"},
-
-        -- Note that the name property shown in xprop might be set slightly after creation of the client
-        -- and the name shown there might not match defined rules here.
-        name = {
-          "Event Tester",  -- xev.
-        },
-        role = {
-          "AlarmWindow",  -- Thunderbird's calendar.
-          "ConfigManager",  -- Thunderbird's about:config.
-          "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
-        }
-      }, properties = { floating = true }},
-
     -- Titlebars
     { rule_any = { type = { "dialog", "normal" } },
-      properties = { titlebars_enabled = false } },
+      properties = { titlebars_enabled = true } },
 
     -- Set Firefox to always map on the first tag on screen 1.
---    { rule = { class = "Firefox" },
---      properties = { screen = 1, tag = awful.util.tagnames[1] } },
---
+    { rule = { class = "Firefox" },
+      properties = { screen = 1, tag = awful.util.tagnames[1] } },
+
     { rule = { class = "Gimp", role = "gimp-image-window" },
           properties = { maximized = true } },
 }
@@ -856,19 +713,6 @@ client.connect_signal("manage", function (c)
       and not c.size_hints.program_position then
         -- Prevent clients from being unreachable after screen count changes.
         awful.placement.no_offscreen(c)
-    end
-end)
-
---Show titlebars only for floating windows
-client.connect_signal("property::floating", function(c)
-    local b = false;
-    if c.first_tag ~= nil then
-        b = c.first_tag.layout.name == "floating"
-    end
-    if c.floating or b then
-        awful.titlebar.show(c)
-    else
-        awful.titlebar.hide(c)
     end
 end)
 
@@ -931,8 +775,3 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- possible workaround for tag preservation when switching back to default screen:
 -- https://github.com/lcpz/awesome-copycats/issues/251
 -- }}}
---
---
--- Gaps
-beautiful.useless_gap = 4
-beautiful.gap_single_client = false
