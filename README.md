@@ -22,7 +22,14 @@ In combination with awesome, I use my own variation of the [Awesome WM Copycats]
 2. In the recent past, I used [bspwm](https://github.com/baskerville/bspwm) as my default window manager. I still regard it as one of the best tiling window managers out there, but I found in awesome some features that made the switch worthwhile. Some of these include, but are not limited to: the use of tags instead of workspaces (a word that, like the so called "productivity", I've come to deeply hate... but I digress), the extensibility provided by its use of the Lua programming language, the integration of components like widgets and a native status bar, and the combination of a predefined set of layouts with some manual control over them makes it the ideal hybrid wm. If you are interested in giving bspwm a try, you can take a look at my dotfiles. Also, a far more comprehensive and rigurous source on running bspwm on Debian is a book written by the greek philosopher, [Protesilaos Stavrou](https://protesilaos.com/), apropiately called _[Prot's Dots For Debian](https://protesilaos.com/pdfd/)_. His writings and videos on free and open source software may be of interest to those who wish to examine, both technically and philosophically, what, for better or for worse, has become an inescapable aspect of contemporary life. 
 
  ---
- ## Layouts:
+ ## Current state of affairs:
+ This image illustrate the current state of my dektop. It is the one that will use a "rolling" cadence, as I tend to work on minor details all the time. The images for the layouts down below won't be updated as often, as their purpose is to illustrate the disposition of windows in awesome as opposed to it graphic design. They will be change only when breaking changes in the disposition of windows are introduced in my build of awesome.
+ 
+ ![Screenshot from 2021-02-25 17-45-39](https://user-images.githubusercontent.com/64110504/109234480-672e8f80-7791-11eb-8067-c17848de04a6.png)
+ 
+ ---
+ 
+ ##" Layouts:
  Awesome comes with even more than the ones shown here, these are just the ones that I have chosen for myself. Also, by using the [Lain](https://github.com/lcpz/lain/tree/33c0e0c2360a04fcc6f51bccb0ad2a7a9e9c07b3) module (an unofficial succesor to the Vain module), you get access to other layouts and features that are not included in the default version of awesome. 
  **Master & Stack** |  **Master & Stack Left**
 :-------: | :-------:
