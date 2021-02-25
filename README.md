@@ -23,7 +23,7 @@ In combination with awesome, I use my own variation of the [Awesome WM Copycats]
 
  ---
  ## Current state of affairs:
- This image illustrate the current state of my dektop. It is the one that will use a "rolling" cadence, as I tend to work on minor details all the time. The images for the layouts down below won't be updated as often, as their purpose is to illustrate the disposition of windows in awesome as opposed to it graphic design. They will be change only when breaking changes in the disposition of windows are introduced in my build of awesome.
+ This image illustrates the current state of my dektop. It is the one that will use a "rolling" cadence in its updates, as I tend to work on minor details all the time. The images for the layouts down below won't be updated as often, as their purpose is to solely show the disposition of windows in awesome as opposed to its graphic design. They will be changed only when breaking changes in the disposition of windows are introduced in my build of awesome.
  
  ![Screenshot from 2021-02-25 17-45-39](https://user-images.githubusercontent.com/64110504/109234480-672e8f80-7791-11eb-8067-c17848de04a6.png)
  
