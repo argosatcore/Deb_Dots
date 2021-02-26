@@ -196,47 +196,6 @@ lain.layout.cascade.tile.ncol          = 2
 beautiful.init(string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme))
 -- }}}
 
-
--------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------
-----------------------------------------WARNING!!------------------------------------------
--------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------
---THIS CODE SECTION MAKES RELOADING AWESOME SUPER LAGGY AND INCREASES MEMORY CONSUMPTION.--
---PLUS, THIS MENU IS UGLY AF, USE SOMETHING LIKE  ROFI OR DMENU INSTEAD.-------------------
--------------------------------------------------------------------------------------------
---
--- {{{ Menu
--- local myawesomemenu = {
---     { "hotkeys", function() return false, hotkeys_popup.show_help end },
---     { "manual", terminal .. " -e man awesome" },
---     { "edit config", string.format("%s -e %s %s", terminal, editor, awesome.conffile) },
---     { "restart", awesome.restart },
---     { "quit", function() awesome.quit() end }
--- }
--- awful.util.mymainmenu = freedesktop.menu.build({
---     icon_size = beautiful.menu_height or dpi(16),
---     before = {
---         { "Awesome", myawesomemenu, beautiful.awesome_icon },
---         -- other triads can be put here
---     },
---     after = {
---         { "Open terminal", terminal },
---         -- other triads can be put here
---     }
--- })
--- hide menu when mouse leaves it
---awful.util.mymainmenu.wibox:connect_signal("mouse::leave", function() awful.util.mymainmenu:hide() end)
-
---menubar.utils.terminal = terminal -- Set the Menubar terminal for applications that require it
--- }}}
---
--------------------------------------------------------------------------------------------
----------------------------------------END OF WARNING--------------------------------------
--------------------------------------------------------------------------------------------
-
-
-
 -- {{{ Screen
 -- Re-set wallpaper when a screen's geometry changes (e.g. different resolution)
 screen.connect_signal("property::geometry", function(s)
@@ -250,32 +209,6 @@ screen.connect_signal("property::geometry", function(s)
         gears.wallpaper.maximized(wallpaper, s, true)
     end
 end)
-
-
-
-----------------------------------------------------------------------
---------------------------WARNING!!----------------------------------- 
-----------------------------------------------------------------------
-----------------------------------------------------------------------
---------THIS CODE SECTION CAUSES AWESOME TO FREEZE IF UNCOMMENTED-----
-----------------------------------------------------------------------
---
--- No borders when rearranging only 1 non-floating or maximized client
--- screen.connect_signal("arrange", function (s)
---     local only_one = #s.tiled_clients == 1
---     for _, c in pairs(s.clients) do
---         if only_one and not c.floating or c.maximized then
---             c.border_width = 0
---         else
---             c.border_width = beautiful.border_width
---         end
---     end
--- end)
-----------------------------------------------------------------------
---------------------------END OF WARNING------------------------------
-----------------------------------------------------------------------
-
-
 
 -- Create a wibox for each screen and add it
 awful.screen.connect_for_each_screen(function(s) beautiful.at_screen_connect(s) end)
@@ -585,27 +518,6 @@ globalkeys = my_table.join(
    --Nautilus 
     awful.key({ modkey },            "a",     function () awful.util.spawn("nautilus -w") end,
               {description = "run file manager", group = "Apps"}),
-    -- Default
-    --[[ Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
-    --]]
-    --[[ dmenu
-    awful.key({ modkey }, "x", function ()
-            os.execute(string.format("dmenu_run -i -fn 'Monospace' -nb '%s' -nf '%s' -sb '%s' -sf '%s'",
-            beautiful.bg_normal, beautiful.fg_normal, beautiful.bg_focus, beautiful.fg_focus))
-        end,
-        {description = "show dmenu", group = "launcher"})
-    --]]
-    -- alternatively use rofi, a dmenu-like application with more features
-    -- check https://github.com/DaveDavenport/rofi for more details
-    --[[ rofi
-    awful.key({ modkey }, "x", function ()
-            os.execute(string.format("rofi -show %s -theme %s",
-            'run', 'dmenu'))
-        end,
-        {description = "show rofi", group = "launcher"}),
-    --]]
 
    --Rofi 
     awful.key({ modkey },            "d",     function () awful.util.spawn("rofi -show drun") end,
@@ -616,14 +528,14 @@ globalkeys = my_table.join(
               {description = "switch apps", group = "launcher"}),
 
     --Rofi as a power menu
+
+
     awful.key({ modkey },            "e",     function () awful.util.spawn("rofi -show power-menu -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi/rofi-power-menu-master/./rofi-power-menu") end,
               {description = "power menu", group = "launcher"}),
 
     --Rofi as a wifi menu 
     awful.key({ modkey, "Shift" },            "e",     function () awful.spawn.with_shell("bash ~/.local/bin/scripts/rofi/rofi-wifi-menu/rofi-wifi-menu.sh") end,
                {description = "wifi menu", group = "launcher"}),
-
-
 
     -- Prompt
     awful.key({ modkey }, "r", function () awful.screen.focused().mypromptbox:run() end,
@@ -831,6 +743,7 @@ awful.rules.rules = {
         class = {
           "Arandr",
 	  "Nautilus",
+	  "feh",
           "Blueman-manager",
           "Gpick",
           "Kruler",
@@ -918,9 +831,12 @@ client.connect_signal("request::titlebars", function(c)
 
     awful.titlebar(c, {size = dpi(16)}) : setup {
         { -- Left
-            awful.titlebar.widget.iconwidget(c),
-            buttons = buttons,
-            layout  = wibox.layout.fixed.horizontal
+            awful.titlebar.widget.closebutton    (c),
+            awful.titlebar.widget.maximizedbutton(c),
+            awful.titlebar.widget.floatingbutton (c),
+            awful.titlebar.widget.stickybutton   (c),
+            awful.titlebar.widget.ontopbutton    (c),
+            layout = wibox.layout.fixed.horizontal()
         },
         { -- Middle
             { -- Title
@@ -931,12 +847,9 @@ client.connect_signal("request::titlebars", function(c)
             layout  = wibox.layout.flex.horizontal
         },
         { -- Right
-            awful.titlebar.widget.floatingbutton (c),
-            awful.titlebar.widget.maximizedbutton(c),
-            awful.titlebar.widget.stickybutton   (c),
-            awful.titlebar.widget.ontopbutton    (c),
-            awful.titlebar.widget.closebutton    (c),
-            layout = wibox.layout.fixed.horizontal()
+            awful.titlebar.widget.iconwidget(c),
+            buttons = buttons,
+            layout  = wibox.layout.fixed.horizontal
         },
         layout = wibox.layout.align.horizontal
     }
