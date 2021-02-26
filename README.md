@@ -22,14 +22,21 @@ In combination with awesome, I use my own variation of the [Awesome WM Copycats]
 2. In the recent past, I used [bspwm](https://github.com/baskerville/bspwm) as my default window manager. I still regard it as one of the best tiling window managers out there, but I found in awesome some features that made the switch worthwhile. Some of these include, but are not limited to: the use of tags instead of workspaces (a word that, like the so called "productivity", I've come to deeply hate... but I digress), the extensibility provided by its use of the Lua programming language, the integration of components like widgets and a native status bar, and the combination of a predefined set of layouts with some manual control over them makes it the ideal hybrid wm. If you are interested in giving bspwm a try, you can take a look at my dotfiles. Also, a far more comprehensive and rigurous source on running bspwm on Debian is a book written by the greek philosopher, [Protesilaos Stavrou](https://protesilaos.com/), apropiately called _[Prot's Dots For Debian](https://protesilaos.com/pdfd/)_. His writings and videos on free and open source software may be of interest to those who wish to examine, both technically and philosophically, what, for better or for worse, has become an inescapable aspect of contemporary life. 
 
  ---
+ ## Current state of affairs:
+ This image illustrates the current state of my dektop. It is the one that will use a "rolling" cadence in its updates, as I tend to work make modifications all the time. The images for the layouts down below won't be updated as often, as their purpose is to solely show the disposition of windows in awesome as opposed to its graphic design, hence the difference between the image below and the images used in the layouts. They will be changed only when breaking changes in the disposition of windows are introduced in my build of awesome.
+ 
+ ![Screenshot from 2021-02-25 17-45-39](https://user-images.githubusercontent.com/64110504/109234480-672e8f80-7791-11eb-8067-c17848de04a6.png)
+ 
+ ---
+ 
  ## Layouts:
  Awesome comes with even more than the ones shown here, these are just the ones that I have chosen for myself. Also, by using the [Lain](https://github.com/lcpz/lain/tree/33c0e0c2360a04fcc6f51bccb0ad2a7a9e9c07b3) module (an unofficial succesor to the Vain module), you get access to other layouts and features that are not included in the default version of awesome. 
- **Master & Stack** |  **Master & Stack Left**
+ **Master & Stack ![tile](https://user-images.githubusercontent.com/64110504/109235140-b1fcd700-7792-11eb-9a2e-c82bf8532070.png)** |  **Master & Stack Left ![tileleft](https://user-images.githubusercontent.com/64110504/109235218-de185800-7792-11eb-9b7f-6f4612bfbadf.png)**
 :-------: | :-------:
 ![Screenshot from 2021-02-23 19-39-51](https://user-images.githubusercontent.com/64110504/108935764-d9796580-7613-11eb-80bf-1c87f4a2914c.png) | ![Screenshot from 2021-02-23 19-39-57](https://user-images.githubusercontent.com/64110504/108936095-eeee8f80-7613-11eb-852b-c15e74690953.png)
-**Tile Bottom** | **Tile Top**
+**Tile Bottom ![tilebottom](https://user-images.githubusercontent.com/64110504/109235254-f2f4eb80-7792-11eb-97d7-c5769b43dcc0.png)** | **Tile Top ![tiletop](https://user-images.githubusercontent.com/64110504/109235289-056f2500-7793-11eb-8663-b1b77a8fccfa.png)**
 ![Screenshot from 2021-02-23 19-40-00](https://user-images.githubusercontent.com/64110504/108936354-ff066f00-7613-11eb-88ed-fa7d585402f5.png) | ![Screenshot from 2021-02-23 19-40-03](https://user-images.githubusercontent.com/64110504/108936642-12b1d580-7614-11eb-911f-7d03eb49ed56.png)
-**Floating** | **Centered Master**
+**Floating ![floating](https://user-images.githubusercontent.com/64110504/109235326-17e95e80-7793-11eb-94bd-ca5a759e1832.png)** | **Centered Master ![centerwork](https://user-images.githubusercontent.com/64110504/109235414-3fd8c200-7793-11eb-8619-84bba28091c4.png)**
 ![Screenshot from 2021-02-23 19-40-56](https://user-images.githubusercontent.com/64110504/108937011-2b21f000-7614-11eb-8c4b-19aa0fb35975.png) | ![Screenshot from 2021-02-23 19-42-01](https://user-images.githubusercontent.com/64110504/108937247-39700c00-7614-11eb-89f8-59d242d592bb.png)
 
 ## Unexpected features you get right out of the gate
@@ -51,11 +58,9 @@ All of which are `apt install`able:
 - `awesome-extra`: additional modules for awesome.
 - `rofi`: application launcher, window switcher, commad executor and many more.
 - `nautilus`: file manager.
-- `dunst`: notifications daemon.
 - `compton`: compositing for window transparency.
 - `tmux`: persistent SSH shell sessions.
 - `feh`: sets the desktop background.
-- `i3lock`: screen locking.
 - `redshift`: sets screen's temperature color according to time of day.
 
 
