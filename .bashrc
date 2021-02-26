@@ -1,3 +1,9 @@
+
+
+# ░█▀▄░█▀█░█▀▀░█░█
+# ░█▀▄░█▀█░▀▀█░█▀█
+# ░▀▀░░▀░▀░▀▀▀░▀░▀
+
 #Environmental Variables:
 	export EDITOR="nvim"
 	export PAGER="less"

@@ -1,3 +1,9 @@
+
+" ░█░█░▀█▀░█▄█
+" ░▀▄▀░░█░░█░█
+" ░░▀░░▀▀▀░▀░▀
+
+
 " -------Atajos del teclado:
 
 " Mapaer 'ff' para ser utilizada como 'Esc'. Esto permite el salir de los modos 'Insert' y 'Visual'  para entrar en el modo 'Normal'.
