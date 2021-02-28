@@ -73,19 +73,27 @@ All of which are `apt install`able:
 - `Super+Ctrll+r`: reload awesome.
 - `Super+Shift+q`: exit awesome session.
 - `Alt+Ctrl+l`: lock screen.
+- `Super+b`: hide/unhide panel.
+- `Super+Space`: switch to next layout.
+- `Super+Shit+Space`: switch to previous layout.
 
 ### Tags:
-- `Super+(left arrow key, right arrow key)`: move to the previous or next workspace. 
+- `Super+(left arrow key, right arrow key)`: move to the previous or next tag. 
+- `Alt+(left arrow key, right arrow key)`: move to the previous or next non empty tag. 
 - `Super+(1,2,3,4,5,6,7,8,9,0)`: go to a desginated tag.
 - `Super+Shift+(1,2,3,4,5,6,7,8,9,0)`: move an active window to a desginated tag.
 
 ### Windows:
 - `Super+q`: close.
 - `Super+f`: fullscreen. 
-- `Super+Ctrl+space`: toggle floating. 
+- `Super+Ctrl+Space`: toggle floating. 
 - `Super+n`: minimize.
 - `Super+Ctrl+n`: restore minimized.
-- `Super+r`: rotate windows clockwise.
+- `Ctrl+Super+Return`: move to master.
+- `Super+Shift+h`: increase the number of master windows.
+- `Super+Shift+l`: decrease the number of master windows.
+- `Super+Ctrl+h`: increase the number of columns.
+- `Super+Ctrl+l`: decrease the number of columns.
 - `Super+(h,j,k,l)`: change the selection of a window in a designated direction.
 - `Super+Shift+(h,j,k,l)`: move window in a designated direction.
 
