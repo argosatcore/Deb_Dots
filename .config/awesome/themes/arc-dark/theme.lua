@@ -24,8 +24,8 @@ theme.dir                                       = os.getenv("HOME") .. "/.config
 theme.wallpaper                                 = theme.dir .. "/tile.jpeg"
 theme.font                                      = "Ubuntu Hack Nerd Font bold 8"
 theme.fg_normal                                 = "#DDDDFF"
-theme.fg_focus                                  = "#ffffff"
-theme.fg_urgent                                 = "#CC9393"
+theme.fg_focus                                  = "#FFFFFF"
+theme.fg_urgent                                 = "#FFFFFF"
 theme.bg_normal                                 = "#323944BF"
 theme.bg_focus                                  = "#323944"
 theme.bg_urgent                                 = "#1A1A1A"
@@ -34,6 +34,8 @@ theme.border_normal                             = "#3F3F3F"
 theme.border_focus                              = "#5294E2"
 theme.border_marked                             = "#CC9393"
 theme.tasklist_bg_focus                         = "#5294E2"
+theme.tasklist_bg_normal                        = "#5294E259"
+theme.tasklist_bg_urgent                        = "#f46067"
 theme.titlebar_bg_focus                         = theme.bg_focus
 theme.titlebar_bg_normal                        = theme.bg_normal
 theme.titlebar_fg_focus                         = theme.fg_focus
@@ -43,6 +45,7 @@ theme.menu_submenu_icon                         = theme.dir .. "/icons/submenu.p
 theme.taglist_squares_sel                       = theme.dir .. "/icons/square_sel.png"
 theme.taglist_squares_unsel                     = theme.dir .. "/icons/square_unsel.png"
 theme.taglist_bg_focus                          = "#5294E2"
+theme.taglist_bg_urgent                         = "#f46067"
 theme.layout_tile                               = theme.dir .. "/icons/tile.png"
 theme.layout_tileleft                           = theme.dir .. "/icons/tileleft.png"
 theme.layout_tilebottom                         = theme.dir .. "/icons/tilebottom.png"
@@ -264,14 +267,12 @@ function theme.at_screen_connect(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
+            spr,
+            clock,
+            spr,
             wibox.widget.systray(),
             spr,
             keyboardlayout,
-            spr,
-	    neticon,
-	    spr,
-            volicon,
-            theme.volume.widget,
             spr,
             memicon,
             mem.widget,
@@ -282,10 +283,13 @@ function theme.at_screen_connect(s)
             tempicon,
             temp.widget,
             spr,
+	    neticon,
+	    spr,
+            volicon,
+            theme.volume.widget,
+            spr,
             baticon,
 	    theme.bat.widget,
-            spr,
-            clock,
             spr,
             s.mylayoutbox,
         },
