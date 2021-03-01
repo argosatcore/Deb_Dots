@@ -94,6 +94,7 @@ theme.titlebar_maximized_button_focus_active    = theme.dir .. "/icons/titlebar/
 theme.titlebar_maximized_button_normal_active   = theme.dir .. "/icons/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_inactive  = theme.dir .. "/icons/titlebar/maximized_focus_inactive.png"
 theme.titlebar_maximized_button_normal_inactive = theme.dir .. "/icons/titlebar/maximized_normal_inactive.png"
+theme.debian_logo                               = theme.dir .. "/icons/debianlogo/Deblogo.svg"
 
 local markup = lain.util.markup
 -- local separators = lain.util.separators
@@ -217,6 +218,11 @@ neticon:buttons(awful.util.table.join(
                                end)
 ))
 
+
+-- Debian Logo
+local deblogo = wibox.widget.imagebox(theme.debian_logo)
+
+
 -- Separators
 local spr     = wibox.widget.textbox('     ')
 
@@ -259,7 +265,8 @@ function theme.at_screen_connect(s)
         layout = wibox.layout.align.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
-            --spr,
+	    deblogo,
+            spr,
             s.mytaglist,
             s.mypromptbox,
             spr,
@@ -267,8 +274,6 @@ function theme.at_screen_connect(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            spr,
-            clock,
             spr,
             wibox.widget.systray(),
             spr,
@@ -290,6 +295,8 @@ function theme.at_screen_connect(s)
             spr,
             baticon,
 	    theme.bat.widget,
+            spr,
+            clock,
             spr,
             s.mylayoutbox,
         },
