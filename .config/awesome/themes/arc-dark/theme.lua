@@ -21,7 +21,7 @@ local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 local theme                                     = {}
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/arc-dark"
-theme.wallpaper                                 = theme.dir .. "/tile.jpeg"
+theme.wallpaper                                 = theme.dir .. "/Wallpapers/tile.jpeg"
 theme.font                                      = "Ubuntu Nerd Font bold 9"
 theme.fg_normal                                 = "#DDDDFF"
 theme.fg_focus                                  = "#FFFFFF"
@@ -227,9 +227,9 @@ neticon:buttons(awful.util.table.join(
 ))
 
 
--- Debian Logo
+-- Debian's Logo
 local deblogo =  wibox.widget{
-    markup = ' <b></b>',
+    markup = '  <b></b>   ',
     align  = 'center',
     valign = 'center',
     font   = 'Ubuntu Nerd Font 12',
@@ -242,10 +242,16 @@ deblogo:buttons(awful.util.table.join(
                                end),
 
                                awful.button({ }, 5, function(t) 
-				     awful.tag.viewnext(t.screen) end),
+				     awful.tag.viewnext(t.screen) 
+			       end),
 
                                awful.button({ }, 4, function(t) 
-				     awful.tag.viewprev(t.screen) end)
+				     awful.tag.viewprev(t.screen) 
+			       end),
+
+                               awful.button({ }, 3, function( ) 
+				     awful.util.spawn("rofi -show drun -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6")  
+			       end)
 ))
 
 
@@ -292,7 +298,7 @@ function theme.at_screen_connect(s)
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
 	    deblogo,
-            spr,
+            --spr,
             s.mytaglist,
             s.mypromptbox,
             spr,
