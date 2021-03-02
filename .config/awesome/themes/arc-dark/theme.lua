@@ -94,12 +94,14 @@ theme.titlebar_maximized_button_focus_active    = theme.dir .. "/icons/titlebar/
 theme.titlebar_maximized_button_normal_active   = theme.dir .. "/icons/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_inactive  = theme.dir .. "/icons/titlebar/maximized_focus_inactive.png"
 theme.titlebar_maximized_button_normal_inactive = theme.dir .. "/icons/titlebar/maximized_normal_inactive.png"
-theme.debian_logo                               = theme.dir .. "/icons/debianlogo/Deblogo.svg"
+
 
 local markup = lain.util.markup
 -- local separators = lain.util.separators
 
+
 local keyboardlayout = awful.widget.keyboardlayout:new()
+
 
 -- Textclock
 local clockicon = wibox.widget.imagebox(theme.widget_clock)
@@ -110,15 +112,17 @@ local clock = awful.widget.watch(
     end
 )
 
+
 -- Calendar
 theme.cal = lain.widget.cal({
     attach_to = { clock },
     notification_preset = {
-        font = "Ubuntu Hack Nerd Font 10",
+        font = "Ubuntu Mono 12",
         fg   = theme.fg_normal,
         bg   = theme.bg_normal
     }
 })
+
 
 -- MEM
 local memicon = wibox.widget.imagebox(theme.widget_mem)
@@ -128,6 +132,7 @@ local mem = lain.widget.mem({
     end
 })
 
+
 -- CPU
 local cpuicon = wibox.widget.imagebox(theme.widget_cpu)
 local cpu = lain.widget.cpu({
@@ -135,6 +140,7 @@ local cpu = lain.widget.cpu({
         widget:set_markup(markup.font(theme.font, " " .. cpu_now.usage .. "%"))
     end
 })
+
 
 -- Coretemp
 local tempicon = wibox.widget.imagebox(theme.widget_temp)
@@ -176,6 +182,7 @@ theme.bat.widget:buttons(awful.util.table.join(
                                end)
 ))
 
+
 -- ALSA volume
 local volicon = wibox.widget.imagebox(theme.widget_vol)
 theme.volume = lain.widget.alsa({
@@ -210,6 +217,7 @@ theme.volume.widget:buttons(awful.util.table.join(
                                end)
 ))
 
+
 -- Net
 local neticon = wibox.widget.imagebox(theme.widget_net)
 neticon:buttons(awful.util.table.join(
@@ -220,7 +228,25 @@ neticon:buttons(awful.util.table.join(
 
 
 -- Debian Logo
-local deblogo = wibox.widget.imagebox(theme.debian_logo)
+local deblogo =  wibox.widget{
+    markup = ' <b></b>',
+    align  = 'center',
+    valign = 'center',
+    font   = 'Ubuntu Nerd Font 12',
+    fg     = theme.fg_normal,
+    widget = wibox.widget.textbox
+}
+deblogo:buttons(awful.util.table.join(
+                               awful.button({}, 1, function ()
+                                     awful.util.spawn("rofi -show power-menu -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi/rofi-power-menu-master/./rofi-power-menu")
+                               end),
+
+                               awful.button({ }, 5, function(t) 
+				     awful.tag.viewnext(t.screen) end),
+
+                               awful.button({ }, 4, function(t) 
+				     awful.tag.viewprev(t.screen) end)
+))
 
 
 -- Separators

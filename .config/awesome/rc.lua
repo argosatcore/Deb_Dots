@@ -743,6 +743,7 @@ awful.rules.rules = {
         class = {
           "Arandr",
 	  "Nautilus",
+	  "Gnome-calculator",
 	  "feh",
           "Blueman-manager",
           "Gpick",
