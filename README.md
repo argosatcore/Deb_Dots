@@ -47,8 +47,8 @@ In combination with awesome, I use my own variation of the [Awesome WM Copycats]
 - **Bash completion is no longer case sensitive:** No more wasted time pressing keys to get upper case letters.
 - **Combined less and neovim as a pager for man pages:** Because man pages deserve better.
 - **Keyboard layout set to Latin American:** Unless you need to type Spanish accents, you might want to take a look at the `.xsessionrc` file and chage the keyboard layout to your preferred one. Probably changing  `latam` for something like `us_intl` will do the job.
-- **Smart gaps:** If there is only one client in a given tag, gaps will be disabled. As soom as another client is launched in the same tag, gaps will be activated.
-- **Discrete use of windows' titlebars:** Titlebars are mostly pointless when using a tilig window manager, but they are very handy to move windows when they're floating. My configuration removes any titlebar if the windows are tiled, but as soon as they are switched to floating mode, a titlebar will appear at its top to facilitate its arrangent.
+- **Smart gaps:** If there is only one client on a given tag, gaps will be disabled. As soom as another client is launched on the same tag, gaps will be activated.
+- **Discreet use of window title bars:** Title bars are mostly useless when using a tiled window manager, but they are very useful for moving windows when they are floating. My setup removes the title bars if the windows are tiled, but as soon as they are switched to floating mode, a title bar will appear at the top for easy organization.
 
 ## Stuff referenced by these configs
 All of which are `apt install`able:
