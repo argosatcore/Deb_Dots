@@ -12,6 +12,8 @@ sudo apt install \
 	vim-gtk \
 	nnn \
 	feh \
+	ffmpeg \
+	fzf \
 	git \
 	tmux \
 	htop \
