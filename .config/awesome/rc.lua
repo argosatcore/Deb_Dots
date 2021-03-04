@@ -530,7 +530,7 @@ globalkeys = my_table.join(
     --Rofi as a power menu
 
 
-    awful.key({ modkey },            "e",     function () awful.util.spawn("rofi -show power-menu -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi/rofi-power-menu-master/./rofi-power-menu") end,
+    awful.key({ modkey },            "e",     function () awful.util.spawn("rofi -show power-menu -location 1 -yoffset 25 -xoffset 5 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi/rofi-power-menu-master/./rofi-power-menu") end,
               {description = "power menu", group = "launcher"}),
 
     --Rofi as a wifi menu 

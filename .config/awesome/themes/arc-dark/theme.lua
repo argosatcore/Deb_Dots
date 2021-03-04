@@ -238,7 +238,7 @@ local deblogo =  wibox.widget{
 }
 deblogo:buttons(awful.util.table.join(
                                awful.button({}, 1, function ()
-                                     awful.util.spawn("rofi -show power-menu -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi/rofi-power-menu-master/./rofi-power-menu")
+                                     awful.util.spawn("rofi -show power-menu -location 1 -yoffset 25 -xoffset 5 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi/rofi-power-menu-master/./rofi-power-menu")
                                end),
 
                                awful.button({ }, 5, function(t) 
@@ -250,7 +250,7 @@ deblogo:buttons(awful.util.table.join(
 			       end),
 
                                awful.button({ }, 3, function( ) 
-				     awful.util.spawn("rofi -show drun -location 1 -yoffset 30 -xoffset 10 -width 15 -columns 1 -lines 6")  
+				     awful.util.spawn("rofi -show drun -location 1 -yoffset 25 -xoffset 5 -width 15 -columns 1 -lines 6")  
 			       end)
 ))
 
