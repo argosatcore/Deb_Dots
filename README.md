@@ -22,7 +22,6 @@ In combination with awesome, I use my own variation of the [Awesome WM Copycats]
 2. These dotfiles are currently being written on [Debian Sid](https://wiki.debian.org/DebianUnstable).    
 
 3. In the recent past, I used [bspwm](https://github.com/baskerville/bspwm) as my default window manager. I still regard it as one of the best tiling window managers out there, but I found in awesome some features that made the switch worthwhile. Some of these include, but are not limited to: the use of tags instead of workspaces (a word that, like the so called "productivity", I've come to deeply hate... but I digress), the extensibility provided by its use of the Lua programming language, the integration of components like widgets and a native status bar, and the combination of a predefined set of layouts with some manual control over them makes it the ideal hybrid wm. 
-
 If you are interested in giving bspwm a try, you can take a look at my dotfiles. Also, a far more comprehensive and rigurous source on running bspwm on Debian is a book written by the greek philosopher, [Protesilaos Stavrou](https://protesilaos.com/), appropriately called _[Prot's Dots For Debian](https://protesilaos.com/pdfd/)_. His writings and videos on free and open source software may be of interest to those who wish to examine, both technically and philosophically, what, for better or for worse, has become an inescapable aspect of contemporary life. 
 
 4.  They will work for the most part, but adjustments are needed to make them work properly on these distributions. For example, one of them involves using a .xinit file instead of an .xsession file. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system.
@@ -54,7 +53,7 @@ If you are interested in giving bspwm a try, you can take a look at my dotfiles.
 - **Bash completion is no longer case sensitive:** No more wasted time pressing keys to get upper case letters.
 - **Combined less and neovim as a pager for man pages:** Because man pages deserve better.
 - **Keyboard layout set to Latin American:** Unless you need to type Spanish accents, you might want to take a look at the `.xsessionrc` file and chage the keyboard layout to your preferred one. Probably changing  `latam` for something like `us_intl` will do the job.
-- **Smart gaps:** If there is only one client on a given tag, gaps will be disabled. As soom as another client is launched on the same tag, gaps will be activated.
+- **Gapless single client:** If there is only one client on a given tag, gaps will be disabled. As soom as another client is launched on the same tag, gaps will be activated.
 - **Discreet use of window title bars:** Title bars are mostly useless when using a tiling window manager, but they are very useful for moving windows when they are floating. Awesome is both, a tiling and a floating window manager. Taking this into account,title bars are removed if the windows are tiled, but as soon as they are switched to floating mode, a title bar will appear at the top for easy organization.
 
 ## Stuff referenced by these configs
