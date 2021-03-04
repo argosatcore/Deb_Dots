@@ -8,40 +8,41 @@ sudo apt upgrade
 echo ' '
 echo 'Installing commonly used packages...'
 sudo apt install \
-	neovim \
-	vim-gtk \
-	nnn \
-	feh \
-	ffmpeg \
-	fzf \
-	git \
-	tmux \
-	htop \
-	xbacklight \ 
-	redshift \
-	lm-sensors \
-	neofetch \
-	vlc \
-	picom \
-	rofi \
-	pavucontrol \
-	awesome \
-	awesome-extra \
-	rxvt-unicode \
-	bash-completion \
-	blender \
-	gimp \
-	inkscape \
-	librecad \
-	fonts-font-awesome \
-	gucharmap \
 	apt-listbugs \
 	apt-listchanges \
-	deja-dup \
+	arc-theme \
+	awesome \
+	awesome-extra \
+	bash-completion \
+	blender \
 	default-jdk \
+	deja-dup \
+	feh \
+	ffmpeg \
+	fonts-font-awesome \
+	fzf \
+	gimp \
+	git \
+	gpick \
+	gucharmap \
+	htop \
+	inkscape \
+	librecad \
 	libreoffice-common \
+	lm-sensors \
 	lxappearance \
-	arc-theme 
+	neofetch \
+	neovim \
+	nnn \
+	pavucontrol \
+	picom \
+	redshift \
+	rofi \
+	rxvt-unicode \
+	tmux \
+	vim-gtk \
+	vlc \
+	xbacklight  
 echo ' '
 echo 'Bootstrapping complete.'
 
