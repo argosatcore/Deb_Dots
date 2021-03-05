@@ -27,16 +27,19 @@ sudo apt install \
 	gucharmap \
 	htop \
 	inkscape \
+	kupfer \
 	librecad \
 	libreoffice-common \
 	lm-sensors \
 	lxappearance \
+	needrestart \
 	neofetch \
 	neovim \
 	nnn \
 	pavucontrol \
 	picom \
 	redshift \
+	reportbug \
 	rofi \
 	rxvt-unicode \
 	tmux \
