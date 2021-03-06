@@ -1,15 +1,15 @@
 configuration {
 	modi: "run,drun,window";
-	width: 41;
-	lines: 3;
+	width: 40;
+	lines: 2;
 	columns: 3;
-	font: "FontAwesome 12";
+	font: "Ubuntu Nerd Font 13";
 	location: 2;
 	yoffset: 200;
 	xoffset: 0;
 	fixed-num-lines: false;
 	show-icons: true;
-	drun-icon-theme: "Tela circle dark";
+	drun-icon-theme: "Breeze Chameleon Dark";
 	terminal: "urxvt";
 /*	run-command: "{cmd}";*/
 /*	run-list-command: "";*/

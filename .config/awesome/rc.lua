@@ -528,14 +528,16 @@ globalkeys = my_table.join(
               {description = "switch apps", group = "launcher"}),
 
     --Rofi as a power menu
-
-
     awful.key({ modkey },            "e",     function () awful.util.spawn("rofi -show power-menu -location 1 -yoffset 25 -xoffset 5 -width 15 -columns 1 -lines 6 -modi power-menu:~/.local/bin/scripts/rofi/rofi-power-menu-master/./rofi-power-menu") end,
               {description = "power menu", group = "launcher"}),
 
     --Rofi as a wifi menu 
     awful.key({ modkey, "Shift" },            "e",     function () awful.spawn.with_shell("bash ~/.local/bin/scripts/rofi/rofi-wifi-menu/rofi-wifi-menu.sh") end,
                {description = "wifi menu", group = "launcher"}),
+
+   --Kupfer
+    awful.key({ modkey, "Shift" },            "a",     function () awful.util.spawn("kupfer") end,
+              {description = "kupfer", group = "launcher"}),
 
     -- Prompt
     awful.key({ modkey }, "r", function () awful.screen.focused().mypromptbox:run() end,

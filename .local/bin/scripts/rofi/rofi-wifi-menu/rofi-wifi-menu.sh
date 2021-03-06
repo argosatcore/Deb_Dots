@@ -7,9 +7,9 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 FIELDS=SSID,SECURITY
 POSITION=3
-YOFF=30
-XOFF=-15
-FONT="FontAwesome 12"
+YOFF=25
+XOFF=-5
+FONT="Ubuntu Nerd Font 12"
 
 if [ -r "$DIR/config" ]; then
 	source "$DIR/config"
