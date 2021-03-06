@@ -93,7 +93,7 @@ sudo mv .vimrc ~/
 mv .Xdefaults ~/
 mv .xsessrionrc ~/
 mv .speedswapper ~/
-sudo mv .gtkrc-2.0
+sudo mv .gtkrc-2.0 ~/
 sudo mv .bashrc ~/
 cd 
 rm -rf Deb_Dots/
