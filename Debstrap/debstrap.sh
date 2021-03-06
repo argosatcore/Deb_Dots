@@ -50,7 +50,7 @@ sudo apt install \
 	vim-gtk \
 	vlc \
 	xbacklight  
-sudo remove firefox-esr
+sudo apt remove firefox-esr
 echo ' '
 echo 'Setting up flatpaks...'
 echo ' '
