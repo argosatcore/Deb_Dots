@@ -37,6 +37,7 @@ If you are interested in giving bspwm a try, you can take a look at my dotfiles.
  
  ## Layouts:
  Awesome comes with even more than the ones shown here, these are just the ones that I have chosen for myself. Also, by using the [Lain](https://github.com/lcpz/lain/tree/33c0e0c2360a04fcc6f51bccb0ad2a7a9e9c07b3) module (an unofficial succesor to the Vain module), you get access to other layouts and features that are not included in the default version of awesome. 
+ :-------: | :-------:
  **Master & Stack ![tile](https://user-images.githubusercontent.com/64110504/109235140-b1fcd700-7792-11eb-9a2e-c82bf8532070.png)** | **Master & Stack Left ![tileleft](https://user-images.githubusercontent.com/64110504/109235218-de185800-7792-11eb-9b7f-6f4612bfbadf.png)**
 :-------: | :-------:
 ![Screenshot from 2021-02-23 19-39-51](https://user-images.githubusercontent.com/64110504/108935764-d9796580-7613-11eb-80bf-1c87f4a2914c.png) | ![Screenshot from 2021-02-23 19-39-57](https://user-images.githubusercontent.com/64110504/108936095-eeee8f80-7613-11eb-852b-c15e74690953.png)
