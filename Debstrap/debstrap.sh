@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 #Bootstrapping script for Debian-based systems:
 echo 'Initializing bootstrap'
@@ -6,10 +6,11 @@ echo ' '
 echo 'Updating system...'
 echo ' '
 sudo apt update && \
-sudo apt upgrade
+sudo apt upgrade -y
 echo ' '
 echo 'Installing commonly used packages...'
-sudo apt install \
+sudo apt install -y \
+	acpi \
 	apt-listbugs \
 	apt-listchanges \
 	arc-theme \
@@ -22,6 +23,7 @@ sudo apt install \
 	feh \
 	ffmpeg \
 	firefox \
+	flameshot \
 	fonts-font-awesome \
 	fzf \
 	gimp \
@@ -47,6 +49,7 @@ sudo apt install \
 	rxvt-unicode \
 	tmux \
 	texlive-full \
+	unclutter \
 	vim-gtk \
 	vlc \
 	xbacklight  
