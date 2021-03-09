@@ -47,6 +47,7 @@ sudo apt install -y \
         reportbug-gtk \
 	rofi \
 	rxvt-unicode \
+	suckless-tools \
 	tmux \
 	texlive-full \
 	unclutter \

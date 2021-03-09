@@ -100,8 +100,8 @@
 	*.foreground:  		#eaeaea
 	*.background:  		#000000
 	*.cursorColor: 		#eaeaea
-	*.highlightColor:	#1793d1
-	*fading:		35
+	*.highlightColor:	#5294E2
+	*fading:		25
 
 
 	! black
@@ -133,7 +133,7 @@
 !Transparency
 	URxvt*transparent:      true 
 	URxvt*depth:		32
-	URxvt.background: 	[75]#000000
+	URxvt.background: 	[70]#000000
 
 
 !Scrollbar: Disabled

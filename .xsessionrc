@@ -7,8 +7,9 @@ xset m 9 0 &
 
 
 #----Start compositor:
-#compton --config ~/.config/compton/compton.conf &
-picom --config ~/.config/picom/picom.conf &
+compton --config ~/.config/compton/compton.conf &
+#picom --config ~/.config/picom/picom.conf &
+#picom --config ~/.config/picom/1picom.conf &
 
 
 #----Set screen brightness to 5%:
@@ -36,7 +37,7 @@ redshift -l 9.83333:-83.75 &
 
 
 #----Set cursor:
-xsetroot -cursor_name right_ptr &
+#xsetroot -cursor_name right_ptr &
 
 
 #----Start the Simple X Hot Key Daemon:

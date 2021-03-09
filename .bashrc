@@ -32,7 +32,6 @@
 	alias t='tmux'
 	alias n='nnn'
 	alias screencast='ffmpeg -f x11grab -r 50 -s 1366x768 -i :0.0 -acodec aac -vcodec libx264 -crf 0 screencast.mkv'
-	alias rxterm='xrdb -merge .Xresources'
 
 
 
