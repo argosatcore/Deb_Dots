@@ -37,7 +37,7 @@
     padding:          0px;
 }
 #mainbox {
-    border:  0;
+    border:  2;
     padding: 15;
     background-color: @tempus-bg-main;
     border-color: @tempus-fg-alt;

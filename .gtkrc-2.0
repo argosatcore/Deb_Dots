@@ -3,7 +3,7 @@
 
 include "/home/argos/.gtkrc-2.0.mine"
 gtk-theme-name="Arc-Dark"
-gtk-icon-theme-name="Breeze Chameleon Dark"
+gtk-icon-theme-name="Newaita-dark"
 gtk-font-name="Liberation Sans 11"
 gtk-cursor-theme-name="Adwaita"
 gtk-cursor-theme-size=0
