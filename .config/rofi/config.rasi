@@ -1,6 +1,6 @@
 configuration {
 	modi: "run,drun,window";
-	width: 40;
+	width: 36;
 	lines: 9;
 	columns: 1;
 	font: "FontAwesome 13";

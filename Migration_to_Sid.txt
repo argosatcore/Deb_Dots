@@ -1,1 +1,1 @@
-Migration to Debian Unstable, codename: Sid. First git push to a repository using Sin was performed on 03/03/2021 approximately at 12:45 a.m. CST, the same day the switch took place.
+Migration to Debian Unstable, codename: Sid. First git push to a repository using Sid was performed on 03/03/2021 approximately at 12:45 a.m. CST, the same day the switch took place.

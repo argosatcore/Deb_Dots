@@ -17,6 +17,5 @@ zoom_in 4
 zoom_out 5
 
 # Same for image navigation ...
-next_img j  
-prev_img k  
-
+next_img j Right space
+prev_img k Left BackSpace

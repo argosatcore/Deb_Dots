@@ -177,9 +177,6 @@
 	#Watch sensors
 	alias ws='watch sensors'
 
-	#Htop
-	alias ht='htop'
-
 	#NNN:
 	alias n='nnn'
 	
