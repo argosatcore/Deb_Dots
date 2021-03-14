@@ -19,6 +19,7 @@ application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
 text/x-chdr=nvim.desktop;
 application/vnd.ms-publisher=org.gnome.gedit.desktop;
+inode/blockdevice=org.gnome.gedit.desktop;
 
 [Default Applications]
 image/png=feh.desktop

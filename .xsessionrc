@@ -7,8 +7,8 @@ xset m 9 0 &
 
 
 #----Start compositor:
-compton --config ~/.config/compton/compton.conf &
-#picom --config ~/.config/picom/picom.conf &
+#compton --config ~/.config/compton/compton.conf &
+picom --config ~/.config/picom/picom.conf &
 #picom --config ~/.config/picom/1picom.conf &
 
 

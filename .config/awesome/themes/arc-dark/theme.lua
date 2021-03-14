@@ -219,7 +219,14 @@ theme.volume.widget:buttons(awful.util.table.join(
 
 
 -- Net
-local neticon = wibox.widget.imagebox(theme.widget_net)
+local neticon =  wibox.widget{
+    markup = '<b></b>',
+    align  = 'center',
+    valign = 'center',
+    font   = 'FontAwesome 8',
+    fg     = theme.fg_normal,
+    widget = wibox.widget.textbox
+}
 neticon:buttons(awful.util.table.join(
                                awful.button({}, 1, function ()
                                      awful.spawn.with_shell("bash ~/.local/bin/scripts/rofi/rofi-wifi-menu/rofi-wifi-menu.sh")

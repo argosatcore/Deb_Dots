@@ -169,7 +169,7 @@
 	alias v='nvim'
 
 	# Transform terminal into a launcher:
-	alias f='xdg-open $(fzf); exit'
+	alias f='xdg-open "$(fzf)"; exit'
 
 	#Tmux:
 	alias t='tmux'
