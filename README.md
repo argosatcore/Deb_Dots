@@ -1,5 +1,5 @@
-# Deb_Dots<sup>1</sup> ![logo](https://user-images.githubusercontent.com/64110504/111417903-54321f80-86ac-11eb-9fe2-91a51b6e1556.png)
-⢀⣴⠾⠻⢶⣦⠀  
+# Deb_Dots<sup>1</sup> 
+⢀⣴⠾⠻⢶⣦⠀  ![logo](https://user-images.githubusercontent.com/64110504/111417903-54321f80-86ac-11eb-9fe2-91a51b6e1556.png)
 ⣾⠁⢠⠒⠀⣿⡁  
 ⢿⡄⠘⠷⠚⠋⠀  
 ⠈⠳⣄⠀⠀⠀
