@@ -70,7 +70,7 @@ All of which are `apt install`able:
 - `tmux`: persistent SSH shell sessions.
 - `feh`: sets the desktop background.
 - `redshift`: sets screen's temperature color according to time of day.
-
+- `slock`: screen locker.
 
 ## (Some) keybindings
 
