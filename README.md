@@ -66,7 +66,7 @@ All of which are `apt install`able:
 - `awesome-extra`: additional modules for awesome.
 - `rofi`: application launcher, window switcher, commad executor and many more.
 - `nautilus`: file manager.
-- `picom`: compositing for window transparency.
+- `compton`: compositor.
 - `tmux`: persistent SSH shell sessions.
 - `feh`: sets the desktop background.
 - `redshift`: sets screen's temperature color according to time of day.
