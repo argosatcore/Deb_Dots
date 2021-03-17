@@ -5,6 +5,7 @@
 ⠈⠳⣄⠀⠀⠀
    
 ---     
+![logo](https://user-images.githubusercontent.com/64110504/111417035-ab36f500-86aa-11eb-9d81-6081e32c6210.png)
 
 At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/),<sup>2</sup>  as a solid foundation to build on, and the [awesome](https://awesomewm.org/) window manager, as one of the most flexible and extensible frameworks to manage what probably remains as both, the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.<sup>3</sup> 
 
