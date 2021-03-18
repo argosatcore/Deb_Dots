@@ -36,6 +36,7 @@ sudo apt install -y \
 	librecad \
 	libreoffice-common \
 	lm-sensors \
+	lollypop \
 	lxappearance \
 	needrestart \
 	neofetch \

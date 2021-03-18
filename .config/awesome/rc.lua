@@ -224,10 +224,6 @@ root.buttons(my_table.join(
 
 -- {{{ Key bindings
 globalkeys = my_table.join(
-    -- Take a screenshot
-    -- https://github.com/lcpz/dots/blob/master/bin/screenshot
-    awful.key({ altkey }, "p", function() os.execute("screenshot") end,
-              {description = "take a screenshot", group = "hotkeys"}),
 
     -- X screen locker
     awful.key({ altkey, "Control" }, "l", function () os.execute(scrlocker) end,
@@ -289,8 +285,6 @@ globalkeys = my_table.join(
             if client.focus then client.focus:raise() end
         end,
         {description = "focus right", group = "client"}),
-    awful.key({ modkey,           }, "w", function () awful.util.mymainmenu:show() end,
-              {description = "show main menu", group = "awesome"}),
 
     -- Layout manipulation
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
@@ -398,24 +392,21 @@ globalkeys = my_table.join(
     -- Widgets popups
     awful.key({ altkey, }, "c", function () if beautiful.cal then beautiful.cal.show(7) end end,
               {description = "show calendar", group = "widgets"}),
-    awful.key({ altkey, }, "h", function () if beautiful.fs then beautiful.fs.show(7) end end,
-              {description = "show filesystem", group = "widgets"}),
-    awful.key({ altkey, }, "w", function () if beautiful.weather then beautiful.weather.show(7) end end,
-              {description = "show weather", group = "widgets"}),
 
     -- Brightness
-    awful.key({ }, "XF86MonBrightnessUp", function () os.execute("xbacklight -inc 5") end,
-              {description = "+5", group = "hotkeys"}),
-    awful.key({ }, "XF86MonBrightnessDown", function () os.execute("xbacklight -dec 5") end,
-              {description = "-5%", group = "hotkeys"}),
+    awful.key({ }, "XF86MonBrightnessUp", function () awful.util.spawn("xbacklight -inc 5") end,
+              {description = "Screen brightness +5%", group = "hotkeys"}),
+    awful.key({ }, "XF86MonBrightnessDown", function () awful.util.spawn("xbacklight -dec 5") end,
+              {description = "Screen brightness -5%", group = "hotkeys"}),
 
 -- Volume Keys
 
   --Volume Up 
-   awful.key({ }, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 5%+") end),
-  
+   awful.key({ }, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer set Master 5%+") end,
+                {description = "vol +5", group = "hotkeys"}),
   --Volume down 
-   awful.key({ }, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 5%-") end),
+   awful.key({ }, "XF86AudioLowerVolume", function () awful.util.spawn("amixer set Master 5%-") end,
+                {description = "vol -5", group = "hotkeys"}),
 
   --Mute Volume 
    awful.key({ }, "XF86AudioMute", function () awful.util.spawn("amixer set Master toggle") end),
@@ -744,13 +735,14 @@ awful.rules.rules = {
         },
         class = {
           "Arandr",
-	  "Nautilus",
-	  "Gnome-calculator",
-	  "feh",
           "Blueman-manager",
+	  "feh",
+	  "Gnome-calculator",
           "Gpick",
           "Kruler",
           "MessageWin",  -- kalarm.
+	  "Nautilus",
+	  "Pavucontrol",
           "Sxiv",
           "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
           "Wpa_gui",
@@ -872,5 +864,5 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 --
 --
 -- Gaps
-beautiful.useless_gap = 4
+beautiful.useless_gap = 5
 beautiful.gap_single_client = false

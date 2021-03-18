@@ -7,10 +7,11 @@ xset m 9 0 &
 
 
 #----Start compositor:
-#compton --config ~/.config/compton/compton.conf &
-picom --config ~/.config/picom/picom.conf &
-#picom --config ~/.config/picom/1picom.conf &
-
+compton --config ~/.config/compton/compton.conf &
+#picom --config ~/.config/picom/picom.conf &
+#picom --config ~/.config/picom/picom_glx.conf &
+#xcompmgr -c -r12  -C -t-7 -l-7 -o1.0 -I0.03 -O0.03 &
+#xcompmgr & 
 
 #----Set screen brightness to 5%:
 xbacklight -set 5
