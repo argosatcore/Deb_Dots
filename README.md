@@ -97,7 +97,7 @@ All of which are `apt install`able:
 - `Super+Ctrl+Space`: toggle floating. 
 - `Super+n`: minimize.
 - `Super+Ctrl+n`: restore minimized.
-- `Ctrl+Super+Return`: move to master.
+- `Ctrl+Super+Return`: toggle master.
 - `Super+Shift+h`: increase the number of master windows.
 - `Super+Shift+l`: decrease the number of master windows.
 - `Super+Ctrl+h`: increase the number of columns.
