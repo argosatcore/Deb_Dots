@@ -44,7 +44,6 @@ sudo apt install -y \
 	neovim \
 	nnn \
 	pavucontrol \
-	picom \
 	redshift \
         reportbug-gtk \
 	rofi \
@@ -55,8 +54,7 @@ sudo apt install -y \
 	unclutter \
 	vim-gtk \
 	vlc \
-	xbacklight \
-	xcompmgr
+	xbacklight 
 sudo apt remove firefox-esr
 echo ' '
 echo 'Setting up flatpaks...'
