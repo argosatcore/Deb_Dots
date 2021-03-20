@@ -560,8 +560,25 @@ clientkeys = my_table.join(
               {description = "close", group = "client"}),
     awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ,
               {description = "toggle floating", group = "client"}),
-    awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,
-              {description = "move to master", group = "client"}),
+
+awful.key({modkey, "Control" }, "Return", function(c)
+    local master = awful.client.getmaster(awful.screen.focused())
+    local last_focused_window = awful.client.focus.history.get(awful.screen.focused(), 1, nil)
+    if c == master then
+        if not last_focused_window then
+            return
+        end
+        client.focus = last_focused_window
+        c:swap(last_focused_window)
+        client.focus = c
+    else
+        client.focus = master
+        c:swap(master)
+        client.focus = c
+    end
+end,        
+ {description = "toggle master", group = "client"}),
+
     awful.key({ modkey,           }, "o",      function (c) c:move_to_screen()               end,
               {description = "move to screen", group = "client"}),
     awful.key({ modkey,           }, "t",      function (c) c.ontop = not c.ontop            end,

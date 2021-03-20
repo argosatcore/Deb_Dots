@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#Bootstrapping script for Debian-based systems:
+#Bootstrapping script for "Sidified" Debian systems:
 echo 'Initializing bootstrap'
 echo ' '
 echo 'Updating system...'
@@ -18,6 +18,7 @@ sudo apt install -y \
 	awesome-extra \
 	bash-completion \
 	blender \
+	compton \
 	default-jdk \
 	deja-dup \
 	feh \
@@ -54,7 +55,8 @@ sudo apt install -y \
 	unclutter \
 	vim-gtk \
 	vlc \
-	xbacklight  
+	xbacklight \
+	xcompmgr
 sudo apt remove firefox-esr
 echo ' '
 echo 'Setting up flatpaks...'
