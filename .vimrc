@@ -64,6 +64,7 @@
 	call plug#begin(expand('~/.vim/pluged'))
 	Plug 'arcticicestudio/nord-vim' "Instala y habilita el uso de la paleta 'nord' como tema de Vim.
 	Plug 'morhetz/gruvbox' "Instala y habilita el uso de la paleta 'gruvbox' como tema de Vim. 
+	Plug 'crusoexia/vim-monokai'
 	Plug 'junegunn/goyo.vim' "Da un formato más legible y libre de distracciones para escribir en Vim.
 	Plug 'vim-airline/vim-airline' "Habilita la barra de estado llamada airline.
 	Plug 'vim-airline/vim-airline-themes' "Permite que la barra de estado 'airline' herede la paleta del tema que Vim esté utilizando.
@@ -77,12 +78,20 @@
 " Esquema de color, para escoger un tema remueva las comillas de citación del tema a escoger.
 	
 	"Nord 
-		let g:nord_bold = '1'
-		let g:nord_italic = '1'
-		let g:nord_underline = '1'
-		let g:nord_undercurl = '1'
-		let g:nord_termcolor = '256'
-		colorscheme nord 
+	"	let g:nord_bold = '1'
+	"	let g:nord_italic = '1'
+	"	let g:nord_underline = '1'
+	"	let g:nord_undercurl = '1'
+	"	let g:nord_termcolor = '256'
+	"	colorscheme nord 
+	
+	"Monokai 
+		let g:monokai_bold = '1'
+		let g:monokai_italic = '1'
+		let g:monokai_underline = '1'
+		let g:monokai_undercurl = '1'
+		let g:monokai_termcolor = '256'
+		colorscheme monokai
 
 
 	" Gruvbox
@@ -98,8 +107,8 @@
 "	map <F1> :colorscheme gruvbox<CR>
 
 " Transparencia
-	hi! Normal ctermbg=NONE guibg=NONE 
-	hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 
+"	hi! Normal ctermbg=NONE guibg=NONE 
+"	hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 
 "	highlight Visual term=reverse cterm=reverse ctermbg=Black ctermfg=NONE guibg=NONE guifg=NONE gui=reverse 
 "	hi! cursorline ctermbg=Black ctermfg=White guibg=NONE guifg=NONE gui=reverse 
 
@@ -116,8 +125,8 @@
 	set noshowcmd
 	set nocursorline
 "	highlight! link CursorLine Visual
-	hi! Normal ctermbg=NONE guibg=NONE 
-	hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 
+"	hi! Normal ctermbg=NONE guibg=NONE 
+"	hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 
 "	highlight Visual term=reverse cterm=reverse ctermbg=Black ctermfg=NONE guibg=NONE guifg=NONE gui=reverse 
 	endfunction
 	
@@ -127,8 +136,8 @@
 	set cursorline
 "	hi! cursorline ctermbg=Black ctermfg=White guibg=NONE guifg=NONE gui=reverse 
 "	highlight! link CursorLine Visual
-	hi! Normal ctermbg=NONE guibg=NONE 
-	hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
+"	hi! Normal ctermbg=NONE guibg=NONE 
+"	hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 "	highlight Visual term=reverse cterm=reverse ctermbg=Black ctermfg=NONE guibg=NONE guifg=NONE gui=reverse 
 	endfunction
 

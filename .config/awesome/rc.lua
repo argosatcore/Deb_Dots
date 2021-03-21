@@ -332,9 +332,9 @@ globalkeys = my_table.join(
         {description = "toggle wibox", group = "awesome"}),
 
     -- On the fly useless gaps change
-    awful.key({ altkey, "Control" }, "+", function () lain.util.useless_gaps_resize(1) end,
+    awful.key({ altkey, "Control" }, "+", function () lain.util.useless_gaps_resize(5) end,
               {description = "increment useless gaps", group = "tag"}),
-    awful.key({ altkey, "Control" }, "-", function () lain.util.useless_gaps_resize(-1) end,
+    awful.key({ altkey, "Control" }, "-", function () lain.util.useless_gaps_resize(-5) end,
               {description = "decrement useless gaps", group = "tag"}),
 
     -- Dynamic tagging
@@ -882,4 +882,4 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 --
 -- Gaps
 beautiful.useless_gap = 5
-beautiful.gap_single_client = false
+-- beautiful.gap_single_client = false

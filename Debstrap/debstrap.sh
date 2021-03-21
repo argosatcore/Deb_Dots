@@ -13,6 +13,7 @@ sudo apt install -y \
 	acpi \
 	apt-listbugs \
 	apt-listchanges \
+	arandr \
 	arc-theme \
 	awesome \
 	awesome-extra \
@@ -45,7 +46,7 @@ sudo apt install -y \
 	nnn \
 	pavucontrol \
 	redshift \
-        reportbug-gtk \
+	reportbug-gtk \
 	rofi \
 	rxvt-unicode \
 	suckless-tools \

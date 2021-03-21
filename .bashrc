@@ -31,6 +31,7 @@
 	alias x='startx'
 	alias t='tmux'
 	alias n='nnn'
+	alias r='ranger'
 	alias screencast='ffmpeg -f x11grab -r 50 -s 1366x768 -i :0.0 -acodec aac -vcodec libx264 -crf 0 screencast.mkv'
 
 

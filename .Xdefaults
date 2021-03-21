@@ -97,43 +97,80 @@
 
 !! Tomorrow Night Bright:
 
-	*.foreground:  		#eaeaea
-	*.background:  		#000000
-	*.cursorColor: 		#eaeaea
-	*.highlightColor:	#5294E2
-	*fading:		25
+!!	*.foreground:  		#eaeaea
+!!	*.background:  		#000000
+!!	*.cursorColor: 		#eaeaea
+!!	*.highlightColor:	#5294E2
+!!	*fading:		25
+!!
+!!
+!!	! black
+!!  		*.color0:      	#000000
+!!   		*.color8:      	#666666
+!!	! red
+!!		*.color1:      	#d54e53
+!!		*.color9:      	#ff3334
+!!	! green
+!!		*.color2:      	#b9ca4a
+!!		*.color10:     	#9ec400
+!!	! yellow
+!!		*.color3:      	#e6c547
+!!		*.color11:     	#e7c547
+!!	! blue
+!!		*.color4:      	#7aa6da
+!!		*.color12:     	#7aa6da
+!!
+!!	! magenta
+!!		*.color5:     	#c397d8
+!!		*.color13:     	#b77ee0
+!!	! cyan
+!!		*.color6:    	#70c0ba
+!!		*.color14:    	#54ced6
+!!	! white
+!!		*.color7:     	#eaeaea
+!!		*.color15:    	#ffffff
 
+!! Monokai
+*.foreground:   #d1d1d1
+*.background:   #221e2d
+*.cursorColor:  #d1d1d1
 
-	! black
-  		*.color0:      	#000000
-   		*.color8:      	#666666
-	! red
-		*.color1:      	#d54e53
-		*.color9:      	#ff3334
-	! green
-		*.color2:      	#b9ca4a
-		*.color10:     	#9ec400
-	! yellow
-		*.color3:      	#e6c547
-		*.color11:     	#e7c547
-	! blue
-		*.color4:      	#7aa6da
-		*.color12:     	#7aa6da
+! black
+*.color0:       #272822
+*.color8:       #75715e
 
-	! magenta
-		*.color5:     	#c397d8
-		*.color13:     	#b77ee0
-	! cyan
-		*.color6:    	#70c0ba
-		*.color14:    	#54ced6
-	! white
-		*.color7:     	#eaeaea
-		*.color15:    	#ffffff
+! red
+*.color1:       #f92672
+*.color9:       #f92672
+
+! green
+*.color2:       #a6e22e
+*.color10:      #a6e22e
+
+! yellow
+*.color3:       #f4bf75
+*.color11:      #f4bf75
+
+! blue
+*.color4:       #66d9ef
+*.color12:      #66d9ef
+
+! magenta
+*.color5:       #ae81ff
+*.color13:      #ae81ff
+
+! cyan
+*.color6:       #a1efe4
+*.color14:      #a1efe4
+
+! white
+*.color7:       #f8f8f2
+*.color15:      #f9f8f5
 
 !Transparency
 	URxvt*transparent:      true 
 	URxvt*depth:		32
-	URxvt.background: 	[70]#000000
+	URxvt.background: 	[100]#2F343F
 
 
 !Scrollbar: Disabled
