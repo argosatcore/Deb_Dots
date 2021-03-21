@@ -31,7 +31,7 @@ If you are interested in giving bspwm a try, you can take a look at my dotfiles.
  ## Current state of affairs:
  This image illustrates the current state of my dektop. It is the one that will use a "rolling" cadence in its updates, as I tend to make small modifications all the time. The images for the layouts down below won't be updated as often, as their purpose is to solely show the disposition of windows in awesome as opposed to its graphic design, hence the difference between the image below and the images used in the layouts. They will be changed only when breaking changes in the disposition of windows are introduced in my build of awesome.
  
-![Screenshot from 2021-03-21 00-36-49](https://user-images.githubusercontent.com/64110504/111896303-464b0a00-89de-11eb-8796-09c1226229af.png)
+![Screenshot from 2021-03-21 04-43-41](https://user-images.githubusercontent.com/64110504/111901884-39d7a900-8a00-11eb-80e4-7de305d15ec0.png)
  
  ---
  
