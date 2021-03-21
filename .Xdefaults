@@ -134,6 +134,7 @@
 *.foreground:   #d1d1d1
 *.background:   #221e2d
 *.cursorColor:  #d1d1d1
+*fading:		25
 
 ! black
 *.color0:       #272822
