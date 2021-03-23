@@ -4,6 +4,16 @@
 " ░░▀░░▀▀▀░▀░▀
 
 
+" ------Global configs::
+	set number relativenumber
+	set spell spelllang=es,en_us  	
+	set wildmenu
+	set autoread wildmode=longest,list,full
+	set mouse=a
+	set cursorline
+	syntax on
+
+
 " -------Keybindings:
 
 " Enter normal mode:
@@ -27,15 +37,6 @@
 " Move lines when in visual mode up or down:
 	xnoremap K :move '<-2<CR>gv-gv
 	xnoremap J :move '>+1<CR>gv-gv
-
-" Global configs:
-	set number relativenumber
-	set spell spelllang=es,en_us  	
-	set wildmenu
-	set autoread wildmode=longest,list,full
-	set mouse=a
-	set cursorline
-	syntax on 
 
 
 " -------Plug-ins: 
@@ -80,10 +81,11 @@
 "		colorscheme gruvbox 
 
 	" Airline theme:
-	"	let g:airline_theme='base16_gruvbox_dark_hard'
-	"	let g:airline_theme='base16_nord'
-	"	let g:airline_theme='monochrome'
+"		let g:airline_theme='base16_gruvbox_dark_hard'
+"		let g:airline_theme='base16_nord'
+"		let g:airline_theme='monochrome'
 		let g:airline_theme='base16_chalk'
+
 
 " -------Goyo config: 
 	function! s:goyo_enter()

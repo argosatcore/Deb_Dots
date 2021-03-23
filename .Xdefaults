@@ -24,77 +24,6 @@
 	URxvt.iso14755_52:	false
 	URxvt.intensity.Styles:	false
 
-!! Manet Color Palette version 0:
-!
-!!	*.foreground:  		#D3CEB4
-!!	*.background:  		#121212
-!!	*.cursorColor: 		#D8DEE9
-!!!!	*.highlightColor:	#8fbcbb
-!!	*fading: 45
-!!
-!!
-!!	! black
-!!  		*.color0:      	#121212
-!!   		*.color8:      	#52514C
-!!	! red
-!!		*.color1:      	#E76720
-!!		*.color9:      	#FCA159
-!!	! green
-!!		*.color2:      	#407C4F
-!!		*.color10:     	#88A54A
-!!	! yellow
-!!		*.color3:      	#E4CC62
-!!		*.color11:     	#FFEE87
-!!	! blue
-!!		*.color4:      	#81A1C1
-!!		*.color12:     	#75A7D3
-!!
-!!	! magenta
-!!		*.color5:     	#755A3D
-!!		*.color13:     	#A38E71
-!!	! cyan
-!!		*.color6:    	#88C0D0
-!!		*.color14:    	#8FBCBB
-!!	! white
-!!		*.color7:     	#A2A089
-!!		*.color15:    	#D3CEB4
-
-!! Manet Color Palette version 0.1:
-
-!!	*.foreground:  		#FFFFFF
-!!	*.background:  		#212121
-!!	*.cursorColor: 		#FFFFFF
-!!	*.highlightColor:	#CE0056
-!!	*fading:		35
-!!
-!!
-!!	! black
-!!  		*.color0:      	#191919
-!!   		*.color8:      	#6C6E63
-!!	! red
-!!		*.color1:      	#B92A38
-!!		*.color9:      	#D97A67
-!!	! green
-!!		*.color2:      	#569F66
-!!		*.color10:     	#98C552
-!!	! yellow
-!!		*.color3:      	#D1BE7C
-!!		*.color11:     	#FFEE87
-!!	! blue
-!!		*.color4:      	#4885BE
-!!		*.color12:     	#7CA3C0
-!!
-!!	! magenta
-!!		*.color5:     	#7164AD
-!!		*.color13:     	#7C77AB
-!!	! cyan
-!!		*.color6:    	#309798
-!!		*.color14:    	#78ADAF
-!!	! white
-!!		*.color7:     	#A2A089
-!!
-!!		*.color15:    	#DEE0D5
-
 !! Tomorrow Night Bright:
 
 !!	*.foreground:  		#eaeaea
@@ -131,47 +60,47 @@
 !!		*.color15:    	#ffffff
 
 !! Monokai
-*.foreground:   #d1d1d1
-*.background:   #221e2d
-*.cursorColor:  #d1d1d1
-*fading:		25
-
-! black
-*.color0:       #272822
-*.color8:       #75715e
-
-! red
-*.color1:       #f92672
-*.color9:       #f92672
-
-! green
-*.color2:       #a6e22e
-*.color10:      #a6e22e
-
-! yellow
-*.color3:       #f4bf75
-*.color11:      #f4bf75
-
-! blue
-*.color4:       #66d9ef
-*.color12:      #66d9ef
-
-! magenta
-*.color5:       #ae81ff
-*.color13:      #ae81ff
-
-! cyan
-*.color6:       #a1efe4
-*.color14:      #a1efe4
-
-! white
-*.color7:       #f8f8f2
-*.color15:      #f9f8f5
+	*.foreground:   #d1d1d1
+	*.background:   #221e2d
+	*.cursorColor:  #d1d1d1
+	*fading:	25
+	
+	! black
+	*.color0:       #272822
+	*.color8:       #75715e
+	
+	! red
+	*.color1:       #f92672
+	*.color9:       #f92672
+	
+	! green
+	*.color2:       #a6e22e
+	*.color10:      #a6e22e
+	
+	! yellow
+	*.color3:       #f4bf75
+	*.color11:      #f4bf75
+	
+	! blue
+	*.color4:       #66d9ef
+	*.color12:      #66d9ef
+	
+	! magenta
+	*.color5:       #ae81ff
+	*.color13:      #ae81ff
+	
+	! cyan
+	*.color6:       #a1efe4
+	*.color14:      #a1efe4
+	
+	! white
+	*.color7:       #f8f8f2
+	*.color15:      #f9f8f5
 
 !Transparency
 	URxvt*transparent:      true 
 	URxvt*depth:		32
-	URxvt.background: 	[100]#2F343F
+	URxvt.background: 	[100]#23272f
 
 
 !Scrollbar: Disabled

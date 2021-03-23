@@ -11,7 +11,7 @@ application/pdf=org.gnome.Evince.desktop;org.inkscape.Inkscape.desktop;libreoffi
 application/vnd.openofficeorg.extension=libreoffice-startcenter.desktop;
 application/octet-stream=nvim.desktop;
 application/x-tint2-theme=nvim.desktop;
-video/mp4=vlc.desktop;
+video/mp4=mpv.desktop;vlc.desktop;
 application/x-shellscript=org.gnome.gedit.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 application/xml=nvim.desktop;
@@ -20,12 +20,13 @@ image/svg+xml=org.inkscape.Inkscape.desktop;
 text/x-chdr=nvim.desktop;
 application/vnd.ms-publisher=org.gnome.gedit.desktop;
 inode/blockdevice=org.gnome.gedit.desktop;
+text/html=nvim.desktop;
 
 [Default Applications]
 image/png=feh.desktop
 image/jpeg=feh.desktop
 image/jpg=feh.desktop
-video/mp4=vlc.desktop
+video/mp4=mpv.desktop
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop
 image/svg+xml=org.inkscape.Inkscape.desktop
 text/plain=org.gnome.gedit.desktop;nvim.desktop

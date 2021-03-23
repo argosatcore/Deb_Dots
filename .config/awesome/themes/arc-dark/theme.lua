@@ -206,7 +206,7 @@ theme.volume.widget:buttons(awful.util.table.join(
                                      theme.volume.update()
                                end),
                                awful.button({}, 1, function ()
-                                     awful.util.spawn("pavucontrol")
+                                     awful.util.spawn("pavucontrol -t 3")
                                end),
                                awful.button({}, 3, function ()
                                      awful.util.spawn("pkill pavucontrol")
