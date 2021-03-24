@@ -55,7 +55,9 @@ sudo apt install -y \
 	unclutter \
 	vim-gtk \
 	vlc \
-	xbacklight 
+	xbacklight \
+	youtube-dl
+echo 'Getting rid of Firefox's extended support release package...'
 sudo apt remove firefox-esr
 echo ' '
 echo 'Setting up flatpaks...'
