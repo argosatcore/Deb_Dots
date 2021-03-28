@@ -9,7 +9,7 @@ FIELDS=SSID,SECURITY
 POSITION=3
 YOFF=25
 XOFF=-5
-FONT="Ubuntu Nerd Font 12"
+FONT="FontAwesome 12"
 
 if [ -r "$DIR/config" ]; then
 	source "$DIR/config"
@@ -21,7 +21,7 @@ fi
 
 LIST=$(nmcli --fields "$FIELDS" device wifi list | sed '/^--/d')
 # For some reason rofi always approximates character width 2 short... hmmm
-RWIDTH=$(($(echo "$LIST" | head -n 1 | awk '{print length($0); }')+30))
+RWIDTH=$(($(echo "$LIST" | head -n 1 | awk '{print length($0); }')+10))
 # Dynamically change the height of the rofi menu
 LINENUM=$(echo "$LIST" | wc -l)
 # Gives a list of known connections so we can parse it later

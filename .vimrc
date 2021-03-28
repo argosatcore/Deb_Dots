@@ -39,7 +39,7 @@
 	xnoremap J :move '>+1<CR>gv-gv
 
 
-" -------Plug-ins: 
+" ------Plug-ins: 
 
 	call plug#begin(expand('~/.vim/pluged'))
 	Plug 'arcticicestudio/nord-vim' 
@@ -53,7 +53,7 @@
 	call plug#end()
 
 	
-" -------Colorschemes:
+" ------Colorschemes:
 	
 	"Nord 
 	"	let g:nord_bold = '1'
@@ -86,8 +86,13 @@
 "		let g:airline_theme='monochrome'
 		let g:airline_theme='base16_chalk'
 
+"	Inherit terminal's current backgground:
 
-" -------Goyo config: 
+		hi! Normal ctermbg=NONE guibg=NONE 
+		hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 
+
+
+" ------Goyo config: 
 	function! s:goyo_enter()
 	set noshowmode
 	set noshowcmd
@@ -98,6 +103,8 @@
 	set showmode
 	set showcmd
 	set cursorline
+	hi! Normal ctermbg=NONE guibg=NONE 
+	hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 
 	endfunction
 
 	autocmd! User GoyoEnter nested call <SID>goyo_enter()
