@@ -61,6 +61,7 @@ If you are interested in giving bspwm a try, you can take a look at my dotfiles.
 All of which are `apt install`able:
 
 - `neovim`: text editor.
+- `vim-gtk`: (neo)vim's clipboard integration.
 - `rxvt-unicode`: terminal emulator.
 - `awesome`: window manager.
 - `awesome-extra`: additional modules for awesome.
