@@ -93,6 +93,7 @@
 
 
 " ------Goyo config: 
+"
 	function! s:goyo_enter()
 	set noshowmode
 	set noshowcmd
