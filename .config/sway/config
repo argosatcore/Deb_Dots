@@ -7,7 +7,7 @@
 ### Variables
 #
 #Font
-font pango: FontAwesome Bold 9
+font pango: FontAwesome Bold 8
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
@@ -27,7 +27,8 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg ~/Pictures/Wallpapers/tile.jpeg fill
 #
 # Example configuration:
 #
@@ -76,6 +77,9 @@ input "type:keyboard" xkb_options caps:swapescape
 
     # Start your launcher
     bindsym $mod+d exec rofi -show drun 
+
+    # Launch file manager
+    bindsym $mod+n exec nautilus -w
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -206,18 +210,24 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
+#bar {
+#    position top
+#
+#    # When the status_command prints a new line to stdout, swaybar updates.
+#    # The default just shows the current date and time.
+#    status_command while date +'%Y-%m-%d %l:%M %p'; do sleep 1; done
+#
+#    colors {
+#        statusline #ffffff
+#        background #2F343FBF
+#        inactive_workspace #2F343FBF #2F343FBF #DDDDFF
+#        focused_workspace #5294E2 #6592E2 #FFFFFF
+#    }
+#}
+
+#Waybar
 bar {
-    position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %l:%M:%S %p'; do sleep 1; done
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+	swaybar_command waybar
 }
 
 include /etc/sway/config.d/*
@@ -238,3 +248,22 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
 #Set screen brightness to 5% on start up
 exec --no-startup-id brightnessctl set 5%
+
+#Gaps
+gaps inner 5
+smart_gaps on
+
+#Borders
+default_border pixel 2 
+smart_borders on
+# Colors
+set $active #5294E2
+set $fg     #FFFFFF
+set $bg     #383c4a
+set $bar    #404552
+
+# Window Border color   border  backgr  text  indicator
+client.focused          $active $active $fg   $fg
+client.focused_inactive $bg     $bg     $fg   $fg
+client.unfocused        $bg     $bg     $fg   $fg
+client.urgent           $bg     $bg     $fg   $fg
