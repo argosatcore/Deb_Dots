@@ -19,7 +19,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 
 2. These dotfiles are currently being written on [Debian Sid](https://wiki.debian.org/DebianUnstable) :skull:. 
 
-3. In the recent past, I used [bspwm](https://github.com/baskerville/bspwm) and [](https://awesomewm.org/index.html) my default window manager. I still regard them as some of the best tiling window managers out there, but my curiosity to see what Wayland has to offer has driven me appart from them. 
+3. In the recent past, I used [bspwm](https://github.com/baskerville/bspwm) and [awesomewm](https://awesomewm.org/index.html) my default window manager. I still regard them as some of the best tiling window managers out there, but my curiosity to see what Wayland has to offer has driven me appart from them. 
 If you are interested in giving bspwm or awesome a try, you can take a look at my dotfiles. Also, a far more comprehensive and rigurous source on running bspwm on Debian is a book written by the greek philosopher, [Protesilaos Stavrou](https://protesilaos.com/), appropriately called _[Prot's Dots For Debian](https://protesilaos.com/pdfd/)_. His writings and videos on free and open source software may be of interest to those who wish to examine, both technically and philosophically, what, for better or for worse, has become an inescapable aspect of contemporary life. 
 
 4.  They will work for the most part, but adjustments are needed to make them work properly on these distributions. For example, one of them involves using an .xinit file instead of an .xsession file. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system.
