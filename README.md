@@ -6,7 +6,7 @@
    
 ---     
 
-At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/),<sup>2</sup>  as a solid foundation to build on, and the [sway](https://swaywm.org/) window manager, as the best Wayland framework, at the moment, to manage what probably remains as both, the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.<sup>3</sup> 
+At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/),<sup>2</sup>  as a solid foundation to build on, and the [Sway](https://swaywm.org/) window manager, as the best Wayland framework, at the moment, to manage what probably remains as both, the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.<sup>3</sup> 
  
    These dot files were started with a minimal Debian 10 Buster installation, so they should work with any Debian installation or Debian-based distribution. 
      
