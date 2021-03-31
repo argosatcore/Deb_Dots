@@ -1,9 +1,3 @@
-# Default config for sway
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
-
 ### Variables
 #
 #Font
@@ -16,7 +10,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term urxvt 
+set $term foot 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -27,8 +21,8 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-#output * bg ~/Pictures/Wallpapers/tile.jpeg fill
+#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg ~/Pictures/Wallpapers/tile.jpeg fill
 #
 # Example configuration:
 #
@@ -91,12 +85,13 @@ input "type:keyboard" xkb_options caps:swapescape
     bindsym $mod+Mod1+p  exec grimshot save output
     bindsym $mod+Ctrl+p  exec grimshot save window
 
-    # Drag floating windows by holding down $mod and left mouse button.
-    # Resize them with right mouse button + $mod.
-    # Despite the name, also works for non-floating windows.
-    # Change normal to inverse to use left mouse button for resizing and right
-    # mouse button for dragging.
+    #Wofi as a power menu
+    bindsym $mod+Shift+q exec bash .local/bin/scripts/wofi/poweroffreboot
+
     floating_modifier $mod normal
+
+#Floating windows list:
+for_window [class="feh"] floating enable
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
@@ -106,6 +101,10 @@ input "type:keyboard" xkb_options caps:swapescape
 #
 # Moving around:
 #
+    #Mobe to the next or previous workspace
+    bindsym $mod+Next workspace next
+    bindsym $mod+Prior workspace prev
+
     # Move your focus around
     bindsym $mod+$left focus left
     bindsym $mod+$down focus down
@@ -195,10 +194,6 @@ input "type:keyboard" xkb_options caps:swapescape
 # Resizing containers:
 #
 mode "resize" {
-    # left will shrink the containers width
-    # right will grow the containers width
-    # up will shrink the containers height
-    # down will grow the containers height
     bindsym $left resize shrink width 10px
     bindsym $down resize grow height 10px
     bindsym $up resize shrink height 10px
@@ -267,14 +262,14 @@ smart_gaps on
 default_border pixel 2 
 smart_borders on
 # Colors
-# set $active #5294E2
- set $active #FFFFFF
+set $active #5294E2
+set $unfocused #FFFFFF
 set $fg     #FFFFFF
 set $bg     #383c4a
 set $bar    #404552
 
-# Window Border color   border  backgr  text  indicator
-client.focused          $active $active $fg   $fg
-client.focused_inactive $bg     $bg     $fg   $fg
-client.unfocused        $bg     $bg     $fg   $fg
-client.urgent           $bg     $bg     $fg   $fg
+# Window Border color   border  backgr  text         indicator
+client.focused          $active $active $fg           $fg
+client.focused_inactive $bg     $bg     $unfocused    $fg
+client.unfocused        $bg     $bg     $unfocused    $fg
+client.urgent           $bg     $bg     $fg           $fg

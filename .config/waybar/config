@@ -87,7 +87,9 @@
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-wifi": "{ifname}: {ipaddr}/{cidr}"
+        "format-wifi": "{ifname}: {ipaddr}/{cidr}",
+	"on-scroll-up":"bash .local/bin/scripts/wofi/netcon",
+	"on-scroll-down":" bash .local/bin/scripts/wofi/netdiscon"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float

@@ -64,21 +64,21 @@
 	"	colorscheme nord 
 	
 	"Monokai 
-		let g:monokai_bold = '1'
-		let g:monokai_italic = '1'
-		let g:monokai_underline = '1'
-		let g:monokai_undercurl = '1'
-		let g:monokai_termcolor = '256'
-		colorscheme monokai
+"		let g:monokai_bold = '1'
+"		let g:monokai_italic = '1'
+"		let g:monokai_underline = '1'
+"		let g:monokai_undercurl = '1'
+"		let g:monokai_termcolor = '256'
+"		colorscheme monokai
 
 	" Gruvbox
-"		let g:gruvbox_contrast_dark = 'hard'
-"		let g:gruvbox_bold = '1'
-"		let g:gruvbox_italic = '1'
-"		let g:gruvbox_underline = '1'
-"		let g:gruvbox_undercurl = '1'
-"		let g:gruvbox_termcolor = '256'
-"		colorscheme gruvbox 
+		let g:gruvbox_contrast_dark = 'hard'
+		let g:gruvbox_bold = '1'
+		let g:gruvbox_italic = '1'
+		let g:gruvbox_underline = '1'
+		let g:gruvbox_undercurl = '1'
+		let g:gruvbox_termcolor = '256'
+		colorscheme gruvbox 
 
 	" Airline theme:
 "		let g:airline_theme='base16_gruvbox_dark_hard'
