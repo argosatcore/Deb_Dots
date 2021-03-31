@@ -85,6 +85,15 @@ input "type:keyboard" xkb_options caps:swapescape
     # Launch web browser.
     bindsym $mod+i exec firefox
 
+    #Use grim as a color picker
+    bindsym $mod+z urxvt -e grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-
+
+    #Screenshooting
+    bindsym $mod+p       exec grimshot save active
+    bindsym $mod+Shift+p exec grimshot save area
+    bindsym $mod+Mod1+p  exec grimshot save output
+    bindsym $mod+Ctrl+p  exec grimshot save window
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.

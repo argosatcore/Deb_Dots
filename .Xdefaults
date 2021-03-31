@@ -100,7 +100,7 @@
 !Transparency
 	URxvt*transparent:      true 
 	URxvt*depth:		32
-	URxvt.background: 	[80]#23272f
+	URxvt.background: 	[70]#23272f
 
 
 !Scrollbar: Disabled

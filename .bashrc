@@ -37,6 +37,9 @@
 	alias brc='nvim ~/.bashrc'
 	alias awc='nvim ~/.config/awesome/rc.lua'
 	alias arc='nvim ~/.config/awesome/themes/arc-dark/theme.lua'
+	alias wrcss='nvim .config/waybar/style.css'
+	alias wrc='nvim .config/waybar/config'
+	alias src='nvim ~/.config/sway/config'
 	alias v='nvim'
 	alias f='xdg-open "$(fzf)"; exit'
 	alias t='tmux'
@@ -49,6 +52,7 @@
 	alias lookapt='apt search'
 	alias throwapt='sudo apt remove'
 	alias capture='sudo apt install'
+	alias colorp='grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-'
 
 
 # ------Vim mode:
