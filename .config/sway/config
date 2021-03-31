@@ -16,7 +16,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+set $term urxvt 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -38,12 +38,10 @@ output * bg ~/Pictures/Wallpapers/tile.jpeg fill
 
 ### Idle configuration
 #
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
+ exec swayidle -w \
+          timeout 300 'swaylock -f -c 000000' \
+          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+          before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -70,16 +68,22 @@ input "type:keyboard" xkb_options caps:swapescape
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec kitty
+    bindsym $mod+Return exec $term
 
     # Kill focused window
     bindsym $mod+q kill
 
     # Start your launcher
-    bindsym $mod+d exec rofi -show drun 
+    bindsym $mod+d exec wofi --show drun 
 
     # Launch file manager
     bindsym $mod+n exec nautilus -w
+
+    # Lock screen.
+    bindsym $mod+Shift+x exec swaylock  
+
+    # Launch web browser.
+    bindsym $mod+i exec firefox
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.

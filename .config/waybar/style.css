@@ -1,18 +1,19 @@
 * {
     border: none;
-    border-radius: 0;
+    border-radius: 5;
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-family: FontAwesome, Helvetica, Arial, sans-serif;
+    font-size: 12px;
     min-height: 0;
 }
 
 window#waybar {
     background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    border-bottom: 0px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
+    border-radius: 0;
 }
 
 window#waybar.hidden {
@@ -43,6 +44,7 @@ window#waybar.chromium {
     color: #ffffff;
     /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
+    border-radius: 0px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -62,7 +64,8 @@ window#waybar.chromium {
 
 #mode {
     background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
+    border-bottom: 0px solid #ffffff;
+    border-radius: 0px;
 }
 
 #clock,
@@ -76,10 +79,9 @@ window#waybar.chromium {
 #custom-media,
 #tray,
 #mode,
-#idle_inhibitor,
-#mpd {
+#idle_inhibitor {
     padding: 0 10px;
-    margin: 0 4px;
+    margin: 2px 3px;
     color: #ffffff;
 }
 
@@ -134,20 +136,23 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: #7c818c ;
+    color: #FFFFFF;
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: #7c818c ;
+    color: #FFFFFF;
 }
 
 #backlight {
-    background-color: #90b1b1;
+    background-color: #7c818c ;
+    color: #FFFFFF;
 }
 
 #network {
-    background-color: #2980b9;
+    background-color: #7c818c  ;
+    color: #FFFFFF;
 }
 
 #network.disconnected {
@@ -155,8 +160,8 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    background-color: #7c818c ;
+    color: #FFFFFF;
 }
 
 #pulseaudio.muted {
@@ -179,7 +184,8 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
+    background-color: #7c818c ;
+    color: #FFFFFF;
 }
 
 #temperature.critical {
@@ -197,29 +203,4 @@ label:focus {
 #idle_inhibitor.activated {
     background-color: #ecf0f1;
     color: #2d3436;
-}
-
-#mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
-}
-
-#mpd.disconnected {
-    background-color: #f53c3c;
-}
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
-}
-
-#language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
 }

@@ -19,6 +19,7 @@ sudo apt install -y \
 	awesome-extra \
 	bash-completion \
 	blender \
+	brighnessctl \
 	compton \
 	default-jdk \
 	deja-dup \
@@ -31,6 +32,7 @@ sudo apt install -y \
 	gimp \
 	git \
 	gpick \
+	grimshot \
 	gucharmap \
 	htop \
 	inkscape \
@@ -50,6 +52,7 @@ sudo apt install -y \
 	rofi \
 	rxvt-unicode \
 	suckless-tools \
+	sway \
 	tmux \
 	texlive-full \
 	unclutter \
