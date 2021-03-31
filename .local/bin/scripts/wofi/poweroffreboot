@@ -1,0 +1,9 @@
+#!/bin/bash
+
+CHOICE=$(echo -e "Shutdown\nReboot" | wofi --show dmenu -p ?)
+
+case "$CHOICE" in 
+	Shutdown) systemctl poweroff & ;;
+	Reboot) systemctl reboot & ;;
+esac
+		
