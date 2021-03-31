@@ -27,8 +27,8 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg ~/Pictures/Wallpapers/tile.jpeg fill
+output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+#output * bg ~/Pictures/Wallpapers/tile.jpeg fill
 #
 # Example configuration:
 #
@@ -84,9 +84,6 @@ input "type:keyboard" xkb_options caps:swapescape
 
     # Launch web browser.
     bindsym $mod+i exec firefox
-
-    #Use grim as a color picker
-    bindsym $mod+z urxvt -e grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-
 
     #Screenshooting
     bindsym $mod+p       exec grimshot save active
@@ -270,7 +267,8 @@ smart_gaps on
 default_border pixel 2 
 smart_borders on
 # Colors
-set $active #5294E2
+# set $active #5294E2
+ set $active #FFFFFF
 set $fg     #FFFFFF
 set $bg     #383c4a
 set $bar    #404552
