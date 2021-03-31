@@ -38,8 +38,7 @@ If you are interested in giving bspwm or awesome a try, you can take a look at m
 - **Bash completion is no longer case sensitive:** No more wasted time pressing keys to get upper case letters.
 - **Combined less and neovim as a pager for man pages:** Because man pages deserve better.
 - **Keyboard layout set to Latin American:** Unless you need to type Spanish accents, you might want to take a look at the `.xsessionrc` file and chage the keyboard layout to your preferred one. Probably changing  `latam` for something like `us_intl` will do the job.
-- **Gapless single client:** If there is only one client on a given tag, gaps will be disabled. As soom as another client is launched on the same tag, gaps will be activated.
-- **Discreet use of window title bars:** Title bars are mostly useless when using a tiling window manager, but they are very useful for moving windows when they are floating. Awesome is both, a tiling and a floating window manager. Taking this into account,title bars are removed if the windows are tiled, but as soon as they are switched to floating mode, a title bar will appear at the top for easy organization.
+- **Gapless single client:** If there is only one client on a given workspace, gaps and borders will be disabled. As soom as another client is launched on the same tag, gaps will be activated.
 
 ## Stuff referenced by these configs
 All of which are `apt install`able in Debian Sid:
