@@ -135,6 +135,7 @@
 	bindsym $mod+8 workspace number 8
 	bindsym $mod+9 workspace number 9
 	bindsym $mod+0 workspace number 10
+
 	# Move focused container to workspace:
 	bindsym $mod+Shift+1 move container to workspace number 1
 	bindsym $mod+Shift+2 move container to workspace number 2
@@ -152,17 +153,22 @@
 	# Window tiling orientation:
 	bindsym $mod+b splith  #Tile horizontally.
 	bindsym $mod+v splitv  #Tile vertically.
+
 	# Layout styles:
 	bindsym $mod+s layout stacking
 	bindsym $mod+w layout tabbed
 	bindsym $mod+e layout toggle split
-	# Make the current focus fullscreen
+
+	# Make the current focus fullscreen:
 	bindsym $mod+f fullscreen
-	# Toggle the current focus between tiling and floating mode
+
+	# Toggle the current focus between tiling and floating mode:
 	bindsym $mod+Shift+space floating toggle
-	# Swap focus between the tiling area and the floating area
+
+	# Swap focus between the tiling area and the floating area:
 	bindsym $mod+space focus mode_toggle
-	# Move focus to the parent container
+
+	# Move focus to the parent container:
 	bindsym $mod+a focus parent
 
 
@@ -182,19 +188,21 @@
 	    bindsym $down resize grow height 40px
 	    bindsym $up resize shrink height 40px
 	    bindsym $right resize grow width 40px
-	    # Ditto, with arrow keys
+
+	    # Ditto, with arrow keys:
 	    bindsym Left resize shrink width 40px
 	    bindsym Down resize grow height 40px
 	    bindsym Up resize shrink height 40px
 	    bindsym Right resize grow width 40px
-	    # Return to default mode
+
+	    # Return to default mode:
 	    bindsym Return mode "default"
 	    bindsym Escape mode "default"
 	}
 	bindsym $mod+r mode "resize"
 
 
-# Waybar
+# Waybar:
 
 	bar {
 		swaybar_command waybar
