@@ -47,6 +47,7 @@ All of which are `apt install`able in Debian Sid:
 - `vim-gtk`: (neo)vim's clipboard integration.
 - `foot`: minimalist Wayland native terminal emulator.
 - `sway`: wayland compositor.
+- `waybar`: sway's panel.
 - `wofi`: application launcher, window switcher, commad executor and many more.
 - `nautilus`: file manager.
 - `grimshot`: wayland native screeshooter.
