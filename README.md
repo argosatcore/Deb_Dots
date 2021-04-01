@@ -51,36 +51,32 @@ All of which are `apt install`able in Debian Sid:
 - `nautilus`: file manager.
 - `grimshot`: wayland native screeshooter.
 - `tmux`: persistent SSH shell sessions.
-- `feh`: sets the desktop background.
+- `swaybg`: sets the desktop background.
 - `swaylock`: screen locker.
+- `mako`: notification daemon.
 
 ## (Some) keybindings
 
 
 ### Sway:
-- `Super+Ctrl+r`: reload awesome.
-- `Super+Shift+q`: exit awesome session.
-- `Alt+Ctrl+l`: lock screen.
-- `Super+b`: hide/unhide panel.
-- `Super+Space`: switch to next layout.
-- `Super+Shit+Space`: switch to previous layout.
+- `Super+Shift+c`: reload Sway.
+- `Super+Shift+e`: exit Wayland session.
+- `Alt+Shift+x`: lock screen.
+- `Super+Shit+minus`: hide/unhide scratchpad.
+- `Super+PagUp`: switch to next workspace.
+- `Super+PageDown`: switch to previous workspace.
 
 ### Windows:
 - `Super+q`: close.
 - `Super+f`: fullscreen. 
-- `Super+Ctrl+Space`: toggle floating. 
-- `Super+n`: minimize.
-- `Super+Ctrl+n`: restore minimized.
-- `Ctrl+Super+Return`: toggle master.
-- `Super+Shift+h`: increase the number of master windows.
-- `Super+Shift+l`: decrease the number of master windows.
-- `Super+Ctrl+h`: increase the number of columns.
-- `Super+Ctrl+l`: decrease the number of columns.
+- `Super+Shift+Space`: toggle floating. 
 - `Super+(h,j,k,l)`: change the selection of a window in a designated direction.
 - `Super+Shift+(h,j,k,l)`: move window in a designated direction.
+- `Super+w`: tab windows.
+- `Super+s`: stack windows.
+- `Super+e`: spit tabbed or stacked windows.
 
 ### Mouse:
-- `Shift+click4`: float a tiled window and viceversa.
 - `Super+click1`: move window.
 - `Ctrl+click2`: resize window.
 
