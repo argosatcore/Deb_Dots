@@ -112,7 +112,7 @@
     },
 "custom/date": {
                 "format": "{}",
-                "interval": "60",
+                "interval": 60,
                 "exec": "date +'%Y-%m-%d %l:%M %p'",
                 "on-click": "gsimplecal",
            },
