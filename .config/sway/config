@@ -70,7 +70,7 @@
 	bindsym $mod+n exec nautilus -w
 	
 	# Lock screen.:
-	bindsym $mod+Shift+x exec swaylock  
+	bindsym $mod+Shift+x exec swaylock -f -c 000000  
 	
 	# Launch web browser.:
 	bindsym $mod+i exec firefox
@@ -230,6 +230,8 @@
 	#Set screen brightness to 5% on start up:
 	exec --no-startup-id brightnessctl set 5%
 
+	#Set screen color temperature:
+	exec --no-startup-id gammastep -l 9.83333:-83.75  
 
 # Launch mako notification daemon on startup:
 	exec mako

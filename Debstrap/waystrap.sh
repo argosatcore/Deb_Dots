@@ -25,6 +25,7 @@ sudo apt install -y \
 	fonts-font-awesome \
 	foot \
 	fzf \
+	gammastep \
 	gimp \
 	git \
 	grimshot \
