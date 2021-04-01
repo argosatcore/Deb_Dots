@@ -16,7 +16,7 @@
 	set $term foot 
 
 	# Your preferred application launcher:
-	set $menu wofi --show run 
+	set $menu wofi --show=drun --lines=5 --width=35% --prompt="" --xoffset=450 --yoffset=200 
 
         # Floating mofier:
 	floating_modifier $mod normal
