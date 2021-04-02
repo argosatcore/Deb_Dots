@@ -50,6 +50,7 @@ All of which are `apt install`able in Debian Sid:
 - `waybar`: sway's panel.
 - `wofi`: application launcher, window switcher, commad executor and many more.
 - `nautilus`: file manager.
+- `gammastep`: Screen temperature manager.
 - `grimshot`: wayland native screeshooter.
 - `tmux`: persistent SSH shell sessions.
 - `swaybg`: sets the desktop background.
