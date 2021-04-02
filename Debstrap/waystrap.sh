@@ -13,7 +13,6 @@ sudo apt install -y \
 	acpi \
 	apt-listbugs \
 	apt-listchanges \
-	arandr \
 	arc-theme \
 	bash-completion \
 	blender \
@@ -52,7 +51,9 @@ sudo apt install -y \
 	vim-gtk \
 	vlc \
 	waybar \
+	wdisplays \
 	wofi \
+	wf-recorder \
 	youtube-dl
 echo 'Getting rid of Firefox's extended support release package...'
 sudo apt remove firefox-esr
