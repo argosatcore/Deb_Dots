@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CHOICE=$(echo -e "Shutdown\nReboot" | wofi --show=dmenu -p "Power Menu" --width=20% --lines=2 --xoffset=550 --yoffset=200)
+CHOICE=$(echo -e "Shutdown\nReboot" | wofi --show=dmenu -p "Power Menu" --width=20% --lines=2 --xoffset=548 --yoffset=200)
 
 case "$CHOICE" in 
 	Shutdown) systemctl poweroff & ;;

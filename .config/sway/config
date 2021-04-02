@@ -16,7 +16,7 @@
 	set $term foot 
 
 	# Your preferred application launcher:
-	set $menu wofi --show=drun --lines=5 --width=35% --prompt="" --xoffset=450 --yoffset=200 
+	set $menu wofi --show=drun --lines=5 --width=33% --prompt="" --xoffset=458 --yoffset=200 
 
         # Floating mofier:
 	floating_modifier $mod normal
@@ -151,8 +151,8 @@
 # Layout stuff:
 
 	# Window tiling orientation:
-	bindsym $mod+b splith  #Tile horizontally.
-	bindsym $mod+v splitv  #Tile vertically.
+	bindsym $mod+b splith  
+	bindsym $mod+v splitv  
 
 	# Layout styles:
 	bindsym $mod+s layout stacking
