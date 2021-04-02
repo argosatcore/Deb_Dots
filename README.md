@@ -80,7 +80,7 @@ All of which are `apt install`able in Debian Sid:
 
 ### Mouse:
 - `Super+click1`: move window.
-- `Ctrl+click2`: resize window.
+- `Super+click2`: resize window.
 
 ### Running things:
 - `Super+Return`: run a terminal.
