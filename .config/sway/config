@@ -1,4 +1,15 @@
-# Variables:
+#  mmmm                      
+# #"   "m     m  mmm   m   m 
+# "#mmm "m m m" "   #  "m m" 
+#     "# #m#m#  m"""#   #m#  
+# "mmm#"  # #   "mm"#   "#   
+#                       m"   
+#                      ""  
+
+
+#----------------
+#-- Variables: --
+#----------------
 
 	# Font:
 	font pango: FontAwesome Bold 8
@@ -26,21 +37,30 @@
 
 	#Floating windows list:
 	for_window [class="feh"] floating enable
+	for_window [app_id="gnome-calculator"] floating enable
+	for_window [app_id="Nautilus"] floating enable
+	for_window [app_id="wdisplays"] floating enable
 
 
-# Set wallpaper:
+#--------------------
+#-- Set wallpaper: --
+#--------------------
 
 	#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 	output * bg ~/Pictures/Wallpapers/R_Seagram.jpg fill
 
 
-# Monitors Output:
+#----------------------
+#-- Monitors Output: --
+#----------------------
 
 	#   output HDMI-A-1 resolution 1920x1080 position 1920,0
 	# You can get the names of your outputs by running: swaymsg -t get_outputs
 
 
-# Idle configuration:
+#-------------------------
+#-- Idle configuration: --
+#-------------------------
 
 	 exec swayidle -w \
 	          timeout 300 'swaylock -f -c 000000' \
@@ -48,14 +68,18 @@
 	          before-sleep 'swaylock -f -c 000000'
 
 
-# Input configuration:
+#--------------------------
+#-- Input configuration: --
+#--------------------------
 
 	input * xkb_layout "latam"
 	input * left_handed enabled 
 	input "type:keyboard" xkb_options caps:swapescape
 
 
-# Applications:
+#-------------------
+#-- Applications: --
+#-------------------
 
 	# Start a terminal:
 	bindsym $mod+Return exec $term
@@ -85,7 +109,10 @@
 	bindsym $mod+Shift+q exec bash .local/bin/scripts/wofi/poweroffreboot
 
 
-# Sway session:
+#------------------
+#-- Sway session:--
+#------------------
+
 	# Reload the configuration file
 	bindsym $mod+Shift+c reload
 
@@ -93,7 +120,9 @@
 	bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
 
-# Moving around:
+#--------------------
+#-- Moving around: --
+#--------------------
 
 	#Mobe to the next or previous workspace:
 	bindsym $mod+Next workspace next
@@ -122,7 +151,9 @@
 	bindsym $mod+Shift+Right move right
 
 
-# Workspaces:
+#-----------------
+#-- Workspaces: --
+#-----------------
  
 	# Switch to workspace:
 	bindsym $mod+1 workspace number 1
@@ -148,7 +179,10 @@
 	bindsym $mod+Shift+9 move container to workspace number 9
 	bindsym $mod+Shift+0 move container to workspace number 10
 
-# Layout stuff:
+
+#-------------------
+#-- Layout stuff: --
+#-------------------
 
 	# Window tiling orientation:
 	bindsym $mod+b splith  
@@ -172,7 +206,9 @@
 	bindsym $mod+a focus parent
 
 
-# Scratchpad:
+#-----------------
+#-- Scratchpad: --
+#-----------------
 
 	# Move the currently focused window to the scratchpad
 	bindsym $mod+Shift+minus move scratchpad
@@ -181,8 +217,11 @@
 	bindsym $mod+minus scratchpad show
 
 
-# Resizing containers:
+#--------------------------
+#-- Resizing containers: --
+#--------------------------
 
+        # Enter resize mode
 	mode "resize" {
 	    bindsym $left resize shrink width 40px
 	    bindsym $down resize grow height 40px
@@ -202,7 +241,9 @@
 	bindsym $mod+r mode "resize"
 
 
-# Waybar:
+#-------------
+#-- Waybar: --
+#-------------
 
 	bar {
 		swaybar_command waybar
@@ -211,7 +252,9 @@
 	include /etc/sway/config.d/*
 
 
-# Audio:
+#------------
+#-- Audio: --
+#------------
 
 	#Audio keybindings:
 	set $refresh_i3status killall -SIGUSR1 i3status
@@ -221,7 +264,9 @@
 	bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 
-# Screen brightness:
+#------------------------
+#-- Screen brightness: --
+#------------------------
 
 	#Adjust brightness control:
 	bindsym XF86MonBrightnessUp exec brightnessctl set +5%
@@ -233,11 +278,19 @@
 	#Set screen color temperature:
 	exec --no-startup-id gammastep -l 9.83333:-83.75  
 
-# Launch mako notification daemon on startup:
+
+#-------------------------------------------------
+#-- Launch mako notification daemon on startup: --
+#-------------------------------------------------
+
+	# Run mako on startup:
 	exec mako
 
 
-# Graphical appearance:
+#---------------------------
+#-- Graphical appearance: --
+#---------------------------
+#
 	#Gaps
 	gaps inner 5
 	smart_gaps on

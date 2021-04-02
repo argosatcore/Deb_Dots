@@ -33,6 +33,7 @@
 	alias n='nnn'
 	alias r='ranger'
 	alias screencast='ffmpeg -f x11grab -r 50 -s 1366x768 -i :0.0 -acodec aac -vcodec libx264 -crf 0 screencast.mkv'
+	alias waycast='wf-recorder'
 	alias vrc='nvim ~/.vimrc'
 	alias brc='nvim ~/.bashrc'
 	alias awc='nvim ~/.config/awesome/rc.lua'
