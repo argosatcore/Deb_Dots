@@ -290,7 +290,7 @@
 #---------------------------
 #-- Graphical appearance: --
 #---------------------------
-#
+
 	#Gaps
 	gaps inner 5
 	smart_gaps on

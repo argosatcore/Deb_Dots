@@ -1,10 +1,10 @@
 font=FontAwesomw 12
-background-color=#383c4a
+background-color=#383C4A
 text-color=#FFFFFF
 border-color=#5294E2
 
 [urgency=high]
-text-color=#FFFF
+text-color=#FFFFFF
 background-color=#FF4040
-border-color=#383c4a
+border-color=#383C4A
 
