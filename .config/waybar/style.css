@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-    background-color: rgba(56 , 60, 74, 0.7);
+    background-color: rgba(56 , 60, 74, 0.0);
     border-bottom: 0px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
     transition-property: background-color;
@@ -80,16 +80,22 @@ window#waybar.chromium {
 #custom-media,
 #tray,
 #mode,
-#date,
+#custom-date,
 #idle_inhibitor {
     padding: 0 10px;
     margin: 2px 3px;
     color: #ffffff;
 }
 
-#window,
 #workspaces {
     margin: 0 4px;
+}
+
+#window {
+    margin: 3px 3px;
+    border-radius: 0px;
+    background-color: #4b5162;
+    padding: 0 10px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -107,7 +113,7 @@ window#waybar.chromium {
 }
 
 #battery {
-    background-color: #2d3436;
+    background-color: #3B4252;
     color: #ffffff;
 }
 
@@ -138,31 +144,31 @@ label:focus {
 }
 
 #cpu {
-    background-color: #7c818c ;
+    background-color: #88C0D0 ;
     color: #FFFFFF;
 }
 
 #memory {
-    background-color: #2d3436;
+    background-color: #81A1C1;
     color: #FFFFFF;
 }
 
 #backlight {
-    background-color: #7c818c ;
+    background-color: #434C5E;
     color: #FFFFFF;
 }
 
 #network {
-    background-color: #7c818c  ;
-    color: #FFFFFF;
+    background-color: #8FBCBB;
+    color: #4C566A;
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+    background-color: #4C566A;
 }
 
 #pulseaudio {
-    background-color: #7c818c ;
+    background-color: #466D91;
     color: #FFFFFF;
 }
 
@@ -186,7 +192,7 @@ label:focus {
 }
 
 #temperature {
-    background-color: #7c818c ;
+    background-color: #5E81AC ;
     color: #FFFFFF;
 }
 
@@ -207,9 +213,9 @@ label:focus {
     color: #2d3436;
 }
 
-#date {
+#custom-date {
     color: #ffffff;
-    background-color: #26A65B;
+    background-color: #2E3440;
 }
 
 
