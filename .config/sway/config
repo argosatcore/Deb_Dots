@@ -161,7 +161,7 @@
 	bindsym $mod+5 workspace number 5
 	bindsym $mod+6 workspace number 6
 	bindsym $mod+7 workspace number 7
-	bindsym $mod+ workspace number 8
+	bindsym $mod+8 workspace number 8
 	bindsym $mod+9 workspace number 9
 	bindsym $mod+0 workspace number 10
 
