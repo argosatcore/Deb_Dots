@@ -112,10 +112,10 @@
 	bindsym $mod+i exec firefox
 	
 	#Screenshooting:
-	bindsym $mod+p       exec grimshot save active
-	bindsym $mod+Shift+p exec grimshot save area
-	bindsym $mod+Mod1+p  exec grimshot save output
-	bindsym $mod+Ctrl+p  exec grimshot save window
+	bindsym $mod+Print	exec grimshot --notify save active
+	bindsym Shift+Print	exec grimshot --notify save area
+	bindsym Print		exec grimshot --notify save output
+	bindsym Ctrl+Print	exec grimshot --notify save window
 
 
 #--------------------
