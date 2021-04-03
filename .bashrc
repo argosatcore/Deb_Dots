@@ -54,6 +54,7 @@
 	alias throwapt='sudo apt remove'
 	alias capture='sudo apt install'
 	alias colorp='grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-'
+	alias configheader='toilet -f pagga'
 
 
 # ------Vim mode:
