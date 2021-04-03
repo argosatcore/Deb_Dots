@@ -54,6 +54,7 @@ sudo apt install -y \
 	wdisplays \
 	wofi \
 	wf-recorder \
+	wtype \
 	youtube-dl
 echo 'Getting rid of Firefox's extended support release package...'
 sudo apt remove firefox-esr
@@ -96,8 +97,6 @@ sudo mv .vim ~/
 mv .mouseconfig ~/
 mv .tmux.conf ~/
 sudo mv .vimrc ~/
-mv .Xdefaults ~/
-mv .xsessrionrc ~/
 mv .speedswapper ~/
 sudo mv .gtkrc-2.0 ~/
 sudo mv .bashrc ~/

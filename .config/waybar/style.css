@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-    background-color: rgba(56 , 60, 74, 0.0);
+    background-color: rgba(56 , 60, 74, 0.7);
     border-bottom: 0px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
     transition-property: background-color;
@@ -94,7 +94,7 @@ window#waybar.chromium {
 #window {
     margin: 3px 3px;
     border-radius: 0px;
-    background-color: #4b5162;
+    background-color: transparent;
     padding: 0 10px;
 }
 

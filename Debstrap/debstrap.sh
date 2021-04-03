@@ -102,7 +102,7 @@ mv .mouseconfig ~/
 mv .tmux.conf ~/
 sudo mv .vimrc ~/
 mv .Xdefaults ~/
-mv .xsessrionrc ~/
+mv .xsessionrc ~/
 mv .speedswapper ~/
 sudo mv .gtkrc-2.0 ~/
 sudo mv .bashrc ~/

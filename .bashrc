@@ -61,7 +61,7 @@
 	bind 'set show-mode-in-prompt on'
 	bind 'set vi-ins-mode-string +'
 	bind 'set vi-cmd-mode-string -'
-
+	bind -m vi-insert "\C-l":clear-screen
 
 # ------Turn off bell
 	set bell-style none
