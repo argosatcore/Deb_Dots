@@ -39,18 +39,20 @@
 	for_window [app_id="wdisplays"] floating enable
 
 
-#------------------
-#-- Sway session:--
-#------------------
+#-------------------
+#-- Sway session: --
+#-------------------
 
-	# Reload the configuration file
+	# Reload the configuration file:
 	bindsym $mod+Shift+c reload
 
-	# Exit sway (logs you out of your Wayland session)
+	# Exit sway:
 	bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
 	#Wofi as a power menu:
 	#bindsym $mod+Shift+q exec bash .local/bin/scripts/wofi/poweroffreboot
+	
+	# Use wlogout as a session menu:
 	bindsym $mod+Shift+q exec wlogout 
 
 
@@ -73,8 +75,9 @@
 #-------------------------
 #-- Idle configuration: --
 #-------------------------
-
-	 exec swayidle -w \
+	
+	#Launch swayidle after 5 minutes of inactivity:
+	exec swayidle -w \
 	          timeout 300 'swaylock -f -c 000000' \
 	          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
 	          before-sleep 'swaylock -f -c 000000'
@@ -83,9 +86,14 @@
 #--------------------------
 #-- Input configuration: --
 #--------------------------
-
+	
+	#Keyboard layout:
 	input * xkb_layout "latam"
-	input * left_handed enabled 
+
+	#Mouse layout:
+	input * left_handed enabled
+
+	#Swap caps with escape
 	input "type:keyboard" xkb_options caps:swapescape
 
 
@@ -219,7 +227,7 @@
 #-- Resizing containers: --
 #--------------------------
 
-        # Enter resize mode
+        # Resize mode keybindings:
 	mode "resize" {
 	    bindsym $left resize shrink width 40px
 	    bindsym $down resize grow height 40px
@@ -236,13 +244,16 @@
 	    bindsym Return mode "default"
 	    bindsym Escape mode "default"
 	}
+
+	# Enter resize mode:
 	bindsym $mod+r mode "resize"
 
 
-#-------------
-#-- Waybar: --
-#-------------
+#------------
+#-- Panel: --
+#------------
 
+	#Waybar
 	bar {
 		swaybar_command waybar
 	}
