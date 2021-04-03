@@ -3,16 +3,6 @@
 #░▀▀▀░▀░▀░▀░▀░░▀░
 
 
-#------------------
-#-- Sway session:--
-#------------------
-
-	# Reload the configuration file
-	bindsym $mod+Shift+c reload
-
-	# Exit sway (logs you out of your Wayland session)
-	bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
-
 
 #----------------
 #-- Variables: --
@@ -47,6 +37,21 @@
 	for_window [app_id="gnome-calculator"] floating enable
 	for_window [app_id="Nautilus"] floating enable
 	for_window [app_id="wdisplays"] floating enable
+
+
+#------------------
+#-- Sway session:--
+#------------------
+
+	# Reload the configuration file
+	bindsym $mod+Shift+c reload
+
+	# Exit sway (logs you out of your Wayland session)
+	bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+
+	#Wofi as a power menu:
+	#bindsym $mod+Shift+q exec bash .local/bin/scripts/wofi/poweroffreboot
+	bindsym $mod+Shift+q exec wlogout 
 
 
 #--------------------
@@ -111,9 +116,6 @@
 	bindsym $mod+Shift+p exec grimshot save area
 	bindsym $mod+Mod1+p  exec grimshot save output
 	bindsym $mod+Ctrl+p  exec grimshot save window
-	
-	#Wofi as a power menu:
-	bindsym $mod+Shift+q exec bash .local/bin/scripts/wofi/poweroffreboot
 
 
 #--------------------
@@ -159,7 +161,7 @@
 	bindsym $mod+5 workspace number 5
 	bindsym $mod+6 workspace number 6
 	bindsym $mod+7 workspace number 7
-	bindsym $mod+8 workspace number 8
+	bindsym $mod+ workspace number 8
 	bindsym $mod+9 workspace number 9
 	bindsym $mod+0 workspace number 10
 

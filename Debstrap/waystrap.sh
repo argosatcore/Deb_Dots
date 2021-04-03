@@ -52,6 +52,7 @@ sudo apt install -y \
 	vlc \
 	waybar \
 	wdisplays \
+	wlogout \
 	wofi \
 	wf-recorder \
 	wtype \
