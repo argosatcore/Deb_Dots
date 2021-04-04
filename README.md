@@ -17,7 +17,10 @@ At the kernel of my computing milieu, there are two irreducible components: the 
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 1.  The layout for this README.md was heavely influenced by that of [Spencer Tipping](https://github.com/spencertipping/dotfiles). Also, he (along with some [contributors](https://github.com/spencertipping/ni/graphs/contributors)) created an amazing tool for data processing pipelines in bash called [**_`ni`_**](https://github.com/spencertipping/ni). You should definetively check it out.
 
-2. These dotfiles are currently being written on [Debian Sid](https://wiki.debian.org/DebianUnstable) :skull:. 
+2. These dotfiles are currently being written on [Debian Sid](https://wiki.debian.org/DebianUnstable) :skull:. If you wish to go down the Sid route, make sure to replace your apt sources with the following lines:
+
+         deb http://deb.debian.org/debian unstable main contrib non-free
+         deb-src http://deb.debian.org/debian unstable main contrib non-free
 
 3. In the past, I have used [bspwm](https://github.com/baskerville/bspwm) and [awesomewm](https://awesomewm.org/index.html) as my default window managers. I still regard them as some of the best tiling window managers out there, but my curiosity to see what Wayland has to offer has driven me appart from them. 
 If you are interested in giving bspwm or awesome a try, you can take a look at my dotfiles. Also, a far more comprehensive and rigurous source on running bspwm on Debian is a book written by the greek philosopher, [Protesilaos Stavrou](https://protesilaos.com/), appropriately called _[Prot's Dots For Debian](https://protesilaos.com/pdfd/)_. His writings and videos on free and open source software may be of interest to those who wish to examine, both technically and philosophically, what, for better or for worse, has become an inescapable aspect of contemporary life. 
