@@ -30,8 +30,8 @@ If you are interested in giving bspwm or awesome a try, you can take a look at m
 
  ---
  ## Current state of affairs:
-
-![2021-04-03T01:20:42,878249607-06:00](https://user-images.githubusercontent.com/64110504/113471921-ec563580-941c-11eb-8f2b-582c3e4b1541.png)
+ 
+![2021-04-03T19:09:06,793634084-06:00](https://user-images.githubusercontent.com/64110504/113495753-af3b8300-94b0-11eb-962f-0d5cab43c9a2.png)
 
 ## Unexpected features you get right out of the gate
 - **Bash's vim mode:** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
