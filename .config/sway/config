@@ -24,7 +24,7 @@
 	set $term foot 
 
 	# Your preferred application launcher:
-	set $menu wofi --show=drun --lines=5 --width=33% --prompt="" --xoffset=458 --yoffset=200 
+	set $menu wofi --show=drun --insensitive --lines=5 --width=33% --prompt="" --xoffset=458 --yoffset=200 
 
         # Floating mofier:
 	floating_modifier $mod normal
@@ -61,7 +61,7 @@
 #--------------------
 
 	#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-	output * bg ~/Pictures/Wallpapers/R_Seagram.jpg fill
+	output * bg ~/Pictures/Wallpapers/richter13 fill
 
 
 #----------------------

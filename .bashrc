@@ -64,6 +64,7 @@
 	bind 'set vi-cmd-mode-string -'
 	bind -m vi-insert "\C-l":clear-screen
 
+
 # ------Turn off bell
 	set bell-style none
 
@@ -96,6 +97,7 @@
 	      *) return;;
 	esac
 
+
 # ------Don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 	HISTCONTROL=ignoreboth
@@ -108,13 +110,13 @@
 	HISTFILESIZE=2000
 
 # ------Check the window size after each command and, if necessary,
-# ------update the values of LINES and COLUMNS.
+# update the values of LINES and COLUMNS.
 	shopt -s checkwinsize
 
 
 # ------If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
-#shopt -s globstar
+	#shopt -s globstar
 
 
 # ------Make less more friendly for non-text input files, see lesspipe(1)
@@ -171,6 +173,7 @@
 	    ;;
 	esac
 
+
 # ------Enable color support of ls and also add handy aliases:
 	if [ -x /usr/bin/dircolors ]; then
 	    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -182,6 +185,7 @@
 	    alias fgrep='fgrep --color=auto'
 	    alias egrep='egrep --color=auto'
 	fi
+
 
 # ------Colored GCC warnings and errors:
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
@@ -200,6 +204,7 @@
 	if [ -f ~/.bash_aliases ]; then
     	. ~/.bash_aliases
 	fi
+
 
 # ------Enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
