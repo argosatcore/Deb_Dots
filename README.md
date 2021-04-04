@@ -26,8 +26,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 
 
  ---
- ## Current state of affairs:
- 
+
 ![2021-04-03T19:09:06,793634084-06:00](https://user-images.githubusercontent.com/64110504/113495753-af3b8300-94b0-11eb-962f-0d5cab43c9a2.png)
 
 ## Unexpected features you get right out of the gate
