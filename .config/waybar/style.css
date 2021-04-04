@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-    background-color: rgba(56 , 60, 74, 0.7);
+    background-color: rgba(46, 52, 64, 0.7);
     border-bottom: 0px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
     transition-property: background-color;
@@ -160,15 +160,15 @@ label:focus {
 
 #network {
     background-color: #8FBCBB;
-    color: #4C566A;
+    color: #FFFFFF;
 }
 
 #network.disconnected {
-    background-color: #4C566A;
+    background-color: #BF616A;
 }
 
 #pulseaudio {
-    background-color: #466D91;
+    background-color: #81A1C1;
     color: #FFFFFF;
 }
 
@@ -214,8 +214,8 @@ label:focus {
 }
 
 #custom-date {
-    color: #ffffff;
-    background-color: #2E3440;
+    color: #4C466A;
+    background-color: #D8DEE9;
 }
 
 
