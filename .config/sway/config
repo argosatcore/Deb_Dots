@@ -259,7 +259,9 @@
 	}
 	
 	include /etc/sway/config.d/*
-
+	
+	#Hide/unhide waybar:
+	bindsym $mod+x exec killall -SIGUSR1 waybar
 
 #------------
 #-- Audio: --
