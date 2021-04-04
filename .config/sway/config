@@ -309,7 +309,8 @@
 	smart_borders on
 
 	# Colors:
-	set $active #5294E2
+#	set $active #5294E2
+	set $active #88C0D0
 #	set $active 	#FF4040
 	set $unfocused	#FFFFFF
 	set $fg		#FFFFFF

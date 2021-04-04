@@ -35,7 +35,6 @@ sudo apt install -y \
 	libreoffice-common \
 	lm-sensors \
 	lollypop \
-	lxappearance \
 	mako-notifier
 	needrestart \
 	neofetch \
