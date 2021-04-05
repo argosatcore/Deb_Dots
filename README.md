@@ -24,10 +24,9 @@ At the kernel of my computing milieu, there are two irreducible components: the 
          
 3.  They will work for the most part, but adjustments are needed to make them work properly on these distributions. For example, one of them involves using an .xinit file instead of an .xsession file. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system.
 
-
  ---
 
-![2021-04-04T20:28:20,829554695-06:00](https://user-images.githubusercontent.com/64110504/113530952-a4522280-9584-11eb-9b7f-62b0b61e32e6.png)
+![2021-04-04T21:09:52,597564262-06:00](https://user-images.githubusercontent.com/64110504/113533087-47596b00-958a-11eb-802b-352b290adea2.png)
 
 ## Unexpected features you get right out of the gate
 - **Bash's vim mode:** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
