@@ -2,7 +2,7 @@
     border: none;
     border-radius: 5;
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Helvetica, Arial, sans-serif;
+    font-family: FontAwesome, Ubuntu Nerd Font, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: bold;
     min-height: 0;
@@ -83,7 +83,7 @@ window#waybar.chromium {
 #custom-date,
 #idle_inhibitor {
     padding: 0 10px;
-    margin: 2px 3px;
+    margin: 3px 3px;
     color: #ffffff;
 }
 
@@ -92,10 +92,13 @@ window#waybar.chromium {
 }
 
 #window {
-    margin: 2px 3px;
+    margin: 3px 3px;
     border-radius: 0px;
     background-color: transparent;
     padding: 0 10px;
+    font-family: FontAwesome; 
+    font-size: 13px;
+    font-weight: normal
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -119,7 +122,7 @@ window#waybar.chromium {
 
 #battery.charging {
     color: #ffffff;
-    background-color: #26A65B;
+    background-color: #A3BE8C;
 }
 
 @keyframes blink {
@@ -130,7 +133,7 @@ window#waybar.chromium {
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
+    background-color: #BF616A;
     color: #ffffff;
     animation-name: blink;
     animation-duration: 0.5s;

@@ -944,8 +944,18 @@ button:backdrop {
   border-width: 1px; }
 
 .primary-toolbar
+button, .primary-toolbar .raised
 button {
   -gtk-icon-shadow: none; }
+  .primary-toolbar
+  button:hover, .primary-toolbar
+  button:focus, .primary-toolbar .raised
+  button:hover, .primary-toolbar .raised
+  button:focus {
+    color: #2e3440;
+    outline-color: rgba(46, 52, 64, 0.3);
+    background-color: #8fbcbb;
+    text-shadow: none; }
 
 .stack-switcher > button.needs-attention > label,
 .stack-switcher > button.needs-attention > image, stacksidebar row.needs-attention > label {
@@ -2371,13 +2381,13 @@ headerbar {
     headerbar button:hover {
       color: #fff;
       text-shadow: none;
-      background-color: rgba(143, 188, 187, 0.8); }
+      background-color: rgba(143, 188, 187, 0.7); }
     .titlebar button:active, .titlebar button:checked,
     headerbar button:active,
     headerbar button:checked {
       color: #fff;
       outline-color: rgba(255, 255, 255, 0.3);
-      background-color: #8fbcbb;
+      background-color: rgba(143, 188, 187, 0.7);
       text-shadow: none; }
     .titlebar button:backdrop, .titlebar button:disabled, .titlebar button:backdrop:disabled,
     headerbar button:backdrop,
@@ -2563,7 +2573,7 @@ headerbar {
   headerbar .path-bar-box button:checked {
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #8fbcbb;
+    background-color: rgba(143, 188, 187, 0.7);
     text-shadow: none; }
     .titlebar .linked > button:active:backdrop,
     .titlebar headerbar .linked > button:active:backdrop, .titlebar .path-bar-box button:active:backdrop, headerbar .path-bar-box .titlebar button:active:backdrop, .titlebar .linked > button:checked:backdrop,
@@ -2613,7 +2623,7 @@ headerbar {
     border-radius: 0px 4px 4px 0px;
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #8fbcbb;
+    background-color: rgba(143, 188, 187, 0.7);
     text-shadow: none; }
     .titlebar .path-bar-box widget > .text-button:last-child:backdrop, .titlebar .path-bar-box widget > .text-button:last-child:backdrop label,
     headerbar .path-bar-box widget > .text-button:last-child:backdrop,
@@ -2697,7 +2707,7 @@ window.csd > .titlebar:not(headerbar) {
   box-shadow: none; }
 
 .titlebar:not(headerbar) > separator {
-  background: transparent; }
+  background: #353c4a; }
 
 /**************
  * GtkInfoBar *
@@ -4127,7 +4137,7 @@ placessidebar.sidebar {
   placessidebar.sidebar row.sidebar-row:selected {
     color: #fff;
     background-color: transparent;
-    background-image: linear-gradient(to right, #8fbcbb 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
+    background-image: linear-gradient(to right, rgba(143, 188, 187, 0.7) 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
     placessidebar.sidebar row.sidebar-row:selected label {
       color: #8fbcbb; }
     placessidebar.sidebar row.sidebar-row:selected:hover {
@@ -5277,7 +5287,7 @@ button.raven-trigger {
       .raven .raven-header button:hover {
         color: #8fbcbb;
         text-shadow: none;
-        background-color: rgba(59, 66, 82, 0.8);
+        background-color: rgba(59, 66, 82, 0.7);
         border-radius: 0; }
       .raven .raven-header button:active, .raven .raven-header button:checked {
         color: #8fbcbb;
@@ -5718,6 +5728,10 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   #gnc-id-main-window .arrow.button.toggle:hover {
     border-color: #8fbcbb; }
 
+.color-light label, .color-light.timed label {
+  color: #2e3440;
+  opacity: 1; }
+
 /********
  * Gala *
  *******/
@@ -6102,6 +6116,19 @@ SheetStyleDialog.unity-force-quit {
   animation: playbackmenuitem_spinner 1s infinite linear;
   color: #8fbcbb; }
 
+MsdOsdWindow.background.osd {
+  border-radius: 2px;
+  border: 1px solid #232831; }
+  MsdOsdWindow.background.osd .progressbar {
+    background-color: #8fbcbb;
+    border: none;
+    border-color: #8fbcbb;
+    border-radius: 5px; }
+  MsdOsdWindow.background.osd .trough {
+    background-color: rgba(29, 33, 40, 0.93);
+    border: none;
+    border-radius: 5px; }
+
 /***********************
  * App-Specific Styles *
  ***********************/
@@ -6294,7 +6321,7 @@ ConversationListView {
     .nemo-window toolbar.primary-toolbar button:hover {
       color: #2e3440;
       text-shadow: none;
-      background-color: rgba(143, 188, 187, 0.8); }
+      background-color: rgba(143, 188, 187, 0.7); }
     .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
       color: #2e3440;
       outline-color: rgba(46, 52, 64, 0.3);
@@ -6310,3 +6337,59 @@ ConversationListView {
       background-color: #2e3440;
       text-shadow: none;
       box-shadow: none; }
+
+/* thunar */
+.thunar toolbar {
+  background-color: #353c4a; }
+
+/* buttons in toolbar */
+.thunar toolbar.horizontal button image {
+  -gtk-icon-transform: scale(0.72); }
+
+scrolledwindow.sidebar treeview.view {
+  background: #2a2f3a;
+  padding: 1.5px; }
+
+/* path-bar of thunar */
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button {
+  color: #d8dee9;
+  border-radius: 4px;
+  text-shadow: none;
+  box-shadow: none;
+  border: 1px solid #232831;
+  background-color: #2e3440;
+  border-radius: 0;
+  border-right: 0.5px solid #232831;
+  box-shadow: none;
+  min-height: 20px;
+  padding: 3px 4px; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-right-style: solid; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:only-child {
+    border-radius: 4px;
+    border-style: solid; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:hover {
+    color: #8fbcbb; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:checked {
+    color: #fff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(143, 188, 187, 0.7);
+    text-shadow: none; }
+
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .toggle.path-bar-button:hover {
+  color: #fff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(143, 188, 187, 0.7);
+  text-shadow: none; }
+
+/* thunar sidepane */
+window.thunar paned > scrolledwindow treeview.view:hover, window.thunar paned > scrolledwindow treeview.view:selected {
+  background: rgba(143, 188, 187, 0.7);
+  color: #2e3440;
+  border-radius: 0;
+  box-shadow: none; }
