@@ -27,7 +27,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 
  ---
 
-![2021-04-03T19:09:06,793634084-06:00](https://user-images.githubusercontent.com/64110504/113495753-af3b8300-94b0-11eb-962f-0d5cab43c9a2.png)
+![2021-04-04T20:28:20,829554695-06:00](https://user-images.githubusercontent.com/64110504/113530952-a4522280-9584-11eb-9b7f-62b0b61e32e6.png)
 
 ## Unexpected features you get right out of the gate
 - **Bash's vim mode:** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
