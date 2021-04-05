@@ -92,7 +92,7 @@ window#waybar.chromium {
 }
 
 #window {
-    margin: 3px 3px;
+    margin: 2px 3px;
     border-radius: 0px;
     background-color: transparent;
     padding: 0 10px;
@@ -149,7 +149,7 @@ label:focus {
 }
 
 #memory {
-    background-color: #81A1C1;
+    background-color: #F46067;
     color: #FFFFFF;
 }
 
@@ -168,7 +168,7 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #81A1C1;
+    background-color: #5294E2;
     color: #FFFFFF;
 }
 
@@ -214,7 +214,7 @@ label:focus {
 }
 
 #custom-date {
-    color: #4C466A;
+    color: #4C566A;
     background-color: #D8DEE9;
 }
 
