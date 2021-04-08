@@ -114,10 +114,10 @@
 	# Launch file manager:
 	bindsym $mod+n exec nautilus -w
 	
-	# Lock screen.:
+	# Lock screen:
 	bindsym $mod+Shift+x exec swaylock -f -c 000000  
 	
-	# Launch web browser.:
+	# Launch web browser:
 	bindsym $mod+i exec firefox
 	
 	#Screenshooting:
@@ -125,6 +125,9 @@
 	bindsym Shift+Print	exec grimshot --notify save area
 	bindsym Print		exec grimshot --notify save output
 	bindsym Ctrl+Print	exec grimshot --notify save window
+
+	# Window selector:
+	bindsym $mod+Tab exec ~/.local/bin/scripts/wofi/window_selector.sh 
 
 
 #--------------------
