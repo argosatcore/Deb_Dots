@@ -16,7 +16,7 @@ sudo apt install -y \
 	arc-theme \
 	bash-completion \
 	blender \
-	brighnessctl \
+	brightnessctl \
 	default-jdk \
 	deja-dup \
 	feh \

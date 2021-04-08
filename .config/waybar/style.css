@@ -96,7 +96,7 @@ window#waybar.chromium {
     border-radius: 0px;
     background-color: transparent;
     padding: 0 10px;
-    font-family: FontAwesome; 
+    font-family: Ubuntu; 
     font-size: 13px;
     font-weight: normal
 }
@@ -217,8 +217,8 @@ label:focus {
 }
 
 #custom-date {
-    color: #4C566A;
-    background-color: #D8DEE9;
+    color: #FFFFFF;
+    background-color: transparent;
 }
 
 

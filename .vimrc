@@ -83,8 +83,9 @@
 	" Airline theme:
 "		let g:airline_theme='base16_gruvbox_dark_hard'
 "		let g:airline_theme='base16_nord'
-		let g:airline_theme='monochrome'
+"		let g:airline_theme='monochrome'
 "		let g:airline_theme='base16_chalk'
+		let g:airline_theme='bubblegum'
 
 "	Inherit terminal's current backgground:
 

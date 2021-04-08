@@ -1,5 +1,3 @@
-
-
 # ░█▀▄░█▀█░█▀▀░█░█
 # ░█▀▄░█▀█░▀▀█░█▀█
 # ░▀▀░░▀░▀░▀▀▀░▀░▀
@@ -29,7 +27,7 @@
 	alias v='nvim'
 	alias t='tmux'
 	alias n='nnn'
-	alias waycast='wf-recorder'
+	alias rec='wf-recorder'
 	alias vrc='nvim ~/.vimrc'
 	alias brc='nvim ~/.bashrc'
 	alias wrcss='nvim .config/waybar/style.css'
