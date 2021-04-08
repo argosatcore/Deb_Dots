@@ -55,7 +55,10 @@
 	bind 'set vi-ins-mode-string +'
 	bind 'set vi-cmd-mode-string -'
 	bind -m vi-insert "\C-l":clear-screen
-
+	bind -m vi-insert "\C-e":end-of-line
+	bind -m vi-insert "\C-a":beginning-of-line
+	bind -m vi-insert "\C-h":backward-kill-word
+	bind -m vi-insert "\C-k":kill-line
 
 # ------Turn off bell
 	set bell-style none
