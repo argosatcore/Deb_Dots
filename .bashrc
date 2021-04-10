@@ -60,6 +60,7 @@
 	bind -m vi-insert "\C-h":backward-kill-word
 	bind -m vi-insert "\C-k":kill-line
 
+
 # ------Turn off bell
 	set bell-style none
 
