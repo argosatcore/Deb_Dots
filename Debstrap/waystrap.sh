@@ -10,52 +10,53 @@ sudo apt upgrade -y
 echo ' '
 echo 'Installing commonly used packages...'
 sudo apt install -y \
-	acpi \
-	apt-listbugs \
-	apt-listchanges \
-	arc-theme \
-	bash-completion \
-	blender \
-	brightnessctl \
-	default-jdk \
-	deja-dup \
-	feh \
-	firefox \
-	fonts-font-awesome \
-	foot \
-	fzf \
-	gammastep \
-	gimp \
-	git \
-	grimshot \
-	gucharmap \
-	htop \
-	inkscape \
-	librecad \
-	libreoffice-common \
-	lm-sensors \
-	lollypop \
-	mako-notifier
-	needrestart \
-	neofetch \
-	neovim \
-	nnn \
-	pavucontrol \
-	reportbug-gtk \
-	sway \
-	swaylock \
-	swayidle \
-	tmux \
-	texlive-full \
-	vim-gtk \
-	vlc \
-	waybar \
-	wdisplays \
-	wlogout \
-	wofi \
-	wf-recorder \
-	wtype \
-	youtube-dl
+acpi \
+apt-listbugs \
+apt-listchanges \
+arc-theme \
+bash-completion \
+blender \
+brightnessctl \
+default-jdk \
+deja-dup \
+feh \
+firefox \
+fonts-font-awesome \
+foot \
+fzf \
+gammastep \
+gimp \
+git \
+grimshot \
+gucharmap \
+htop \
+inkscape \
+librecad \
+libreoffice-common \
+lm-sensors \
+lollypop \
+mako-notifier
+needrestart \
+neofetch \
+neovim \
+nnn \
+pavucontrol \
+reportbug-gtk \
+scribus \
+sway \
+swaylock \
+swayidle \
+tmux \
+texlive-full \
+vim-gtk \
+vlc \
+waybar \
+wdisplays \
+wlogout \
+wofi \
+wf-recorder \
+wtype \
+youtube-dl
 echo 'Getting rid of Firefox's extended support release package...'
 sudo apt remove firefox-esr
 echo ' '

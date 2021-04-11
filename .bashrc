@@ -83,10 +83,6 @@
 	export NNN_TRASH=1
 
 
-# ------Kitty's bash completion:
-	source <(kitty + complete setup bash)
-
-
 # ------If not running interactively, don't do anything
 	case $- in
 	    *i*) ;;

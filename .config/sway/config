@@ -34,6 +34,7 @@
 
 	#Floating windows list:
 	for_window [class="feh"] floating enable
+	for_window [app_id="eog"] floating enable
 	for_window [app_id="gnome-calculator"] floating enable
 	for_window [app_id="Nautilus"] floating enable
 	for_window [app_id="wdisplays"] floating enable

@@ -1,0 +1,34 @@
+[Added Associations]
+text/x-apt-sources-list=org.gnome.gedit.desktop;
+application/x-trash=org.gnome.gedit.desktop;
+video/x-matroska=mpv.desktop;vlc.desktop;org.gnome.Totem.desktop;
+image/jpeg=feh.desktop;
+image/jpg=feh.desktop;
+image/png=eog.desktop;feh.desktop;
+text/plain=org.gnome.gedit.desktop;nvim.desktop;
+text/markdown=nvim.desktop;org.gnome.gedit.desktop;
+application/pdf=org.gnome.Evince.desktop;org.inkscape.Inkscape.desktop;libreoffice-draw.desktop;
+application/vnd.openofficeorg.extension=libreoffice-startcenter.desktop;
+application/octet-stream=nvim.desktop;
+application/x-tint2-theme=nvim.desktop;
+video/mp4=mpv.desktop;vlc.desktop;
+application/x-shellscript=org.gnome.gedit.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
+application/xml=nvim.desktop;
+application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;
+text/x-chdr=nvim.desktop;
+application/vnd.ms-publisher=org.gnome.gedit.desktop;
+inode/blockdevice=org.gnome.gedit.desktop;
+text/html=nvim.desktop;
+
+[Default Applications]
+image/png=feh.desktop
+image/jpeg=feh.desktop
+image/jpg=feh.desktop
+video/mp4=mpv.desktop
+application/vnd.oasis.opendocument.text=libreoffice-writer.desktop
+image/svg+xml=org.inkscape.Inkscape.desktop
+text/plain=org.gnome.gedit.desktop;nvim.desktop
+text/markdown=nvim.desktop;org.gnome.gedit.desktop
+x-scheme-handler/msteams=teams.desktop
