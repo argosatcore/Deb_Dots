@@ -57,7 +57,7 @@ All of which are `apt install`able in Debian Sid:
 - `tmux`: persistent SSH shell sessions.
 - `vim-gtk`: (neo)vim's clipboard integration.
 - `waybar`: sway's panel.
-- `waylogout`: Wayland session menu.
+- `wlogout`: Wayland session menu.
 - `wofi`: application launcher, window switcher, commad executor and many more.
 
 ## (Some) keybindings
@@ -90,4 +90,4 @@ All of which are `apt install`able in Debian Sid:
 - `Super+i`: run firefox.
 - `Super+n`: run nautilus.
 - `Super+d`: run wofi as an application launcher.
-- `Super+Shift+q`: run rofi as a power menu. 
+- `Super+Shift+q`: run wlogout. 
