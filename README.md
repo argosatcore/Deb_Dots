@@ -26,7 +26,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
          
        sudo apt update && sudo apt full-upgrade 
          
-3.  They will work for the most part, but adjustments are needed to make them work properly on these distributions. For example, one of them involves using an .xinit file instead of an .xsession file. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system.
+3.  They will work for the most part, but some adjustments are needed to make them work properly on these distributions. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system.
 
  ---
 
@@ -34,8 +34,8 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 
 ## Unexpected features you get right out of the gate
 - **Bash's vim mode:** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
-- **Caps Lock key is swapped with Esc key:** Caps Lock has way too much of a good position in they keyboard for the function it provides. If you are a vim user (or someone that just uses the crap out of the Esc key), you know how handy this is. If you don't want this, just delete the `.speedswapper` file and/or comment out the corresponding line in the `.xsessionrc file`.
-- **Mouse set for left handed people:** Because I'm a lefty. That's it. If you happen to be part of the other 90% of the human population, just delete the  `.mouseconfig` file and/or comment out the corresponding line in the `.xsessionrc file`.  
+- **Caps Lock key is swapped with Esc key:** Caps Lock has way too much of a good position in they keyboard for the function it provides. If you are a vim user (or someone that just uses the crap out of the Esc key), you know how handy this is. If you don't want this, just change it in the input configuration in Sway's config file.
+- **Mouse set for left handed people:** Because I'm a lefty. That's it. If you happen to be part of the other 90% of the human population, just change the input configuration in Sway's config file.  
 - **Change directories without using the `cd` command:** Just type the name of the directory to move into it. 
 - **Bash completion is no longer case sensitive:** No more wasted time pressing keys to get upper case letters.
 - **Combined less and neovim as a pager for man pages:** Because man pages deserve better.
