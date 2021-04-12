@@ -19,13 +19,12 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 
 2. These dotfiles are currently being written on [Debian Sid](https://wiki.debian.org/DebianUnstable) :skull:. If you wish to go down the Sid route, make sure to replace your apt sources with the following lines:
 
-         deb http://deb.debian.org/debian unstable main contrib non-free
-
-         deb-src http://deb.debian.org/debian unstable main contrib non-free
+       deb http://deb.debian.org/debian unstable main contrib non-free
+       deb-src http://deb.debian.org/debian unstable main contrib non-free
          
- Then update your sources and upgrade to Sid:
+      Then update your sources and upgrade to Sid:
          
-         sudo apt update && sudo apt full-upgrade 
+       sudo apt update && sudo apt full-upgrade 
          
 3.  They will work for the most part, but adjustments are needed to make them work properly on these distributions. For example, one of them involves using an .xinit file instead of an .xsession file. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system.
 
