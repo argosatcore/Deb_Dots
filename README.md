@@ -30,7 +30,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 
  ---
 
-![2021-04-04T21:09:52,597564262-06:00](https://user-images.githubusercontent.com/64110504/113533087-47596b00-958a-11eb-802b-352b290adea2.png)
+![2021-04-13T01:55:46,111605251-06:00](https://user-images.githubusercontent.com/64110504/114613858-169bc480-9c61-11eb-8cfc-89d70b804060.png)
 
 ## Unexpected features you get right out of the gate
 - **Bash's vim mode:** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
