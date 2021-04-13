@@ -10,7 +10,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
  
    These dot files were started with a minimal Debian 10 Buster installation, so they should work with any Debian installation or Debian-based distribution. 
      
-   It is worth mentioning that although I use these dots on Debian, I've made an effort to keep them as distribution agnostic as possible. I have managed to deploy them succesfully in other distributions, especifically on [Arch Linux](https://archlinux.org/) (_btw_) and [Void Linux](https://voidlinux.org/).<sup>3</sup>
+   It is worth mentioning that although I use these dots on Debian, I've made an effort to keep them as distribution agnostic as possible. I have managed to deploy them succesfully on [Arch Linux](https://archlinux.org/) (_btw_) and [Void Linux](https://voidlinux.org/).<sup>3</sup>
 
    If you find any of this useful, feel free to grab any part or all of it.
    
