@@ -39,7 +39,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 - **Change directories without using the `cd` command:** Just type the name of the directory to move into it. 
 - **Bash completion is no longer case sensitive:** No more wasted time pressing keys to get upper case letters.
 - **Combined less and neovim as a pager for man pages:** Because man pages deserve better.
-- **Keyboard layout set to Latin American:** Unless you need to type Spanish accents, you might want to take a look at the Sway's config file and chage the keyboard layout to your preferred one. Probably changing  `latam` for something like `us_intl` will do the job.
+- **Keyboard layout set to Latin American:** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. 
 - **Gapless single client:** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
 
 ## Stuff referenced by these configs
