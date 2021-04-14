@@ -89,7 +89,8 @@
         "format-disconnected": "Disconnected ⚠",
         "format-wifi": "{ifname}: {ipaddr}/{cidr}",
 	"on-scroll-up":"bash .local/bin/scripts/wofi/netcon",
-	"on-scroll-down":" bash .local/bin/scripts/wofi/netdiscon"
+	"on-scroll-down":" bash .local/bin/scripts/wofi/netdiscon",
+        "on-click-right": "foot nmtui"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float

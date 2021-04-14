@@ -1,3 +1,6 @@
 [Added Associations]
 image/png=org.gnome.eog.desktop;feh.desktop;
 image/jpeg=org.gnome.eog.desktop;
+text/plain=org.gnome.gedit.desktop;
+application/pdf=org.gnome.Evince.desktop;
+video/mp4=mpv.desktop;vlc.desktop;

@@ -1,7 +1,6 @@
-#░█▀▀░█░█░█▀█░█░█
-#░▀▀█░█▄█░█▀█░░█░
-#░▀▀▀░▀░▀░▀░▀░░▀░
-
+# ░█▀▀░█░█░█▀█░█░█
+# ░▀▀█░█▄█░█▀█░░█░
+# ░▀▀▀░▀░▀░▀░▀░░▀░
 
 
 #----------------
@@ -63,7 +62,7 @@
 #--------------------
 
 	#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-	output * bg ~/Pictures/Wallpapers/richter13 fill
+	output * bg ~/Pictures/Wallpapers/mb4.jpg fill 
 
 
 #----------------------
@@ -316,8 +315,9 @@
 	smart_borders on
 
 	# Colors:
-#	set $active #5294E2
-	set $active #88C0D0
+	set $active #5294E2
+#	set $active #88C0D0
+#	set $active #4A85CB
 #	set $active 	#FF4040
 	set $unfocused	#FFFFFF
 	set $fg		#FFFFFF

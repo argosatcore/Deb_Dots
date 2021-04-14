@@ -1,4 +1,17 @@
 # GIMP action-history
 
+(history-item "layers-new" 3)
+(history-item "file-export-as" 0)
+(history-item "layers-duplicate" 0)
+(history-item "edit-paste" 1)
+(history-item "image-resize" 0)
+(history-item "layers-alpha-add" 0)
+(history-item "edit-clear" 0)
+(history-item "edit-copy" 1)
+(history-item "file-quit" 1)
+(history-item "layers-resize" 0)
+(history-item "file-save-as" 0)
+(history-item "image-new" 0)
+(history-item "tools-move" 1)
 
 # end of action-history

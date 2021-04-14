@@ -1,6 +1,6 @@
 * {
     border: none;
-    border-radius: 5;
+    border-radius: 0;
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Ubuntu Nerd Font, Helvetica, sans-serif;
     font-size: 13px;
@@ -44,19 +44,19 @@ window#waybar.chromium {
     background-color: transparent;
     color: #ffffff;
     /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
+    box-shadow: inset 0 -2px transparent;
     border-radius: 0px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -2px #ffffff;
 }
 
 #workspaces button.focused {
     background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    box-shadow: inset 0 -2px #ffffff;
 }
 
 #workspaces button.urgent {
@@ -83,16 +83,16 @@ window#waybar.chromium {
 #custom-date,
 #idle_inhibitor {
     padding: 0 10px;
-    margin: 3px 3px;
+    margin: 0px 5px;
     color: #ffffff;
 }
 
 #workspaces {
-    margin: 0 4px;
+    margin: 0 3px;
 }
 
 #window {
-    margin: 3px 3px;
+    margin: 0px 3px;
     border-radius: 0px;
     background-color: transparent;
     padding: 0 10px;
@@ -116,13 +116,16 @@ window#waybar.chromium {
 }
 
 #battery {
-    background-color: #3B4252;
+   /* background-color: #3B4252;*/
     color: #ffffff;
+    box-shadow: inset 0 -2px #ffffff;
 }
 
 #battery.charging {
     color: #ffffff;
-    background-color: #A3BE8C;
+    /*background-color: #A3BE8C;*/
+    box-shadow: inset 0 -2px #A3BE8C;
+
 }
 
 @keyframes blink {
@@ -140,6 +143,7 @@ window#waybar.chromium {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    box-shadow: inset 0 -2px #A3BE8C;
 }
 
 label:focus {
@@ -147,23 +151,29 @@ label:focus {
 }
 
 #cpu {
-    background-color: #88C0D0 ;
+    /*background-color: #88C0D0 ;*/
     color: #FFFFFF;
+    box-shadow: inset 0 -2px #88C0D0;
+
 }
 
 #memory {
-    background-color: #F46067;
+    /*background-color: #F46067;*/
     color: #FFFFFF;
+    box-shadow: inset 0 -2px #F46067;
+
 }
 
 #backlight {
-    background-color: #434C5E;
+    /*background-color: #434C5E;*/
     color: #FFFFFF;
+    box-shadow: inset 0 -2px #919191;
 }
 
 #network {
-    background-color: #8FBCBB;
+    /*background-color: #8FBCBB;*/
     color: #FFFFFF;
+    box-shadow: inset 0 -2px #8FBCBB;
 }
 
 #network.disconnected {
@@ -171,8 +181,10 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #5294E2;
+    /*background-color: #5294E2;*/
     color: #FFFFFF;
+    box-shadow: inset 0 -2px #5294E2;
+
 }
 
 #pulseaudio.muted {
@@ -180,27 +192,15 @@ label:focus {
     color: #2a5c45;
 }
 
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
 #temperature {
-    background-color: #5E81AC ;
+    /*background-color: #5E81AC ;*/
     color: #FFFFFF;
+    box-shadow: inset 0 -2px #5E81AC;
 }
 
 #temperature.critical {
     background-color: #eb4d4b;
+    box-shadow: inset 0 -2px #5E81AC;
 }
 
 #tray {
@@ -208,12 +208,14 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    /*background-color: #2D3436;*/
+    box-shadow: inset 0 -2px #ecF0F1;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
+    background-color: #ecF0F1;
     color: #2d3436;
+    box-shadow: inset 0 -2px #ecF0F1;
 }
 
 #custom-date {
