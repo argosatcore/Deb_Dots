@@ -135,8 +135,8 @@
 #--------------------
 
 	#Mobe to the next or previous workspace:
-	bindsym $mod+Next workspace next
-	bindsym $mod+Prior workspace prev
+	bindsym $mod+Next workspace next_on_output --create
+	bindsym $mod+Prior workspace prev_on_output --create
 
 	# Move your focus around:
 	bindsym $mod+$left focus left
@@ -307,7 +307,7 @@
 #---------------------------
 
 	#Gaps
-	gaps inner 5
+	gaps inner 7
 	smart_gaps on
 
 	#Borders:
