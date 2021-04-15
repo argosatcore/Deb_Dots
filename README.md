@@ -89,4 +89,5 @@ All of which are `apt install`able in Debian Sid:
 - `Super+i`: run firefox.
 - `Super+n`: run nautilus.
 - `Super+d`: run wofi as an application launcher.
+- `Super+Tab`: run wofi as a window switcher.
 - `Super+Shift+q`: run wlogout. 
