@@ -86,7 +86,6 @@ All of which are `apt install`able in Debian Sid:
 
 ### Running things:
 - `Super+Return`: run a terminal.
-- `Super+Shift+Space`: run a terminal in a tmux session.
 - `Super+i`: run firefox.
 - `Super+n`: run nautilus.
 - `Super+d`: run wofi as an application launcher.
