@@ -69,6 +69,7 @@ All of which are `apt install`able in Debian Sid:
 - `Super+Shit+minus`: hide/unhide scratchpad.
 - `Super+PagUp`: switch to next workspace.
 - `Super+PageDown`: switch to previous workspace.
+- `Super+x`: toggle Waybar on/off.
 
 ### Windows:
 - `Super+q`: close.
