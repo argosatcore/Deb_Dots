@@ -30,7 +30,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 
  ---
  
-![2021-04-17T14:55:51,421112123-06:00](https://user-images.githubusercontent.com/64110504/115126548-19fabd00-9f8d-11eb-937e-04c16acf9929.png)
+![2021-04-18T14:06:05,541497560-06:00](https://user-images.githubusercontent.com/64110504/115159236-68709000-a04f-11eb-884c-169f3a0ff781.png)
 
 ## Unexpected features you get right out of the gate
 - **Bash's vim mode:** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
@@ -70,6 +70,7 @@ All of which are `apt install`able in Debian Sid:
 - `Super+PagUp`: switch to next workspace.
 - `Super+PageDown`: switch to previous workspace.
 - `Super+x`: toggle Waybar on/off.
+- `Super+Shift+b`: toggle window border on/off.
 
 ### Windows:
 - `Super+q`: close.
