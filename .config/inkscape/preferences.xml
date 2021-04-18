@@ -555,7 +555,14 @@
        state="1" />
     <group
        id="preferences"
-       state="1" />
+       state="1"
+       page="24"
+       x="205"
+       y="0"
+       w="956"
+       h="768"
+       visible="0"
+       placement="1" />
     <group
        id="gradienteditor" />
     <group
@@ -1023,11 +1030,22 @@
      language="" />
   <group
      id="theme"
-     defaultTheme="Nordic"
+     defaultTheme="Arc-Dark"
      defaultIconTheme="Newaita-dark"
      gtkTheme="Nordic"
      iconTheme="Newaita-dark"
      menuIcons_canvas="0"
      menuIcons_layers="0"
-     menuIcons_objects="0" />
+     menuIcons_objects="0"
+     preferDarkTheme="1"
+     darkTheme="1"
+     symbolicIcons="1"
+     symbolicDefaultColors="1">
+    <group
+       id="Newaita-dark"
+       symbolicBaseColor="3638487551"
+       symbolicSuccessColor="1672332031"
+       symbolicWarningColor="3278326527"
+       symbolicErrorColor="3092208127" />
+  </group>
 </inkscape>

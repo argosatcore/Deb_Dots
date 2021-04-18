@@ -61,8 +61,8 @@
 #-- Set wallpaper: --
 #--------------------
 
-	#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-	output * bg ~/Pictures/Wallpapers/mb4.jpg fill 
+	#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fit
+	output * bg ~/Pictures/Wallpapers/whitemountain.jpg fill 
 
 
 #----------------------
@@ -71,6 +71,9 @@
 
 	#   output HDMI-A-1 resolution 1920x1080 position 1920,0
 	# You can get the names of your outputs by running: swaymsg -t get_outputs
+
+	# Mouse pointer moves to the newly-focused output.
+	mouse_warping output
 
 
 #-------------------------
@@ -97,6 +100,8 @@
 	#Swap caps with escape
 	input "type:keyboard" xkb_options caps:swapescape
 
+	# Hide mouse cursor after a period of inactivity.
+	seat seat0 hide_cursor 3000
 
 #-------------------
 #-- Applications: --
@@ -313,6 +318,10 @@
 	#Borders:
 	default_border pixel 2 
 	smart_borders on
+	default_floating_border normal 2
+	
+	# Toggle border style.
+	bindsym $mod+Shift+b exec swaymsg border toggle
 
 	# Colors:
 	set $active #5294E2
