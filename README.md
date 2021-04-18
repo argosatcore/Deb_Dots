@@ -30,7 +30,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 
  ---
  
-![2021-04-13T21:15:23,715692058-06:00](https://user-images.githubusercontent.com/64110504/114649289-7a43e300-9c9d-11eb-8d81-11c3588db33d.png)
+![2021-04-17T14:55:51,421112123-06:00](https://user-images.githubusercontent.com/64110504/115126548-19fabd00-9f8d-11eb-937e-04c16acf9929.png)
 
 ## Unexpected features you get right out of the gate
 - **Bash's vim mode:** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
@@ -69,6 +69,7 @@ All of which are `apt install`able in Debian Sid:
 - `Super+Shit+minus`: hide/unhide scratchpad.
 - `Super+PagUp`: switch to next workspace.
 - `Super+PageDown`: switch to previous workspace.
+- `Super+x`: toggle Waybar on/off.
 
 ### Windows:
 - `Super+q`: close.
@@ -86,8 +87,8 @@ All of which are `apt install`able in Debian Sid:
 
 ### Running things:
 - `Super+Return`: run a terminal.
-- `Super+Shift+Space`: run a terminal in a tmux session.
 - `Super+i`: run firefox.
 - `Super+n`: run nautilus.
 - `Super+d`: run wofi as an application launcher.
+- `Super+Tab`: run wofi as a window switcher.
 - `Super+Shift+q`: run wlogout. 
