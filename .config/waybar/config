@@ -26,6 +26,11 @@
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
+    "sway/window": {
+       "format": "{}",
+       "max-length": 50,
+       "on-click-middle": "sway kill"
+    },
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
@@ -115,8 +120,7 @@
                 "format": "{}",
                 "interval": 60,
                 "exec": "date +'%Y-%m-%d %l:%M %p'",
-                "on-click": "gsimplecal",
-           },
-
+                "on-click": "gsimplecal"
+    },
 
 }

@@ -161,7 +161,9 @@
          style="fill:red;"
          end="0"
          start="0"
-         usecurrent="1" />
+         usecurrent="1"
+         rx="648.653"
+         ry="648.653" />
       <eventcontext
          id="star"
          magnitude="5"
@@ -335,8 +337,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="0"
-       y="0"
+       x="69.4278"
+       y="71.2471"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -389,7 +391,8 @@
     <eventcontext
        id="connector"
        style="fill:none;fill-rule:evenodd;stroke:black;stroke-opacity:1;stroke-linejoin:miter;stroke-width:1px;stroke-linecap:butt;"
-       selcue="1" />
+       selcue="1"
+       curvature="0" />
     <eventcontext
        id="paintbucket"
        style="fill:#a0a0a0;stroke:none;"
@@ -514,7 +517,7 @@
   </group>
   <group
      id="colorselector"
-     page="0" />
+     page="3" />
   <group
      id="embedded">
     <group
@@ -531,7 +534,15 @@
     <group
        id="toolbox" />
     <group
-       id="fillstroke" />
+       id="fillstroke"
+       page="0"
+       x="0"
+       y="0"
+       w="334"
+       h="434"
+       visible="0"
+       state="2"
+       placement="2" />
     <group
        id="filtereffects" />
     <group
@@ -571,11 +582,20 @@
        id="export"
        default=""
        append_extension="1"
-       path="">
+       path=""
+       x="0"
+       y="0"
+       w="438"
+       h="438"
+       visible="1"
+       state="2"
+       placement="1">
       <group
-         id="exportarea" />
+         id="exportarea"
+         value="drawing" />
       <group
-         id="defaultxdpi" />
+         id="defaultxdpi"
+         value="200" />
     </group>
     <group
        id="save_as"
@@ -601,7 +621,8 @@
        ask="1"
        ask_svg="1"
        link="link"
-       scale="optimizeSpeed" />
+       scale="auto"
+       import_mode_svg="include" />
     <group
        id="debug"
        redirect="0" />
@@ -923,7 +944,7 @@
      id="extensions" />
   <group
      id="desktop"
-     style="">
+     style="fill:#1a1a1a">
     <group
        width="640"
        height="480"
@@ -1032,7 +1053,7 @@
      id="theme"
      defaultTheme="Arc-Dark"
      defaultIconTheme="Newaita-dark"
-     gtkTheme="Nordic"
+     gtkTheme="Arc-Dark"
      iconTheme="Newaita-dark"
      menuIcons_canvas="0"
      menuIcons_layers="0"
