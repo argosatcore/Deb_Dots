@@ -1,9 +1,11 @@
-# Deb_Dots<sup>1</sup> [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
+# Deb_Dots<sup>1</sup> 
 ⢀⣴⠾⠻⢶⣦⠀  
 ⣾⠁⢠⠒⠀⣿⡁  
 ⢿⡄⠘⠷⠚⠋⠀  
 ⠈⠳⣄⠀⠀⠀
-   
+
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
+
 ---     
 
 At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/),<sup>2</sup>  as a solid foundation to build on, and the [Sway](https://swaywm.org/) window manager, as the best Wayland framework, at the moment, to manage what probably remains as both, the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
