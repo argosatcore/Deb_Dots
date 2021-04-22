@@ -1,4 +1,4 @@
-# Deb_Dots<sup>1</sup> 
+# Deb_Dots<sup>1</sup> [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
 ⢀⣴⠾⠻⢶⣦⠀  
 ⣾⠁⢠⠒⠀⣿⡁  
 ⢿⡄⠘⠷⠚⠋⠀  
