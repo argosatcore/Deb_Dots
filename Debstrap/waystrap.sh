@@ -40,6 +40,7 @@ neofetch \
 neovim \
 nnn \
 pavucontrol \
+printer-driver-escpr \
 reportbug-gtk \
 scribus \
 sway \
