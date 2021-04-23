@@ -1,6 +1,7 @@
 #!/bin/sh
+#Bootstrapping script for "Sidified" Debian systems, Wayland edition.
+#REMEMBER: This script must be run from the home directory, otherwise setting up the dotfiles will fail.
 
-#Bootstrapping script for "Sidified" Debian systems, Wayland edition:
 echo 'Initializing bootstrap'
 echo ' '
 echo 'Updating system...'
@@ -10,7 +11,6 @@ sudo apt upgrade -y
 echo ' '
 echo 'Installing commonly used packages...'
 sudo apt install -y \
-acpi \
 apt-listbugs \
 apt-listchanges \
 arc-theme \
@@ -19,7 +19,6 @@ blender \
 brightnessctl \
 default-jdk \
 deja-dup \
-feh \
 firefox \
 fonts-font-awesome \
 foot \
@@ -35,7 +34,7 @@ librecad \
 libreoffice-common \
 lm-sensors \
 lollypop \
-mako-notifier
+mako-notifier \
 needrestart \
 neofetch \
 neovim \
@@ -58,7 +57,8 @@ wofi \
 wf-recorder \
 wtype \
 youtube-dl
-echo 'Getting rid of Firefox's extended support release package...'
+echo ' '
+echo 'Removing firefox-esr'
 sudo apt remove firefox-esr
 echo ' '
 echo 'Setting up flatpaks...'
@@ -80,7 +80,6 @@ cd Deb_Dots
 cd Pictures
 mv Wallpapers/ Pictures/
 cd ..
-rm -rf Pictures/
 cd .local
 mv bin/ ~/.local/
 cd share/
@@ -88,19 +87,18 @@ mv fonts/ ~/.local/share/
 mv icons/ ~/.local/share/
 cd ..
 cd ..
-rm -rf .local/
 cd .config/
-sudo mv * ~/.config/
+mv sway/ ~/.config/
+mv mako/ ~/.config/
+mv waybar/ ~/.config/
+mv wlogout/ ~/.config/
+mv foot/ ~/.config/
 cd ..
-rm -rf .config/
 mv README.md ~/
 mv .git ~/
 sudo mv .vim ~/
-mv .mouseconfig ~/
 mv .tmux.conf ~/
 sudo mv .vimrc ~/
-mv .speedswapper ~/
-sudo mv .gtkrc-2.0 ~/
 sudo mv .bashrc ~/
 cd 
 rm -rf Deb_Dots/

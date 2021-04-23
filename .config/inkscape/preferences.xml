@@ -126,7 +126,9 @@
       <eventcontext
          id="rect"
          style="fill:blue;"
-         usecurrent="1" />
+         usecurrent="1"
+         width="48"
+         height="48" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -311,7 +313,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="px"
+       unit="mm"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -383,7 +385,8 @@
        selcue="1"
        gradientdrag="1"
        pick="1"
-       setalpha="1" />
+       setalpha="1"
+       onetimepick="1" />
     <eventcontext
        id="select"
        selcue="1"
@@ -517,7 +520,7 @@
   </group>
   <group
      id="colorselector"
-     page="3" />
+     page="4" />
   <group
      id="embedded">
     <group
@@ -538,9 +541,9 @@
        page="0"
        x="0"
        y="0"
-       w="334"
-       h="434"
-       visible="0"
+       w="436"
+       h="426"
+       visible="1"
        state="2"
        placement="2" />
     <group
@@ -602,7 +605,7 @@
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path=""
+       path="/home/argos/Pictures/Imagery/13_Arc_DEB"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -944,7 +947,7 @@
      id="extensions" />
   <group
      id="desktop"
-     style="fill:#1a1a1a">
+     style="fill:#5294e2">
     <group
        width="640"
        height="480"
