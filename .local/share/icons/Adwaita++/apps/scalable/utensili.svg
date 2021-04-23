@@ -1,0 +1,31 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="linearGradient1747" gradientUnits="userSpaceOnUse" x1="-98" x2="6" y1="236" y2="236">
+    <stop offset="0" stop-color="#babdb6"/>
+    <stop offset=".042" stop-color="#f6f5f4"/>
+    <stop offset=".083" stop-color="#d5d3cf"/>
+    <stop offset=".917" stop-color="#deddda"/>
+    <stop offset=".958" stop-color="#f6f5f4"/>
+    <stop offset="1" stop-color="#babdb6"/>
+  </linearGradient>
+  <clipPath id="clipPath1784">
+    <rect height="28" rx="14" width="60" x="36" y="202"/>
+  </clipPath>
+  <g transform="translate(110 -172)">
+    <rect fill="url(#linearGradient1747)" height="84" rx="8" width="104" x="-98" y="204"/>
+    <rect fill="#f6f5f4" height="100" rx="8" width="104" x="-98" y="184"/>
+  </g>
+  <path d="m48 28c-7.756 0-14 6.244-14 14 0 .337684.0275.668439.05078 1 .511457-7.283809 6.530904-13 13.94922-13h32c7.418316 0 13.437763 5.716191 13.949219 13 .023281-.331561.050781-.662316.050781-1 0-7.756-6.244-14-14-14z" fill="#1a5fb4" transform="translate(0 -2)"/>
+  <rect fill="#3584e4" height="28" rx="14" transform="matrix(-1 0 0 1 0 -174)" width="60" x="-94" y="202"/>
+  <g fill="#deddda" transform="matrix(-1 0 0 1 130 -178)">
+    <circle clip-path="url(#clipPath1784)" cx="50" cy="218" r="14" transform="translate(0 4)"/>
+    <path d="m36 216h28v6h-28z"/>
+  </g>
+  <circle cx="-80" cy="212" fill="#fff" r="14" transform="matrix(-1 0 0 1 0 -174)"/>
+  <path d="m48 28c-7.756 0-14 6.244-14 14 0 .337684.0275.668439.05078 1 .511457-7.283809 6.530904-13 13.94922-13h32c7.418316 0 13.437763 5.716191 13.949219 13 .023281-.331561.050781-.662316.050781-1 0-7.756-6.244-14-14-14z" fill="#9a9996" transform="matrix(-1 0 0 1 128 38)"/>
+  <rect fill="#c0bfbc" height="28" rx="14" width="60" x="34" y="68"/>
+  <g fill="#deddda" transform="translate(-2 -138)">
+    <circle clip-path="url(#clipPath1784)" cx="50" cy="218" r="14" transform="translate(0 4)"/>
+    <path d="m36 216h28v6h-28z"/>
+  </g>
+  <circle cx="48" cy="78" fill="#fff" r="14"/>
+</svg>

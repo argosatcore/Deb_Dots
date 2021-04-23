@@ -1,0 +1,18 @@
+<svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="lg1">
+      <stop id="stop3948" offset="0" stop-opacity=".746988"/>
+      <stop id="stop3950" offset="1" stop-opacity=".024096"/>
+    </linearGradient>
+    <linearGradient id="linearGradient3946" xlink:href="#lg1"/>
+    <linearGradient id="linearGradient3830-9" xlink:href="#lg1"/>
+    <linearGradient id="linearGradient3984">
+      <stop id="stop3986" offset="0" stop-color="#f4deba"/>
+      <stop id="stop3988" offset="1" stop-color="#de9625" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="layer1" fill="#444" transform="translate(-31.97559 -220.36218)">
+    <path d="m38.10059 222.08537c-2.925744.83894-5.09375 3.53039-5.09375 6.71875 0 3.85415 3.145851 7 7 7s7.320852-3.15923 7-7c-.228507-2.73535-1.020491-4.04077-2.719578-5.17675l-1.186672 1.2705c1.155145.91371 1.90625 2.3099 1.90625 3.90625 0 2.77327-2.226732 5-5 5s-5-2.22673-5-5c0-2.09035 1.283082-3.84394 3.09375-4.59375z"/>
+    <path d="m33.92416 221.35994a1.0010995 1.0010995 0 1 0 .09078 2.00014l2.999996.004-.0045 3a1.0001 1.0001 0 1 0 1.999997.003l.0059-3.99999.0015-1.00001-.999999-.001-3.999995-.006a1.0001 1.0001 0 0 0 -.09375-.00015z"/>
+  </g>
+</svg>

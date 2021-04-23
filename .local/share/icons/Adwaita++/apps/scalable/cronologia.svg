@@ -1,0 +1,71 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="linearGradient1572" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="268" y2="-180">
+    <stop offset="0" stop-color="#eeeeec"/>
+    <stop offset="1" stop-color="#fff"/>
+  </linearGradient>
+  <linearGradient id="linearGradient917" gradientUnits="userSpaceOnUse" x1="103.436" x2="102.252" y1="264.437" y2="263.286">
+    <stop offset="0" stop-color="#d5d3cf"/>
+    <stop offset="1" stop-color="#fff"/>
+  </linearGradient>
+  <g transform="translate(0 -172)">
+    <g enable-background="new" fill="url(#linearGradient1572)" transform="matrix(.3 0 0 -.21279762 -12.799997 247.3631)">
+      <rect fill="#1a5fb4" height="451.133" rx="26.667" ry="44.432" transform="scale(-1 1)" width="346.667" x="-429.33" y="-190.97"/>
+      <rect fill="#d5d3cf" height="451.133" rx="26.667" ry="44.432" transform="scale(-1 1)" width="346.667" x="-429.33" y="-181.57"/>
+      <rect fill="#f6f5f4" height="451.133" rx="26.667" ry="37.594" transform="scale(-1 1)" width="346.667" x="-429.33" y="-153.37"/>
+    </g>
+    <g enable-background="new" fill="#d5d3cf">
+      <circle cx="108.000003" cy="252.000003" r="2"/>
+      <circle cx="108.000003" cy="242.000003" r="2"/>
+      <circle cx="108.000003" cy="232.000003" r="2"/>
+      <circle cx="108.000003" cy="222.000003" r="2"/>
+      <circle cx="108.000003" cy="212.000003" r="2"/>
+      <circle cx="108.000003" cy="202.000003" r="2"/>
+      <circle cx="108.000003" cy="192.000003" r="2"/>
+    </g>
+    <g enable-background="new" fill="#d5d3cf">
+      <circle cx="20.000003" cy="272.000003" r="2"/>
+      <circle cx="20.000003" cy="262.000003" r="2"/>
+      <circle cx="20.000003" cy="252.000003" r="2"/>
+      <circle cx="20.000003" cy="242.000003" r="2"/>
+      <circle cx="20.000003" cy="232.000003" r="2"/>
+      <circle cx="20.000003" cy="222.000003" r="2"/>
+      <circle cx="20.000003" cy="212.000003" r="2"/>
+      <circle cx="20.000003" cy="202.000003" r="2"/>
+      <circle cx="20.000003" cy="192.000003" r="2"/>
+    </g>
+    <g enable-background="new" fill="none" opacity=".3" stroke="#d5d3cf" stroke-width="2" transform="translate(.000003 -.999997)">
+      <path d="m28 192h72"/>
+      <path d="m28 202h72"/>
+      <path d="m28 212h72"/>
+      <path d="m28 222h72"/>
+      <path d="m28 232h72"/>
+      <path d="m28 242h72"/>
+      <path d="m28 252h72"/>
+      <path d="m28 262h72"/>
+      <path d="m28 272h66"/>
+    </g>
+    <g enable-background="new" transform="translate(-19.999997 .000003)">
+      <g fill="none" opacity=".1" stroke="#00000f" transform="translate(14.00001 -11.999987)">
+        <path d="m35.99999 249.99999-8 8" stroke-width="6" transform="translate(0 -.000003)"/>
+        <path d="m27.99999 257.99999-14 14" stroke-linecap="round" stroke-width="12" transform="translate(0 -.000003)"/>
+        <circle cx="58" cy="228" r="30.118" stroke-linejoin="round" stroke-width="3.764706"/>
+      </g>
+      <g enable-background="new" fill="none" transform="translate(14.00001 -13.999987)">
+        <path d="m11.890335 268.55054 15.45714-15.45715" opacity=".154" stroke="#fff" stroke-linecap="round" stroke-width="1.637843"/>
+        <path d="m35.99999 249.99999-8 8" stroke="#949390" stroke-width="6"/>
+        <path d="m35.99999 247.99999-8 8" stroke="#d5d3cf" stroke-width="6"/>
+        <g stroke-linecap="round" stroke-width="12">
+          <path d="m27.99999 257.99999-14 14" stroke="#241f31"/>
+          <path d="m27.99999 255.99999-14 14" stroke="#424048"/>
+        </g>
+      </g>
+      <circle cx="-72" cy="212.062" fill="#fff" opacity=".5" r="29.938" transform="scale(-1 1)"/>
+      <g fill="none">
+        <circle cx="72" cy="214" r="30.118" stroke="#1a5fb4" stroke-linejoin="round" stroke-width="3.764706"/>
+        <circle cx="72" cy="212" r="30.118" stroke="#62a0ea" stroke-linejoin="round" stroke-width="3.764706"/>
+        <path d="m25 255 16-16" opacity=".154" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+      </g>
+    </g>
+    <path d="m99 251.75c-6.094 0-11 4.906-11 11v14c0 1.13268.16928 2.22328.48438 3.25l27.57421-27.81445c-.97142-.27911-1.99503-.43555-3.05859-.43555z" fill="url(#linearGradient917)"/>
+  </g>
+</svg>

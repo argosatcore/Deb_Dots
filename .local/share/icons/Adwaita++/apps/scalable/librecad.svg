@@ -1,0 +1,19 @@
+<svg height="128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="e" gradientTransform="matrix(1.0015 0 0 .99993 72.09 56.015)" gradientUnits="userSpaceOnUse" x1="43.844" x2="-60" y1="234" y2="234">
+    <stop offset="0" stop-color="#d5d3cf"/>
+    <stop offset=".038" stop-color="#e3e2df"/>
+    <stop offset=".077" stop-color="#c0bfbc"/>
+    <stop offset=".923" stop-color="#c0bfbc"/>
+    <stop offset=".962" stop-color="#e3e2df"/>
+    <stop offset="1" stop-color="#d5d3cf"/>
+  </linearGradient>
+  <g transform="translate(0 -172)">
+    <rect fill="url(#e)" height="48" rx="8" width="104" x="12" y="240"/>
+    <path d="m20 10c-4.432 0-8 3.568-8 8v42 42c0 4.432 3.568 8 8 8h44 44c4.432 0 8-3.568 8-8v-42-42c0-4.432-3.568-8-8-8z" fill="#8bd975" transform="translate(0 172)"/>
+    <g transform="matrix(1.6534631 0 0 1.6534631 9.379998 -205.37076)">
+      <path d="m12.274855 282.84306v-2.60587h5.199174v5.21177h-5.199174zm36.394218 0v-2.60587h5.199174v5.21177h-5.199174zm-36.394218-36.48238v-2.60588h5.199174v5.21178h-5.199174zm36.394218 0v-2.60588h5.199174v5.21178h-5.199174z" fill="#418708"/>
+      <ellipse cx="33.083" cy="264.518" fill="none" rx="18.841" ry="18.887" stroke="#418708" stroke-width="4.554784"/>
+      <path d="m11.866006 264.36796v-5.79084h11.553722v2.89544h30.039673v5.79085h-30.039673v2.89541h-11.553722z" fill="#323936"/>
+    </g>
+  </g>
+</svg>

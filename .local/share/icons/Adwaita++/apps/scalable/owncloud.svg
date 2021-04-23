@@ -1,0 +1,25 @@
+<svg height="128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="e" gradientTransform="matrix(1.0015 0 0 .99993 72.09 56.015)" gradientUnits="userSpaceOnUse" x1="43.844" x2="-60" y1="234" y2="234">
+    <stop offset="0" stop-color="#d5d3cf"/>
+    <stop offset=".038" stop-color="#e3e2df"/>
+    <stop offset=".077" stop-color="#c0bfbc"/>
+    <stop offset=".923" stop-color="#c0bfbc"/>
+    <stop offset=".962" stop-color="#e3e2df"/>
+    <stop offset="1" stop-color="#d5d3cf"/>
+  </linearGradient>
+  <g transform="translate(0 -172)">
+    <rect fill="url(#e)" height="48" rx="8" width="104" x="12" y="240"/>
+    <path d="m20 10c-4.432 0-8 3.568-8 8v42 42c0 4.432 3.568 8 8 8h44 44c4.432 0 8-3.568 8-8v-42-42c0-4.432-3.568-8-8-8z" fill="#394e6f" transform="translate(0 172)"/>
+    <g fill="#fff" stroke="#394e6f" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6666667">
+      <circle cx="72.3327089591" cy="227.0004708968" r="10.83333355"/>
+      <circle cx="97.3327094591" cy="248.6671379968" r="5.83333345"/>
+      <circle cx="83.9993758591" cy="242.0004711968" r="12.50000025"/>
+      <circle cx="35.6660415591" cy="243.6671378968" r="10.83333355"/>
+      <circle cx="45.6660417591" cy="222.0004707968" r="5.83333345"/>
+      <circle cx="47.3327084591" cy="235.3338043968" r="12.50000025"/>
+      <circle cx="47.3327084591" cy="248.6671379968" r="5.83333345"/>
+      <circle cx="58.9993753591" cy="220.3338040968" r="10.83333355"/>
+      <circle cx="63.9993754591" cy="238.6671377968" r="15.83333365"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <radialGradient id="radialGradient1030-8" cx="64" cy="194.19" gradientTransform="matrix(-4.7272726 .00000129 -.0000003 -1.4318182 490.54548 36.71204)" gradientUnits="userSpaceOnUse" r="44">
+    <stop offset="0" stop-color="#fff"/>
+    <stop offset="1" stop-color="#fff" stop-opacity=".094118"/>
+  </radialGradient>
+  <linearGradient id="linearGradient1444-2-3-3" gradientUnits="userSpaceOnUse" x1="135.99999" x2="247.99999" y1="246.000027" y2="246.000027">
+    <stop offset="0" stop-color="#d5d3cf"/>
+    <stop offset=".036" stop-color="#e4e1de"/>
+    <stop offset=".071" stop-color="#d5d3cf"/>
+    <stop offset=".929" stop-color="#d5d3cf"/>
+    <stop offset=".964" stop-color="#e4e1de"/>
+    <stop offset="1" stop-color="#d5d3cf"/>
+  </linearGradient>
+  <g transform="translate(-128 -140)">
+    <rect fill="#f6f5f4" height="88" rx="8" width="112" x="136" y="168"/>
+    <rect fill="#241f31" height="78" rx="4" width="104" x="140" y="172"/>
+    <path d="m135.99999 246v4c0 4.432 3.568 8 8 8h96c4.432 0 8-3.568 8-8v-4c0 4.432-3.568 8-8 8h-96c-4.432 0-8-3.568-8-8z" fill="url(#linearGradient1444-2-3-3)"/>
+    <g fill="none" stroke-width=".866667" transform="translate(-1.57422 3.71209)">
+      <path d="m141.57422 188.24805h15.4348c18.38766-.14593 10.52658 43.85833 24.28133 45.05399h13.71556c15.58612 0 9.33961-53.7616 20.23368-53.7616 10.30857 0 8.32808 35.14846 14.80703 35.14846 5.4976 0 3.69222-16.06156 8.6841-16.06156h6.8435" stroke="#1a7fd4"/>
+      <path d="m245.57422 226.32775h-8.50147c-8.09431 0-6.07079-21.2129-12.67832-21.2129-6.60752 0-2.9204 7.49089-7.99926 5.92391-5.07885-1.56697-2.94892-29.70236-15.73708-29.76498h-8.51557c-15.58611 0-9.33961 53.7616-20.23367 53.7616-10.30857 0-8.32808-35.14849-14.80703-35.14849-5.4976 0-3.69222 16.06158-8.6841 16.06158h-6.8435" stroke="#da1636"/>
+    </g>
+    <path d="m144-246h96v70h-96z" fill="url(#radialGradient1030-8)" opacity=".05" transform="scale(1 -1)"/>
+  </g>
+</svg>

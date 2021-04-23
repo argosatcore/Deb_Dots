@@ -1,0 +1,22 @@
+<svg height="128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="e" gradientTransform="matrix(1.0015 0 0 .99993 72.09 56.015)" gradientUnits="userSpaceOnUse" x1="43.844" x2="-60" y1="234" y2="234">
+    <stop offset="0" stop-color="#d5d3cf"/>
+    <stop offset=".038" stop-color="#e3e2df"/>
+    <stop offset=".077" stop-color="#c0bfbc"/>
+    <stop offset=".923" stop-color="#c0bfbc"/>
+    <stop offset=".962" stop-color="#e3e2df"/>
+    <stop offset="1" stop-color="#d5d3cf"/>
+  </linearGradient>
+  <g transform="translate(0 -172)">
+    <rect fill="url(#e)" height="48" rx="8" width="104" x="12" y="240"/>
+    <path d="m20 10c-4.432 0-8 3.568-8 8v42 42c0 4.432 3.568 8 8 8h44 44c4.432 0 8-3.568 8-8v-42-42c0-4.432-3.568-8-8-8z" fill="#4694d7" transform="translate(0 172)"/>
+    <g transform="matrix(1.8367347 0 0 1.8367347 127.66184 -170.47613)">
+      <path d="m-36.660332 205.62589a10 10 0 0 1 -10 10 10 10 0 0 1 -10-10 10 10 0 0 1 10-10 10 10 0 0 1 10 10z" opacity=".2"/>
+      <path d="m-36.660332 204.62589a10 10 0 0 1 -10 10 10 10 0 0 1 -10-10 10 10 0 0 1 10-10 10 10 0 0 1 10 10z" fill="#fff"/>
+      <path d="m-36.660332 232.62589a10 10 0 0 1 -10 10 10 10 0 0 1 -10-10 10 10 0 0 1 10-10 10 10 0 0 1 10 10z" fill="#4d4d4d"/>
+      <path d="m-12.660333 233.62589a10 10 0 0 0 -9.999999-10 10 10 0 0 0 -10 10 10 10 0 0 0 10 10 10 10 0 0 0 9.999999-10z" opacity=".2"/>
+      <path d="m-12.660333 232.62589a10 10 0 0 0 -9.999999-10 10 10 0 0 0 -10 10 10 10 0 0 0 10 10 10 10 0 0 0 9.999999-10z" fill="#fff"/>
+      <path d="m-12.660333 204.62589a10 10 0 0 0 -9.999999-10 10 10 0 0 0 -10 10 10 10 0 0 0 10 10 10 10 0 0 0 9.999999-10z" fill="#4d4d4d"/>
+    </g>
+  </g>
+</svg>

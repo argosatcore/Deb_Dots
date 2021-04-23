@@ -1,0 +1,29 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <radialGradient id="radialGradient949" cx="64.000022" cy="-283.1058050525" gradientUnits="userSpaceOnUse" r="81.08334">
+    <stop offset="0" stop-color="#424048"/>
+    <stop offset="1"/>
+  </radialGradient>
+  <radialGradient id="radialGradient2192" cx="296.7067024816" cy="-78.404005656" gradientUnits="userSpaceOnUse" r="145.45944">
+    <stop offset="0" stop-color="#1b58a6"/>
+    <stop offset="1" stop-color="#060b10"/>
+  </radialGradient>
+  <linearGradient id="linearGradient1061" gradientUnits="userSpaceOnUse" x1="296.000052" x2="296.000052" y1="46.59103" y2="-33.40897">
+    <stop offset="0" stop-color="#fff"/>
+    <stop offset="1" stop-color="#4a86cf" stop-opacity="0"/>
+  </linearGradient>
+  <g transform="matrix(1 0 0 -1 0 -172)">
+    <circle cx="64" cy="-236" fill="#f6f5f4" r="60.125"/>
+    <circle cx="64" cy="-236" fill="url(#radialGradient949)" r="52.125"/>
+    <circle cx="64" cy="-236" r="45.875"/>
+  </g>
+  <g enable-background="new" transform="matrix(.8025001 0 0 -.8025001 -173.54003 41.20164)">
+    <circle cx="296" cy="-28.409" fill="url(#radialGradient2192)" r="50"/>
+    <circle cx="296" cy="-28.409" r="22.586"/>
+    <g fill="#2070d6">
+      <circle cx="278.555" cy="-10.808" r="14.953"/>
+      <ellipse cx="318.43" cy="-50.683" rx="7.477" ry="7.477"/>
+      <ellipse cx="307.215" cy="-39.468" rx="4.984" ry="4.984"/>
+    </g>
+    <circle cx="296" cy="-28.409" fill="url(#linearGradient1061)" opacity=".664" r="50"/>
+  </g>
+</svg>

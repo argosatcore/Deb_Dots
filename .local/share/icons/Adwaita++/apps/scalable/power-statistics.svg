@@ -1,0 +1,24 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <radialGradient id="radialGradient1030-8" cx="64" cy="194.19" gradientTransform="matrix(-4.7272726 .00000129 -.0000003 -1.4318182 490.54548 36.71204)" gradientUnits="userSpaceOnUse" r="44">
+    <stop offset="0" stop-color="#fff"/>
+    <stop offset="1" stop-color="#fff" stop-opacity=".094118"/>
+  </radialGradient>
+  <linearGradient id="linearGradient1444-2-3-3" gradientUnits="userSpaceOnUse" x1="135.99999" x2="247.99999" y1="246.000027" y2="246.000027">
+    <stop offset="0" stop-color="#d5d3cf"/>
+    <stop offset=".036" stop-color="#e4e1de"/>
+    <stop offset=".071" stop-color="#d5d3cf"/>
+    <stop offset=".929" stop-color="#d5d3cf"/>
+    <stop offset=".964" stop-color="#e4e1de"/>
+    <stop offset="1" stop-color="#d5d3cf"/>
+  </linearGradient>
+  <g transform="translate(-128 -140)">
+    <rect fill="#f6f5f4" height="88" rx="8" width="112" x="136" y="168"/>
+    <rect fill="#d0d0d0" height="78" rx="4" width="104" x="140" y="172"/>
+    <path d="m135.99999 246v4c0 4.432 3.568 8 8 8h96c4.432 0 8-3.568 8-8v-4c0 4.432-3.568 8-8 8h-96c-4.432 0-8-3.568-8-8z" fill="url(#linearGradient1444-2-3-3)"/>
+    <path d="m144-246h96v70h-96z" fill="url(#radialGradient1030-8)" opacity=".1" transform="scale(1 -1)"/>
+  </g>
+  <g fill="none" stroke-width=".479707" transform="matrix(1.8066575 0 0 1.8066575 -122.57471298133 -401.15307759273)">
+    <path d="m74.488226 251.90897h8.54329c10.177727-.0808 5.826548 24.27594 13.439918 24.93775h7.591686c8.62704 0 5.16954-29.75749 11.1995-29.75749 5.70588 0 4.60966 19.45497 8.19581 19.45497 3.04296 0 2.04368-8.89021 4.80673-8.89021h3.78793" stroke="#1a7fd4"/>
+    <path d="m132.05309 272.98639h-4.70563c-4.48028 0-3.36024-11.74151-7.01756-11.74151-3.65731 0-1.61646 4.14627-4.42766 3.27893-2.81118-.86733-1.63225-16.4405-8.7106-16.47516h-4.71344c-8.627044 0-5.169549 29.75749-11.199505 29.75749-5.705879 0-4.609657-19.45498-8.195809-19.45498-3.042968 0-2.043681 8.89021-4.806729 8.89021h-3.787931" stroke="#da1636"/>
+  </g>
+</svg>

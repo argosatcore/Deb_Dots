@@ -1,0 +1,28 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <radialGradient id="radialGradient902" cx="405" cy="151" gradientTransform="matrix(1.4599987 -1.4599987 .02960147 .02960147 -490.51932 677.57967)" gradientUnits="userSpaceOnUse" r="48">
+    <stop offset="0" stop-color="#f6d32d"/>
+    <stop offset="1" stop-color="#fcf9c0"/>
+  </radialGradient>
+  <linearGradient id="linearGradient973" gradientUnits="userSpaceOnUse" x1="461.963" x2="45.963" y1="204" y2="204">
+    <stop offset="0" stop-color="#f5c211"/>
+    <stop offset=".042" stop-color="#f8e45c"/>
+    <stop offset=".083" stop-color="#f6d32d"/>
+    <stop offset=".917" stop-color="#f5c211"/>
+    <stop offset=".958" stop-color="#f8e45c"/>
+    <stop offset="1" stop-color="#f5c211"/>
+  </linearGradient>
+  <g transform="translate(0 -172)">
+    <g enable-background="new" transform="matrix(.25 0 0 .25 .509239 225)">
+      <rect fill="url(#linearGradient973)" height="400" rx="32" width="416" x="45.96" y="-148"/>
+      <rect fill="#f9f06b" height="368" rx="32" width="416" x="45.96" y="-164"/>
+      <g transform="matrix(4 0 0 4 -2.03696 -212)">
+        <path d="m116 80-24 24h16c4.432 0 8-3.568 8-8z" fill="#f8ed4a"/>
+        <path d="m100 80c-4.432 0-8 3.568-8 8v16l24-24z" fill="url(#radialGradient902)"/>
+      </g>
+    </g>
+    <path d="m24 196h80v8h-80z" fill="#f8e45c"/>
+    <path d="m24 212h42v8h-42z" fill="#f8e45c"/>
+    <path d="m116 272.6543c-.0822 4.09061-3.38071 7.3457-7.49219 7.3457h-.5v1h.5c3.24611 0 6.0601-1.81286 7.49219-4.48242zm-42.000001 7.3457 34.000001 1v-1z" fill-opacity=".059055"/>
+    <path d="m116 276.6543c-.0822 4.09061-3.38071 7.3457-7.49219 7.3457h-.5v1h.5c3.22393 0 6.02184-1.7881 7.46289-4.42773.0134-.18975.0293-.37902.0293-.57227zm-42.000001 7.3457 34.000001 1v-1z" fill-opacity=".043137"/>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg height="128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="e" gradientTransform="matrix(1.0015 0 0 .99993 72.09 56.015)" gradientUnits="userSpaceOnUse" x1="43.844" x2="-60" y1="234" y2="234">
+    <stop offset="0" stop-color="#d5d3cf"/>
+    <stop offset=".038" stop-color="#e3e2df"/>
+    <stop offset=".077" stop-color="#c0bfbc"/>
+    <stop offset=".923" stop-color="#c0bfbc"/>
+    <stop offset=".962" stop-color="#e3e2df"/>
+    <stop offset="1" stop-color="#d5d3cf"/>
+  </linearGradient>
+  <filter id="filter898" color-interpolation-filters="sRGB" height="1.096" width="1.096" x="-.05" y="-.05">
+    <feGaussianBlur stdDeviation=".412"/>
+  </filter>
+  <filter id="filter1055" color-interpolation-filters="sRGB" height="1.184" width="1.184" x="-.09" y="-.09">
+    <feGaussianBlur stdDeviation=".79"/>
+  </filter>
+  <radialGradient id="radialGradient847" cx="-12.569" cy="33.084" gradientTransform="matrix(.57572919 1.0914897 -1.3359549 .70467747 146.33526 239.29694)" gradientUnits="userSpaceOnUse" r="13" xlink:href="#linearGradient853"/>
+  <linearGradient id="linearGradient853">
+    <stop offset="0" stop-color="#fff"/>
+    <stop offset="1" stop-color="#d6dad3"/>
+  </linearGradient>
+  <radialGradient id="radialGradient835" cx="-12.569" cy="33.084" gradientTransform="matrix(.57572919 1.0914897 -1.3359549 .70467747 144.23047 255.40668)" gradientUnits="userSpaceOnUse" r="13" xlink:href="#linearGradient833"/>
+  <linearGradient id="linearGradient833">
+    <stop offset="0" stop-color="#fff"/>
+    <stop offset="1" stop-opacity=".019048"/>
+  </linearGradient>
+  <radialGradient id="radialGradient859" cx="-12.569" cy="33.084" gradientTransform="matrix(.57572919 1.0914897 -1.3359549 .70467747 159.44972 249.01135)" gradientUnits="userSpaceOnUse" r="13" xlink:href="#linearGradient853"/>
+  <radialGradient id="radialGradient1090" cx="-12.569" cy="33.084" gradientTransform="matrix(.57572919 1.0914897 -1.3359549 .70467747 163.33547 236.70643)" gradientUnits="userSpaceOnUse" r="13" xlink:href="#linearGradient833"/>
+  <g transform="translate(0 -172)">
+    <rect fill="url(#e)" height="48" rx="8" width="104" x="12" y="240"/>
+    <path d="m20 10c-4.432 0-8 3.568-8 8v42 42c0 4.432 3.568 8 8 8h44 44c4.432 0 8-3.568 8-8v-42-42c0-4.432-3.568-8-8-8z" fill="#cc936c" fill-opacity=".996078" transform="translate(0 172)"/>
+    <g transform="matrix(1.95721506388 0 0 1.95721506388 -138.93350058819 -277.15971871442)">
+      <circle cx="96.196" cy="253.344" filter="url(#filter898)" opacity=".3" r="10.29"/>
+      <circle cx="96.196" cy="253.344" fill="#dde0da" r="10.29"/>
+      <circle cx="94.091" cy="269.454" filter="url(#filter1055)" opacity=".3" r="10.29"/>
+      <circle cx="96.196" cy="253.344" fill="url(#radialGradient847)" r="10.29"/>
+      <circle cx="94.091" cy="269.454" r="10.29"/>
+      <circle cx="113.196" cy="250.753" filter="url(#filter1055)" opacity=".3" r="10.29"/>
+      <circle cx="94.091" cy="269.454" fill="url(#radialGradient835)" r="10.29"/>
+      <circle cx="113.196" cy="250.753" r="10.29"/>
+      <circle cx="109.311" cy="263.058" filter="url(#filter1055)" opacity=".3" r="10.29"/>
+      <circle cx="113.196" cy="250.753" fill="url(#radialGradient1090)" r="10.29"/>
+      <circle cx="109.311" cy="263.058" fill="#dde0da" r="10.29"/>
+      <circle cx="109.311" cy="263.058" fill="url(#radialGradient859)" r="10.29"/>
+    </g>
+  </g>
+</svg>

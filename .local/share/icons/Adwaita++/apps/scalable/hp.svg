@@ -1,0 +1,11 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <filter id="c" color-interpolation-filters="sRGB" height="1.067" width="1.083" x="-.04" y="-.03">
+    <feOffset dy="4" result="pf_100_offsetBlur"/>
+    <feFlood flood-opacity=".4"/>
+    <feComposite in2="pf_100_offsetBlur" operator="in" result="pf_100_dropShadow"/>
+    <feBlend in="SourceGraphic" in2="pf_100_dropShadow" mode="normal"/>
+  </filter>
+  <rect fill="#3584e4" height="88" rx="8" ry="8.8" width="112" x="8" y="28"/>
+  <path d="m8 106v2c0 4.432 3.568 8 8 8h96c4.432 0 8-3.568 8-8v-2c0 4.432-3.568 8-8 8h-96c-4.432 0-8-3.568-8-8z" fill="#1a5fb4"/>
+  <path d="m51.426237 3.5849023-13.757004 37.8110007h-.004l-23.379 64.228997h15.564l19.882004-54.580997h11.7l-19.883 54.581997 15.559.005 18.527-50.920997c2.666-7.321-1.528-13.313-9.314-13.313h-13.083l14.46-38.0612516h-16.272zm40.769 37.8110007-24.042 66.065997h-.011l-13.487 32.84579h14.851l14.884-34.68279h20.656003c3.625 0 7.605-2.787 8.844-6.190997l16.282-44.725c2.664-7.324-1.529-13.313-9.32-13.313zm12.108003 9.612h11.695l-16.377003 44.933h-11.695z" fill="#f6f5f4" filter="url(#c)" transform="matrix(.47461307 0 0 .47910402 30.189171 37.00599)"/>
+</svg>

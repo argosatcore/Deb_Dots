@@ -1,0 +1,57 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <radialGradient id="radialGradient968-3" cx="248.432" cy="120.338" fx="274.623" fy="108.968" gradientTransform="matrix(.34729307 0 0 .49966148 -170.27883 346.37174)" gradientUnits="userSpaceOnUse" r="225">
+    <stop offset="0" stop-color="#ffbe6f"/>
+    <stop offset="1" stop-color="#f9f06b" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="radialGradient966-2" cx="133.997" cy="148.156" gradientTransform="matrix(.41248898 0 0 .83624432 -187.20083 299.46339)" gradientUnits="userSpaceOnUse" r="225">
+    <stop offset="0" stop-color="#f6d32d"/>
+    <stop offset="1" stop-color="#e66100"/>
+  </radialGradient>
+  <linearGradient id="linearGradient1358" gradientTransform="matrix(.23214285 0 0 .32894738 -8.56691 435.82698)" gradientUnits="userSpaceOnUse" x1="88.596" x2="536.596" y1="-449.394" y2="-449.394">
+    <stop offset="0" stop-color="#77767b"/>
+    <stop offset=".038" stop-color="#c0bfbc"/>
+    <stop offset=".077" stop-color="#9a9996"/>
+    <stop offset=".923" stop-color="#9a9996"/>
+    <stop offset=".962" stop-color="#c0bfbc"/>
+    <stop offset="1" stop-color="#77767b"/>
+  </linearGradient>
+  <g transform="translate(0 -172)">
+    <g display="none">
+      <text font-family="Cantarell" font-size="5.333333" x="-.05" xml:space="preserve" y="128.65">     <tspan font-size="5.333333" x="-.05" y="128.65">apps</tspan>    </text>
+      <text font-family="Cantarell" font-size="5.333333" font-weight="bold" x="-.25" xml:space="preserve" y="137.23">     <tspan font-size="5.333333" x="-.25" y="137.23">com.uploadedlobster.peek</tspan>    </text>
+      <path d="m0 172h128v128h-128z" fill="#f0f0f0"/>
+      <path d="m160 172h16v16h-16z" fill="#f0f0f0"/>
+      <text font-family="Cantarell" font-size="4" font-weight="bold" xml:space="preserve" y="164">     <tspan font-size="4" x="0" y="164">Hicolor</tspan>    </text>
+      <text font-family="Cantarell" font-size="4" font-weight="bold" x="160" xml:space="preserve" y="164">     <tspan font-size="4" x="160" y="164">Symbolic</tspan>    </text>
+      <path d="m-870 172h128v128h-128z" fill="#f0f0f0"/>
+      <g enable-background="new" fill="#2864b0" stroke-width=".25">
+        <circle cx="-806" cy="236" opacity=".1" r="60"/>
+        <rect height="112" opacity=".1" rx="8" width="88" x="-850" y="180"/>
+        <rect height="104" opacity=".1" rx="8" width="104" x="-858" y="184"/>
+        <rect height="88" opacity=".1" rx="8" width="112" x="-862" y="200"/>
+      </g>
+      <g font-family="Cantarell" font-size="4" font-weight="bold">
+        <text x="-1158" xml:space="preserve" y="164">     <tspan font-size="4" x="-1158" y="164">Shapes</tspan>    </text>
+        <text x="-1158" xml:space="preserve" y="332">     <tspan font-size="4" x="-1158" y="332">Examlpes</tspan>    </text>
+        <text x="248" xml:space="preserve" y="164">     <tspan font-size="4" x="248" y="164">Symbolic</tspan>    </text>
+      </g>
+    </g>
+    <g>
+      <rect fill="url(#linearGradient1358)" height="100" rx="8" width="104" x="12" y="188"/>
+      <rect fill="#deddda" height="100" rx="8" width="104" x="12" y="184"/>
+      <rect fill="#241f31" height="92" rx="4" width="96" x="16" y="188"/>
+      <g transform="matrix(1.0000001 0 0 .84210557 170 -42.736935)">
+        <path d="m-150 302.5h88v76h-88z" fill="url(#radialGradient966-2)"/>
+        <path d="m-150 302.5h88v76h-88z" fill="url(#radialGradient968-3)"/>
+      </g>
+      <g enable-background="new" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4" transform="translate(-.00001 3.999997)">
+        <path d="m34 232v-10h12"/>
+        <path d="m94 232v-10h-12.000009"/>
+        <path d="m94 248v10h-12.000009"/>
+        <path d="m34 248v10h12"/>
+      </g>
+      <circle cx="99.5" cy="200" fill="#ed333b" r="6"/>
+      <path d="m54 198h20v4h-20z" fill="#deddda"/>
+    </g>
+  </g>
+</svg>

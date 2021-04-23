@@ -1,0 +1,26 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <radialGradient id="radialGradient439" cx="178.051" cy="-106.999" gradientTransform="matrix(.26435802 .0017337 -.00140024 .21351008 -165.70123 202.20286)" gradientUnits="userSpaceOnUse" r="225">
+    <stop offset="0" stop-color="#613583"/>
+    <stop offset="1" stop-color="#dc8add" stop-opacity=".004131"/>
+  </radialGradient>
+  <radialGradient id="radialGradient441" cx="256" cy="267.602" gradientTransform="matrix(.45333333 0 0 .35682373 -215.04828 157.89251)" gradientUnits="userSpaceOnUse" r="225">
+    <stop offset="0" stop-color="#62a0ea"/>
+    <stop offset="1" stop-color="#613583"/>
+  </radialGradient>
+  <linearGradient id="linearGradient443" gradientUnits="userSpaceOnUse" x1="-105.49495" x2="-105.49495" y1="253.37942" y2="245.37942">
+    <stop offset="0" stop-color="#613583"/>
+    <stop offset="1" stop-color="#dc8add"/>
+  </linearGradient>
+  <g enable-background="new" transform="translate(162.99495 -137.37942)">
+    <rect fill="url(#radialGradient441)" height="88" rx="8" ry="8.8" width="112" x="-155" y="165.38"/>
+    <rect fill="url(#radialGradient439)" height="88" rx="8" ry="8.8" width="112" x="-155" y="165.38"/>
+    <path d="m-110.99495 193.37954v31.99983h2.89999.29984c.5597.003 1.11289-.12416 1.59999-.4l22.399877-12.79994c.99424-.55004 1.5-1.67503 1.5-2.79997 0-1.12496-.50576-2.24995-1.5-2.79999l-22.399877-12.79994c-.4871-.27616-1.04029-.40418-1.59999-.39999h-.29984z" fill="#fff"/>
+    <path d="m-154.99495 243.37942v2c0 4.432 3.568 8 8 8h96c4.432 0 8-3.568 8-8v-2c0 4.432-3.568 8-8 8h-96c-4.432 0-8-3.568-8-8z" fill="url(#linearGradient443)"/>
+  </g>
+  <g transform="matrix(.84114566 0 0 .84114566 48.02739 49.105574)">
+    <circle cx="61.582" cy="60.592" fill="#241f31" opacity=".2" r="32.542"/>
+    <circle cx="62.533" cy="60.949" fill="#1c71d8" r="32.542"/>
+    <path d="m62.463473 77.220343-12.133424-16.271191h8.135593v-16.271187h8.135594v16.271187h8.135594z" fill="#fff"/>
+    <path d="m30.042711 60.23469a32.542373 32.546225 0 0 0 -.051642 1.013105 32.542373 32.546225 0 0 0 32.542372 32.546217 32.542373 32.546225 0 0 0 32.542375-32.546217 32.542373 32.546225 0 0 0 -.03575-1.001186 32.542373 32.546225 0 0 1 -32.506625 31.513263 32.542373 32.546225 0 0 1 -32.49073-31.525182z" opacity=".2"/>
+  </g>
+</svg>

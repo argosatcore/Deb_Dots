@@ -1,0 +1,42 @@
+<svg height="128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="e" gradientTransform="matrix(1.0015 0 0 .99993 72.09 56.015)" gradientUnits="userSpaceOnUse" x1="43.844" x2="-60" y1="234" y2="234">
+    <stop offset="0" stop-color="#d5d3cf"/>
+    <stop offset=".038" stop-color="#e3e2df"/>
+    <stop offset=".077" stop-color="#c0bfbc"/>
+    <stop offset=".923" stop-color="#c0bfbc"/>
+    <stop offset=".962" stop-color="#e3e2df"/>
+    <stop offset="1" stop-color="#d5d3cf"/>
+  </linearGradient>
+  <filter id="filter2273" color-interpolation-filters="sRGB" height="1.106" width="1.146" x="-.07" y="-.05">
+    <feGaussianBlur stdDeviation=".728"/>
+  </filter>
+  <filter id="filter2277" color-interpolation-filters="sRGB" height="1.286" width="1.092" x="-.05" y="-.14">
+    <feGaussianBlur stdDeviation=".728"/>
+  </filter>
+  <filter id="filter2281" color-interpolation-filters="sRGB" height="1.101" width="1.164" x="-.08" y="-.05">
+    <feGaussianBlur stdDeviation=".728"/>
+  </filter>
+  <filter id="filter2388" color-interpolation-filters="sRGB" height="1.24" width="1.24" x="-.12" y="-.12">
+    <feGaussianBlur stdDeviation=".228"/>
+  </filter>
+  <radialGradient id="radialGradient1751" cx="64" cy="60" gradientTransform="matrix(1 0 0 .96153846 0 2.307692)" gradientUnits="userSpaceOnUse" r="52">
+    <stop offset="0" stop-color="#ddd196"/>
+    <stop offset="1" stop-color="#a19b02"/>
+  </radialGradient>
+  <g transform="translate(0 -172)">
+    <rect fill="url(#e)" height="48" rx="8" width="104" x="12" y="240"/>
+    <path d="m20 10c-4.432 0-8 3.568-8 8v42 42c0 4.432 3.568 8 8 8h44 44c4.432 0 8-3.568 8-8v-42-42c0-4.432-3.568-8-8-8z" fill="url(#radialGradient1751)" transform="translate(0 172)"/>
+    <g stroke="#fcfcfc" transform="matrix(1.91926480116 0 0 1.91926480116 1.18044159094 -257.23467902255)">
+      <g fill="none" stroke-linecap="round" stroke-width="1.516692">
+        <path d="m44.524349 245.5851c.640858-3.26172.282473-5.73713-1.232314-6.72084-.504927-.32792-1.110289-.4714-1.791592-.44553-3.679044.13967-9.615321 5.20531-14.465455 12.67385-5.748307 8.85163-7.791099 17.72269-4.559556 19.82128 1.533966.99618 3.978328.29 6.739802-1.67784" filter="url(#filter2273)" opacity=".3" stroke="#000"/>
+        <path d="m44.524349 245.5851c.640858-3.26172.282473-5.73713-1.232314-6.72084-.504927-.32792-1.110289-.4714-1.791592-.44553-3.679044.13967-9.615321 5.20531-14.465455 12.67385-5.748307 8.85163-7.791099 17.72269-4.559556 19.82128 1.533966.99618 3.978328.29 6.739802-1.67784" stroke="#fcfcfc"/>
+        <path d="m47.47242 260.06004c2.728339-1.05842 4.406004-2.50711 4.493202-4.17092.201659-3.84788-8.172315-7.41026-18.712194-7.96263-.988114-.0518-1.959745-.079-2.910155-.0758-9.187283.031-16.358673 2.55117-16.541427 6.03833-.08703 1.66054 1.425838 3.27071 4.019235 4.60695" filter="url(#filter2277)" opacity=".3" stroke="#000"/>
+        <path d="m47.47242 260.06004c2.728339-1.05842 4.406004-2.50711 4.493202-4.17092.201659-3.84788-8.172315-7.41026-18.712194-7.96263-.988114-.0518-1.959745-.079-2.910155-.0758-9.187283.031-16.358673 2.55117-16.541427 6.03833-.08703 1.66054 1.425838 3.27071 4.019235 4.60695" stroke="#fcfcfc"/>
+        <path d="m30.276919 239.8501c-1.866708-1.54881-3.617448-2.38053-5.024045-2.27503-.374504.0281-.720862.12038-1.042725.28437-3.433202 1.74931-2.336425 10.79647 2.455145 20.20045 4.791571 9.40399 11.458823 15.60808 14.892024 13.85878 3.301659-1.68228 2.410529-10.11262-1.924303-19.11981" filter="url(#filter2281)" opacity=".3" stroke="#000"/>
+        <path d="m30.276919 239.8501c-1.866708-1.54881-3.617448-2.38053-5.024045-2.27503-.374504.0281-.720862.12038-1.042725.28437-3.433202 1.74931-2.336425 10.79647 2.455145 20.20045 4.791571 9.40399 11.458823 15.60808 14.892024 13.85878 3.301659-1.68228 2.410529-10.11262-1.924303-19.11981" stroke="#fcfcfc"/>
+      </g>
+      <path d="m35.282004 255.15929a2.2750387 2.2750387 0 0 1 -4.550077 0 2.2750387 2.2750387 0 1 1 4.550077 0z" fill="#010000" filter="url(#filter2388)" opacity=".3"/>
+      <path d="m35.282004 255.15929a2.2750387 2.2750387 0 0 1 -4.550077 0 2.2750387 2.2750387 0 1 1 4.550077 0z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

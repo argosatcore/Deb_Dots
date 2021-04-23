@@ -1,0 +1,29 @@
+<svg height="256" viewBox="0 0 67.73 67.73" width="256" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="linearGradient24117" gradientUnits="userSpaceOnUse" x1="1368" x2="1368" y1="2972" y2="2988">
+    <stop offset="0" stop-color="#747471"/>
+    <stop offset="1" stop-color="#949390"/>
+  </linearGradient>
+  <linearGradient id="linearGradient26070" gradientTransform="matrix(1.15 0 0 1.081081 -206.4 -215.02702)" gradientUnits="userSpaceOnUse" x1="1376" x2="1376" y1="2692" y2="2932">
+    <stop offset="0" stop-color="#f6f5f4"/>
+    <stop offset="1" stop-color="#fff"/>
+  </linearGradient>
+  <linearGradient id="linearGradient27079" gradientUnits="userSpaceOnUse" x1="1449" x2="1449" y1="2596" y2="2652">
+    <stop offset="0" stop-color="#deddda"/>
+    <stop offset="1" stop-color="#9a9996"/>
+  </linearGradient>
+  <filter id="filter3989" color-interpolation-filters="sRGB" height="1.024" width="1.024" x="-.012" y="-.012">
+    <feGaussianBlur stdDeviation=".52"/>
+  </filter>
+  <g enable-background="new" stroke-width=".25" transform="matrix(1.00000000243 0 0 1.00000000243 -51.24660628588 -227.71986305589)">
+    <path d="m406.25 2866.75c-4.432 0-8 3.568-8 8 0 3.7409 2.54203 6.8663 6 7.75v78.25h32l-10 10h6l10-10h16l10 10h6l-10-10h32v-2-76.25c3.45797-.8837 6-4.0091 6-7.75 0-4.432-3.568-8-8-8z" fill="#0a0a0a" filter="url(#filter3989)" opacity=".41" transform="matrix(.57139394 0 0 .57139394 -171.36481 -1406.9649)"/>
+    <g enable-background="new" stroke-width=".25" transform="matrix(.14284849 0 0 .14284849 -110.6542 -139.89886)">
+      <path d="m1408 2948 64 64h-24l-40-40zm-64 0-64 64h24l40-40z" fill="url(#linearGradient24117)"/>
+      <path d="m1192 2652h368v320h-368z" fill="url(#linearGradient26070)"/>
+      <rect fill="url(#linearGradient27079)" height="64" rx="32" width="416" x="1168" y="2596"/>
+      <path d="m1192 2964h368v8h-368z" fill="#d5d3cf"/>
+      <path d="m1399.9854 2820a71.985359 71.985359 0 0 1 -44.4378 66.5058 71.985359 71.985359 0 0 1 -78.4489-15.6045 71.985359 71.985359 0 0 1 -15.6045-78.4489 71.985359 71.985359 0 0 1 66.5058-44.4378v71.9854z" fill="#4a86cf" stroke="#204a87" stroke-width=".007262"/>
+      <path d="m1344 2732.0146a71.985359 71.985359 0 0 1 71.9854 71.9854h-71.9854z" fill="#50db81" stroke="#204a87" stroke-width=".007262"/>
+      <path d="m1448 2868h56v16h-56zm0-40h56v16h-56zm0-40h56v16h-56zm0-40h56v16h-56zm0-40h56v16h-56z" fill="#d5d3cf"/>
+    </g>
+  </g>
+</svg>

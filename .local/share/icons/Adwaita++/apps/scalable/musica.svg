@@ -1,0 +1,28 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <radialGradient id="radialGradient1073" cx="280" cy="16.275" gradientTransform="matrix(1 0 0 1.1758925 0 -118.6378)" gradientUnits="userSpaceOnUse" r="160">
+    <stop offset="0" stop-color="#c4a000"/>
+    <stop offset="1" stop-color="#edd400" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="radialGradient1075" cx="265.282" cy="65.436" gradientTransform="matrix(1.3372396 .35831226 -.35833822 1.3373363 -60.03431 -112.79804)" gradientUnits="userSpaceOnUse" r="56">
+    <stop offset="0" stop-color="#40494c"/>
+    <stop offset=".572" stop-color="#232829"/>
+    <stop offset="1"/>
+  </radialGradient>
+  <linearGradient id="linearGradient1095" gradientUnits="userSpaceOnUse" x1="-146.17098" x2="185.12202" y1="-280.07582" y2="-280.07582">
+    <stop offset="0" stop-color="#f6d32d"/>
+    <stop offset="1" stop-color="#f9f06b"/>
+  </linearGradient>
+  <g transform="translate(0 -172)">
+    <rect fill="#5e5c64" height="104" rx="8" width="104" x="12" y="184"/>
+    <circle cx="64" cy="236" fill="#5e5c64" r="60"/>
+    <g enable-background="new" transform="matrix(.26562505 0 0 .26562505 -10.395244 230.82553)">
+      <ellipse cx="280.076" cy="19.474" rx="195.765" ry="195.771"/>
+      <ellipse cx="280.076" cy="19.475" fill="#2a2a3b" rx="180.706" ry="180.712"/>
+      <ellipse cx="19.475" cy="-280.076" fill="url(#linearGradient1095)" rx="165.647" ry="165.653" transform="rotate(90)"/>
+      <circle cx="280" cy="20.006" fill="url(#radialGradient1073)" r="0"/>
+      <ellipse cx="280.076" cy="19.475" rx="75.294" ry="75.299"/>
+      <ellipse cx="265.491" cy="91.306" fill="url(#radialGradient1075)" rx="60.235" ry="60.239" transform="matrix(.96592583 -.25881905 .25881905 .96592583 0 0)"/>
+    </g>
+    <path d="m24.000056 278a1.9999996 2.0364742 0 0 1 -2 2.03648 1.9999996 2.0364742 0 0 1 -2-2.03648 1.9999996 2.0364742 0 0 1 2-2.03647 1.9999996 2.0364742 0 0 1 2 2.03647zm84.000004 0a1.9999996 2.0364742 0 0 1 -2 2.03648 1.9999996 2.0364742 0 0 1 -2-2.03648 1.9999996 2.0364742 0 0 1 2-2.03647 1.9999996 2.0364742 0 0 1 2 2.03647zm0-84.00001a1.9999996 2.0364742 0 0 1 -2 2.03648 1.9999996 2.0364742 0 0 1 -2-2.03648 1.9999996 2.0364742 0 0 1 2-2.03647 1.9999996 2.0364742 0 0 1 2 2.03647zm-84.000004 0a1.9999996 2.0364742 0 0 1 -2 2.03648 1.9999996 2.0364742 0 0 1 -2-2.03648 1.9999996 2.0364742 0 0 1 2-2.03647 1.9999996 2.0364742 0 0 1 2 2.03647z"/>
+  </g>
+</svg>

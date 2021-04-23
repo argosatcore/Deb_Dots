@@ -1,0 +1,23 @@
+<svg height="128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="e" gradientTransform="matrix(1.0015 0 0 .99993 72.09 56.015)" gradientUnits="userSpaceOnUse" x1="43.844" x2="-60" y1="234" y2="234">
+    <stop offset="0" stop-color="#d5d3cf"/>
+    <stop offset=".038" stop-color="#e3e2df"/>
+    <stop offset=".077" stop-color="#c0bfbc"/>
+    <stop offset=".923" stop-color="#c0bfbc"/>
+    <stop offset=".962" stop-color="#e3e2df"/>
+    <stop offset="1" stop-color="#d5d3cf"/>
+  </linearGradient>
+  <g transform="translate(0 -172)">
+    <rect fill="url(#e)" height="48" rx="8" width="104" x="12" y="240"/>
+    <path d="m20 182c-4.432 0-8 3.07441-8 6.8933v36.18984 36.18983c0 3.81889 3.568 6.8933 8 6.8933h44 44c4.432 0 8-3.07441 8-6.8933v-36.18983-36.18984c0-3.81889-3.568-6.8933-8-6.8933z" fill="#f6f5f4"/>
+    <g fill="#4d4d4d" transform="translate(.360502 -5.821849)">
+      <circle cx="65.23" cy="230.905" r="9.545"/>
+      <circle cx="87.503" cy="256.36" r="9.545"/>
+      <circle cx="39.776" cy="205.45" r="9.545"/>
+      <g transform="scale(1 -1)">
+        <circle cx="87.503" cy="-205.45" r="9.545"/>
+        <circle cx="39.776" cy="-256.36" r="9.545"/>
+      </g>
+    </g>
+  </g>
+</svg>

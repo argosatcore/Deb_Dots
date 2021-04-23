@@ -1,0 +1,86 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="-66" cy="314" fill="#9059a1" r="0" transform="translate(0 -172)"/>
+  <g enable-background="new" transform="translate(-530 -168.000005)">
+    <g enable-background="new" fill="#62a0ea" transform="matrix(.325 0 0 -.23214286 490 234.21429)">
+      <path d="m147.6923-180 344.6154.00002-.00002 344.61536h-344.61538z" fill="#3584e4"/>
+      <g enable-background="new" fill="none" opacity=".15" stroke="#fff" stroke-width="2" transform="matrix(3.0769231 0 0 -4.3076923 -1507.6923 1008.9231)">
+        <g transform="translate(530 .000005)">
+          <path d="m116 211h-104"/>
+          <path d="m110 263h-98"/>
+          <path d="m23 200v64"/>
+          <path d="m105 200v38"/>
+          <path d="m104 203h-80"/>
+        </g>
+        <path d="m545 212v50"/>
+        <path d="m646 219h-94"/>
+        <path d="m643 210v10"/>
+        <path d="m577 220v12"/>
+        <path d="m563 220v12"/>
+        <path d="m566 235h-12"/>
+        <path d="m563 244v18"/>
+        <path d="m566 247h-12"/>
+        <path d="m577 232v22"/>
+        <path d="m628 233h-12"/>
+        <path d="m585 233h-11"/>
+        <path d="m584 245h-10"/>
+        <path d="m569 244v10"/>
+        <path d="m577 251h-8"/>
+      </g>
+    </g>
+    <g fill="none" stroke="#fff" stroke-width="2" transform="translate(530)">
+      <path d="m23 210v54"/>
+      <path d="m105 211h-82"/>
+      <path d="m105 210v28"/>
+      <circle cx="36" cy="232" r="3" stroke-linejoin="round"/>
+      <path d="m86 233h-40"/>
+      <circle cx="36" cy="244" r="3" stroke-linejoin="round"/>
+      <path d="m86 245h-40"/>
+      <path d="m104 219h-82"/>
+      <path d="m110 263h-88"/>
+    </g>
+    <g transform="translate(540)">
+      <path d="m104 223.15234-104.3791408 60.26236-2.7458592.5853v1h26.125 81zm-14 24.24805v23.59961h-40.875z" fill="#b38108"/>
+      <path d="m104 222.15234-107.125 61.84766h26.125 81zm-14 24.24805v23.59961h-40.875z" fill="#f6d32d"/>
+      <path d="m90 72.400391-40.875 23.599609v2l40.875-23.599609zm-89.66015625 37.599609-3.46484375 2h26.125 81v-2h-81z" fill="#e5a50a" transform="translate(0 172)"/>
+      <g fill="none" stroke="#b38108">
+        <g stroke-width="1.095445" transform="matrix(1 0 0 .83333333 0 47.333333)">
+          <path d="m101.5 278v6"/>
+          <path d="m86.5 278v6"/>
+          <path d="m71.5 278v6"/>
+          <path d="m56.5 278v6"/>
+          <path d="m41.5 278v6"/>
+          <path d="m26.5 278v6"/>
+          <path d="m11.5 278v6"/>
+        </g>
+        <g>
+          <path d="m98.5 281v3"/>
+          <path d="m95.5 281v3"/>
+          <path d="m92.5 281v3"/>
+          <path d="m89.5 281v3"/>
+          <path d="m83.5 281v3"/>
+          <path d="m80.5 281v3"/>
+          <path d="m77.5 281v3"/>
+          <path d="m74.5 281v3"/>
+          <path d="m68.5 281v3"/>
+          <path d="m65.5 281v3"/>
+          <path d="m62.5 281v3"/>
+          <path d="m59.5 281v3"/>
+          <path d="m53.5 281v3"/>
+          <path d="m50.5 281v3"/>
+          <path d="m47.5 281v3"/>
+          <path d="m44.5 281v3"/>
+          <path d="m38.5 281v3"/>
+          <path d="m35.5 281v3"/>
+          <path d="m32.5 281v3"/>
+          <path d="m29.5 281v3"/>
+          <path d="m23.5 281v3"/>
+          <path d="m20.5 281v3"/>
+          <path d="m17.5 281v3"/>
+          <path d="m14.5 281v3"/>
+          <path d="m8.5 281v3"/>
+          <path d="m5.5 281v3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -46,6 +46,7 @@ scribus \
 sway \
 swaylock \
 swayidle \
+tlp \
 tmux \
 texlive-full \
 vim-gtk \

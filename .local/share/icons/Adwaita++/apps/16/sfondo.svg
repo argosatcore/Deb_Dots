@@ -1,0 +1,6 @@
+<svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#444" transform="translate(-161 -447)">
+    <path d="m169 463c3 0 4-1 4-1h-1-6-1s1 1 4 1z"/>
+    <path d="m3 1c-1.662 0-3 1.338-3 3v7c0 1.662 1.338 3 3 3h10c1.662 0 3-1.338 3-3v-7c0-1.662-1.338-3-3-3zm0 2h5v6s4.564786.00487 6 0v2c0 .554-.446 1-1 1h-10c-.554 0-1-.446-1-1v-7c0-.554.446-1 1-1zm7 0h1v3h3v1h-4z" transform="translate(161 447)"/>
+  </g>
+</svg>

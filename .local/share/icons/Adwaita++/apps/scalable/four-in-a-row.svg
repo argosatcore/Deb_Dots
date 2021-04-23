@@ -1,0 +1,74 @@
+<svg height="128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="linearGradient1008">
+    <stop offset="0" stop-color="#ec6666"/>
+    <stop offset="1" stop-color="#cc2926"/>
+  </linearGradient>
+  <linearGradient id="linearGradient944">
+    <stop offset="0" stop-color="#fffea8"/>
+    <stop offset="1" stop-color="#cfce28"/>
+  </linearGradient>
+  <linearGradient id="e" gradientTransform="matrix(1.0015 0 0 .99993 72.09 56.015)" gradientUnits="userSpaceOnUse" x1="43.844" x2="-60" y1="234" y2="234">
+    <stop offset="0" stop-color="#d5d3cf"/>
+    <stop offset=".038" stop-color="#e3e2df"/>
+    <stop offset=".077" stop-color="#c0bfbc"/>
+    <stop offset=".923" stop-color="#c0bfbc"/>
+    <stop offset=".962" stop-color="#e3e2df"/>
+    <stop offset="1" stop-color="#d5d3cf"/>
+  </linearGradient>
+  <radialGradient id="radialGradient946" cx="28.483" cy="195.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient944"/>
+  <radialGradient id="radialGradient954" cx="100.483" cy="261.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient944"/>
+  <radialGradient id="radialGradient956" cx="100.483" cy="239.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient944"/>
+  <radialGradient id="radialGradient958" cx="100.483" cy="217.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient944"/>
+  <radialGradient id="radialGradient960" cx="100.483" cy="195.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient1008"/>
+  <radialGradient id="radialGradient962" cx="76.483" cy="239.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient944"/>
+  <radialGradient id="radialGradient964" cx="76.483" cy="261.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient944"/>
+  <radialGradient id="radialGradient966" cx="52.483" cy="261.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient944"/>
+  <radialGradient id="radialGradient968" cx="28.483" cy="239.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient944"/>
+  <radialGradient id="radialGradient970" cx="28.483" cy="217.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient944"/>
+  <radialGradient id="radialGradient972" cx="52.483" cy="217.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient944"/>
+  <radialGradient id="radialGradient974" cx="52.483" cy="195.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient944"/>
+  <radialGradient id="radialGradient976" cx="76.483" cy="195.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient944"/>
+  <radialGradient id="radialGradient1020" cx="28.483" cy="261.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient1008"/>
+  <radialGradient id="radialGradient1022" cx="52.483" cy="239.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient1008"/>
+  <radialGradient id="radialGradient1024" cx="76.483" cy="217.803" gradientUnits="userSpaceOnUse" r="10" xlink:href="#linearGradient1008"/>
+  <filter id="filter1546" color-interpolation-filters="sRGB" height="1.214" width="1.214" x="-.11" y="-.11">
+    <feGaussianBlur stdDeviation=".89"/>
+  </filter>
+  <g transform="translate(0 -172)">
+    <rect fill="url(#e)" height="48" rx="8" width="104" x="12" y="240"/>
+    <path d="m20 10c-4.432 0-8 3.568-8 8v42 42c0 4.432 3.568 8 8 8h44 44c4.432 0 8-3.568 8-8v-42-42c0-4.432-3.568-8-8-8z" fill="#6767f7" transform="translate(0 172)"/>
+    <circle cx="28.483" cy="195.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="28.483" cy="195.803" fill="url(#radialGradient946)" r="10"/>
+    <circle cx="28.483" cy="217.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="28.483" cy="217.803" fill="url(#radialGradient970)" r="10"/>
+    <circle cx="28.483" cy="239.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="28.483" cy="239.803" fill="url(#radialGradient968)" r="10"/>
+    <circle cx="28.483" cy="261.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="28.483" cy="261.803" fill="url(#radialGradient1020)" r="10"/>
+    <circle cx="52.483" cy="195.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="52.483" cy="195.803" fill="url(#radialGradient974)" r="10"/>
+    <circle cx="52.483" cy="217.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="52.483" cy="217.803" fill="url(#radialGradient972)" r="10"/>
+    <circle cx="52.483" cy="239.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="52.483" cy="239.803" fill="url(#radialGradient1022)" r="10"/>
+    <circle cx="52.483" cy="261.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="52.483" cy="261.803" fill="url(#radialGradient966)" r="10"/>
+    <circle cx="76.483" cy="195.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="76.483" cy="195.803" fill="url(#radialGradient976)" r="10"/>
+    <circle cx="76.483" cy="217.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="76.483" cy="217.803" fill="url(#radialGradient1024)" r="10"/>
+    <circle cx="76.483" cy="239.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="76.483" cy="239.803" fill="url(#radialGradient962)" r="10"/>
+    <circle cx="76.483" cy="261.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="76.483" cy="261.803" fill="url(#radialGradient964)" r="10"/>
+    <circle cx="100.483" cy="195.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="100.483" cy="195.803" fill="url(#radialGradient960)" r="10"/>
+    <circle cx="100.483" cy="217.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="100.483" cy="217.803" fill="url(#radialGradient958)" r="10"/>
+    <circle cx="100.483" cy="239.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="100.483" cy="239.803" fill="url(#radialGradient956)" r="10"/>
+    <circle cx="100.483" cy="261.803" fill="#2b1515" filter="url(#filter1546)" r="10"/>
+    <circle cx="100.483" cy="261.803" fill="url(#radialGradient954)" r="10"/>
+    <ellipse cx="28.483" cy="195.803" fill="url(#radialGradient946)"/>
+  </g>
+</svg>

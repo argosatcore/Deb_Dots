@@ -1,0 +1,35 @@
+<svg height="128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <radialGradient id="m" cx="64" cy="247.702" gradientUnits="userSpaceOnUse" r="46">
+    <stop offset="0" stop-color="#5e5c64"/>
+    <stop offset=".739" stop-color="#c0bfbc"/>
+    <stop offset=".896" stop-color="#deddda"/>
+    <stop offset="1" stop-color="#77767b"/>
+  </radialGradient>
+  <linearGradient id="l" gradientUnits="userSpaceOnUse" x1="58" x2="70" y1="189" y2="189">
+    <stop offset="0" stop-color="#77767b"/>
+    <stop offset=".075" stop-color="#9a9996"/>
+    <stop offset=".445" stop-color="#deddda"/>
+    <stop offset=".834" stop-color="#b9b8b8"/>
+    <stop offset="1" stop-color="#77767b"/>
+  </linearGradient>
+  <linearGradient id="k" gradientUnits="userSpaceOnUse" x1="60" x2="68" y1="199.856" y2="199.856">
+    <stop offset="0" stop-color="#9a9996"/>
+    <stop offset=".119" stop-color="#c0bfbc"/>
+    <stop offset=".351" stop-color="#deddda"/>
+    <stop offset=".602" stop-color="#d2d1ce"/>
+    <stop offset=".853" stop-color="#bbbab7"/>
+    <stop offset="1" stop-color="#9a9996"/>
+  </linearGradient>
+  <g transform="translate(0 -172)">
+    <path d="m60 190h8v20h-8z" fill="url(#k)"/>
+    <path d="m58 184h12v10h-12z" fill="url(#l)"/>
+    <circle cx="64" cy="250" fill="url(#m)" r="46"/>
+    <circle cx="250" cy="-64" fill="#0074ee" r="38" transform="rotate(90)"/>
+    <path d="m63 217-.744 27.201c-2.636.692-4.254 3.074-4.256 5.799a6 6 0 0 0 3.844 5.592l-.217 3.902a2.374 2.374 0 1 0 4.746 0l-.217-3.896a6 6 0 0 0 3.844-5.598c-.003-2.725-1.709-5.105-4.344-5.797l-.656-27.203zm1 29a4 4 0 1 1 0 8 4 4 0 0 1 0-8z" fill="#f2f2f2"/>
+    <path d="m60 194h8v2h-8zm2-10v8h-2v-8zm4 0v8h-2v-8zm4 0v8h-2v-8z" opacity=".2"/>
+    <g transform="translate(0 172)">
+      <path d="m64 40a38 38 0 0 0 -38 38 38 38 0 0 0 .041016 1.167969 38 38 0 0 1 37.958984-37.167969 38 38 0 0 1 37.95898 36.832031 38 38 0 0 0 .04102-.832031 38 38 0 0 0 -38-38z" fill="#fcfcfc" opacity=".3"/>
+      <path d="m101.95898 76.832031a38 38 0 0 1 -37.95898 37.167969 38 38 0 0 1 -37.958984-36.832031 38 38 0 0 0 -.041016.832031 38 38 0 0 0 38 38 38 38 0 0 0 38-38 38 38 0 0 0 -.04102-1.167969z" opacity=".2"/>
+    </g>
+  </g>
+</svg>

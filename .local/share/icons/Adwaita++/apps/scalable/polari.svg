@@ -1,0 +1,22 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(51.00001 -156.999999)">
+    <g enable-background="new" fill="#f6f5f4" transform="matrix(-2.0000003 0 0 2.0000003 1245.0002 -1027.0002)">
+      <path d="m595.90647 639v12.99997l12.99995-12.99997z" fill-rule="evenodd"/>
+      <rect height="32" rx="4" width="40" x="588" y="612"/>
+    </g>
+    <g enable-background="new" fill="#57e389" transform="translate(-50.999989 -6.999985)">
+      <path d="m24.000059 233.99999v25.99995l25.999924-25.99995z" fill-rule="evenodd"/>
+      <rect height="64" rx="8" width="80" x="8" y="180"/>
+    </g>
+    <path d="m68.999978 251.00003v1.99996c0 4.43202-3.56798 8-8 8h-7.999997v-1.99998h7.999997c4.43202 0 8-3.56797 8-7.99998zm-79.999986 0c0 4.43201 3.5679808 7.99998 8.0000008 7.99998h40.0000062l15.999982 16.00001v1.99998l-15.999982-16.00001h-40.0000062c-4.43202 0-8.0000008-3.56798-8.0000008-8z" fill="#deddda" fill-rule="evenodd"/>
+    <path d="m-43.000008 227.00002v1.99997c0 4.43201 3.56798 8 8 8h8v-1.99999h-8c-4.43202 0-8-3.56798-8-7.99998zm79.999989 0c0 4.432-3.56798 7.99998-8 7.99998h-40.000007l-15.999982 16v1.99998l15.999982-16h40.000007c4.43202 0 8-3.56798 8-8z" fill="#2ec27e" fill-rule="evenodd"/>
+    <g enable-background="new" fill="#fff" transform="matrix(.25 0 -.03125 .25 -53.374989 207)">
+      <path d="m144-44h112v16h-112z"/>
+      <path d="m144 4h112v16h-112z"/>
+      <g transform="rotate(90)">
+        <path d="m-76-232h128v16h-128z"/>
+        <path d="m-76-184h128v16h-128z"/>
+      </g>
+    </g>
+  </g>
+</svg>

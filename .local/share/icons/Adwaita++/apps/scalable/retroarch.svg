@@ -1,0 +1,18 @@
+<svg height="128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="e" gradientTransform="matrix(1.0015 0 0 .99993 72.09 56.015)" gradientUnits="userSpaceOnUse" x1="43.844" x2="-60" y1="234" y2="234">
+    <stop offset="0" stop-color="#d5d3cf"/>
+    <stop offset=".038" stop-color="#e3e2df"/>
+    <stop offset=".077" stop-color="#c0bfbc"/>
+    <stop offset=".923" stop-color="#c0bfbc"/>
+    <stop offset=".962" stop-color="#e3e2df"/>
+    <stop offset="1" stop-color="#d5d3cf"/>
+  </linearGradient>
+  <g transform="translate(0 -172)">
+    <rect fill="url(#e)" height="48" rx="8" width="104" x="12" y="240"/>
+    <g>
+      <rect fill="url(#e)" height="48" rx="8" width="104" x="12" y="240"/>
+      <path d="m20 10c-4.432 0-8 3.568-8 8v42 42c0 4.432 3.568 8 8 8h44 44c4.432 0 8-3.568 8-8v-42-42c0-4.432-3.568-8-8-8z" fill="#ededed" transform="translate(0 172)"/>
+      <path d="m47.333334 210.33333 6.666667 10h-13.333333l-1.666666 6.66666h-7.5l2.5-10h-5l-5 20h4.707032 7.291665l-1.998697 6.66667h11.666666l-8.333334 10h10l6.666667-10h20l6.66667 10h10l-8.33334-10h11.66667l-1.9987-6.66667h11.998699l-4.999998-20h-5l2.5 10h-7.5l-1.66667-6.66666h-13.33333l6.66667-10h-5.000004l-6.666667 10h-10l-6.666667-10zm-1.666666 15h8.333333v8.33333h-8.333333zm28.333333 0h8.33333v8.33333h-8.33333z" fill="#444" stroke-width="1.666667"/>
+    </g>
+  </g>
+</svg>

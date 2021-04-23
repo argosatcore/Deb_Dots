@@ -1,0 +1,24 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="linearGradient965" gradientUnits="userSpaceOnUse" x1="48" x2="464" y1="44" y2="44">
+    <stop offset="0" stop-color="#77767b"/>
+    <stop offset=".05" stop-color="#c0bfbc"/>
+    <stop offset=".09999998" stop-color="#9a9996"/>
+    <stop offset=".89999938" stop-color="#9a9996"/>
+    <stop offset=".94999999" stop-color="#c0bfbc"/>
+    <stop offset="1" stop-color="#77767b"/>
+  </linearGradient>
+  <linearGradient id="linearGradient3318" gradientUnits="userSpaceOnUse" x1="64" x2="64" y1="-276" y2="-188.00003">
+    <stop offset="0" stop-color="#c061cb"/>
+    <stop offset="1" stop-color="#613583"/>
+  </linearGradient>
+  <radialGradient id="radialGradient3328" cx="62.137009" cy="208.93875" gradientTransform="matrix(0 .24369236 -1.9737901 .00000086 474.53825 172.95796)" gradientUnits="userSpaceOnUse" r="21.399162">
+    <stop offset="0" stop-color="#579ae8"/>
+    <stop offset="1" stop-color="#98c1f1" stop-opacity=".92"/>
+  </radialGradient>
+  <g transform="translate(0 -172)">
+    <rect fill="url(#linearGradient965)" height="376" rx="32" transform="matrix(.25 0 0 .25 0 225)" width="416" x="48" y="-124"/>
+    <rect fill="#deddda" height="96" rx="8" width="104" x="12" y="184"/>
+    <rect fill="url(#linearGradient3318)" height="87.999969" rx="4" ry="3.99997" transform="scale(1 -1)" width="96" x="16" y="-276"/>
+    <path d="m56.277743 188.10046-12.437121 49.54123 20.48467-2.01188-6.40146 36.94556 27.465114-53.48544-21.063654 1.90797 9.327839-32.89744z" fill="url(#radialGradient3328)"/>
+  </g>
+</svg>

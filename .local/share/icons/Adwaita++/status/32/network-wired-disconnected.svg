@@ -1,0 +1,20 @@
+<svg height="32" width="32" xmlns="http://www.w3.org/2000/svg">
+  <path d="m9 28-2-2h-4c-1.108 0-2-.892-2-2v-18c0-1.108.892-2 2-2h24c1.108 0 2 .892 2 2v18c0 1.108-.892 2-2 2h-4l-2 2z" opacity=".2"/>
+  <path d="m9 27-2-2h-4c-1.108 0-2-.892-2-2v-18c0-1.108.892-2 2-2h24c1.108 0 2 .892 2 2v18c0 1.108-.892 2-2 2h-4l-2 2z" fill="#afafb1"/>
+  <path d="m11 23-2-2h-4v-14h20v14h-4l-2 2z" opacity=".6"/>
+  <g fill="#f8c44e" transform="matrix(1 0 0 -1 -1 -1)">
+    <path d="m9-10h2v2h-2z"/>
+    <path d="m12-10h2v2h-2z"/>
+    <path d="m15-10h2v2h-2z"/>
+    <path d="m18-10h2v2h-2z"/>
+    <path d="m21-10h2v2h-2z"/>
+  </g>
+  <path d="m3 3c-1.108 0-2 .892-2 2v1c0-1.108.892-2 2-2h24c1.108 0 2 .892 2 2v-1c0-1.108-.892-2-2-2z" fill="#fff" opacity=".2"/>
+  <path d="m5 21v1h4l2 2h8l2-2h4v-1h-4l-2 2h-8l-2-2z" fill="#fff" opacity=".2"/>
+  <circle cx="24" cy="24" opacity=".2" r="8"/>
+  <circle cx="24" cy="23" fill="#db3c30" r="8"/>
+  <g fill="#fff" transform="matrix(.57142857 -.57142857 .57142857 .57142857 -16 21.857143)">
+    <path d="m28 35h12v2h-12z"/>
+    <path d="m-42 33h12v2h-12z" transform="rotate(-90)"/>
+  </g>
+</svg>

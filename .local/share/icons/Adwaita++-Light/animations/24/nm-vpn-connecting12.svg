@@ -1,0 +1,13 @@
+<svg height="24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="linearGradient3605" gradientTransform="matrix(-.97553 -.21985 -.21985 .97553 26.345 2.9317)" gradientUnits="userSpaceOnUse" x1="7" x2="19" y1="12" y2="5">
+    <stop offset="0" stop-color="#444" stop-opacity=".5"/>
+    <stop offset="1" stop-color="#444" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="linearGradient3611" gradientTransform="matrix(.97553 .21985 .21985 -.97553 -2.3442 21.068)" gradientUnits="userSpaceOnUse" x1="7" x2="17" y1="12" y2="12">
+    <stop offset="0" stop-color="#444"/>
+    <stop offset="1" stop-color="#444" stop-opacity=".5"/>
+  </linearGradient>
+  <path d="m5.9883 9.709c-.3698.0416-.7112.2762-.8184.752h.002c-.85 3.771 1.5175 7.517 5.2891 8.367.86.194 1.716.207 2.539.086v-2.039c-.674.145-1.383.164-2.1.002-2.6939-.607-4.386-3.282-3.7789-5.975.1786-.793-.5166-1.2623-1.1328-1.193z" fill="url(#linearGradient3611)"/>
+  <path d="m12.131 4.998c-3.2553-.0644-6.2154 2.1609-6.9591 5.461v.002l1.9511.439c.6071-2.693 3.283-4.3841 5.977-3.777 2.324.524 3.878 2.5918 3.877 4.879.008 0 .015-.002.023-.002.75 0 1.424.294 1.947.758.387-3.4957-1.897-6.7968-5.408-7.5881-.471-.1062-.943-.1626-1.408-.1719z" fill="url(#linearGradient3605)"/>
+  <path d="m17 13c-1.108 0-2 .91085-2 2.0312v.96875h-1v4h6v-4h-1v-.96875c0-1.12-.892-2.031-2-2.031zm0 1c.554 0 1 .4424 1 1v1h-2v-1c0-.5576.446-1 1-1z" fill="#444"/>
+</svg>

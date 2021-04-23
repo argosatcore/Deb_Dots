@@ -1,0 +1,21 @@
+<svg height="256" viewBox="0 0 67.73 67.73" width="256" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <filter id="filter10236" color-interpolation-filters="sRGB" height="1.0216" width="1.027" x="-.0135" y="-.0108">
+    <feGaussianBlur stdDeviation="1.98"/>
+  </filter>
+  <radialGradient id="radialGradient8980" cx="896" cy="-1275.2546" gradientTransform="matrix(1.2444444 0 0 .89046913 -891.02221 1223.5749)" gradientUnits="userSpaceOnUse" r="225">
+    <stop offset="0" stop-color="#50dbb5"/>
+    <stop offset="1" stop-color="#4a86cf"/>
+  </radialGradient>
+  <radialGradient id="radialGradient9084" cx="1173.7515" cy="119.63025" gradientTransform="matrix(2.8508489 0 0 2.0399407 -2954.188 -16.038618)" gradientUnits="userSpaceOnUse" r="225" xlink:href="#linearGradient6809-3"/>
+  <linearGradient id="linearGradient6809-3">
+    <stop offset="0" stop-color="#f6d123"/>
+    <stop offset="1" stop-color="#2dc0af" stop-opacity=".137795"/>
+  </linearGradient>
+  <radialGradient id="radialGradient9166" cx="1122.3131" cy="374.15021" gradientTransform="matrix(.82524673 .07801429 -.36681541 3.8802277 -552.34123 -1306.3444)" gradientUnits="userSpaceOnUse" r="225" xlink:href="#linearGradient6809-3"/>
+  <g enable-background="new" transform="matrix(.13537404 0 0 .13537404 -4.175642 33.30497)">
+    <path d="m104-210v440h16v-8h32v8h256v-8h32v8h16v-440h-16v16h-32v-16h-256v16h-32v-16zm16 40h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32z" filter="url(#filter10236)" opacity=".4"/>
+    <path d="m104 48v440h16v-8h32v8h256v-8h32v8h16v-440h-16v16h-32v-16h-256v16h-32v-16zm16 40h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32z" fill="url(#radialGradient8980)" transform="translate(0 -260)"/>
+    <path d="m104-212v440h16v-8h32v8h256v-8h32v8h16v-440h-16v16h-32v-16h-256v16h-32v-16zm16 40h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32zm-288 56h32v32h-32zm288 0h32v32h-32z" fill="url(#radialGradient9084)"/>
+    <path d="m168-212h224v72h-224zm0 432h224v8h-224zm0-168h224v144h-224zm0-168h224v144h-224z" fill="url(#radialGradient9166)" opacity=".414"/>
+  </g>
+</svg>

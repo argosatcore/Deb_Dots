@@ -1,0 +1,25 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <radialGradient id="radialGradient2319" cx="58.953751" cy="-1136.1257" gradientTransform="matrix(.27963724 0 0 .19167088 14.08685 422.59065)" gradientUnits="userSpaceOnUse" r="225">
+    <stop offset="0" stop-color="#62a0ea"/>
+    <stop offset="1" stop-color="#1a5fb4"/>
+  </radialGradient>
+  <radialGradient id="radialGradient2282" cx="312.7467" cy="-173.6787" gradientTransform="matrix(.60444443 0 0 .35619377 -109.038 345.86327)" gradientUnits="userSpaceOnUse" r="225">
+    <stop offset="0" stop-color="#ed333b"/>
+    <stop offset="1" stop-color="#1a5fb4" stop-opacity="0"/>
+  </radialGradient>
+  <g transform="translate(0 -172)">
+    <path d="m8 200v88h8v-8h8v8h80v-8h8v8h8v-88h-8v8h-8v-8h-80v8h-8v-8zm8 16h8v8h-8zm88 0h8v8h-8zm-88 16h8v8h-8zm88 0h8v8h-8zm-88 16h8v8h-8zm88 0h8v8h-8zm-88 16h8v8h-8zm88 0h8v8h-8z" fill="url(#radialGradient2319)"/>
+    <path d="m8 200v88h8v-8h8v8h80v-8h8v8h8v-88h-8v8h-8v-8h-80v8h-8v-8zm8 16h8v8h-8zm88 0h8v8h-8zm-88 16h8v8h-8zm88 0h8v8h-8zm-88 16h8v8h-8zm88 0h8v8h-8zm-88 16h8v8h-8zm88 0h8v8h-8z" fill="url(#radialGradient2282)"/>
+    <path d="m63.999999 218a20 20 0 0 0 -20 20 20 20 0 0 0 20 20 20 20 0 0 0 20-20 20 20 0 0 0 -20-20zm-7.90625 10h1.8125.1875c.34982-.003.69558.0774 1 .25l14 8c.6214.34377.9375 1.0469.9375 1.75s-.3161 1.40622-.9375 1.75l-14 8c-.30442.1724-.65018.252-1 .25h-.1875-1.8125z" opacity=".15"/>
+    <path d="m64 208a20 20 0 0 0 -20 20 20 20 0 0 0 20 20 20 20 0 0 0 20-20 20 20 0 0 0 -20-20zm-7.90625 10h1.8125.1875c.34982-.003.69558.0774 1 .25l14 8c.6214.34377.9375 1.0469.9375 1.75s-.3161 1.40622-.9375 1.75l-14 8c-.30442.1724-.65018.252-1 .25h-.1875-1.8125z" fill="#fff" transform="translate(-.000001 8)"/>
+    <g enable-background="new" opacity=".15">
+      <rect height="4" opacity="1" rx="2" width="64" x="31.999999" y="270"/>
+      <rect height="12" opacity="1" rx="6" width="12" x="39.999999" y="266"/>
+    </g>
+    <g enable-background="new" fill="#fff">
+      <rect height="4" rx="2" width="64" x="31.999999" y="268"/>
+      <rect height="12" rx="6" width="12" x="39.999999" y="264"/>
+    </g>
+    <path d="m16 213v3h8v-3zm88 0v3h8v-3zm-88 16v3h8v-3zm88 0v3h8v-3zm-88 16v3h8v-3zm88 0v3h8v-3zm-88 16v3h8v-3zm88 0v3h8v-3zm-88 16v3h8v-3zm88 0v3h8v-3zm-96 8v3h8v-3zm16 0v3h80v-3zm88 0v3h8v-3z" opacity=".25"/>
+  </g>
+</svg>

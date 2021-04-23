@@ -1,0 +1,7 @@
+<svg height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+  <path d="m0 0h22v22h-22z" opacity="0"/>
+  <g fill="none" stroke="#444" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2">
+    <path d="m5.0000007 10.999902h3.9999986m-3.9999986-4.0000025h3.9999986m-3.9999003 8.0000985v-7.9999964"/>
+    <path d="m13.000001 10.999902h3.999998m-3.999998-4.0000023h3.999998m-3.9999 8.0000983v-7.9999962"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg fill="none" height="22" viewBox="0 0 22 22" width="22" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#444">
+    <path d="m19 18h-1v1h1z"/>
+    <path d="m17 18h-1v1h1z"/>
+    <path d="m19 15h-1v1h1z"/>
+    <path d="m17 15h-1v1h1z"/>
+    <path d="m6 18h-1v1h1z"/>
+    <path d="m4 18h-1v1h1z"/>
+    <path d="m6 15h-1v1h1z"/>
+    <path d="m4 15h-1v1h1z"/>
+    <path d="m15 15h-8v4h8z"/>
+    <path d="m8.50001 13.9962 4.99999.0038v-.3029-.0314c.0005-.0584-.0194-.1163-.0625-.1672l-2-2.3415c-.0859-.1039-.2617-.1569-.4375-.157s-.3516.0526-.4375.1564l-1.99999 2.3384c-.04314.0508-.06314.1086-.0625.1671v.0313z"/>
+    <path clip-rule="evenodd" d="m16 4h-10v5h10zm-12-1c-.55228 0-1 .44772-1 1v5c0 .55228.44772 1 1 1h14c.5523 0 1-.44771 1-1v-5c0-.55228-.4477-1-1-1zm0 1h1v1h-1zm0 2h1v1h-1zm1 2h-1v1h1zm13-4h-1v1h1zm0 2h-1v1h1zm-1 2h1v1h-1z" fill-rule="evenodd"/>
+    <path d="m10 8v-3l2 1.5z"/>
+  </g>
+</svg>

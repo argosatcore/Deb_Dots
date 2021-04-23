@@ -1,0 +1,38 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <radialGradient id="radialGradient1018" cx="106.667" cy="-60.348" gradientTransform="matrix(.21428571 0 0 .32237036 9.142857 245.58768)" gradientUnits="userSpaceOnUse" r="225">
+    <stop offset="0" stop-color="#50dbb5"/>
+    <stop offset="1" stop-color="#4a86cf"/>
+  </radialGradient>
+  <radialGradient id="radialGradient1020" cx="276.588" cy="218.278" gradientTransform="matrix(.38857143 0 0 .52385183 -35.474283 148.05445)" gradientUnits="userSpaceOnUse" r="225">
+    <stop offset="0" stop-color="#98c1f1"/>
+    <stop offset="1" stop-color="#2dc0af" stop-opacity=".137795"/>
+  </radialGradient>
+  <radialGradient id="radialGradient1038" cx="317.765" cy="86.748" gradientTransform="matrix(.38857143 0 0 .2757274 -35.474283 -281.78533)" gradientUnits="userSpaceOnUse" r="225">
+    <stop offset="0" stop-color="#1a5fb4"/>
+    <stop offset="1" stop-color="#98c1f1" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="linearGradient1064" gradientUnits="userSpaceOnUse" x1="8.000028" x2="120.000028" y1="288" y2="288">
+    <stop offset="0" stop-color="#77767b"/>
+    <stop offset=".036" stop-color="#c0bfbc"/>
+    <stop offset=".071" stop-color="#9a9996"/>
+    <stop offset=".929" stop-color="#9a9996"/>
+    <stop offset=".964" stop-color="#c0bfbc"/>
+    <stop offset="1" stop-color="#77767b"/>
+  </linearGradient>
+  <g transform="translate(0 -172)">
+    <rect fill="url(#linearGradient1064)" height="76" rx="8" width="112" x="8" y="212"/>
+    <rect fill="#deddda" height="84" rx="8" width="112" x="8" y="200"/>
+    <rect fill="#241f31" height="76" rx="4" width="104" x="12" y="204"/>
+    <path d="m16 208h96v68h-96z" fill="url(#radialGradient1018)"/>
+    <path d="m16-276h96v68h-96z" fill="url(#radialGradient1038)" opacity=".5" transform="scale(1 -1)"/>
+    <path d="m16 208h96v68h-96z" fill="url(#radialGradient1020)" opacity=".5"/>
+    <path d="m16 208h96v68h-96z" fill="#1a5fb4" opacity=".242"/>
+    <path d="m60 228c-1.1 0-2 .9-2 2v2h-6c-1.104 0-2 .9-2 2v16c0 1.1.896 2 2 2h24c1.104 0 2-.9 2-2v-16c0-1.1-.896-2-2-2h-6v-2c0-1.1-.9-2-2-2zm4 6a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm0 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" fill="#fff"/>
+    <g fill="none" opacity=".5" stroke="#fff" stroke-linecap="round" stroke-width="2" transform="translate(0 12)">
+      <path d="m19 209v-10h10"/>
+      <path d="m109.01415 209v-10h-10.000009"/>
+      <path d="m109.01415 251.01414v10h-10.000009"/>
+      <path d="m19 251.01414v10h10"/>
+    </g>
+  </g>
+</svg>

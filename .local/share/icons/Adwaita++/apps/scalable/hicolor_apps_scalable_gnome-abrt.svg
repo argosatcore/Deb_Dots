@@ -1,0 +1,27 @@
+<svg height="128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="h" gradientTransform="matrix(.25 0 0 .24306 -32 93.564)" gradientUnits="userSpaceOnUse" x1="177" x2="600" y1="619.964" y2="619.964">
+    <stop offset="0" stop-color="#424048"/>
+    <stop offset=".047" stop-color="#f6f5f4"/>
+    <stop offset=".097" stop-color="#949390"/>
+    <stop offset=".9" stop-color="#d5d3cf"/>
+    <stop offset=".95" stop-color="#f6f5f4"/>
+    <stop offset="1" stop-color="#424048"/>
+  </linearGradient>
+  <radialGradient id="i" cx="64.972" cy="226" gradientTransform="matrix(1.17689 0 0 1.20378 -11.493 -46.054)" gradientUnits="userSpaceOnUse" r="44.972">
+    <stop offset="0" stop-color="#f9f06b"/>
+    <stop offset=".239" stop-color="#f5d859"/>
+    <stop offset=".597" stop-color="#e66100"/>
+    <stop offset=".834" stop-color="#e01b24"/>
+    <stop offset="1" stop-color="#e01b24"/>
+  </radialGradient>
+  <g transform="translate(0 -172)">
+    <rect fill="url(#h)" height="18" rx="9" width="106" x="12" y="270"/>
+    <path d="m48 180h31.945c8.864 0 14.352 7.29 16 16l14 76h-89.945l12-76c1.382-8.756 7.136-16 16-16z" fill="url(#i)"/>
+    <path d="m56 180c-8.864 0-14.618 7.244-16 16l-12 76h10l12-76c1.382-8.756 7.136-16 16-16z" fill="#fff" opacity=".081"/>
+    <path d="m21 269.823a8.975 8.975 0 0 0 -8.771 7 8.975 8.975 0 0 0 8.771 7h88a8.975 8.975 0 0 0 8.771-7 8.975 8.975 0 0 0 -8.771-7z" fill="#f6f5f4"/>
+    <g fill="#fff">
+      <rect height="40" rx="4" width="8" x="60" y="200"/>
+      <rect height="8" rx="4" width="8" x="60" y="244"/>
+    </g>
+  </g>
+</svg>

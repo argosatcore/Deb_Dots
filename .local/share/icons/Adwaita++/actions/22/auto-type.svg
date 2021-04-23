@@ -1,0 +1,10 @@
+<svg height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#444" transform="translate(3 -3)">
+    <path d="m5 18 3 4 3-4z"/>
+    <rect height="4" rx="1" width="4" x="1" y="8"/>
+    <rect height="4" rx="1" width="4" x="6" y="8"/>
+    <rect height="4" rx="1" width="4" x="11" y="8"/>
+    <rect height="4" rx="1" width="4" x="10" y="13"/>
+    <rect height="4" rx="1" width="7" x="2" y="13"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="linearGradient965" gradientUnits="userSpaceOnUse" x1="12" x2="116" y1="64" y2="64">
+    <stop offset="0" stop-color="#77767b"/>
+    <stop offset=".05" stop-color="#c0bfbc"/>
+    <stop offset=".1" stop-color="#9a9996"/>
+    <stop offset=".9" stop-color="#9a9996"/>
+    <stop offset=".95" stop-color="#c0bfbc"/>
+    <stop offset="1" stop-color="#77767b"/>
+  </linearGradient>
+  <rect fill="url(#linearGradient965)" height="94" rx="8" width="104" x="12" y="22"/>
+  <rect fill="#deddda" height="96" rx="8" width="104" x="12" y="12"/>
+  <rect fill="#26a269" height="88" rx="4" transform="scale(1 -1)" width="96" x="16" y="-104"/>
+  <g transform="matrix(.47198511 0 0 .47198511 3.585906 -.414094)">
+    <path d="m55.5 94.022h16.111v36.474l8.056 4.557v33.08l-24.167-14.516z" fill="#33d17a"/>
+    <path d="m55.5 67.553 97.041 56.031-24.617 14.203-72.424-41.816z" fill="#8ff0a4"/>
+    <path d="m168.278 138.718-63.204 36.49 22.926 13.239 40.278-23.263z" fill="#8ff0a4"/>
+    <path d="m87.722 138.718v26.466l40.278 23.252 22.926-13.228z" fill="#57e389"/>
+    <path d="m200.5 94.022h-16.111v36.474l-8.056 4.557v33.08l24.167-14.516z" fill="#33d17a"/>
+    <path d="m200.5 67.553-97.041 56.031 24.617 14.203 72.424-41.816z" fill="#57e389"/>
+  </g>
+</svg>

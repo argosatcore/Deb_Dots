@@ -1,0 +1,25 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="linearGradient1064" gradientUnits="userSpaceOnUse" x1="8.000028" x2="120.000028" y1="288" y2="288">
+    <stop offset="0" stop-color="#77767b"/>
+    <stop offset=".036" stop-color="#c0bfbc"/>
+    <stop offset=".071" stop-color="#9a9996"/>
+    <stop offset=".929" stop-color="#9a9996"/>
+    <stop offset=".964" stop-color="#c0bfbc"/>
+    <stop offset="1" stop-color="#77767b"/>
+  </linearGradient>
+  <g transform="translate(0 -172)">
+    <rect fill="url(#linearGradient1064)" height="76" rx="8" width="112" x="8" y="212"/>
+    <rect fill="#deddda" height="84" rx="8" width="112" x="8" y="200"/>
+    <rect fill="#241f31" height="76" rx="4" width="104" x="12" y="204"/>
+    <path d="m16 208h96v68h-96z" fill="#613583"/>
+    <g transform="matrix(4.8398213 0 0 4.8398213 -1243.977 -1646.7523)">
+      <path d="m274.11 387c.61968.75088.99548 1.7106.99548 2.7602 0 2.399-1.9448 4.3439-4.3439 4.3439-1.0496 0-2.0093-.37579-2.7602-.99547.52525 2.2389 2.5331 3.8914 4.9321 3.8914 2.7989 0 5.0679-2.269 5.0679-5.0679 0-2.3991-1.6525-4.4069-3.8914-4.9321z" fill="#f6f5f4"/>
+      <g fill="#e5a50a">
+        <rect height="1.442" rx=".721" width="1.442" x="267.79" y="383.79"/>
+        <rect height="1.398" rx=".699" width="1.398" x="271.81" y="384.81"/>
+        <rect height="1.442" rx=".721" width="1.442" x="268.79" y="386.79"/>
+      </g>
+      <path d="m265 393-.74508-2.2549-2.2549-.74508 2.2549-.74508.74508-2.2549.74508 2.2549 2.2549.74508-2.2549.74508z" fill="#f6d32d" transform="translate(.50492 -3.4951)"/>
+    </g>
+  </g>
+</svg>

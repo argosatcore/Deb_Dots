@@ -1,0 +1,36 @@
+<svg enable-background="new" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <radialGradient id="radialGradient1030" cx="64" cy="194.19" gradientTransform="matrix(-5.1570247 .00000064 -.00000033 -1.3216783 266.04961 -12.111934)" gradientUnits="userSpaceOnUse" r="44">
+    <stop offset="0" stop-color="#fff"/>
+    <stop offset="1" stop-color="#fff" stop-opacity=".094118"/>
+  </radialGradient>
+  <linearGradient id="linearGradient965" gradientTransform="matrix(.26923078 0 0 .21808511 -4.92308 233.04255)" gradientUnits="userSpaceOnUse" x1="48" x2="464" y1="44" y2="44">
+    <stop offset="0" stop-color="#77767b"/>
+    <stop offset=".05" stop-color="#c0bfbc"/>
+    <stop offset=".1" stop-color="#9a9996"/>
+    <stop offset=".9" stop-color="#9a9996"/>
+    <stop offset=".95" stop-color="#c0bfbc"/>
+    <stop offset="1" stop-color="#77767b"/>
+  </linearGradient>
+  <g transform="translate(0 -172)">
+    <rect fill="url(#linearGradient965)" height="82" rx="8" width="112" x="8" y="206"/>
+    <rect fill="#deddda" height="80" rx="8" width="112" x="8" y="200"/>
+    <rect fill="#241f31" height="72" rx="4" transform="scale(1 -1)" width="104" x="12" y="-276"/>
+    <path d="m-112-272h96v63h-96z" fill="url(#radialGradient1030)" opacity=".05" transform="scale(-1)"/>
+    <g enable-background="new" fill="#fff" transform="matrix(.50000021 0 0 .50000021 2.99999 107.99996)">
+      <path d="m44.012301 210.88755-14.012301-7.61573v4.72818l9.710724 4.62951v.1422l-9.710724 5.22829v4.72818l14.012301-8.21451z"/>
+      <path d="m47.999998 224 .000002 4h16.00001l-.000002-4z"/>
+    </g>
+    <path d="m62 202h4v78h-4z" fill="#deddda"/>
+    <path d="m240-118h4v54h-4z" fill="#deddda" transform="rotate(90)"/>
+    <g fill="#fff">
+      <g enable-background="new" transform="matrix(.50000021 0 0 .50000021 55.999994 107.99996)">
+        <path d="m44.012301 210.88755-14.012301-7.61573v4.72818l9.710724 4.62951v.1422l-9.710724 5.22829v4.72818l14.012301-8.21451z"/>
+        <path d="m47.999998 224 .000002 4h16.00001l-.000002-4z"/>
+      </g>
+      <g enable-background="new" transform="matrix(.50000021 0 0 .50000021 56.999994 147.99996)">
+        <path d="m44.012301 210.88755-14.012301-7.61573v4.72818l9.710724 4.62951v.1422l-9.710724 5.22829v4.72818l14.012301-8.21451z"/>
+        <path d="m47.999998 224 .000002 4h16.00001l-.000002-4z"/>
+      </g>
+    </g>
+  </g>
+</svg>

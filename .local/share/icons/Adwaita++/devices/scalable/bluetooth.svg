@@ -1,0 +1,13 @@
+<svg fill="none" height="128" viewBox="0 0 128 128" width="128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <linearGradient id="paint0_linear" gradientUnits="userSpaceOnUse" x1="116" x2="12" y1="117.999" y2="117.999">
+    <stop offset="0" stop-color="#d5d3cf"/>
+    <stop offset=".038" stop-color="#e3e2df"/>
+    <stop offset=".077" stop-color="#c0bfbc"/>
+    <stop offset=".923" stop-color="#c0bfbc"/>
+    <stop offset=".962" stop-color="#e3e2df"/>
+    <stop offset="1" stop-color="#d5d3cf"/>
+  </linearGradient>
+  <path d="m108 68h-88c-4.4183 0-8 3.5817-8 8v32c0 4.418 3.5817 8 8 8h88c4.418 0 8-3.582 8-8v-32c0-4.4183-3.582-8-8-8z" fill="url(#paint0_linear)"/>
+  <path d="m20 10c-4.432 0-8 3.568-8 8v42 42c0 4.432 3.568 8 8 8h44 44c4.432 0 8-3.568 8-8v-42-42c0-4.432-3.568-8-8-8z" fill="#3584e4"/>
+  <path clip-rule="evenodd" d="m60.2676 20 25.2217 23.8205-17.2999 15.3777 17.136 17.1361-25.0578 23.6657v-33.7602l-12.9469 11.5084-4.8012-5.4014 15.1402-13.458-15.149-15.1491 5.1101-5.1101 12.6468 12.6469zm7.2268 48.7235 7.4627 7.4627-7.4627 7.0481zm0-18.5766v-13.3812l7.2988 6.8933z" fill="#fff" fill-rule="evenodd"/>
+</svg>

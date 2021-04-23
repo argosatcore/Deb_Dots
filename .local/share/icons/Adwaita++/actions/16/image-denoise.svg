@@ -1,0 +1,23 @@
+<svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#474747">
+    <path d="m1 1h2v2h-2z"/>
+    <path d="m3 1h2v2h-2z"/>
+    <path d="m5 1h2v2h-2z"/>
+    <path d="m5 3h2v2h-2z"/>
+    <path d="m3 5h2v2h-2z"/>
+    <path d="m1 7h2v2h-2z"/>
+    <path d="m3 9h2v2h-2z"/>
+    <path d="m5 7h2v2h-2z"/>
+    <path d="m7 5h2v2h-2z"/>
+    <path d="m9 5h2v2h-2z"/>
+    <path d="m9 1h2v2h-2z"/>
+    <path d="m11 3h2v2h-2z"/>
+    <path d="m11 9h2v2h-2z"/>
+    <path d="m7 11h2v2h-2z"/>
+    <path d="m9 13h2v2h-2z"/>
+    <path d="m3 13h2v2h-2z"/>
+    <path d="m13 11h2v2h-2z"/>
+    <path d="m13 13h2v2h-2z"/>
+    <path d="m13 13h2v2h-2z"/>
+  </g>
+</svg>

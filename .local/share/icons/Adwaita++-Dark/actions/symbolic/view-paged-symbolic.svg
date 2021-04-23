@@ -1,0 +1,10 @@
+<svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#e6ddff" transform="translate(-161 -867)">
+    <path d="m162 867v1 11 1h1 10 1v-1-11-1h-1-10zm2 2h8v9h-8z"/>
+    <path d="m175 870v11h-10v2h12v-13z"/>
+    <g transform="scale(-1 1)">
+      <rect height="2" opacity=".35" rx=".375" width="4" x="-170" y="871"/>
+      <rect height="2" opacity=".35" rx=".375" width="4" x="-170" y="874"/>
+    </g>
+  </g>
+</svg>
