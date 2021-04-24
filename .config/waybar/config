@@ -28,7 +28,6 @@
     },
     "sway/window": {
        "format": "{}",
-       "max-length": 50,
        "on-click-middle": "sway kill"
     },
     "idle_inhibitor": {

@@ -2,7 +2,7 @@
 #Bootstrapping script for "Sidified" Debian systems, Wayland edition.
 #REMEMBER: This script must be run from the home directory, otherwise setting up the dotfiles will fail.
 
-echo 'Initializing bootstrap'
+echo 'Initializing bootstrap...'
 echo ' '
 echo 'Updating system...'
 echo ' '
@@ -13,9 +13,10 @@ echo 'Installing commonly used packages...'
 sudo apt install -y \
 apt-listbugs \
 apt-listchanges \
-arc-theme \
 bash-completion \
 blender \
+breeze-gtk-theme \
+breeze-icon-theme \
 brightnessctl \
 default-jdk \
 deja-dup \
@@ -59,7 +60,7 @@ wf-recorder \
 wtype \
 youtube-dl
 echo ' '
-echo 'Removing firefox-esr'
+echo 'Removing firefox-esr...'
 sudo apt remove firefox-esr
 echo ' '
 echo 'Setting up flatpaks...'
@@ -75,7 +76,7 @@ echo 'Capturing dotfiles...'
 echo ' '
 git clone https://github.com/argosatcore/Deb_Dots.git 
 echo ' ' 
-echo 'Deploying  dotfiles.'
+echo 'Deploying  dotfiles...'
 echo ' '
 cd Deb_Dots
 cd Pictures
