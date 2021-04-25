@@ -45,7 +45,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 - **Gapless single client:** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
 
 ## Stuff referenced by these configs
-All of which are `apt install`able in Debian Sid:
+All of which are `apt install`able on Debian Sid:
 
 - `foot`: minimalist Wayland native terminal emulator.
 - `gammastep`: Screen temperature manager.
