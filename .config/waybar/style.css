@@ -31,7 +31,7 @@ window#waybar.solo {
 */
 
 #workspaces button {
-    padding: 0 10px;
+    padding: 0 5px;
     background-color: transparent;
     color: #ffffff;
     /* Use box-shadow instead of border so the text isn't offset */

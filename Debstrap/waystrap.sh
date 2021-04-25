@@ -13,10 +13,9 @@ echo 'Installing commonly used packages...'
 sudo apt install -y \
 apt-listbugs \
 apt-listchanges \
+arc-theme \
 bash-completion \
 blender \
-breeze-gtk-theme \
-breeze-icon-theme \
 brightnessctl \
 default-jdk \
 deja-dup \
@@ -98,7 +97,7 @@ mv foot/ ~/.config/
 cd ..
 mv README.md ~/
 mv .git ~/
-sudo mv .vim ~/
+sudo mv .vim/ ~/
 mv .tmux.conf ~/
 sudo mv .vimrc ~/
 sudo mv .bashrc ~/
