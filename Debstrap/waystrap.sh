@@ -13,7 +13,6 @@ echo 'Installing commonly used packages...'
 sudo apt install -y \
 apt-listbugs \
 apt-listchanges \
-arc-theme \
 bash-completion \
 blender \
 brightnessctl \
@@ -85,7 +84,6 @@ cd .local
 mv bin/ ~/.local/
 cd share/
 mv fonts/ ~/.local/share/
-mv icons/ ~/.local/share/
 cd ..
 cd ..
 cd .config/

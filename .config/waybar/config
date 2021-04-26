@@ -9,7 +9,7 @@
     "modules-right": ["idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "battery#bat2", "tray", "custom/date"],
     // Modules configuration
     // "sway/workspaces": {
-    //     "disable-scroll": true,
+         "disable-scroll": false,
     //     "all-outputs": true,
     //     "format": "{name}: {icon}",
     //     "format-icons": {

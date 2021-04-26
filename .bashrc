@@ -46,6 +46,7 @@
 	alias lookapt='apt search'
 	alias throwapt='sudo apt remove'
 	alias capture='sudo apt install'
+	alias debcount='dpkg -S . | wc -l'
 	alias colorp='grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-'
 	alias configheader='toilet -f pagga'
 

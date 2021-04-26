@@ -324,21 +324,7 @@
 	bindsym $mod+Shift+b exec swaymsg border toggle
 
 	# Colors:
-# Arc theme blue:
-#	set $active #5294E2
-
-# KDE Breeze's blue:
-	set $active #3DAEE9
-
-# Firefox highlight blue:
-#	set $active #3584E4 
-
-# Arch Linux's blue:
-#	set $active #0F94D2
-	
-#	set $active #88C0D0
-#	set $active #4A85CB
-#	set $active 	#FF4040
+	set $active #3584E4
 	set $unfocused	#FFFFFF
 	set $fg		#FFFFFF
 	set $bg		#383c4a

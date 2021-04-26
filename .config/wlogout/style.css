@@ -2,11 +2,11 @@
 	background-image: none;
 }
 window {
-	background-color: rgba(49, 54, 59, 1.0);
+	background-color: rgba(53, 53, 53, 1.0);
 }
 button {
     color: #FFFFFF;
-	background-color: #383C4A;
+	background-color: #323232;
 	border-style: solid;
 	border-width: 2px;
 	background-repeat: no-repeat;
@@ -15,7 +15,7 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: #5294E2;
+	background-color: #3584E4;
 	outline-style: none;
 }
 
