@@ -4,7 +4,7 @@
     (icon-name "gimp-cursor")
     (name "Core Pointer")
     (tool-options "GimpHistogramOptions"
-        (tool "gimp-curves-tool"))
+        (tool "gimp-levels-tool"))
     (use-fg-bg no)
     (use-opacity-paint-mode no)
     (use-brush no)

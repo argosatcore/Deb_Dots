@@ -85,7 +85,7 @@
     (size 948 710))
 (session-info "toplevel"
     (factory-entry "gimp-file-save-dialog")
-    (position 209 40)
+    (position 209 38)
     (size 948 710))
 (session-info "toplevel"
     (factory-entry "gimp-image-new-dialog")
@@ -95,8 +95,8 @@
     (position 498 310))
 (session-info "toplevel"
     (factory-entry "gimp-levels-tool-dialog")
-    (position 873 127)
-    (size 396 522))
+    (position 108 115)
+    (size 396 523))
 (session-info "toplevel"
     (factory-entry "gimp-curves-tool-dialog")
     (position 732 100)

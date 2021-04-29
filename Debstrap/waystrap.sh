@@ -102,4 +102,8 @@ sudo mv .bashrc ~/
 cd 
 rm -rf Deb_Dots/
 echo ' '
+echo 'Enabling trimming of SSD.'
+sudo systemctl enable fstrim.timer
+sudo systemctl start fstrim.timer
+echo ' '
 echo 'Bootstrapping complete. Welcome back, Argos.'
