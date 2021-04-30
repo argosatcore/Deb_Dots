@@ -5,8 +5,8 @@
 (history-item "layers-alpha-add" 0)
 (history-item "file-export-as" 1)
 (history-item "edit-clear" 0)
-(history-item "image-resize" 1)
-(history-item "file-quit" 1)
+(history-item "image-resize" 0)
+(history-item "file-quit" 2)
 (history-item "edit-paste" 0)
 (history-item "filters-levels" 1)
 (history-item "edit-copy" 0)
@@ -24,6 +24,9 @@
 (history-item "dialogs-about" 0)
 (history-item "image-flip-vertical" 0)
 (history-item "drawable-flip-horizontal" 0)
-(history-item "layers-resize-to-image" 1)
+(history-item "layers-resize-to-image" 0)
+(history-item "tools-smudge" 0)
+(history-item "tools-scale" 0)
+(history-item "image-scale" 1)
 
 # end of action-history

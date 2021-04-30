@@ -17,6 +17,8 @@
 
 
 # ------Handy aliases:
+	
+	#General use:
 	alias ll='ls -alF'
 	alias la='ls -A'
 	alias l='ls -CF'
@@ -40,6 +42,10 @@
 	alias ws='watch sensors'
 	alias n='nnn'
 	alias c='clear'
+	alias colorp='grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-'
+	alias configheader='toilet -f pagga'
+
+	#Apt:
 	alias aptdate='sudo apt update'
 	alias aptgradable='apt list --upgradable'
 	alias aptgrade='sudo apt upgrade'
@@ -47,8 +53,11 @@
 	alias throwapt='sudo apt remove'
 	alias capture='sudo apt install'
 	alias debcount='dpkg -S . | wc -l'
-	alias colorp='grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-'
-	alias configheader='toilet -f pagga'
+	
+	#Systemd:
+	alias sysd-all='systemctl list-units --type=service'
+	alias sysd-active='systemctl list-units --type=service --state=active'
+	alias sysd-running='systemctl list-units --type=service --state=running '
 
 
 # ------Vim mode:

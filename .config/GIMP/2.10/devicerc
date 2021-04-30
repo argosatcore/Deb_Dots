@@ -3,9 +3,10 @@
 (GimpDeviceInfo "Core Pointer"
     (icon-name "gimp-cursor")
     (name "Core Pointer")
-    (tool-options "GimpHistogramOptions"
-        (tool "gimp-levels-tool"))
-    (use-fg-bg no)
+    (tool-options "GimpTransformGridOptions"
+        (tool "gimp-scale-tool")
+        (type image))
+    (use-fg-bg yes)
     (use-opacity-paint-mode no)
     (use-brush no)
     (use-dynamics no)
