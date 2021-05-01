@@ -31,7 +31,7 @@
 	# Include system sway variables:
 	include /etc/sway/config-vars.d/*
 
-	#Floating windows list:
+	# Floating windows list:
 	for_window [class="feh"] floating enable
 	for_window [app_id="eog"] floating enable
 	for_window [app_id="gnome-calculator"] floating enable
@@ -50,7 +50,7 @@
 	# Exit sway:
 	bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 
-	#Wofi as a power menu:
+	# Wofi as a power menu:
 	#bindsym $mod+Shift+q exec bash .local/bin/scripts/wofi/poweroffreboot
 	
 	# Use wlogout as a session menu:
@@ -69,7 +69,7 @@
 #-- Monitors Output: --
 #----------------------
 
-	#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+	# output HDMI-A-1 resolution 1920x1080 position 1920,0
 	# You can get the names of your outputs by running: swaymsg -t get_outputs
 
 	# Mouse pointer moves to the newly-focused output.
@@ -80,7 +80,7 @@
 #-- Idle configuration: --
 #-------------------------
 	
-	#Launch swayidle after 5 minutes of inactivity:
+	# Launch swayidle after 5 minutes of inactivity:
 	exec swayidle -w \
 	          timeout 300 'swaylock -f -c 000000' \
 	          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
@@ -91,13 +91,13 @@
 #-- Input configuration: --
 #--------------------------
 	
-	#Keyboard layout:
+	# Keyboard layout:
 	input * xkb_layout "latam"
 
-	#Mouse layout:
+	# Mouse layout:
 	input * left_handed enabled
 
-	#Swap caps with escape
+	# Swap caps with escape
 	input "type:keyboard" xkb_options caps:swapescape
 
 	# Hide mouse cursor after a period of inactivity.
@@ -125,7 +125,7 @@
 	# Launch web browser:
 	bindsym $mod+i exec firefox
 	
-	#Screenshooting:
+	# Screenshooting:
 	bindsym $mod+Print	exec grimshot --notify save active
 	bindsym Shift+Print	exec grimshot --notify save area
 	bindsym Print		exec grimshot --notify save output
@@ -139,7 +139,7 @@
 #-- Moving around: --
 #--------------------
 
-	#Mobe to the next or previous workspace:
+	# Move to the next or previous workspace:
 	bindsym $mod+Next workspace next_on_output --create
 	bindsym $mod+Prior workspace prev_on_output --create
 
@@ -262,21 +262,22 @@
 #-- Panel: --
 #------------
 
-	#Waybar
+	# Waybar
 	bar {
 		swaybar_command waybar
 	}
 	
 	include /etc/sway/config.d/*
 	
-	#Hide/unhide waybar:
+	# Hide/unhide waybar:
 	bindsym $mod+x exec killall -SIGUSR1 waybar
+
 
 #------------
 #-- Audio: --
 #------------
 
-	#Audio keybindings:
+	# Audio keybindings:
 	set $refresh_i3status killall -SIGUSR1 i3status
 	bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
 	bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
@@ -288,14 +289,14 @@
 #-- Screen brightness: --
 #------------------------
 
-	#Adjust brightness control:
+	# Adjust brightness control:
 	bindsym XF86MonBrightnessUp exec brightnessctl set +5%
 	bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
-	#Set screen brightness to 5% on start up:
+	# Set screen brightness to 5% on start up:
 	exec --no-startup-id brightnessctl set 5%
 
-	#Set screen color temperature:
+	# Set screen color temperature:
 	exec --no-startup-id gammastep -l 9.83333:-83.75  
 
 
@@ -311,11 +312,11 @@
 #-- Graphical appearance: --
 #---------------------------
 
-	#Gaps
+	# Gaps
 	gaps inner 7
 	smart_gaps on
 
-	#Borders:
+	# Borders:
 	default_border pixel 2 
 	smart_borders on
 	default_floating_border normal 2

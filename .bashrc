@@ -141,7 +141,7 @@
 # ------Uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+	#force_color_prompt=yes
 
 	if [ -n "$force_color_prompt" ]; then
 	    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -191,7 +191,7 @@
 
 
 # ------Colored GCC warnings and errors:
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+	#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 
 # ------Add an "alert" alias for long running commands.  Use like so:
@@ -203,7 +203,6 @@
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
-
 	if [ -f ~/.bash_aliases ]; then
     	. ~/.bash_aliases
 	fi
