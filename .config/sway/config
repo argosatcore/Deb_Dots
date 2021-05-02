@@ -103,6 +103,7 @@
 	# Hide mouse cursor after a period of inactivity.
 	seat seat0 hide_cursor 3000
 
+
 #-------------------
 #-- Applications: --
 #-------------------

@@ -1,5 +1,5 @@
 #!/bin/sh
-#Bootstrapping script for "Sidified" Debian systems, Wayland edition.
+#Bootstrapping script for "Sidified" Debian systems - Wayland edition.
 #REMEMBER: This script must be run from the home directory, otherwise setting up the dotfiles will fail.
 
 echo 'Initializing bootstrap...'
@@ -11,52 +11,52 @@ sudo apt upgrade -y
 echo ' '
 echo 'Installing commonly used packages...'
 sudo apt install -y \
-apt-listbugs \
-apt-listchanges \
-bash-completion \
-blender \
-brightnessctl \
-default-jdk \
-deja-dup \
-firefox \
-fonts-font-awesome \
-foot \
-fzf \
-gammastep \
-gimp \
-git \
-grimshot \
-gucharmap \
-htop \
-inkscape \
-librecad \
-libreoffice-common \
-lm-sensors \
-lollypop \
-mako-notifier \
-needrestart \
-neofetch \
-neovim \
-nnn \
-pavucontrol \
-printer-driver-escpr \
-reportbug-gtk \
-scribus \
-sway \
-swaylock \
-swayidle \
-tlp \
-tmux \
-texlive-full \
-vim-gtk \
-vlc \
-waybar \
-wdisplays \
-wlogout \
-wofi \
-wf-recorder \
-wtype \
-youtube-dl
+	apt-listbugs \
+	apt-listchanges \
+	bash-completion \
+	blender \
+	brightnessctl \
+	default-jdk \
+	deja-dup \
+	firefox \
+	fonts-font-awesome \
+	foot \
+	fzf \
+	gammastep \
+	gimp \
+	git \
+	grimshot \
+	gucharmap \
+	htop \
+	inkscape \
+	librecad \
+	libreoffice-common \
+	lm-sensors \
+	lollypop \
+	mako-notifier \
+	needrestart \
+	neofetch \
+	neovim \
+	nnn \
+	pavucontrol \
+	printer-driver-escpr \
+	reportbug-gtk \
+	scribus \
+	sway \
+	swaylock \
+	swayidle \
+	tlp \
+	tmux \
+	texlive-full \
+	vim-gtk \
+	vlc \
+	waybar \
+	wdisplays \
+	wlogout \
+	wofi \
+	wf-recorder \
+	wtype \
+	youtube-dl
 echo ' '
 echo 'Removing firefox-esr...'
 sudo apt remove firefox-esr
@@ -102,7 +102,7 @@ sudo mv .bashrc ~/
 cd 
 rm -rf Deb_Dots/
 echo ' '
-echo 'Enabling trimming of SSD.'
+echo 'Enabling trimming of SSD...'
 sudo systemctl enable fstrim.timer
 sudo systemctl start fstrim.timer
 echo ' '
