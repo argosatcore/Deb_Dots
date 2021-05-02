@@ -51,12 +51,12 @@ All of which are `apt install`able on Debian Sid:
 | `gammastep`     | Screen temperature manager.                                                          |
 | `grimshot`      | Wayland native screeshoot tool.                                                      |
 | `mako-notifier` | Wayland native notification daemon.                                                  |
-| `nautilus`      | file manager.                                                                        |
-| `neovim`        | text editor.                                                                         |
+| `nautilus`      | File manager.                                                                        |
+| `neovim`        | Text editor.                                                                         |
 | `swaybg`        | Wayland native wallpaper utility.                                                    |
 | `swaylock`      | Wayland native screen locker.                                                        |
 | `sway`          | Wayland compositor.                                                                  |
-| `tmux`          | persistent SSH shell sessions.                                                       |
+| `tmux`          | Persistent SSH shell sessions.                                                       |
 | `vim-gtk`       | (Neo)Vim's clipboard integration.                                                    |
 | `waybar`        | Sway's panel.                                                                        |
 | `wdisplays`     | Wayland native graphical tool for configuring displays.                              |
