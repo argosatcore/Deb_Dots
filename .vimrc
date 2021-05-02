@@ -89,7 +89,7 @@
 		let g:airline_theme='base16_chalk'
 "		let g:airline_theme='bubblegum'
 
-"	Inherit terminal's current backgground:
+"	Inherit terminal's current color scheme:
 
 		hi! Normal ctermbg=NONE guibg=NONE 
 		hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 
