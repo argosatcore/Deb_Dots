@@ -1,4 +1,4 @@
-I always forget how to do these, so there you have it. You're welcome, Argos from the future.
+I always forget how to do this, so there you have it. You're welcome, Argos from the future.
 
 1-Find the thumbdrive by executing the following command:
 lsblk
