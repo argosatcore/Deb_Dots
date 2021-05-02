@@ -11,8 +11,10 @@
 	set autoread wildmode=longest,list,full
 	set mouse=a
 	set cursorline
+	set ignorecase
 	syntax on
-
+	set showmatch
+	runtime! debian.vim
 
 " ------Keybindings:
 
