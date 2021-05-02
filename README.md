@@ -45,20 +45,21 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 ## Stuff referenced by these configs
 All of which are `apt install`able on Debian Sid:
 
-- `foot`: minimalist Wayland native terminal emulator.
+- `foot`: Wayland native minimalist terminal emulator.
 - `gammastep`: Screen temperature manager.
-- `grimshot`: Wayland native screeshooter.
-- `mako`: notification daemon.
+- `grimshot`: Wayland native screeshoot tool.
+- `mako-notifier`: Wayland native notification daemon.
 - `nautilus`: file manager.
 - `neovim`: text editor.
-- `swaybg`: sets the desktop background.
-- `swaylock`: screen locker.
+- `swaybg`: Wayland native wallpaper utility.
+- `swaylock`: Wayland native screen locker.
 - `sway`: Wayland compositor.
 - `tmux`: persistent SSH shell sessions.
-- `vim-gtk`: (neo)vim's clipboard integration.
-- `waybar`: sway's panel.
+- `vim-gtk`: (Neo)Vim's clipboard integration.
+- `waybar`: Sway's panel.
+- `wdisplays`: Wayland native graphical tool for configuring displays.
 - `wlogout`: Wayland session menu.
-- `wofi`: application launcher, window switcher, commad executor and many more.
+- `wofi`: Wayland native application launcher, window switcher, commad executor and many more.
 
 ## (Some) keybindings
 
