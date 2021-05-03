@@ -1,4 +1,4 @@
-<p align="center"><img src="https://user-images.githubusercontent.com/64110504/116943835-964dfb00-ac31-11eb-8f23-2ad46c910b80.png" width="300px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/64110504/116944504-dcf02500-ac32-11eb-81f2-dea831d09206.png" width="300px"></p>
 <h1 align="center">Argos's Debian GNU/Linux Dot Files<sup>1</sup> </h1> <p
 ---     
 
