@@ -1,8 +1,8 @@
 # Deb_Dots<sup>1</sup> 
-<p align="center">⢀⣴⠾⠻⢶⣦⠀  
-⣾⠁⢠⠒⠀⣿⡁  
-⢿⡄⠘⠷⠚⠋⠀  
-⠈⠳⣄</p>⠀
+<p align="center">⢀⣴⠾⠻⢶⣦</p>⠀⠀  
+<p align="center">⣾⠁⢠⠒⠀⣿⡁</p>⠀⠀  
+<p align="center">⢿⡄⠘⠷⠚⠋</p>⠀⠀⠀  
+<p align="center">⠈⠳⣄</p>⠀⠀
 
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
 
