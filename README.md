@@ -1,6 +1,7 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/64110504/116944504-dcf02500-ac32-11eb-81f2-dea831d09206.png" width="300px"></p>
 <h1 align="center">Argos's Debian GNU/Linux Dot Files<sup>1</sup> </h1> <p
 align="center">A collection of Linux knowledge in the form of dot files.</p><br><br>
+
 ---     
 
 At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/),<sup>2</sup>  as a solid foundation to build on, and the [Sway](https://swaywm.org/) Wayland compositor to manage what probably remains as both, the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
