@@ -1,7 +1,5 @@
-# Deb_Dots<sup>1</sup> 
 <p align="center"><img src="https://user-images.githubusercontent.com/64110504/116943835-964dfb00-ac31-11eb-8f23-2ad46c910b80.png" width="300px"></p>
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)](https://forthebadge.com)
-
+<h1 align="center">Deb_Dots<sup>1</sup> </h1> <p
 ---     
 
 At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/),<sup>2</sup>  as a solid foundation to build on, and the [Sway](https://swaywm.org/) Wayland compositor to manage what probably remains as both, the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
