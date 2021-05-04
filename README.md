@@ -81,8 +81,8 @@ All of which are `apt install`able on Debian Sid:
 - `Super+e`: spit tabbed or stacked windows.
 
 ### Mouse:
-- `Super+click1`: move window.
-- `Super+click2`: resize window.
+- `Super+Click1`: move window.
+- `Super+Click2`: resize window.
 
 ### Running things:
 - `Super+Return`: run a terminal.
