@@ -69,6 +69,8 @@ All of which are `apt install`able on Debian Sid:
 - `Super+PageDown`: switch to previous workspace.
 - `Super+x`: toggle Waybar on/off.
 - `Super+Shift+b`: toggle window border on/off.
+- `Super+(1,2,3,4,5,6,7,8,9,0):` Switch to worspace 1-10.
+- `Super+Shitf+(1,2,3,4,5,6,7,8,9,0):` Move an application to workspace 1-10.
 
 ### Windows:
 - `Super+q`: close.
@@ -78,7 +80,7 @@ All of which are `apt install`able on Debian Sid:
 - `Super+Shift+(h,j,k,l)`: move window in a designated direction.
 - `Super+w`: tab windows.
 - `Super+s`: stack windows.
-- `Super+e`: spit tabbed or stacked windows.
+- `Super+e`: split tabbed or stacked windows.
 
 ### Mouse:
 - `Super+Click1`: move window.
