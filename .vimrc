@@ -18,25 +18,25 @@
 
 " ------Keybindings:
 
-" 	Enter normal mode:
+	"Enter normal mode:
   	      imap fd <Esc>
   	      vmap fd <Esc> 
 
-" 	Toggle Goyo: 
+	"Toggle Goyo: 
   	      nmap <Space> :Goyo <CR>
   	      
-" 	Vim-like movement between splits:	
+	"Vim-like movement between splits:	
   	      nnoremap <C-h> <C-W>h
   	      nnoremap <C-j> <C-W>j
   	      nnoremap <C-k> <C-W>k
   	      nnoremap <C-l> <C-W>l  
 
-" 	Primary selection and clipboard copy and paste:
+	"Primary selection and clipboard copy and paste:
   	      vnoremap <C-c> "+y
   	      map <C-p> "+P
   	      vnoremap <C-c> "*y :let @+=@*<CR>
 
-" 	Move lines when in visual mode up or down:
+	"Move lines when in visual mode up or down:
   	      xnoremap K :move '<-2<CR>gv-gv
   	      xnoremap J :move '>+1<CR>gv-gv
 
@@ -73,7 +73,7 @@
 "		let g:monokai_termcolor = '256'
 "		colorscheme monokai
 
-	" Gruvbox
+	"Gruvbox
 "		let g:gruvbox_contrast_dark = 'hard'
 "		let g:gruvbox_bold = '1'
 "		let g:gruvbox_italic = '1'
@@ -82,14 +82,14 @@
 "		let g:gruvbox_termcolor = '256'
 "		colorscheme gruvbox 
 
-	" Airline theme:
+	"Airline theme:
 "		let g:airline_theme='base16_gruvbox_dark_hard'
 "		let g:airline_theme='base16_nord'
 "		let g:airline_theme='monochrome'
 		let g:airline_theme='base16_chalk'
 "		let g:airline_theme='bubblegum'
 
-"	Inherit terminal's current color scheme:
+	" Inherit terminal's current color scheme:
 
 		hi! Normal ctermbg=NONE guibg=NONE 
 		hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 

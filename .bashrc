@@ -55,10 +55,10 @@
 	alias debcount='dpkg -S . | wc -l'
 	
 	#Systemd:
-	alias sysd-all='systemctl list-units --type=service'
-	alias sysd-active='systemctl list-units --type=service --state=active'
-	alias sysd-running='systemctl list-units --type=service --state=running '
-
+	alias sd-all='systemctl list-units --type=service'
+	alias sd-active='systemctl list-units --type=service --state=active'
+	alias sd-running='systemctl list-units --type=service --state=running '
+	alias sd-timer='systemctl list-timers'
 
 # ------Vim mode:
 	set -o vi 
@@ -76,7 +76,7 @@
 	set bell-style none
 
 
-# ------NNN's environmental variables:o
+# ------NNN's environmental variables:
 
 	#Texteditor:
 	export NNN_USE_EDITOR=1

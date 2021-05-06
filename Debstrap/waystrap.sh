@@ -72,7 +72,7 @@ flatpak install flathub org.zotero.Zotero
 echo ' '
 echo 'Capturing dotfiles...'
 echo ' '
-git clone https://github.com/argosatcore/Deb_Dots.git 
+git clone git@github.com:argosatcore/Deb_Dots.git 
 echo ' ' 
 echo 'Deploying  dotfiles...'
 echo ' '

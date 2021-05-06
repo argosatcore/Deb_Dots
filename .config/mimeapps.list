@@ -6,3 +6,4 @@ application/pdf=org.gnome.Evince.desktop;
 video/mp4=mpv.desktop;vlc.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
 application/vnd.ms-publisher=org.gnome.gedit.desktop;
+application/x-shellscript=org.gnome.gedit.desktop;

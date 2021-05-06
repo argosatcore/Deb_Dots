@@ -127,8 +127,10 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="48"
-         height="48" />
+         width="504.866"
+         height="504.866"
+         rx="18.8976"
+         ry="18.8976" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -541,8 +543,8 @@
        page="0"
        x="0"
        y="0"
-       w="436"
-       h="426"
+       w="386"
+       h="494"
        visible="1"
        state="2"
        placement="2" />
@@ -566,7 +568,13 @@
        ignorenumbers="1" />
     <group
        id="documentoptions"
-       state="1" />
+       state="1"
+       x="368"
+       y="0"
+       w="630"
+       h="832"
+       visible="0"
+       placement="1" />
     <group
        id="preferences"
        state="1"
@@ -588,24 +596,24 @@
        path=""
        x="0"
        y="0"
-       w="436"
-       h="438"
+       w="386"
+       h="489"
        visible="1"
        state="2"
        placement="1">
       <group
          id="exportarea"
-         value="drawing" />
+         value="custom" />
       <group
          id="defaultxdpi"
-         value="200" />
+         value="112" />
     </group>
     <group
        id="save_as"
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/argos/Pictures/Imagery/13_Arc_DEB"
+       path="/home/argos/Pictures/Imagery/15_Github_Deb_dots"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -942,12 +950,15 @@
        partialdynamic="0" />
     <group
        id="rendering" />
+    <group
+       id="font"
+       unitType="2" />
   </group>
   <group
      id="extensions" />
   <group
      id="desktop"
-     style="fill:#5294e2">
+     style="fill:#cccccc;font-size:48px;-inkscape-font-specification:'Hack Nerd Font Mono Bold';font-family:'Hack Nerd Font Mono';font-weight:bold;line-height:1">
     <group
        width="640"
        height="480"
@@ -1054,14 +1065,14 @@
      language="" />
   <group
      id="theme"
-     defaultTheme="Arc-Dark"
-     defaultIconTheme="Adwaita++-Dark-Colorful"
-     gtkTheme="Arc-Dark"
+     defaultTheme="Adwaita-dark"
+     defaultIconTheme="Adwaita"
+     gtkTheme="Adwaita-dark"
      iconTheme="Adwaita++-Dark-Colorful"
      menuIcons_canvas="0"
      menuIcons_layers="0"
      menuIcons_objects="0"
-     preferDarkTheme="1"
+     preferDarkTheme="0"
      darkTheme="1"
      symbolicIcons="1"
      symbolicDefaultColors="1">
@@ -1073,10 +1084,10 @@
        symbolicErrorColor="4232132863" />
     <group
        id="Adwaita++-Dark-Colorful"
-       symbolicBaseColor="3554337791"
-       symbolicSuccessColor="1943148287"
-       symbolicWarningColor="4067964415"
-       symbolicErrorColor="4232132863" />
+       symbolicBaseColor="4008635647"
+       symbolicSuccessColor="648766207"
+       symbolicWarningColor="4118348031"
+       symbolicErrorColor="3422552319" />
     <group
        id="hicolor"
        symbolicBaseColor="3554337791"
