@@ -56,6 +56,7 @@
 	alias capture='sudo apt install'
 	alias debcount='apt-cache search "" | wc -l'
 	alias debcrawler='apt-cache search "" | sort | cut --delimiter " " --fields 1 | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:57%:wrap:rounded | xargs -r sudo apt install'
+
 	#Systemd:
 	alias sd-all='systemctl list-units --type=service'
 	alias sd-active='systemctl list-units --type=service --state=active'
