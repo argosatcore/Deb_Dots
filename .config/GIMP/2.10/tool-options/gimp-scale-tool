@@ -1,5 +1,6 @@
 # GIMP gimp-scale-tool options
 
 (type image)
+(interpolation linear)
 
 # end of gimp-scale-tool options

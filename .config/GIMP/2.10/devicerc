@@ -5,7 +5,8 @@
     (name "Core Pointer")
     (tool-options "GimpTransformGridOptions"
         (tool "gimp-scale-tool")
-        (type image))
+        (type image)
+        (interpolation linear))
     (use-fg-bg yes)
     (use-opacity-paint-mode no)
     (use-brush no)

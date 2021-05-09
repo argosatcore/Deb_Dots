@@ -1018,6 +1018,18 @@
   <resource identifier="Asana Math" checksum="(null)">
   </resource>
 
+  <resource identifier="Atkinson Hyperlegible" checksum="(null)">
+  </resource>
+
+  <resource identifier="Atkinson Hyperlegible Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Atkinson Hyperlegible Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Atkinson Hyperlegible Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="Augustus weight=101" checksum="(null)">
   </resource>
 
@@ -1312,6 +1324,15 @@
   <resource identifier="Chilanka" checksum="(null)">
   </resource>
 
+  <resource identifier="Cinzel Decorative" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cinzel Decorative Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Cinzel Decorative Heavy" checksum="(null)">
+  </resource>
+
   <resource identifier="CMU Serif Bold" checksum="(null)">
   </resource>
 
@@ -1427,6 +1448,27 @@
   </resource>
 
   <resource identifier="D050000L" checksum="(null)">
+  </resource>
+
+  <resource identifier="Darker Grotesque" checksum="(null)">
+  </resource>
+
+  <resource identifier="Darker Grotesque Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Darker Grotesque Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Darker Grotesque Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Darker Grotesque Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Darker Grotesque Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Darker Grotesque Ultra-Bold" checksum="(null)">
   </resource>
 
   <resource identifier="David CLM Bold" checksum="(null)">
@@ -2491,10 +2533,109 @@
   <resource identifier="Inconsolata Condensed" checksum="(null)">
   </resource>
 
+  <resource identifier="Inconsolata Condensed, Bold Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Condensed, Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Condensed, Heavy Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Condensed, Light Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Condensed, Medium Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Condensed, Semi-Bold Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Condensed, Ultra-Bold Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Condensed, weight=255 Condensed" checksum="(null)">
+  </resource>
+
   <resource identifier="Inconsolata Expanded" checksum="(null)">
   </resource>
 
+  <resource identifier="Inconsolata Expanded, Bold Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Expanded, Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Expanded, Heavy Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Expanded, Light Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Expanded, Medium Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Expanded, Semi-Bold Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Expanded, Ultra-Bold Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Expanded, weight=255 Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraCondensed, Bold Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraCondensed, Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraCondensed, Heavy Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraCondensed, Light Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraCondensed, Medium Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraCondensed, Semi-Bold Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraCondensed, Ultra-Bold Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraCondensed, weight=255 Extra-Condensed" checksum="(null)">
+  </resource>
+
   <resource identifier="Inconsolata Extra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraExpanded, Bold Extra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraExpanded, Extra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraExpanded, Heavy Extra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraExpanded, Light Extra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraExpanded, Medium Extra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraExpanded, Semi-Bold Extra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraExpanded, Ultra-Bold Extra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata ExtraExpanded, weight=255 Extra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Heavy" checksum="(null)">
   </resource>
 
   <resource identifier="Inconsolata Heavy" checksum="(null)">
@@ -2569,6 +2710,9 @@
   <resource identifier="Inconsolata Light" checksum="(null)">
   </resource>
 
+  <resource identifier="Inconsolata Light" checksum="(null)">
+  </resource>
+
   <resource identifier="Inconsolata Light Condensed" checksum="(null)">
   </resource>
 
@@ -2585,6 +2729,9 @@
   </resource>
 
   <resource identifier="Inconsolata Light Ultra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Medium" checksum="(null)">
   </resource>
 
   <resource identifier="Inconsolata Medium" checksum="(null)">
@@ -2623,6 +2770,9 @@
   <resource identifier="Inconsolata Semi-Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Inconsolata Semi-Bold" checksum="(null)">
+  </resource>
+
   <resource identifier="Inconsolata Semi-Bold Condensed" checksum="(null)">
   </resource>
 
@@ -2642,6 +2792,57 @@
   </resource>
 
   <resource identifier="Inconsolata Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiCondensed, Bold Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiCondensed, Heavy Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiCondensed, Light Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiCondensed, Medium Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiCondensed, Semi-Bold Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiCondensed, Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiCondensed, Ultra-Bold Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiCondensed, weight=255 Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiExpanded, Bold Semi-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiExpanded, Heavy Semi-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiExpanded, Light Semi-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiExpanded, Medium Semi-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiExpanded, Semi-Bold Semi-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiExpanded, Semi-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiExpanded, Ultra-Bold Semi-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata SemiExpanded, weight=255 Semi-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata Ultra-Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Inconsolata Ultra-Bold" checksum="(null)">
@@ -2674,7 +2875,55 @@
   <resource identifier="Inconsolata Ultra-Condensed" checksum="(null)">
   </resource>
 
+  <resource identifier="Inconsolata UltraCondensed, Bold Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraCondensed, Heavy Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraCondensed, Light Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraCondensed, Medium Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraCondensed, Semi-Bold Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraCondensed, Ultra-Bold Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraCondensed, Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraCondensed, weight=255 Ultra-Condensed" checksum="(null)">
+  </resource>
+
   <resource identifier="Inconsolata Ultra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraExpanded, Bold Ultra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraExpanded, Heavy Ultra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraExpanded, Light Ultra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraExpanded, Medium Ultra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraExpanded, Semi-Bold Ultra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraExpanded, Ultra-Bold Ultra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraExpanded, Ultra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata UltraExpanded, weight=255 Ultra-Expanded" checksum="(null)">
   </resource>
 
   <resource identifier="Inconsolata Ultra-Light" checksum="(null)">
@@ -2702,6 +2951,9 @@
   </resource>
 
   <resource identifier="Inconsolata Ultra-Light Ultra-Expanded" checksum="(null)">
+  </resource>
+
+  <resource identifier="Inconsolata weight=255" checksum="(null)">
   </resource>
 
   <resource identifier="IPAexGothic" checksum="(null)">
@@ -2741,6 +2993,108 @@
   </resource>
 
   <resource identifier="Jomolhari" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Heavy" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Heavy Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Heavy Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost weight=255" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost weight=255" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost weight=255 Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Jost weight=255 Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Junicode" checksum="(null)">
@@ -3200,6 +3554,27 @@
   </resource>
 
   <resource identifier="lazer84" checksum="(null)">
+  </resource>
+
+  <resource identifier="Lexend" checksum="(null)">
+  </resource>
+
+  <resource identifier="Lexend Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Lexend Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Lexend Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Lexend Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Lexend Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="Lexend Ultra-Bold" checksum="(null)">
   </resource>
 
   <resource identifier="LHF Hindlewood hard regular," checksum="(null)">
@@ -11365,6 +11740,9 @@
   <resource identifier="Plates Napery Personal Use" checksum="(null)">
   </resource>
 
+  <resource identifier="Poiret One" checksum="(null)">
+  </resource>
+
   <resource identifier="Ponnala" checksum="(null)">
   </resource>
 
@@ -11891,6 +12269,30 @@
   </resource>
 
   <resource identifier="Source Code Pro Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Space Grotesk" checksum="(null)">
+  </resource>
+
+  <resource identifier="Space Grotesk" checksum="(null)">
+  </resource>
+
+  <resource identifier="Space Grotesk" checksum="(null)">
+  </resource>
+
+  <resource identifier="Space Grotesk Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Space Grotesk Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Space Grotesk Light, Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Space Grotesk Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="Space Grotesk Semi-Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Sree Krushnadevaraya" checksum="(null)">

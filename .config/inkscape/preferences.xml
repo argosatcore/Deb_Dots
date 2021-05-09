@@ -544,7 +544,7 @@
        x="0"
        y="0"
        w="386"
-       h="494"
+       h="441"
        visible="1"
        state="2"
        placement="2" />
@@ -958,7 +958,7 @@
      id="extensions" />
   <group
      id="desktop"
-     style="fill:#cccccc;font-size:48px;-inkscape-font-specification:'Hack Nerd Font Mono Bold';font-family:'Hack Nerd Font Mono';font-weight:bold;line-height:1">
+     style="fill:#d70a53;font-size:48px;-inkscape-font-specification:Jost;font-family:Jost;line-height:1;">
     <group
        width="640"
        height="480"

@@ -21,6 +21,7 @@
 	#General use:
 	alias ll='ls -alF'
 	alias la='ls -A'
+	alias li='ls -lih'
 	alias l='ls -CF'
 	alias c='clear'
 	alias rm='rm -I'
@@ -44,6 +45,7 @@
 	alias c='clear'
 	alias colorp='grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-'
 	alias configheader='toilet -f pagga'
+	alias fp='ps aux | fzf'
 
 	#Apt:
 	alias aptdate='sudo apt update'
@@ -52,8 +54,8 @@
 	alias lookapt='apt search'
 	alias throwapt='sudo apt remove'
 	alias capture='sudo apt install'
-	alias debcount='dpkg -S . | wc -l'
-	
+	alias debcount='apt-cache search "" | wc -l'
+	alias debcrawler='apt-cache search "" | sort | cut --delimiter " " --fields 1 | fzf --multi --cycle --reverse --preview "apt-cache show {1}" | xargs -r sudo apt install'
 	#Systemd:
 	alias sd-all='systemctl list-units --type=service'
 	alias sd-active='systemctl list-units --type=service --state=active'

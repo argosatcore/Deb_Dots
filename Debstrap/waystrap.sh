@@ -15,6 +15,7 @@ sudo apt install -y \
 	apt-listchanges \
 	bash-completion \
 	blender \
+	bombadillo \
 	brightnessctl \
 	default-jdk \
 	deja-dup \

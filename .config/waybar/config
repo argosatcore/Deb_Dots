@@ -9,7 +9,7 @@
     "modules-right": ["idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "battery#bat2", "tray", "custom/date"],
     // Modules configuration
     // "sway/workspaces": {
-         "disable-scroll": false,
+    //     "disable-scroll": false,
     //     "all-outputs": true,
     //     "format": "{name}: {icon}",
     //     "format-icons": {
@@ -28,7 +28,8 @@
     },
     "sway/window": {
        "format": "{}",
-       "on-click-middle": "sway kill"
+       "on-click-middle": "sway kill",
+       "tooltip": false
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -51,7 +52,9 @@
         "tooltip": false
     },
     "memory": {
-        "format": "{used:0.1f}G "
+        "format": "{used:0.1f}G ",
+        "tooltip": false
+   
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -94,7 +97,8 @@
         "format-wifi": "{ifname}: {ipaddr}/{cidr}",
 	"on-scroll-up":"bash .local/bin/scripts/wofi/netcon",
 	"on-scroll-down":" bash .local/bin/scripts/wofi/netdiscon",
-        "on-click-right": "foot nmtui"
+        "on-click-right": "foot nmtui",
+        "tooltip": false
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -116,10 +120,11 @@
         "on-click": "pavucontrol"
     },
 "custom/date": {
-                "format": "{}",
-                "interval": 60,
-                "exec": "date +'%Y-%m-%d %l:%M %p'",
-                "on-click": "gsimplecal"
+        "format": "{}",
+        "interval": 60,
+        "exec": "date +'%Y-%m-%d %l:%M %p'",
+        "on-click": "gsimplecal",
+        "tooltip": false
     },
 
 }
