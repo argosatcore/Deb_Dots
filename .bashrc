@@ -3,7 +3,7 @@
 # ░▀▀░░▀░▀░▀▀▀░▀░▀
 
 
-# ------Environmental Variables:
+# ------Environmental variables:
 	export EDITOR="nvim"
 	export PAGER="less"
 	export MANPAGER='nvim +Man!'
@@ -55,8 +55,8 @@
 	alias throwapt='sudo apt remove'
 	alias capture='sudo apt install'
 	alias debcount='apt-cache search "" | wc -l'
-	alias debcrawler='apt-cache search "" | sort | cut --delimiter " " --fields 1 | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:57%:wrap:rounded | xargs -r sudo apt install'
-	alias deburrier='apt list --installed | sort | cut --delimiter " " --fields 1 | fzf --multi --cycle --reverse | xargs -r sudo apt remove'
+	alias debcrawler='apt-cache search "" | sort | cut --delimiter " " --fields 1 | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:57%:wrap:rounded:hidden --bind=space:toggle-preview | xargs -r sudo apt install'
+	alias debxile='apt list --installed | sort | cut --delimiter " " --fields 1 | fzf --multi --cycle --reverse | xargs -r sudo apt remove'
 
 	#Systemd:
 	alias sd-all='systemctl list-units --type=service'
