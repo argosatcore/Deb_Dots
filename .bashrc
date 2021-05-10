@@ -38,7 +38,7 @@
 	alias wrc='nvim .config/waybar/config'
 	alias src='nvim ~/.config/sway/config'
 	alias v='nvim'
-	alias f='xdg-open "$(fzf)"; exit'
+	alias f='xdg-open "$(fzf --multi --cycle --reverse --preview "cat {1}" --preview-window=:57%:wrap:rounded:hidden --bind=ctrl-a:toggle-preview)"; exit'
 	alias t='tmux'
 	alias ws='watch sensors'
 	alias n='nnn'
