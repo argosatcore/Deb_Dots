@@ -38,7 +38,7 @@
 	alias wrc='nvim .config/waybar/config'
 	alias src='nvim ~/.config/sway/config'
 	alias v='nvim'
-	alias f='xdg-open "$(fzf --multi --cycle --reverse --preview "cat {1}" --preview-window=:57%:wrap:rounded:hidden --bind=ctrl-a:toggle-preview)"; exit'
+	alias f='xdg-open "$(fzf --multi --cycle --reverse --preview "cat {1}" --preview-window=:57%:wrap:hidden --bind=ctrl-a:toggle-preview)"; exit'
 	alias t='tmux'
 	alias ws='watch sensors'
 	alias n='nnn'
@@ -63,6 +63,7 @@
 	alias sd-active='systemctl list-units --type=service --state=active'
 	alias sd-running='systemctl list-units --type=service --state=running '
 	alias sd-timer='systemctl list-timers'
+
 
 # ------Vim mode:
 	set -o vi 
