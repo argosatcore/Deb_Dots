@@ -2,6 +2,17 @@
 <h1 align="center">Argos's Debian GNU/Linux Dot Files<sup>1</sup> </h1> 
 <p align="center">A collection of my experiences with Linux in the form of dot files.</p><br><br>
    
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Unexpected features you get right out of the gate](#unexpected-features-you-get-right-out-of-the-gate)
+- [Programs referenced by these configs](#programs-referenced-by-these-configs)
+- [Handy keybindings](#handy-keybindigs)
+
+---
+
+## Introduction
+
 At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/),<sup>2</sup>  as a solid foundation to build on, and the [Sway](https://swaywm.org/) Wayland compositor to manage what probably remains as both, the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
  
    These dot files were started with a minimal Debian 10 Buster installation, so they should work with any Debian installation or Debian-based distribution. I use these dots on Debian, but I've made an effort to keep them as distribution agnostic as possible. I have deployed them succesfully on [Arch Linux](https://archlinux.org/) (don't take this as an endorsement) and on [Void Linux](https://voidlinux.org/) (you can take this as an endorsement).<sup>3</sup>
@@ -37,7 +48,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 - **Keyboard layout set to Latin American:** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. 
 - **Gapless single client:** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
 
-## Stuff referenced by these configs
+## Programs referenced by these configs
 All of which are `apt install`able on Debian Sid:
 
 | Program         | Descripton                                                                           |
@@ -58,7 +69,7 @@ All of which are `apt install`able on Debian Sid:
 | `wlogout`       | Wayland session menu.                                                                |
 | `wofi`          | Wayland native application launcher, window switcher, commad executor and many more. |
 
-## (Some) keybindings
+## Partial eybindings list
 
 ### Sway:
 - `Super+Shift+c`: reload Sway.
