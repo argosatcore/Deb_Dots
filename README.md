@@ -80,8 +80,8 @@ All of which are `apt install`able on Debian Sid:
 - `Super+PageDown`: switch to previous workspace.
 - `Super+x`: toggle Waybar on/off.
 - `Super+Shift+b`: toggle window border on/off.
-- `Super+(1,2,3,4,5,6,7,8,9,0):` Switch to worspace 1-10.
-- `Super+Shitft+(1,2,3,4,5,6,7,8,9,0):` Move an application to workspace 1-10.
+- `Super+(1,2,3,4,5,6,7,8,9,0)`: Switch to worspace 1-10.
+- `Super+Shitft+(1,2,3,4,5,6,7,8,9,0)`: Move an application to workspace 1-10.
 
 ### Windows:
 - `Super+q`: close.
