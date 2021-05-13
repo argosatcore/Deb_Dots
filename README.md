@@ -69,7 +69,7 @@ All of which are `apt install`able on Debian Sid:
 | `wlogout`       | Wayland session menu.                                                                |
 | `wofi`          | Wayland native application launcher, window switcher, commad executor and many more. |
 
-## Partial eybindings list
+## Handy keybindings
 
 ### Sway:
 - `Super+Shift+c`: reload Sway.
