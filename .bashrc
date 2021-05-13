@@ -55,7 +55,7 @@
 	alias throwapt='sudo apt remove'
 	alias capture='sudo apt install'
 	alias debcount='apt-cache search "" | wc -l'
-	alias debcrawler='apt-cache pkgnames | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:57%:wrap:hidden --bind=space:toggle-preview | xargs -o sudo apt install' 
+	alias debcrawler='apt-cache pkgnames | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:57%:wrap:hidden --bind=space:toggle-preview | xargs -ro sudo apt install' 
 	alias debxile='apt list --installed | sort | cut --delimiter " " --fields 1 | fzf --multi --cycle --reverse | xargs -r sudo apt remove'
 
 	#Systemd:
