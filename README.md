@@ -23,7 +23,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
    
 1.  The layout for this README.md was heavely influenced by those of [Spencer Tipping](https://github.com/spencertipping/dotfiles) and [Dylan Araps](https://github.com/dylanaraps/pure-sh-bible). 
 
-2. These dotfiles are currently being written on [Debian Sid](https://wiki.debian.org/DebianUnstable) :skull:. If you wish to go down the Sid route, make sure to replace your apt sources with the following lines:
+2. These dotfiles are currently being written on [Debian Sid](https://wiki.debian.org/DebianUnstable) :skull:. If you are aware of the risks and responsabilities that using Debian's unstable branch adn still wish to go down the Sid route, make sure to replace your apt sources with the following lines:
 
        deb http://deb.debian.org/debian unstable main contrib non-free
        deb-src http://deb.debian.org/debian unstable main contrib non-free
