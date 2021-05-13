@@ -4,14 +4,14 @@
    
 ## Table of Contents
 
-- [Introduction](#introduction)
+- [Introduction](#introduction-[↩︎]-(#table-of-contents))
 - [Unexpected features you get right out of the gate](#unexpected-features-you-get-right-out-of-the-gate)
 - [Programs referenced by these configs](#programs-referenced-by-these-configs)
 - [Handy keybindings](#handy-keybindigs)
 
 ---
 
-## Introduction 
+## Introduction [↩︎](#table-of-contents)
 
 At the kernel of my computing milieu, there are two irreducible components: the [Debian GNU/Linux Operating System](https://www.debian.org/),<sup>2</sup>  as a solid foundation to build on, and the [Sway](https://swaywm.org/) Wayland compositor to manage what probably remains as both, the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
  
