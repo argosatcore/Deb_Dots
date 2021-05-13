@@ -99,7 +99,14 @@
 	export NNN_TRASH=1
 
 
-# ------If not running interactively, don't do anything
+# ------Functions:
+	mkcd() {
+	    mkdir "$1"
+	    cd "$1"
+	}
+
+
+# ------If not running interactively, don't do anything:
 	case $- in
 	    *i*) ;;
 	      *) return;;
