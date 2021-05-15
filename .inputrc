@@ -1,21 +1,19 @@
-# Be 8 bit clean.
-set input-meta on
-set output-meta on
-
-# To allow the use of 8bit-characters like the german umlauts, uncomment
-# the line below. However this makes the meta key not work as a meta key,
-# which is annoying to those which don't need to type in 8-bit characters.
-
-# set convert-meta off
-
-# try to enable the application keypad when it is called.  Some systems
-# need this to enable the arrow keys.
-# set enable-keypad on
+#░▀█▀░█▀█░█▀█░█░█░▀█▀░█▀▄░█▀▀
+#░░█░░█░█░█▀▀░█░█░░█░░█▀▄░█░░
+#░▀▀▀░▀░▀░▀░░░▀▀▀░░▀░░▀░▀░▀▀▀
 
 
-# do not bell on tab-completion
- set bell-style none
-# set bell-style visible
+# ------Be 8 bit clean:
+	set input-meta on
+	set output-meta on
+	#set convert-meta off
+	#set enable-keypad on
 
-# Make bash case insensitive
-set completion-ignore-case On
+
+# ------Do not bell on tab-completion:
+ 	set bell-style none
+	#set bell-style visible
+
+
+# ------Make bash case insensitive:
+	set completion-ignore-case On
