@@ -79,14 +79,16 @@ echo 'Deploying  dotfiles...'
 echo ' '
 cd Deb_Dots
 cd Pictures
-mv Wallpapers/ Pictures/
+mv Wallpapers/ ~/Pictures/
 cd ..
+rm -rf Pictures/
 cd .local
 mv bin/ ~/.local/
 cd share/
 mv fonts/ ~/.local/share/
 cd ..
 cd ..
+rm -rf .local/
 cd .config/
 mv sway/ ~/.config/
 mv mako/ ~/.config/
@@ -94,16 +96,10 @@ mv waybar/ ~/.config/
 mv wlogout/ ~/.config/
 mv foot/ ~/.config/
 cd ..
+rm -rf .config
 mv README.md ~/
-mv .git ~/
+sudo mv .* ~/
 sudo mv .vim/ ~/
-mv .tmux.conf ~/
-mv .inputrc ~/
-mv .bash_aliases
-sudo mv .profile ~/
-sudo mv .bash_logout ~/
-sudo mv .vimrc ~/
-sudo mv .bashrc ~/
 cd 
 rm -rf Deb_Dots/
 echo ' '
