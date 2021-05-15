@@ -98,6 +98,10 @@ mv README.md ~/
 mv .git ~/
 sudo mv .vim/ ~/
 mv .tmux.conf ~/
+mv .inputrc ~/
+mv .bash_aliases
+sudo mv .profile ~/
+sudo mv .bash_logout ~/
 sudo mv .vimrc ~/
 sudo mv .bashrc ~/
 cd 
