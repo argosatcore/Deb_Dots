@@ -3,11 +3,9 @@
 (GimpDeviceInfo "Core Pointer"
     (icon-name "gimp-cursor")
     (name "Core Pointer")
-    (tool-options "GimpTransformGridOptions"
-        (tool "gimp-scale-tool")
-        (type image)
-        (interpolation linear))
-    (use-fg-bg yes)
+    (tool-options "GimpRectangleSelectOptions"
+        (tool "gimp-rect-select-tool"))
+    (use-fg-bg no)
     (use-opacity-paint-mode no)
     (use-brush no)
     (use-dynamics no)

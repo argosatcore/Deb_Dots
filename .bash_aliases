@@ -23,6 +23,7 @@
 	alias brc='nvim ~/.bashrc'
 	alias prc='nvim ~/.profile'
 	alias irc='nvim ~/.inputrc'
+	alias barc='nvim ~/.bash_aliases'
 	alias wrcss='nvim .config/waybar/style.css'
 	alias wrc='nvim .config/waybar/config'
 	alias src='nvim ~/.config/sway/config'
@@ -52,3 +53,9 @@
 	alias sd-active='systemctl list-units --type=service --state=active'
 	alias sd-running='systemctl list-units --type=service --state=running '
 	alias sd-timer='systemctl list-timers'
+
+	#Git
+	alias gpull='git pull'
+	alias gpush='git push -u'
+	alias gadd='git add -u'
+

@@ -1,12 +1,12 @@
 # GIMP action-history
 
-(history-item "layers-duplicate" 5)
+(history-item "layers-duplicate" 4)
+(history-item "file-export-as" 1)
 (history-item "layers-new" 0)
 (history-item "layers-alpha-add" 0)
-(history-item "file-export-as" 1)
+(history-item "file-quit" 1)
 (history-item "edit-clear" 0)
-(history-item "image-resize" 0)
-(history-item "file-quit" 2)
+(history-item "image-resize" 2)
 (history-item "edit-paste" 0)
 (history-item "filters-levels" 1)
 (history-item "edit-copy" 0)
@@ -27,6 +27,7 @@
 (history-item "layers-resize-to-image" 0)
 (history-item "tools-smudge" 0)
 (history-item "tools-scale" 0)
-(history-item "image-scale" 1)
+(history-item "image-scale" 0)
+(history-item "filters-gaussian-blur" 1)
 
 # end of action-history
