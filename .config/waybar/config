@@ -90,11 +90,11 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-alt": "{essid} ({signalStrength}%) ",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-wifi": "{ifname}: {ipaddr}/{cidr}",
+        "format-wifi": "{essid} ({signalStrength}%) ",
 	"on-scroll-up":"bash .local/bin/scripts/wofi/netcon",
 	"on-scroll-down":" bash .local/bin/scripts/wofi/netdiscon",
         "on-click-right": "foot nmtui",

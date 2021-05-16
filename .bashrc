@@ -4,12 +4,12 @@
 
 
 # ------Environmental variables:
-	export EDITOR="nvim"
-	export VISUAL="nvim"
-	export PAGER="less"
+	export EDITOR='nvim'
+	export VISUAL='nvim'
+	export PAGER='less'
 	export MANPAGER='nvim +Man!'
-	export BROWSER="firefox"
-	export TERM="rxvt-256color"
+	export BROWSER='firefox'
+	export TERM='rxvt-256color'
 	export PATH=$PATH:$HOME/bin:$HOME/.local/bin:/usr/local/sbin
 	shopt -s cdspell
 	shopt -s autocd
@@ -26,6 +26,24 @@
 	bind -m vi-insert "\C-a":beginning-of-line
 	bind -m vi-insert "\C-h":backward-kill-word
 	bind -m vi-insert "\C-k":kill-line
+
+
+# ------NNN's environmental variables:
+
+	#Texteditor:
+	export NNN_USE_EDITOR=1
+
+	#Bookmarks:
+	export NNN_BMS='p:~/Documents/;d:~/Downloads/;i:~/Pictures/'
+
+	#Plugins:
+	export NNN_PLUG='f:finder;o:fzopen;p:mocplay;d:dragdrop;t:nmount;v:preview-tui;z:fzcd'
+	
+	#Archive:
+	export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
+	
+	#Trash:
+	export NNN_TRASH=1
 
 
 # ------Functions:
