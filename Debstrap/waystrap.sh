@@ -1,7 +1,5 @@
 #!/bin/sh
 #Bootstrapping script for "Sidified" Debian systems - Wayland edition.
-#REMEMBER: This script must be run from the home directory, otherwise setting up the dotfiles will fail.
-
 echo 'Initializing bootstrap...'
 echo ' '
 echo 'Updating system...'
@@ -15,7 +13,6 @@ sudo apt install -y \
 	apt-listchanges \
 	bash-completion \
 	blender \
-	bombadillo \
 	brightnessctl \
 	default-jdk \
 	deja-dup \
@@ -77,31 +74,24 @@ git clone git@github.com:argosatcore/Deb_Dots.git
 echo ' ' 
 echo 'Deploying  dotfiles...'
 echo ' '
-cd Deb_Dots
-cd Pictures
-mv Wallpapers/ ~/Pictures/
-cd ..
-rm -rf Pictures/
-cd .local
-mv bin/ ~/.local/
-cd share/
-mv fonts/ ~/.local/share/
-cd ..
-cd ..
-rm -rf .local/
-cd .config/
-mv sway/ ~/.config/
-mv mako/ ~/.config/
-mv waybar/ ~/.config/
-mv wlogout/ ~/.config/
-mv foot/ ~/.config/
-cd ..
-rm -rf .config
-mv README.md ~/
-sudo mv .* ~/
-sudo mv .vim/ ~/
-cd 
-rm -rf Deb_Dots/
+mv ~/Deb_Dots/Pictures/Wallpapers/ ~/Pictures/
+mv ~/Deb_Dots/.local/bin/ ~/.local/
+mv ~/Deb_Dots/.local/share/fonts/ ~/.local/share/
+mv ~/Deb_Dots/.config/sway/ ~/.config/
+mv ~/Deb_Dots/.config/mako/ ~/.config/
+mv ~/Deb_Dots/.config/waybar/ ~/.config/
+mv ~/Deb_Dots/.config/wlogout/ ~/.config/
+mv ~/Deb_Dots/.config/foot/ ~/.config/
+mv ~/Deb_Dots/.config/mimeapps.list ~/.config/
+mv ~/Deb_Dots/README.md ~/
+mv ~/Deb_Dots/Debstrap/ ~/
+mv ~/Deb_Dots/.inputrc ~/
+mv ~/Deb_Dots/.git/ ~/
+sudo mv ~/Deb_Dots/.vimrc ~/
+sudo mv ~/Deb_Dots/.bash* ~/
+sudo mv ~/Deb_Dots/.profile ~/
+sudo mv ~/Deb_Dots/.vim/ ~/
+rm -rf ~/Deb_Dots/
 echo ' '
 echo 'Enabling trimming of SSD...'
 sudo systemctl enable fstrim.timer
