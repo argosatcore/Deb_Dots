@@ -85,8 +85,10 @@ mv ~/Deb_Dots/.config/foot/ ~/.config/
 mv ~/Deb_Dots/.config/mimeapps.list ~/.config/
 mv ~/Deb_Dots/README.md ~/
 mv ~/Deb_Dots/Debstrap/ ~/
-mv ~/Deb_Dots/.inputrc ~/
+mv ~/Deb_Dots/Old_Dots/ ~/
 mv ~/Deb_Dots/.git/ ~/
+mv ~/Deb_Dots/.inputrc ~/
+mv ~/Deb_Dots/.tmux.conf ~/
 sudo mv ~/Deb_Dots/.vimrc ~/
 sudo mv ~/Deb_Dots/.bash* ~/
 sudo mv ~/Deb_Dots/.profile ~/
