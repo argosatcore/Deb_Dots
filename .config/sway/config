@@ -25,7 +25,7 @@
 	# Your preferred application launcher:
 	set $menu wofi --show=drun --insensitive --lines=5 --width=33% --prompt="" --xoffset=458 --yoffset=200 
 
-        # Floating mofier:
+        # Floating modifier:
 	floating_modifier $mod normal
 
 	# Include system sway variables:

@@ -92,7 +92,7 @@
     (position 472 263))
 (session-info "toplevel"
     (factory-entry "gimp-operation-tool-dialog")
-    (position 498 225))
+    (position 247 352))
 (session-info "toplevel"
     (factory-entry "gimp-levels-tool-dialog")
     (position 108 115)

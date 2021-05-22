@@ -17,7 +17,11 @@
 		<context name="ContentPalette">
 			<attribute key="area" value="0"/>
 			<attribute key="floating" value="1"/>
+			<attribute key="height" value="561"/>
+			<attribute key="left" value="0"/>
+			<attribute key="top" value="0"/>
 			<attribute key="visible" value="0"/>
+			<attribute key="width" value="412"/>
 		</context>
 		<context name="DownloadsPalette">
 			<attribute key="visible" value="0"/>
@@ -42,6 +46,15 @@
 			<attribute key="floating" value="1"/>
 			<attribute key="visible" value="0"/>
 		</context>
+		<context name="ObjectSize">
+			<attribute key="Origin" value="0"/>
+			<attribute key="OriginL" value="0"/>
+			<attribute key="Remember" value="1"/>
+			<attribute key="defAngle" value="0"/>
+			<attribute key="defHeight" value="100"/>
+			<attribute key="defLength" value="100"/>
+			<attribute key="defWidth" value="100"/>
+		</context>
 		<context name="PagePalette">
 			<attribute key="area" value="0"/>
 			<attribute key="floating" value="1"/>
@@ -50,7 +63,11 @@
 		<context name="PropertiesPalette">
 			<attribute key="area" value="0"/>
 			<attribute key="floating" value="1"/>
+			<attribute key="height" value="548"/>
+			<attribute key="left" value="0"/>
+			<attribute key="top" value="0"/>
 			<attribute key="visible" value="0"/>
+			<attribute key="width" value="856"/>
 		</context>
 		<context name="Sclib">
 			<attribute key="area" value="0"/>
@@ -89,28 +106,72 @@
 			<attribute key="visible" value="0"/>
 		</context>
 		<context name="checkDocument">
+			<attribute key="height" value="260"/>
+			<attribute key="left" value="876"/>
+			<attribute key="top" value="349"/>
 			<attribute key="visible" value="0"/>
+			<attribute key="width" value="320"/>
+		</context>
+		<context name="cups_options">
+			<attribute key="Brightness" value="0"/>
+			<attribute key="Contrast" value="0"/>
+			<attribute key="Grayscale" value="0"/>
+			<attribute key="Media Size" value="0"/>
+			<attribute key="Mirror" value="0"/>
+			<attribute key="N-Up Printing" value="0"/>
+			<attribute key="Orientation" value="0"/>
+			<attribute key="Page Set" value="0"/>
+			<attribute key="Print Quality" value="0"/>
+			<attribute key="Saturation" value="0"/>
+		</context>
+		<context name="dirs">
+			<attribute key="get_text" value="/home/argos/Projects/1_Paint_a_Vulgar_Picture"/>
+			<attribute key="pdf" value="/home/argos"/>
+			<attribute key="save_text" value="/home/argos/Documents/"/>
 		</context>
 		<context name="marksManager">
+			<attribute key="height" value="271"/>
+			<attribute key="left" value="888"/>
+			<attribute key="top" value="344"/>
 			<attribute key="visible" value="0"/>
+			<attribute key="width" value="297"/>
 		</context>
 		<context name="nodePalette">
-			<attribute key="visible" value="0"/>
+			<attribute key="height" value="509"/>
+			<attribute key="left" value="920"/>
+			<attribute key="top" value="219"/>
+			<attribute key="visible" value="1"/>
+			<attribute key="width" value="233"/>
 		</context>
 		<context name="notesStylesEditor">
+			<attribute key="height" value="580"/>
+			<attribute key="left" value="874"/>
+			<attribute key="top" value="152"/>
 			<attribute key="visible" value="0"/>
+			<attribute key="width" value="402"/>
 		</context>
 		<context name="print_options">
+			<attribute key="BleedBottom" value="0"/>
+			<attribute key="BleedLeft" value="0"/>
+			<attribute key="BleedRight" value="0"/>
+			<attribute key="BleedTop" value="0"/>
 			<attribute key="Clip" value="0"/>
 			<attribute key="Command" value=""/>
 			<attribute key="Copies" value="1"/>
-			<attribute key="CurrentPrn" value=""/>
+			<attribute key="CurrentPage" value="0"/>
+			<attribute key="CurrentPrn" value="L395"/>
+			<attribute key="CurrentPrnEngine" value="3"/>
 			<attribute key="DoGCR" value="0"/>
+			<attribute key="ICCinUse" value="1"/>
 			<attribute key="MirrorH" value="0"/>
 			<attribute key="MirrorV" value="0"/>
 			<attribute key="OtherCom" value="0"/>
 			<attribute key="PSLevel" value="3"/>
+			<attribute key="PageNr" value=""/>
+			<attribute key="PrintAll" value="1"/>
 			<attribute key="PrintColor" value="0"/>
+			<attribute key="PrintLanguage" value="3"/>
+			<attribute key="PrintRange" value="0"/>
 			<attribute key="SepArt" value="0"/>
 			<attribute key="Separations" value="0"/>
 			<attribute key="bleedMarks" value="0"/>
@@ -119,22 +180,38 @@
 			<attribute key="doDev" value="0"/>
 			<attribute key="doSpot" value="1"/>
 			<attribute key="includePDFMarks" value="1"/>
-			<attribute key="markLength" value="20"/>
+			<attribute key="markLength" value="20.0013"/>
 			<attribute key="markOffset" value="0"/>
 			<attribute key="registrationMarks" value="0"/>
 		</context>
 		<context name="styleManager">
-			<attribute key="eX" value="0"/>
-			<attribute key="eY" value="0"/>
+			<attribute key="InitX" value="897"/>
+			<attribute key="InitY" value="311"/>
+			<attribute key="eX" value="897"/>
+			<attribute key="eY" value="311"/>
+			<attribute key="height" value="336"/>
 			<attribute key="isEditMode" value="0"/>
+			<attribute key="left" value="897"/>
+			<attribute key="top" value="311"/>
 			<attribute key="visible" value="0"/>
+			<attribute key="width" value="278"/>
+		</context>
+		<context name="textimport_dialog">
+			<attribute key="encoding" value="UTF-8"/>
+			<attribute key="filter" value="All Supported Formats (*.md *.csv *.docx *.html *.htm *.odt *.fodt *.pdb *.rtf *.sxw *.txt *.xtg)"/>
+			<attribute key="importer" value="ODT Document"/>
+			<attribute key="prefix" value="1"/>
+			<attribute key="textonly" value="0"/>
+		</context>
+		<context name="textsave_dialog">
+			<attribute key="encoding" value=""/>
 		</context>
 		<context name="uWidget">
 			<attribute key="visible" value="0"/>
 		</context>
 		<context name="undo">
 			<attribute key="enabled" value="1"/>
-			<attribute key="historylength" value="100"/>
+			<attribute key="historylength" value="99"/>
 		</context>
 		<context name="undoPalette">
 			<attribute key="area" value="0"/>
@@ -143,7 +220,7 @@
 		</context>
 		<context name="user_preferences">
 			<attribute key="gui_language" value="en_US"/>
-			<attribute key="mainwinstate" value="AAAA/wAAAAD9AAAAAAAAAUsAAAKOAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAUAAAAIAEYAaQBsAGUBAAAAAP////8AAAAAAAAAAAAAAAgARQBkAGkAdAEAAABL/////wAAAAAAAAAAAAAACgBUAG8AbwBsAHMBAAAAgf////8AAAAAAAAAAAAAABIAUABEAEYAXwBUAG8AbwBsAHMBAAAAt/////8AAAAAAAAAAAAAABQAVgBpAGUAdwBfAFQAbwBvAGwAcwEAAADt/////wAAAAAAAAAA"/>
+			<attribute key="mainwinstate" value="AAAA/wAAAAD9AAAAAAAABVYAAAKgAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAUAAAAIAEYAaQBsAGUBAAAAAP////8AAAAAAAAAAAAAAAgARQBkAGkAdAEAAAC//////wAAAAAAAAAAAAAACgBUAG8AbwBsAHMBAAABTP////8AAAAAAAAAAAAAABIAUABEAEYAXwBUAG8AbwBsAHMBAAADm/////8AAAAAAAAAAAAAABQAVgBpAGUAdwBfAFQAbwBvAGwAcwEAAASM/////wAAAAAAAAAA"/>
 			<table name="activeTabs">
 			</table>
 			<table name="tabbedPalettes">
@@ -154,11 +231,11 @@
 		<context name="StoryEditor">
 			<attribute key="height" value="400"/>
 			<attribute key="left" value="10"/>
-			<attribute key="main" value="-1"/>
-			<attribute key="side" value="-1"/>
+			<attribute key="main" value="454"/>
+			<attribute key="side" value="142"/>
 			<attribute key="top" value="10"/>
 			<attribute key="width" value="600"/>
-			<attribute key="winstate" value=""/>
+			<attribute key="winstate" value="AAAA/wAAAAD9AAAAAAAAAlgAAADwAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAgAAAAEAAAAIAEYAaQBsAGUBAAAAAP////8AAAAAAAAAAAAAAAIAAAACAAAACABGAG8AbgB0AQAAAAD/////AAAAAAAAAAAAAAAKAEEAbABpAGcAbgEAAAHM/////wAAAAAAAAAAAAAAAgAAAAMAAAAKAFMAdAB5AGwAZQEAAAAA/////wAAAAAAAAAAAAAACgBTAHQAcgBvAGsBAAABWv////8AAAAAAAAAAAAAAAgARgBpAGwAbAEAAAIa/////wAAAAAAAAAA"/>
 		</context>
 		<context name="pluginmanager">
 			<attribute key="barcodegenerator" value="0"/>
@@ -221,7 +298,7 @@
 			<attribute key="extensionscripts" value="0"/>
 			<attribute key="importall" value="1"/>
 			<attribute key="startupscript" value=""/>
-			<attribute key="syntaxcomment" value="#A0A0A0"/>
+			<attribute key="syntaxcomment" value="#a0a0a0"/>
 			<attribute key="syntaxerror" value="#aa0000"/>
 			<attribute key="syntaxkeyword" value="#00007f"/>
 			<attribute key="syntaxnumber" value="#ffaa00"/>
