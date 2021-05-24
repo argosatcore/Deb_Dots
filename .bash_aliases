@@ -36,6 +36,7 @@
 	alias colorp='grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-'
 	alias configheader='toilet -f pagga'
 	alias fp='ps aux | fzf'
+	alias note='nvim Desktop/Notes/Notes.txt'
 
 	#Apt:
 	alias aptdate='sudo apt update'
