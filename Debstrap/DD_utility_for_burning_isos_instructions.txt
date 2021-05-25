@@ -1,0 +1,21 @@
+I always forget how to do this, so there you have it. You're welcome, Argos from the future.
+
+
+1-Find the thumbdrive by executing the following command:
+
+	lsblk
+
+
+2-Unmount the thumbdrive wit the following commad, where "sdX" is the name of the designated thumbdrive: 
+	
+	sudo umount /dev/sdX
+
+
+3-Execute the following command as root to burn the iso:
+	
+	sudo dd bs=4M if=/path/to/iso of=/dev/sdX status=progress
+
+
+4-Run the following command to make sure all data is flushed: 
+
+	sync

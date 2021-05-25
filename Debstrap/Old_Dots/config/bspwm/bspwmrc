@@ -1,0 +1,74 @@
+#! /bin/sh
+
+#----Autostart:
+#Moved most of it to ~/.xsessionrc file. This removed some inconsistencies for some autostart commands, specifically those in regards to "xmodmap" and ".speedswapper".
+
+
+
+#----Truncate a couple of common commands that are used herein.
+_bc() {
+	bspc config "$@"
+}
+
+_br() {
+	bspc rule "$@"
+}
+
+
+
+#----Workspace distribution per monitor:
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+
+
+
+#----BSPWM's graphical appearance
+_bc border_width         1
+_bc window_gap          10
+_bc normal_border_color "#7c818c"
+_bc active_border_color "#4c566a"
+_bc focused_border_color "#D3DAE3"
+_bc presel_feedback_color "#3C414E"
+
+
+
+#----BSPWM's tiling rules:
+_bc split_ratio          0.52
+_bc borderless_monocle   true
+_bc gapless_monocle      true
+_bc focus_follows_pointer true
+_bc pointer_action3 move
+_bc pointer_action2 resize_corner
+_bc pointer_action1 none
+_bc ignore_ewmh_focus false
+_bc single_monocle true 
+_bc pointer_modifier control
+
+
+#----Debian 10 uses a version of BSPWM that lacks a couple of configs.
+if [ "$(bspwm -v)" -gt '0.9.5' ]; then
+    _bc automatic_scheme longest_side
+
+    for i in top right bottom left; do
+        _bc "${i}"_monocle_padding 0
+    done
+    unset i
+fi
+
+
+#----BSPWM's applications rules:
+_br -a Gimp desktop='^8' state=floating follow=on
+_br -a mplayer2 state=floating
+_br -a Kupfer.py focus=on
+_br -a Screenkey manage=off
+_br -a Xmessage state=floating
+_br -a Galculator state=floating
+_br -a feh state=floating rectangle=600x600
+_br -a Gnome-calculator state=floating
+_br -a Arandr state=floating
+_br -a Pavucontrol state=floating rectangle=100x25
+_br -a Nm-connection-editor state=floating rectangle=80x10
+_br -a Nautilus state=floating rectangle=800x600
+
+
+#---External Rules:
+_bc external_rules_command ~/.config/bspwm/external_rules/binary_partition_rule # This rule overrides Debian's automatic spiral partitioning in favor of a case by case binary partition scenario, thus honoring bspwm's acronym in a more suitable way than its predecessor. The feature provided by this external rule will be unnecessary in the next version of Debian; simply setting `_bc automatic_scheme longest side` will achieve the same functionality. This rule will be deprecated as of Debian 11 Bullseye's official release.` 

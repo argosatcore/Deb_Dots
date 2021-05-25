@@ -1,0 +1,49 @@
+
+Config {font = "xft:Ubuntu Nerd Font:bold:size=10:antialias=true,Noto Sans CJK SC:size=9:antialias=true"
+       , bgColor = "#383c4a"
+       , fgColor = "#F9fAF9"
+       , additionalFonts = []
+       , borderColor = "black"
+       , border = TopB
+       , alpha = 255
+       , position = Top
+       , textOffset = -1
+       , iconOffset = -1
+       , lowerOnStart = True
+       , pickBroadest = False
+       , persistent = False
+       , hideOnStart = False
+       , iconRoot = "."
+       , allDesktops = True
+       , overrideRedirect = True
+       , commands = [
+                    Run Battery [ "--template" , ": <acstatus>"
+                                , "--L" , "15"
+                                , "--H" , "75"
+                                , "--low"      , "darkred"
+                                , "--normal"   , "darkorange"
+                                , "--high"     , "#1ABC9C"
+                                , "--" -- battery specific options
+                                       -- discharging status
+                                       , "-o"	, "<left>% (<timeleft>)"
+                                       -- AC "on" status
+                                       , "-O"	, "<fc=#dAA520>Charging</fc> "
+                                       -- charged status
+                                       , "-i"	, "<fc=#1ABC9C>Charged</fc>"
+                                ] 50
+                    , Run Cpu ["-L","3","-H","50",
+                               "--normal","green","--high","red"] 10
+                    , Run Memory ["-t",": <used>M"] 10
+                    , Run Date "%a - %b - %_d - %Y %l:%M:%P" "date" 10
+                    , Run DiskU [("/", ": <free>")] ["-L", "20", "-H", "60"] 10
+		    , Run CoreTemp ["-t", ": <core0>°C",
+                  "-L", "40", "-H", "60",
+                  "-l", "lightblue", "-n", "gray90", "-h", "red"] 50
+		    , Run Com "/bin/bash" ["-c", "~/.local/bin/scripts/Xmobar/Volume/get-volume.sh"] "myvolume" 1
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "     %StdinReader%  }\
+\{ %date%                                                  %cpu%      %memory%      %disku%     %coretemp%  %myvolume%   %battery%    "
+       }
