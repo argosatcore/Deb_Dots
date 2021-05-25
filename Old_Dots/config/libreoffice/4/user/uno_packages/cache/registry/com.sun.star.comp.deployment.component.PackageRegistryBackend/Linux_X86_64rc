@@ -1,2 +1,0 @@
-ORIGIN=$UNO_USER_PACKAGES_CACHE/registry/com.sun.star.comp.deployment.component.PackageRegistryBackend
-UNO_SERVICES=?$ORIGIN/Linux_X86_64_.rdb
