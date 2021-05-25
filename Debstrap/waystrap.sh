@@ -85,10 +85,7 @@ mv ~/Deb_Dots/.config/foot/ ~/.config/
 mv ~/Deb_Dots/.config/mimeapps.list ~/.config/
 mv ~/Deb_Dots/README.md ~/
 mv ~/Deb_Dots/LICENSE ~/
-mv ~/Deb_Dots/DD_utility_for_burning_isos_instructions.txt ~/
-mv ~/Deb_Dots/Migration_to_Sid.md ~/
 mv ~/Deb_Dots/Debstrap/ ~/
-mv ~/Deb_Dots/Old_Dots/ ~/
 mv ~/Deb_Dots/.git/ ~/
 mv ~/Deb_Dots/.inputrc ~/
 mv ~/Deb_Dots/.tmux.conf ~/
