@@ -37,7 +37,7 @@
 	alias configheader='toilet -f pagga'
 	alias fp='ps aux | fzf'
 	alias note='nvim Desktop/Notes/Notes.txt'
-	alias fzd='cd "$(fdfind -t d | fzf --cycle --reverse --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)" && clear'
+	alias fzd='cd && cd "$(fdfind -t d | fzf --cycle --reverse --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)" && clear'
 
 	#Apt:
 	alias aptdate='sudo apt update'
