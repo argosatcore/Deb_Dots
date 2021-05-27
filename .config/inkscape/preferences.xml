@@ -127,10 +127,10 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="504.866"
-         height="504.866"
-         rx="18.8976"
-         ry="18.8976" />
+         width="2030.92"
+         height="658.141"
+         rx="37.7953"
+         ry="37.7953" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -166,8 +166,8 @@
          end="0"
          start="0"
          usecurrent="1"
-         rx="648.653"
-         ry="648.653" />
+         rx="266.763"
+         ry="266.763" />
       <eventcontext
          id="star"
          magnitude="5"
@@ -569,7 +569,7 @@
     <group
        id="documentoptions"
        state="1"
-       x="368"
+       x="0"
        y="0"
        w="630"
        h="832"
@@ -603,7 +603,7 @@
        placement="1">
       <group
          id="exportarea"
-         value="custom" />
+         value="drawing" />
       <group
          id="defaultxdpi"
          value="112" />
@@ -613,7 +613,7 @@
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/argos/Pictures/Imagery/15_Github_Deb_dots"
+       path="/home/argos/Pictures/Imagery/16_Oberon"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -958,7 +958,7 @@
      id="extensions" />
   <group
      id="desktop"
-     style="fill:#d70a53;font-size:48px;-inkscape-font-specification:Jost;font-family:Jost;line-height:1;">
+     style="fill:#4d4d4d;font-size:266.66666667px;-inkscape-font-specification:Jost;font-family:Jost;line-height:1;stroke:#ffffff;stroke-width:7.55905512">
     <group
        width="640"
        height="480"
