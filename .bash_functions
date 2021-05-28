@@ -17,27 +17,27 @@
 
 
 # ------Use fzf to move between directories
-fzd() {
+	fzd() {
 	cd "$(fdfind -t d -H | fzf --cycle --reverse --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)" && clear
-}
+	}
 
 
 # ------Give Debian fuzzy-like package management abilities:
-debcrawler() {
+	debcrawler() {
 	sudo apt update 
 	$(apt-cache pkgnames | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:57%:wrap:hidden --bind=space:toggle-preview | xargs -ro sudo apt install)
-}
+	}
 
 
 # ------Clean system:
-debclean() {
+	debclean() {
 	sudo apt clean
 	sudo apt autoclean
 	sudo apt autoremove
-}
+	}
 
 
 # ------Wayland's color picker:
-waypick() {
+	waypick() {
 	grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-
-}
+	}
