@@ -16,6 +16,7 @@ sudo apt install -y \
 	brightnessctl \
 	default-jdk \
 	deja-dup \
+	fdfind \
 	firefox \
 	fonts-font-awesome \
 	foot \
@@ -43,9 +44,10 @@ sudo apt install -y \
 	sway \
 	swaylock \
 	swayidle \
+	texlive-full \
 	tlp \
 	tmux \
-	texlive-full \
+	tree \
 	vim-gtk \
 	vlc \
 	waybar \

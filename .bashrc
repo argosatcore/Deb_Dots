@@ -46,13 +46,6 @@
 	export NNN_TRASH=1
 
 
-# ------Functions:
-	mkcd() {
-	    mkdir "$1"
-	    cd "$1"
-	}
-
-
 # ------If not running interactively, don't do anything:
 	case $- in
 	    *i*) ;;
@@ -160,12 +153,14 @@
 	alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 
-# ------Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+# ------Aliases definitions:
 	if [ -f ~/.bash_aliases ]; then
     	. ~/.bash_aliases
+	fi
+	
+# ------Functions definitions:
+	if [ -f "".bash_functions ]; then
+    	. ~/.bash_functions
 	fi
 
 

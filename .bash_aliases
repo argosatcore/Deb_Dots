@@ -28,16 +28,13 @@
 	alias wrc='nvim .config/waybar/config'
 	alias src='nvim ~/.config/sway/config'
 	alias v='nvim'
-	alias f='xdg-open "$(fzf --multi --cycle --reverse --preview "cat {1}" --preview-window=:57%:wrap:hidden --bind=ctrl-a:toggle-preview)"; exit'
 	alias t='tmux'
 	alias ws='watch sensors'
 	alias n='nnn'
 	alias c='clear'
-	alias colorp='grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-'
 	alias configheader='toilet -f pagga'
 	alias fp='ps aux | fzf'
 	alias note='nvim Desktop/Notes/Notes.txt'
-	alias fzd='cd && cd "$(fdfind -t d | fzf --cycle --reverse --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)" && clear'
 
 	#Apt:
 	alias aptdate='sudo apt update'
@@ -47,8 +44,6 @@
 	alias throwapt='sudo apt remove'
 	alias capture='sudo apt install'
 	alias debcount='apt-cache search "" | wc -l'
-	alias debcrawler='apt-cache pkgnames | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:57%:wrap:hidden --bind=space:toggle-preview | xargs -ro sudo apt install' 
-	alias debxile='apt list --installed | sort | cut --delimiter " " --fields 1 | fzf --multi --cycle --reverse | xargs -r sudo apt remove'
 
 	#Systemd:
 	alias sd-all='systemctl list-units --type=service'
