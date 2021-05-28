@@ -48,6 +48,7 @@
 
 	#Systemd:
 	alias sd-all='systemctl list-units --type=service'
+	alias sd-files='systemctl list-unit-files --type=service'
 	alias sd-active='systemctl list-units --type=service --state=active'
 	alias sd-running='systemctl list-units --type=service --state=running '
 	alias sd-timer='systemctl list-timers'
