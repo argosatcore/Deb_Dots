@@ -10,7 +10,7 @@ windows=$(swaymsg -t get_tree | jq -r '
 			(.id | tostring) + " " + .app_id + ": " + .name')
 
 
-# Select window with rofi
+# Select window with wofi
 selected=$(echo "$windows" | wofi -d -i -p "Switch to:" | awk '{print $1}')
 
 # Tell sway to focus said window
