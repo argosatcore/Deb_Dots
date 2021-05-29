@@ -15,7 +15,7 @@ else
   all_windows=$floating_windows
 fi
 
-# Select window with rofi
+# Select window with wofi:
 selected=$(echo "$all_windows" | wofi -d -i | awk '{print $1}')
 
 # Tell sway to focus said window
