@@ -12,7 +12,7 @@
 
 # ------Use fzf as a file opener:
 	fo() {
-		file="$(fdfind -t f -H | fzf --preview="head -$LINES {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)"
+		file="$(fdfind -t f -H | fzf --reverse --preview="head -$LINES {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)"
 		if [ -n "$file" ]; then
 		    mimetype="$(xdg-mime query filetype $file)"
 		    default="$(xdg-mime query default $mimetype)"
@@ -23,6 +23,7 @@
 		    fi
 		fi
 	}
+
 
 # ------Use fzf to move between directories
 	fzd() {
