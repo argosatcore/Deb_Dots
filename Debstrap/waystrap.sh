@@ -16,7 +16,7 @@ sudo apt install -y \
 	brightnessctl \
 	default-jdk \
 	deja-dup \
-	fdfind \
+	fd-find \
 	firefox \
 	fonts-font-awesome \
 	foot \

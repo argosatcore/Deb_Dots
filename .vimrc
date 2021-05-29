@@ -4,7 +4,7 @@
 " ░░▀░░▀▀▀░▀░▀
 
 
-" ------Global configs::
+" ------Global configs:
 	set number relativenumber
 	set spell spelllang=es,en_us  	
 	set wildmenu
