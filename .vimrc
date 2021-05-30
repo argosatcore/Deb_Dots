@@ -10,7 +10,7 @@
 	set wildmenu
 	set autoread wildmode=longest,list,full
 	set mouse=a
-	set cursorline
+	set cursorline cursorcolumn
 	set ignorecase
 	syntax on
 	set showmatch
@@ -100,13 +100,13 @@
 	function! s:goyo_enter()
 	set noshowmode
 	set noshowcmd
-	set nocursorline
+	set nocursorline nocursorcolumn
 	endfunction
 	
 	function! s:goyo_leave()
 	set showmode
 	set showcmd
-	set cursorline
+	set cursorline cursorcolumn
 	hi! Normal ctermbg=NONE guibg=NONE 
 	hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 
 	endfunction
