@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Get available windows
 windows=$(swaymsg -t get_tree | jq -r '
