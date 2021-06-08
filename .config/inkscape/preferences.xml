@@ -127,10 +127,10 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="2030.92"
-         height="658.141"
-         rx="37.7953"
-         ry="37.7953" />
+         width="793.701"
+         height="803.73"
+         rx="0"
+         ry="0" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -543,8 +543,8 @@
        page="0"
        x="0"
        y="0"
-       w="386"
-       h="441"
+       w="412"
+       h="494"
        visible="1"
        state="2"
        placement="2" />
@@ -596,8 +596,8 @@
        path=""
        x="0"
        y="0"
-       w="386"
-       h="489"
+       w="412"
+       h="656"
        visible="1"
        state="2"
        placement="1">
@@ -628,12 +628,13 @@
     <group
        id="import"
        enable_preview="1"
-       path=""
+       path="/home/argos/Desktop/Projects/3_CAD_Drawing/Live_Forever_The _Return_of_the_Factory/"
        ask="1"
        ask_svg="1"
-       link="link"
+       link="embed"
        scale="auto"
-       import_mode_svg="include" />
+       import_mode_svg="include"
+       forcexdpi="0" />
     <group
        id="debug"
        redirect="0" />
@@ -682,7 +683,8 @@
        add-label-comments="0" />
   </group>
   <group
-     id="options">
+     id="options"
+     onimport="0">
     <group
        id="renderingcache"
        size="512" />
@@ -958,7 +960,7 @@
      id="extensions" />
   <group
      id="desktop"
-     style="fill:#4d4d4d;font-size:266.66666667px;-inkscape-font-specification:Jost;font-family:Jost;line-height:1;stroke:#ffffff;stroke-width:7.55905512">
+     style="fill:#ffffff;font-size:266.66666667px;-inkscape-font-specification:Jost;font-family:Jost;line-height:1;stroke:#ffffff;stroke-width:7.55905512">
     <group
        width="640"
        height="480"
