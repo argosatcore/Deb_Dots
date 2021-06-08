@@ -84,7 +84,7 @@ mv ~/Deb_Dots/.config/mako/ ~/.config/
 mv ~/Deb_Dots/.config/waybar/ ~/.config/
 mv ~/Deb_Dots/.config/wlogout/ ~/.config/
 mv ~/Deb_Dots/.config/foot/ ~/.config/
- ~/Deb_Dots/.config/nvim/ ~/.config/
+mv ~/Deb_Dots/.config/nvim/ ~/.config/
 mv ~/Deb_Dots/.config/mimeapps.list ~/.config/
 mv ~/Deb_Dots/README.md ~/
 mv ~/Deb_Dots/LICENSE ~/
