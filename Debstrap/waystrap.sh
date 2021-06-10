@@ -70,6 +70,9 @@ echo 'Installing Zotero...'
 echo ' ' 
 flatpak install flathub org.zotero.Zotero
 echo ' '
+echo 'Installing Foliate...'
+flatpak install flathub com.github.johnfactotum.Foliate
+echo ' '
 echo 'Capturing dotfiles...'
 echo ' '
 git clone git@github.com:argosatcore/Deb_Dots.git 

@@ -35,13 +35,11 @@
 	alias c='clear'
 	alias configheader='toilet -f pagga'
 	alias fp='ps aux | fzf'
-	alias note='nvim Desktop/Notes/Notes.txt'
 
 	#Apt:
 	alias aptdate='sudo apt update'
 	alias aptgradable='apt list --upgradable'
 	alias aptgrade='sudo apt upgrade'
-	alias lookapt='apt search'
 	alias throwapt='sudo apt remove'
 	alias capture='sudo apt install'
 	alias debcount='apt-cache search "" | wc -l'

@@ -10,6 +10,13 @@
 	}
 
 
+# ------Pull up quick notes on random topics:
+ 	note() {
+ 		touch ~/Desktop/Notes/"$1"
+		nvim ~/Desktop/Notes/"$1"
+ 	}
+
+
 # ------Use fzf as a file opener:
 	fo() {
 		file="$(fdfind -t f -H | fzf --reverse --preview="head -$LINES {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)"
@@ -39,7 +46,7 @@
 
 # -----Fuzzy find packages with Apt:
 	lookapt() {
-		apt-cache pkgnames | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:57%:wrap:hidden --bind=space:toggle-preview
+		apt-cache pkgnames | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:99%:wrap:hidden --bind=space:toggle-preview
 	}
 
 # ------Clean system:
