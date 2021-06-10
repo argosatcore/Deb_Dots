@@ -313,7 +313,7 @@
 #-- Graphical appearance: --
 #---------------------------
 
-	# Gaps' default behavior size:
+	# Gaps' default size & behavior:
 	gaps inner 7
 	smart_gaps on
 
