@@ -49,6 +49,7 @@
 		apt-cache pkgnames | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:99%:wrap:hidden --bind=space:toggle-preview
 	}
 
+
 # ------Clean system:
 	debclean() {
 		sudo apt clean

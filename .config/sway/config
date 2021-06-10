@@ -313,9 +313,14 @@
 #-- Graphical appearance: --
 #---------------------------
 
-	# Gaps
+	# Gaps' default behavior size:
 	gaps inner 7
 	smart_gaps on
+
+	# Gaps' size modifiers:
+	bindsym $mod+plus gaps inner current plus 7
+	bindsym $mod+Shift+plus gaps inner current minus 7
+	bindsym $mod+o gaps inner current set 0
 
 	# Borders:
 	default_border pixel 2 
