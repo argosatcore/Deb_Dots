@@ -17,7 +17,7 @@ selected=$(printf %s "$windows" | wofi --dmenu --insensitive --lines "$length" -
 case "$selected" in
 	*:\ * )
 		theapp=$(printf '%s' "$selected" | cut -d: -f1 )
-		thename=$(printf '%s' "$selected" | cut -d: -f2 | sed 's/\ //' )
+		thename=$(printf '%s' "$selected" | cut -d: -f2- | sed 's/\ //' )
 		identity=$(swaymsg -t get_tree | jq -r '
 			recurse(.nodes[]?) |
 				recurse(.floating_nodes[]?) |
