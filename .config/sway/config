@@ -8,7 +8,7 @@
 #----------------
 
 	# Font:
-	font pango: FontAwesome Bold 8
+	font pango: Ubuntu 10
 
 	# Logo key. Use Mod1 for Alt:
 	set $mod Mod4
@@ -90,15 +90,19 @@
 #--------------------------
 #-- Input configuration: --
 #--------------------------
-	
-	# Keyboard layout:
-	input * xkb_layout "latam"
 
-	# Mouse layout:
-	input * left_handed enabled
+	# Keyboard and mouse configurations:	
+	input * {
+		xkb_options caps:swapescape
 
-	# Swap caps with escape
-	input "type:keyboard" xkb_options caps:swapescape
+		left_handed enabled
+
+		xkb_layout "latam"
+
+		repeat_delay 200
+
+		repeat_rate 50
+	}
 
 	# Hide mouse cursor after a period of inactivity.
 	seat seat0 hide_cursor 3000
