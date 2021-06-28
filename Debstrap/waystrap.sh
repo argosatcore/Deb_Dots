@@ -106,3 +106,8 @@ sudo systemctl enable fstrim.timer
 sudo systemctl start fstrim.timer
 echo ' '
 echo 'Bootstrapping complete. Welcome back, Argos.'
+echo ' ' 
+echo 'Remember, those who forget their history are condemned to repeat it.'
+echo 'Remember...'
+echo '...'
+nvim ~/Debstrap/project-history.en.txt

@@ -94,14 +94,12 @@
 	# Keyboard and mouse configurations:	
 	input * {
 		xkb_options caps:swapescape
-
 		left_handed enabled
-
 		xkb_layout "latam"
-
 		repeat_delay 200
-
 		repeat_rate 50
+		accel_profile "adaptive"
+		pointer_accel 1.0
 	}
 
 	# Hide mouse cursor after a period of inactivity.

@@ -1,0 +1,1578 @@
+
+                      A Brief History of Debian
+
+
+---------------------------------------------------------------------
+                                  
+                     version: 2.25 (2020-09-14)
+
+---------------------------------------------------------------------
+
+Copyright © 1999-2020 Debian Documentation Team <
+debian-doc@lists.debian.org>
+
+                      Debian Documentation Team
+
+                    <debian-doc@lists.debian.org>
+
+    This document may be freely redistributed or modified in any form
+    provided your changes are clearly documented.
+
+    This document may be redistributed for fee or free, and may be
+    modified (including translation from one type of media or file
+    format to another or from one spoken language to another)
+    provided that all changes from the original are clearly marked as
+    such.
+
+    Significant contributions were made to this document by
+
+      * Javier Fernández-Sanguino <jfs@debian.org>
+
+      * Bdale Garbee <bdale@debian.org>
+
+      * Hartmut Koptein <koptein@debian.org>
+
+      * Nils Lohner <lohner@debian.org>
+
+      * Will Lowe <lowe@debian.org>
+
+      * Bill Mitchell <Bill.Mitchell@pobox.com>
+
+      * Ian Murdock
+
+      * Martin Schulze <joey@debian.org>
+
+      * Craig Small <csmall@debian.org>
+
+    This document is primarily maintained by Bdale Garbee <
+    bdale@debian.org>.
+
+Abstract
+
+This document describes the history and goals of the Debian project.
+
+---------------------------------------------------------------------
+
+Table of Contents
+
+1. Introduction -- What is the Debian Project?
+
+    1.1. In the Beginning
+    1.2. Pronouncing Debian
+
+2. Leadership
+3. Debian Releases
+4. A Detailed History
+
+    4.1. The 0.x Releases
+
+        4.1.1. The Early Debian Packaging System
+
+    4.2. The 1.x Releases
+    4.3. The 2.x Releases
+    4.4. The 3.x Releases
+    4.5. The 4.x Releases
+    4.6. The 5.x Releases
+    4.7. The 6.x Releases
+    4.8. The 7.x Releases
+    4.9. The 8.x Releases
+    4.10. The 9.x Releases
+    4.11. The 10.x Releases
+    4.12. Important Events
+
+        4.12.1. July 2000: Joel Klecker died
+        4.12.2. October 2000: Implementation of Package Pools
+        4.12.3. March 2001: Christopher Rutter died
+        4.12.4. March 2001: Fabrizio Polacco died
+        4.12.5. July 2002: Martin Butterweck died
+        4.12.6. November 2002: Fire burnt Debian server
+        4.12.7. November 2003: Several Debian server hacked
+        4.12.8. May 2004: Manuel Estrada Sainz and Andrés García
+            Solier died
+        4.12.9. July 2005: Jens Schmalzing died
+        4.12.10. December 2008: Thiemo Seufer died
+        4.12.11. July 2009: Steve Greenland died
+        4.12.12. August 2010: Frans Pop died
+        4.12.13. April 2011: Adrian von Bidder died
+        4.12.14. May 2013: Ray Dassen died
+        4.12.15. July 2014: Peter Miller died
+        4.12.16. February 2015: Clytie Siddall died
+        4.12.17. December 2015: Ian Murdock died
+        4.12.18. September 2016: Kristoffer H. Rose died
+
+    4.13. What's Next?
+
+A. The Debian Manifesto
+
+    A.1. What is Debian Linux?
+    A.2. Why is Debian being constructed?
+    A.3. How will Debian attempt to put an end to these problems?
+
+Chapter 1. Introduction -- What is the Debian Project?
+
+    The Debian Project is a worldwide group of volunteers who
+    endeavor to produce an operating system distribution that is
+    composed entirely of free software. The principle product of the
+    project to date is the Debian GNU/Linux software distribution,
+    which includes the Linux operating system kernel, and thousands
+    of prepackaged applications. Various processor types are
+    supported to one extent or another, including 32 and 64 bit x86,
+    ARM, MIPS, PowerPC and IBM S/390.
+
+    Debian motivated the formation of Software in the Public
+    Interest, Inc., a New York-based non-profit organization. SPI was
+    founded to help Debian and other similar organizations develop
+    and distribute open hardware and software. Among other things,
+    SPI provides a mechanism by which The Debian Project may accept
+    contributions that are tax deductible in the United States.
+
+    For more information about free software, see the Debian Social
+    Contract and associated Debian Free Software Guidelines, or the
+    Debian What Does Free Mean? page.
+
+1.1. In the Beginning
+
+    The Debian Project was officially founded by Ian Murdock on
+    August 16th, 1993. (There is also a scanned printout of that
+    announcement.) At that time, the whole concept of a
+    "distribution" of Linux was new. Ian intended Debian to be a
+    distribution which would be made openly, in the spirit of Linux
+    and GNU (read his manifesto provided as an appendix to this
+    document for more details). The creation of Debian was sponsored
+    by the FSF's GNU project for one year (November 1994 to November
+    1995).
+
+    Debian was meant to be carefully and conscientiously put
+    together, and to be maintained and supported with similar care.
+    It started as a small, tightly-knit group of Free Software
+    hackers, and gradually grew to become a large, well-organized
+    community of developers and users.
+
+    When it began, Debian was the only distribution that was open for
+    every developer and user to contribute their work. It remains the
+    most significant distributor of Linux that is not a commercial
+    entity. It is the only large project with a constitution, social
+    contract, and policy documents to organize the project. Debian is
+    also the only distribution which is "micro packaged" using
+    detailed dependency information regarding inter-package
+    relationships to ensure system consistency across upgrades.
+
+    To achieve and maintain high standards of quality, Debian has
+    adopted an extensive set of policies and procedures for packaging
+    and delivering software. These standards are backed up by tools,
+    automation, and documentation implementing all of Debian's key
+    elements in an open and visible way.
+
+1.2. Pronouncing Debian
+
+    The official pronunciation of Debian is 'deb ee n'. The name
+    comes from the names of the creator of Debian, Ian Murdock, and
+    his wife, Debra.
+
+Chapter 2. Leadership
+
+    Debian has had several leaders since its beginnings in 1993.
+
+    Ian Murdock founded Debian in August 1993 and led it until March
+    1996.
+
+    Bruce Perens led Debian from April 1996 until December 1997.
+
+    Ian Jackson led Debian from January 1998 until December 1998.
+
+    Wichert Akkerman led Debian from January 1999 until March 2001.
+
+    Ben Collins led Debian from April 2001 until April 2002.
+
+    Bdale Garbee led Debian from April 2002 until April 2003.
+
+    Martin Michlmayr led Debian from March 2003 until March 2005.
+
+    Branden Robinson led Debian from April 2005 until April 2006.
+
+    Anthony Towns led Debian from April 2006 until April 2007.
+
+    Sam Hocevar led Debian from April 2007 until April 2008.
+
+    Steve McIntyre led Debian from April 2008 until April 2010.
+
+    Stefano Zacchiroli led Debian from April 2010 until April 2013.
+
+    Lucas Nussbaum led Debian from April 2013 until April 2015.
+
+    Neil McGovern led Debian from April 2015 until April 2016.
+
+    Mehdi Dogguy led Debian from April 2016 until April 2017.
+
+    Chris Lamb led Debian from April 2017 until April 2019.
+
+    Sam Hartman led Debian from April 2019 until April 2020.
+
+    Jonathan Carter was elected in April 2020 and is our current
+    leader.
+
+Chapter 3. Debian Releases
+
+    Debian 0.01 through 0.90 (August-December 1993)
+
+    Debian 0.91 (January 1994): This release had a simple package
+    system which could install and uninstall packages. The project
+    had grown to several dozen people at this point.
+
+    Debian 0.93R5 (March 1995): Responsibility for each package was
+    clearly assigned to a developer by this point, and the package
+    manager (dpkg) was used to install packages after the
+    installation of a base system.
+
+    Debian 0.93R6 (November 1995): dselect appears. This was the last
+    Debian release using the a.out binary format; there were about 60
+    developers. The first master.debian.org server was built by Bdale
+    Garbee and hosted by HP in parallel with the 0.93R6 release. The
+    deployment of an explicit master server on which Debian
+    developers would construct each release led directly to the
+    formation of the Debian mirror network, and indirectly to the
+    development of many of the policies and procedures used to manage
+    the project today.
+
+    Debian 1.0 was never released: InfoMagic, a CD vendor,
+    accidentally shipped a development release of Debian and entitled
+    it 1.0. On December 11th 1995, Debian and InfoMagic jointly
+    announced that this release was screwed. Bruce Perens explains
+    that the data placed on the "InfoMagic Linux Developer's Resource
+    5-CD Set November 1995" as "Debian 1.0" is not the Debian 1.0
+    release, but an early development version which is only partially
+    in the ELF format, will probably not boot or run correctly, and
+    does not represent the quality of a released Debian system. To
+    prevent confusion between the premature CD version and the actual
+    Debian release, the Debian Project has renamed its next release
+    to "Debian 1.1". The premature Debian 1.0 on CD is deprecated and
+    should not be used.
+
+    The hosting of master.debian.org moved from HP to i-Connect.Net
+    around the end of 1995. Michael Neuffer and Shimon Shapiro,
+    founders of i-Connect.Net, hosted master on their own hardware
+    for a little more than a year. During this time, they provided
+    many services to Debian, including running what was essentially
+    the New Maintainer process of the day, and significantly aiding
+    the growth of the early Debian mirror network.
+
+    Debian 1.1 Buzz (June 17th, 1996): This was the first Debian
+    release with a code name. It was taken, like all others so far,
+    from a character in one of the Toy Story movies... in this case,
+    Buzz Lightyear. By this time, Bruce Perens had taken over
+    leadership of the Project from Ian Murdock, and Bruce was working
+    at Pixar, the company that produced the movies. This release was
+    fully ELF, used Linux kernel 2.0, and contained 474 packages.
+
+    Debian 1.2 Rex (December 12th, 1996): Named for the plastic
+    dinosaur in the Toy Story movies. This release consisted of 848
+    packages maintained by 120 developers
+
+    Debian 1.3 Bo (June 5th, 1997): Named for Bo Peep, the
+    shepherdess. This release consisted of 974 packages maintained by
+    200 developers.
+
+    Debian 2.0 Hamm (July 24th, 1998): Named for the piggy-bank in
+    the Toy Story movies. This was the first multi-architecture
+    release of Debian, adding support for the Motorola 68000 series
+    architectures. With Ian Jackson as Project Leader, this release
+    made the transition to libc6, and consisted of over 1500 packages
+    maintained by over 400 developers.
+
+    Debian 2.1 Slink (March 9th, 1999): Named for the slinky-dog in
+    the movie. Two more architectures were added, Alpha and SPARC.
+    With Wichert Akkerman as Project Leader, this release consisted
+    of about 2250 packages and required 2 CDs in the official set.
+    The key technical innovation was the introduction of apt, a new
+    package management interface. Widely emulated, apt addressed
+    issues resulting from Debian's continuing growth, and established
+    a new paradigm for package acquisition and installation on Open
+    Source operating systems.
+
+    Debian 2.2 Potato (15 August 2000): Named for "Mr Potato Head" in
+    the Toy Story movies. This release added support for the PowerPC
+    and ARM architectures. With Wichert still serving as Project
+    Leader, this release consisted of more than 3900 binary packages
+    derived from over 2600 source packages maintained by more than
+    450 Debian developers.
+
+    Debian 3.0 Woody (19 July 2002): Named for the main character the
+    Toy Story movies: "Woody" the cowboy. Even more architectures
+    were added in this release: IA-64, HP PA-RISC, MIPS (big endian),
+    MIPS (little endian) and S/390. This is also the first release to
+    include cryptographic software due to the restrictions for
+    exportation being lightened in the US, and also the first one to
+    include KDE, now that the license issues with QT were resolved.
+    With Bdale Garbee recently appointed Project Leader, and more
+    than 900 Debian developers, this release contained around 8,500
+    binary packages and 7 binary CDs in the official set.
+
+    Debian 3.1 Sarge (6 June 2005): named for the sergeant of the
+    Green Plastic Army Men. No new architectures were added to the
+    release, although an unofficial AMD64 port was published at the
+    same time and distributed through the new Alioth project hosting
+    site. This release features a new installer: debian-installer, a
+    modular piece of software that feature automatic hardware
+    detection, unattended installation features and was released
+    fully translated to over thirty languages. It was also the first
+    release to include a full office suite: OpenOffice.org. Branden
+    Robinson had just been appointed as Project Leader. This release
+    was made by more than nine hundred Debian developers, and
+    contained around 15,400 binary packages and 14 binary CDs in the
+    official set.
+
+    Debian 4.0 Etch (8 April 2007): named for the sketch toy in the
+    movie. One architecture was added in this release: AMD64, and
+    official support for m68k was dropped. This release continued
+    using the debian-installer, but featuring in this release a
+    graphical installer, cryptographic verification of downloaded
+    packages, more flexible partitioning (with support for encrypted
+    partitions), simplified mail configuration, a more flexible
+    desktop selection, simplified but improved localization and new
+    modes, including a rescue mode. New installations would not need
+    to reboot through the installation process as the previous two
+    phases of installation were now integrated. This new installer
+    provided support for scripts using composed characters and
+    complex languages in its graphical version, increasing the number
+    of available translations to over fifty. Sam Hocevar was
+    appointed Project Leader the very same day, and the project
+    included more than one thousand and thirty Debian developers. The
+    release contained around 18,000 binary packages over 20 binary
+    CDs (3 DVDs) in the official set. There were also two binary CDs
+    available to install the system with alternate desktop
+    environments different to the default one.
+
+    Debian 5.0 Lenny (February 2009): named for the wind up
+    binoculars in the Toy Story movies. One architecture was added in
+    this release: ARM EABI (or armel), providing support for newer
+    ARM processors and deprecating the old ARM port (arm). The m68k
+    port was not included in this release, although it was still
+    provided in the unstable distribution. This release did not
+    feature the FreeBSD port, although much work on the port had been
+    done to make it qualify it did not meet yet the qualification
+    requirements for this release.
+
+    Support of small factor devices in this release was increased by
+    the added support for Marvell's Orion platform which was used in
+    many storage devices and also provided supported several
+    Netbooks. Some new build tools were added which allowed Debian
+    packages to be cross-built and shrunk for embedded ARM systems.
+    Also, netbooks of varied vendors were now supported and the
+    distribution provided software more suitable for computers with
+    relatively low performance.
+
+    It was also the first release to provide free versions of Sun's
+    Java technology, making it possible to provide Java applications
+    in the main section.
+
+    Debian 6.0 Squeeze (February 2011): named for the green
+    three-eyed aliens.
+
+    The release was frozen on August 6, 2010, with many of the Debian
+    developers gathered at the 10th DebConf at New York City.
+
+    While two architectures (alpha and hppa) were dropped, two
+    architectures of the new FreeBSD port (kfreebsd-i386 and
+    kfreebsd-amd64) were made available as technology preview,
+    including the kernel and userland tools as well as common server
+    software (though not advanced desktop features yet). This was the
+    first time a Linux distribution has been extended to also allow
+    use of a non-Linux kernel.
+
+    The new release introduced a dependency based boot sequence,
+    which allowed for parallel init script processing, speeding
+    system startup.
+
+    Debian 7.0 Wheezy (May 2013): named for the rubber toy penguin
+    with a red bow tie.
+
+    The release was frozen on June 30, 2012, very close to the Debian
+    developers gathering in the 12th DebConf at Managua, Nicaragua.
+
+    One architecture was included in this release (armhf) and this
+    release introduced multi-arch support, which allowed users to
+    install packages from multiple architectures on the same machine.
+    Improvements in the installation process allowed visually
+    impaired people to install the system using software speech for
+    the first time.
+
+    This was also the first release that supported the installation
+    and booting in devices using UEFI firmware.
+
+    Debian 8 Jessie (April 2015): named for the cow girl doll who
+    first appeared in Toy Story 2.
+
+    This release introduced for the first time the systemd init
+    system as default. Two new architectures were introduced: arm64
+    and ppc64el and three architectures were dropped: s390 (replaced
+    by s390x), ia64 and sparc. The Sparc architecture had been
+    present in Debian for 16 years, but lacked developer support to
+    make it maintainable in the distribution.
+
+    The release included many security improvements such as a new
+    kernel that nullified a whole set of security vulnerabilities
+    (symlink attacks), a new way to detect packages which were under
+    security support, more packages built with hardened compiler
+    flags and a new mechanism (needrestart) to detect sub-systems
+    which had to be restarted in order to propagate security updates
+    after an upgrade.
+
+    Debian 9 Stretch (June 2017): named for the toy rubber octopus
+    with suckers on her eight long arms that appeared in Toy Story 3.
+
+    The release was frozen on February 7th, 2017.
+
+    Support for the powerpc architecture was dropped in this release,
+    whileas the mips64el architecture was introduced. This release
+    introduced debug packages with a new repository in the archive,
+    packages from this repository provided debug symbols
+    automatically for packages.
+
+    Debian 10 Buster (July 2019): named for Andy's pet dog, received
+    as Christmas present in the end of Toy Story.
+
+    With this release Debian for the first time included a mandatory
+    access control framework enabled per default (AppArmor). It was
+    also the first Debian release to ship with Rust based programs
+    such as Firefox, ripgrep, fd, exa, etc. and a significant number
+    of Rust based libraries (more than 450).
+
+    Debian 11 Bullseye (no release date yet): named for Woody's
+    wooden toyhorse that appeared in Toy Story 2.
+
+Chapter 4. A Detailed History
+
+4.1. The 0.x Releases
+
+    Debian was begun in August 1993 by Ian Murdock, then an
+    undergraduate at Purdue University. Debian was sponsored by the
+    GNU Project of The Free Software Foundation, the organization
+    started by Richard Stallman and associated with the General
+    Public License (GPL), for one year -- from November 1994 to
+    November 1995.
+
+    Debian 0.01 through Debian 0.90 were released between August and
+    December of 1993. Ian Murdock writes:
+
+    "Debian 0.91 was released in January 1994. It had a primitive
+    package system that allowed users to manipulate packages but that
+    did little else (it certainly didn't have dependencies or
+    anything like that). By this time, there were a few dozen people
+    working on Debian, though I was still mostly putting together the
+    releases myself. 0.91 was the last release done in this way.
+
+    Most of 1994 was spent organizing the Debian Project so that
+    others could more effectively contribute, as well as working on 
+    dpkg (Ian Jackson was largely responsible for this). There were
+    no releases to the public in 1994 that I can remember, though
+    there were several internal releases as we worked to get the
+    process right.
+
+    Debian 0.93 Release 5 happened in March 1995 and was the first
+    "modern" release of Debian: there were many more developers by
+    then (though I can't remember exactly how many), each maintaining
+    their own packages, and dpkg was being used to install and
+    maintain all these packages after a base system was installed.
+
+    "Debian 0.93 Release 6 happened in November 1995 and was the last
+    a.out release. There were about sixty developers maintaining
+    packages in 0.93R6. If I remember correctly, dselect first
+    appeared in 0.93R6."
+
+    Ian Murdock also notes that Debian 0.93R6 "... has always been my
+    favorite release of Debian", although he admits to the
+    possibility of some personal bias, as he stopped actively working
+    on the project in March 1996 during the pre-production of Debian
+    1.0, which was actually released as Debian 1.1 to avoid confusion
+    after a CD-ROM manufacturer mistakenly labelled an unreleased
+    version as Debian 1.0. That incident led to the concept of
+    "official" CD-ROM images, as a way for the project to help
+    vendors avoid this kind of mistake.
+
+    During August 1995 (between Debian 0.93 Release 5 and Debian 0.93
+    Release 6), Hartmut Koptein started the first port for Debian,
+    for the Motorola m68k family. He reports that "Many, many
+    packages were i386-centric (little endian, -m486, -O6 and all for
+    libc4) and it was a hard time to get a starting base of packages
+    on my machine (an Atari Medusa 68040, 32 MHz). After three months
+    (in November 1995), I uploaded 200 packages from 250 available
+    packages, all for libc5!" Later he started another port together
+    with Vincent Renardias and Martin Schulze, for the PowerPC
+    family.
+
+    Since this time, the Debian Project has grown to include several
+    ports to other architectures, a port to a new (non-Linux) kernel,
+    the GNU Hurd microkernel, and at least one flavor of BSD kernel.
+
+    An early member of the project, Bill Mitchell, remembers the
+    Linux kernel
+
+    "... being between 0.99r8 and 0.99r15 when we got started. For a
+    long time, I could build the kernel in less than 30 minutes on a
+    20 MHz 386-based machine, and could also do a Debian install in
+    that same amount of time in under 10Mb of disk space.
+
+    " ... I recall the initial group as including Ian Murdock,
+    myself, Ian Jackson, another Ian who's surname I don't recall,
+    Dan Quinlan, and some other people who's names I don't recall.
+    Matt Welsh was either part of the initial group or joined pretty
+    early on (he has since left the project). Someone set up a
+    mailing list, and we were off and running.
+
+    As I recall, we didn't start off with a plan, and we didn't start
+    off by putting together a plan in any highly organized fashion.
+    Right from the start, I do recall, we started off collecting up
+    sources for a pretty random collection of packages. Over time, we
+    came to focus on a collection of items which would be required to
+    put together the core of a distribution: the kernel, a shell,
+    update, getty, various other programs and support files needed to
+    init the system, and a set of core utilities."
+
+4.1.1. The Early Debian Packaging System
+
+    At the very early stages of the Project, members considered
+    distributing source-only packages. Each package would consist of
+    the upstream source code and a Debianized patch file, and users
+    would untar the sources, apply the patches, and compile binaries
+    themselves. They soon realized, however, that some sort of binary
+    distribution scheme would be needed. The earliest packaging tool,
+    written by Ian Murdock and called dpkg, created a package in a
+    Debian-specific binary format, and could be used later to unpack
+    and install the files in the package.
+
+    Ian Jackson soon took over the development of the packaging tool,
+    renaming the tool itself dpkg-deb and writing a front-end program
+    he named dpkg to facilitate the use of dpkg-deb and provide the 
+    Dependencies and Conflicts of today's Debian system. The packages
+    produced by these tools had a header listing the version of the
+    tool used to create the package and an offset within the file to
+    a tar-produced archive, which was separated from the header by
+    some control information.
+
+    At about this time some debate arose between members of the
+    project -- some felt that the Debian-specific format created by 
+    dpkg-deb should be dropped in favor of the format produced by the
+    ar program. After several revised file formats and
+    correspondingly-revised packaging tools, the ar format was
+    adopted. The key value of this change is that it makes it
+    possible for a Debian package to be un-packaged on any Unix-like
+    system without the need to run an untrusted executable. In other
+    words, only standard tools present on every Unix system like 'ar'
+    and 'tar' are required to unpack a Debian binary package and
+    examine the contents.
+
+4.2. The 1.x Releases
+
+    When Ian Murdock left Debian, he appointed Bruce Perens as the
+    next leader of the project. Bruce first became interested in
+    Debian while he was attempting to create a Linux distribution CD
+    to be called "Linux for Hams", which would include all of the
+    Linux software useful to ham radio operators. Finding that the
+    Debian core system would require much further work to support his
+    project, Bruce ended up working heavily on the base Linux system
+    and related installation tools, postponing his ham radio
+    distribution, including organizing (with Ian Murdock) the first
+    set of Debian install scripts, eventually resulting in the Debian
+    Rescue Floppy that was a core component of the Debian
+    installation toolset for several releases.
+
+    Ian Murdock states:
+
+    "Bruce was the natural choice to succeed me, as he had been
+    maintaining the base system for nearly a year, and he had been
+    picking up the slack as the amount of time I could devote to
+    Debian declined rapidly."
+
+    He initiated several important facets of the project, including
+    coordinating the effort to produce the Debian Free Software
+    Guidelines and the Debian Social Contract, and initiating an Open
+    Hardware Project. During his time as Project Leader, Debian
+    gained market share and a reputation as a platform for serious,
+    technically-capable Linux users.
+
+    Bruce Perens also spearheaded the effort to create Software in
+    the Public Interest, Inc.. Originally intended to provide the
+    Debian Project with a legal entity capable of accepting
+    donations, its aims quickly expanded to include supporting free
+    software projects outside the Debian Project.
+
+    The following Debian versions were released during this time:
+
+      * 1.1 Buzz released June 1996 (474 packages, 2.0 kernel, fully
+        ELF, dpkg)
+   
+      * 1.2 Rex released December 1996 (848 packages, 120 developers)
+
+      * 1.3 Bo released July 1997 (974 packages, 200 developers)
+
+    There were several interim "point" releases made to 1.3, with the
+    last being 1.3.1R6.
+
+    Bruce Perens was replaced by Ian Jackson as Debian Project Leader
+    at the beginning of January, 1998, after leading the project much
+    of the way through the preparation for the 2.0 release.
+
+4.3. The 2.x Releases
+
+    Ian Jackson became the Leader of the Debian Project at the
+    beginning of 1998, and was shortly thereafter added to the board
+    of Software in the Public Interest in the capacity of Vice
+    President. After the resignation of the Treasurer (Tim Sailer),
+    President (Bruce Perens), and Secretary (Ian Murdock), he became
+    President of the Board and three new members were chosen: Martin
+    Schulze (Vice President), Dale Scheetz (Secretary), and Nils
+    Lohner (Treasurer).
+
+    Debian 2.0 (Hamm) was released July 1998 for the Intel i386 and
+    Motorola 68000 series architectures. This release marked the move
+    to a new version of the system C libraries (glibc2 or for
+    historical reasons libc6). At the time of release, there were
+    1500+ packages maintained by more than 400 Debian developers.
+
+    Wichert Akkerman succeeded Ian Jackson as Debian Project Leader
+    in January of 1999. Debian 2.1 was released on 09 March, 1999,
+    after being delayed by a week when a few last-minute issues
+    arose.
+
+    Debian 2.1 (Slink) featured official support for two new
+    architectures: Alpha and Sparc. The X-Windows packages included
+    with Debian 2.1 were greatly reorganized from previous releases,
+    and 2.1 included apt, the next-generation Debian package manager
+    interface. Also, this release of Debian was the first to require
+    2 CD-ROMs for the "Official Debian CD set"; the distribution
+    included about 2250 packages.
+
+    On 21 April 1999, Corel Corporation and the K Desktop Project
+    effectively formed an alliance with Debian when Corel announced
+    its intentions to release a Linux distribution based on Debian
+    and the desktop environment produced by the KDE group. During the
+    following spring and summer months, another Debian-based
+    distribution, Storm Linux, appeared, and the Debian Project chose
+    a new logo, featuring both an Official version for use on
+    Debian-sanctioned materials such as CD-ROMs and official Project
+    web sites, and an Unofficial logo for use on material mentioning
+    or derived from Debian.
+
+    A new, unique, Debian port also began at this time, for the Hurd
+    port. This is the first port to use a non-Linux kernel, instead
+    using the GNU Hurd, a version of the GNU Mach microkernel.
+
+    Debian developers joined formally for the first time in an annual
+    meeting called DebConf. The first meeting, called Debconf0, took
+    place in Bordeaux, France from the 5th to the 9th of July 2000.
+    The conference aim was to join developers and advanced users in a
+    single place to talk about Debian and work together developing
+    parts of the distribution.
+
+    Debian 2.2 (Potato) was released August 15th, 2000 for the Intel
+    i386, Motorola 68000 series, alpha, SUN Sparc, PowerPC and ARM
+    architectures. This was the first release including PowerPC and
+    ARM ports. At the time of release, there were 3900+ binary and
+    2600+ source packages maintained by more than 450 Debian
+    developers.
+
+    An interesting fact about Debian 2.2 is that it showed how an
+    free software effort could lead to a modern operating system
+    despite all the issues around it. This was studied thoroughly by
+    a group of interested people in an article called Counting
+    potatoes: The size of Debian 2.2, by Jesús González Barahona,
+    quoting from this article:
+
+    "[...] we use David A. Wheeler's sloccount system to determine
+    the number of physical source lines of code (SLOC) of Debian 2.2
+    (aka potato). We show that Debian 2.2 includes more than
+    55,000,000 physical SLOC (almost twice than Red Hat 7.1, released
+    about 8 months later), showing that the Debian development model
+    (based on the work of a large group of voluntary developers
+    spread around the world) is at least as capable as other
+    development methods [...] It is also shown that if Debian had
+    been developed using traditional proprietary methods, the COCOMO
+    model estimates that its cost would be close to $1.9 billion USD
+    to develop Debian 2.2. In addition, we offer both an analysis of
+    the programming languages used in the distribution (C amounts for
+    about 70%, C++ for about 10%, LISP and Shell are around 5%, with
+    many others to follow), and the largest packages (Mozilla, the
+    Linux kernel, PM3, XFree86, etc.)"
+
+4.4. The 3.x Releases
+
+    Before woody could even begin to be prepared for release, a
+    change to the archive system on ftp-master had to be made.
+    Package pools, which enabled special purpose distributions, such
+    as the new "Testing" distribution used for the first time to get
+    woody ready for release, were activated on ftp-master in mid
+    December 2000. A package pool is just a collection of different
+    versions of a given package, from which multiple distributions
+    (currently experimental, unstable, testing, and stable) can draw
+    packages, which are then included in that distribution's Packages
+    file.
+
+    At the same time a new distribution testing was introduced.
+    Mainly, packages from unstable that are said to be stable moved
+    to testing (after a period of a few weeks). This was introduced
+    in order to reduce freeze time and give the project the ability
+    to prepare a new release at any time.
+
+    In that period, some of the companies that were shipping modified
+    versions of Debian closed down. Corel sold its Linux division in
+    the first quarter of 2001, Stormix declared bankruptcy on January
+    17th 2001, and Progeny ceased development of its distribution on
+    October 1st, 2001.
+
+    The freeze for the next release started on July 1st 2001.
+    However, it took the project a little more than a year to get to
+    the next release, due to problems in boot-floppies, because of
+    the introduction of cryptographic software in the main archive
+    and due to the changes in the underlying architecture (the
+    incoming archive and the security architecture). In that time,
+    however, the stable release (Debian 2.2) was revised up to seven
+    times, and two Project Leaders were elected: Ben Collins (in
+    2001) and Bdale Garbee. Also, work in many areas of Debian
+    besides packaging kept growing, including internationalization,
+    Debian's web site (over a thousand web pages) was translated into
+    over 20 different languages, and installation for the next
+    release was ready in 23 languages. Two internal projects: Debian
+    Junior (for children) and Debian Med (for medical practice and
+    research) started during the woody release time frame providing
+    the project with different focuses to make Debian suitable for
+    those tasks.
+
+    The work around Debian didn't stop the developers from joining
+    the annual DebConf meeting. The second meeting Debconf1 was held
+    from the 2nd to the 5th of July together with the Libre Software
+    Meeting (LSM) at Bordeaux (France) gathered around forty Debian
+    developers. The third conference, Debconf2 took place in Toronto
+    (Canada) July 5th 2002 with over eighty participants.
+
+    Debian 3.0 (woody) was released July 19th, 2002 for the Intel
+    i386, Motorola 68000 series, alpha, SUN Sparc, PowerPC, ARM, HP
+    PA-RISC, IA-64, MIPS, MIPS (DEC) and IBM s/390 architectures.
+    This is the first release including HP PA-RISC, IA-64, MIPS, MIPS
+    (DEC) and IBM s/390 ports. At the time of release, there were
+    around 8500 binary packages maintained by over nine hundred
+    Debian developers, becoming the first release to be available on
+    DVD media as well as CD-ROMs.
+
+    Before the next release the DebConf annual meeting continued with
+    the fourth conference, Debconf3 taking place in Oslo from July
+    18th to July 20th 2003 with over one hundred and twenty
+    participants, with a DebCamp preceding it, from July 12th to July
+    17th. The fifth conference, Debconf4, took place from May 26th to
+    June 2nd 2004 in Porto Alegre, Brazil with over one hundred and
+    sixty participants from twenty six different countries.
+
+    Debian 3.1 (sarge) was released June 6th, 2005 for the same
+    architectures as woody, although an unofficial AMD64 port was
+    released at the same time using the project hosting
+    infrastructure provided for the distribution and available at
+    Alioth (formerly at https://alioth.debian.org). There were around
+    15,000 binary packages maintained by more than nine hundred
+    Debian developers.
+
+    There were many major changes in the sarge release, mostly due to
+    the large time it took to freeze and release the distribution.
+    Not only did this release update over 73% of the software shipped
+    in the previous version, but it also included much more software
+    than previous releases almost doubling in size with 9,000 new
+    packages including the OpenOffice suite, the Firefox web browser
+    and the Thunderbird e-mail client.
+
+    This release shipped with the 2.4 and 2.6 Linux kernel series,
+    XFree86 4.3, GNOME 2.8 and KDE 3.3 and with a brand new
+    installer. This new installer replaced the aging boot-floppies
+    installer with a modular design with provided for more advanced
+    installations (with RAID, XFS and LVM support) including hardware
+    detection and making installations easier for novice users of all
+    the architectures. It also switched to aptitude as the selected
+    tool for package management. But the installation system also
+    boasted full internationalization support as the software was
+    translated into almost forty languages. The supporting
+    documentation: installation manual and release notes, were made
+    available with the release in ten and fifteen different languages
+    respectively.
+
+    This release included the efforts of the Debian-Edu/Skolelinux,
+    Debian-Med and Debian-Accessibility sub-projects which boosted
+    the number of educational packages and those with a medical
+    affiliation as well as packages designed especially for people
+    with disabilities.
+
+    The sixth DebConf, Debconf5 was held in Espoo, Finland, from July
+    10th to July 17th, 2005 with over three hundred participants.
+    Videos from this conference are available online.
+
+    The seventh DebConf, Debconf6 was held in Oaxtepec, Mexico, from
+    May 14th to May 22nd, 2006 with around two hundred participants.
+    Videos and pictures from this conference are available online.
+
+4.5. The 4.x Releases
+
+    Debian 4.0 (etch) was released April 8th, 2007 for the same
+    number of architectures as in sarge. This included the AMD64 port
+    but dropped support for m68k. The m68k port was, however, still
+    available in the unstable distribution. There were around 18,200
+    binary packages maintained by more than one thousand and thirty
+    Debian developers.
+
+4.6. The 5.x Releases
+
+    Debian 5.0 (lenny) was released February 14th, 2009 for one more
+    architecture than its predecessor, etch. This included the port
+    for newer ARM processors. As with the previous release, support
+    for the m68k architecture was still available in unstable. There
+    were around 23,000 binary packages (built from over 12,000 source
+    packages) maintained by more than one thousand and ten Debian
+    developers.
+
+    With the release of Debian lenny, the naming scheme for point
+    releases was changed: point releases will use a true micro
+    version number, so the first point release of Debian lenny will
+    be 5.0.1. In the past point releases were named by an r plus the
+    number appended to major and minor number, e.g. 4.0r1.
+
+    The eighth DebConf, Debconf7, was held in Edinburgh, Scotland,
+    from June 17th to 23th, 2007 with over four hundred participants.
+    Videos and pictures from this conference are available online.
+
+    The ninth DebConf, Debconf8, was held in Mar de Plata, Argentina,
+    from August 10th to 16th, 2008 with over two hundred
+    participants. Videos and pictures from this conference are
+    available online.
+
+    The tenth DebConf, Debconf9, was held in Cáceres, Spain, from
+    July 23th to 30th, 2009 with over two hundred participants.
+    Videos and pictures from this conference are available online.
+
+    The eleventh DebConf, Debconf10, was held in New York City,
+    United States of America, from August 1st to 7th, 2010 with
+    DebCamp preceding it from July 25th to 31st. Over 200 people
+    including Debian developers, maintainers, users gathered at the
+    Columbia Campus to participate in the conference. Videos and
+    pictures from this conference are available online.
+
+4.7. The 6.x Releases
+
+    Debian 6.0 (squeeze) was released February 6th, 2011.
+
+    After the project decided, the 29th of July 2009, to adopt
+    time-based freezes so that new releases would be published the
+    first half of every even year. Squeeze was a one-time exception
+    to the two-year policy in order to get into the new time
+    schedule.
+
+    This policy was adopted in order to provide better predictability
+    of releases for users of the Debian distribution, and also allow
+    Debian developers to do better long-term planning. A two-year
+    release cycle provided more time for disruptive changes, reducing
+    inconveniences caused for users. Having predictable freezes was
+    expected also to reduce overall freeze time.
+
+    However, even though the freeze was expected in December 2009,
+    the announcement that squeeze had frozen came in August 2010,
+    coinciding with the celebration of the 10th annual DebConf
+    meeting in New York.
+
+    New features include:
+
+      * Linux Kernel 2.6.32, now completely free and without
+        problematic firmware files.
+
+      * libc: eglibc 2.11
+
+      * GNOME 2.30.0 with some pieces of 2.32
+
+      * KDE 4.4.5
+
+      * X.org 7.5
+
+      * Xfce 4.6
+
+      * OpenOffice.org 3.2.1
+
+      * Apache 2.2.16
+
+      * PHP 5.3.3
+
+      * MySQL 5.1.49
+   
+      * PostgreSQL 8.4.6
+
+      * Samba 3.5.6
+
+      * GCC 4.4
+
+      * Perl 5.10
+
+      * Python 2.6 and 3.1
+
+      * 10,000 new packages, for more than 29,000 binary packages
+        built from nearly 15,000 source packages.
+
+      * DKMS, a framework to generate Linux kernel modules whose
+        sources do not reside in the Linux kernel source tree.
+
+      * Dependency-based ordering of init scripts using insserv,
+        allowing parallel execution to shorten the time needed to
+        boot the system.
+
+      * Two new ports, kfreebsd-i386 and kfreebsd-amd64.
+
+    Many packages started using a new source package format based on
+    quilt. This new format, called "3.0 (quilt)" for non-native
+    packages, separates Debian patches from the distributed source
+    code. A new format, "3.0 (native)", was also introduced for
+    native packages. New features in these formats include support
+    for multiple upstream tarballs, support for bzip2 and lzma
+    compressed tarballs and the inclusion of binary files.
+
+    The twelfth DebConf, Debconf11, was held in Banja Luka, Republic
+    of Srpska, Bosnia and Herzegovina, from 24 to 30 July 2011, with
+    DebCamp preceding it from 17 to 23 July.
+
+    The thirteenth DebConf, Debconf12, was held in Managua,
+    Nicaragua, from 8 to 14 July 2012, with DebCamp preceding it from
+    1 to 6 July, and a Debian Day on 7 July.
+
+4.8. The 7.x Releases
+
+    Debian 7.0 (wheezy) was released May 4th, 2013. This new version
+    of Debian included various interesting features such as multiarch
+    support, several specific tools to deploy private clouds, an
+    improved installer, and a complete set of multimedia codecs and
+    front-ends which removed the need for third-party repositories.
+
+    After the release of Debian wheezy, the naming scheme for point
+    releases was changed once again: point releases will be named by
+    the minor version number, e.g. 7.1. In the past point releases
+    were named by the micro number appended to major and minor
+    number, e.g. 6.0.1.
+
+    During the Debian Conference DebConf11, in July 2011, the
+    "multiarch support" was introduced. This feature was a release
+    goal for this release. Multiarch is a radical rethinking of the
+    filesystem hierarchy with respect to library and header paths, to
+    make programs and libraries of different hardware architectures
+    easily installable in parallel on the very same system. This
+    allows users to install packages from multiple architectures on
+    the same machine. This is useful in various ways, but the most
+    common is installing both 64 and 32-bit software on the same
+    machine and having dependencies correctly resolved automatically.
+    This feature is described extensively in the Multiarch manual.
+
+    The installation process was greatly improved. The system could
+    be installed using software speech, above all by visually
+    impaired people who do not use a Braille device. Thanks to the
+    combined efforts of a huge number of translators, the
+    installation system was available in 73 languages, and more than
+    a dozen of them were available for speech synthesis too. In
+    addition, for the first time, Debian supported installation and
+    booting using UEFI for new 64-bit PCs, although there was no
+    support for Secure Boot yet.
+
+    Other new features and updated software packages included:
+
+      * Linux Kernel 3.2
+
+      * kFreeBSD kernel 8.3 and 9.0
+
+      * libc: eglibc 2.13
+
+      * the GNOME 3.4 desktop environment
+
+      * KDE Plasma Workspaces and KDE Applications 4.8.4
+
+      * the Xfce 4.8 desktop environment
+
+      * X.org 7.7
+
+      * LibreOffice 3.5.4 (replacing OpenOffice)
+
+      * Xen Hypervisor 4.1.4
+
+      * Apache 2.2.22
+
+      * Tomcat 6.0.35 and 7.0.28
+
+      * PHP 5.4
+
+      * MySQL 5.5.30
+
+      * PostgreSQL 9.1
+
+      * Samba 3.6.6
+
+      * GCC 4.7 on PCs (4.6 elsewhere)
+
+      * Perl 5.14
+
+      * Python 2.7
+
+      * 12,800 new packages, for more than 37,400 binary packages
+        built from nearly 17,500 source packages.
+
+    For more information on the new features introduced in this
+    release, see the What's new in Debian 7.0 chapter of Wheezy
+    Release Notes.
+
+    The fourteenth DebConf Debconf13, was held in Vaumarcus,
+    Switzerland, from 11 to 18 August 2013, with DebCamp preceding it
+    from 6 to 10 August, and a Debian Day on 11 August.
+
+    The fifteenth DebConf Debconf14, was held in Portland, United
+    States of America, from 23 to 31 August 2014. With 301 attendees
+    it was the largest Debconf in the Western hemisphere to date.
+
+4.9. The 8.x Releases
+
+    Debian 8.0 (Jessie) was released April 25th, 2015.
+
+    A major change in this release was the replacement of the init
+    system: systemd replaced sysvinit. This new init system featured
+    many improvements and faster boot times. Its inclusion, however,
+    sparked a lot of debate in the different mailing lists and even
+    led to a General Resolution titled init system coupling. which
+    was voted by close to half of the developers^[1].
+
+    Other new features and updated software packages included:
+
+      * Apache 2.4.10
+
+      * Asterisk 11.13.1
+
+      * GIMP 2.8.14
+
+      * an updated version of the GNOME desktop environment 3.14
+
+      * GNU Compiler Collection 4.9.2
+
+      * Icedove 31.6.0 (an unbranded version of Mozilla Thunderbird)
+
+      * Iceweasel 31.6.0esr (an unbranded version of Mozilla Firefox)
+
+      * KDE Plasma Workspaces and KDE Applications 4.11.13
+
+      * LibreOffice 4.3.3
+
+      * Linux 3.16.7-ctk9
+
+      * MariaDB 10.0.16 and MySQL 5.5.42
+   
+      * Nagios 3.5.1
+
+      * OpenJDK 7u75
+
+      * Perl 5.20.2
+
+      * PHP 5.6.7
+
+      * PostgreSQL 9.4.1
+
+      * Python 2.7.9 and 3.4.2
+
+      * Samba 4.1.17
+
+      * Tomcat 7.0.56 and 8.0.14
+
+      * Xen Hypervisor 4.4.1
+
+      * the Xfce 4.10 desktop environment
+
+      * more than 43,000 other ready-to-use software packages, built
+        from nearly 20,100 source packages.
+
+    For more information on the new features introduced in this
+    release, see the What's new in Debian 8.0 chapter of Jessie
+    Release Notes.
+
+    The sixteenth DebConf Debconf15, with DebCamp and the Open
+    Weekend, took place in Heidelberg, Germany, from 9 to 22 August
+    2015.
+
+    The seventeenth DebConf Debconf16 was held in Cape Town, South
+    Africa, from 23 June to 9 July 2016 (preceded by DebCamp and
+    DebianDay). It was the first DebConf in Africa.
+
+4.10. The 9.x Releases
+
+    Debian 9.0 (Stretch) was released June 17th, 2017.
+
+    New features and updated software packages included:
+
+      * Apache 2.4.23
+
+      * Bind 9.10
+
+      * Calligra 2.9
+
+      * Emacs 25.1
+
+      * Firefox 50.0
+
+      * GNOME desktop environment 3.22
+
+      * GNU Compiler Collection 6.3
+
+      * GnuPG 2.1
+
+      * KDE Plasma Workspaces and KDE Applications 5.8
+
+      * LibreOffice 5.2.7
+
+      * Linux 4.9
+
+      * MariaDB 10.1
+
+      * OpenJDK 8
+
+      * OpenSSH 7.4p1
+
+      * Perl 5.24
+
+      * PHP 7.0
+
+      * Postfix 3.1
+
+      * PostgreSQL 9.6
+
+      * Python 3.5
+
+      * Samba 4.5.8
+
+      * Xen Hypervisor 4.8.1
+
+      * the Xfce 4.12 desktop environment
+
+      * more than 51,000 other ready-to-use software packages, built
+        from nearly 25,000 source packages.
+
+    For more information on the new features introduced in this
+    release, see the What's new in Debian 9.0 chapter of Stretch
+    Release Notes.
+
+    The eighteenth DebConf Debconf17 took place in Montreal, Canada,
+    from 31 July to 12 August 2017, preceded by its DebCamp and the
+    DebianDay.
+
+    The nineteenth DebConf Debconf18 - the first DebConf in Asia -
+    was held in Hsinchu, Taiwan, from 21 July to 5 August 2018,
+    traditionally preceded by the DebCamp and an Open Day for the
+    public.
+
+4.11. The 10.x Releases
+
+    Debian 10.0 (Buster) was released July 6th, 2019.
+
+    New features and updated software packages included:
+
+      * Apache 2.4.38
+
+      * Bind 9.11
+
+      * Calligra 3.1
+
+      * Emacs 26.1
+
+      * Firefox 60.7
+
+      * GNOME desktop environment 3.30
+
+      * GNU Compiler Collection 8.3
+
+      * GnuPG 2.2
+
+      * KDE Plasma Workspaces and KDE Applications 5.14
+
+      * LibreOffice 6.1
+
+      * Linux 4.19
+
+      * MariaDB 10.3
+
+      * OpenJDK 11
+
+      * OpenSSH 7.9p1
+
+      * Perl 5.28
+
+      * PHP 7.3
+
+      * Postfix 3.3.2
+
+      * PostgreSQL 11
+
+      * Python 3.7.3
+
+      * Rustc 1.34
+
+      * Samba 4.9
+
+      * the Xfce 4.12 desktop environment
+
+      * more than 57,700 other ready-to-use software packages, built
+        from nearly 25,000 source packages.
+
+    For more information on the new features introduced in this
+    release, see the What's new in Debian 10.0 chapter of Buster
+    Release Notes.
+
+    Right after the release of Buster, the twentieth DebConf
+    Debconf19 took place in Curitiba, Brazil, from 14 to 28 July
+    2019, together with DebCamp and an Open Day.
+
+4.12. Important Events
+
+4.12.1. July 2000: Joel Klecker died
+
+    On July 11th, 2000, Joel Klecker, who was also known as Espy,
+    passed away at 21 years of age. No one who saw 'Espy' in #
+    mklinux, the Debian lists or channels knew that behind this
+    nickname was a young man suffering from a form of Duchenne
+    muscular dystrophy. Most people only knew him as 'the Debian
+    glibc and powerpc guy' and had no idea of the hardships Joel
+    fought. Though physically impaired, he shared his great mind with
+    others.
+
+    Joel Klecker (also known as Espy) will be missed.
+
+4.12.2. October 2000: Implementation of Package Pools
+
+    James Troup reported that he has been working on re-implementing
+    the archive maintenance tools and switching to package pools.
+    From this date, files are stored in a directory named after the
+    corresponding source package inside of the pools directory. The
+    distribution directories will only contain Packages files that
+    contain references to the pool. This simplifies overlapping
+    distributions such as testing and unstable. The archive is also
+    database-driven using PostgreSQL which also speeds up lookups.
+
+    This concept of managing Debian's archives sort of like a package
+    cache was first introduced by Bdale Garbee in this email to the
+    debian-devel list in May of 1998.
+
+4.12.3. March 2001: Christopher Rutter died
+
+    On March 1st, 2001, Christopher Matthew Rutter (also known as
+    cmr) was killed after he was struck by a car at the age of 19.
+    Christopher was a young and well known member of the Debian
+    project helping the ARM port. The buildd.debian.org site is
+    dedicated to his memory.
+
+    Chris Rutter will be missed.
+
+4.12.4. March 2001: Fabrizio Polacco died
+
+    On March 28th, 2001, Fabrizio Polacco passed away after a long
+    illness. The Debian Project honors his good work and strong
+    dedication to Debian and Free Software. The contributions of
+    Fabrizio will not be forgotten, and other developers will step
+    forward to continue his work.
+
+    Fabrizio Polacco will be missed.
+
+4.12.5. July 2002: Martin Butterweck died
+
+    On July 21st, 2002, Martin Butterweck (also known as blendi) died
+    after battling leukemia. Martin was a young member of the Debian
+    project who recently joined the project.
+
+    Martin Butterweck will be missed.
+
+4.12.6. November 2002: Fire burnt Debian server
+
+    Around 08:00 CET on November 20th, 2002, the University of Twente
+    Network Operations Center (NOC) caught fire. The building burnt
+    to the ground. The fire department gave up hope on protecting the
+    server area. Among other things the NOC hosted satie.debian.org
+    which contained both the security and non-US archive as well as
+    the new-maintainer (nm) and quality assurance (qa) databases.
+    Debian rebuilt these services on the host klecker, which was
+    recently moved from the U.S.A. to the Netherlands.
+
+4.12.7. November 2003: Several Debian server hacked
+
+    Starting 17:00 UTC on November 19th, 2003, four of the project's
+    main Web servers for bug tracking, mailing lists, security and
+    Web searches have been compromised. The services were taken down
+    for inspection and fortunately it could be confirmed, that the
+    package archive was not affected by this compromise. On November
+    25th, all services were recovered and back online.
+
+4.12.8. May 2004: Manuel Estrada Sainz and Andrés García Solier died
+
+    On May 9th Manuel Estrada Sainz (ranty) and Andrés García Solier
+    (ErConde) were killed in a tragic car accident while returning
+    from the Free Software conference held at Valencia, Spain.
+
+    Manuel Estrada Sainz and Andrés García Solier will be missed.
+
+4.12.9. July 2005: Jens Schmalzing died
+
+    On July 30th Jens Schmalzing (jensen) died in a tragic accident
+    at his workplace in Munich, Germany. He was involved in Debian as
+    a maintainer of several packages, as supporter of the PowerPC
+    port, as a member of the kernel team, and was instrumental in
+    taking the PowerPC kernel package to version 2.6. He also
+    maintained the Mac-on-Linux emulator and its kernel modules,
+    helped with the installer and with local Munich activities.
+
+    Jens Schmalzing will be missed.
+
+4.12.10. December 2008: Thiemo Seufer died
+
+    On December 26th Thiemo Seufer (ths) died in a car accident. He
+    was the lead maintainer of the MIPS and MIPSEL port and he had
+    also contributed at length in the debian-installer long before he
+    became a Debian developer in 2004. As a member of the QEMU team
+    he wrote most of the MIPS emulation layer.
+
+    Thiemo Seufer will be missed.
+
+4.12.11. July 2009: Steve Greenland died
+
+    On July 18th Steve Greenland (stevegr) died of cancer. He was the
+    maintainer of many core packages (such as cron) since he joined
+    Debian in 1999.
+
+    Steve Greenland will be missed.
+
+4.12.12. August 2010: Frans Pop died
+
+    Frans Pop (fjp) died on August 20th. Frans was involved in Debian
+    as a maintainer of several packages, a supporter of the S/390
+    port, and one of the most involved members of the Debian
+    Installer team. He was a Debian listmaster, editor and release
+    manager of the Installation Guide and the release notes, as well
+    as a Dutch translator.
+
+    Frans Pop will be missed.
+
+4.12.13. April 2011: Adrian von Bidder died
+
+    Adrian von Bidder (cmot) died on April 17th. Adrian was one of
+    the founding members and secretary of debian.ch, he sparked many
+    ideas that made Debian Switzerland be what it is today. Adrian
+    also actively maintained software in the Debian package archive,
+    and represented the project at numerous events.
+
+    Adrian von Bidder will be missed.
+
+4.12.14. May 2013: Ray Dassen died
+
+    Ray Dassen (jdassen) died on May 18th. Ray was a Debian Developer
+    for incredible 19 years. He joined the project in 1994, and
+    continued to be an active contributor until his passing. Ray was
+    one of the founding members of the Debian GNOME team, his
+    friendliness and willingness to help fostered a spirit of
+    collaboration within the GNOME team. He continued his involvement
+    within Debian as the maintainer of several packages, most notably
+    the Gnumeric spreadsheet.
+
+    Ray Dassen will be missed.
+
+4.12.15. July 2014: Peter Miller died
+
+    Peter Miller died on July 27th. Peter was a relative newcomer to
+    the Debian project, but his contributions to Free and Open Source
+    Software go back to the late 1980s. Peter was significant
+    contributor to GNU gettext as well as being the main upstream
+    author and maintainer of other projects that ship as part of
+    Debian, including, but not limited to srecord, aegis and cook.
+    Peter was also the author of the paper Recursive Make Considered
+    Harmful.
+
+    Peter Miller will be missed.
+
+4.12.16. February 2015: Clytie Siddall died
+
+    Clytie Siddall died in February 2015. Clytie was a contributor of
+    Vietnamese translations to Debian and other projects for many
+    years. Within Debian she worked on translations for the
+    installer, dpkg, apt and various documentation. She also
+    contributed translations within the GNOME community and many
+    other projects. Clytie was also a GNOME foundation member between
+    2005 and 2007.
+
+    Clytie Siddall will be missed.
+
+4.12.17. December 2015: Ian Murdock died
+
+    Ian Murdock, the founder of the Debian Project and its community,
+    died in December 2015. Ian was introduced to computers early in
+    his life, he started actively programming at nine years of age.
+    With the idea and the opportunity to make something better, he
+    started the Debian Project in August of 1993. At that time, the
+    whole concept of a "distribution" of Linux was new. Inspired as
+    he said by Linus Torvalds' own sharing of Linux, he released
+    Debian with the intention that this distribution should be made
+    openly, in the spirit of Linux and GNU. Ian's dream lives on:
+    Debian is made up of a strong community that has fostered
+    development, growth, and wonder. It remains incredibly active
+    with thousands of developers working untold hours to bring the
+    world a reliable and secure operating system. Debian has sparked
+    the interest, curiosity, and passion of those who want to make
+    something better. Then, now, and far into the future.
+
+    The Debian 9 Stretch release was dedicated in his memory.
+
+    Ian Murdock will be missed.
+
+4.12.18. September 2016: Kristoffer H. Rose died
+
+    Kristoffer H. Rose died on September 17th 2016 after a long
+    battle with myelofibrosis. Kristoffer was a Debian contributor
+    from the very early days of the project, and the upstream author
+    of several packages, such as the LaTeX package Xy-pic and FlexML.
+    On his return to the project after several years' absence, many
+    of us had the pleasure of meeting Kristoffer during DebConf15 in
+    Heidelberg.
+
+    Kristoffer H. Rose will be missed.
+
+4.13. What's Next?
+
+    The Debian Project continues to work on the unstable distribution
+    (codenamed sid, after the evil and "unstable" kid next door from
+    the Toy Story 1 who should never be let out into the world). Sid
+    is the permanent name for the unstable distribution and is always
+    'Still In Development'. Most new or updated packages are uploaded
+    into this distribution.
+
+    The testing release is intended to become the next stable release
+    and is currently codenamed Bullseye.
+
+
+---------------------------------------------------------------------
+
+    ^[1] In the Debian Project Leader Elections of the previous four
+    years the number of voters had been usually around 40% of the
+    existing Debian Developers
+
+Appendix A. The Debian Manifesto
+
+    Written by Ian A. Murdock, Revised 01/06/94
+
+A.1. What is Debian Linux?
+
+    Debian Linux is a brand-new kind of Linux distribution. Rather
+    than being developed by one isolated individual or group, as
+    other distributions of Linux have been developed in the past,
+    Debian is being developed openly in the spirit of Linux and GNU.
+    The primary purpose of the Debian project is to finally create a
+    distribution that lives up to the Linux name. Debian is being
+    carefully and conscientiously put together and will be maintained
+    and supported with similar care.
+
+    It is also an attempt to create a non-commercial distribution
+    that will be able to effectively compete in the commercial
+    market. It will eventually be distributed by The Free Software
+    Foundation on CD-ROM, and The Debian Linux Association will offer
+    the distribution on floppy disk and tape along with printed
+    manuals, technical support and other end-user essentials. All of
+    the above will be available at little more than cost, and the
+    excess will be put toward further development of free software
+    for all users. Such distribution is essential to the success of
+    the Linux operating system in the commercial market, and it must
+    be done by organizations in a position to successfully advance
+    and advocate free software without the pressure of profits or
+    returns.
+
+A.2. Why is Debian being constructed?
+
+    Distributions are essential to the future of Linux. Essentially,
+    they eliminate the need for the user to locate, download,
+    compile, install and integrate a fairly large number of essential
+    tools to assemble a working Linux system. Instead, the burden of
+    system construction is placed on the distribution creator, whose
+    work can be shared with thousands of other users. Almost all
+    users of Linux will get their first taste of it through a
+    distribution, and most users will continue to use a distribution
+    for the sake of convenience even after they are familiar with the
+    operating system. Thus, distributions play a very important role
+    indeed.
+
+    Despite their obvious importance, distributions have attracted
+    little attention from developers. There is a simple reason for
+    this: they are neither easy nor glamorous to construct and
+    require a great deal of ongoing effort from the creator to keep
+    the distribution bug-free and up-to-date. It is one thing to put
+    together a system from scratch; it is quite another to ensure
+    that the system is easy for others to install, is installable and
+    usable under a wide variety of hardware configurations, contains
+    software that others will find useful, and is updated when the
+    components themselves are improved.
+
+    Many distributions have started out as fairly good systems, but
+    as time passes attention to maintaining the distribution becomes
+    a secondary concern. A case-in-point is the Softlanding Linux
+    System (better known as SLS). It is quite possibly the most
+    bug-ridden and badly maintained Linux distribution available;
+    unfortunately, it is also quite possibly the most popular. It is,
+    without question, the distribution that attracts the most
+    attention from the many commercial "distributors" of Linux that
+    have surfaced to capitalize on the growing popularity of the
+    operating system.
+
+    This is a bad combination indeed, as most people who obtain Linux
+    from these "distributors" receive a bug-ridden and badly
+    maintained Linux distribution. As if this wasn't bad enough,
+    these "distributors" have a disturbing tendency to misleadingly
+    advertise non-functional or extremely unstable "features" of
+    their product. Combine this with the fact that the buyers will,
+    of course, expect the product to live up to its advertisement and
+    the fact that many may believe it to be a commercial operating
+    system (there is also a tendency not to mention that Linux is
+    free nor that it is distributed under the GNU General Public
+    License). To top it all off, these "distributors" are actually
+    making enough money from their effort to justify buying larger
+    advertisements in more magazines; it is the classic example of
+    unacceptable behavior being rewarded by those who simply do not
+    know any better. Clearly something needs to be done to remedy the
+    situation.
+
+A.3. How will Debian attempt to put an end to these problems?
+
+    The Debian design process is open to ensure that the system is of
+    the highest quality and that it reflects the needs of the user
+    community. By involving others with a wide range of abilities and
+    backgrounds, Debian is able to be developed in a modular fashion.
+    Its components are of high quality because those with expertise
+    in a certain area are given the opportunity to construct or
+    maintain the individual components of Debian involving that area.
+    Involving others also ensures that valuable suggestions for
+    improvement can be incorporated into the distribution during its
+    development; thus, a distribution is created based on the needs
+    and wants of the users rather than the needs and wants of the
+    constructor. It is very difficult for one individual or small
+    group to anticipate these needs and wants in advance without
+    direct input from others.
+
+    Debian Linux will also be distributed on physical media by the
+    Free Software Foundation and the Debian Linux Association. This
+    provides Debian to users without access to the Internet or FTP
+    and additionally makes products and services such as printed
+    manuals and technical support available to all users of the
+    system. In this way, Debian may be used by many more individuals
+    and organizations than is otherwise possible, the focus will be
+    on providing a first-class product and not on profits or returns,
+    and the margin from the products and services provided may be
+    used to improve the software itself for all users whether they
+    paid to obtain it or not.
+
+    The Free Software Foundation plays an extremely important role in
+    the future of Debian. By the simple fact that they will be
+    distributing it, a message is sent to the world that Linux is not
+    a commercial product and that it never should be, but that this
+    does not mean that Linux will never be able to compete
+    commercially. For those of you who disagree, I challenge you to
+    rationalize the success of GNU Emacs and GCC, which are not
+    commercial software but which have had quite an impact on the
+    commercial market regardless of that fact.
+
+    The time has come to concentrate on the future of Linux rather
+    than on the destructive goal of enriching oneself at the expense
+    of the entire Linux community and its future. The development and
+    distribution of Debian may not be the answer to the problems that
+    I have outlined in the Manifesto, but I hope that it will at
+    least attract enough attention to these problems to allow them to
+    be solved.
+

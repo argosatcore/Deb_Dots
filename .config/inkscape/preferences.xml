@@ -127,10 +127,10 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="793.701"
-         height="803.73"
-         rx="0"
-         ry="0" />
+         width="504.866"
+         height="504.866"
+         rx="18.8976"
+         ry="18.8976" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -540,11 +540,11 @@
        id="toolbox" />
     <group
        id="fillstroke"
-       page="0"
+       page="2"
        x="0"
        y="0"
-       w="412"
-       h="494"
+       w="386"
+       h="441"
        visible="1"
        state="2"
        placement="2" />
@@ -596,14 +596,14 @@
        path=""
        x="0"
        y="0"
-       w="412"
-       h="656"
+       w="386"
+       h="489"
        visible="1"
        state="2"
        placement="1">
       <group
          id="exportarea"
-         value="drawing" />
+         value="custom" />
       <group
          id="defaultxdpi"
          value="112" />
@@ -960,7 +960,7 @@
      id="extensions" />
   <group
      id="desktop"
-     style="fill:#ffffff;font-size:266.66666667px;-inkscape-font-specification:Jost;font-family:Jost;line-height:1;stroke:#ffffff;stroke-width:7.55905512">
+     style="fill:#ffffff;font-size:266.66666667px;-inkscape-font-specification:Jost;font-family:Jost;line-height:1;stroke:#000000;stroke-width:1.88976378">
     <group
        width="640"
        height="480"
