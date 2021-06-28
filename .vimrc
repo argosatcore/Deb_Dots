@@ -11,7 +11,6 @@
 	set autoread wildmode=longest,list,full
 	set mouse=a
 	set cursorline cursorcolumn
-	set ignorecase
 	syntax on
 	set showmatch
 	runtime! debian.vim
@@ -45,13 +44,10 @@
 
 	call plug#begin(expand('~/.vim/pluged'))
 	Plug 'arcticicestudio/nord-vim' 
-	Plug 'morhetz/gruvbox' 
-	Plug 'crusoexia/vim-monokai'
 	Plug 'junegunn/goyo.vim'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'airblade/vim-gitgutter'
-	Plug 'mcchrish/nnn.vim' 
 	call plug#end()
 
 	
@@ -64,33 +60,11 @@
 		let g:nord_undercurl = '1'
 		let g:nord_termcolor = '256'
 		colorscheme nord 
-	
-	"Monokai 
-"		let g:monokai_bold = '1'
-"		let g:monokai_italic = '1'
-"		let g:monokai_underline = '1'
-"		let g:monokai_undercurl = '1'
-"		let g:monokai_termcolor = '256'
-"		colorscheme monokai
-
-	"Gruvbox
-"		let g:gruvbox_contrast_dark = 'hard'
-"		let g:gruvbox_bold = '1'
-"		let g:gruvbox_italic = '1'
-"		let g:gruvbox_underline = '1'
-"		let g:gruvbox_undercurl = '1'
-"		let g:gruvbox_termcolor = '256'
-"		colorscheme gruvbox 
 
 	"Airline theme:
-"		let g:airline_theme='base16_gruvbox_dark_hard'
-"		let g:airline_theme='base16_nord'
-"		let g:airline_theme='monochrome'
 		let g:airline_theme='base16_chalk'
-"		let g:airline_theme='bubblegum'
 
 	" Inherit terminal's current color scheme:
-
 		hi! Normal ctermbg=NONE guibg=NONE 
 		hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 
 

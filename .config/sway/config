@@ -181,7 +181,6 @@
         bindsym $mod+Alt+Right mark --add "_swap", focus right, swap container with mark "_swap", focus right, unmark "_swap"
 
 
-
 #-----------------
 #-- Workspaces: --
 #-----------------
