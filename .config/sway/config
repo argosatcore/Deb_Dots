@@ -93,9 +93,10 @@
 
 	# Keyboard and mouse configurations:	
 	input * {
-		xkb_options caps:swapescape
+		xkb_options "caps:swapescape,, grp:win_space_toggle"
 		left_handed enabled
-		xkb_layout "latam"
+		xkb_layout "latam,us"
+		xkb_variant ",altgr-intl"
 		repeat_delay 200
 		repeat_rate 50
 		accel_profile "adaptive"
