@@ -43,7 +43,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 - **Change directories without using the `cd` command:** Just type the name of the directory to move into it. 
 - **Bash completion is no longer case sensitive:** No more wasted time pressing keys to get upper case letters.
 - **Combined less and neovim as a pager for man pages:** Because man pages deserve better.
-- **Keyboard layout set to Latin American:** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. 
+- **Keyboard layout set to Latin American:** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. Us-International is set as a second option and can be tooggled by pressing `Super+Space`. 
 - **Gapless single client:** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
 
 ## Programs referenced by these configs 
@@ -74,12 +74,13 @@ All of which are `apt install`able on Debian Sid:
 - `Super+Shift+e`: exit Wayland session.
 - `Alt+Shift+x`: lock screen.
 - `Super+Shit+minus`: hide/unhide scratchpad.
-- `Super+PagUp`: switch to next workspace.
-- `Super+PageDown`: switch to previous workspace.
+- `Super+PagUp`: switch to the next workspace. If there is no next workspace occupied, it will automatically create a new one.
+- `Super+PageDown`: switch to the previous workspace. If there is no previously occupied workspace, it will automatically create a new one.
 - `Super+x`: toggle Waybar on/off.
 - `Super+Shift+b`: toggle window border on/off.
 - `Super+(1,2,3,4,5,6,7,8,9,0)`: Switch to worspace 1-10.
 - `Super+Shitft+(1,2,3,4,5,6,7,8,9,0)`: Move an application to workspace 1-10.
+- `Super+Space`: Switch keyboard layout. Options are: Latin American (default) and US-International.
 
 ### Windows:
 - `Super+q`: close.
