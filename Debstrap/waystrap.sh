@@ -87,18 +87,19 @@ mv ~/Deb_Dots/.config/mako/ ~/.config/
 mv ~/Deb_Dots/.config/waybar/ ~/.config/
 mv ~/Deb_Dots/.config/wlogout/ ~/.config/
 mv ~/Deb_Dots/.config/foot/ ~/.config/
+mv -f ~/Deb_Dots/.config/gtk-3.0/ ~/.config/
 mv ~/Deb_Dots/.config/nvim/ ~/.config/
-mv ~/Deb_Dots/.config/mimeapps.list ~/.config/
+mv -f ~/Deb_Dots/.config/mimeapps.list ~/.config/
 mv ~/Deb_Dots/README.md ~/
 mv ~/Deb_Dots/LICENSE ~/
 mv ~/Deb_Dots/Debstrap/ ~/
 mv ~/Deb_Dots/.git/ ~/
 mv ~/Deb_Dots/.inputrc ~/
 mv ~/Deb_Dots/.tmux.conf ~/
-sudo mv ~/Deb_Dots/.vimrc ~/
-sudo mv ~/Deb_Dots/.bash* ~/
-sudo mv ~/Deb_Dots/.profile ~/
-sudo mv ~/Deb_Dots/.vim/ ~/
+mv -f ~/Deb_Dots/.vimrc ~/
+mv -f ~/Deb_Dots/.bash* ~/
+mv -f ~/Deb_Dots/.profile ~/
+mv -f ~/Deb_Dots/.vim/ ~/
 rm -rf ~/Deb_Dots/
 echo ' '
 echo 'Enabling trimming of SSD...'
