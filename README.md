@@ -85,7 +85,7 @@ All of which are `apt install`able on Debian Sid:
 ### Windows:
 - `Super+q`: close.
 - `Super+f`: fullscreen. 
-- `Super+Escape`: toggle floating. Remember, Caps Lock now works as Escape and viceversa. 
+- `Super+Escape`: toggle floating. Remember, `Caps Lock` now works as `Escape` and viceversa. 
 - `Super+(h,j,k,l)`: change the selection of a window in a designated direction.
 - `Super+Shift+(h,j,k,l)`: move window in a designated direction.
 - `Super+w`: tab windows.
