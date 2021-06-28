@@ -168,6 +168,18 @@
 	bindsym $mod+Shift+Down move down
 	bindsym $mod+Shift+Up move up
 	bindsym $mod+Shift+Right move right
+	
+	# Swap focused window wit  window in a given direction:
+	bindsym $mod+Alt+$left mark --add "_swap", focus left, swap container with mark "_swap", focus left, unmark "_swap"
+        bindsym $mod+Alt+$down mark --add "_swap", focus down, swap container with mark "_swap", focus down, unmark "_swap"
+        bindsym $mod+Alt+$up mark --add "_swap", focus up, swap container with mark "_swap", focus up, unmark "_swap"
+        bindsym $mod+Alt+$right mark --add "_swap", focus right, swap container with mark "_swap", focus right, unmark "_swap"
+	# Ditto, with arrow keys:
+	bindsym $mod+Alt+Left mark --add "_swap", focus left, swap container with mark "_swap", focus left, unmark "_swap"
+        bindsym $mod+Alt+Down mark --add "_swap", focus down, swap container with mark "_swap", focus down, unmark "_swap"
+        bindsym $mod+Alt+Up mark --add "_swap", focus up, swap container with mark "_swap", focus up, unmark "_swap"
+        bindsym $mod+Alt+Right mark --add "_swap", focus right, swap container with mark "_swap", focus right, unmark "_swap"
+
 
 
 #-----------------
