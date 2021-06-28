@@ -7,7 +7,6 @@ windows=$(swaymsg -t get_tree | jq -r '
 		select(.type=="con"), select(.type=="floating_con") |
 			(.id | tostring) + " " + .app_id + ": " + .name')
 
-
 #Limit wofi's height with the number of opened windows:
 height=$(echo "$windows" | wc -l)
 
