@@ -1,7 +1,7 @@
-font=FontAwesomw 12
+font=FontAwesome 12
 background-color=#353C4A
 text-color=#FFFFFF
-border-color=#5294E2
+border-color=#B3FFFF
 
 [urgency=high]
 text-color=#FFFFFF
