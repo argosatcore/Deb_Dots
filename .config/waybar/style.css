@@ -47,7 +47,7 @@ window#waybar.solo {
 
 #workspaces button.focused {
     background-color: #64727D;
-    box-shadow: inset 0px -2px #ffffff;
+    box-shadow: inset 0px -0px #ffffff;
 }
 
 #workspaces button.urgent {
@@ -91,7 +91,6 @@ window#waybar.solo {
     font-family: Ubuntu; 
     font-size: 13px;
     font-weight: normal;
-    background-color: #505A66
 }
 
 /* If workspaces is the leftmost module, omit left margin */

@@ -337,17 +337,17 @@
 	bindsym $mod+o gaps inner current set 0
 
 	# Borders:
-	default_border pixel 2 
+	default_border pixel 1 
 	smart_borders on
-	default_floating_border normal 2
+	default_floating_border normal 1
 	
 	# Toggle border style:
 	bindsym $mod+Shift+b exec swaymsg border toggle
 
 	# Colors:
-	set $active #3584E4
+	set $active	#B3FFFF
 	set $unfocused	#FFFFFF
-	set $fg		#FFFFFF
+	set $fg		#000000
 	set $bg		#383c4a
 	set $bar	#404552
 
