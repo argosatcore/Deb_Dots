@@ -36,7 +36,6 @@ sudo apt install -y \
 	needrestart \
 	neofetch \
 	neovim \
-	nnn \
 	pavucontrol \
 	printer-driver-escpr \
 	reportbug-gtk \

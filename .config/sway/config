@@ -62,7 +62,7 @@
 #--------------------
 
 	#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fit
-	output * bg ~/Pictures/Wallpapers/richter13 fill 
+	output * bg ~/Pictures/Wallpapers/simple_wp.png fill 
 
 
 #----------------------

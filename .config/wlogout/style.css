@@ -20,7 +20,7 @@ button {
 button:focus, button:active, button:hover {
 	background-color: #B3FFFF;
 	outline-style: none;
-	color: #000000
+	color: #404040
 }
 
 #lock {

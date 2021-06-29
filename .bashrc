@@ -28,24 +28,6 @@
 	bind -m vi-insert "\C-k":kill-line
 
 
-# ------NNN's environmental variables:
-
-	#Texteditor:
-	export NNN_USE_EDITOR=1
-
-	#Bookmarks:
-	export NNN_BMS='p:~/Documents/;d:~/Downloads/;i:~/Pictures/'
-
-	#Plugins:
-	export NNN_PLUG='f:finder;o:fzopen;p:mocplay;d:dragdrop;t:nmount;v:preview-tui;z:fzcd'
-	
-	#Archive:
-	export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
-	
-	#Trash:
-	export NNN_TRASH=1
-
-
 # ------If not running interactively, don't do anything:
 	case $- in
 	    *i*) ;;
