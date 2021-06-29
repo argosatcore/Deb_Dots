@@ -2,14 +2,14 @@
     border: none;
     border-radius: 0px;
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Ubuntu Nerd Font, Helvetica, sans-serif;
+    font-family: Ubuntu Nerd Font, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: bold;
     min-height: 0px;
 }
 
 window#waybar {
-    background-color: rgba(53, 53, 53, 0.7);
+    background-color: rgba(36, 47, 51, 0.7);
     border-bottom: 0px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
     transition-property: background-color;
@@ -76,6 +76,7 @@ window#waybar.solo {
     padding: 0px 10px;
     margin: 0px 5px;
     color: #ffffff;
+    border-radius: 10px
 }
 
 #workspaces {
@@ -89,7 +90,8 @@ window#waybar.solo {
     padding: 0px 10px;
     font-family: Ubuntu; 
     font-size: 13px;
-    font-weight: normal
+    font-weight: normal;
+    background-color: #505A66
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -107,16 +109,13 @@ window#waybar.solo {
 }
 
 #battery {
-   /* background-color: #3B4252;*/
+    background-color: #64727D;
     color: #ffffff;
-    box-shadow: inset 0px -2px #ffffff;
 }
 
 #battery.charging {
+    background-color: #64727D;
     color: #ffffff;
-    /*background-color: #A3BE8C;*/
-    box-shadow: inset 0px -2px #A3BE8C;
-
 }
 
 @keyframes blink {
@@ -134,7 +133,6 @@ window#waybar.solo {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    box-shadow: inset 0px -2px #A3BE8C;
 }
 
 label:focus {
@@ -142,29 +140,24 @@ label:focus {
 }
 
 #cpu {
-    /*background-color: #88C0D0 ;*/
+    background-color: #64727D;
     color: #FFFFFF;
-    box-shadow: inset 0px -2px #88C0D0;
-
 }
 
 #memory {
-    /*background-color: #F46067;*/
+    background-color: #64727D;
     color: #FFFFFF;
-    box-shadow: inset 0px -2px #F46067;
 
 }
 
 #backlight {
-    /*background-color: #434C5E;*/
+    background-color: #64727D;
     color: #FFFFFF;
-    box-shadow: inset 0px -2px #919191;
 }
 
 #network {
-    /*background-color: #8FBCBB;*/
+    background-color: #64727D;
     color: #FFFFFF;
-    box-shadow: inset 0px -2px #8FBCBB;
 }
 
 #network.disconnected {
@@ -172,9 +165,8 @@ label:focus {
 }
 
 #pulseaudio {
-    /*background-color: #5294E2;*/
+    background-color: #64727D;
     color: #FFFFFF;
-    box-shadow: inset 0px -2px #5294E2;
 
 }
 
@@ -184,14 +176,12 @@ label:focus {
 }
 
 #temperature {
-    /*background-color: #5E81AC ;*/
+    background-color: #64727D;
     color: #FFFFFF;
-    box-shadow: inset 0px -2px #5E81AC;
 }
 
 #temperature.critical {
     background-color: #eb4d4b;
-    box-shadow: inset 0px -2px #5E81AC;
 }
 
 #tray {
@@ -199,21 +189,20 @@ label:focus {
 }
 
 #idle_inhibitor {
-    /*background-color: #2D3436;*/
-    box-shadow: inset 0px -2px #ecF0F1;
+    background-color: #64727D;
 }
 
 #idle_inhibitor.activated {
     background-color: rgba(255, 255, 255, 1.0);
     color: #2d3436;
     border-radius: 5px;
-    margin: 2px 5px;
+    margin: 0px 5px;
     box-shadow: inset 0px 0px #ecF0F1;
 }
 
 #custom-date {
     color: #FFFFFF;
-    background-color: transparent;
+    background-color: #64727D;
 }
 
 
