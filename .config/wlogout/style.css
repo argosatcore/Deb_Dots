@@ -2,21 +2,25 @@
 	background-image: none;
 }
 window {
-	background-color: rgba(53, 53, 53, 1.0);
+	background-color: rgba(36, 47, 51, 1.0);
 }
 button {
-    color: #FFFFFF;
-	background-color: #323232;
+    	color: #323232;
+	background-color: #64727D;
 	border-style: solid;
 	border-width: 2px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 25%;
+	font-family: Ubuntu;
+	font-size: 13px;
+    	font-weight: bold;
 }
 
 button:focus, button:active, button:hover {
-	background-color: #3584E4;
+	background-color: #B3FFFF;
 	outline-style: none;
+	color: #000000
 }
 
 #lock {
