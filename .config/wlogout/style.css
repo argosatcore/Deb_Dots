@@ -5,9 +5,10 @@ window {
 	background-color: rgba(36, 47, 51, 1.0);
 }
 button {
-    	color: #323232;
+    	color: #FFFFFF;
 	background-color: #64727D;
 	border-style: solid;
+	border-color: #323232;
 	border-width: 2px;
 	background-repeat: no-repeat;
 	background-position: center;
