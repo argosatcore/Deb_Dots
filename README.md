@@ -6,10 +6,6 @@
    
 <p align="left"><b>1. The layout for this README.md was heavely influenced by those of <a href="https://github.com/spencertipping/dotfiles">Spencer Tipping</a> and <a href="https://github.com/dylanaraps/pure-bash-bible">Dylan Araps.</a></b></p>
 
-<br>. </a></b></p><br>
-
-
-
 
 ## Table of Contents
 
