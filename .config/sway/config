@@ -93,7 +93,7 @@
 
 	# Keyboard and mouse configurations:	
 	input * {
-		xkb_options "caps:swapescape,, grp:win_space_toggle"
+		xkb_options "caps:swapescape,, grp:win_space_toggle,, altwin:menu_win"
 		left_handed enabled
 		xkb_layout "latam,us"
 		xkb_variant ",altgr-intl"
