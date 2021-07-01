@@ -45,7 +45,7 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 - **Combined less and neovim as a pager for man pages:** Because man pages deserve better.
 - **Keyboard layout set to Latin American:** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. Us-International is set as a second option and can be toggled by pressing `Super+Space`. 
 - **Gapless single client:** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
-- **Ridiculously fast key repeat rate:** Like, blazing fast, fast[fast](./.config/sway/config/#L101).
+- **Ridiculously fast key repeat rate:** Like, blazing fast, [fast](./.config/sway/config/#L101).
 
 ## Programs referenced by these configs 
 All of which are `apt install`able on Debian Sid:
