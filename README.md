@@ -4,7 +4,7 @@
 
  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
-1.  The layout for this README.md was heavely influenced by those of [Spencer Tipping](https://github.com/spencertipping/dotfiles) and [Dylan Araps](https://github.com/dylanaraps/pure-sh-bible). 
+<h4> 1.  The layout for this README.md was heavely influenced by those of [Spencer Tipping](https://github.com/spencertipping/dotfiles) and [Dylan Araps](https://github.com/dylanaraps/pure-sh-bible).</h4> 
    
 ## Table of Contents
 
