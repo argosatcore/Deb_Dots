@@ -7,7 +7,7 @@
 <p align="left"><b>1. The layout for this README.md was heavely influenced by those of <a href="https://github.com/spencertipping/dotfiles">Spencer Tipping</a> and <a href="https://github.com/dylanaraps/pure-sh-bible">Dylan Araps.</a></b></p>
 
 
-## Table of Contents
+<h1 align="left">Table of Contents</h1>
 
 - [Introduction](#introduction)
 - [Unexpected features you get right out of the gate](#unexpected-features-you-get-right-out-of-the-gate)
