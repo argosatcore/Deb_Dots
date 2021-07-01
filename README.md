@@ -1,11 +1,10 @@
-<img src="https://user-images.githubusercontent.com/64110504/117399092-f6a49d00-aebc-11eb-8b76-3ea4c12901b6.png" width="35%" align="left">
+<img src="https://user-images.githubusercontent.com/64110504/117399092-f6a49d00-aebc-11eb-8b76-3ea4c12901b6.png" width="30%" align="left">
 <h1 align="left">Argos's Debian GNU/Linux Dot Files<sup>1</sup> </h1>  
 <p align="left">A collection of my experiences with Linux in the form of dot files.</p><br><br>
 
  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
 1. The layout for this README.md was heavely influenced by those of [Spencer Tipping](https://github.com/spencertipping/dotfiles) and [Dylan Araps](https://github.com/dylanaraps/pure-sh-bible).
-
 
 ## Table of Contents
 
