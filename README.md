@@ -37,14 +37,14 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 ![naturalisticwallpapersaresilly](https://user-images.githubusercontent.com/64110504/123876602-d7445200-d8f8-11eb-9090-56ea821e19d6.png)
 
 ## Unexpected features you get right out of the gate
-- **Bash's vim mode:** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
-- **Caps Lock key is swapped with Esc key:** If you are a vim user (or someone that just uses the crap out of the Esc key), you know how handy this is. If you don't want this, just change it in the input configuration in Sway's config file.
-- **Mouse set for left handed people:** If you happen to be part of the other 90% of the human population, just change the input configuration in Sway's config file.  
-- **Change directories without using the `cd` command:** Just type the name of the directory to move into it. 
-- **Bash completion is no longer case sensitive:** No more wasted time pressing keys to get upper case letters.
-- **Combined less and neovim as a pager for man pages:** Because man pages deserve better.
-- **Keyboard layout set to Latin American:** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. Us-International is set as a second option and can be toggled by pressing `Super+Space`. 
-- **Gapless single client:** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
+- **[Bash's vim mode](./.bashrc/#L20):** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
+- **[Caps Lock key is swapped with Esc key](./.config/sway/config/#L96):** If you are a vim user (or someone that just uses the crap out of the Esc key), you know how handy this is. If you don't want this, just change it in the input configuration in Sway's config file.
+- **[Mouse set for left handed people](./.config/sway/config/#L97):** If you happen to be part of the other 90% of the human population, just change the input configuration in Sway's config file.  
+- **[Change directories without using the `cd` command](./.bashrc/#L15):** Just type the name of the directory to move into it. 
+- **[Bash completion is no longer case sensitive](./.inputrc/#L19):** No more wasted time pressing keys to get upper case letters.
+- **[Combined less and neovim as a pager for man pages](./.bashrc/#L10):** Because man pages deserve better.
+- **[Keyboard layout set to Latin American](./.config/sway/config/#L98):** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. Us-International is set as a second option and can be toggled by pressing `Super+Space`. 
+- **[Gapless single client](./.config/sway/#L332):** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
 - **Ridiculously fast key repeat rate:** Like, really [fast](./.config/sway/config/#L101).
 
 ## Programs referenced by these configs 
