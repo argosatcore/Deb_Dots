@@ -1,6 +1,10 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/64110504/117399092-f6a49d00-aebc-11eb-8b76-3ea4c12901b6.png" width="275px"></p>
 <h1 align="center">Argos's Debian GNU/Linux Dot Files<sup>1</sup> </h1>  
 <p align="center">A collection of my experiences with Linux in the form of dot files.</p><br><br>
+
+ \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+   
+1.  The layout for this README.md was heavely influenced by those of [Spencer Tipping](https://github.com/spencertipping/dotfiles) and [Dylan Araps](https://github.com/dylanaraps/pure-sh-bible). 
    
 ## Table of Contents
 
@@ -19,8 +23,6 @@ At the kernel of my computing milieu, there are two irreducible components: the 
    
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
-1.  The layout for this README.md was heavely influenced by those of [Spencer Tipping](https://github.com/spencertipping/dotfiles) and [Dylan Araps](https://github.com/dylanaraps/pure-sh-bible). 
-
 2. These dotfiles are currently being written on [Debian Sid](https://wiki.debian.org/DebianUnstable) :skull:. If you are aware of the risks and responsabilities that using Debian's unstable branch entail and still wish to go down the Sid route, make sure to replace your apt sources with the following lines:
 
        deb http://deb.debian.org/debian unstable main contrib non-free
