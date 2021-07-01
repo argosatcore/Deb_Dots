@@ -1,6 +1,6 @@
 <img src="https://user-images.githubusercontent.com/64110504/117399092-f6a49d00-aebc-11eb-8b76-3ea4c12901b6.png" width="275px" align="left">
 <h1 align="left">Argos's Debian GNU/Linux Dot Files<sup>1</sup> </h1>  
-<p align="left"><b>A collection of my experiences with Linux in the form of dot files.</p><br><br>
+<p align="left"><b>A collection of my experiences with Linux in the form of dot files.</p>
 
  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
