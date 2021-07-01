@@ -44,8 +44,8 @@ At the kernel of my computing milieu, there are two irreducible components: the 
 - **[Bash completion is no longer case sensitive](./.inputrc/#L19):** No more wasted time pressing keys to get upper case letters.
 - **[Combined less and neovim as a pager for man pages](./.bashrc/#L10):** Because man pages deserve better.
 - **[Keyboard layout set to Latin American](./.config/sway/config/#L98):** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. Us-International is set as a second option and can be toggled by pressing `Super+Space`. 
-- **[Gapless single client](./.config/sway/#L332):** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
-- **Ridiculously fast key repeat rate:** Like, really [fast](./.config/sway/config/#L101).
+- **[Gapless single client](./.config/sway/config/#L332):** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
+- **[Ridiculously fast key repeat rate](./.config/sway/config/#L101):** Like, really fast.
 
 ## Programs referenced by these configs 
 All of which are `apt install`able on Debian Sid:
