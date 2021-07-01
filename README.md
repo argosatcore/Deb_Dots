@@ -4,7 +4,7 @@
 
  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
-<p align="left"><b>1. The layout for this README.md was heavely influenced by those of <a href="https://github.com/spencertipping/dotfiles">Spencer Tipping</a> and <a href="https://github.com/dylanaraps/pure-bash-bible">Dylan Araps.</a></b></p>
+<p align="left"><b>1. The layout for this README.md was heavely influenced by those of <a href="https://github.com/spencertipping/dotfiles">Spencer Tipping</a> and <a href="https://github.com/dylanaraps/pure-sh-bible">Dylan Araps.</a></b></p>
 
 
 ## Table of Contents
@@ -24,7 +24,7 @@
    
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-2. Everything is pretty light (mostly contains plain text files and some bash and shell scripts), with the execption of my font collection, which contains the fonts that I use on a regular basis and/or the ones I really like.
+2. Everything is pretty light (mostly contains plain text files and some bash and shell scripts), with the execption of my font collection, which contains the fonts that I use on a regular basis and/or the ones I really like, which make it's size rather big.
    
 3. These dotfiles are currently being written on [Debian Sid](https://wiki.debian.org/DebianUnstable) :skull:. If you are aware of the risks and responsabilities that using Debian's unstable branch entail and still wish to go down the Sid route, make sure to replace your apt sources with the following lines:
 
