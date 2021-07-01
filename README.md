@@ -25,7 +25,7 @@
  
  All the design decisions taken have the purpose to both manage and make explicit what probably remains as the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
  
-   These dot files were started with a minimal Debian 10 Buster installation, so they should work with any Debian installation or Debian-based distribution. I use these dots on Debian, but I've made an effort to keep them as distribution agnostic as possible. I have deployed them succesfully on [Arch Linux](https://archlinux.org/) (don't take this as an endorsement) and on [Void Linux](https://voidlinux.org/) (you can take this as an endorsement).<sup>4</sup>
+   These dot files were started with a minimal Debian 10 Buster installation, so they should work with any Debian installation or Debian-based distribution.<sup>4</sup> I use these dots on Debian, but I've made an effort to keep them as distribution agnostic as possible. I have deployed them succesfully on [Arch Linux](https://archlinux.org/) (don't take this as an endorsement) and on [Void Linux](https://voidlinux.org/) (you can take this as an endorsement).<sup>5</sup>
    
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -39,8 +39,10 @@
       Then update your sources and upgrade to Sid:
          
        sudo apt update && sudo apt full-upgrade 
+
+4. As stated on the footnote above, these dotfiles are written with Debian Sid on mind. However, with the inminent release of Debian 11 Bullseye, these will be once again compatible with Debian's stable branch. 
          
-4.  They will work for the most part, but some adjustments are needed to make them work properly on these distributions. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system.
+5.  They will work for the most part, but some adjustments are needed to make them work properly on these distributions. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system.
 
  ---
  
