@@ -21,7 +21,7 @@
  The purpose of this repository is to contain the bare minimun of what is necessary to quickly bootstrap my current sensibilities on a Linux system.<sup>2</sup> At its core, there are two assumptions: 
  
  1. That the underlying system is the [Debian GNU/Linux Operating System](https://www.debian.org/),<sup>3</sup> which is used as a solid and flexible foundation to build on.
- 2. That the desktop environment implements the Wayland protocol through the use of the [Sway](https://swaywm.org/) Wayland  tiling compositor. 
+ 2. That the desktop environment implements the Wayland protocol through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor. 
  
  All the design decisions taken have the purpose to both manage and make explicit what probably remains as the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
  
