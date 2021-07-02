@@ -15,11 +15,11 @@ button {
 	background-size: 25%;
 	font-family: Ubuntu;
 	font-size: 13px;
-    	font-weight: bold;
+    	font-weight: normal;
 }
 
 button:focus, button:active, button:hover {
-	background-color: #B3FFFF;
+	background-color: #DCA3A3;
 	outline-style: none;
 	color: #404040
 }

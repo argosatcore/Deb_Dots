@@ -48,7 +48,7 @@
 	bindsym $mod+Shift+c reload
 
 	# Exit sway:
-	bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+	bindsym $mod+Shift+e exec swaynag -t warning -m 'End Wayland session?' -b 'Yes.' 'swaymsg exit'
 
 	# Wofi as a power menu:
 	#bindsym $mod+Shift+q exec bash .local/bin/scripts/wofi/poweroffreboot
@@ -337,7 +337,7 @@
 	bindsym $mod+o gaps inner current set 0
 
 	# Borders:
-	default_border pixel 1 
+	default_border pixel 1
 	smart_borders on
 	default_floating_border normal 1
 	
@@ -345,10 +345,10 @@
 	bindsym $mod+Shift+b exec swaymsg border toggle
 
 	# Colors:
-	set $active	#B3FFFF
+	set $active	#DCA3A3
 	set $unfocused	#FFFFFF
 	set $fg		#000000
-	set $bg		#383c4a
+	set $bg		#383C4A
 	set $bar	#404552
 
 # 	Window Border color:		border:		backgr:		text:		indicator:
