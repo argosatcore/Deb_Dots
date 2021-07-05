@@ -78,7 +78,6 @@ git clone git@github.com:argosatcore/Deb_Dots.git
 echo ' ' 
 echo 'Deploying  dotfiles...'
 echo ' '
-mv ~/Deb_Dots/Pictures/Wallpapers/ ~/Pictures/
 mv ~/Deb_Dots/.local/bin/ ~/.local/
 mv ~/Deb_Dots/.local/share/fonts/ ~/.local/share/
 mv ~/Deb_Dots/.config/sway/ ~/.config/
