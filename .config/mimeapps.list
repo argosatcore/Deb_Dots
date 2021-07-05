@@ -18,4 +18,3 @@ application/vnd.oasis.opendocument.text=libreoffice-writer.desktop
 image/svg+xml=org.inkscape.Inkscape.desktop
 text/plain=nvim.desktop
 text/markdown=nvim.desktop;org.gnome.gedit.desktop
-x-scheme-handler/msteams=teams.desktop
