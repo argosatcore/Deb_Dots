@@ -1,8 +1,7 @@
 * {
     border: none;
     border-radius: 0px;
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Ubuntu Nerd Font, Helvetica, sans-serif;
+    font-family: Ubuntu Nerd Font;
     font-size: 13px;
     font-weight: bold;
     min-height: 0px;

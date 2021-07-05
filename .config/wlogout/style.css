@@ -15,9 +15,11 @@ button {
 	background-position: center;
 	background-size: 25%;
 	font-family: Ubuntu;
-	font-size: 14px;
-    	font-weight: normal;
+	font-size: 13px;
+    	font-weight: bold;
 	padding: 0px 15px;
+	box-shadow:    none;
+	text-shadow:   none;
 }
 
 button:focus, button:active, button:hover {
@@ -25,9 +27,11 @@ button:focus, button:active, button:hover {
 	outline-style: none;
 	color: #404040;
 	font-family: Ubuntu;
-	font-size: 14px;
-    	font-weight: normal;
+	font-size: 13px;
+    	font-weight: bold;
 	padding: 0px 15px;
+	box-shadow:    none;
+	text-shadow:   none;
 }
 
 #lock {

@@ -95,7 +95,7 @@
         "format": "{}",
         "interval": 60,
         "exec": "date +'%Y-%m-%d %l:%M %p'",
-        "on-click": "gsimplecal",
+        "on-click": "dash .local/bin/scripts/mako/cal.sh",
         "tooltip": false
     },
 
