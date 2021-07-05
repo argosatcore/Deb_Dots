@@ -23,7 +23,7 @@
 	set $term foot 
 
 	# Your preferred application launcher:
-	set $menu wofi --show=drun --insensitive --width=25% --prompt=""  
+	set $menu wofi --show=drun --insensitive --width=20% --prompt=""  
 
         # Floating modifier:
 	floating_modifier $mod normal
