@@ -29,7 +29,7 @@ border: none;
 }
 
 #text:selected {
-margin: 5px;
+margin: 0px;
 border: none;
 color: #FFFFFF;
 background-color: #64727D;
