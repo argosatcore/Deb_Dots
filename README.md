@@ -46,7 +46,7 @@
 
  ---
  
-![naturalisticwallpapersaresilly](https://user-images.githubusercontent.com/64110504/124216639-f509e680-dab3-11eb-9ce7-f0b956af5350.png)
+![naturalisticwallpapersaresilly](https://user-images.githubusercontent.com/64110504/124502151-27e7ff00-dd80-11eb-97d7-6e84b3f6822f.png)
 
 ## Unexpected features you get right out of the gate
 - **[Bash's vim mode](./.bashrc/#L20):** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
