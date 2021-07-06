@@ -18,7 +18,7 @@
 
 ## Introduction
 
- The purpose of this repository is to contain the bare minimun of what is necessary to quickly bootstrap my current sensibilities on a Linux system.<sup>2</sup> At its core, there are two assumptions: 
+ The purpose of this repository is to contain the bare minimum of what is necessary to quickly bootstrap my current sensibilities on a Linux system.<sup>2</sup> At its core, there are two assumptions: 
  
  1. That the underlying system is the [Debian GNU/Linux Operating System](https://www.debian.org/),<sup>3</sup> which is used as a solid and flexible foundation to build on.
  2. That the desktop environment implements the Wayland protocol through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor. 
