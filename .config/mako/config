@@ -1,14 +1,14 @@
 font=Ubuntu Mono 13
 background-color=#353C4A
-text-color=#FFFFFF
-border-color=#F26C4F  
+text-color=#ffffff
+border-color=#DCA3A3
 width=300
 height=1000
 icons=1
 markup=1
 
 [urgency=high]
-text-color=#FFFFFF
-background-color=#FF4040
-border-color=#383C4A
+text-color=#ffffff
+background-color=#ff4040
+border-color=#383c4a
 
