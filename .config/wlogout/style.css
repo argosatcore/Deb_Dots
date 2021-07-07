@@ -2,11 +2,11 @@
 	background-image: none;
 }
 window {
-	background-color: rgba(36, 47, 51, 1.0);
+	background-color: rgba(40, 51, 55, 1.0);
 }
 button {
 	outline-style: none;
-    	color: #404040;
+    	color: #283337;
 	background-color: #64727D;
 	border-style: solid;
 	border-color: #323232;
@@ -23,7 +23,7 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: #F26C4F ;
+	background-color: #FF5151;
 	outline-style: none;
 	color: #FFFFFF;
 	font-family: Ubuntu;

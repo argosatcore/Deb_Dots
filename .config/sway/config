@@ -345,10 +345,10 @@
 	bindsym $mod+Shift+b exec swaymsg border toggle
 
 	# Colors:
-	set $active	#F26C4F
+	set $active	#FF5151
 	set $unfocused	#9F9F9F
 	set $fg		#FFFFFF
-	set $bg		#383C4A
+	set $bg		#283337
 	set $bar	#404552
 
 # 	Window Border color:		border:		backgr:		text:		indicator:
