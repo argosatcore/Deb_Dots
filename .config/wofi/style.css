@@ -2,6 +2,7 @@ window {
 margin: 0px;
 border: none;
 background-color: #1F2A3E;
+border-radius: 10px;
 }
 
 #input {
