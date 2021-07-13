@@ -2,14 +2,14 @@
 	background-image: none;
 }
 window {
-	background-color: rgba(40, 51, 55, 1.0);
+	background-color: rgba(31, 42, 62, 1.0);
 }
 button {
 	outline-style: none;
-    	color: #283337;
+    	color: #FFFFFF;
 	background-color: #64727D;
 	border-style: solid;
-	border-color: #323232;
+	border-color: #1F2A3E;
 	border-width: 2px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -23,9 +23,9 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: #FF5151;
+	background-color: #FFFFFF;
 	outline-style: none;
-	color: #FFFFFF;
+	color: #1F2A3E;
 	font-family: Ubuntu;
 	font-size: 13px;
     	font-weight: bold;
