@@ -42,13 +42,13 @@
 
 4. As stated on the footnote above, these dotfiles are written with Debian Sid on mind. However, with the inminent release of Debian 11 Bullseye, these will be once again compatible with Debian's stable branch. 
          
-5.  They will work for the most part, but some adjustments are needed to make them work properly on these distributions. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system. **Also, make sure to double check that the packges contained in the boostrapping script are alvailable in your distribution's repositories (even if it is Debian-bassed), otherwise, the script _will_ fail**.
+5. They will work for the most part, but some tweaking is needed to make them work properly on these distributions. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system. **Also, make sure to double-check that the packges contained in the boostrapping script are alvailable in your distribution's repositories (even if it is Debian-bassed), otherwise, the script _will_ fail**.
 
  ---
  
 ## Bootstrap
  
-The following steps assume that you are on a running Debian system specifically. If you are running any other Linux distribution which is not Debian (this includes Debian-based distributions as well), see note 5 on the previous section. 
+The following steps assume that you are on a specifically running Debian system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), see note 5 in the previous section.
  
 1. In order to bootstrap this dot files, install and use `wget` to download the bootrsapping script called `waystrap.sh`(it is located inside the `Debstrap` folder in this repository).
        
