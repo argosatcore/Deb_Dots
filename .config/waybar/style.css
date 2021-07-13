@@ -20,25 +20,14 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
 #workspaces button {
     padding: 0px 5px;
     background-color: transparent;
     color: #ffffff;
-    /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0px -2px transparent;
     border-radius: 0px;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0.2);
     box-shadow: inset 0px -2px #ffffff;
@@ -71,7 +60,7 @@ window#waybar.solo {
 #mode,
 #custom-date,
 #idle_inhibitor {
-    padding: 0px 10px;
+    padding: 0px 5px;
     margin: 0px 5px;
     color: #ffffff;
     border-radius: 10px
@@ -91,23 +80,19 @@ window#waybar.solo {
     font-weight: normal;
 }
 
-/* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
     margin-left: 0;
 }
 
-/* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
 }
 
 #battery {
-    background-color: #64727D;
     color: #ffffff;
 }
 
 #battery.charging {
-    background-color: #64727D;
     color: #ffffff;
 }
 
@@ -133,23 +118,19 @@ label:focus {
 }
 
 #cpu {
-    background-color: #64727D;
     color: #FFFFFF;
 }
 
 #memory {
-    background-color: #64727D;
     color: #FFFFFF;
 
 }
 
 #backlight {
-    background-color: #64727D;
     color: #FFFFFF;
 }
 
 #network {
-    background-color: #64727D;
     color: #FFFFFF;
 }
 
@@ -158,7 +139,6 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #64727D;
     color: #FFFFFF;
 
 }
@@ -169,7 +149,6 @@ label:focus {
 }
 
 #temperature {
-    background-color: #64727D;
     color: #FFFFFF;
 }
 
@@ -182,12 +161,11 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #64727D;
+    color: #FFFFFF;
 }
 
 #idle_inhibitor.activated {
-    background-color: rgba(255, 255, 255, 1.0);
-    color: #2d3436;
+    color: #FFFFFF;
     border-radius: 10px;
     margin: 0px 5px;
     box-shadow: inset 0px 0px #ecF0F1;
@@ -195,7 +173,6 @@ label:focus {
 
 #custom-date {
     color: #FFFFFF;
-    background-color: #64727D;
 }
 
 
