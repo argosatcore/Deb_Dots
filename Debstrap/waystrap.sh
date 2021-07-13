@@ -9,11 +9,14 @@ sudo apt upgrade -y
 echo ' '
 echo 'Installing commonly used packages...'
 sudo apt install -y \
+	alsa-utils \
 	apt-listbugs \
 	apt-listchanges \
+	apt-utils \
 	bash-completion \
 	blender \
 	brightnessctl \
+	build-essential \
 	default-jdk \
 	deja-dup \
 	fd-find \
@@ -33,6 +36,7 @@ sudo apt install -y \
 	lm-sensors \
 	lollypop \
 	mako-notifier \
+	nautilus \
 	needrestart \
 	neofetch \
 	neovim \
@@ -55,6 +59,12 @@ sudo apt install -y \
 	wofi \
 	wf-recorder \
 	wtype \
+	xdg-utils \
+	xdg-desktop-portal \
+	xdg-desktop-portal-gtk \
+	xdg-user-dirs \
+	xdg-user-dirs-gtk \
+	xwayland \
 	youtube-dl
 echo ' '
 echo 'Removing firefox-esr...'
@@ -92,6 +102,8 @@ mv -f ~/Deb_Dots/.config/mimeapps.list ~/.config/
 mv ~/Deb_Dots/README.md ~/
 mv ~/Deb_Dots/LICENSE ~/
 mv ~/Deb_Dots/Debstrap/ ~/
+mkdir -p ~/Pictures/Wallpapers
+mv ~/Deb_Dots/Pictures/Wallpapers/richter13 ~/Pictures/Wallpapers/
 mv ~/Deb_Dots/.git/ ~/
 mv ~/Deb_Dots/.inputrc ~/
 mv ~/Deb_Dots/.tmux.conf ~/
@@ -107,7 +119,7 @@ sudo systemctl start fstrim.timer
 echo ' '
 echo 'Bootstrapping complete. Welcome back, Argos.'
 echo ' ' 
-echo 'Remember, those who forget their history are condemned to repeat it.'
+echo 'Remember, those who forget their history are condemned to live it again, poorly.'
 echo 'Remember...'
 echo '...'
 nvim ~/Debstrap/project-history.en.txt
