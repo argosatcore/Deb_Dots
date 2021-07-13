@@ -61,7 +61,9 @@ The following steps assume that you are on a running Debian system specifically.
         
 3. Profit:
  
-![naturalisticwallpapersaresilly](https://user-images.githubusercontent.com/64110504/124502151-27e7ff00-dd80-11eb-97d7-6e84b3f6822f.png)
+![2021-07-12T22:55:40,927351657-06:00](https://user-images.githubusercontent.com/64110504/125393034-725f1200-e364-11eb-8b79-5970ee512195.png)
+
+---
 
 ## Unexpected features you get right out of the gate
 - **[Bash's vim mode](./.bashrc/#L20):** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
