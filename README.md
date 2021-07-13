@@ -48,7 +48,7 @@
  
 ## Bootstrap
  
-The following steps assume that you are on a specifically running Debian system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), see note 5 in the previous section.
+The following steps assume that you are on a running Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), see note 5 in the previous section.
  
 1. In order to bootstrap this dot files, install and use `wget` to download the bootrsapping script called `waystrap.sh`(it is located inside the `Debstrap` folder in this repository).
        
