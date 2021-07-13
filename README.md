@@ -55,11 +55,11 @@ The following steps assume that you are on a running Debian system specifically.
         sudo apt install wget
         wget https://github.com/argosatcore/Deb_Dots/blob/main/Debstrap/waystrap.sh
  
-2. Run the script. Using super user privileges is highly discouraged, as the from the parts of the script after the installation of packages will fail.
+2. Run the script. Using super user privileges is **highly discouraged**, as the parts of the script after the installation of packages will fail.
  
         ./waystrap.sh
         
-3. Profit.
+3. Profit:
  
 ![naturalisticwallpapersaresilly](https://user-images.githubusercontent.com/64110504/124502151-27e7ff00-dd80-11eb-97d7-6e84b3f6822f.png)
 
