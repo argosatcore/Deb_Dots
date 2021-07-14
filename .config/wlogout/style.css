@@ -1,8 +1,11 @@
 * {
 	background-image: none;
 }
+
 window {
-	background-color: rgba(31, 42, 62, 1.0);
+	background-image: image(url("/home/argos/Pictures/Wallpapers/richter13blur.png"));
+	background-position: center;
+	background-size: 100%;
 }
 button {
 	outline-style: none;

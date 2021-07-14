@@ -10,6 +10,7 @@ margin: 5px;
 border: solid;
 border-color: 64727D;
 border-width: 1px;
+border-radius: 10px; 
 color: #FFFFFF;
 background-color: #1F2A3E;
 }
@@ -32,12 +33,23 @@ border: none;
 }
 
 #text:selected {
-margin: 0px;
-border: none;
 color: #FFFFFF;
-background-color: #64727D;
+background-color: none;
+margin: 0px 5px;
+border: solid;
+border-color: #64727D;
+border-width: 0.5px;
+border-radius: 10px;
+padding: 0px 5px;
+ margin: 0px 0px;
 } 
 
 #entry:selected {
 background-color: #64727D;
+border: solid;
+border-color: #64727D;
+border-width: 0.5px;
+border-radius: 10px;
+padding: 0px 5px;
+ margin: 0px 0px;
 }

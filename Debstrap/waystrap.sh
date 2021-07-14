@@ -32,6 +32,7 @@ sudo apt install -y \
 	htop \
 	inkscape \
 	librecad \
+	libreoffice \
 	libreoffice-common \
 	lm-sensors \
 	lollypop \
