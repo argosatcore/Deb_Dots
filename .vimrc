@@ -55,11 +55,11 @@
 	colorscheme nord 
 
 
-" ------Status Line
+" ------Status Line:
+  
 	set statusline=
 	set statusline+=%#CursorLineNr#
-	set statusline+=%=
-	set statusline+=\ %f
+	set statusline+=\ %F
 	set statusline+=\ [%{&spelllang}\]
 	set statusline+=\ 
 	set statusline+=%#PmenuSel#
@@ -67,7 +67,7 @@
 	set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 	set statusline+=\[%{&fileformat}\]
 	set statusline+=\ %r
-	set statusline+=%#Difftext#
+	set statusline+=%#CursorLineNr#
 	set statusline+=\ %p%%
 	set statusline+=\ ln:%l/%L
 	set statusline+=\ [col:%c]
@@ -76,14 +76,10 @@
 " ------Goyo config: 
 
 	function! s:goyo_enter()
-	set noshowmode
-	set noshowcmd
 	set nocursorline nocursorcolumn
 	endfunction
 	
 	function! s:goyo_leave()
-	set showmode
-	set showcmd
 	set cursorline cursorcolumn
 	endfunction
 
