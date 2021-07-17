@@ -16,6 +16,7 @@ sudo apt install -y \
 	bash-completion \
 	blender \
 	brightnessctl \
+	bombadillo \
 	build-essential \
 	default-jdk \
 	deja-dup \
@@ -33,7 +34,8 @@ sudo apt install -y \
 	inkscape \
 	librecad \
 	libreoffice \
-	libreoffice-common \
+	libreoffice-java-common \
+	libreoffice-style-sifr \
 	lm-sensors \
 	lollypop \
 	mako-notifier \

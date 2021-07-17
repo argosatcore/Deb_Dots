@@ -13,6 +13,7 @@
 	set cursorline cursorcolumn
 	syntax on
 	set showmatch
+	set laststatus=2
 	runtime! debian.vim
 
 " ------Keybindings:
@@ -45,28 +46,31 @@
 	call plug#begin(expand('~/.vim/pluged'))
 	Plug 'arcticicestudio/nord-vim' 
 	Plug 'junegunn/goyo.vim'
-	Plug 'vim-airline/vim-airline'
-	Plug 'vim-airline/vim-airline-themes'
 	Plug 'airblade/vim-gitgutter'
 	call plug#end()
 
 	
 " ------Colorschemes:
 	
-	"Nord 
-		let g:nord_bold = '1'
-		let g:nord_italic = '1'
-		let g:nord_underline = '1'
-		let g:nord_undercurl = '1'
-		let g:nord_termcolor = '256'
-		colorscheme nord 
+	colorscheme nord 
 
-	"Airline theme:
-		let g:airline_theme='base16_chalk'
 
-	" Inherit terminal's current color scheme:
-		hi! Normal ctermbg=NONE guibg=NONE 
-		hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 
+" ------Status Line
+	set statusline=
+	set statusline+=%#CursorLineNr#
+	set statusline+=%=
+	set statusline+=\ %f
+	set statusline+=\ [%{&spelllang}\]
+	set statusline+=\ 
+	set statusline+=%#PmenuSel#
+	set statusline+=\ %y
+	set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+	set statusline+=\[%{&fileformat}\]
+	set statusline+=\ %r
+	set statusline+=%#Difftext#
+	set statusline+=\ %p%%
+	set statusline+=\ ln:%l/%L
+	set statusline+=\ [col:%c]
 
 
 " ------Goyo config: 
@@ -81,8 +85,6 @@
 	set showmode
 	set showcmd
 	set cursorline cursorcolumn
-	hi! Normal ctermbg=NONE guibg=NONE 
-	hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE 
 	endfunction
 
 	autocmd! User GoyoEnter nested call <SID>goyo_enter()
