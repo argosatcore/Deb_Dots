@@ -92,7 +92,7 @@ All of which are `apt install`able on Debian Sid:
 | `sway`          | Wayland compositor.                                                                  |
 | `tmux`          | Persistent SSH shell sessions.                                                       |
 | `vim-gtk`       | (Neo)Vim's clipboard integration.                                                    |
-| `waybar`        | Sway's panel.                                                                        |
+| `waybar`        | Wayland native panel.                                                                |
 | `wdisplays`     | Wayland native graphical tool for configuring displays.                              |
 | `wlogout`       | Wayland session menu.                                                                |
 | `wofi`          | Wayland native application launcher, window switcher, commad executor and many more. |
