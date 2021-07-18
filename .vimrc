@@ -56,48 +56,45 @@
 
 
 " ------Status Line:
-"
-	au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=black ctermbg=magenta
-	au InsertLeave * hi statusline guifg=black guibg=#8fbfdc ctermfg=black ctermbg=cyan
-	hi statusline guifg=black guibg=#8fbfdc ctermfg=black ctermbg=cyan
-	let g:currentmode={
-	    \ 'n'  : 'Normal',
-	    \ 'no' : 'Normal·Operator Pending',
-	    \ 'v'  : 'Visual',
-	    \ 'V'  : 'V·Line',
-	    \ "\<C-v>" : 'Visual·Block',
-	    \ 's'  : 'Select',
-	    \ 'S'  : 'S·Line',
-	    \ '^S' : 'S·Block',
-	    \ 'i'  : 'Insert',
-	    \ 'R'  : 'Replace',
-	    \ 'Rv' : 'V·Replace',
-	    \ 'c'  : 'Command',
-	    \ 'cv' : 'Vim Ex',
-	    \ 'ce' : 'Ex',
-	    \ 'r'  : 'Prompt',
-	    \ 'rm' : 'More',
-	    \ 'r?' : 'Confirm',
-	    \ '!'  : 'Shell',
-	    \ 't'  : 'Terminal'
-	    \}
 
-	set statusline=
-	set statusline+=\ \ %{toupper(g:currentmode[mode()])}\ \ 
-	set statusline+=%#CursorLineNr#
-	set statusline+=%1*\ %<%F%m%r%h%w
-	set statusline+=\ [%{&spelllang}\]
-	set statusline+=\ 
-	set statusline+=%#PmenuSel#
-	set statusline+=\ %y
-	set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
-	set statusline+=\[%{&fileformat}\]
-	set statusline+=\ %r
-	set statusline+=%#CursorLineNr#
-	set statusline+=%1*\ ln:\ %02l/%L\ (%p%%)\   
-	set statusline+=\ [col:%c]
-	set statusline+=%=
-	set statusline+=%0*\ %n\ 
+	"Status modes:
+		au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=black ctermbg=magenta
+		au InsertLeave * hi statusline guifg=black guibg=#8fbfdc ctermfg=black ctermbg=cyan
+		hi statusline guifg=black guibg=#8fbfdc ctermfg=black ctermbg=cyan
+		let g:currentmode={
+		    \ 'n'  : 'Normal',
+		    \ 'no' : 'Normal·Operator Pending',
+		    \ 'v'  : 'Visual',
+		    \ 'V'  : 'V·Line',
+		    \ "\<C-v>" : 'Visual·Block',
+		    \ 's'  : 'Select',
+		    \ 'S'  : 'S·Line',
+		    \ '^S' : 'S·Block',
+		    \ 'i'  : 'Insert',
+		    \ 'R'  : 'Replace',
+		    \ 'Rv' : 'V·Replace',
+		    \ 'c'  : 'Command',
+		    \ 'cv' : 'Vim Ex',
+		    \ 'ce' : 'Ex',
+		    \ 'r'  : 'Prompt',
+		    \ 'rm' : 'More',
+		    \ 'r?' : 'Confirm',
+		    \ '!'  : 'Shell',
+		    \ 't'  : 'Terminal'
+		    \}
+	
+	"Status modules:
+		set statusline=
+		set statusline+=\ \ %{toupper(g:currentmode[mode()])}\ \	"Current mode 
+		set statusline+=%#CursorLineNr#					"Color scheme
+		set statusline+=%1*\ %<%F%m%r%h%w\ [%{&spelllang}\]\ 		"File path, modified, readonly, helpfile, preview, spelling
+		set statusline+=%#PmenuSel#					"Color scheme
+		set statusline+=%2*\ %{''.(&fenc!=''?&fenc:&enc).''}\		"Encoding
+		set statusline+=%#CursorLineNr#					"Color scheme
+		set statusline+=%1*\ ln:\ %02l/%L\ (%p%%)\ [col:%c] 		"Line number/total lines, percentage of document, column number
+		set statusline+=%=						"Switch to right section of the status bar
+		set statusline+=%0*\ %n\ 					"Buffer number
+
 
 " ------Goyo config: 
 
