@@ -1,10 +1,10 @@
-
 " ░█░█░▀█▀░█▄█
 " ░▀▄▀░░█░░█░█
 " ░░▀░░▀▀▀░▀░▀
 
 
 " ------Global configs:
+"  
 	set number relativenumber
 	set spell spelllang=es,en_us  	
 	set wildmenu
@@ -13,6 +13,7 @@
 	set cursorline cursorcolumn
 	syntax on
 	set showmatch
+	set incsearch
 	set laststatus=2
 	runtime! debian.vim
 
@@ -57,10 +58,12 @@
 
 " ------Status Line:
 
-	"Status modes:
+	"Status colors:
 		au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=black ctermbg=magenta
 		au InsertLeave * hi statusline guifg=black guibg=#8fbfdc ctermfg=black ctermbg=cyan
 		hi statusline guifg=black guibg=#8fbfdc ctermfg=black ctermbg=cyan
+	
+	"Status modes:
 		let g:currentmode={
 		    \ 'n'  : 'Normal',
 		    \ 'no' : 'Normal·Operator Pending',
@@ -89,8 +92,7 @@
 		set statusline+=%#CursorLineNr#					
 		set statusline+=%1*\ %<%F%m%r%h%w\ [%{&spelllang}\]\ 		
 		set statusline+=%#PmenuSel#				
-		set statusline+=\ %y				
-		set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+		set statusline+=\ %y\ %{&fileencoding?&fileencoding:&encoding}\ 
 		set statusline+=%#CursorLineNr#				
 		set statusline+=%1*\ ln:\ %02l/%L\ (%p%%)\ [col:%c] 
 		set statusline+=%=				
