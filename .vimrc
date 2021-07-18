@@ -85,15 +85,16 @@
 	
 	"Status modules:
 		set statusline=
-		set statusline+=\ \ %{toupper(g:currentmode[mode()])}\ \	"Current mode 
-		set statusline+=%#CursorLineNr#					"Color scheme
-		set statusline+=%1*\ %<%F%m%r%h%w\ [%{&spelllang}\]\ 		"File path, modified, readonly, helpfile, preview, spelling
-		set statusline+=%#PmenuSel#					"Color scheme
-		set statusline+=%2*\ %{''.(&fenc!=''?&fenc:&enc).''}\		"Encoding
-		set statusline+=%#CursorLineNr#					"Color scheme
-		set statusline+=%1*\ ln:\ %02l/%L\ (%p%%)\ [col:%c] 		"Line number/total lines, percentage of document, column number
-		set statusline+=%=						"Switch to right section of the status bar
-		set statusline+=%0*\ %n\ 					"Buffer number
+		set statusline+=\ \ %{toupper(g:currentmode[mode()])}\ 
+		set statusline+=%#CursorLineNr#					
+		set statusline+=%1*\ %<%F%m%r%h%w\ [%{&spelllang}\]\ 		
+		set statusline+=%#PmenuSel#				
+		set statusline+=\ %y				
+		set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+		set statusline+=%#CursorLineNr#				
+		set statusline+=%1*\ ln:\ %02l/%L\ (%p%%)\ [col:%c] 
+		set statusline+=%=				
+		set statusline+=%0*\ %n\ 		
 
 
 " ------Goyo config: 
