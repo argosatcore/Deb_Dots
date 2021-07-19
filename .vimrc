@@ -19,7 +19,7 @@
 
 " ------Keybindings:
 
-	"Enter normal mode:
+	"Return to normal mode:
   	      imap fd <Esc>
   	      vmap fd <Esc> 
 
@@ -99,7 +99,7 @@
 		set statusline+=%0*\ %n\ 		
 
 
-" ------Goyo config: 
+" ------Goyo functions: 
 
 	function! s:goyo_enter()
 	set nocursorline nocursorcolumn

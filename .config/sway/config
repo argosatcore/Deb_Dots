@@ -62,7 +62,7 @@
 #--------------------
 
 #	output * bg #64727D solid_color 
-	output * bg ~/Pictures/Wallpapers/richter13 fill 
+	output * bg ~/Pictures/Wallpapers/richter11 fill 
 
 
 #----------------------
