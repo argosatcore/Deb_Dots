@@ -25,11 +25,11 @@
  
  All the design decisions taken have the purpose to both manage and make explicit what probably remains as the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
  
- Although I use these dot files on Debian, I try to keep them as distribution agnostic as possible. I have deployed them succesfully on [Arch Linux](https://archlinux.org/) (don't take this as an endorsement) and on [Void Linux](https://voidlinux.org/) (you can take this as an endorsement).<sup>3</sup>
+ Although I use these dot files on Debian, I try to keep them as distribution agnostic as possible. I have deployed them success fully on [Arch Linux](https://archlinux.org/) (don't take this as an endorsement) and on [Void Linux](https://voidlinux.org/) (you can take this as an endorsement).<sup>3</sup>
    
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
-2. If you are aware of the risks and responsabilities that using Debian's unstable branch entail and still wish to go down the Sid route, make sure to replace your apt sources with the following lines:
+2. If you are aware of the risks and responsibilities that using Debian's unstable branch entail and still wish to go down the Sid route, make sure to replace your apt sources with the following lines:
 
        deb http://deb.debian.org/debian unstable main contrib non-free
        deb-src http://deb.debian.org/debian unstable main contrib non-free
@@ -41,7 +41,7 @@
 3. They will work for the most part, but some tweaking is needed to make them work properly on these distributions. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system. **Also, make sure to double-check that the packages contained in the boostrapping script are alvailable in your distribution's repositories (even if it is Debian-based), otherwise, the script _will_ fail**.
 
  ---
- 
+    
 ## Bootstrap
  
 The following steps assume that you are on a running Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), see note 3 in the previous section.
@@ -75,11 +75,11 @@ The following steps assume that you are on a running Debian Sid system. If you a
 ## Programs referenced by these configs 
 All of which are `apt install`able on Debian Sid:
 
-| Program         | Descripton                                                                           |
+| Program         | Description                                                                           |
 | ---             | ---                                                                                  |
 | `foot`          | Wayland native minimalist terminal emulator.                                         |
 | `gammastep`     | Screen temperature manager.                                                          |
-| `grimshot`      | Wayland native screeshoot tool.                                                      |
+| `grimshot`      | Wayland native screenshot tool.                                                      |
 | `mako-notifier` | Wayland native notification daemon.                                                  |
 | `nautilus`      | File manager.                                                                        |
 | `neovim`        | Text editor.                                                                         |
@@ -91,7 +91,7 @@ All of which are `apt install`able on Debian Sid:
 | `waybar`        | Wayland native panel.                                                                |
 | `wdisplays`     | Wayland native graphical tool for configuring displays.                              |
 | `wlogout`       | Wayland session menu.                                                                |
-| `wofi`          | Wayland native application launcher, window switcher, commad executor and many more. |
+| `wofi`          | Wayland native application launcher, window switcher, command executor and many more. |
 
 ## Handy keybindings 
 
@@ -104,7 +104,7 @@ All of which are `apt install`able on Debian Sid:
 - `Super+PageDown`: switch to the previous workspace. If there is no previously occupied workspace, it will automatically create a new one.
 - `Super+x`: toggle Waybar on/off.
 - `Super+Shift+b`: toggle window border on/off.
-- `Super+(1,2,3,4,5,6,7,8,9,0)`: Switch to worspace 1-10.
+- `Super+(1,2,3,4,5,6,7,8,9,0)`: Switch to workspace 1-10.
 - `Super+Shitft+(1,2,3,4,5,6,7,8,9,0)`: Move an application to workspace 1-10.
 - `Super+Space`: Switch keyboard layout. Options are: Latin American (default) and US-International.
 
