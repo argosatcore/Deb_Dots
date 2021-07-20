@@ -18,20 +18,18 @@
 
 ## Introduction
 
- The purpose of this repository is to contain the bare minimum of what is necessary to quickly bootstrap my current sensibilities on a Linux system.<sup>2</sup> At its core, there are two assumptions: 
+ The purpose of this repository is to contain the bare minimum of what is necessary to quickly bootstrap my current sensibilities on a Linux system. At its core, there are two assumptions: 
  
- 1. The use of the unstable branch of the [Debian GNU/Linux Operating System](https://www.debian.org/), aka [Sid](https://wiki.debian.org/DebianUnstable) :skull:.<sup>3</sup>
+ 1. The use of the unstable branch of the [Debian GNU/Linux Operating System](https://www.debian.org/), aka [Sid](https://wiki.debian.org/DebianUnstable) :skull:.<sup>2</sup>
  2. The implementation of the Wayland protocol through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor. 
  
  All the design decisions taken have the purpose to both manage and make explicit what probably remains as the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
  
- Although I use these dot files on Debian, I try to keep them as distribution agnostic as possible. I have deployed them succesfully on [Arch Linux](https://archlinux.org/) (don't take this as an endorsement) and on [Void Linux](https://voidlinux.org/) (you can take this as an endorsement).<sup>4</sup>
+ Although I use these dot files on Debian, I try to keep them as distribution agnostic as possible. I have deployed them succesfully on [Arch Linux](https://archlinux.org/) (don't take this as an endorsement) and on [Void Linux](https://voidlinux.org/) (you can take this as an endorsement).<sup>3</sup>
    
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
-2. Everything is pretty light (mostly contains plain text files and some bash and shell scripts), with the exception of my font collection, which contains the fonts that I use on a regular basis and/or the ones I really like, which make it's size rather big.
    
-3. If you are aware of the risks and responsabilities that using Debian's unstable branch entail and still wish to go down the Sid route, make sure to replace your apt sources with the following lines:
+2. If you are aware of the risks and responsabilities that using Debian's unstable branch entail and still wish to go down the Sid route, make sure to replace your apt sources with the following lines:
 
        deb http://deb.debian.org/debian unstable main contrib non-free
        deb-src http://deb.debian.org/debian unstable main contrib non-free
@@ -40,13 +38,13 @@
          
        sudo apt update && sudo apt full-upgrade 
          
-4. They will work for the most part, but some tweaking is needed to make them work properly on these distributions. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system. **Also, make sure to double-check that the packages contained in the boostrapping script are alvailable in your distribution's repositories (even if it is Debian-based), otherwise, the script _will_ fail**.
+3. They will work for the most part, but some tweaking is needed to make them work properly on these distributions. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system. **Also, make sure to double-check that the packages contained in the boostrapping script are alvailable in your distribution's repositories (even if it is Debian-based), otherwise, the script _will_ fail**.
 
  ---
  
 ## Bootstrap
  
-The following steps assume that you are on a running Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), see note 4 in the previous section.
+The following steps assume that you are on a running Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), see note 3 in the previous section.
  
 1. In order to bootstrap these dot files, install and use `wget` to download the bootstrapping script called `waystrap.sh`, which is located inside the `Debstrap` directory in this repository.
        
