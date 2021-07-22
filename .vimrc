@@ -10,6 +10,11 @@
 	set wildmenu
 	set autoread wildmode=longest,list,full
 	set mouse=a
+	set joinspaces
+	set incsearch
+	set nostartofline
+	set spellsuggest=10
+	set hlsearch
 	set cursorline cursorcolumn
 	syntax on
 	set showmatch
