@@ -38,13 +38,13 @@
          
        sudo apt update && sudo apt full-upgrade 
          
-3. They will work for the most part, but some tweaking is needed to make them work properly on these distributions. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system. **Also, make sure to double-check that the packages contained in the boostrapping script are alvailable in your distribution's repositories (even if it is Debian-based), otherwise, the script _will_ fail**.
+3. They will work for the most part, but some tweaking is needed to make them work properly on these distributions. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system. 
 
  ---
     
 ## Bootstrap
  
-The following steps assume that you are on a running Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), see note 3 in the previous section.
+The following steps assume that you are on a running Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), **make sure to double-check that the packages contained in the boostrapping script are alvailable in your distribution's repositories (even if it is Debian-based), otherwise, the script _will_ fail**.
  
 1. In order to bootstrap these dot files, install and use `wget` to download the bootstrapping script called `waystrap.sh`, which is located inside the `Debstrap` directory in this repository.
        
