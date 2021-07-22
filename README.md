@@ -25,7 +25,7 @@
  
  All the design decisions taken have the purpose to both manage and make explicit what probably remains as the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
  
- Although I use these dot files on Debian, I try to keep them as distribution agnostic as possible. I have deployed them success fully on [Arch Linux](https://archlinux.org/) (don't take this as an endorsement) and on [Void Linux](https://voidlinux.org/) (you can take this as an endorsement).<sup>3</sup>
+ Although I use these dot files on Debian, I try to keep them as distribution agnostic as possible. I have deployed them successfully on [Arch Linux](https://archlinux.org/) (don't take this as an endorsement) and on [Void Linux](https://voidlinux.org/) (you can take this as an endorsement).<sup>3</sup>
    
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
