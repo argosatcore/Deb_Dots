@@ -106,7 +106,7 @@ mv ~/Deb_Dots/README.md ~/
 mv ~/Deb_Dots/LICENSE ~/
 mv ~/Deb_Dots/Debstrap/ ~/
 mkdir -p ~/Pictures/Wallpapers
-mv ~/Deb_Dots/Pictures/Wallpapers/richter13 ~/Pictures/Wallpapers/
+mv ~/Deb_Dots/Pictures/Wallpapers/richter* ~/Pictures/Wallpapers/
 mv ~/Deb_Dots/.git/ ~/
 mv ~/Deb_Dots/.inputrc ~/
 mv ~/Deb_Dots/.tmux.conf ~/
