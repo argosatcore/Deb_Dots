@@ -4,7 +4,11 @@
 
 
 " ------Global configs:
-  
+
+	set nocompatible   
+	set complete+=k
+	set dictionary+=/usr/share/dict/words
+	set noshowmode
 	set number relativenumber
 	set spell spelllang=es,en_us  	
 	set wildmenu
@@ -16,11 +20,14 @@
 	set spellsuggest=10
 	set hlsearch
 	set cursorline cursorcolumn
-	syntax on
 	set showmatch
 	set incsearch
 	set laststatus=2
 	runtime! debian.vim
+	syntax on
+	filetype plugin on
+	set omnifunc=syntaxcomplete#Complete
+	let g:ShiftTabDefaultCompletionType = "<C-X><C-O>"
 
 
 " ------Keybindings:
