@@ -8,6 +8,7 @@ image/svg+xml=org.inkscape.Inkscape.desktop;
 application/vnd.ms-publisher=org.gnome.gedit.desktop;
 application/x-shellscript=org.gnome.gedit.desktop;
 application/illustrator=org.inkscape.Inkscape.desktop;
+video/x-matroska=mpv.desktop;vlc.desktop;
 
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop

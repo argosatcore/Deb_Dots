@@ -20,6 +20,8 @@ sudo apt install -y \
 	build-essential \
 	default-jdk \
 	deja-dup \
+	eog \
+	evince \
 	fd-find \
 	firefox \
 	fonts-font-awesome \
