@@ -348,12 +348,12 @@
 	# Colors:
 	set $active	#FFFFFF
 	set $unfocused	#9F9F9F
-	set $fg		#1F2A3E
-	set $bg		#283337
+	set $fg		#283337
+	set $bg		#1F2A3E
 	set $bar	#404552
 
 # 	Window Border color:		border:		backgr:		text:		indicator:
-	client.focused			$active		$active		$fg		$fg
+	client.focused			$active		$active		$bg		$fg
 	client.focused_inactive		$bg     	$bg		$unfocused	$fg
 	client.unfocused		$bg     	$bg		$unfocused	$fg
 	client.urgent			$bg     	$bg		$fg		$fg
