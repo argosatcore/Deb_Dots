@@ -34,7 +34,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
+    background-color: #01A1F7;
     box-shadow: inset 0px -0px #ffffff;
 }
 
