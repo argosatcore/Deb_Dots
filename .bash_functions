@@ -64,8 +64,8 @@
 	}
 
 
-# ------Update Deb_dots:
-	gitu() {
+# ------Update Deb_Dots:
+	debgit() {
 		git add -u
 		git commit -m "Update"
 		git push -u
