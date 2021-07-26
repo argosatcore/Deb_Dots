@@ -51,7 +51,7 @@
 	bindsym $mod+Shift+e exec swaynag -t warning -m 'End Wayland session?' -b 'Yes.' 'swaymsg exit'
 
 	# Wofi as a power menu:
-	#bindsym $mod+Shift+q exec bash .local/bin/scripts/wofi/poweroffreboot
+	# bindsym $mod+Shift+q exec bash .local/bin/scripts/wofi/poweroffreboot
 	
 	# Use wlogout as a session menu:
 	bindsym $mod+Shift+q exec wlogout 
@@ -61,8 +61,8 @@
 #-- Set wallpaper: --
 #--------------------
 
-#	output * bg #64727D solid_color 
-	output * bg ~/Pictures/Wallpapers/p3 fit 
+	# output * bg #64727D solid_color 
+	output * bg ~/.config/sway/Wallpapers/p3 fit 
 
 
 #----------------------
