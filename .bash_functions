@@ -64,4 +64,9 @@
 	}
 
 
-
+# ------Update Deb_dots:
+	gitu() {
+		git add -u
+		git commit -m "Update"
+		git push -u
+	}
