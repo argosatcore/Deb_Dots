@@ -38,6 +38,7 @@
 	for_window [app_id="Nautilus"] floating enable
 	for_window [app_id="wdisplays"] floating enable
 	for_window [app_id="pavucontrol"] floating enable
+	for_window [app_id="bookmark"] floating enable
 
 
 #-------------------
@@ -140,7 +141,7 @@
 	bindsym $mod+Tab exec ~/.local/bin/scripts/wofi/window_selector.sh 
 
 	#Fuzzy find bookmarks
-	bindsym $mod+u exec $term bash .local/bin/scripts/fzf/fuzzybook.sh
+	bindsym $mod+u exec $term -a=bookmark bash .local/bin/scripts/fzf/fuzzybook.sh
 
 
 #--------------------
