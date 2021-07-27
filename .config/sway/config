@@ -141,7 +141,7 @@
 	bindsym $mod+Tab exec ~/.local/bin/scripts/wofi/window_selector.sh 
 
 	#Fuzzy find bookmarks
-	bindsym $mod+u exec $term -a=bookmark bash .local/bin/scripts/fzf/fuzzybook.sh
+	bindsym $mod+u exec $term -a=bookmark sh .local/bin/scripts/fzf/fuzzybook.sh
 
 
 #--------------------
