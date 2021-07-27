@@ -95,15 +95,7 @@ echo 'Deploying  dotfiles...'
 echo ' '
 mv ~/Deb_Dots/.local/bin/ ~/.local/
 mv ~/Deb_Dots/.local/share/fonts/ ~/.local/share/
-mv ~/Deb_Dots/.config/sway/ ~/.config/
-mv ~/Deb_Dots/.config/mako/ ~/.config/
-mv ~/Deb_Dots/.config/waybar/ ~/.config/
-mv ~/Deb_Dots/.config/wlogout/ ~/.config/
-mv ~/Deb_Dots/.config/wofi/ ~/.config/
-mv ~/Deb_Dots/.config/foot/ ~/.config/
-mv -f ~/Deb_Dots/.config/gtk-3.0/ ~/.config/
-mv ~/Deb_Dots/.config/nvim/ ~/.config/
-mv -f ~/Deb_Dots/.config/mimeapps.list ~/.config/
+mv -f ~/Deb_Dots/.config/* ~/.config/
 mv ~/Deb_Dots/README.md ~/
 mv ~/Deb_Dots/LICENSE ~/
 mv ~/Deb_Dots/Debstrap/ ~/

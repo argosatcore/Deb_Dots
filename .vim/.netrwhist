@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/argos/Debstrap'
 let g:netrw_dirhist_4='/home/argos/.config/wofi'
 let g:netrw_dirhist_3='/home/argos/.config/wlogout'
 let g:netrw_dirhist_2='/home/argos/Desktop/Notes'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_9='/home/argos/.config'
 let g:netrw_dirhist_8='/home/argos/.config/foot'
 let g:netrw_dirhist_7='/home/argos/.config/sway'
 let g:netrw_dirhist_6='/home/argos/.config'
-let g:netrw_dirhist_5='/home/argos/.config/wlogout'
