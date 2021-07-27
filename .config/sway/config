@@ -55,7 +55,7 @@
 	
 	# Use wlogout as a session menu:
 	bindsym $mod+Shift+q exec wlogout 
-
+	
 
 #--------------------
 #-- Set wallpaper: --
@@ -138,6 +138,9 @@
 
 	# Window selector:
 	bindsym $mod+Tab exec ~/.local/bin/scripts/wofi/window_selector.sh 
+
+	#Fuzzy find bookmarks
+	bindsym $mod+u exec $term bash .local/bin/scripts/fzf/fuzzybook.sh
 
 
 #--------------------
