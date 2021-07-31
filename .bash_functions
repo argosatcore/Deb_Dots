@@ -10,24 +10,35 @@
 	}
 
 
-# ------Pull up quick notes on random topics:
- 	note() {
+# ------Create quick notes on random topics:
+ 	jot() {
  		touch ~/Desktop/Notes/"$1"
 		nvim ~/Desktop/Notes/"$1"
  	}
+
+
+# ------Browse and open notes quickly:
+	fjot() {
+		cd ~/Desktop/Notes/
+		note="$(fdfind -t f -H | fzf --reverse --preview="head -$LINES {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)"
+			if [ -n "$note" ]; then	
+			nvim "$note"
+			fi
+		cd
+	}
 
 
 # ------Use fzf as a file opener:
 	fo() {
 		file="$(fdfind -t f -H | fzf --reverse --preview="head -$LINES {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)"
 		if [ -n "$file" ]; then
-		    mimetype="$(xdg-mime query filetype $file)"
-		    default="$(xdg-mime query default $mimetype)"
-		    if [[ "$default" == "nvim.desktop" ]]; then
-		        nvim "$file"
-		    else
-		        &>/dev/null xdg-open "$file" & disown; exit
-		    fi
+			mimetype="$(xdg-mime query filetype $file)"
+			default="$(xdg-mime query default $mimetype)"
+		    		if [[ "$default" == "nvim.desktop" ]]; then
+		        		nvim "$file"
+		    		else
+		        		&>/dev/null xdg-open "$file" & disown; exit
+		    		fi
 		fi
 	}
 
