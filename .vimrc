@@ -21,13 +21,12 @@
 	set hlsearch
 	set cursorline cursorcolumn
 	set showmatch
-	set incsearch
 	set laststatus=2
+	set omnifunc=syntaxcomplete#Complete
+	let g:ShiftTabDefaultCompletionType = "<C-X><C-O>"
 	runtime! debian.vim
 	syntax on
 	filetype plugin on
-	set omnifunc=syntaxcomplete#Complete
-	let g:ShiftTabDefaultCompletionType = "<C-X><C-O>"
 
 
 " ------Keybindings:
