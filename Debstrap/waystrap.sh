@@ -18,6 +18,7 @@ sudo apt install -y \
 	brightnessctl \
 	bombadillo \
 	build-essential \
+	calcurse \
 	default-jdk \
 	deja-dup \
 	eog \
