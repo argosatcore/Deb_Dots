@@ -65,9 +65,8 @@ sudo apt install -y \
 	wf-recorder \
 	wtype \
 	xdg-utils \
-	xdg-desktop-portal \
 	xdg-desktop-portal-gtk \
-	xdg-user-dirs \
+	xdg-desktop-portal-wlr \
 	xdg-user-dirs-gtk \
 	xwayland \
 	youtube-dl
