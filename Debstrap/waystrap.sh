@@ -19,6 +19,7 @@ sudo apt install -y \
 	bombadillo \
 	build-essential \
 	calcurse \
+	create-resources \
 	default-jdk \
 	deja-dup \
 	eog \
