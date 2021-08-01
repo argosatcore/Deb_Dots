@@ -11,6 +11,11 @@
 	export BROWSER='firefox'
 	export TERM='xterm-256color'
 	export PATH=$PATH:$HOME/bin:$HOME/.local/bin/scripts/wofi/:/usr/local/sbin
+	export MOZ_ENABLE_WAYLAND=1
+	if [ -n "$WAYLAND_DISPLAY" ]; then
+		export XDG_SESSION_TYPE=wayland
+		export XDG_CURRENT_DESKTOP=sway
+	fi
 	shopt -s cdspell
 	shopt -s autocd
 	complete -d cd
