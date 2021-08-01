@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/64110504/125571508-fc53d41f-a7e3-41c0-8a00-e6a6f8b04768.png" width="214px" align="left" />
+<img src="https://user-images.githubusercontent.com/64110504/125571508-fc53d41f-a7e3-41c0-8a00-e6a6f8b04768.png" height="214px" align="left" />
 <h1 align="left">Argos's Debian GNU/Linux Dot Files<sup>1</sup> </h1>  
 <p align="left">A collection of my experiences with Linux in the form of dot files.</p>
 
