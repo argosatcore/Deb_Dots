@@ -65,10 +65,10 @@ sudo apt install -y \
 	wofi \
 	wf-recorder \
 	wtype \
-	xdg-utils \
 	xdg-desktop-portal-gtk \
 	xdg-desktop-portal-wlr \
 	xdg-user-dirs-gtk \
+	xdg-utils \
 	xwayland \
 	youtube-dl
 echo ' '
