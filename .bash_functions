@@ -65,7 +65,7 @@
 	debclean() {
 		sudo apt clean
 		sudo apt autoclean
-		sudo apt autoremove
+		sudo apt autoremove --purge 
 	}
 
 

@@ -109,7 +109,7 @@ mv -f ~/Deb_Dots/.profile ~/
 mv -f ~/Deb_Dots/.vim/ ~/
 rm -rf ~/Deb_Dots/
 echo ' '
-echo 'Enabling trimming of SSD...'
+echo 'Enabling SSD trimming...'
 sudo systemctl enable fstrim.timer
 sudo systemctl start fstrim.timer
 echo ' '
