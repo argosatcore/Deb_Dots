@@ -1,5 +1,5 @@
 #!/usr/bin/sh
-set -ex 
+set -e 
 
 if expr "$EUID" : '0' >/dev/null; then
     echo "(1) already root"

@@ -133,6 +133,17 @@ sudo systemctl start fstrim.timer
 printf " \n"
 }
 
+sshkey() {
+printf "Generating ssh key...\n"
+ssh-keygen -t ed25519 
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+printf "Add the SSH key to your github account\n"
+cat ~/.ssh/id_ed25519.pub
+printf "Press any key to continue\n"
+read y
+}
+
 end() {
 printf "Bootstrapping complete. Welcome back, Argos.\n"
 printf " \n"
@@ -151,5 +162,6 @@ swapfox
 flatpaks
 dots
 trim
+sshkey
 end
 remember
