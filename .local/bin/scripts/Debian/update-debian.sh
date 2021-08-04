@@ -2,17 +2,17 @@
 set -e 
 
 if expr "$EUID" : '0' >/dev/null; then
-    echo "(1) already root"
+    printf "already root\n"
 else
     sudo -k 
     if sudo true; then
-        echo "(2) correct password"
+        printf "correct password\n"
     else
-        echo "(3) wrong password"
+        printf "wrong password\n"
         exit 1
     fi
 fi
 
-sudo apt-get update -y
+sudo apt-get update 
 sudo apt-get upgrade
 flatpak update
