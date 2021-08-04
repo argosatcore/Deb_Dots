@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/usr/bin/sh
+set -ex
 
 extractAllTypeFiles(){ 
        if [ -f "$1" ] ; then 

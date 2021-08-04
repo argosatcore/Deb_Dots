@@ -44,6 +44,7 @@
 	alias throwapt='sudo apt remove'
 	alias capture='sudo apt install'
 	alias debcount='apt-cache search "" | wc -l'
+	alias debup='dash .local/bin/scripts/Debian/update-debian.sh'
 
 	#Systemd:
 	alias sd-all='systemctl list-units --type=service'

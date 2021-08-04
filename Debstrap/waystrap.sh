@@ -1,13 +1,15 @@
 #!/bin/sh
 #Bootstrapping script for "Sidified" Debian systems - Wayland edition.
-echo 'Initializing bootstrap...'
-echo ' '
-echo 'Updating system...'
-echo ' '
+set -e 
+
+printf "Initializing bootstrap...\n"
+printf " \n"
+printf "Updating system...\n"
+printf " \n"
 sudo apt update && \
 sudo apt upgrade -y
-echo ' '
-echo 'Installing commonly used packages...'
+printf " \n"
+printf "Installing commonly used packages...\n"
 sudo apt install -y \
 	alsa-utils \
 	apt-listbugs \
@@ -72,28 +74,28 @@ sudo apt install -y \
 	xdg-utils \
 	xwayland \
 	youtube-dl
-echo ' '
-echo 'Removing firefox-esr...'
+printf " \n"
+printf "Removing firefox-esr...\n"
 sudo apt remove firefox-esr
-echo ' '
-echo 'Setting up flatpaks...'
-echo ' '
+printf " \n"
+printf "Setting up flatpaks...\n"
+printf " \n"
 sudo apt install flatpak
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-echo ' '
-echo 'Installing Zotero...'
-echo ' ' 
+printf " \n"
+printf "Installing Zotero...\n"
+printf " \n" 
 flatpak install flathub org.zotero.Zotero
-echo ' '
-echo 'Installing Foliate...'
+printf " \n"
+printf "Installing Foliate...\n"
 flatpak install flathub com.github.johnfactotum.Foliate
-echo ' '
-echo 'Capturing dotfiles...'
-echo ' '
+printf " \n"
+printf "Capturing dotfiles...\n"
+printf " \n"
 git clone git@github.com:argosatcore/Deb_Dots.git 
-echo ' ' 
-echo 'Deploying  dotfiles...'
-echo ' '
+printf " \n" 
+printf "Deploying  dotfiles...\n"
+printf " \n"
 mv ~/Deb_Dots/.local/bin/ ~/.local/
 mv ~/Deb_Dots/.local/share/fonts/ ~/.local/share/
 mv -f ~/Deb_Dots/.config/* ~/.config/
@@ -108,14 +110,14 @@ mv -f ~/Deb_Dots/.bash* ~/
 mv -f ~/Deb_Dots/.profile ~/
 mv -f ~/Deb_Dots/.vim/ ~/
 rm -rf ~/Deb_Dots/
-echo ' '
-echo 'Enabling SSD trimming...'
+printf " \n"
+printf "Enabling SSD trimming...\n"
 sudo systemctl enable fstrim.timer
 sudo systemctl start fstrim.timer
-echo ' '
-echo 'Bootstrapping complete. Welcome back, Argos.'
-echo ' ' 
-echo 'Remember, those who forget their history are condemned to live it again, poorly.'
-echo 'Remember...'
-echo '...'
+printf " \n"
+printf "Bootstrapping complete. Welcome back, Argos.\n"
+printf " \n" 
+printf "Remember, those who forget their history are condemned to live it again, poorly.\n"
+printf "Remember...\n"
+printf "...\n"
 nvim ~/Debstrap/project-history.en.txt

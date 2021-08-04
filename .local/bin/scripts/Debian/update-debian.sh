@@ -1,7 +1,7 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/usr/bin/sh
+set -ex 
 
-if [[ "$EUID" = 0 ]]; then
+if expr "$EUID" : '0' >/dev/null; then
     echo "(1) already root"
 else
     sudo -k 
