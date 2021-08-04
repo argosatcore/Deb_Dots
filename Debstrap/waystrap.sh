@@ -2,6 +2,7 @@
 #Bootstrapping script for "Sidified" Debian systems - Wayland edition.
 set -e 
 
+initialize() {
 printf "Initializing bootstrap...\n"
 printf " \n"
 printf "Updating system...\n"
@@ -9,6 +10,9 @@ printf " \n"
 sudo apt update && \
 sudo apt upgrade -y
 printf " \n"
+}
+
+install() {
 printf "Installing commonly used packages...\n"
 sudo apt install -y \
 	alsa-utils \
@@ -75,9 +79,15 @@ sudo apt install -y \
 	xwayland \
 	youtube-dl
 printf " \n"
+}
+
+swapfox() {
 printf "Removing firefox-esr...\n"
 sudo apt remove firefox-esr
 printf " \n"
+}
+
+flatpaks() {
 printf "Setting up flatpaks...\n"
 printf " \n"
 sudo apt install flatpak
@@ -90,6 +100,9 @@ printf " \n"
 printf "Installing Foliate...\n"
 flatpak install flathub com.github.johnfactotum.Foliate
 printf " \n"
+}
+
+dots() {
 printf "Capturing dotfiles...\n"
 printf " \n"
 git clone git@github.com:argosatcore/Deb_Dots.git 
@@ -111,13 +124,32 @@ mv -f ~/Deb_Dots/.profile ~/
 mv -f ~/Deb_Dots/.vim/ ~/
 rm -rf ~/Deb_Dots/
 printf " \n"
+}
+
+trim() {
 printf "Enabling SSD trimming...\n"
 sudo systemctl enable fstrim.timer
 sudo systemctl start fstrim.timer
 printf " \n"
+}
+
+end() {
 printf "Bootstrapping complete. Welcome back, Argos.\n"
-printf " \n" 
+printf " \n"
+}
+
+remember() {
 printf "Remember, those who forget their history are condemned to live it again, poorly.\n"
 printf "Remember...\n"
 printf "...\n"
 nvim ~/Debstrap/project-history.en.txt
+}
+
+initialize
+install
+swapfox
+flatpaks
+dots
+trim
+end
+remember
