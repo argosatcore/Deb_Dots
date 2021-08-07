@@ -81,3 +81,13 @@
 		git commit -m "$1"
 		git push -u
 	}
+
+
+# ------Count files or directories in directory:
+	count() {
+	    # Usage: count /path/to/dir/*
+	    #        count /path/to/dir/*/
+	    [ -e "$1" ] \
+	        && printf '%s\n' "$#" \
+	        || printf '%s\n' 0
+	}
