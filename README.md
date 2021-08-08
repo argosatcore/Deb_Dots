@@ -57,7 +57,7 @@ The following steps assume that you are on a running Debian Sid system. If you a
         
 3. Profit:
  
-![2021-08-01T20:47:44,087377480-06:00](https://user-images.githubusercontent.com/64110504/127798678-7f80a543-72fc-45a9-a568-d3e56fec7caf.png)
+![2021-08-07T19:00:19,493196816-06:00](https://user-images.githubusercontent.com/64110504/128617437-a77eb588-b4a4-46a3-9b04-d22ee3695566.png)
 
 ---
 
