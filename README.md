@@ -49,7 +49,7 @@ The following steps assume that you are on a running Debian Sid system. If you a
 1. In order to bootstrap these dot files, install and use `wget` to download the bootstrapping script called `waystrap.sh`, which is located inside the `Debstrap` directory in this repository.
        
         sudo apt install wget
-        wget https://github.com/argosatcore/Deb_Dots/blob/main/Debstrap/waystrap.sh
+        wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/waystrap.sh 
  
 2. Run the script. Using super user privileges is **highly discouraged**, as the parts of the script after the installation of packages will fail.
  
