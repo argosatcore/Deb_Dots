@@ -105,7 +105,7 @@ flatpaks() {
 dots() {
 	printf "Capturing dotfiles...\n"
 	printf " \n"
-	git clone git@github.com:argosatcore/Deb_Dots.git 
+	git clone https://github.com/argosatcore/Deb_Dots.git 
 	printf " \n" 
 	printf "Deploying  dotfiles...\n"
 	printf " \n"
