@@ -89,13 +89,15 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol -t 3",
+	"on-click-right": "pkill pavucontrol"
     },
 "custom/date": {
         "format": "{}",
         "interval": 60,
         "exec": "date +'%Y-%m-%d %l:%M %p'",
         "on-click": "dash .local/bin/scripts/mako/cal.sh",
+	"on-click-right": "foot calcurse",
         "tooltip": false
     },
 
