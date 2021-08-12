@@ -97,9 +97,9 @@ All of which are `apt install`able on Debian Sid:
 
 ### Sway:
 - `Super`+`Shift+c`: reload Sway.
-- `Super`+`Shift+e`: exit Wayland session.
-- `Alt+`Shift+x`: lock screen.
-- `Super`+`Shift+minus`: hide/unhide scratchpad.
+- `Super`+`Shift`+`e`: exit Wayland session.
+- `Alt`+`Shift`+`x`: lock screen.
+- `Super`+`Shift`+`minus`: hide/unhide scratchpad.
 - `Super`+`PageUp`: switch to the next workspace. If there is no next workspace occupied, it will automatically create a new one.
 - `Super`+`PageDown`: switch to the previous workspace. If there is no previously occupied workspace, it will automatically create a new one.
 - `Super`+`x`: toggle Waybar on/off.
