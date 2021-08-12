@@ -63,7 +63,7 @@
 #--------------------
 
 	# output * bg #64727D solid_color 
-	output * bg ~/.config/sway/Wallpapers/Sway_abstracted_4.png fill 
+	output * bg ~/.config/sway/Wallpapers/Sway_abstracted_6.png fill 
 
 
 #----------------------
