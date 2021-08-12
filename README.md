@@ -96,38 +96,38 @@ All of which are `apt install`able on Debian Sid:
 ## Handy keybindings 
 
 ### Sway:
-- `Super+Shift+c`: reload Sway.
-- `Super+Shift+e`: exit Wayland session.
-- `Alt+Shift+x`: lock screen.
-- `Super+Shift+minus`: hide/unhide scratchpad.
-- `Super+PageUp`: switch to the next workspace. If there is no next workspace occupied, it will automatically create a new one.
-- `Super+PageDown`: switch to the previous workspace. If there is no previously occupied workspace, it will automatically create a new one.
-- `Super+x`: toggle Waybar on/off.
-- `Super+Shift+b`: toggle window border on/off.
-- `Super+(1,2,3,4,5,6,7,8,9,0)`: Switch to workspace 1-10.
-- `Super+Shitft+(1,2,3,4,5,6,7,8,9,0)`: Move an application to workspace 1-10.
-- `Super+Space`: Switch keyboard layout. Options are: Latin American (default) and US-International.
+- `Super`+`Shift+c`: reload Sway.
+- `Super`+`Shift+e`: exit Wayland session.
+- `Alt+`Shift+x`: lock screen.
+- `Super`+`Shift+minus`: hide/unhide scratchpad.
+- `Super`+`PageUp`: switch to the next workspace. If there is no next workspace occupied, it will automatically create a new one.
+- `Super`+`PageDown`: switch to the previous workspace. If there is no previously occupied workspace, it will automatically create a new one.
+- `Super`+`x`: toggle Waybar on/off.
+- `Super`+`Shift`+`b`: toggle window border on/off.
+- `Super`+`(1,2,3,4,5,6,7,8,9,0)`: Switch to workspace 1-10.
+- `Super`+`Shitft`+`(1,2,3,4,5,6,7,8,9,0)`: Move an application to workspace 1-10.
+- `Super`+`Space`: Switch keyboard layout. Options are: Latin American (default) and US-International.
 
 ### Windows:
-- `Super+q`: close.
-- `Super+f`: fullscreen. 
-- `Super+Escape`: toggle floating. Remember, `Caps Lock` now works as `Escape` and viceversa. 
-- `Super+(h,j,k,l)`: change the selection of a window in a given direction.
-- `Super+Alt+(h,j,k,l)`: swap focused window with any window in a given direction.
-- `Super+Shift+(h,j,k,l)`: move window in a given direction.
-- `Super+w`: tab windows.
-- `Super+s`: stack windows.
-- `Super+e`: split tabbed or stacked windows.
-- `Alt+Tab`: switch focus between tiling and floating areas.
+- `Super`+`q`: close.
+- `Super`+`f`: fullscreen. 
+- `Super`+`Escape`: toggle floating. Remember, `Caps Lock` now works as `Escape` and viceversa. 
+- `Super`+`(h,j,k,l)`: change the selection of a window in a given direction.
+- `Super`+`Alt`+`(h,j,k,l)`: swap focused window with any window in a given direction.
+- `Super`+`Shift+(h,j,k,l)`: move window in a given direction.
+- `Super`+`w`: tab windows.
+- `Super`+`s`: stack windows.
+- `Super`+`e`: split tabbed or stacked windows.
+- `Alt`+`Tab`: switch focus between tiling and floating areas.
 
 ### Mouse:
-- `Super+Click1`: move window.
-- `Super+Click2`: resize window.
+- `Super`+`Click1`: move window.
+- `Super`+`Click2`: resize window.
 
 ### Running things:
-- `Super+Return`: run a terminal.
-- `Super+i`: run firefox.
-- `Super+n`: run nautilus.
-- `Super+d`: run wofi as an application launcher.
-- `Super+Tab`: run wofi as a window switcher.
-- `Super+Shift+q`: run wlogout. 
+- `Super`+`Return`: run a terminal.
+- `Super`+`i`: run firefox.
+- `Super`+`n`: run nautilus.
+- `Super`+`d`: run wofi as an application launcher.
+- `Super`+`Tab`: run wofi as a window switcher.
+- `Super`+`Shift`+`q`: run wlogout. 
