@@ -9,6 +9,8 @@
     "sway/window": {
        "format": "{}",
        "on-click-middle": "sway kill",
+       "on-click": "sway floating toggle",
+       "on-click-right": "sway move scratchpad",
        "tooltip": false
     },
     "idle_inhibitor": {
