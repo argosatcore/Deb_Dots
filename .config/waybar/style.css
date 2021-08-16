@@ -31,15 +31,21 @@ window#waybar.hidden {
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0.2);
     box-shadow: inset 0px -2px #ffffff;
+    outline-style: none;
+    text-shadow: none;
 }
 
 #workspaces button.focused {
     background-color: #7BD9EE;
     box-shadow: inset 0px -0px #ffffff;
+    outline-style: none;
+    text-shadow: none;
 }
 
 #workspaces button.urgent {
     background-color: #eb4d4b;
+    outline-style: none;
+    text-shadow: none;
 }
 
 #mode {
