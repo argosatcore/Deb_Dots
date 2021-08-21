@@ -65,11 +65,13 @@ Unstable:
         ./waystrap.sh
         
 Stable:
+
      ./waystrap_stable.sh
      
 3. Profit:
- 
-![2021-08-07T19:00:19,493196816-06:00](https://user-images.githubusercontent.com/64110504/128617437-a77eb588-b4a4-46a3-9b04-d22ee3695566.png)
+| Sway                                                                                                                                          | Gnome |
+| ---                                                                                                                                           | ---   |   
+| ![2021-08-07T19:00:19,493196816-06:00](https://user-images.githubusercontent.com/64110504/128617437-a77eb588-b4a4-46a3-9b04-d22ee3695566.png) | ![Screenshot from 2021-08-20 19-24-44](https://user-images.githubusercontent.com/64110504/130306181-12069037-2b1d-46c6-a6f7-f26cdf2c3867.png) |
 
 ---
 
