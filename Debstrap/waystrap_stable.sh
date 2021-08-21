@@ -1,5 +1,5 @@
 #!/bin/sh
-#Bootstrapping script for "Sidified" Debian systems - Wayland edition.
+#Bootstrapping script for stable Debian systems - Wayland edition.
 set -e 
 
 initialize() {
@@ -16,32 +16,22 @@ install() {
 	printf "Installing commonly used packages...\n"
 	sudo apt install -y \
 		alsa-utils \
-		apt-listbugs \
-		apt-listchanges \
 		apt-utils \
 		bash-completion \
-		blender \
-		brightnessctl \
-		bombadillo \
 		build-essential \
 		calcurse \
-		create-resources \
 		default-jdk \
 		deja-dup \
 		eog \
 		evince \
 		fd-find \
-		firefox \
 		fonts-font-awesome \
 		foot \
 		fzf \
-		gammastep \
-		gimp \
 		git \
 		grimshot \
 		gucharmap \
 		htop \
-		inkscape \
 		librecad \
 		libreoffice \
 		libreoffice-java-common \
@@ -50,14 +40,11 @@ install() {
 		lollypop \
 		mako-notifier \
 		nautilus \
-		needrestart \
 		neofetch \
 		neovim \
 		pavucontrol \
 		pm-utils \
 		printer-driver-escpr \
-		reportbug-gtk \
-		scribus \
 		sway \
 		swaylock \
 		swayidle \
@@ -82,12 +69,6 @@ install() {
 	printf " \n"
 }
 
-swapfox() {
-	printf "Removing firefox-esr...\n"
-	sudo apt remove firefox-esr
-	printf " \n"
-}
-
 flathub() {
 	printf "Setting up flathub remote...\n"
 	printf " \n"
@@ -102,6 +83,13 @@ academics() {
 	flatpak install flathub org.zotero.Zotero
 	flatpak install flathub com.github.johnfactotum.Foliate
 	printf " \n"
+}
+graphics() {
+	printf "Installing graphic design related flatpaks..."
+	flatpak install flathub org.gimp.GIMP	
+	flatpak install flathub org.inkscape.Inkscape
+	flatpak install flathub net.scribus.Scribus
+	flatpak install flathub org.kde.krita
 }
 
 dots() {
@@ -144,7 +132,7 @@ sshkey() {
 	cat ~/.ssh/id_ed25519.pub
 	printf "Press any key to continue\n"
 	read y
-	printf "Testing ssh connection"\n
+	pritf "Testing ssh connection"\n
 	ssh -T git@github.com
 }
 
@@ -162,9 +150,9 @@ remember() {
 
 initialize
 install
-swapfox
 flathub
 academics
+graphics
 dots
 trim
 sshkey

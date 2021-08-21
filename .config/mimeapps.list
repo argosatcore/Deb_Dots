@@ -8,7 +8,7 @@ image/svg+xml=org.inkscape.Inkscape.desktop;
 application/vnd.ms-publisher=org.gnome.gedit.desktop;
 application/x-shellscript=org.gnome.gedit.desktop;nautilus-autorun-software.desktop;
 application/illustrator=org.inkscape.Inkscape.desktop;
-video/x-matroska=mpv.desktop;vlc.desktop;
+video/x-matroska=vlc.desktop;mpv.desktop;
 text/x-apt-sources-list=nvim.desktop;
 
 [Default Applications]
