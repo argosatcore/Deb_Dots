@@ -12,7 +12,7 @@
 - [Bootstrap](#bootstrap)
 - [Unexpected features you get right out of the gate](#unexpected-features-you-get-right-out-of-the-gate)
 - [Programs referenced by these configs](#programs-referenced-by-these-configs)
-- [Handy keybindings](#handy-keybindings)
+- [Sway-specific Handy keybindings](#sway-specific-handy-keybindings)
 
 ---
 
