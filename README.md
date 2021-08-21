@@ -20,8 +20,8 @@
 
  The purpose of this repository is to contain the bare minimum of what is necessary to quickly bootstrap my current sensibilities on a Linux system. At its core, there are two assumptions: 
  
- 1. The use of the unstable branch of the [Debian GNU/Linux Operating System](https://www.debian.org/), aka [Sid](https://wiki.debian.org/DebianUnstable) :skull:.<sup>2</sup>
- 2. The implementation of the [Wayland protocol](https://wayland.freedesktop.org/) through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor. 
+ 1. The use of the of the [Debian GNU/Linux Operating System](https://www.debian.org/), either its Debian Stable or its unstable branch, also known [Sid](https://wiki.debian.org/DebianUnstable) :skull:.<sup>2</sup>
+ 2. The implementation of the [Wayland protocol](https://wayland.freedesktop.org/) through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor or through the [Gnome desktop environment](https://www.gnome.org/). 
  
  All the design decisions taken have the purpose to both manage and make explicit what probably remains as the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
  
@@ -47,14 +47,26 @@
 The following steps assume that you are on a running Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), **make sure to double-check that the packages listed in the boostrapping script are alvailable in your distribution's repositories, otherwise, the script _will_ fail**.
  
 1. In order to bootstrap these dot files, install and use `wget` to download the bootstrapping script called `waystrap.sh`, which is located inside the `Debstrap` directory in this repository.
+            
+### For the unstable version:
        
         sudo apt install wget
         wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/waystrap.sh 
+        
+### For the stable version:
+
+        sudo apt install wget
+        wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/waystrap_stable.sh
  
 2. Run the script. Using super user privileges is **highly discouraged**, as the parts of the script after the installation of packages will fail.
  
+ ### Unstable:
+ 
         ./waystrap.sh
         
+ ### Stable:
+     ./waystrap_stable.sh
+     
 3. Profit:
  
 ![2021-08-07T19:00:19,493196816-06:00](https://user-images.githubusercontent.com/64110504/128617437-a77eb588-b4a4-46a3-9b04-d22ee3695566.png)
