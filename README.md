@@ -44,31 +44,23 @@
     
 ## Bootstrap
  
-The following steps assume that you are on a running Debian Stable or Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), **make sure to double-check that the packages listed in the boostrapping script are alvailable in your distribution's repositories, otherwise, the script _will_ fail**.
+The following steps assume that you are on a running Debian Stable or Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), **make sure to double-check that the packages listed in the boostrapping script are alvailable in your distribution's repositories, otherwise, the script _will_ fail**. Also, when running the script, using super user privileges is **highly discouraged**, as the parts of the script after the installation of packages will fail.
  
-1. In order to bootstrap these dot files, install and use `wget` to download the bootstrapping script called `waystrap.sh`, which is located inside the `Debstrap` directory in this repository.
+1. In order to bootstrap these dot files, install and use `wget` to download and run the bootstrapping script called `waystrap.sh` (Debian Sid) or `waystrap_stable` (Debian Stable), which is located inside the `Debstrap` directory in this repository.
             
 For the unstable version:
        
         sudo apt install wget
-        wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/waystrap.sh 
-        
+        wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/waystrap.sh  
+        ./waystrap.sh
+       
 For the stable version:
 
         sudo apt install wget
         wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/waystrap_stable.sh
- 
-2. Run the script. Using super user privileges is **highly discouraged**, as the parts of the script after the installation of packages will fail.
- 
-Unstable:
- 
-        ./waystrap.sh
-        
-Stable:
-
-     ./waystrap_stable.sh
+        ./waystrap_stable.sh
      
-3. Profit:
+2. Profit:
 
 | Sway                                                                                                                                          | Gnome |
 | ---                                                                                                                                           | ---   |   
