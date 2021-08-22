@@ -10,6 +10,7 @@ application/x-shellscript=org.gnome.gedit.desktop;nautilus-autorun-software.desk
 application/illustrator=org.inkscape.Inkscape.desktop;
 video/x-matroska=vlc.desktop;mpv.desktop;
 text/x-apt-sources-list=nvim.desktop;
+image/vnd.dwg=librecad.desktop;
 
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop

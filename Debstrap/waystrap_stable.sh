@@ -15,6 +15,7 @@ initialize() {
 install() {
 	printf "Installing commonly used packages...\n"
 	sudo apt install -y \
+		acpi-support \
 		alsa-utils \
 		apt-utils \
 		bash-completion \
