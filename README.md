@@ -51,13 +51,17 @@ The following steps assume that you are on a running Debian Stable or Debian Sid
 For the unstable version:
        
         sudo apt install wget
-        wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/waystrap.sh  
+        
+        wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/waystrap.sh
+        
         ./waystrap.sh
        
 For the stable version:
 
         sudo apt install wget
+        
         wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/waystrap_stable.sh
+        
         ./waystrap_stable.sh
      
 2. Profit:
