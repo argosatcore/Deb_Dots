@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background-color: rgba(31, 42, 62, 0.7);
+    background-color: rgba(31, 42, 62, 0.9);
     border-bottom: 0px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
     transition-property: background-color;
@@ -36,7 +36,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-    background-color: #7BD9EE;
+    background-color: #01A495;
     box-shadow: inset 0px -0px #ffffff;
     outline-style: none;
     text-shadow: none;
