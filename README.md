@@ -90,7 +90,7 @@ For the stable version:
 - **[Ridiculously fast key repeat rate](./.config/sway/config/#L102):** Like, really fast.
 
 ## Programs referenced by these configs 
-All of which are `apt install`able on Debian Sid:
+All of which are `apt install`able on Debian:
 
 | Program         | Description                                                                           |
 | ---             | ---                                                                                  |
