@@ -12,7 +12,7 @@
 - [Bootstrap](#bootstrap)
 - [Unexpected features you get right out of the gate](#unexpected-features-you-get-right-out-of-the-gate)
 - [Programs referenced by these configs](#programs-referenced-by-these-configs)
-- [Handy keybindings](#handy-keybindings)
+- [Sway-specific Handy keybindings](#sway-specific-handy-keybindings)
 
 ---
 
@@ -20,8 +20,8 @@
 
  The purpose of this repository is to contain the bare minimum of what is necessary to quickly bootstrap my current sensibilities on a Linux system. At its core, there are two assumptions: 
  
- 1. The use of the unstable branch of the [Debian GNU/Linux Operating System](https://www.debian.org/), aka [Sid](https://wiki.debian.org/DebianUnstable) :skull:.<sup>2</sup>
- 2. The implementation of the [Wayland protocol](https://wayland.freedesktop.org/) through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor. 
+ 1. The use of the of the [Debian GNU/Linux Operating System](https://www.debian.org/), either its stable or its unstable branch, also known [Sid](https://wiki.debian.org/DebianUnstable) :skull:.<sup>2</sup>
+ 2. The implementation of the [Wayland protocol](https://wayland.freedesktop.org/) through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor or through the [Gnome desktop environment](https://www.gnome.org/). 
  
  All the design decisions taken have the purpose to both manage and make explicit what probably remains as the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
  
@@ -44,24 +44,38 @@
     
 ## Bootstrap
  
-The following steps assume that you are on a running Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), **make sure to double-check that the packages listed in the boostrapping script are alvailable in your distribution's repositories, otherwise, the script _will_ fail**.
+The following steps assume that you are on a running Debian Stable or Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), **make sure to double-check that the packages listed in the boostrapping script are alvailable in your distribution's repositories, otherwise, the script _will_ fail**. Also, when running the script, using super user privileges is **highly discouraged**, as the parts of the script after the installation of packages will fail.
  
-1. In order to bootstrap these dot files, install and use `wget` to download the bootstrapping script called `waystrap.sh`, which is located inside the `Debstrap` directory in this repository.
+1. In order to bootstrap these dot files, install and use `wget` to download and run the bootstrapping script called `waystrap.sh` (Debian Sid) or `waystrap_stable` (Debian Stable), which is located inside the `Debstrap` directory in this repository.
+            
+For the unstable version:
        
         sudo apt install wget
-        wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/waystrap.sh 
- 
-2. Run the script. Using super user privileges is **highly discouraged**, as the parts of the script after the installation of packages will fail.
- 
-        ./waystrap.sh
         
-3. Profit:
- 
-![2021-08-07T19:00:19,493196816-06:00](https://user-images.githubusercontent.com/64110504/128617437-a77eb588-b4a4-46a3-9b04-d22ee3695566.png)
+        wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/waystrap.sh
+        
+        ./waystrap.sh
+       
+For the stable version:
+
+        sudo apt install wget
+        
+        wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/waystrap_stable.sh
+        
+        ./waystrap_stable.sh
+     
+2. Profit:
+
+| Sway                                                                                                                                          | Gnome |
+| ---                                                                                                                                           | ---   |   
+| ![2021-08-07T19:00:19,493196816-06:00](https://user-images.githubusercontent.com/64110504/128617437-a77eb588-b4a4-46a3-9b04-d22ee3695566.png) | ![Screenshot from 2021-08-20 19-24-44](https://user-images.githubusercontent.com/64110504/130306181-12069037-2b1d-46c6-a6f7-f26cdf2c3867.png) |
 
 ---
 
 ## Unexpected features you get right out of the gate
+
+### General:
+
 - **[Bash's vim mode](./.bashrc/#L20):** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
 - **[Caps Lock key is swapped with Esc key](./.config/sway/config/#L97):** If you are a vim user (or someone that just uses the crap out of the Esc key), you know how handy this is. If you don't want this, just change it in the input configuration in Sway's config file.
 - **[Mouse set for left handed people](./.config/sway/config/#L98):** If you happen to be part of the other 90% of the human population, just change the input configuration in Sway's config file.  
@@ -69,11 +83,14 @@ The following steps assume that you are on a running Debian Sid system. If you a
 - **[Bash completion is no longer case sensitive](./.inputrc/#L19):** No more wasted time pressing keys to get upper case letters.
 - **[Neovim as a pager for man pages](./.bashrc/#L10):** Because man pages deserve better.
 - **[Keyboard layout set to Latin American](./.config/sway/config/#L99):** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. Us-International is set as a second option and can be toggled by pressing `Super+Space`. 
+
+### Sway-specific:
+
 - **[Gapless single client](./.config/sway/config/#L337):** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
 - **[Ridiculously fast key repeat rate](./.config/sway/config/#L102):** Like, really fast.
 
 ## Programs referenced by these configs 
-All of which are `apt install`able on Debian Sid:
+All of which are `apt install`able on Debian:
 
 | Program         | Description                                                                           |
 | ---             | ---                                                                                  |
@@ -93,7 +110,7 @@ All of which are `apt install`able on Debian Sid:
 | `wlogout`       | Wayland session menu.                                                                |
 | `wofi`          | Wayland native application launcher, window switcher, command executor and many more. |
 
-## Handy keybindings 
+## Sway-specific Handy keybindings 
 
 ### Sway:
 - `Super`+`Shift+c`: reload Sway.
