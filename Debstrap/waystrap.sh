@@ -66,6 +66,7 @@ install() {
 		tlp \
 		tmux \
 		tree \
+		toilet \
 		vim-gtk \
 		vlc \
 		waybar \
