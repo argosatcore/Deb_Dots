@@ -8,10 +8,6 @@ image/svg+xml=org.inkscape.Inkscape.desktop;
 application/vnd.ms-publisher=org.gnome.gedit.desktop;
 application/x-shellscript=org.gnome.gedit.desktop;nautilus-autorun-software.desktop;
 application/illustrator=org.inkscape.Inkscape.desktop;
-<<<<<<< HEAD
-video/x-matroska=mpv.desktop;vlc.desktop;
-application/xml=org.gnome.gedit.desktop;
-=======
 video/x-matroska=vlc.desktop;mpv.desktop;
 text/x-apt-sources-list=nvim.desktop;
 image/vnd.dwg=librecad.desktop;
@@ -81,7 +77,6 @@ audio/mp3=org.gnome.Lollypop.desktop;
 audio/ac3=org.gnome.Lollypop.desktop;
 audio/flac=org.gnome.Lollypop.desktop;
 audio/x-opus+ogg=org.gnome.Lollypop.desktop;
->>>>>>> ed477054bb1ef6423827bc34e13f963db8ece6f3
 
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop
