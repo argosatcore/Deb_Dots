@@ -44,9 +44,9 @@
     
 ## Bootstrap
  
-The following steps assume that you are on a running Debian Stable or Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), **make sure to double-check that the packages listed in the boostrapping script are alvailable in your distribution's repositories, otherwise, the script _will_ fail**. Also, when running the script, using super user privileges is **highly discouraged**, as the parts of the script after the installation of packages will fail.
+The following steps assume that you are on a running Debian Stable or Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), **make sure to double-check that the packages listed in the boostrapping script are alvailable in your distribution's repositories, otherwise, the script _will_ fail**. 
  
-1. In order to bootstrap these dot files, install and use `wget` to download and run the bootstrapping script called `waystrap.sh` (Debian Sid) or `waystrap_stable` (Debian Stable), which is located inside the `Debstrap` directory in this repository.
+1. In order to bootstrap these dot files, install and use `wget` to download and run the bootstrapping script called `waystrap.sh` (Debian Sid) or `waystrap_stable.sh` (Debian Stable), which is located inside the `Debstrap` directory within this repository.
             
 For the unstable version:
        
@@ -76,18 +76,18 @@ For the stable version:
 
 ### General:
 
-- **[Bash's vim mode](./.bashrc/#L20):** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt. 
-- **[Caps Lock key is swapped with Esc key](./.config/sway/config/#L97):** If you are a vim user (or someone that just uses the crap out of the Esc key), you know how handy this is. If you don't want this, just change it in the input configuration in Sway's config file.
-- **[Mouse set for left handed people](./.config/sway/config/#L98):** If you happen to be part of the other 90% of the human population, just change the input configuration in Sway's config file.  
+- **[Bash's vim mode](./.bashrc/#L20):** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt.  
 - **[Change directories without using the `cd` command](./.bashrc/#L15):** Just type the name of the directory to move into it. 
 - **[Bash completion is no longer case sensitive](./.inputrc/#L19):** No more wasted time pressing keys to get upper case letters.
 - **[Neovim as a pager for man pages](./.bashrc/#L10):** Because man pages deserve better.
-- **[Keyboard layout set to Latin American](./.config/sway/config/#L99):** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. Us-International is set as a second option and can be toggled by pressing `Super+Space`. 
 
 ### Sway-specific:
 
+- **[Caps Lock key is swapped with Esc key](./.config/sway/config/#L97):** If you are a vim user (or someone that just uses the crap out of the Esc key), you know how handy this is. If you don't want this, just change it in the input configuration in Sway's config file.
 - **[Gapless single client](./.config/sway/config/#L337):** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
+- **[Mouse set for left handed people](./.config/sway/config/#L98):** If you happen to be part of the other 90% of the human population, just change the input configuration in Sway's config file. 
 - **[Ridiculously fast key repeat rate](./.config/sway/config/#L102):** Like, really fast.
+- **[Keyboard layout set to Latin American](./.config/sway/config/#L99):** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. Us-International is set as a second option and can be toggled by pressing `Super+Space`. 
 
 ## Programs referenced by these configs 
 All of which are `apt install`able on Debian:
