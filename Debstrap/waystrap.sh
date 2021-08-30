@@ -59,6 +59,7 @@ install() {
 		printer-driver-escpr \
 		reportbug-gtk \
 		scribus \
+		sqlite3 \
 		sway \
 		swaylock \
 		swayidle \

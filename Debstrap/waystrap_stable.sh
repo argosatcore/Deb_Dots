@@ -46,6 +46,7 @@ install() {
 		pavucontrol \
 		pm-utils \
 		printer-driver-escpr \
+		sqlite3 \
 		sway \
 		swaylock \
 		swayidle \
