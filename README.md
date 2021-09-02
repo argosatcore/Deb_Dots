@@ -38,7 +38,10 @@
          
        sudo apt update && sudo apt full-upgrade 
          
-3. They will work for the most part, but some tweaking is needed to make them work properly on these distributions. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system. 
+3. They will work for the most part, but some tweaking is needed to make them work properly on these distributions. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system. Some of the things that need to be taken into consideration are:
+* Shell scripts, as many of them use `dash` as opposed to `bash` as the default shell. 
+* Packages, as some packages like `foot` are not available on Arch or have a different name.
+* Bash aliases and bash funcitons, as some of them use componentes which are Debian-specific.
 
  ---
     
