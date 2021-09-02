@@ -45,7 +45,7 @@ commons() {
 		tree \
 		toilet \
 		vim-gtk \
-		vlc \
+		vlc 
 	printf " \n"
 }
 

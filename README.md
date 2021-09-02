@@ -40,9 +40,7 @@
  
 The following steps assume that you are on a running Debian Stable or Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), **make sure to double-check that the packages listed in the boostrapping script are alvailable in your distribution's repositories, otherwise, the script _will_ fail**. 
  
-1. In order to bootstrap these dot files, install and use `wget` to download and run the bootstrapping script called `waystrap.sh` (Debian Sid) or `waystrap_stable.sh` (Debian Stable), which is located inside the `Debstrap` directory within this repository.
-            
-For the unstable version:
+1. In order to bootstrap these dot files, install and use `wget` to download and run the bootstrapping script called `waystrap.sh`, which is located inside the `Debstrap` directory within this repository. If you are on Debian Sid, uncomment the `sidtools` line at the end of the script.
        
         sudo apt install wget
         
@@ -50,14 +48,6 @@ For the unstable version:
         
         ./waystrap.sh
        
-For the stable version:
-
-        sudo apt install wget
-        
-        wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/waystrap_stable.sh
-        
-        ./waystrap_stable.sh
-     
 2. Profit:
 
 | Sway                                                                                                                                          | Gnome |
