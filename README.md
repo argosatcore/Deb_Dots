@@ -25,7 +25,12 @@
  
  All the design decisions taken have the purpose to both manage and make explicit what probably remains as the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
  
- Although I use these dot files on Debian, I try to keep them as distribution agnostic as possible. I have deployed them successfully on [Arch Linux](https://archlinux.org/) and on [Void Linux](https://voidlinux.org/).<sup>3</sup>
+ Although I use these dot files on Debian, I try to keep them as distribution agnostic as possible. I have deployed them successfully on [Arch Linux](https://archlinux.org/) and on [Void Linux](https://voidlinux.org/). Some of the things that need to be taken into consideration are:
+* Shell scripts, as many of them use `dash` as opposed to `bash` as the default shell. 
+* Packages, as some packages like `foot` are not available on Arch's official repositories or have a different name.
+* Bash aliases and bash funcitons, as some of them use componentes which are Debian-specific.
+* `systemd` is the default init system, so some bash aliases and programs like `wlogout` must be reconfigured in order to play nice with other init systems like `runit`, which is the default on Void.
+* Bootstapping scripts, as some of its components are Debian-specific.
    
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
@@ -36,15 +41,8 @@
          
       Then update your sources and upgrade to Sid:
          
-       sudo apt update && sudo apt full-upgrade 
-         
-3. They will work for the most part, but some tweaking is needed to make them work properly on these distributions. However, since you are already using either of these two distributions, I will assume that you will know how to adapt these dot files to your system. Some of the things that need to be taken into consideration are:
-* Shell scripts, as many of them use `dash` as opposed to `bash` as the default shell. 
-* Packages, as some packages like `foot` are not available on Arch's official repositories or have a different name.
-* Bash aliases and bash funcitons, as some of them use componentes which are Debian-specific.
-* `systemd` is the default init system, so some bash aliases and programs like `wlogout` must be reconfigured in order to play nice with other init systems like `runit`, which is the default on Void.
-* Bootstapping scripts, as some of its components are Debian-specific.
-
+       sudo apt update && sudo apt full-upgrade          
+       
  ---
     
 ## Bootstrap
