@@ -43,6 +43,7 @@
 * Packages, as some packages like `foot` are not available on Arch's official repositories or have a different name.
 * Bash aliases and bash funcitons, as some of them use componentes which are Debian-specific.
 * `systemd` is the default init system, so some bash aliases and programs like `wlogout` must be reconfigured in order to play nice with other init systems like `runit`, which is the default on Void.
+* Bootstapping scripts, as some of its components are Debian-specific.
 
  ---
     
