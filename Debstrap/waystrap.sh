@@ -1,5 +1,5 @@
 #!/bin/sh
-#Bootstrapping script for "Sidified" Debian systems - Wayland edition.
+#Bootstrapping script for Debian (Stable or Sid) systems - Wayland edition.
 set -e 
 
 initialize() {
@@ -12,57 +12,33 @@ initialize() {
 	printf " \n"
 }
 
-install() {
+commons() {
 	printf "Installing commonly used packages...\n"
 	sudo apt install -y \
 		acpi-support \
 		alsa-utils \
-		apt-listbugs \
-		apt-listchanges \
-		apt-utils \
 		bash-completion \
-		blender \
-		brightnessctl \
-		bombadillo \
-		build-essential \
 		calcurse \
-		create-resources \
 		default-jdk \
 		deja-dup \
-		eog \
-		evince \
 		fd-find \
-		firefox \
 		fonts-font-awesome \
 		foot \
 		fzf \
-		gammastep \
-		gimp \
 		git \
-		grimshot \
 		gucharmap \
 		htop \
-		inkscape \
 		librecad \
 		libreoffice \
 		libreoffice-java-common \
 		libreoffice-style-sifr \
 		lm-sensors \
 		lollypop \
-		mako-notifier \
-		nautilus \
-		needrestart \
 		neofetch \
 		neovim \
-		pavucontrol \
 		pm-utils \
 		printer-driver-escpr \
-		reportbug-gtk \
-		scribus \
 		sqlite3 \
-		sway \
-		swaylock \
-		swayidle \
 		texlive-full \
 		tlp \
 		tmux \
@@ -70,6 +46,44 @@ install() {
 		toilet \
 		vim-gtk \
 		vlc \
+	printf " \n"
+}
+
+sidtools() {
+	printf "Installing Debian Sid related packages...\n"
+	sudo apt install -y
+		apt-listbugs \
+		apt-listchanges \
+		apt-utils \
+		blender \
+		bombadillo \
+		build-essential \
+		create-resources \
+		firefox \
+		gimp \
+		inkscape \
+		needrestart \
+		reportbug-gtk \
+		scribus \ 
+		youtube-dl
+	printf "Removing firefox-esr...\n"
+	sudo apt remove firefox-esr
+	printf " \n"
+}
+
+waytools() {
+	printf "Installing Wayland related packages...\n"
+		brightnessctl \
+		eog \
+		evince \
+		gammastep \
+		grimshot \
+		mako-notifier \
+		nautilus \
+		pavucontrol \
+		sway \
+		swaylock \
+		swayidle \
 		waybar \
 		wdisplays \
 		wlogout \
@@ -80,14 +94,7 @@ install() {
 		xdg-desktop-portal-wlr \
 		xdg-user-dirs-gtk \
 		xdg-utils \
-		xwayland \
-		youtube-dl
-	printf " \n"
-}
-
-swapfox() {
-	printf "Removing firefox-esr...\n"
-	sudo apt remove firefox-esr
+		xwayland 
 	printf " \n"
 }
 
@@ -105,6 +112,14 @@ academics() {
 	flatpak install flathub org.zotero.Zotero
 	flatpak install flathub com.github.johnfactotum.Foliate
 	printf " \n"
+}
+
+graphics() {
+	printf "Installing graphic design related flatpaks...\n"
+	flatpak install flathub org.gimp.GIMP	
+	flatpak install flathub org.inkscape.Inkscape
+	flatpak install flathub net.scribus.Scribus
+	flatpak install flathub org.kde.krita
 }
 
 dots() {
@@ -164,10 +179,12 @@ remember() {
 }
 
 initialize
-install
-swapfox
+commons
+#sidtools
+waytools
 flathub
 academics
+graphics
 dots
 trim
 sshkey
