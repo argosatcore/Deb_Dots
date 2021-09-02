@@ -178,13 +178,15 @@ remember() {
 	nvim ~/Debstrap/project-history.en.txt
 }
 
+# Installation options, choose at your discretion:
+
 initialize
 commons
 #sidtools
 waytools
 flathub
 academics
-graphics
+#graphics
 dots
 trim
 sshkey
