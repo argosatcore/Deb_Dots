@@ -22,9 +22,6 @@
  
  1. The use of the of the [Debian GNU/Linux Operating System](https://www.debian.org/), either its stable or its unstable branch, also known as [Sid](https://wiki.debian.org/DebianUnstable) :skull:.<sup>2</sup>
  2. The implementation of the [Wayland protocol](https://wayland.freedesktop.org/) through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor or through the [Gnome desktop environment](https://www.gnome.org/). 
- 
- All the design decisions taken have the purpose to both manage and make explicit what probably remains as the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
- 
    
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
