@@ -25,12 +25,6 @@
  
  All the design decisions taken have the purpose to both manage and make explicit what probably remains as the most common way of interacting with computers, and, simultaneously, one of its less examined aspects: the layout of the computing space.
  
- Although I use these dot files on Debian, I try to keep them as distribution agnostic as possible. I have deployed them successfully on [Arch Linux](https://archlinux.org/) and on [Void Linux](https://voidlinux.org/). Some of the things that need to be taken into consideration are:
- 
-* Some shell scripts use `dash` as opposed to `bash` as the default shell. 
-* Some packages like `foot` are not available on Arch's official repositories or have a different name.
-* Bash aliases and bash funcitons use components which are Debian-specific.
-* `systemd` is the default init system, so some bash aliases and programs like `wlogout` must be reconfigured in order to play nice with other init systems like `runit`, which is the default on Void.
    
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
