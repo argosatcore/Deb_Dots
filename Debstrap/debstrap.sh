@@ -303,8 +303,8 @@ done
 while true; do
     read -p "Do you remember?" yn
     case $yn in
-        [Yy]* ) end; break;;
-        [Nn]* ) remember; break;;
+        [Yy]* ) end; exit;;
+        [Nn]* ) remember; exit;;
         * ) echo "Please answer yes or no.";;
     esac
 done

@@ -28,7 +28,7 @@
 	alias wrcss='nvim .config/waybar/style.css'
 	alias wrc='nvim .config/waybar/config'
 	alias src='nvim ~/.config/sway/config'
-	alias dst='nvim ~/Debstrap/waystrap.sh'
+	alias dst='nvim ~/Debstrap/debstrap.sh'
 	alias v='nvim'
 	alias t='tmux'
 	alias ws='watch sensors'
