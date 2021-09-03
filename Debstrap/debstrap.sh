@@ -12,14 +12,14 @@ initialize() {
 	printf " \n"
 	printf "Updating system...\n"
 	printf " \n"
-	sudo apt update && \
-	sudo apt upgrade -y
+	sudo apt-get update && \
+	sudo apt-get upgrade -y
 	printf " \n"
 }
 
 commons() {
 	printf "Installing commonly used packages...\n"
-	sudo apt install -y \
+	sudo apt-get install -y \
 		acpi-support \
 		alsa-utils \
 		bash-completion \
@@ -56,7 +56,7 @@ commons() {
 
 sidtools() {
 	printf "Installing Debian Sid related packages...\n"
-	sudo apt install -y
+	sudo apt-get install -y
 		apt-listbugs \
 		apt-listchanges \
 		apt-utils \
@@ -72,12 +72,13 @@ sidtools() {
 		scribus \ 
 		youtube-dl
 	printf "Removing firefox-esr...\n"
-	sudo apt remove firefox-esr
+	sudo apt-get remove firefox-esr
 	printf " \n"
 }
 
 waytools() {
 	printf "Installing Wayland related packages...\n"
+	sudo apt-get install -y
 		brightnessctl \
 		eog \
 		evince \
@@ -106,7 +107,7 @@ waytools() {
 flathub() {
 	printf "Setting up flathub remote...\n"
 	printf " \n"
-	sudo apt install flatpak
+	sudo apt-get install flatpak
 	sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 	printf " \n"
 }
