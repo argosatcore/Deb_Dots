@@ -178,7 +178,7 @@ remember() {
 	nvim ~/Debstrap/project-history.en.txt
 }
 
-# Installation options, choose at your discretion:
+# Debstrap options:
 
 initialize
 commons
