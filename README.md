@@ -60,7 +60,7 @@ The following steps assume that you are on a running Debian Stable or Debian Sid
 
 ### General:
 
-- **[Bash's vim mode](./.bashrc/#L20):** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt.  
+- **[Bash's vim mode](./.bashrc/#L33):** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt.  
 - **[Change directories without using the `cd` command](./.bashrc/#L15):** Just type the name of the directory to move into it. 
 - **[Bash completion is no longer case sensitive](./.inputrc/#L19):** No more wasted time pressing keys to get upper case letters.
 - **[Neovim as a pager for man pages](./.bashrc/#L10):** Because man pages deserve better.
