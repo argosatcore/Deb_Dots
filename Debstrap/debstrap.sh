@@ -1,6 +1,11 @@
 #!/bin/sh
-#Bootstrapping script for Debian (Stable or Sid) systems - Wayland edition.
+#Bootstrapping script for Debian (Stable or Sid) systems.
+
 set -e 
+
+#----------------------------
+#------ Debstrap functions: -
+#----------------------------
 
 initialize() {
 	printf "Initializing bootstrap...\n"
@@ -106,7 +111,7 @@ flathub() {
 	printf " \n"
 }
 
-academics() {
+bibliographical() {
 	printf "Installing academic related flatpaks\n"
 	printf " \n" 
 	flatpak install flathub org.zotero.Zotero
@@ -114,7 +119,7 @@ academics() {
 	printf " \n"
 }
 
-graphics() {
+flatgraphics() {
 	printf "Installing graphic design related flatpaks...\n"
 	flatpak install flathub org.gimp.GIMP	
 	flatpak install flathub org.inkscape.Inkscape
@@ -178,17 +183,128 @@ remember() {
 	nvim ~/Debstrap/project-history.en.txt
 }
 
-# Debstrap options:
 
-initialize
-commons
-#sidtools
-waytools
-flathub
-academics
-#graphics
-dots
-trim
-sshkey
-end
-remember
+#--------------------------
+#------ Debstrap options: -
+#--------------------------
+
+
+#----- Initialize script:
+while true; do
+    read -p "Do you want to initialize this script?" yn
+    case $yn in
+        [Yy]* ) initialize; break;;
+        [Nn]* ) printf "Aborting script\n"; exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+
+#------ Installation of the commons:
+while true; do
+    read -p "Do you want to install commons?" yn
+    case $yn in
+        [Yy]* ) commons; break;;
+        [Nn]* ) printf "Skipping commons intallation\n"; break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+
+#------ Installation of useful programs for Sid:
+while true; do
+    read -p "Do you want to install sidtools?" yn
+    case $yn in
+        [Yy]* ) sidtools; break;;
+        [Nn]* ) printf "Skipping sidtools installation\n"; break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+
+#------ Installation of useful Wayland programs:
+while true; do
+    read -p "Do you want to install waytools?" yn
+    case $yn in
+        [Yy]* ) waytools; break;;
+        [Nn]* ) printf "Skipping waytools installation\n"; break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+
+#------ Flathub set up:
+while true; do
+    read -p "Do you want to set up flathub?" yn
+    case $yn in
+        [Yy]* ) flathub; break;;
+        [Nn]* ) printf "Skipping flathub set up\n"; break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+
+#------ Installation of bibliographical programs:
+while true; do
+    read -p "Do you want to install bibliographic programs?" yn
+    case $yn in
+        [Yy]* ) bibliographical; break;;
+        [Nn]* ) printf "Skipping bibliographical programs\n"; break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+
+#------ Installation of graphical programs as flatpaks:
+while true; do
+    read -p "Do you want to install graphics programs as flatpaks?" yn
+    case $yn in
+        [Yy]* ) flatgraphics; break;;
+        [Nn]* ) printf "Skipping flatpak graphics programs\n"; break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+
+#------ Dot files deployment:
+while true; do
+    read -p "Do you want to deploy your dotfiles?" yn
+    case $yn in
+        [Yy]* ) dots; break;;
+        [Nn]* ) printf "Skipping dot files deployment\n"; break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+
+#------ SSD trimming:
+while true; do
+    read -p "Do you want to enable SSD trimming?" yn
+    case $yn in
+        [Yy]* ) trim; break;;
+        [Nn]* ) printf "Skipping SSD trimming\n"; break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+
+#------ Ssh key set up:
+while true; do
+    read -p "Do you want set up your ssh key?" yn
+    case $yn in
+        [Yy]* ) sshkey; break;;
+        [Nn]* ) printf "Skipping ssh key set up\n"; break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+
+#------ Do you remember?
+while true; do
+    read -p "Do you remember?" yn
+    case $yn in
+        [Yy]* ) end; break;;
+        [Nn]* ) remember; break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
