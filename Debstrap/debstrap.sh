@@ -14,7 +14,6 @@ initialize() {
 	printf " \n"
 	sudo apt-get update && \
 	sudo apt-get upgrade -y
-	printf " \n"
 }
 
 commons() {
@@ -45,13 +44,13 @@ commons() {
 		printer-driver-escpr \
 		sqlite3 \
 		texlive-full \
+		thermald \
 		tlp \
 		tmux \
 		tree \
 		toilet \
 		vim-gtk \
 		vlc 
-	printf " \n"
 }
 
 sidtools() {
@@ -73,7 +72,6 @@ sidtools() {
 		youtube-dl
 	printf "Removing firefox-esr...\n"
 	sudo apt-get remove firefox-esr
-	printf " \n"
 }
 
 waytools() {
@@ -101,7 +99,6 @@ waytools() {
 		xdg-user-dirs-gtk \
 		xdg-utils \
 		xwayland 
-	printf " \n"
 }
 
 flathub() {
@@ -117,7 +114,6 @@ bibliographical() {
 	printf " \n" 
 	flatpak install flathub org.zotero.Zotero
 	flatpak install flathub com.github.johnfactotum.Foliate
-	printf " \n"
 }
 
 flatgraphics() {
@@ -149,14 +145,12 @@ dots() {
 	mv -f ~/Deb_Dots/.profile ~/
 	mv -f ~/Deb_Dots/.vim/ ~/
 	rm -rf ~/Deb_Dots/
-	printf " \n"
 }
 
 trim() {
 	printf "Enabling SSD trimming...\n"
 	sudo systemctl enable fstrim.timer
 	sudo systemctl start fstrim.timer
-	printf " \n"
 }
 
 sshkey() {
@@ -174,7 +168,6 @@ sshkey() {
 
 end() {
 	printf "Bootstrapping complete. Welcome back, Argos.\n"
-	printf " \n"
 }
 
 remember() {
@@ -196,7 +189,7 @@ while true; do
     case $yn in
         [Yy]* ) initialize; break;;
         [Nn]* ) printf "Aborting script\n"; exit;;
-        * ) echo "Please answer yes or no.";;
+        * ) printf "Please answer yes or no.\n";;
     esac
 done
 
@@ -207,7 +200,7 @@ while true; do
     case $yn in
         [Yy]* ) commons; break;;
         [Nn]* ) printf "Skipping commons intallation\n"; break;;
-        * ) echo "Please answer yes or no.";;
+        * ) printf "Please answer yes or no.\n";;
     esac
 done
 
@@ -218,7 +211,7 @@ while true; do
     case $yn in
         [Yy]* ) sidtools; break;;
         [Nn]* ) printf "Skipping sidtools installation\n"; break;;
-        * ) echo "Please answer yes or no.";;
+        * ) printf "Please answer yes or no.\n";;
     esac
 done
 
@@ -229,7 +222,7 @@ while true; do
     case $yn in
         [Yy]* ) waytools; break;;
         [Nn]* ) printf "Skipping waytools installation\n"; break;;
-        * ) echo "Please answer yes or no.";;
+        * ) printf "Please answer yes or no.\n";;
     esac
 done
 
@@ -240,7 +233,7 @@ while true; do
     case $yn in
         [Yy]* ) flathub; break;;
         [Nn]* ) printf "Skipping flathub set up\n"; break;;
-        * ) echo "Please answer yes or no.";;
+        * ) printf "Please answer yes or no.\n";;
     esac
 done
 
@@ -251,7 +244,7 @@ while true; do
     case $yn in
         [Yy]* ) bibliographical; break;;
         [Nn]* ) printf "Skipping bibliographical programs\n"; break;;
-        * ) echo "Please answer yes or no.";;
+        * ) printf "Please answer yes or no.\n";;
     esac
 done
 
@@ -262,7 +255,7 @@ while true; do
     case $yn in
         [Yy]* ) flatgraphics; break;;
         [Nn]* ) printf "Skipping flatpak graphics programs\n"; break;;
-        * ) echo "Please answer yes or no.";;
+        * ) printf "Please answer yes or no.\n";;
     esac
 done
 
@@ -273,7 +266,7 @@ while true; do
     case $yn in
         [Yy]* ) dots; break;;
         [Nn]* ) printf "Skipping dot files deployment\n"; break;;
-        * ) echo "Please answer yes or no.";;
+        * ) printf "Please answer yes or no.\n";;
     esac
 done
 
@@ -284,7 +277,7 @@ while true; do
     case $yn in
         [Yy]* ) trim; break;;
         [Nn]* ) printf "Skipping SSD trimming\n"; break;;
-        * ) echo "Please answer yes or no.";;
+        * ) printf "Please answer yes or no.\n";;
     esac
 done
 
@@ -295,7 +288,7 @@ while true; do
     case $yn in
         [Yy]* ) sshkey; break;;
         [Nn]* ) printf "Skipping ssh key set up\n"; break;;
-        * ) echo "Please answer yes or no.";;
+        * ) printf "Please answer yes or no.\n";;
     esac
 done
 
@@ -306,6 +299,6 @@ while true; do
     case $yn in
         [Yy]* ) end; exit;;
         [Nn]* ) remember; exit;;
-        * ) echo "Please answer yes or no.";;
+        * ) printf "Please answer yes or no.\n";;
     esac
 done
