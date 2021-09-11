@@ -77,21 +77,21 @@ The following steps assume that you are on a running Debian Stable or Debian Sid
 All of which are `apt install`able on Debian:
 
 | Program         | Description                                                                           |
-| ---             | ---                                                                                  |
-| `foot`          | Wayland native minimalist terminal emulator.                                         |
-| `gammastep`     | Screen temperature manager.                                                          |
-| `grimshot`      | Wayland native screenshot tool.                                                      |
-| `mako-notifier` | Wayland native notification daemon.                                                  |
-| `nautilus`      | File manager.                                                                        |
-| `neovim`        | Text editor.                                                                         |
-| `swaybg`        | Wayland native wallpaper utility.                                                    |
-| `swaylock`      | Wayland native screen locker.                                                        |
-| `sway`          | Wayland compositor.                                                                  |
-| `tmux`          | Persistent SSH shell sessions.                                                       |
-| `vim-gtk`       | (Neo)Vim's clipboard integration.                                                    |
-| `waybar`        | Wayland native panel.                                                                |
-| `wdisplays`     | Wayland native graphical tool for configuring displays.                              |
-| `wlogout`       | Wayland session menu.                                                                |
+| ---             | ---                                                                                   |
+| `foot`          | Wayland native minimalist terminal emulator.                                          |
+| `gammastep`     | Screen temperature manager.                                                           |
+| `grimshot`      | Wayland native screenshot tool.                                                       |
+| `mako-notifier` | Wayland native notification daemon.                                                   |
+| `nautilus`      | File manager.                                                                         |
+| `neovim`        | Text editor.                                                                          |
+| `swaybg`        | Wayland native wallpaper utility.                                                     | 
+| `swaylock`      | Wayland native screen locker.                                                         | 
+| `sway`          | Wayland compositor.                                                                   | 
+| `tmux`          | Persistent SSH shell sessions.                                                        | 
+| `vim-gtk`       | (Neo)Vim's clipboard integration.                                                     | 
+| `waybar`        | Wayland native panel.                                                                 | 
+| `wdisplays`     | Wayland native graphical tool for configuring displays.                               | 
+| `wlogout`       | Wayland session menu.                                                                 |
 | `wofi`          | Wayland native application launcher, window switcher, command executor and many more. |
 
 ## Sway-specific Handy keybindings 

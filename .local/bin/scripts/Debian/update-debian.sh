@@ -13,6 +13,9 @@ else
     fi
 fi
 
+printf "Updating Debian packgaes:\n"
 sudo apt-get update 
 sudo apt-get upgrade
+printf " \n"
+printf "Updating flatpaks:\n"
 flatpak update
