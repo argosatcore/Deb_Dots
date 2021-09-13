@@ -40,7 +40,7 @@
 
 	#Apt:
 	alias aptdate='sudo apt update'
-	alias aptgradable='apt list --upgradable'
+	alias aptgradeable='apt list --upgradeable'
 	alias aptgrade='sudo apt upgrade'
 	alias throwapt='sudo apt remove'
 	alias capture='sudo apt install'
