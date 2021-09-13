@@ -1,21 +1,26 @@
-#!/usr/bin/sh
+#!/usr/bin/bash
 set -e 
+
+Title() {
+	printf -v Bar '%*s' $((${#1} + 2)) ' '
+	printf '%s\n║ %s ║\n%s\n' "╔${Bar// /═}╗" "$1" "╚${Bar// /═}╝"
+}
 
 if expr "$EUID" : '0' >/dev/null; then
     printf "already root\n"
 else
     sudo -k 
     if sudo true; then
-        printf "correct password\n"
+        printf "Correct password\n"
     else
-        printf "wrong password\n"
+        printf "Wrong password\n"
         exit 1
     fi
 fi
 
-printf "Updating Debian packgaes:\n"
+Title 'Updating Debian packgaes:'
 sudo apt-get update 
 sudo apt-get upgrade
 printf " \n"
-printf "Updating flatpaks:\n"
+Title 'Updating flatpaks:'
 flatpak update
