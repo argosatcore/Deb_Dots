@@ -11,9 +11,9 @@ if expr "$EUID" : '0' >/dev/null; then
 else
     sudo -k 
     if sudo true; then
-        printf "correct password\n"
+        printf "Correct password\n"
     else
-        printf "wrong password\n"
+        printf "Wrong password\n"
         exit 1
     fi
 fi
