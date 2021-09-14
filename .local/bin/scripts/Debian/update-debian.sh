@@ -18,7 +18,7 @@ else
     fi
 fi
 
-Title 'Updating Debian packgaes:'
+Title 'Updating Debian packages:'
 sudo apt-get update 
 sudo apt-get upgrade
 printf " \n"
