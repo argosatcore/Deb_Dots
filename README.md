@@ -38,7 +38,7 @@
     
 ## Bootstrap
  
-The following steps assume that you are on a running Debian Stable or Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), **make sure to double-check that the packages listed in the boostrapping script are alvailable in your distribution's repositories, otherwise, the script _will_ fail**. 
+The following steps assume that you are on a running Debian Stable or Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), **make sure to double-check that the packages listed in the bootstrapping script are alvailable in your distribution's repositories, otherwise, the script _will_ fail**. 
  
 1. In order to bootstrap these dot files, install and use `wget` to download and run the bootstrapping script called `debstrap.sh`, which is located inside the `Debstrap` directory within this repository. To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. To deploy the script, use the following commands:
        
