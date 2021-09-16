@@ -51,7 +51,7 @@
 
 # ------Give Apt fuzzy-like package management abilities:
 	debcrawler() {
-		sudo apt update && sudo apt install $(apt-cache pkgnames | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:57%:wrap:hidden --bind=space:toggle-preview)
+		sudo apt-get update && sudo apt-get install $(apt-cache pkgnames | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:57%:wrap:hidden --bind=space:toggle-preview)
 	}
 
 
@@ -63,9 +63,9 @@
 
 # ------Clean system:
 	debclean() {
-		sudo apt clean
-		sudo apt autoclean
-		sudo apt autoremove --purge 
+		sudo apt-get clean
+		sudo apt-get autoclean
+		sudo apt-get autoremove --purge 
 	}
 
 
