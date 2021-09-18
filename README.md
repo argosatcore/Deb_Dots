@@ -147,7 +147,7 @@ How it looks in gnome terminal useing vim:
 
 <img src="https://user-images.githubusercontent.com/64110504/133869362-3cd3d333-899d-4ae2-8462-d67fdb244e06.png" height="400px" />
 
-#### Color Code:
+### Color Code:
 
 | Palette Entry    | Color Code  |
 | ---              | ---         |
