@@ -139,9 +139,9 @@ All of which are `apt install`able on Debian:
 ### Custom terminal palette: Linoleum
 Since none of the existing color palettes suited my sensibilities, I set to create the ultimate palette that combines both, a beautiful color arrangement and a pragmatic readibility. The result of this is _Linoleum_.
 
-<img src="![linoleum](https://user-images.githubusercontent.com/64110504/133869339-90cde755-eb30-4a55-9918-e27b2127cd64.png) height="300px" />
+<img src="(https://user-images.githubusercontent.com/64110504/133869339-90cde755-eb30-4a55-9918-e27b2127cd64.png) height="300px" />
 
-<img src="![Screenshot from 2021-09-17 20-27-31](https://user-images.githubusercontent.com/64110504/133869362-3cd3d333-899d-4ae2-8462-d67fdb244e06.png) height="300px" />
+<img src="(https://user-images.githubusercontent.com/64110504/133869362-3cd3d333-899d-4ae2-8462-d67fdb244e06.png) height="300px" />
 
 #### Color Code:
 
