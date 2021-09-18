@@ -53,7 +53,7 @@ The following steps assume that you are on a running Debian Stable or Debian Sid
 
 | Sway                                                                                                                                          | Gnome |
 | ---                                                                                                                                           | ---   |   
-| ![2021-08-07T19:00:19,493196816-06:00](https://user-images.githubusercontent.com/64110504/128617437-a77eb588-b4a4-46a3-9b04-d22ee3695566.png) | ![Screenshot from 2021-09-15 17-50-06](https://user-images.githubusercontent.com/64110504/133880720-6270bd22-4b51-487e-bf3e-55aac56a5b99.png) |
+| <img src="https://user-images.githubusercontent.com/64110504/128617437-a77eb588-b4a4-46a3-9b04-d22ee3695566.png" height="300px" /> | <img src="https://user-images.githubusercontent.com/64110504/133880720-6270bd22-4b51-487e-bf3e-55aac56a5b99.png" height="300px" /> |
 
 ---
 
