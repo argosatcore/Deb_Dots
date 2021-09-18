@@ -141,11 +141,11 @@ All of which are `apt install`able on Debian:
 ### Custom terminal palette: Linoleum
 Since none of the existing colour palettes matched my sensibilities, I set out to create the ultimate palette that would combine both a beautiful arrangement of colours and a pragmatic approach to legibility. The result of this is _Linoleum_. Its name comes from the contraction of **Lin**- as in Linux and -**oleum**, from the latin olĕum, as in oil painting, a technology that played a key role in the artistic vision deployed by artists since the Renaissance. It is also the name of the material used to make floor coverings.
 
-<img src="https://user-images.githubusercontent.com/64110504/133869339-90cde755-eb30-4a55-9918-e27b2127cd64.png" width="50%" />
+<img src="https://user-images.githubusercontent.com/64110504/133869339-90cde755-eb30-4a55-9918-e27b2127cd64.png" width="80%" />
 
 This is how it looks in `gnome-terminal` while running `neovim`:
 
-<img src="https://user-images.githubusercontent.com/64110504/133869362-3cd3d333-899d-4ae2-8462-d67fdb244e06.png" width="40%" />
+<img src="https://user-images.githubusercontent.com/64110504/133869362-3cd3d333-899d-4ae2-8462-d67fdb244e06.png" width="60%" />
 
 ### Color Code:
 
