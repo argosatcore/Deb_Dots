@@ -53,7 +53,7 @@ The following steps assume that you are on a running Debian Stable or Debian Sid
 
 | Sway                                                                                                                                          | Gnome |
 | ---                                                                                                                                           | ---   |   
-| <img src="https://user-images.githubusercontent.com/64110504/128617437-a77eb588-b4a4-46a3-9b04-d22ee3695566.png" width="90%" /> | <img src="https://user-images.githubusercontent.com/64110504/133880720-6270bd22-4b51-487e-bf3e-55aac56a5b99.png" width="70%" /> |
+| <img src="https://user-images.githubusercontent.com/64110504/128617437-a77eb588-b4a4-46a3-9b04-d22ee3695566.png" width="100%" /> | <img src="https://user-images.githubusercontent.com/64110504/133880720-6270bd22-4b51-487e-bf3e-55aac56a5b99.png" width="60%" /> |
 
 ---
 
@@ -141,11 +141,11 @@ All of which are `apt install`able on Debian:
 ### Custom terminal palette: Linoleum
 Since none of the existing colour palettes matched my sensibilities, I set out to create the ultimate palette that would combine both a beautiful arrangement of colours and a pragmatic approach to legibility. The result of this is _Linoleum_. Its name comes from the contraction of **Lin**- as in Linux and -**oleum**, from the latin olĕum, as in oil painting, a technology that played a key role in the artistic vision deployed by artists since the Renaissance. It is also the name of the material used to make floor coverings.
 
-<img src="https://user-images.githubusercontent.com/64110504/133869339-90cde755-eb30-4a55-9918-e27b2127cd64.png" height="400px" />
+<img src="https://user-images.githubusercontent.com/64110504/133869339-90cde755-eb30-4a55-9918-e27b2127cd64.png" height="40%" />
 
 This is how it looks in `gnome-terminal` while running `neovim`:
 
-<img src="https://user-images.githubusercontent.com/64110504/133869362-3cd3d333-899d-4ae2-8462-d67fdb244e06.png" height="400px" />
+<img src="https://user-images.githubusercontent.com/64110504/133869362-3cd3d333-899d-4ae2-8462-d67fdb244e06.png" height="40%" />
 
 ### Color Code:
 
