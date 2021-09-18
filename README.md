@@ -13,6 +13,7 @@
 - [Unexpected features you get right out of the gate](#unexpected-features-you-get-right-out-of-the-gate)
 - [Programs referenced by these configs](#programs-referenced-by-these-configs)
 - [Sway-specific Handy keybindings](#sway-specific-handy-keybindings)
+- [Miscellaneous](#miscellaneous)
 
 ---
 
@@ -132,3 +133,37 @@ All of which are `apt install`able on Debian:
 - `Super`+`d`: run wofi as an application launcher.
 - `Super`+`Tab`: run wofi as a window switcher.
 - `Super`+`Shift`+`q`: run wlogout. 
+
+## Miscellaneous
+
+### Custom terminal palette: Linoleum
+Since none of the existing color palettes suited my sensibilities, I set to create the ultimate palette that combines both, a beautiful color arrangement and a pragmatic readibility. The result of this is _Linoleum_.
+
+![linoleum](https://user-images.githubusercontent.com/64110504/133869339-90cde755-eb30-4a55-9918-e27b2127cd64.png)
+
+![Screenshot from 2021-09-17 20-27-31](https://user-images.githubusercontent.com/64110504/133869362-3cd3d333-899d-4ae2-8462-d67fdb244e06.png)
+
+| Palette Entry    | Color Code  |
+| ---              | ---         |
+| `Foreground`     |   #DEDEDE   |
+| `Background`     |   #1B1B1B   |
+| `Black`          |   #414868   |
+| `Red`            |   #E27373   |
+| `Green`          |   #A5C261   |
+| `Yellow`         |   #FFBA7B   |
+| `Blue`           |   #6DA0C0   |
+| `Magenta`        |   #C79EC4   |
+| `Cyan`           |   #8CD0D3   |
+| `White`          |   #DEDEDE   |
+| `Bright black`   |   #777777   |
+| `Bright red`     |   #FFA1A1   |
+| `Bright green`   |   #BDDEAB   |
+| `Bright yellow`  |   #FFDCA0   |
+| `Bright blue`    |   #B1D8F6   |
+| `Bright magenta` |   #FBDAFF   |
+| `Bright cyan`    |   #99EBEE   |
+| `Bright white`   |   #FFFFFF   |
+
+
+
+
