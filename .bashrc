@@ -17,12 +17,12 @@
 
 
 # ------Wayland:
-	if [ -n "$WAYLAND_DISPLAY" ]; then
-		export XDG_SESSION_TYPE=wayland
+#	if [ -n "$WAYLAND_DISPLAY" ]; then
+#		export XDG_SESSION_TYPE=wayland
 #		export XDG_CURRENT_DESKTOP=sway
-		export GDK_BACKEND=wayland
-		export MOZ_ENABLE_WAYLAND=1
-	fi
+#		export GDK_BACKEND=wayland
+#		export MOZ_ENABLE_WAYLAND=1
+#	fi
 
 	if [ -z $DISPLAY ] && [ "$(tty)" = "/dev/tty1" ]; then
 	  exec sway
