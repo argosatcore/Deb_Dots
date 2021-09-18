@@ -145,7 +145,7 @@ Since none of the existing colour palettes matched my sensibilities, I set out t
 
 This is how it looks in `gnome-terminal` while running `neovim`:
 
-<img src="https://user-images.githubusercontent.com/64110504/133869362-3cd3d333-899d-4ae2-8462-d67fdb244e06.png" height="40%" />
+<img src="https://user-images.githubusercontent.com/64110504/133869362-3cd3d333-899d-4ae2-8462-d67fdb244e06.png" height="20%" />
 
 ### Color Code:
 
