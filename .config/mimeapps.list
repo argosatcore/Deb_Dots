@@ -79,6 +79,7 @@ audio/flac=org.gnome.Lollypop.desktop;
 audio/x-opus+ogg=org.gnome.Lollypop.desktop;
 application/x-trash=org.gnome.gedit.desktop;
 text/x-tex=nvim.desktop;
+text/html=firefox.desktop;org.gnome.eog.desktop;
 
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop
