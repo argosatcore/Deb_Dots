@@ -10,9 +10,9 @@
 
 - [Introduction](#introduction)
 - [Bootstrap](#bootstrap)
-- [Unexpected features you get right out of the gate](#unexpected-features-you-get-right-out-of-the-gate)
 - [Programs referenced by these configs](#programs-referenced-by-these-configs)
-- [Sway-specific Handy keybindings](#sway-specific-handy-keybindings)
+- [Unexpected features you get right out of the gate](#unexpected-features-you-get-right-out-of-the-gate)
+- [Sway-specific](#sway-specific)
 - [Miscellaneous](#miscellaneous)
 
 ---
@@ -57,6 +57,30 @@ The following steps assume that you are on a running Debian Stable or Debian Sid
 
 ---
 
+## Programs referenced by these configs 
+All of which are `apt install`able on Debian:
+
+| Program         | Description                                                                           |
+| ---             | ---                                                                                   |
+| `foot`          | Wayland native minimalist terminal emulator.                                          |
+| `gammastep`     | Screen temperature manager.                                                           |
+| `gnome`         | Wayland desktop environment.                                                          |
+| `grimshot`      | Wayland native screenshot tool.                                                       |
+| `mako-notifier` | Wayland native notification daemon.                                                   |
+| `nautilus`      | File manager.                                                                         |
+| `neovim`        | Text editor.                                                                          |
+| `swaybg`        | Wayland native wallpaper utility.                                                     | 
+| `swaylock`      | Wayland native screen locker.                                                         | 
+| `sway`          | Wayland compositor.                                                                   | 
+| `tmux`          | Persistent SSH shell sessions.                                                        | 
+| `vim-gtk`       | (Neo)Vim's clipboard integration.                                                     | 
+| `waybar`        | Wayland native panel.                                                                 | 
+| `wdisplays`     | Wayland native graphical tool for configuring displays.                               | 
+| `wlogout`       | Wayland session menu.                                                                 |
+| `wofi`          | Wayland native application launcher, window switcher, command executor and many more. |
+
+---
+
 ## Unexpected features you get right out of the gate
 
 ### General:
@@ -74,28 +98,7 @@ The following steps assume that you are on a running Debian Stable or Debian Sid
 - **[Ridiculously fast key repeat rate](./.config/sway/config/#L102):** Like, really fast.
 - **[Keyboard layout set to Latin American](./.config/sway/config/#L99):** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. Us-International is set as a second option and can be toggled by pressing `Super`+`Space`. 
 
-## Programs referenced by these configs 
-All of which are `apt install`able on Debian:
-
-| Program         | Description                                                                           |
-| ---             | ---                                                                                   |
-| `foot`          | Wayland native minimalist terminal emulator.                                          |
-| `gammastep`     | Screen temperature manager.                                                           |
-| `grimshot`      | Wayland native screenshot tool.                                                       |
-| `mako-notifier` | Wayland native notification daemon.                                                   |
-| `nautilus`      | File manager.                                                                         |
-| `neovim`        | Text editor.                                                                          |
-| `swaybg`        | Wayland native wallpaper utility.                                                     | 
-| `swaylock`      | Wayland native screen locker.                                                         | 
-| `sway`          | Wayland compositor.                                                                   | 
-| `tmux`          | Persistent SSH shell sessions.                                                        | 
-| `vim-gtk`       | (Neo)Vim's clipboard integration.                                                     | 
-| `waybar`        | Wayland native panel.                                                                 | 
-| `wdisplays`     | Wayland native graphical tool for configuring displays.                               | 
-| `wlogout`       | Wayland session menu.                                                                 |
-| `wofi`          | Wayland native application launcher, window switcher, command executor and many more. |
-
-## Sway-specific Handy keybindings 
+## Keybindings 
 
 ### Sway:
 - `Super`+`Shift+c`: reload Sway.
@@ -126,7 +129,7 @@ All of which are `apt install`able on Debian:
 - `Super`+`Click1`: move window.
 - `Super`+`Click2`: resize window.
 
-### Running things:
+### Run:
 - `Super`+`Return`: run a terminal.
 - `Super`+`i`: run firefox.
 - `Super`+`n`: run nautilus.
