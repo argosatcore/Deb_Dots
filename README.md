@@ -98,9 +98,7 @@ All of which are `apt install`able on Debian:
 - **[Ridiculously fast key repeat rate](./.config/sway/config/#L102):** Like, really fast.
 - **[Keyboard layout set to Latin American](./.config/sway/config/#L99):** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. Us-International is set as a second option and can be toggled by pressing `Super`+`Space`. 
 
-## Keybindings 
-
-### Sway:
+### Keybindings: 
 - `Super`+`Shift+c`: reload Sway.
 - `Super`+`Shift`+`e`: exit Wayland session.
 - `Alt`+`Shift`+`x`: lock screen.
