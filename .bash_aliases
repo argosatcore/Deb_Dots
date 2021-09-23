@@ -17,6 +17,7 @@
 	alias suspend='systemctl suspend'
 	alias v='nvim'
 	alias t='tmux'
+	alias m='tmux -f ~/.2tmux.conf'
 	alias n='nnn'
 	alias rec='wf-recorder'
 	alias vrc='nvim ~/.vimrc'
