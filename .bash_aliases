@@ -38,6 +38,9 @@
 	alias configheader='toilet -f pagga'
 	alias fp='ps aux | fzf'
 	alias lg='bash ~/.local/bin/scripts/lsix/lsix'
+	alias gnomebu='dconf dump / > ~/Debstrap/full-desktop-backup'
+	alias gnomelb='dconf load / < ~/Debstrap/full-desktop-backup'
+
 
 	#Apt:
 	alias aptdate='sudo apt update'
