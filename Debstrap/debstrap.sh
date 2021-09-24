@@ -45,7 +45,6 @@ commons() {
 		sqlite3 \
 		texlive-full \
 		thermald \
-		tlp \
 		tmux \
 		tree \
 		toilet \
