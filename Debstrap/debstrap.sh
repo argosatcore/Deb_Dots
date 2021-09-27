@@ -54,7 +54,7 @@ commons() {
 
 sidtools() {
 	printf "Installing Debian Sid related packages...\n"
-	sudo apt-get install -y
+	sudo apt-get install -y \
 		apt-listbugs \
 		apt-listchanges \
 		apt-utils \
@@ -75,7 +75,7 @@ sidtools() {
 
 waytools() {
 	printf "Installing Wayland related packages...\n"
-	sudo apt-get install -y
+	sudo apt-get install -y \
 		brightnessctl \
 		eog \
 		evince \
