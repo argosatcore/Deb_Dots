@@ -258,6 +258,17 @@ while true; do
 done
 
 
+#------ Ssh key set up:
+while true; do
+    read -p "Do you want set up your ssh key?" yn
+    case $yn in
+        [Yy]* ) sshkey; break;;
+        [Nn]* ) printf "Skipping ssh key set up\n"; break;;
+        * ) printf "Please answer yes or no.\n";;
+    esac
+done
+
+
 #------ Dot files deployment:
 while true; do
     read -p "Do you want to deploy your dotfiles?" yn
@@ -275,17 +286,6 @@ while true; do
     case $yn in
         [Yy]* ) trim; break;;
         [Nn]* ) printf "Skipping SSD trimming\n"; break;;
-        * ) printf "Please answer yes or no.\n";;
-    esac
-done
-
-
-#------ Ssh key set up:
-while true; do
-    read -p "Do you want set up your ssh key?" yn
-    case $yn in
-        [Yy]* ) sshkey; break;;
-        [Nn]* ) printf "Skipping ssh key set up\n"; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
