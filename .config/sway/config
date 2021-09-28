@@ -63,7 +63,7 @@
 #--------------------
 
 	# output * bg #64727D solid_color 
-	output * bg ~/.config/sway/Wallpapers/bullseye.png fill 
+	output * bg ~/.config/sway/Wallpapers/p10 fill 
 
 
 #----------------------
@@ -148,10 +148,6 @@
 #-- Moving around: --
 #--------------------
 
-	# Move to the next or previous workspace:
-	bindsym $mod+Next workspace next_on_output --create
-	bindsym $mod+Prior workspace prev_on_output --create
-
 	# Move your focus around:
 	bindsym $mod+$left focus left
 	bindsym $mod+$down focus down
@@ -189,7 +185,15 @@
 #-----------------
 #-- Workspaces: --
 #-----------------
- 
+
+	# Move to the next or previous workspace:
+	bindsym $mod+Next workspace next_on_output --create
+	bindsym $mod+Prior workspace prev_on_output --create
+
+	# Move focused container to the next or previous existing workspace:
+	bindsym $mod+Shift+Next move container to workspace next_on_output 
+	bindsym $mod+Shift+Prior move container to workspace prev_on_output
+
 	# Switch to workspace:
 	bindsym $mod+1 workspace number 1
 	bindsym $mod+2 workspace number 2
