@@ -130,6 +130,9 @@
 	
 	# Launch web browser:
 	bindsym $mod+i exec firefox
+
+	#Launch Blender>
+	bindsym $mod+Shift+Space exec /home/argos/blender-git/build_linux/bin/blender
 	
 	# Screenshooting:
 	bindsym $mod+Print	exec grimshot --notify save active

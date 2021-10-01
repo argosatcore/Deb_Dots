@@ -82,6 +82,16 @@
 		git push -u
 	}
 
+# ------Update Blender:
+	buildblend() {
+		cd
+		cd ~/blender-git/blender
+		make update
+		make
+	}
+
+
+
 
 # ------Count files or directories in directory:
 	count() {
