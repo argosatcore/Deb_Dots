@@ -1,10 +1,5 @@
-#!/usr/bin/bash
+#!/usr/bin/sh
 set -e 
-
-Title() {
-	printf -v Bar '%*s' $((${#1} + 2)) ' '
-	printf '%s\n║ %s ║\n%s\n' "╔${Bar// /═}╗" "$1" "╚${Bar// /═}╝"
-}
 
 if expr "$EUID" : '0' >/dev/null; then
     printf "already root\n"
@@ -18,9 +13,14 @@ else
     fi
 fi
 
-Title 'Updating Debian packages:'
+printf "╔═══════════════════════════╗\n"
+printf "║ Updating Debian packages: ║\n"
+printf "╚═══════════════════════════╝\n"
 sudo apt-get update 
 sudo apt-get upgrade
 printf " \n"
-Title 'Updating flatpaks:'
+printf "╔════════════════════╗\n"
+printf "║ Updating flatpaks: ║\n"
+printf "╚════════════════════╝\n"
+
 flatpak update
