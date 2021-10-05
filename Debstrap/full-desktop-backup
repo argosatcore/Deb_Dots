@@ -1,8 +1,19 @@
 [org/gnome/Lollypop]
-notification-flag=2
-window-maximized=false
-window-position=[26, 23]
-window-size=[851, 600]
+dark-ui=true
+music-uris=['file:///home/argos/Music']
+network-access=true
+network-access-acl=1048572
+notification-flag=3
+volume-rate=1.0
+web-search='SPOTIFY'
+window-maximized=true
+window-position=[0, 0]
+window-size=[1145, 652]
+
+[org/gnome/Music]
+window-maximized=true
+window-position=[0, 0]
+window-size=[1920, 1006]
 
 [org/gnome/Totem]
 active-plugins=['screenshot', 'rotation', 'skipto', 'movie-properties', 'autoload-subtitles', 'variable-rate', 'recent', 'vimeo', 'open-directory', 'save-file', 'screensaver', 'media-player-keys', 'apple-trailers']
@@ -28,7 +39,7 @@ window-position=(26, 23)
 word-size=64
 
 [org/gnome/control-center]
-last-panel='info-overview'
+last-panel='keyboard'
 
 [org/gnome/deja-dup]
 backend='local'
@@ -67,7 +78,7 @@ apps=['firefox-esr.desktop', 'thunderbird.desktop', 'transmission-gtk.desktop']
 name='Internet'
 
 [org/gnome/desktop/app-folders/folders/758fff78-a416-4c6f-8b48-abcd1e3aa7e6]
-apps=['librecad.desktop', 'display-im6.q16.desktop', 'org.gimp.GIMP.desktop', 'org.inkscape.Inkscape.desktop', 'net.scribus.Scribus.desktop', 'org.kde.krita.desktop']
+apps=['librecad.desktop', 'display-im6.q16.desktop', 'org.gimp.GIMP.desktop', 'org.inkscape.Inkscape.desktop', 'net.scribus.Scribus.desktop', 'org.kde.krita.desktop', 'org.freecadweb.FreeCAD.desktop', 'blender.desktop']
 name='Graphics'
 
 [org/gnome/desktop/app-folders/folders/7a414dbe-eb42-4608-ac12-862f7ef55a4c]
@@ -76,7 +87,8 @@ name='Games'
 
 [org/gnome/desktop/app-folders/folders/958f5a75-6e64-43e5-afdc-800aa15e854b]
 apps=['libreoffice-writer.desktop', 'libreoffice-impress.desktop', 'libreoffice-draw.desktop', 'libreoffice-calc.desktop', 'libreoffice-startcenter.desktop', 'com.github.johnfactotum.Foliate.desktop', 'org.zotero.Zotero.desktop']
-name='Office'
+name='Writerly'
+translate=false
 
 [org/gnome/desktop/app-folders/folders/Utilities]
 apps=['org.gnome.Calculator.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.seahorse.Application.desktop', 'simple-scan.desktop', 'yelp.desktop', 'org.gnome.Cheese.desktop', 'org.gnome.clocks.desktop', 'goldendict.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.Documents.desktop', 'kasumi.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Characters.desktop', 'org.gnome.font-viewer.desktop', 'gucharmap.desktop', 'setup-mozc.desktop', 'org.gnome.Maps.desktop', 'org.freedesktop.MalcontentControl.desktop', 'org.gnome.Todo.desktop', 'org.gnome.Weather.desktop', 'htop.desktop', 'shotwell.desktop']
@@ -112,8 +124,8 @@ name='Preferences'
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/desktop-base/homeworld-theme/wallpaper/gnome-background.xml'
-primary-color='#ffffff'
+picture-uri='file:///home/argos/Pictures/Wallpapers/p5_hd%20(copy).png'
+primary-color='#000000'
 secondary-color='#000000'
 
 [org/gnome/desktop/input-sources]
@@ -204,7 +216,7 @@ disabled=['org.gnome.Contacts.desktop', 'org.gnome.Calculator.desktop', 'org.gno
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
 
 [org/gnome/desktop/session]
-idle-delay=uint32 600
+idle-delay=uint32 900
 
 [org/gnome/desktop/wm/keybindings]
 begin-move=['<Super>Return']
@@ -235,7 +247,7 @@ use-background-color=true
 document-directory=@ms 'file:///home/argos/Desktop/Biblioteca/Historia%20y%20Teor%C3%ADa%20de%20la%20Arquitectura/Claude%20Perrault'
 
 [org/gnome/evince/default]
-window-ratio=(1.1162790697674418, 1.0)
+window-ratio=(2.2875816993464051, 1.1944444444444444)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -247,7 +259,7 @@ active-plugins=['spell', 'filebrowser', 'sort', 'modelines', 'docinfo']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///etc/apt/apt.conf.d'
+virtual-root='file:///home/argos/Desktop/Proyectos%20Personales/CV_Actual'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Hack Nerd Font 14'
@@ -265,8 +277,8 @@ open-recent=false
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(858, 887)
-state=87168
+size=(1920, 1006)
+state=43908
 
 [org/gnome/gnome-screenshot]
 delay=0
@@ -292,6 +304,13 @@ col-23-width=144
 col-25-visible=true
 col-25-width=95
 
+[org/gnome/maps]
+last-viewed-location=[9.856632532059642, -83.931427001953125]
+map-type='MapsStreetSource'
+transportation-type='pedestrian'
+window-maximized=true
+zoom-level=19
+
 [org/gnome/mutter]
 attach-modal-dialogs=false
 overlay-key='Super_L'
@@ -309,12 +328,12 @@ use-tree-view=false
 
 [org/gnome/nautilus/preferences]
 click-policy='single'
-default-folder-viewer='icon-view'
+default-folder-viewer='list-view'
 search-filter-time-type='last_modified'
-search-view='list-view'
+search-view='icon-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(851, 615)
+initial-size=(841, 600)
 maximized=false
 
 [org/gnome/power-manager]
@@ -322,12 +341,53 @@ info-history-type='charge'
 info-last-device='/org/freedesktop/UPower/devices/battery_BAT1'
 info-stats-type='discharge-accuracy'
 
+[org/gnome/rhythmbox]
+position=(26, 23)
+
+[org/gnome/rhythmbox/library]
+layout-filename='%tN - %tt'
+layout-path='%aa/%at'
+
+[org/gnome/rhythmbox/library/encoding]
+media-type='audio/x-vorbis'
+
+[org/gnome/rhythmbox/library/source]
+show-browser=true
+
+[org/gnome/rhythmbox/plugins]
+active-plugins=['audioscrobbler', 'audiocd', 'notification', 'iradio', 'mtpdevice', 'dbus-media-server', 'mmkeys', 'android', 'cd-recorder', 'power-manager', 'ipod', 'daap', 'mpris', 'rb', 'artsearch', 'generic-player']
+seen-plugins=['audioscrobbler', 'notification', 'fmradio', 'mtpdevice', 'dbus-media-server', 'rblirc', 'grilo', 'pythonconsole', 'cd-recorder', 'ipod', 'daap', 'mpris', 'rb', 'magnatune', 'artsearch', 'replaygain', 'webremote', 'soundcloud', 'listenbrainz', 'lyrics', 'im-status']
+
+[org/gnome/rhythmbox/plugins/audioscrobbler/Last.fm]
+scrobbling-enabled=true
+
+[org/gnome/rhythmbox/plugins/audioscrobbler/Libre.fm]
+scrobbling-enabled=true
+
+[org/gnome/rhythmbox/plugins/iradio]
+initial-stations-loaded=true
+
+[org/gnome/rhythmbox/plugins/iradio/source]
+show-browser=true
+
+[org/gnome/rhythmbox/podcast]
+download-location='file:///home/argos/Music'
+
+[org/gnome/rhythmbox/podcast/source]
+show-browser=true
+
+[org/gnome/rhythmbox/rhythmdb]
+locations=['file:///home/argos/Music']
+
+[org/gnome/rhythmbox/sources]
+visible-columns=['post-time', 'duration', 'track-number', 'album', 'genre', 'artist']
+
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
 night-light-temperature=uint32 3210
 
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/']
 home=['<Super>f']
 www=['<Super>i']
 
@@ -342,7 +402,7 @@ command='foot -a=bookmark sh .local/bin/scripts/fzf/fuzzybook.sh'
 name='Bookmarks'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
-binding='<Super>b'
+binding='<Shift><Super>g'
 command='gnome-terminal  -- sh .local/bin/scripts/fzf/fuzzybook.sh'
 name='Gnome-terminal bookmarks'
 
@@ -356,6 +416,15 @@ binding='<Super>z'
 command='flatpak run org.zotero.Zotero'
 name='Zotero'
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5]
+binding='<Super>b'
+command='/home/argos/blender-git/build_linux/bin/blender'
+name='Blender-git'
+
+[org/gnome/settings-daemon/plugins/power]
+idle-dim=true
+sleep-inactive-battery-type='suspend'
+
 [org/gnome/settings-daemon/plugins/xsettings]
 antialiasing='grayscale'
 hinting='slight'
@@ -363,8 +432,15 @@ hinting='slight'
 [org/gnome/shell]
 app-picker-layout=[{'c419eaf4-599c-48c3-8dfb-46797b2459e7': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'e44567bf-3f92-428f-9521-9be573e5beb8': <{'position': <2>}>, '101839c3-1a8a-43a5-9586-fea30b63bbb2': <{'position': <3>}>, '17abbebb-6979-41e2-950b-d2113cc91193': <{'position': <4>}>, 'org.gnome.Nautilus.desktop': <{'position': <5>}>, '958f5a75-6e64-43e5-afdc-800aa15e854b': <{'position': <6>}>, '6b2cdc03-1872-4eec-bb64-64718647b314': <{'position': <7>}>, '758fff78-a416-4c6f-8b48-abcd1e3aa7e6': <{'position': <8>}>, '55b9c2d6-31a6-4164-bc17-2c43e67eb937': <{'position': <9>}>, 'c27e08af-525c-4261-9391-00e47fbc04ae': <{'position': <10>}>, 'b39768c5-4193-4166-bfdb-1e62212db637': <{'position': <11>}>, '7a414dbe-eb42-4608-ac12-862f7ef55a4c': <{'position': <12>}>, '1c3da104-2d9e-47b0-8087-76183d9272a2': <{'position': <13>}>}]
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=@as []
-favorite-apps=['foot.desktop', 'org.gnome.Terminal.desktop', 'firefox-esr.desktop', 'libreoffice-writer.desktop', 'org.zotero.Zotero.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Calculator.desktop']
+enabled-extensions=['dash-to-dock@micxgx.gmail.com']
+favorite-apps=['foot.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Nautilus.desktop', 'firefox-esr.desktop', 'libreoffice-writer.desktop', 'org.zotero.Zotero.desktop', 'org.gnome.Calculator.desktop', 'blender.desktop', 'org.gimp.GIMP.desktop', 'org.inkscape.Inkscape.desktop', 'net.scribus.Scribus.desktop', 'librecad.desktop', 'org.gnome.Lollypop.desktop']
+
+[org/gnome/shell/extensions/dash-to-dock]
+apply-custom-theme=true
+click-action='minimize-or-previews'
+dock-position='BOTTOM'
+hot-keys=false
+scroll-action='switch-workspace'
 
 [org/gnome/shell/extensions/freon]
 hot-sensors=['__average__', '__max__']
@@ -378,8 +454,8 @@ save-directory='file:///home/argos/Desktop/Proyectos%20Personales/LaTeX/LaTeX/CV
 save-format='image/jpeg'
 
 [org/gnome/software]
-check-timestamp=int64 1632432084
-online-updates-timestamp=int64 1632262460
+check-timestamp=int64 1633109109
+online-updates-timestamp=int64 1632866241
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -411,10 +487,10 @@ bold-is-bright=true
 font='Hack Nerd Font 14'
 foreground-color='rgb(222,222,222)'
 highlight-colors-set=false
-palette=['rgb(65,72,104)', 'rgb(226,115,115)', 'rgb(165,194,97)', 'rgb(255,186,123)', 'rgb(109,160,192)', 'rgb(199,158,196)', 'rgb(140,208,211)', 'rgb(222,222,222)', 'rgb(119,119,119)', 'rgb(255,161,161)', 'rgb(189,222,171)', 'rgb(255,220,160)', 'rgb(177,216,246)', 'rgb(251,218,255)', 'rgb(153,235,238)', 'rgb(255,255,255)']
+palette=['rgb(44,46,54)', 'rgb(226,115,115)', 'rgb(165,194,97)', 'rgb(255,186,123)', 'rgb(109,160,192)', 'rgb(199,158,196)', 'rgb(140,208,211)', 'rgb(222,222,222)', 'rgb(119,119,119)', 'rgb(255,161,161)', 'rgb(189,222,171)', 'rgb(255,220,160)', 'rgb(177,216,246)', 'rgb(251,218,255)', 'rgb(153,235,238)', 'rgb(255,255,255)']
 use-system-font=false
 use-theme-colors=false
-visible-name='Debinium'
+visible-name='Linoleum'
 
 [org/gnome/terminal/legacy/profiles:/:69abc0e8-6b75-487b-af69-4f0dcc82ad36]
 background-color='rgb(39,39,39)'
@@ -462,8 +538,8 @@ use-theme-colors=false
 visible-name='Debby (Copy)'
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.10588235294117647, 0.10588235294117647, 0.10588235294117647, 1.0), (0.60044444444444456, 0.92085000000000006, 0.93333333333333335, 1.0), (0.57647058823529407, 0.8784313725490196, 0.8901960784313725, 1.0), (0.98431372549019602, 0.85490196078431369, 1.0, 1.0), (0.87058823529411766, 0.87058823529411766, 0.87058823529411766, 1.0), (0.81568627450980391, 0.81176470588235294, 0.80000000000000004, 1.0), (0.69411764705882351, 0.84705882352941175, 0.96470588235294119, 1.0), (1.0, 0.86274509803921573, 0.62745098039215685, 1.0)]
-selected-color=(true, 0.87058823529411766, 0.87058823529411766, 0.87058823529411766, 1.0)
+custom-colors=[(0.10588235294117647, 0.10588235294117647, 0.10588235294117647, 1.0), (0.17254901960784313, 0.1803921568627451, 0.21176470588235294, 1.0), (0.46666666666666667, 0.46666666666666667, 0.46666666666666667, 1.0), (0.1713777777777778, 0.17949820788530466, 0.21333333333333335, 1.0), (0.20088888888888889, 0.2136200716845878, 0.26666666666666666, 1.0), (0.20828888888888891, 0.22668458781362008, 0.30333333333333334, 1.0), (0.19215686274509805, 0.21568627450980393, 0.31372549019607843, 1.0), (0.19322222222222224, 0.21478062678062684, 0.31333333333333335, 1.0)]
+selected-color=(true, 0.10588235294117647, 0.10588235294117647, 0.10588235294117647, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
@@ -477,5 +553,5 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-window-position=(238, 27)
+window-position=(26, 23)
 window-size=(1444, 1006)

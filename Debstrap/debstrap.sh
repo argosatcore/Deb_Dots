@@ -40,6 +40,7 @@ commons() {
 		lollypop \
 		neofetch \
 		neovim \
+		ocrmypdf \
 		pm-utils \
 		printer-driver-escpr \
 		sqlite3 \
