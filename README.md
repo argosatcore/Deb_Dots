@@ -72,7 +72,7 @@ All of which are `apt install`able on Debian:
 | `swaybg`        | Wayland native wallpaper utility.                                                     | 
 | `swaylock`      | Wayland native screen locker.                                                         | 
 | `sway`          | Wayland compositor.                                                                   | 
-| `tmux`          | Persistent SSH shell sessions.                                                        | 
+| `tmux`          | Terminal multiplexer.                                                        | 
 | `vim-gtk`       | (Neo)Vim's clipboard integration.                                                     | 
 | `waybar`        | Wayland native panel.                                                                 | 
 | `wdisplays`     | Wayland native graphical tool for configuring displays.                               | 
