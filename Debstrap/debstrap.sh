@@ -26,12 +26,14 @@ commons() {
 		default-jdk \
 		deja-dup \
 		fd-find \
+		firmware-linux-nonfree \
 		fonts-font-awesome \
 		foot \
 		fzf \
 		git \
 		gucharmap \
 		htop \
+		intel-microcode \
 		librecad \
 		libreoffice \
 		libreoffice-java-common \
