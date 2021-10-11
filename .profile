@@ -34,3 +34,15 @@
 	    PATH="$HOME/.local/bin:$PATH"
 	fi
 
+	
+# ------Wayland:
+	if [[ -z $DISPLAY ]] && [[ "$(tty)" = "/dev/tty1" ]]; then
+	  exec sway
+	fi
+
+	if [[ "$XDG_CURRENT_DESKTOP" = sway ]]; then
+		export XDG_SESSION_TYPE=wayland
+		export GDK_BACKEND=wayland
+		export MOZ_ENABLE_WAYLAND=1
+	fi
+
