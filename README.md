@@ -52,7 +52,7 @@ The following steps assume that you are on a running Debian Stable or Debian Sid
 2. Profit:
 
 | Sway | Gnome |
-| --- | --- |   
+| ---  | ---   |   
 | <img src="https://user-images.githubusercontent.com/64110504/128617437-a77eb588-b4a4-46a3-9b04-d22ee3695566.png" />| <img src="https://user-images.githubusercontent.com/64110504/133880720-6270bd22-4b51-487e-bf3e-55aac56a5b99.png" /> |
 
 ---
@@ -72,7 +72,7 @@ All of which are `apt install`able on Debian:
 | `swaybg`        | Wayland native wallpaper utility.                                                     | 
 | `swaylock`      | Wayland native screen locker.                                                         | 
 | `sway`          | Wayland compositor.                                                                   | 
-| `tmux`          | Terminal multiplexer.                                                        | 
+| `tmux`          | Terminal multiplexer.                                                                 | 
 | `vim-gtk`       | (Neo)Vim's clipboard integration.                                                     | 
 | `waybar`        | Wayland native panel.                                                                 | 
 | `wdisplays`     | Wayland native graphical tool for configuring displays.                               | 
