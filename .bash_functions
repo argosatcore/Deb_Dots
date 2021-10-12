@@ -20,7 +20,7 @@
 # ------Browse and open notes quickly:
 	fjot() {
 		cd ~/Desktop/Notes/
-		note="$(fdfind -t f -H | fzf --reverse --preview="head -$LINES {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)"
+		note="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="head -$LINES {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)"
 			if [ -n "$note" ]; then	
 			nvim "$note"
 			fi
@@ -45,19 +45,19 @@
 
 # ------Use fzf to move between directories:
 	fd() {
-		cd "$(fdfind -t d -H | fzf --cycle --reverse --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)" && clear
+		cd "$(fdfind -t d -H | fzf --cycle --reverse --color=border:#FFFFFF --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)" && clear
 	}
 
 
 # ------Give Apt fuzzy-like package management abilities:
 	debcrawler() {
-		sudo apt-get update && sudo apt-get install $(apt-cache pkgnames | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:57%:wrap:hidden --bind=space:toggle-preview)
+		sudo apt-get update && sudo apt-get install $(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF --cycle --reverse --preview "apt-cache show {1}" --preview-window=:57%:wrap:hidden --bind=space:toggle-preview)
 	}
 
 
 # -----Fuzzy find packages with Apt:
 	lookapt() {
-		apt-cache pkgnames | fzf --multi --cycle --reverse --preview "apt-cache show {1}" --preview-window=:99%:wrap:hidden --bind=space:toggle-preview
+		apt-cache pkgnames | fzf --multi --color=border:#FFFFFF  --cycle --reverse --preview "apt-cache show {1}" --preview-window=:80%:wrap:hidden --bind=space:toggle-preview
 	}
 
 

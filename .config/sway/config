@@ -63,7 +63,7 @@
 #--------------------
 
 	# output * bg #64727D solid_color 
-	output * bg ~/.config/sway/Wallpapers/p10 fill 
+	output * bg ~/.config/sway/Wallpapers/11 fill 
 
 
 #----------------------
@@ -357,14 +357,15 @@
 	bindsym $mod+Shift+b exec swaymsg border toggle
 
 	# Colors:
-	set $active	#FFFFFF
+	set $active	#8CD0D3
 	set $unfocused	#9F9F9F
 	set $fg		#283337
 	set $bg		#1F2A3E
 	set $bar	#404552
+	set $txtact	#1B1B1B
 
 # 	Window Border color:		border:		backgr:		text:		indicator:
-	client.focused			$active		$active		$bg		$fg
+	client.focused			$active		$active		$txtact		$fg
 	client.focused_inactive		$bg     	$bg		$unfocused	$fg
 	client.unfocused		$bg     	$bg		$unfocused	$fg
 	client.urgent			$bg     	$bg		$fg		$fg

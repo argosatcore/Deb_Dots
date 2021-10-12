@@ -23,20 +23,22 @@ window#waybar.hidden {
 #workspaces button {
     padding: 0px 5px;
     background-color: transparent;
-    color: #ffffff;
+    color: #9F9F9F;
     box-shadow: inset 0px -2px transparent;
     border-radius: 0px;
 }
 
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
     box-shadow: inset 0px -2px #ffffff;
     outline-style: none;
     text-shadow: none;
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
+    background-color: #8CD0D3;
+    color: #1B1B1B;
     box-shadow: inset 0px -0px #ffffff;
     outline-style: none;
     text-shadow: none;
