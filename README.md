@@ -147,30 +147,3 @@ Since none of the existing colour palettes matched my sensibilities, I set out t
 This is how it looks in `gnome-terminal` while running `neovim`:
 
 <img src="https://user-images.githubusercontent.com/64110504/133869362-3cd3d333-899d-4ae2-8462-d67fdb244e06.png" width="60%" />
-
-### Color Code:
-
-| Palette Entry    | Color Code  |
-| ---              | ---         |
-| `Foreground`     |   #DEDEDE   |
-| `Background`     |   #1B1B1B   |
-| `Black`          |   #414868   |
-| `Red`            |   #E27373   |
-| `Green`          |   #A5C261   |
-| `Yellow`         |   #FFBA7B   |
-| `Blue`           |   #6DA0C0   |
-| `Magenta`        |   #C79EC4   |
-| `Cyan`           |   #8CD0D3   |
-| `White`          |   #DEDEDE   |
-| `Bright black`   |   #777777   |
-| `Bright red`     |   #FFA1A1   |
-| `Bright green`   |   #BDDEAB   |
-| `Bright yellow`  |   #FFDCA0   |
-| `Bright blue`    |   #B1D8F6   |
-| `Bright magenta` |   #FBDAFF   |
-| `Bright cyan`    |   #99EBEE   |
-| `Bright white`   |   #FFFFFF   |
-
-
-
-
