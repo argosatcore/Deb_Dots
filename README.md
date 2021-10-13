@@ -92,13 +92,17 @@ All of which are `apt install`able on Debian _Stable_ -except fo `swaylock`, whi
 
 ### Sway-specific:
 
+#### Sway configuration:
+
 - **[Caps Lock key is swapped with Esc key](./.config/sway/config/#L97):** If you are a vim user (or someone that just uses the crap out of the Esc key), you know how handy this is. If you don't want this, just change it in the input configuration in Sway's config file.
 - **[Gapless single client](./.config/sway/config/#L337):** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
 - **[Mouse set for left handed people](./.config/sway/config/#L98):** If you happen to be part of the other 90% of the human population, just change the input configuration in Sway's config file. 
 - **[Ridiculously fast key repeat rate](./.config/sway/config/#L102):** Like, really fast.
 - **[Keyboard layout set to Latin American](./.config/sway/config/#L99):** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. Us-International is set as a second option and can be toggled by pressing `Super`+`Space`. 
 
-### Keybindings: 
+#### Sway Keybindings:
+
+##### Sway Session: 
 - `Super`+`Shift+c`: reload Sway.
 - `Super`+`Shift`+`e`: exit Wayland session.
 - `Alt`+`Shift`+`x`: lock screen.
@@ -111,7 +115,7 @@ All of which are `apt install`able on Debian _Stable_ -except fo `swaylock`, whi
 - `Super`+`Shitft`+`(1,2,3,4,5,6,7,8,9,0)`: Move an application to workspace 1-10.
 - `Super`+`Space`: Switch keyboard layout. Options are: Latin American (default) and US-International.
 
-### Windows:
+##### Windows:
 - `Super`+`q`: close.
 - `Super`+`f`: fullscreen. 
 - `Super`+`Escape`: toggle floating. Remember, `Caps Lock` now works as `Escape` and viceversa. 
@@ -123,11 +127,11 @@ All of which are `apt install`able on Debian _Stable_ -except fo `swaylock`, whi
 - `Super`+`e`: split tabbed or stacked windows.
 - `Alt`+`Tab`: switch focus between tiling and floating areas.
 
-### Mouse:
+##### Mouse:
 - `Super`+`Click1`: move window.
 - `Super`+`Click2`: resize window.
 
-### Run:
+##### Run:
 - `Super`+`Return`: run a terminal.
 - `Super`+`i`: run firefox.
 - `Super`+`n`: run nautilus.
