@@ -58,7 +58,7 @@ The following steps assume that you are on a running Debian Stable or Debian Sid
 ---
 
 ## Programs referenced by these configs 
-All of which are `apt install`able on Debian:
+All of which are `apt install`able on Debian _Stable_ -except fo `swaylock`, which is. the moment. exclusive to Sid-:
 
 | Program         | Description                                                                           |
 | ---             | ---                                                                                   |
