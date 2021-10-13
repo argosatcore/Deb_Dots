@@ -85,7 +85,7 @@ All of which are `apt install`able on Debian _Stable_ -except fo `swaylock`, whi
 
 ### General:
 
-- **[Bash's vim mode](./.bashrc/#L33):** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt.  
+- **[Bash's vim mode](./.bashrc/#L20):** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt.  
 - **[Change directories without using the `cd` command](./.bashrc/#L15):** Just type the name of the directory to move into it. 
 - **[Bash completion is no longer case sensitive](./.inputrc/#L19):** No more wasted time pressing keys to get upper case letters.
 - **[Neovim as a pager for man pages](./.bashrc/#L10):** Because man pages deserve better.
@@ -95,7 +95,7 @@ All of which are `apt install`able on Debian _Stable_ -except fo `swaylock`, whi
 #### Sway configuration:
 
 - **[Caps Lock key is swapped with Esc key](./.config/sway/config/#L97):** If you are a vim user (or someone that just uses the crap out of the Esc key), you know how handy this is. If you don't want this, just change it in the input configuration in Sway's config file.
-- **[Gapless single client](./.config/sway/config/#L337):** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
+- **[Gapless single client](./.config/sway/config/#L344):** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.
 - **[Mouse set for left handed people](./.config/sway/config/#L98):** If you happen to be part of the other 90% of the human population, just change the input configuration in Sway's config file. 
 - **[Ridiculously fast key repeat rate](./.config/sway/config/#L102):** Like, really fast.
 - **[Keyboard layout set to Latin American](./.config/sway/config/#L99):** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. Us-International is set as a second option and can be toggled by pressing `Super`+`Space`. 
