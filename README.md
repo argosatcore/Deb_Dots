@@ -102,7 +102,7 @@ All of which are `apt install`able on Debian _Stable_ -except fo `swaylock`, whi
 
 #### Sway Keybindings:
 
-##### Sway Session: 
+##### Session: 
 - `Super`+`Shift+c`: reload Sway.
 - `Super`+`Shift`+`e`: exit Wayland session.
 - `Alt`+`Shift`+`x`: lock screen.
