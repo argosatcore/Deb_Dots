@@ -146,8 +146,8 @@ All of which are `apt install`able on Debian _Stable_ -except for `swaylock`, wh
 ### Custom terminal palette: Linoleum
 Since none of the existing colour palettes matched my sensibilities, I set out to create the ultimate palette that would combine both a beautiful arrangement of colours and a pragmatic approach to legibility. The result of this is _Linoleum_. Its name comes from the contraction of **Lin**- as in Linux and -**oleum**, from the latin olĕum, as in oil painting, a technology that played a key role in the artistic vision deployed by artists since the Renaissance. It is also the name of the material used to make floor coverings.
 
-<img src="https://user-images.githubusercontent.com/64110504/133869339-90cde755-eb30-4a55-9918-e27b2127cd64.png" width="90%" />
+<img src="https://user-images.githubusercontent.com/64110504/137415912-887d31bd-b7f6-43f9-b304-c944e8ed8493.png" width="90%" />
 
-This is how it looks in `gnome-terminal` while running `neovim`:
+This is how it looks in `foot` while running `neovim`:
 
-<img src="https://user-images.githubusercontent.com/64110504/133869362-3cd3d333-899d-4ae2-8462-d67fdb244e06.png" width="60%" />
+<img src="https://user-images.githubusercontent.com/64110504/137416133-68c2e755-4a21-4f1b-adaa-ed2f21fc32e2.png" width="60%" />
