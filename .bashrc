@@ -9,6 +9,7 @@
 	export PAGER='less'
 	export MANPAGER='nvim +Man!'
 	export BROWSER='firefox'
+	export MOZ_ENABLE_WAYLAND=1
 	export TERM='xterm-256color'
 	export PATH=$PATH:$HOME/bin:$HOME/.local/bin/scripts/wofi/:/usr/local/sbin
 	shopt -s cdspell

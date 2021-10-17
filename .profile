@@ -40,9 +40,8 @@
 	  exec sway
 	fi
 
-	if [[ "$XDG_CURRENT_DESKTOP" = sway ]]; then
+	if [ -n "$WAYLAND_DISPLAY" ]; then
 		export XDG_SESSION_TYPE=wayland
 		export GDK_BACKEND=wayland
-		export MOZ_ENABLE_WAYLAND=1
 	fi
 
