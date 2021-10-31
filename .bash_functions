@@ -17,7 +17,7 @@
  	}
 
 
-# ------fkill - kill process
+# ------Kill processes in a fuzzy way:
 	fkill() {
 	  local pid
 	  pid="$(
@@ -102,8 +102,6 @@
 		make update
 		make
 	}
-
-
 
 
 # ------Count files or directories in directory:
