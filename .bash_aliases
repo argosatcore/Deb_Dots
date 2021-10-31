@@ -6,8 +6,14 @@
 # ------Handy aliases:
 	
 	#General use:
-	alias ...='cd ../..'
-	alias ..='cd ..'
+	alias u="cd ../"
+	alias u2="cd ../../"
+	alias u3="cd ../../../"
+	alias u4="cd ../../../../"
+	alias u5="cd ../../../../../"
+	alias u6="cd ../../../../../../"
+	alias u7="cd ../../../../../../../"
+	alias u8="cd ../../../../../../../../"
 	alias ll='ls -alF'
 	alias la='ls -A'
 	alias li='ls -lih'
