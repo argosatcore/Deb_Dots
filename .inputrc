@@ -41,3 +41,11 @@
 
 # ------Color the common prefix in menu-complete:
 	set menu-complete-display-prefix On
+
+
+# ------Show matches instead of ringing the bell:
+	set show-all-if-unmodified On
+
+
+# ------Do not repeat portions of the word following the cursor:	
+	set skip-completed-text On
