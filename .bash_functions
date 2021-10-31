@@ -16,17 +16,18 @@
 		nvim ~/Desktop/Notes/"$1"
  	}
 
+
 # ------fkill - kill process
-fkill() {
-  local pid
-  pid="$(
-    ps -ef \
-      | sed 1d \
-      | fzf -e -m --cycle --reverse \
-      | awk '{print $2}'
-  )" || return
-  kill -"${1:-9}" "$pid" &> /dev/null
-}
+	fkill() {
+	  local pid
+	  pid="$(
+	    ps -ef \
+	      | sed 1d \
+	      | fzf -e -m --cycle --reverse \
+	      | awk '{print $2}'
+	  )" || return
+	  kill -"${1:-9}" "$pid" &> /dev/null
+	}
 
 
 # ------Browse and open notes quickly:
