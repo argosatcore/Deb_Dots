@@ -3,9 +3,9 @@
 
 set -e 
 
-#----------------------------
-#------ Debstrap functions: -
-#----------------------------
+#---------------------------------
+#------ Debstrap Functions: ------
+#---------------------------------
 
 initialize() {
 	printf "Initializing bootstrap...\n"
@@ -27,6 +27,7 @@ commons() {
 		deja-dup \
 		fd-find \
 		firmware-linux-nonfree \
+		firmware-misc-nonfree \
 		fonts-font-awesome \
 		foot \
 		fzf \
@@ -180,89 +181,89 @@ remember() {
 }
 
 
-#--------------------------
-#------ Debstrap options: -
-#--------------------------
+#-------------------------------
+#------ Debstrap Options: ------
+#-------------------------------
 
 
-# 1----- Initialize script:
+# 1---- Initialize script:
 while true; do
     read -p "Do you want to initialize this script?" yn
     case $yn in
         [Yy]* ) initialize; break;;
-        [Nn]* ) printf "Aborting script\n"; exit;;
+        [Nn]* ) printf "Aborting script.\n"; exit;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
 
 
-# 2------ Installation of the commons:
+# 2----- Installation of the commons:
 while true; do
     read -p "Do you want to install commons?" yn
     case $yn in
         [Yy]* ) commons; break;;
-        [Nn]* ) printf "Skipping commons intallation\n"; break;;
+        [Nn]* ) printf "Skipping commons installation.\n"; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
 
 
-# 3------ Installation of useful programs for Sid:
+# 3----- Installation of useful programs for Sid:
 while true; do
     read -p "Do you want to install sidtools?" yn
     case $yn in
         [Yy]* ) sidtools; break;;
-        [Nn]* ) printf "Skipping sidtools installation\n"; break;;
+        [Nn]* ) printf "Skipping sidtools installation.\n"; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
 
 
-# 4------ Installation of useful Wayland programs:
+# 4----- Installation of useful Wayland programs:
 while true; do
     read -p "Do you want to install waytools?" yn
     case $yn in
         [Yy]* ) waytools; break;;
-        [Nn]* ) printf "Skipping waytools installation\n"; break;;
+        [Nn]* ) printf "Skipping waytools installation.\n"; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
 
 
-# 5------ Flathub set up:
+# 5----- Flathub set up:
 while true; do
     read -p "Do you want to set up flathub?" yn
     case $yn in
         [Yy]* ) flathub; break;;
-        [Nn]* ) printf "Skipping flathub set up\n"; break;;
+        [Nn]* ) printf "Skipping flathub set up.\n"; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
 
 
-# 6------ Installation of bibliographical programs:
+# 6----- Installation of bibliographical programs:
 while true; do
     read -p "Do you want to install bibliographic programs?" yn
     case $yn in
         [Yy]* ) bibliographical; break;;
-        [Nn]* ) printf "Skipping bibliographical programs\n"; break;;
+        [Nn]* ) printf "Skipping bibliographical programs.\n"; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
 
 
-# 7------ Installation of graphical programs as flatpaks:
+# 7----- Installation of graphical programs as flatpaks:
 while true; do
     read -p "Do you want to install graphics programs as flatpaks?" yn
     case $yn in
         [Yy]* ) flatgraphics; break;;
-        [Nn]* ) printf "Skipping flatpak graphics programs\n"; break;;
+        [Nn]* ) printf "Skipping flatpak graphics programs.\n"; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
 
 
-# 8------ Ssh key set up:
+# 8----- Ssh key set up:
 while true; do
     read -p "Do you want set up your ssh key?" yn
     case $yn in
@@ -273,7 +274,7 @@ while true; do
 done
 
 
-# 9------ Dot files deployment:
+# 9----- Dot files deployment:
 while true; do
     read -p "Do you want to deploy your dotfiles?" yn
     case $yn in
@@ -284,7 +285,7 @@ while true; do
 done
 
 
-# 10------ Load Gnome configuration:
+# 10---- Load Gnome configuration:
 while true; do
     read -p "Do you want to load Gnome configuration?" yn
     case $yn in
@@ -295,7 +296,7 @@ while true; do
 done
 
 
-# 11------ Do you remember?
+# 11---- Do you remember?
 while true; do
     read -p "Do you remember?" yn
     case $yn in
