@@ -65,15 +65,12 @@ sidtools() {
 		bombadillo \
 		build-essential \
 		create-resources \
-		firefox \
 		gimp \
 		inkscape \
 		needrestart \
 		reportbug-gtk \
 		scribus \ 
 		youtube-dl
-	printf "Removing firefox-esr...\n"
-	sudo apt-get remove firefox-esr
 }
 
 waytools() {
@@ -101,6 +98,16 @@ waytools() {
 		xdg-user-dirs-gtk \
 		xdg-utils \
 		xwayland 
+}
+
+gnome_setup() {
+	printf "Installing Gnome extensions...\n"
+	sudo apt-get install -y \
+		gnome-shell-extension-system-monitor \
+		gnome-shell-extension-dashtodock \
+		gnome-shell-extension-appindicator 
+	printf "Setting up Gnome...\n"
+	dconf load / < ~/Debstrap/full-desktop-backup
 }
 
 flathub() {
@@ -148,12 +155,6 @@ dots() {
 	rm -rf ~/Deb_Dots/
 }
 
-trim() {
-	printf "Enabling SSD trimming...\n"
-	sudo systemctl enable fstrim.timer
-	sudo systemctl start fstrim.timer
-}
-
 sshkey() {
 	printf "Generating ssh key...\n"
 	ssh-keygen -t ed25519 
@@ -184,7 +185,7 @@ remember() {
 #--------------------------
 
 
-#----- Initialize script:
+# 1----- Initialize script:
 while true; do
     read -p "Do you want to initialize this script?" yn
     case $yn in
@@ -195,7 +196,7 @@ while true; do
 done
 
 
-#------ Installation of the commons:
+# 2------ Installation of the commons:
 while true; do
     read -p "Do you want to install commons?" yn
     case $yn in
@@ -206,7 +207,7 @@ while true; do
 done
 
 
-#------ Installation of useful programs for Sid:
+# 3------ Installation of useful programs for Sid:
 while true; do
     read -p "Do you want to install sidtools?" yn
     case $yn in
@@ -217,7 +218,7 @@ while true; do
 done
 
 
-#------ Installation of useful Wayland programs:
+# 4------ Installation of useful Wayland programs:
 while true; do
     read -p "Do you want to install waytools?" yn
     case $yn in
@@ -228,7 +229,7 @@ while true; do
 done
 
 
-#------ Flathub set up:
+# 5------ Flathub set up:
 while true; do
     read -p "Do you want to set up flathub?" yn
     case $yn in
@@ -239,7 +240,7 @@ while true; do
 done
 
 
-#------ Installation of bibliographical programs:
+# 6------ Installation of bibliographical programs:
 while true; do
     read -p "Do you want to install bibliographic programs?" yn
     case $yn in
@@ -250,7 +251,7 @@ while true; do
 done
 
 
-#------ Installation of graphical programs as flatpaks:
+# 7------ Installation of graphical programs as flatpaks:
 while true; do
     read -p "Do you want to install graphics programs as flatpaks?" yn
     case $yn in
@@ -261,40 +262,40 @@ while true; do
 done
 
 
-#------ Ssh key set up:
+# 8------ Ssh key set up:
 while true; do
     read -p "Do you want set up your ssh key?" yn
     case $yn in
         [Yy]* ) sshkey; break;;
-        [Nn]* ) printf "Skipping ssh key set up\n"; break;;
+        [Nn]* ) printf "Skipping ssh key set up.\n"; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
 
 
-#------ Dot files deployment:
+# 9------ Dot files deployment:
 while true; do
     read -p "Do you want to deploy your dotfiles?" yn
     case $yn in
         [Yy]* ) dots; break;;
-        [Nn]* ) printf "Skipping dot files deployment\n"; break;;
+        [Nn]* ) printf "Skipping dot files deployment.\n"; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
 
 
-#------ SSD trimming:
+# 10------ Load Gnome configuration:
 while true; do
-    read -p "Do you want to enable SSD trimming?" yn
+    read -p "Do you want to load Gnome configuration?" yn
     case $yn in
-        [Yy]* ) trim; break;;
-        [Nn]* ) printf "Skipping SSD trimming\n"; break;;
+        [Yy]* ) gnome_setup; break;;
+        [Nn]* ) printf "Skipping Gnome configuration.\n"; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
 
 
-#------ Do you remember?
+# 11------ Do you remember?
 while true; do
     read -p "Do you remember?" yn
     case $yn in

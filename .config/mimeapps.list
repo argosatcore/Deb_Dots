@@ -52,7 +52,7 @@ video/x-flc=vlc.desktop;
 video/x-fli=vlc.desktop;
 video/x-flv=vlc.desktop;
 audio/aac=org.gnome.Lollypop.desktop;
-audio/mp4=org.gnome.Lollypop.desktop;
+audio/mp4=mpv.desktop;org.gnome.Lollypop.desktop;
 audio/mpeg=org.gnome.Lollypop.desktop;
 audio/mpegurl=org.gnome.Lollypop.desktop;
 audio/ogg=org.gnome.Lollypop.desktop;
@@ -80,6 +80,7 @@ audio/x-opus+ogg=org.gnome.Lollypop.desktop;
 application/x-trash=org.gnome.gedit.desktop;
 text/x-tex=nvim.desktop;
 text/html=firefox.desktop;org.gnome.eog.desktop;
+application/xml=firefox-esr.desktop;
 
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop
