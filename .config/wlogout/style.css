@@ -26,7 +26,7 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: #FFFFFF;
+	background-color: #DEDEDE;
 	outline-style: none;
 	color: #1F2A3E;
 	font-family: Ubuntu;
