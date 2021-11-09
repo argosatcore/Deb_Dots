@@ -45,7 +45,7 @@
 	alias c='clear'
 	alias configheader='toilet -f pagga'
 	alias fp='ps aux | fzf'
-	alias lg='dash ~/.local/bin/scripts/lsix/lsix'
+	alias lg='bash ~/.local/bin/scripts/lsix/lsix'
 	alias gnomebu='dconf dump / > ~/Debstrap/full-desktop-backup'
 	alias gnomelb='dconf load / < ~/Debstrap/full-desktop-backup'
 
