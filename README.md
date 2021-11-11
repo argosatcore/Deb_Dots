@@ -6,6 +6,8 @@
    
 <p align="left">1. The layout for this README.md was heavily influenced by those of <a href="https://github.com/spencertipping/dotfiles">Spencer Tipping</a> and <a href="https://github.com/dylanaraps/pure-sh-bible">Dylan Araps.</a></p>
 
+&#x200B;
+
 <h2 align="left">Table of Contents</h2>
 
 - [Introduction](#introduction)
