@@ -8,7 +8,6 @@
 
 &#x200B;
 
-&#x200B;
 
 <h2 align="left">Table of Contents</h2>
 
