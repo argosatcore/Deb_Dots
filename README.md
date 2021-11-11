@@ -1,4 +1,4 @@
-<img src=https://user-images.githubusercontent.com/64110504/141237448-48fb1569-5c90-4e83-a13b-08dfceec0797.png width="45%" align="left" />
+<img src=https://user-images.githubusercontent.com/64110504/141237448-48fb1569-5c90-4e83-a13b-08dfceec0797.png width="30%" align="left" />
 <h1 align="left">Argos's Debian GNU/Linux Dot Files<sup>1</sup> </h1>  
 <p align="left">A collection of my experiences with Linux in the form of dot files. These dotfiles were started with a minimal installation of Debian 10 Buster on 09/10/2020.</p>
 
