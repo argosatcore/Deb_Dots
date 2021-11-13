@@ -10,7 +10,8 @@
 	export MANPAGER='nvim +Man!'
 	export BROWSER='firefox'
 	export MOZ_ENABLE_WAYLAND=1
-	export TERM='xterm-256color'
+	export TERM='foot'
+	#export TERM='xterm-256color'
 	export PATH=$PATH:$HOME/bin:$HOME/.local/bin/scripts/wofi/:/usr/local/sbin
 	shopt -s cdspell
 	shopt -s autocd
@@ -72,7 +73,7 @@
 
 # ------Set a fancy prompt (non-color, unless we know we "want" color)
 	case "$TERM" in
-	    xterm-color|*-256color) color_prompt=yes;;
+	    foot| xterm-color|*-256color) color_prompt=yes;;
 	esac
 
 
