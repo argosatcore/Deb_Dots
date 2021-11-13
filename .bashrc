@@ -73,7 +73,7 @@
 
 # ------Set a fancy prompt (non-color, unless we know we "want" color)
 	case "$TERM" in
-	    foot| xterm-color|*-256color) color_prompt=yes;;
+	    foot|xterm-color|*-256color) color_prompt=yes;;
 	esac
 
 
