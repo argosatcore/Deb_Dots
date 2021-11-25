@@ -1,7 +1,7 @@
 [Added Associations]
 image/png=org.gnome.eog.desktop;feh.desktop;
 image/jpeg=org.gnome.eog.desktop;
-text/plain=nvim.desktop;org.gnome.gedit.desktop;
+text/plain=blender.desktop;nvim.desktop;org.gnome.gedit.desktop;
 application/pdf=org.gnome.Evince.desktop;
 video/mp4=org.gnome.Totem.desktop;mpv.desktop;vlc.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
@@ -81,6 +81,9 @@ application/x-trash=org.gnome.gedit.desktop;
 text/x-tex=nvim.desktop;
 text/html=firefox.desktop;org.gnome.eog.desktop;
 application/xml=firefox-esr.desktop;
+application/zip=blender.desktop;org.gnome.FileRoller.desktop;
+application/octet-stream=blender.desktop;
+image/jp2=org.gimp.GIMP.desktop;org.gnome.eog.desktop;
 
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop

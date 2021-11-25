@@ -4,7 +4,7 @@
 menu_cmd='fzf --multi --cycle --reverse'
 
 # browser
-browser_cmd='firefox --new-tab'
+browser_cmd='flatpak run org.mozilla.firefox --new-tab'
 
 # in case the automatic profile detection does not work properly,
 # replace <PROFILE> with your profile id (e.g. ik52yqxf.default-1574488801337) and uncomment
@@ -12,7 +12,7 @@ browser_cmd='firefox --new-tab'
 
 # search for profile folder if not specified
 if [ -z "$bookmarks_folder" ]; then
-	bookmarks_folder=$(find ~/.mozilla/firefox/ -maxdepth 2 -type d | grep -E 'default.*weave' | grep -v -E 'nightly$' | awk 'NR==1')
+	bookmarks_folder=$(find ~/.var/app/org.mozilla.firefox/.mozilla/firefox/ -maxdepth 2 -type d | grep -E 'default.*weave' | grep -v -E 'nightly$' | awk 'NR==1')
 	if [ -z "$bookmarks_folder" ]; then
 		echo "unable to detect firefox profile. please specify manually in source."
 		exit 1
