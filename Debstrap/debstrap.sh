@@ -127,12 +127,13 @@ bibliographical() {
 	flatpak install flathub com.github.johnfactotum.Foliate
 }
 
-flatgraphics() {
+flatapps() {
 	printf "Installing graphic design related flatpaks...\n"
 	flatpak install flathub org.gimp.GIMP	
 	flatpak install flathub org.inkscape.Inkscape
 	flatpak install flathub net.scribus.Scribus
 	flatpak install flathub org.kde.krita
+	flatpak install flathub org.mozilla.firefox
 }
 
 dots() {
@@ -254,12 +255,12 @@ while true; do
 done
 
 
-# 7----- Installation of graphical programs as flatpaks:
+# 7----- Installation commonly used programs as flatpaks:
 while true; do
-    read -p "Do you want to install graphics programs as flatpaks?" yn
+    read -p "Do you want to install commonly used programs as flatpaks?" yn
     case $yn in
-        [Yy]* ) flatgraphics; break;;
-        [Nn]* ) printf "Skipping flatpak graphics programs.\n"; break;;
+        [Yy]* ) flatapps; break;;
+        [Nn]* ) printf "Skipping flatpak programs.\n"; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
