@@ -128,7 +128,7 @@ bibliographical() {
 }
 
 flatapps() {
-	printf "Installing graphic design related flatpaks...\n"
+	printf "Installing commonly used flatpaks...\n"
 	flatpak install flathub org.gimp.GIMP	
 	flatpak install flathub org.inkscape.Inkscape
 	flatpak install flathub net.scribus.Scribus
