@@ -10,12 +10,12 @@ This is one of the most (if not the most) handliest feature for arranging book p
 
 The following section encompasses a series of commands associated with certain specific criteria in order to make imposition as flexible or as rigid as the work demands it.
 
-### Flexible imposition with multiple signatures:
+### 1. Flexible imposition with multiple signatures:
 
 	pdfjam --suffix book --papersize '{lengthcm, heightcm}' clip 'true' --trim  'leftcm,topcm,rightcm,bottomcm' --signature 'n' -- yourfile.pdf
 
 
-### Single booklet imposition:
+### 2. Single booklet imposition:
 
 If you want to print a pdf as a single booklet, the following command does the trick:
 
