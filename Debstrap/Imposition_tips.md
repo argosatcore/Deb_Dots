@@ -10,3 +10,9 @@ This is one of the most (if not the most) handliest feature for arranging book p
 
 		pdfjam --suffix book --papersize '{lengthcm, heightcm}' clip 'true' --trim  'leftcm,topcm,rightcm,bottomcm' --signature 'n' -- yourfile.pdf
 
+
+
+If you want to print a pdf as a single booklet, the following command does the trick:
+
+		pdfjam INPUT.pdf --booklet true --papersize '{widecm, heightcm}' --outfile OUTPUT.pdf
+
