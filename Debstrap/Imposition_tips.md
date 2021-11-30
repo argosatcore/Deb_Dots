@@ -12,7 +12,7 @@ The following section encompasses a series of commands associated with certain s
 
 ### 1. Flexible imposition with multiple signatures:
 
-	pdfjam --suffix book --papersize '{lengthcm, heightcm}' clip 'true' --trim  'leftcm,topcm,rightcm,bottomcm' --signature 'n' -- yourfile.pdf
+	pdfjam INPUT.pdf --suffix book --papersize '{lengthcm, heightcm}' clip 'true' --trim  'leftcm,topcm,rightcm,bottomcm' --signature 'n' -- OUTPUT.pdf
 
 
 ### 2. Single booklet imposition:
