@@ -22,6 +22,7 @@ commons() {
 		acpi-support \
 		alsa-utils \
 		bash-completion \
+		bookletimposer \
 		calcurse \
 		default-jdk \
 		deja-dup \
