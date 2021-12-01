@@ -110,7 +110,7 @@ gnome_setup() {
 		gnome-shell-extension-appindicator 
 	printf "Setting up Gnome...\n"
 	mkdir ~/Pictures/Wallpapers
-	mv ~/Debstrap/kh.png  ~/Pictures/Wallpapers/
+	cp ~/Debstrap/kh.png  ~/Pictures/Wallpapers/
 	dconf load / < ~/Debstrap/full-desktop-backup
 }
 
