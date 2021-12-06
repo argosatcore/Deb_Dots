@@ -129,7 +129,7 @@
 	bindsym $mod+Shift+x exec swaylock -f -c 000000  
 	
 	# Launch web browser:
-	bindsym $mod+i exec firefox
+	bindsym $mod+i exec org.mozilla.firefox
 
 	#Launch Blender:
 	bindsym $mod+g exec /home/argos/blender-git/build_linux/bin/blender
