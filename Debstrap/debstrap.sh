@@ -51,6 +51,7 @@ commons() {
 		texlive-full \
 		thermald \
 		tmux \
+		torbrowser-launcher \ 
 		tree \
 		toilet \
 		vim-gtk \

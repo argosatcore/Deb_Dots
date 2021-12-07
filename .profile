@@ -40,8 +40,8 @@
 #	  exec sway
 #	fi
 
-	if [ -n "$WAYLAND_DISPLAY" ]; then
-		export XDG_SESSION_TYPE=wayland
-		export GDK_BACKEND=wayland
-	fi
+#	if [ -n "$WAYLAND_DISPLAY" ]; then
+#		export XDG_SESSION_TYPE=wayland
+#		export GDK_BACKEND=wayland
+#	fi
 
