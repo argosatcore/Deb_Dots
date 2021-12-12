@@ -56,7 +56,7 @@ The following steps assume that you are on a running Debian Stable or Debian Sid
 
 | Sway | Gnome |
 | ---  | ---   |   
-| <img src="https://user-images.githubusercontent.com/64110504/128617437-a77eb588-b4a4-46a3-9b04-d22ee3695566.png" />| <img src="https://user-images.githubusercontent.com/64110504/137421017-cdaf5269-94c7-49ed-9a70-c0e3876ceb1b.png" /> |
+| <img src="https://user-images.githubusercontent.com/64110504/145700425-75739a97-b27d-4782-a907-8e6c00137a64.png" />| <img src="https://user-images.githubusercontent.com/64110504/137421017-cdaf5269-94c7-49ed-9a70-c0e3876ceb1b.png" /> |
 
 ---
 
