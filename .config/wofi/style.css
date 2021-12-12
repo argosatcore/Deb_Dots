@@ -1,30 +1,30 @@
 window {
 margin: 0px;
 border: none;
-background-color: #1F2A3E;
+background-color: #DEDEDE;
 border-radius: 10px;
 }
 
 #input {
 margin: 5px;
 border: solid;
-border-color: #64727D;
+border-color: #949494;
 border-width: 1px;
 border-radius: 10px; 
-color: #FFFFFF;
-background-color: #1F2A3E;
+color: #000000;
+background-color: #DEDEDE;
 }
 
 #inner-box {
 margin: 5px;
 border: none;
-background-color: #1F2A3E;
+background-color: #DEDEDE;
 }
 
 #outer-box {
 margin: 5px;
 border: none;
-background-color: #1F2A3E;
+background-color: #DEDEDE;
 }
 
 #scroll {
@@ -32,12 +32,16 @@ margin: 0px;
 border: none;
 }
 
+#text {
+color: #000000
+}
+
 #text:selected {
-color: #FFFFFF;
+color: #000000;
 background-color: none;
 margin: 0px 5px;
 border: solid;
-border-color: #64727D;
+border-color: #949494;
 border-width: 0.5px;
 border-radius: 10px;
 padding: 0px 5px;
@@ -45,7 +49,7 @@ padding: 0px 5px;
 } 
 
 #entry:selected {
-background-color: #64727D;
+background-color: #949494;
 border: solid;
 border-color: #64727D;
 border-width: 0.5px;
