@@ -51,7 +51,7 @@ commons() {
 		texlive-full \
 		thermald \
 		tmux \
-		torbrowser-launcher \ 
+		torbrowser-launcher \
 		tree \
 		toilet \
 		vim-gtk \
@@ -70,9 +70,8 @@ sidtools() {
 		create-resources \
 		gimp \
 		inkscape \
-		needrestart \
 		reportbug-gtk \
-		scribus \ 
+		scribus \
 		youtube-dl
 }
 

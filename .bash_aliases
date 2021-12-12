@@ -44,6 +44,8 @@
 	alias lg='bash ~/.local/bin/scripts/lsix/lsix'
 	alias gnomebu='dconf dump / > ~/Debstrap/full-desktop-backup'
 	alias gnomelb='dconf load / < ~/Debstrap/full-desktop-backup'
+	alias gnomebusid='dconf dump / > ~/Debstrap/full-desktop-backup-sid'
+	alias gnomelsidb='dconf load / < ~/Debstrap/full-desktop-backup-sid'
 	alias bb='v ~/Debstrap/Imposition_tips.md'
 
 	#Apt:

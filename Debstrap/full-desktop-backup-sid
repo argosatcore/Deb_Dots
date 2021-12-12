@@ -1,0 +1,250 @@
+[org/gnome/control-center]
+last-panel='universal-access'
+
+[org/gnome/deja-dup]
+backend='local'
+prompt-check='2021-12-12T01:32:32.471174Z'
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST', '4bc3779b-7467-44dd-a3c9-7a1f76c6ac80', 'ed47fdff-233e-49f2-aef8-82f2600e3cce', '36337306-cc9d-4dfa-8fa5-3ecc99d8d82a', 'd13a2757-b5c4-4389-a340-3b811fb784ab', '290f630c-ceb4-4339-bbc1-db002d33ccfc', 'a0eef070-2f16-42ec-8b12-f64d2398f56e', 'e5870d1f-ea2e-4fbc-b87c-55cc290f5310', 'cdc36516-4d81-4845-8c71-95d28ef62e3e', '95e9aac0-ca26-44c7-bfbe-88dbe9d9d3dc']
+
+[org/gnome/desktop/app-folders/folders/290f630c-ceb4-4339-bbc1-db002d33ccfc]
+apps=['gnome-control-center.desktop', 'org.gnome.Extensions.desktop', 'pavucontrol.desktop']
+name='Unnamed Folder'
+
+[org/gnome/desktop/app-folders/folders/36337306-cc9d-4dfa-8fa5-3ecc99d8d82a]
+apps=['com.github.johnfactotum.Foliate.desktop', 'bookletimposer.desktop']
+name='Office'
+
+[org/gnome/desktop/app-folders/folders/4bc3779b-7467-44dd-a3c9-7a1f76c6ac80]
+apps=['libreoffice-startcenter.desktop', 'libreoffice-base.desktop', 'libreoffice-impress.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop']
+name='Office'
+
+[org/gnome/desktop/app-folders/folders/95e9aac0-ca26-44c7-bfbe-88dbe9d9d3dc]
+apps=['torbrowser-settings.desktop', 'transmission-gtk.desktop']
+name='Internet'
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'gucharmap.desktop', 'org.gnome.Calculator.desktop', 'gammastep-indicator.desktop', 'im-config.desktop', 'yelp.desktop', 'org.gnome.Contacts.desktop', 'gnome-system-monitor.desktop', 'htop.desktop', 'network.cycles.wdisplays.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/a0eef070-2f16-42ec-8b12-f64d2398f56e]
+apps=['org.gnome.Totem.desktop', 'vlc.desktop', 'mpv.desktop', 'org.gnome.Lollypop.desktop']
+name='Sound & Video'
+
+[org/gnome/desktop/app-folders/folders/cdc36516-4d81-4845-8c71-95d28ef62e3e]
+apps=['gvim.desktop', 'org.gnome.gedit.desktop', 'nvim.desktop', 'texdoctk.desktop', 'info.desktop']
+name='Editors'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/d13a2757-b5c4-4389-a340-3b811fb784ab]
+apps=['foot-server.desktop', 'foot.desktop']
+name='Terminals'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/e5870d1f-ea2e-4fbc-b87c-55cc290f5310]
+apps=['org.gnome.Software.desktop', 'software-properties-gnome.desktop']
+name='Package Management'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/ed47fdff-233e-49f2-aef8-82f2600e3cce]
+apps=['org.inkscape.Inkscape.desktop', 'librecad.desktop', 'scribus.desktop']
+name='Graphics'
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/argos/Pictures/Wallpapers/kh.png'
+primary-color='#000000'
+secondary-color='#000000'
+
+[org/gnome/desktop/input-sources]
+per-window=false
+sources=[('xkb', 'latam')]
+xkb-options=['lv3:ralt_switch', 'caps:swapescape']
+
+[org/gnome/desktop/interface]
+clock-format='12h'
+clock-show-date=true
+font-antialiasing='grayscale'
+font-hinting='slight'
+gtk-im-module='gtk-im-context-simple'
+gtk-theme='Adwaita'
+show-battery-percentage=true
+
+[org/gnome/desktop/notifications]
+application-children=['firefox-esr', 'org-gnome-nautilus', 'libreoffice-writer', 'gnome-power-panel']
+
+[org/gnome/desktop/notifications/application/firefox-esr]
+application-id='firefox-esr.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/libreoffice-writer]
+application-id='libreoffice-writer.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/peripherals/keyboard]
+delay=uint32 213
+repeat-interval=uint32 13
+
+[org/gnome/desktop/peripherals/mouse]
+left-handed=true
+speed=1.0
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+disable-microphone=false
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/adwaita-timed.xml'
+primary-color='#3465a4'
+secondary-color='#000000'
+
+[org/gnome/desktop/search-providers]
+disabled=['org.gnome.Contacts.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Characters.desktop', 'org.gnome.Software.desktop', 'org.gnome.Terminal.desktop']
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 900
+
+[org/gnome/desktop/sound]
+event-sounds=true
+theme-name='__custom'
+
+[org/gnome/desktop/wm/keybindings]
+begin-move=['<Super>Return']
+begin-resize=['<Shift><Super>Return']
+close=['<Super>q']
+cycle-windows=['<Super>Escape']
+cycle-windows-backward=['<Shift><Super>Escape']
+maximize-horizontally=['<Shift><Super>underscore']
+maximize-vertically=['<Super>minus']
+
+[org/gnome/desktop/wm/preferences]
+resize-with-right-button=true
+
+[org/gnome/eog/ui]
+sidebar=false
+
+[org/gnome/eog/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
+
+[org/gnome/evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[org/gnome/gedit/plugins]
+active-plugins=['filebrowser', 'modelines', 'spell', 'sort', 'docinfo']
+
+[org/gnome/gedit/plugins/filebrowser]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/argos/Debstrap'
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(626, 631)
+state=43908
+
+[org/gnome/mutter]
+attach-modal-dialogs=false
+
+[org/gnome/mutter/wayland/keybindings]
+restore-shortcuts=@as []
+
+[org/gnome/nautilus/icon-view]
+default-zoom-level='standard'
+
+[org/gnome/nautilus/preferences]
+click-policy='single'
+default-folder-viewer='icon-view'
+search-filter-time-type='last_modified'
+search-view='list-view'
+
+[org/gnome/nautilus/window-state]
+initial-size=(698, 471)
+maximized=false
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+home=['<Super>f']
+www=['<Super>i']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>g'
+command='gnome-terminal'
+name='gnome-terminal'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>t'
+command='foot'
+name='foot'
+
+[org/gnome/shell]
+app-picker-layout=[{'36337306-cc9d-4dfa-8fa5-3ecc99d8d82a': <{'position': <0>}>, 'a0eef070-2f16-42ec-8b12-f64d2398f56e': <{'position': <1>}>, 'd13a2757-b5c4-4389-a340-3b811fb784ab': <{'position': <2>}>, '290f630c-ceb4-4339-bbc1-db002d33ccfc': <{'position': <3>}>, 'cdc36516-4d81-4845-8c71-95d28ef62e3e': <{'position': <4>}>, 'Utilities': <{'position': <5>}>, 'ed47fdff-233e-49f2-aef8-82f2600e3cce': <{'position': <6>}>, '4bc3779b-7467-44dd-a3c9-7a1f76c6ac80': <{'position': <7>}>, 'e5870d1f-ea2e-4fbc-b87c-55cc290f5310': <{'position': <8>}>, 'reportbug.desktop': <{'position': <9>}>, '95e9aac0-ca26-44c7-bfbe-88dbe9d9d3dc': <{'position': <10>}>}]
+disabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=@as []
+favorite-apps=['org.gnome.Terminal.desktop', 'firefox-esr.desktop', 'torbrowser.desktop', 'org.gnome.Nautilus.desktop', 'org.zotero.Zotero.desktop', 'libreoffice-writer.desktop', 'gimp.desktop', 'blender.desktop', 'org.gnome.Calculator.desktop']
+welcome-dialog-last-shown-version='41.1'
+
+[org/gnome/shell/extensions/user-theme]
+name=''
+
+[org/gnome/software]
+check-timestamp=int64 1639265110
+
+[org/gnome/terminal/legacy/profiles:]
+default='c71e847e-30ff-4c86-af7e-1c26b71bc2ad'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'c71e847e-30ff-4c86-af7e-1c26b71bc2ad']
+
+[org/gnome/terminal/legacy/profiles:/:c71e847e-30ff-4c86-af7e-1c26b71bc2ad]
+background-color='rgb(27,27,27)'
+font='Hack Nerd Font 12'
+foreground-color='rgb(222,222,222)'
+palette=['rgb(44,46,54)', 'rgb(226,115,115)', 'rgb(165,194,97)', 'rgb(255,186,123)', 'rgb(109,160,192)', 'rgb(199,158,196)', 'rgb(140,208,211)', 'rgb(222,222,222)', 'rgb(119,119,119)', 'rgb(255,161,161)', 'rgb(189,222,171)', 'rgb(255,220,160)', 'rgb(177,216,246)', 'rgb(251,218,255)', 'rgb(153,235,238)', 'rgb(255,255,255)']
+use-system-font=false
+use-theme-colors=false
+visible-name='Linoleum'
+
+[org/gnome/tweaks]
+show-extensions-notice=false
+
+[org/gtk/settings/color-chooser]
+custom-colors=[(0.87058823529411766, 0.87058823529411766, 0.87058823529411766, 1.0), (0.81568627450980391, 0.81176470588235294, 0.80000000000000004, 1.0), (0.59999999999999998, 0.92156862745098012, 0.93333333333333335, 1.0), (0.20000000000000001, 0.7803921568627451, 0.87058823529411766, 1.0), (0.5490196078431373, 0.81568627450980391, 0.82745098039215681, 1.0), (0.16470588235294117, 0.63137254901960782, 0.70196078431372544, 1.0), (0.98431372549019602, 0.85490196078431369, 1.0, 1.0), (0.69411764705882351, 0.84705882352941164, 0.96470588235294119, 1.0)]
+selected-color=(true, 1.0, 1.0, 1.0, 1.0)
+
+[org/gtk/settings/file-chooser]
+clock-format='12h'
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=157
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+window-position=(67, 47)
+window-size=(1231, 689)
