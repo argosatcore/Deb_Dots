@@ -25,7 +25,7 @@
  The purpose of this repository is to contain the bare minimum of what is necessary to quickly bootstrap my current sensibilities on a Linux system. At its core, there are two assumptions: 
  
  0. The use of the [Debian GNU/Linux Operating System](https://www.debian.org/), either Debian _Stable_ or Debian [Sid](https://wiki.debian.org/DebianUnstable) :skull:.<sup>2</sup>
- 1. The implementation of the [Wayland protocol](https://wayland.freedesktop.org/) through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor or through the [Gnome](https://www.gnome.org/) desktop environment. 
+ 1. The implementation of the [Wayland protocol](https://wayland.freedesktop.org/) through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor or through the [GNOME](https://www.gnome.org/) desktop environment. 
    
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
@@ -54,7 +54,7 @@ The following steps assume that you are on a running Debian Stable or Debian Sid
        
 2. Profit:
 
-| Sway | Gnome |
+| Sway | GNOME |
 | ---  | ---   |   
 | <img src="https://user-images.githubusercontent.com/64110504/145700425-75739a97-b27d-4782-a907-8e6c00137a64.png" />| <img src="https://user-images.githubusercontent.com/64110504/145700568-8996890a-4ab5-4618-94b1-eaba17196b79.png" /> |
 
