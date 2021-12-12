@@ -2,17 +2,17 @@
 	background-image: none;
 }
 window {
-	background-color: rgba(1, 0, 39, 1.0);
+	background-color: rgba(0, 0, 0, 1.0);
 
 
 }
 
 button {
 	outline-style: none;
-    	color: #FFFFFF;
-	background-color: #64727D;
+    	color: #4B4B4B;
+	background-color: #949494;
 	border-style: solid;
-	border-color: #010027;
+	border-color: #000000;
 	border-width: 2px;
 	background-repeat: no-repeat;
 	background-position: center;

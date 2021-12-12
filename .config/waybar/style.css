@@ -8,9 +8,9 @@
 }
 
 window#waybar {
-    background-color: rgba(31, 42, 62, 0.9);
+    background-color: rgba(222, 222, 222, 1.0);
     border-bottom: 0px solid rgba(100, 114, 125, 0.5);
-    color: #ffffff;
+    color: #000000;
     transition-property: background-color;
     transition-duration: .5s;
     border-radius: 0px;
@@ -97,17 +97,17 @@ window#waybar.hidden {
 }
 
 #battery {
-    color: #ffffff;
+    color: #000000;
 }
 
 #battery.charging {
-    color: #ffffff;
+    color: #000000;
 }
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: #000000;
+        background-color: #000000;
+        color: #DEDEDE;
     }
 }
 
@@ -126,20 +126,20 @@ label:focus {
 }
 
 #cpu {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 #memory {
-    color: #FFFFFF;
+    color: #000000;
 
 }
 
 #backlight {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 #network {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 #network.disconnected {
@@ -147,7 +147,7 @@ label:focus {
 }
 
 #pulseaudio {
-    color: #FFFFFF;
+    color: #000000;
 
 }
 
@@ -157,7 +157,7 @@ label:focus {
 }
 
 #temperature {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 #temperature.critical {
@@ -169,18 +169,18 @@ label:focus {
 }
 
 #idle_inhibitor {
-    color: #9F9F9F;
+    color: #4B4B4B;
 }
 
 #idle_inhibitor.activated {
-    color: #FFFFFF;
+    color: #000000;
     border-radius: 10px;
     margin: 0px 5px;
     box-shadow: inset 0px 0px #ecF0F1;
 }
 
 #custom-date {
-    color: #FFFFFF;
+    color: #000000;
 }
 
 

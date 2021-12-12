@@ -63,7 +63,7 @@
 #--------------------
 
 	# output * bg #64727D solid_color 
-	output * bg ~/.config/sway/Wallpapers/11 fill 
+	output * bg ~/Debstrap/kh.png fill 
 
 
 #----------------------
@@ -129,7 +129,7 @@
 	bindsym $mod+Shift+x exec swaylock -f -c 000000  
 	
 	# Launch web browser:
-	bindsym $mod+i exec flatpak run org.mozilla.firefox
+	bindsym $mod+i exec firefox
 
 	#Launch Blender:
 	bindsym $mod+g exec /home/argos/blender-git/build_linux/bin/blender
@@ -349,9 +349,9 @@
 	bindsym $mod+o gaps inner current set 0
 
 	# Borders:
-	default_border pixel 1
+	default_border pixel 2
 	smart_borders on
-	default_floating_border normal 1
+	default_floating_border normal 2
 	
 	# Toggle border style:
 	bindsym $mod+Shift+b exec swaymsg border toggle
@@ -361,7 +361,7 @@
 	set $unfocused	#4B4B4B
 	set $fg		#283337
 	set $bg		#949494
-	set $bar	#404552
+	set $bar	#4B4B4B
 	set $txtact	#000000
 
 # 	Window Border color:		border:		backgr:		text:		indicator:

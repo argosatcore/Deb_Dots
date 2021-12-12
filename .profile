@@ -39,7 +39,7 @@
 #	if [[ -z $DISPLAY ]] && [[ "$(tty)" = "/dev/tty1" ]]; then
 #	  exec sway
 #	fi
-
+#
 #	if [ -n "$WAYLAND_DISPLAY" ]; then
 #		export XDG_SESSION_TYPE=wayland
 #		export GDK_BACKEND=wayland
