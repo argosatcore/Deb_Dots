@@ -102,9 +102,10 @@ waytools() {
 		xwayland 
 }
 
-gnome_setup() {
-	printf "Installing Gnome extensions...\n"
+gnome_setup_stable() {
+	printf "Installing Gnome components...\n"
 	sudo apt-get install -y \
+		gnome-core
 		gnome-shell-extension-system-monitor \
 		gnome-shell-extension-dashtodock \
 		gnome-shell-extension-appindicator 
@@ -112,6 +113,16 @@ gnome_setup() {
 	mkdir ~/Pictures/Wallpapers
 	cp ~/Debstrap/kh.png  ~/Pictures/Wallpapers/
 	dconf load / < ~/Debstrap/full-desktop-backup
+}
+
+gnome_setup_sid() {
+	printf "Installing Gnome components...\n"
+	sudo apt-get install -y \
+		gnome-core
+	printf "Setting up Gnome...\n"
+	mkdir ~/Pictures/Wallpapers
+	cp ~/Debstrap/kh.png  ~/Pictures/Wallpapers/
+	dconf load / < ~/Debstrap/full-desktop-backup-sid
 }
 
 flathub() {
@@ -289,18 +300,29 @@ while true; do
 done
 
 
-# 10---- Load Gnome configuration:
+# 10---- Load Gnome configuration for Stable:
 while true; do
-    read -p "Do you want to load Gnome configuration?" yn
+    read -p "Do you want to load Gnome configuration for Stable?" yn
     case $yn in
-        [Yy]* ) gnome_setup; break;;
-        [Nn]* ) printf "Skipping Gnome configuration.\n"; break;;
+        [Yy]* ) gnome_setup_stable; break;;
+        [Nn]* ) printf "Skipping Gnome configuration for Stable.\n"; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
 
 
-# 11---- Do you remember?
+# 11---- Load Gnome configuration for Sid:
+while true; do
+    read -p "Do you want to load Gnome configuration for Sid?" yn
+    case $yn in
+        [Yy]* ) gnome_setup_sid; break;;
+        [Nn]* ) printf "Skipping Gnome configuration for Sid.\n"; break;;
+        * ) printf "Please answer yes or no.\n";;
+    esac
+done
+
+
+# 12---- Do you remember?
 while true; do
     read -p "Do you remember?" yn
     case $yn in
