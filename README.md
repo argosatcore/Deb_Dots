@@ -4,7 +4,7 @@
 
  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
-<p align="left"><sup>0. The layout for this README.md was heavily influenced by those of <a href="https://github.com/spencertipping/dotfiles">Spencer Tipping</a> and <a href="https://github.com/dylanaraps/pure-sh-bible">Dylan Araps.</sup></a></p>
+<sup>0<p align="left">. The layout for this README.md was heavily influenced by those of <a href="https://github.com/spencertipping/dotfiles">Spencer Tipping</a> and <a href="https://github.com/dylanaraps/pure-sh-bible">Dylan Araps.</a></p></sup>
 
 &#x200B;
 
@@ -31,12 +31,12 @@
    
 <sup>1. If you are aware of the risks and responsibilities that using Debian's unstable branch entail and still wish to go down the Sid route, make sure to replace your apt sources with the following lines:</sup>
 
-        <sup>deb http://deb.debian.org/debian unstable main contrib non-free
-        deb-src http://deb.debian.org/debian unstable main contrib non-free</sup>
+        deb http://deb.debian.org/debian unstable main contrib non-free
+        deb-src http://deb.debian.org/debian unstable main contrib non-free
          
 <sup>Then update your sources and upgrade to Sid:</sup>
          
-       <sup/>sudo apt update && sudo apt full-upgrade</sup>
+       sudo apt update && sudo apt full-upgrade
        
  ---
     
