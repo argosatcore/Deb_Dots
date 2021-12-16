@@ -1,10 +1,10 @@
 <img src=https://user-images.githubusercontent.com/64110504/141237448-48fb1569-5c90-4e83-a13b-08dfceec0797.png width="35%" align="left" />
-<h1 align="left">Argos's Debian GNU/Linux Dot Files<sup>1</sup> </h1>  
+<h1 align="left">Argos's Debian GNU/Linux Dot Files<sup>0</sup> </h1>  
 <p align="left">A collection of my experiences with Linux in the form of dot files. These dotfiles were started with a minimal installation of Debian 10 Buster on 09/10/2020.</p>
 
  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
-<p align="left">1. The layout for this README.md was heavily influenced by those of <a href="https://github.com/spencertipping/dotfiles">Spencer Tipping</a> and <a href="https://github.com/dylanaraps/pure-sh-bible">Dylan Araps.</a></p>
+<p align="left">0. The layout for this README.md was heavily influenced by those of <a href="https://github.com/spencertipping/dotfiles">Spencer Tipping</a> and <a href="https://github.com/dylanaraps/pure-sh-bible">Dylan Araps.</a></p>
 
 &#x200B;
 
@@ -24,19 +24,20 @@
 
  The purpose of this repository is to contain the bare minimum of what is necessary to quickly bootstrap my current sensibilities on a Linux system. At its core, there are two assumptions: 
  
- 0. The use of the [Debian GNU/Linux Operating System](https://www.debian.org/), either Debian _Stable_ or Debian [Sid](https://wiki.debian.org/DebianUnstable) :skull:.<sup>2</sup>
+ 0. The use of the [Debian GNU/Linux Operating System](https://www.debian.org/), either Debian _Stable_ or Debian [Sid](https://wiki.debian.org/DebianUnstable) :skull:.<sup>1</sup>
  1. The implementation of the [Wayland protocol](https://wayland.freedesktop.org/) through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor or through the [GNOME](https://www.gnome.org/) desktop environment. 
    
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
-2. If you are aware of the risks and responsibilities that using Debian's unstable branch entail and still wish to go down the Sid route, make sure to replace your apt sources with the following lines:
+<sup>1. If you are aware of the risks and responsibilities that using Debian's unstable branch entail and still wish to go down the Sid route, make sure to replace your apt sources with the following lines:
 
        deb http://deb.debian.org/debian unstable main contrib non-free
        deb-src http://deb.debian.org/debian unstable main contrib non-free
          
       Then update your sources and upgrade to Sid:
          
-       sudo apt update && sudo apt full-upgrade          
+       sudo apt update && sudo apt full-upgrade
+ </sup>
        
  ---
     
