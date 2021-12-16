@@ -2,8 +2,8 @@
 image/png=org.gnome.eog.desktop;feh.desktop;
 image/jpeg=org.gnome.eog.desktop;
 text/plain=blender.desktop;nvim.desktop;org.gnome.gedit.desktop;
-application/pdf=org.gnome.Evince.desktop;
-video/mp4=vlc.desktop;org.gnome.Totem.desktop;mpv.desktop;
+application/pdf=libreoffice-draw.desktop;org.gnome.Evince.desktop;
+video/mp4=org.gnome.Totem.desktop;mpv.desktop;vlc.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
 application/vnd.ms-publisher=org.gnome.gedit.desktop;
 application/x-shellscript=nvim.desktop;org.gnome.gedit.desktop;nautilus-autorun-software.desktop;
