@@ -29,15 +29,14 @@
    
    \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
-<sup>1. If you are aware of the risks and responsibilities that using Debian's unstable branch entail and still wish to go down the Sid route, make sure to replace your apt sources with the following lines:
+<sup>1. If you are aware of the risks and responsibilities that using Debian's unstable branch entail and still wish to go down the Sid route, make sure to replace your apt sources with the following lines:</sup>
 
-       deb http://deb.debian.org/debian unstable main contrib non-free
-       deb-src http://deb.debian.org/debian unstable main contrib non-free
+        <sup>deb http://deb.debian.org/debian unstable main contrib non-free<sup>
+        <sup>deb-src http://deb.debian.org/debian unstable main contrib non-free</sup>
          
-      Then update your sources and upgrade to Sid:
+<sup>Then update your sources and upgrade to Sid:</sup>
          
-       sudo apt update && sudo apt full-upgrade
- </sup>
+       <sup/>sudo apt update && sudo apt full-upgrade</sup>
        
  ---
     
