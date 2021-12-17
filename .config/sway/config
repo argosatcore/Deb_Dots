@@ -358,7 +358,7 @@
 
 	# Colors:
 	set $active	#3584E4
-	set $unfocused	#4B4B4B
+	set $unfocused	#9F9F9F
 	set $fg		#283337
 	set $bg		#DFDBD8
 	set $bar	#4B4B4B
