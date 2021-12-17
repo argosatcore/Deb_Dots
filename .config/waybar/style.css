@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background-color: rgba(222, 222, 222, 1.0);
+    background-color: rgba(246, 245, 244, 1.0);
     border-bottom: 0px solid rgba(100, 114, 125, 0.5);
     color: #000000;
     transition-property: background-color;
@@ -31,7 +31,7 @@ window#waybar.hidden {
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0.2);
     color: #FFFFFF;
-    box-shadow: inset 0px -2px #ffffff;
+    box-shadow: inset 0px -0px #ffffff;
     outline-style: none;
     text-shadow: none;
 }
