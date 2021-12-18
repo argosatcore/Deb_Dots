@@ -51,7 +51,7 @@ window#waybar.hidden {
 }
 
 #mode {
-    background-color: #FF4040;
+    background-color: #E01B24;
     border-bottom: 0px solid #ffffff;
     border-radius: 0px;
 }
@@ -106,13 +106,13 @@ window#waybar.hidden {
 
 @keyframes blink {
     to {
-        background-color: #000000;
+        background-color: #F6F5F4;
         color: #DEDEDE;
     }
 }
 
 #battery.critical:not(.charging) {
-    background-color: #BF616A;
+    background-color: #E01B24;
     color: #ffffff;
     animation-name: blink;
     animation-duration: 0.5s;
@@ -169,7 +169,7 @@ label:focus {
 }
 
 #idle_inhibitor {
-    color: #4B4B4B;
+    color: #9F9F9F;
 }
 
 #idle_inhibitor.activated {
