@@ -8,8 +8,8 @@ border-radius: 10px;
 #input {
 margin: 5px;
 border: solid;
-border-color: #949494;
-border-width: 1px;
+border-color: #3584E4;
+border-width: 2px;
 border-radius: 10px; 
 color: #000000;
 background-color: #DEDEDE;
@@ -37,7 +37,7 @@ color: #000000
 }
 
 #text:selected {
-color: #000000;
+color: #FFFFFF;
 background-color: none;
 margin: 0px 5px;
 border: solid;
@@ -49,9 +49,9 @@ padding: 0px 5px;
 } 
 
 #entry:selected {
-background-color: #949494;
+background-color: #3584E4;
 border: solid;
-border-color: #64727D;
+border-color: #3584E4;
 border-width: 0.5px;
 border-radius: 10px;
 padding: 0px 5px;
