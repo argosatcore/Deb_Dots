@@ -2,7 +2,7 @@
 	background-image: none;
 }
 window {
-	background-color: rgba(0, 0, 0, 1.0);
+	background-color: rgba(246, 245, 244, 1.0);
 
 
 }
@@ -12,7 +12,7 @@ button {
     	color: #4B4B4B;
 	background-color: #949494;
 	border-style: solid;
-	border-color: #000000;
+	border-color: #F6F5F4;
 	border-width: 2px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -26,9 +26,9 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: #DEDEDE;
+	background-color: #3584E4;
 	outline-style: none;
-	color: #1F2A3E;
+	color: #FFFFFF;
 	font-family: Ubuntu;
 	font-size: 13px;
     	font-weight: bold;
