@@ -1,4 +1,6 @@
-<h1 alig="center">As well as I can. </h1>
+<h1 align="center">As well as I can. </h1>
+
+---
 
 <img src=https://user-images.githubusercontent.com/64110504/141237448-48fb1569-5c90-4e83-a13b-08dfceec0797.png width="35%" align="left" />
 <h1 align="left">Argos's Debian GNU/Linux Dot Files<sup>0</sup> </h1>  
