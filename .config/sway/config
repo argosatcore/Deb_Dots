@@ -364,7 +364,7 @@
 	set $bar	#4B4B4B
 	set $txtact	#FFFFFF
 
-# 	Window Border color:		border:		backgr:		text:		indicator:
+	# Window Border color:		border:		backgr:		text:		indicator:
 	client.focused			$active		$active		$txtact		$fg
 	client.focused_inactive		$bg     	$bg		$unfocused	$fg
 	client.unfocused		$bg     	$bg		$unfocused	$fg
