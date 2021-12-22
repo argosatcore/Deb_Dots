@@ -148,7 +148,7 @@ flatapps() {
 	flatpak install flathub org.mozilla.firefox
 }
 
-dots() {
+argodots() {
 	printf "Capturing dotfiles...\n"
 	printf " \n"
 	git clone git@github.com:argosatcore/Deb_Dots.git 
@@ -170,6 +170,30 @@ dots() {
 	mv -f ~/Deb_Dots/.vim/ ~/
 	rm -rf ~/Deb_Dots/
 }
+
+exodots() {
+	printf "May this dotfiles serve you well, fellow stranger...\n"
+	printf " \n"
+	git clone https://github.com/argosatcore/Deb_Dots.git  
+	printf " \n" 
+	printf "Deploying  dotfiles...\n"
+	printf " \n"
+	mv ~/Deb_Dots/.local/bin/ ~/.local/
+	mv ~/Deb_Dots/.local/share/fonts/ ~/.local/share/
+	mv -f ~/Deb_Dots/.config/* ~/.config/
+	mv ~/Deb_Dots/README.md ~/
+	mv ~/Deb_Dots/LICENSE ~/
+	mv ~/Deb_Dots/Debstrap/ ~/
+	mv ~/Deb_Dots/.git/ ~/
+	mv ~/Deb_Dots/.inputrc ~/
+	mv ~/Deb_Dots/.tmux.conf ~/
+	mv -f ~/Deb_Dots/.vimrc ~/
+	mv -f ~/Deb_Dots/.bash* ~/
+	mv -f ~/Deb_Dots/.profile ~/
+	mv -f ~/Deb_Dots/.vim/ ~/
+	rm -rf ~/Deb_Dots/
+}
+
 
 sshkey() {
 	printf "Generating ssh key...\n"
@@ -291,10 +315,10 @@ done
 
 # 9----- Dot files deployment:
 while true; do
-    read -p "Do you want to deploy your dotfiles?" yn
+    read -p "Are you Argos?" yn
     case $yn in
-        [Yy]* ) dots; break;;
-        [Nn]* ) printf "Skipping dot files deployment.\n"; break;;
+        [Yy]* ) argodots; break;;
+        [Nn]* ) exodots; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
