@@ -1,4 +1,4 @@
-<h1 align="center"> AlC IXH XAN </h1>
+<h1 align="center"> AΛΣ · IXH · XAN < /h1>
 
 ---
 
