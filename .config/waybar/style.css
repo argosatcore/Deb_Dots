@@ -152,8 +152,7 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+    color: #9F9F9F;
 }
 
 #temperature {
@@ -161,7 +160,7 @@ label:focus {
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+    background-color: #E01B24;
 }
 
 #tray {
