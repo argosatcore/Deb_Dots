@@ -70,7 +70,7 @@
 
 # -----Fuzzy find packages with Apt:
 	lookapt() {
-		apt-cache pkgnames | fzf --multi --color=border:#FFFFFF  --cycle --reverse --preview "apt-cache show {1}" --preview-window=:80%:wrap:hidden --bind=space:toggle-preview
+	apt search $(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF  --cycle --reverse --preview "apt-cache show {1}" --preview-window=:80%:wrap:hidden --bind=space:toggle-preview)
 	}
 
 
