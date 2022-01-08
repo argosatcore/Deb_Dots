@@ -12,13 +12,12 @@ initialize() {
 	printf " \n"
 	printf "Updating system...\n"
 	printf " \n"
-	sudo apt-get update && \
-	sudo apt-get upgrade -y
+	sudo apt update 
 }
 
 commons() {
 	printf "Installing commonly used packages...\n"
-	sudo apt-get install -y \
+	sudo apt install -y \
 		acpi-support \
 		alsa-utils \
 		bash-completion \
@@ -60,7 +59,7 @@ commons() {
 
 sidtools() {
 	printf "Installing Debian Sid related packages...\n"
-	sudo apt-get install -y \
+	sudo apt install -y \
 		apt-listbugs \
 		apt-listchanges \
 		apt-utils \
@@ -77,7 +76,7 @@ sidtools() {
 
 waytools() {
 	printf "Installing Wayland related packages...\n"
-	sudo apt-get install -y \
+	sudo apt install -y \
 		brightnessctl \
 		eog \
 		evince \
@@ -104,7 +103,7 @@ waytools() {
 
 gnome_setup_stable() {
 	printf "Installing Gnome components...\n"
-	sudo apt-get install -y \
+	sudo apt install -y \
 		gnome-core
 		gnome-shell-extension-system-monitor \
 		gnome-shell-extension-dashtodock \
@@ -117,7 +116,7 @@ gnome_setup_stable() {
 
 gnome_setup_sid() {
 	printf "Installing Gnome components...\n"
-	sudo apt-get install -y \
+	sudo apt install -y \
 		gnome-core
 	printf "Setting up Gnome...\n"
 	mkdir ~/Pictures/Wallpapers
@@ -128,7 +127,7 @@ gnome_setup_sid() {
 flathub() {
 	printf "Setting up flathub remote...\n"
 	printf " \n"
-	sudo apt-get install flatpak
+	sudo apt install flatpak
 	sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 }
 

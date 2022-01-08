@@ -16,8 +16,8 @@ fi
 printf "╔═══════════════════════════╗\n"
 printf "║ Updating Debian packages: ║\n"
 printf "╚═══════════════════════════╝\n"
-sudo apt-get update 
-sudo apt-get upgrade
+sudo apt update 
+sudo apt upgrade
 printf " \n"
 printf "╔════════════════════╗\n"
 printf "║ Updating flatpaks: ║\n"
