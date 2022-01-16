@@ -23,6 +23,7 @@ commons() {
 		bash-completion \
 		bookletimposer \
 		calcurse \
+		cups \
 		default-jdk \
 		deja-dup \
 		fd-find \
