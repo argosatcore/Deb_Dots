@@ -23,6 +23,7 @@ commons() {
 		bash-completion \
 		bookletimposer \
 		calcurse \
+		cups \
 		default-jdk \
 		deja-dup \
 		fd-find \
@@ -71,6 +72,7 @@ sidtools() {
 		inkscape \
 		reportbug-gtk \
 		scribus \
+		swaylock \
 		youtube-dl
 }
 
@@ -86,7 +88,6 @@ waytools() {
 		nautilus \
 		pavucontrol \
 		sway \
-		swaylock \
 		swayidle \
 		waybar \
 		wdisplays \
@@ -105,9 +106,6 @@ gnome_setup_stable() {
 	printf "Installing Gnome components...\n"
 	sudo apt install -y \
 		gnome-core
-		gnome-shell-extension-system-monitor \
-		gnome-shell-extension-dashtodock \
-		gnome-shell-extension-appindicator 
 	printf "Setting up Gnome...\n"
 	mkdir ~/Pictures/Wallpapers
 	cp ~/Debstrap/kh.png  ~/Pictures/Wallpapers/
