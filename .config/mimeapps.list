@@ -85,6 +85,7 @@ application/zip=blender.desktop;org.gnome.FileRoller.desktop;
 application/octet-stream=blender.desktop;
 image/jp2=org.gimp.GIMP.desktop;org.gnome.eog.desktop;
 application/x-blender=blender.desktop;
+image/gif=firefox-esr.desktop;
 
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop
