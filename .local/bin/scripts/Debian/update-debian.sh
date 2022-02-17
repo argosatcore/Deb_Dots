@@ -22,5 +22,4 @@ printf " \n"
 printf "╔════════════════════╗\n"
 printf "║ Updating flatpaks: ║\n"
 printf "╚════════════════════╝\n"
-
 flatpak update
