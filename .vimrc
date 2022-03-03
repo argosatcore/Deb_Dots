@@ -60,6 +60,7 @@
 	Plug 'arcticicestudio/nord-vim' 
 	Plug 'junegunn/goyo.vim'
 	Plug 'airblade/vim-gitgutter'
+	Plug 'vimwiki/vimwiki'
 	call plug#end()
 
 	
@@ -124,3 +125,7 @@
 
 	autocmd! User GoyoEnter nested call <SID>goyo_enter()
 	autocmd! User GoyoLeave nested call <SID>goyo_leave() 
+
+" -----Vimwiki:
+"
+	let g:vimwiki_list = [{'path': '~/vimwiki/','syntax': 'markdown', 'ext': '.md'}]
