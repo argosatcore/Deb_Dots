@@ -16,6 +16,9 @@
 	set mouse=a
 	set joinspaces
 	set incsearch
+	set ignorecase
+	set list
+	set listchars=tab:▸\ ,eol:¬
 	set nostartofline
 	set spellsuggest=10
 	set hlsearch
@@ -61,6 +64,9 @@
 	Plug 'junegunn/goyo.vim'
 	Plug 'airblade/vim-gitgutter'
 	Plug 'vimwiki/vimwiki'
+	Plug 'junegunn/fzf'
+	Plug 'junegunn/fzf.vim'
+	Plug 'michal-h21/vim-zettel'
 	call plug#end()
 
 	
@@ -128,4 +134,4 @@
 
 " -----Vimwiki:
 "
-	let g:vimwiki_list = [{'path': '~/vimwiki/','syntax': 'markdown', 'ext': '.md'}]
+	let g:vimwiki_list = [{'path': '~/Desktop/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'auto_tags':1}]
