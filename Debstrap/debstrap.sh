@@ -47,6 +47,7 @@ commons() {
 		ocrmypdf \
 		pm-utils \
 		printer-driver-escpr \
+		silversearcher-ag \
 		sqlite3 \
 		texlive-full \
 		thermald \
