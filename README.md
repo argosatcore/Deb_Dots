@@ -157,4 +157,4 @@ Since none of the existing colour palettes matched my sensibilities, I set out t
 
 This is how it looks in `foot` while running `neovim`:
 
-<img src="https://user-images.githubusercontent.com/64110504/137416133-68c2e755-4a21-4f1b-adaa-ed2f21fc32e2.png" width="60%" />
+<img src="https://user-images.githubusercontent.com/64110504/157533777-8d060cff-e4eb-40c0-a208-0ca99c68d7d9.png" width="60%" />
