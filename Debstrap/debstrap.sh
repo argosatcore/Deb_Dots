@@ -24,6 +24,7 @@ commons() {
 		bookletimposer \
 		calcurse \
 		cups \
+		citation-style-language-styles \
 		default-jdk \
 		deja-dup \
 		fd-find \
@@ -39,14 +40,17 @@ commons() {
 		librecad \
 		libreoffice \
 		libreoffice-java-common \
-		libreoffice-style-sifr \
 		lm-sensors \
 		lollypop \
 		neofetch \
 		neovim \
 		ocrmypdf \
+		pandoc \
+		pandoc-citeproc \
 		pm-utils \
 		printer-driver-escpr \
+		python3-poppler-qt5 \
+		python3-pyqt5 \
 		silversearcher-ag \
 		sqlite3 \
 		texlive-full \

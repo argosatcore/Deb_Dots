@@ -35,26 +35,26 @@
 " ------Keybindings:
 
 	"Return to normal mode:
-  	      imap fd <Esc>
-  	      vmap fd <Esc> 
+	      imap fd <Esc>
+	      vmap fd <Esc> 
 
 	"Toggle Goyo: 
-  	      nmap <Space> :Goyo <CR>
-  	      
+	      nmap <Space> :Goyo <CR>
+
 	"Vim-like movement between splits:	
-  	      nnoremap <C-h> <C-W>h
-  	      nnoremap <C-j> <C-W>j
-  	      nnoremap <C-k> <C-W>k
-  	      nnoremap <C-l> <C-W>l  
+	      nnoremap <C-h> <C-W>h
+	      nnoremap <C-j> <C-W>j
+	      nnoremap <C-k> <C-W>k
+	      nnoremap <C-l> <C-W>l  
 
 	"Primary selection and clipboard copy and paste:
-  	      vnoremap <C-c> "+y
-  	      map <C-p> "+P
-  	      vnoremap <C-c> "*y :let @+=@*<CR>
+	      vnoremap <C-c> "+y
+	      map <C-p> "+P
+	      vnoremap <C-c> "*y :let @+=@*<CR>
 
 	"Move lines when in visual mode up or down:
-  	      xnoremap K :move '<-2<CR>gv-gv
-  	      xnoremap J :move '>+1<CR>gv-gv
+	      xnoremap K :move '<-2<CR>gv-gv
+	      xnoremap J :move '>+1<CR>gv-gv
 
 
 " ------Plug-ins: 
@@ -67,11 +67,12 @@
 	Plug 'junegunn/fzf'
 	Plug 'junegunn/fzf.vim'
 	Plug 'michal-h21/vim-zettel'
+	Plug 'jalvesaq/zotcite'
 	call plug#end()
 
-	
+
 " ------Colorschemes:
-	
+
 	colorscheme nord 
 
 
@@ -132,6 +133,12 @@
 	autocmd! User GoyoEnter nested call <SID>goyo_enter()
 	autocmd! User GoyoLeave nested call <SID>goyo_leave() 
 
+
 " -----Vimwiki:
-"
+
 	let g:vimwiki_list = [{'path': '~/Desktop/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'auto_tags':1}]
+
+
+" -----Zotcite:
+
+	let zotcite_filetypes = ['markdown', 'pandoc', 'rmd', 'vimwiki']
