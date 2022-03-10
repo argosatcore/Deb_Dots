@@ -24,6 +24,7 @@ commons() {
 		bookletimposer \
 		calcurse \
 		cups \
+		citation-style-language-locales \
 		citation-style-language-styles \
 		default-jdk \
 		deja-dup \

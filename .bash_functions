@@ -79,6 +79,7 @@
 		sudo apt clean
 		sudo apt autoclean
 		sudo apt autoremove --purge 
+		flatpak uninstall --unused
 	}
 
 
