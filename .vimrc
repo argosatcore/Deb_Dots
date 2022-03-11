@@ -55,7 +55,6 @@
 		nnoremap <Down> :resize -2<CR>
 		nnoremap <Up> :resize +2<CR>
 
-
 	"Primary selection and clipboard copy and paste:
 		vnoremap <C-c> "+y
 		map <C-p> "+P
