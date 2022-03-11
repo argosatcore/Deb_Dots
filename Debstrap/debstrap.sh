@@ -35,6 +35,7 @@ commons() {
 		foot \
 		fzf \
 		git \
+		gnome-power-manager \
 		gucharmap \
 		htop \
 		intel-microcode \

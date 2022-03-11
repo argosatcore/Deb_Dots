@@ -5,56 +5,65 @@
 
 " ------Global configs:
 
-	set nocompatible   
-	set complete+=k
-	set dictionary+=/usr/share/dict/words
-	set noshowmode
-	set number relativenumber
-	set spell spelllang=es,en_us  	
-	set wildmenu
-	set autoread wildmode=longest,list,full
-	set mouse=a
-	set joinspaces
-	set incsearch
-	set ignorecase
-	set list
-	set listchars=tab:▸\ ,eol:¬
-	set nostartofline
-	set spellsuggest=10
-	set hlsearch
-	set cursorline cursorcolumn
-	set showmatch
-	set laststatus=2
-	set omnifunc=syntaxcomplete#Complete
+	filetype plugin on
 	let g:ShiftTabDefaultCompletionType = "<C-X><C-O>"
 	runtime! debian.vim
+	set autoread wildmode=longest,list,full
+	set complete+=k
+	set cursorline cursorcolumn
+	set dictionary+=/usr/share/dict/words
+	set hlsearch
+	set ignorecase
+	set incsearch
+	set joinspaces
+	set laststatus=2
+	set list
+	set listchars=tab:▸\ ,eol:¬
+	set mouse=a
+	set nocompatible
+	set noshowmode
+	set nostartofline
+	set number relativenumber
+	set omnifunc=syntaxcomplete#Complete
+	set showmatch
+	set spell spelllang=es,en_us  	
+	set spellsuggest=10
+	set splitbelow
+	set splitright
+	set wildmenu
 	syntax on
-	filetype plugin on
 
 
 " ------Keybindings:
 
 	"Return to normal mode:
-	      imap fd <Esc>
-	      vmap fd <Esc> 
+		imap fd <Esc>
+		vmap fd <Esc> 
 
 	"Toggle Goyo: 
-	      nmap <Space> :Goyo <CR>
+		nmap <Space> :Goyo <CR>
 
 	"Vim-like movement between splits:	
-	      nnoremap <C-h> <C-W>h
-	      nnoremap <C-j> <C-W>j
-	      nnoremap <C-k> <C-W>k
-	      nnoremap <C-l> <C-W>l  
+		nnoremap <C-h> <C-W>h
+		nnoremap <C-j> <C-W>j
+		nnoremap <C-k> <C-W>k
+		nnoremap <C-l> <C-W>l  
+
+	"Resize splits with arrow keys:
+		nnoremap <Left>  :vertical resize +2<CR>
+		nnoremap <Right> :vertical resize -2<CR>
+		nnoremap <Down> :resize -2<CR>
+		nnoremap <Up> :resize +2<CR>
+
 
 	"Primary selection and clipboard copy and paste:
-	      vnoremap <C-c> "+y
-	      map <C-p> "+P
-	      vnoremap <C-c> "*y :let @+=@*<CR>
+		vnoremap <C-c> "+y
+		map <C-p> "+P
+		vnoremap <C-c> "*y :let @+=@*<CR>
 
 	"Move lines when in visual mode up or down:
-	      xnoremap K :move '<-2<CR>gv-gv
-	      xnoremap J :move '>+1<CR>gv-gv
+		xnoremap K :move '<-2<CR>gv-gv
+		xnoremap J :move '>+1<CR>gv-gv
 
 
 " ------Plug-ins: 

@@ -64,13 +64,13 @@
 
 # ------Give Apt fuzzy-like package management abilities:
 	debcrawler() {
-		sudo apt update && sudo apt install $(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF --cycle --reverse --preview "apt-cache show {1}" --preview-window=:57%:wrap:hidden --bind=space:toggle-preview)
+		sudo apt update && sudo apt install $(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF --cycle --reverse --preview "apt-cache show {}" --preview-window=:57%:wrap:hidden --bind=space:toggle-preview)
 	}
 
 
 # -----Fuzzy find packages with Apt:
 	lookapt() {
-	apt search $(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF  --cycle --reverse --preview "apt-cache show {1}" --preview-window=:80%:wrap:hidden --bind=space:toggle-preview)
+	apt search $(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF  --cycle --reverse --preview "apt-cache show {}" --preview-window=:80%:wrap:hidden --bind=space:toggle-preview)
 	}
 
 
