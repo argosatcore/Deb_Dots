@@ -4,6 +4,7 @@ window-maximized=false
 window-width=600
 
 [org/gnome/Lollypop]
+auto-update=true
 dark-ui=false
 flatpak-access-migration=true
 force-single-column=false
@@ -58,6 +59,15 @@ active-view='year'
 window-maximized=true
 window-position=(0, 0)
 window-size=(1920, 1006)
+
+[org/gnome/charmap]
+font=@ms 'Hack Nerd Font 26'
+group-by='block'
+last-char=uint32 10206
+
+[org/gnome/charmap/window-state]
+maximized=false
+size=(1080, 607)
 
 [org/gnome/control-center]
 last-panel='keyboard'
@@ -168,8 +178,8 @@ xkb-options=['caps:swapescape', 'altwin:menu_win', 'lv3:ralt_switch']
 [org/gnome/desktop/interface]
 clock-format='12h'
 clock-show-weekday=true
-document-font-name='Cantarell 13'
-font-name='Cantarell 13'
+document-font-name='Cantarell 12'
+font-name='Cantarell 12'
 gtk-im-module='gtk-im-context-simple'
 gtk-theme='Adwaita'
 show-battery-percentage=true
@@ -291,7 +301,7 @@ switch-windows-backward=@as []
 
 [org/gnome/desktop/wm/preferences]
 resize-with-right-button=true
-titlebar-font='Cantarell Bold 13'
+titlebar-font='Cantarell Bold 12'
 
 [org/gnome/documents]
 window-maximized=true
@@ -308,7 +318,7 @@ document-directory=@ms 'file:///home/argos/Desktop/Operaciones_2021/4_Abstracci%
 pictures-directory=@ms 'file:///home/argos/Desktop/Operaciones_2021/4_Abstracci%C3%B3n/Universidad%20Veritas'
 
 [org/gnome/evince/default]
-window-ratio=(2.0225912013922951, 0.72812362660205021)
+window-ratio=(2.4967320261437909, 1.0795454545454546)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -371,7 +381,7 @@ active-plugins=['spell', 'filebrowser', 'sort', 'modelines', 'docinfo']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/argos/Debstrap'
+virtual-root='file:///home/argos/.local/bin/scripts/Debian'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Hack Nerd Font 14'
@@ -434,7 +444,7 @@ overlay-key='Super_L'
 restore-shortcuts=['<Alt>Escape']
 
 [org/gnome/nautilus/icon-view]
-default-zoom-level='large'
+default-zoom-level='standard'
 
 [org/gnome/nautilus/list-view]
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'recency', 'starred', 'detailed_type']
@@ -448,7 +458,7 @@ search-filter-time-type='last_modified'
 search-view='icon-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(922, 588)
+initial-size=(970, 637)
 maximized=false
 sidebar-width=227
 start-with-sidebar=true
@@ -508,7 +518,7 @@ night-light-enabled=true
 night-light-temperature=uint32 3210
 
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/']
 home=['<Super>f']
 www=['<Super>i']
 
@@ -552,6 +562,11 @@ binding='<Super>w'
 command='foot -a=wiki nvim Desktop/vimwiki/index.md'
 name='VimWiki'
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8]
+binding='<Super>x'
+command='foot -a=converter sh .local/bin/scripts/vimwiki/markdown_to_pdf.sh'
+name='Markdown_to_pdf'
+
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=true
 sleep-inactive-battery-type='suspend'
@@ -561,7 +576,7 @@ antialiasing='grayscale'
 hinting='slight'
 
 [org/gnome/shell]
-app-picker-layout=[{'c419eaf4-599c-48c3-8dfb-46797b2459e7': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'e44567bf-3f92-428f-9521-9be573e5beb8': <{'position': <2>}>, '101839c3-1a8a-43a5-9586-fea30b63bbb2': <{'position': <3>}>, '17abbebb-6979-41e2-950b-d2113cc91193': <{'position': <4>}>, 'org.gnome.Nautilus.desktop': <{'position': <5>}>, '958f5a75-6e64-43e5-afdc-800aa15e854b': <{'position': <6>}>, '6b2cdc03-1872-4eec-bb64-64718647b314': <{'position': <7>}>, '758fff78-a416-4c6f-8b48-abcd1e3aa7e6': <{'position': <8>}>, '55b9c2d6-31a6-4164-bc17-2c43e67eb937': <{'position': <9>}>, 'c27e08af-525c-4261-9391-00e47fbc04ae': <{'position': <10>}>, 'b39768c5-4193-4166-bfdb-1e62212db637': <{'position': <11>}>, '7a414dbe-eb42-4608-ac12-862f7ef55a4c': <{'position': <12>}>, '1c3da104-2d9e-47b0-8087-76183d9272a2': <{'position': <13>}>}]
+app-picker-layout=[{'c419eaf4-599c-48c3-8dfb-46797b2459e7': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'e44567bf-3f92-428f-9521-9be573e5beb8': <{'position': <2>}>, '101839c3-1a8a-43a5-9586-fea30b63bbb2': <{'position': <3>}>, '17abbebb-6979-41e2-950b-d2113cc91193': <{'position': <4>}>, 'org.gnome.Nautilus.desktop': <{'position': <5>}>, '958f5a75-6e64-43e5-afdc-800aa15e854b': <{'position': <6>}>, '6b2cdc03-1872-4eec-bb64-64718647b314': <{'position': <7>}>, '758fff78-a416-4c6f-8b48-abcd1e3aa7e6': <{'position': <8>}>, 'c27e08af-525c-4261-9391-00e47fbc04ae': <{'position': <9>}>, '55b9c2d6-31a6-4164-bc17-2c43e67eb937': <{'position': <10>}>, 'b39768c5-4193-4166-bfdb-1e62212db637': <{'position': <11>}>, '7a414dbe-eb42-4608-ac12-862f7ef55a4c': <{'position': <12>}>, '1c3da104-2d9e-47b0-8087-76183d9272a2': <{'position': <13>}>}]
 disable-user-extensions=true
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['system-monitor@paradoxxx.zero.gmail.com', 'ubuntu-appindicators@ubuntu.com', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
@@ -625,10 +640,10 @@ save-directory='file:///home/argos/Documents/'
 save-format='application/pdf'
 
 [org/gnome/software]
-check-timestamp=int64 1646689376
+check-timestamp=int64 1647018537
 first-run=false
 install-timestamp=int64 1633393044
-online-updates-timestamp=int64 1646689397
+online-updates-timestamp=int64 1646930945
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -712,8 +727,8 @@ use-theme-colors=false
 visible-name='Debby (Copy)'
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(1.0, 1.0, 1.0, 0.086274509803921567), (0.87058823529411766, 0.87058823529411766, 0.87058823529411766, 1.0), (0.10588235294117647, 0.10588235294117647, 0.10588235294117647, 1.0), (0.17254901960784313, 0.1803921568627451, 0.21176470588235294, 1.0), (0.46666666666666667, 0.46666666666666667, 0.46666666666666667, 1.0), (0.1713777777777778, 0.17949820788530466, 0.21333333333333335, 1.0), (0.20088888888888889, 0.2136200716845878, 0.26666666666666666, 1.0), (0.20828888888888891, 0.22668458781362008, 0.30333333333333334, 1.0)]
-selected-color=(true, 0.0, 0.0, 0.0, 1.0)
+custom-colors=[(0.17254901960784316, 0.1803921568627451, 0.21176470588235294, 1.0), (0.13333333333333333, 0.12156862745098039, 0.16078431372549021, 1.0), (1.0, 1.0, 1.0, 0.086274509803921567), (0.87058823529411766, 0.87058823529411766, 0.87058823529411766, 1.0), (0.10588235294117647, 0.10588235294117647, 0.10588235294117647, 1.0), (0.17254901960784313, 0.1803921568627451, 0.21176470588235294, 1.0), (0.46666666666666667, 0.46666666666666667, 0.46666666666666667, 1.0), (0.1713777777777778, 0.17949820788530466, 0.21333333333333335, 1.0)]
+selected-color=(true, 0.10588235294117647, 0.10588235294117647, 0.10588235294117647, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'

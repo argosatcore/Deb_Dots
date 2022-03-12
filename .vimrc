@@ -79,7 +79,7 @@
 	call plug#end()
 
 
-" ------Colorschemes:
+" ------Colorscheme:
 
 	colorscheme nord 
 

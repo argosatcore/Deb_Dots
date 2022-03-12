@@ -36,6 +36,8 @@
 		note="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="head -$LINES {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)"
 			if [ -n "$note" ]; then	
 			nvim "$note"
+			else
+				&>/dev/null
 			fi
 		cd
 	}
@@ -64,13 +66,24 @@
 
 # ------Give Apt fuzzy-like package management abilities:
 	debcrawler() {
-		sudo apt update && sudo apt install $(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF --cycle --reverse --preview "apt-cache show {}" --preview-window=:57%:wrap:hidden --bind=space:toggle-preview)
+		repos="$(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF  --cycle --reverse --preview "apt-cache show {}" --preview-window=:80%:wrap:hidden --bind=space:toggle-preview)"
+		if [ -n "$repos" ]; then
+		sudo apt update && sudo apt install "$repos"
+		else
+			&>/dev/null
+		fi
+
 	}
 
 
 # -----Fuzzy find packages with Apt:
 	lookapt() {
-	apt search $(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF  --cycle --reverse --preview "apt-cache show {}" --preview-window=:80%:wrap:hidden --bind=space:toggle-preview)
+		repos="$(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF  --cycle --reverse --preview "apt-cache show {}" --preview-window=:80%:wrap:hidden --bind=space:toggle-preview)"
+		if [ -n "$repos" ]; then
+		apt search "$repos"
+		else
+			&>/dev/null
+		fi
 	}
 
 
