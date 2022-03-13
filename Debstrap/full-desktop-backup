@@ -518,7 +518,7 @@ night-light-enabled=true
 night-light-temperature=uint32 3210
 
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/']
 home=['<Super>f']
 www=['<Super>i']
 
@@ -566,6 +566,11 @@ name='VimWiki'
 binding='<Super>x'
 command='foot -a=converter sh .local/bin/scripts/vimwiki/markdown_to_pdf.sh'
 name='Markdown_to_pdf'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9]
+binding='<Super>n'
+command='foot -a=note sh .local/bin/scripts/vimwiki/date.sh'
+name='Notes'
 
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=true
@@ -631,6 +636,9 @@ thermal-display=true
 thermal-sensor-file='/sys/class/hwmon/hwmon5/temp1_input'
 thermal-style='digit'
 
+[org/gnome/shell/keybindings]
+focus-active-notification=@as []
+
 [org/gnome/shell/world-clocks]
 locations=@av []
 
@@ -640,7 +648,7 @@ save-directory='file:///home/argos/Documents/'
 save-format='application/pdf'
 
 [org/gnome/software]
-check-timestamp=int64 1647018537
+check-timestamp=int64 1647122553
 first-run=false
 install-timestamp=int64 1633393044
 online-updates-timestamp=int64 1646930945
