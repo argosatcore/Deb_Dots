@@ -111,12 +111,12 @@
 
 
 #-------Update Vimwiki:
-#	vimgit() {
-#		cd $HOME/Desktop/vimwiki/
-#		git add -u
-#		git commit -m "$"
-#		git push -u
-#	}
+	vimgit() {
+		cd $HOME/Desktop/vimwiki/
+		git add -u
+		git commit -m "$1"
+		git push -u
+	}
 
 
 # ------Update Blender:
