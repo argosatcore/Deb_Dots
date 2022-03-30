@@ -109,6 +109,16 @@
 		git push -u
 	}
 
+
+#-------Update Vimwiki:
+#	vimgit() {
+#		cd $HOME/Desktop/vimwiki/
+#		git add -u
+#		git commit -m "$"
+#		git push -u
+#	}
+
+
 # ------Update Blender:
 	buildblend() {
 		cd
