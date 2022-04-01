@@ -113,7 +113,7 @@
 #-------Update Vimwiki:
 	vimgit() {
 		cd $HOME/Desktop/vimwiki/
-		git add -u
+		git add .
 		git commit -m "$1"
 		git push -u
 	}
