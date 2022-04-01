@@ -123,7 +123,7 @@
 # ------Update Blender:
 	buildblend() {
 		cd
-		cd ~/blender-git/blender
+		cd $HOME/blender-git/blender
 		make update
 		make
 	}
