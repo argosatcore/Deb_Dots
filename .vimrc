@@ -31,6 +31,12 @@
 	set splitbelow
 	set splitright
 	set wildmenu
+	set wrapmargin=0
+	set wrap
+	" Necessary order, ignore the alphabetical order for the next three lines
+	set linebreak
+	set textwidth=0
+	set display=lastline
 	syntax on
 
 
