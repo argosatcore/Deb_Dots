@@ -29,7 +29,7 @@
 	alias prc='nvim ~/.profile'
 	alias irc='nvim ~/.inputrc'
 	alias barc='nvim ~/.bash_aliases'
-	alias frc='nvim ~/.bash_functions'
+	alias frc='nvim ~/.bash_functions.sh'
 	alias wrcss='nvim .config/waybar/style.css'
 	alias wrc='nvim .config/waybar/config'
 	alias src='nvim ~/.config/sway/config'
