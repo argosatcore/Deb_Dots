@@ -162,6 +162,6 @@
 			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
 			; xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
 			else
-				&>/dev/null
+				cd ; &>/dev/null 
 			fi
 	}
