@@ -123,11 +123,11 @@
 	"Status modules:
 		set statusline=
 		set statusline+=\ \ %{toupper(g:currentmode[mode()])}\ 
-		set statusline+=%#CursorLineNr#					
+		set statusline+=%#Visual#					
 		set statusline+=%1*\ %<%F%m%r%h%w\ [%{&spelllang}\]\ 		
-		set statusline+=%#PmenuSel#				
+		set statusline+=%#Search#				
 		set statusline+=\ %y\ %{&fileencoding?&fileencoding:&encoding}\ 
-		set statusline+=%#CursorLineNr#				
+		set statusline+=%#IncSearch#				
 		set statusline+=%1*\ ln:\ %02l/%L\ (%p%%)\ [col:%c] 
 		set statusline+=%=				
 		set statusline+=%0*\ %n\ 		
