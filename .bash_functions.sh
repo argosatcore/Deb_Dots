@@ -149,6 +149,10 @@
 	}
 
 # -----Convert markdown notes into pdfs:
+# As a side note for this function, as Debian 11 uses an older version of
+# pandoc, the flag '-F pandoc-citeproc' on distributions or newer versions
+# of Debian should not be used anymore. Instead, use: '--citeproc'.
+
 	mdpdf() {
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
