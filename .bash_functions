@@ -33,7 +33,8 @@
 # ------Browse and open notes quickly:
 	fjot() {
 		cd ~/Desktop/Notes/
-		note="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="head -$LINES {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)"
+		note="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF \
+		--preview="head -$LINES {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)"
 			if [ -n "$note" ]; then	
 			nvim "$note"
 			else
@@ -45,7 +46,8 @@
 
 # ------Use fzf as a file opener:
 	fo() {
-		file="$(fdfind -t f -H | fzf --reverse --preview="head -$LINES {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)"
+		file="$(fdfind -t f -H | fzf --reverse --preview="head -$LINES {}" \
+		--bind="space:toggle-preview" --preview-window=wrap:hidden)"
 		if [ -n "$file" ]; then
 			mimetype="$(xdg-mime query filetype $file)"
 			default="$(xdg-mime query default $mimetype)"
@@ -60,13 +62,17 @@
 
 # ------Use fzf to move between directories:
 	fd() {
-		cd "$(fdfind -t d -H | fzf --cycle --reverse --color=border:#FFFFFF --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)" && clear
+		cd "$(fdfind -t d -H | fzf --cycle --reverse --color=border:#FFFFFF \
+		--preview="tree -L 1 {}" --bind="space:toggle-preview" \
+		--preview-window=wrap:hidden)" && clear
 	}
 
 
 # ------Give Apt fuzzy-like package management abilities:
 	debcrawler() {
-		repos="$(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF  --cycle --reverse --preview "apt-cache show {}" --preview-window=:80%:wrap:hidden --bind=space:toggle-preview)"
+		repos="$(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF  --cycle \
+		--reverse --preview "apt-cache show {}" --preview-window=:80%:wrap:hidden \
+		--bind=space:toggle-preview)"
 		if [ -n "$repos" ]; then
 		sudo apt update && sudo apt install "$repos"
 		else
@@ -78,7 +84,9 @@
 
 # -----Fuzzy find packages with Apt:
 	lookapt() {
-		repos="$(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF  --cycle --reverse --preview "apt-cache show {}" --preview-window=:80%:wrap:hidden --bind=space:toggle-preview)"
+		repos="$(apt-cache pkgnames | fzf --multi --color=border:#FFFFFF  --cycle \
+		--reverse --preview "apt-cache show {}" --preview-window=:80%:wrap:hidden \
+		--bind=space:toggle-preview)"
 		if [ -n "$repos" ]; then
 		apt search "$repos"
 		else
@@ -136,4 +144,25 @@
 	    [ -e "$1" ] \
 	        && printf '%s\n' "$#" \
 	        || printf '%s\n' 0
+	}
+
+# -----Convert markdown notes into pdfs:
+	mdpdf() {
+		cd $HOME/Desktop/vimwiki/
+		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
+			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
+		pdftoread="$(echo ${doc%%.*})"
+		cleanpdfname="${pdftoread##*/}"
+			if [ -n "$doc" ]; then
+			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:12pt' -V 'indent:yes' \
+			--variable monofont="Menlo" -V "geometry:margin=2.54cm" -V 'papersize:letter' \
+			-M lang:es -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
+			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl 
+			fi
+		
+		cd $HOME/Desktop/vimwiki/Pdfs/ 
+			if [ -n "$cleanpdf".pdf ]; then 
+			xdg-open "$cleanpdfname".pdf & disown ; exit 
+			fi
 	}

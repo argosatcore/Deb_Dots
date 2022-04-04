@@ -30,6 +30,10 @@
 	bind -m vi-insert "\C-k":kill-line
 
 
+# ------Function binds:
+	bind '"\C-o":"fo\n"'
+	bind '"\C-x":"mdpdf\n"'
+
 # ------If not running interactively, don't do anything:
 	case $- in
 	    *i*) ;;
