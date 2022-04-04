@@ -145,8 +145,8 @@
 	
 
 # ------Functions definitions:
-	if [ -f ~/.bash_functions ]; then
-    	. ~/.bash_functions
+	if [ -f ~/.bash_functions.sh ]; then
+    	. ~/.bash_functions.sh
 	fi
 
 
