@@ -136,7 +136,7 @@
 " ------Goyo functions: 
 
 	function! s:goyo_enter()
-	set nocursorline nocursorcolumn
+	set cursorline nocursorcolumn 
 	endfunction
 	
 	function! s:goyo_leave()
