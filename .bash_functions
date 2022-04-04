@@ -158,11 +158,9 @@
 			--variable monofont="Menlo" -V "geometry:margin=2.54cm" -V 'papersize:letter' \
 			-M lang:es -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
 			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
-			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl 
+			; xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
+			else
+				&>/dev/null
 			fi
-		
-		cd $HOME/Desktop/vimwiki/Pdfs/ 
-			if [ -n "$cleanpdf".pdf ]; then 
-			xdg-open "$cleanpdfname".pdf & disown ; exit 
-			fi
+				
 	}
