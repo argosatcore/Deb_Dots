@@ -111,37 +111,13 @@ All of which are `apt install`able on Debian _Stable_ -except for `swaylock`, wh
 | ---     | ---     | ---   | ---      |
 | `Super`+`Shift+c`: reload Sway. | `Super`+`q`: close. | `Super`+`Click1`: move window. | `Super`+`Return`: run a terminal. |
 | `Super`+`Shift`+`e`: exit Wayland session. | `Super`+`f`: fullscreen. | `Super`+`Click2`: resize window. | `Super`+`i`: run firefox. |
-| `Alt`+`Shift`+`x`: lock screen. | `Super`+`Escape`: toggle floating. Remember, `Caps Lock` now works as `Escape` and viceversa. | | `Super`+`n`: run nautilus. |
-| `Super`+`Shift`+`minus`: hide/unhide scratchpad. | `Super`+`(h,j,k,l)`: change the selection of a window in a given direction. | | `Super`+`d`: run wofi as an application launcher. |
-| `Super`+`PageUp`: switch to the next workspace. If there is no next workspace occupied, it will automatically create a new one. | `Super`+`Alt`+`(h,j,k,l)`: swap focused window with any window in a given direction. | | `Super`+`Tab`: run wofi as a window switcher. |
-| `Super`+`PageDown`: switch to the previous workspace. If there is no previously occupied workspace, it will automatically create a new one. | `Super`+`Shift`+`(h,j,k,l)`: move window in a given direction.| | `Super`+`Shift`+`q`: run wlogout. |
-| `Super`+`x`: toggle Waybar on/off. | `Super`+`w`: tab windows. | | |
-| `Super`+`Shift`+`b`: toggle window border on/off. | `Super`+`s`: stack windows. | | |
-| `Super`+`(1,2,3,4,5,6,7,8,9,0)`: Switch to workspace 1-10. | `Super`+`e`: split tabbed or stacked windows. | | |
-| `Super`+`Shitft`+`(1,2,3,4,5,6,7,8,9,0)`: Move an application to workspace 1-10. | `Alt`+`Tab`: switch focus between tiling and floating areas. | | |
-| `Super`+`Space`: Switch keyboard layout. Options are: Latin American (default) and US-International. | | | |
-
-##### Windows:
-- 
--  
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-
-##### Mouse:
-- 
-- 
-
-##### Run:
-- 
-- 
-- 
-- 
-- 
-- 
+| `Alt`+`Shift`+`x`: lock screen. | `Super`+`Escape`: toggle floating. Remember, `Caps Lock` now works as `Escape` and viceversa. | - | `Super`+`n`: run nautilus. |
+| `Super`+`Shift`+`minus`: hide/unhide scratchpad. | `Super`+`(h,j,k,l)`: change the selection of a window in a given direction. | - | `Super`+`d`: run wofi as an application launcher. |
+| `Super`+`PageUp`: switch to the next workspace. If there is no next workspace occupied, it will automatically create a new one. | `Super`+`Alt`+`(h,j,k,l)`: swap focused window with any window in a given direction. | - | `Super`+`Tab`: run wofi as a window switcher. |
+| `Super`+`PageDown`: switch to the previous workspace. If there is no previously occupied workspace, it will automatically create a new one. | `Super`+`Shift`+`(h,j,k,l)`: move window in a given direction.| - | `Super`+`Shift`+`q`: run wlogout. |
+| `Super`+`x`: toggle Waybar on/off. | `Super`+`w`: tab windows. | - | - |
+| `Super`+`Shift`+`b`: toggle window border on/off. | `Super`+`s`: stack windows. | - | - |
+| `Super`+`(1,2,3,4,5,6,7,8,9,0)`: Switch to workspace 1-10. | `Super`+`e`: split tabbed or stacked windows. | - | - |
+| `Super`+`Shitft`+`(1,2,3,4,5,6,7,8,9,0)`: Move an application to workspace 1-10. | `Alt`+`Tab`: switch focus between tiling and floating areas. | - | - |
+| `Super`+`Space`: Switch keyboard layout. Options are: Latin American (default) and US-International. | - | - | - |
 
