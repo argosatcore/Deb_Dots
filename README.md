@@ -72,7 +72,7 @@ All of which are `apt install`able on Debian _Stable_ -except for `swaylock`, wh
 | `waybar`        | Wayland native panel.                                                                 | 
 | `wdisplays`     | Wayland native graphical tool for configuring displays.                               | 
 | `wlogout`       | Wayland session menu.                                                                 |
-| `wofi`          | Wayland native application launcher, window switcher, command executor and many more. |
+| `wofi`          | Wayland native highly configurable launcher.                                          |
 
 ---
 
