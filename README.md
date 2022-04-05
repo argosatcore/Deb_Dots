@@ -91,7 +91,8 @@ All of which are `apt install`able on Debian _Stable_ -except for `swaylock`, wh
 
 ### General:
 
-| Feature | Sway | GNOME |                                                                           |
+| Feature | Sway | GNOME |    
+| --- |--- | --- |
 | **[Bash's vim mode](./.bashrc/#L20):** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt.  | Yes | Yes |
 | **[Change directories without using the `cd` command](./.bashrc/#L15):** Just type the name of the directory to move into it. | Yes | Yes |
 | **[Bash completion is no longer case sensitive](./.inputrc/#L19):** No more wasted time pressing keys to get upper case letters. | Yes | Yes |
