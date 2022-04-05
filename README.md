@@ -45,19 +45,15 @@
     
 ## Bootstrap
  
-The following steps assume that you are on a running Debian Stable or Debian Sid system. If you are running any Linux distribution other than Debian (this also includes Debian-based distributions), **make sure to double-check that the packages listed in the bootstrapping script are alvailable in your distribution's repositories, otherwise, the script _will_ fail**. It is **your responsibility to read the script** in order to know which subset of packages and/or other commands will be triggered if you accept or decline any of them. **_Never_** run a random script found on the internet without actually reading -and hopefully- understanding what it does.
- 
-1. Use`wget` to download and run the bootstrapping script called `debstrap.sh`, which is located inside the `Debstrap` directory within this repository:  
-       
-        sudo apt install wget
+The script assumes you are on a Debian Stable or Debian Sid system and has not been tested on other distributions. Depending on your distribution, the packages listed in the script may not be available or have a different name, modify the script accordingly. Otherwise, it is very likely to fail. 
+
+1. Use`wget` to download and run the bootstrapping script called `debstrap.sh`, which is located inside the `Debstrap` directory within this repository.  
         
         wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/debstrap.sh
         
-2. Deploy `debstrap.sh`:
+2. Deploy `debstrap.sh.`To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled "Debstrap Options".
 
         ./debstrap.sh
-        
-To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled "Debstrap Options" .
 
 3. Profit:
 
