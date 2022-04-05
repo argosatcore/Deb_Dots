@@ -40,7 +40,7 @@ The script assumes you are on a Debian Stable or Debian Sid system and has not b
         
         wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/debstrap.sh
 
-2.
+2. Make it executable.
 
         chmod +x debstrap.sh
         
