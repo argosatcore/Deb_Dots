@@ -162,8 +162,8 @@
 		pdftoread="$(echo ${doc%%.*})"
 		cleanpdfname="${pdftoread##*/}"
 			if [ -n "$doc" ]; then
-			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:12pt' -V 'indent:yes' \
-			--variable monofont="Menlo" -V "geometry:margin=2.54cm" -V 'papersize:letter' \
+			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
+			--variable monofont="Menlo" -V "geometry:margin=5.08cm" -V 'papersize:letter' \
 			-M lang:es -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
 			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
