@@ -93,8 +93,6 @@ All of which are `apt install`able on Debian _Stable_ -except for `swaylock`, wh
 
 ## Unexpected features you get right out of the gate
 
-### General:
-
 | Feature | Sway | GNOME |    
 | ---     | ---  | ---   |
 | **[Bash's vim mode](./.bashrc/#L21):** When in _normal_ mode, you will see a `-` at the beginning of your prompt. When in _insert_ mode, you will see a `+` at the beginning of the prompt.  | Yes | Yes |
@@ -107,9 +105,9 @@ All of which are `apt install`able on Debian _Stable_ -except for `swaylock`, wh
 | **[Alternate Keyboard layout set to Latin American](./.config/sway/config/#L99):** Unless you need to type Spanish accents, you might want to take a look at Sway's config file and chage the keyboard layout to your preferred one. Us-International is set as a second option and can be toggled by pressing `Super`+`Space`. | Yes | Yes |
 | **[Gapless single client](./.config/sway/config/#L344):** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated. | Yes | No |
 
-### Sway-specific:
+## Sway-specific:
 
-#### Sway Keybindings:
+### Sway Keybindings:
 
 | Session | Windows | Mouse | Programs |
 | ---     | ---     | ---   | ---      |
