@@ -44,7 +44,7 @@ The script assumes you are on a Debian Stable or Debian Sid system and has not b
 
         chmod +x debstrap.sh
         
-3. Deploy `debstrap.sh.`To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled "Debstrap Options".
+3. Deploy `debstrap.sh.`To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled ["Debstrap Options"](./Desbstrap/debstrap.sh/#L228).
 
         ./debstrap.sh
 
