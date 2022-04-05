@@ -39,12 +39,16 @@ The script assumes you are on a Debian Stable or Debian Sid system and has not b
 1. Use`wget` to download and run the bootstrapping script called `debstrap.sh`, which is located inside the `Debstrap` directory within this repository.  
         
         wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/debstrap.sh
+
+2.
+
+        chmod +x debstrap.sh
         
-2. Deploy `debstrap.sh.`To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled "Debstrap Options".
+3. Deploy `debstrap.sh.`To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled "Debstrap Options".
 
         ./debstrap.sh
 
-3. Profit:
+4. Profit:
 
 | Sway | GNOME |
 | ---  | ---   |   
