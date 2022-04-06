@@ -31,6 +31,12 @@
 	set splitbelow
 	set splitright
 	set wildmenu
+	set wrapmargin=0
+	set wrap
+	" Necessary order, ignore the alphabetical order for the next three lines
+	set linebreak
+	set textwidth=0
+	set display=lastline
 	syntax on
 
 
@@ -117,11 +123,11 @@
 	"Status modules:
 		set statusline=
 		set statusline+=\ \ %{toupper(g:currentmode[mode()])}\ 
-		set statusline+=%#CursorLineNr#					
+		set statusline+=%#Visual#					
 		set statusline+=%1*\ %<%F%m%r%h%w\ [%{&spelllang}\]\ 		
-		set statusline+=%#PmenuSel#				
+		set statusline+=%#Search#				
 		set statusline+=\ %y\ %{&fileencoding?&fileencoding:&encoding}\ 
-		set statusline+=%#CursorLineNr#				
+		set statusline+=%#IncSearch#				
 		set statusline+=%1*\ ln:\ %02l/%L\ (%p%%)\ [col:%c] 
 		set statusline+=%=				
 		set statusline+=%0*\ %n\ 		
@@ -130,7 +136,7 @@
 " ------Goyo functions: 
 
 	function! s:goyo_enter()
-	set nocursorline nocursorcolumn
+	set cursorline nocursorcolumn 
 	endfunction
 	
 	function! s:goyo_leave()

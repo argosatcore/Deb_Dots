@@ -53,10 +53,10 @@
 
 	# Wofi as a power menu:
 	# bindsym $mod+Shift+q exec bash .local/bin/scripts/wofi/poweroffreboot
-	
+
 	# Use wlogout as a session menu:
 	bindsym $mod+Shift+q exec wlogout 
-	
+
 
 #--------------------
 #-- Set wallpaper: --

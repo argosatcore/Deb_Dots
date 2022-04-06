@@ -1,3 +1,7 @@
+[org/freedesktop/tracker/miner/files]
+index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&PICTURES', '&VIDEOS']
+index-single-directories=['&DOWNLOAD']
+
 [org/gnome/2048]
 window-height=600
 window-maximized=false
@@ -70,7 +74,7 @@ maximized=false
 size=(1080, 607)
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='power'
 
 [org/gnome/deja-dup]
 backend='drive'
@@ -318,7 +322,7 @@ document-directory=@ms 'file:///home/argos/Desktop/Operaciones_2021/4_Abstracci%
 pictures-directory=@ms 'file:///home/argos/Desktop/Operaciones_2021/4_Abstracci%C3%B3n/Universidad%20Veritas'
 
 [org/gnome/evince/default]
-window-ratio=(2.4967320261437909, 1.0795454545454546)
+window-ratio=(2.6203703703703702, 1.1790123456790123)
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -381,11 +385,11 @@ active-plugins=['spell', 'filebrowser', 'sort', 'modelines', 'docinfo']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/argos/.local/bin/scripts/Debian'
+virtual-root='file:///home/argos/Debstrap'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Hack Nerd Font 14'
-scheme='oblivion'
+scheme='classic'
 use-default-font=false
 wrap-last-split-mode='word'
 
@@ -399,7 +403,7 @@ open-recent=false
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(721, 687)
+size=(823, 784)
 state=87168
 
 [org/gnome/gnome-screenshot]
@@ -443,6 +447,9 @@ overlay-key='Super_L'
 [org/gnome/mutter/wayland/keybindings]
 restore-shortcuts=['<Alt>Escape']
 
+[org/gnome/nautilus/compression]
+default-compression-format='zip'
+
 [org/gnome/nautilus/icon-view]
 default-zoom-level='standard'
 
@@ -458,7 +465,7 @@ search-filter-time-type='last_modified'
 search-view='icon-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(970, 637)
+initial-size=(970, 639)
 maximized=false
 sidebar-width=227
 start-with-sidebar=true
@@ -648,10 +655,10 @@ save-directory='file:///home/argos/Documents/'
 save-format='application/pdf'
 
 [org/gnome/software]
-check-timestamp=int64 1647122553
+check-timestamp=int64 1649019179
 first-run=false
 install-timestamp=int64 1633393044
-online-updates-timestamp=int64 1646930945
+online-updates-timestamp=int64 1648842709
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -663,8 +670,8 @@ width=800
 enabled=false
 
 [org/gnome/terminal/legacy/profiles:]
-default='676e63be-5d38-4625-9629-d4bba4f78905'
-list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '97f283fe-a5f2-43e8-b211-2167a0b6791f', '20ffb462-23e2-4b52-826b-2132096fb015', '676e63be-5d38-4625-9629-d4bba4f78905', '69abc0e8-6b75-487b-af69-4f0dcc82ad36', 'b89d7d4a-8e6c-4162-b384-9705198a0695']
+default='ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '97f283fe-a5f2-43e8-b211-2167a0b6791f', '20ffb462-23e2-4b52-826b-2132096fb015', '676e63be-5d38-4625-9629-d4bba4f78905', '69abc0e8-6b75-487b-af69-4f0dcc82ad36', 'b89d7d4a-8e6c-4162-b384-9705198a0695', 'ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee']
 
 [org/gnome/terminal/legacy/profiles:/:20ffb462-23e2-4b52-826b-2132096fb015]
 background-color='rgb(23,20,33)'
@@ -734,9 +741,22 @@ use-system-font=false
 use-theme-colors=false
 visible-name='Debby (Copy)'
 
+[org/gnome/terminal/legacy/profiles:/:ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee]
+background-color='rgb(38,50,56)'
+bold-is-bright=true
+font='Hack Nerd Font 14'
+foreground-color='rgb(236,239,241)'
+highlight-background-color='rgb(96,125,139)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(236,239,241)'
+palette=['rgb(84,110,122)', 'rgb(255,82,82)', 'rgb(92,241,158)', 'rgb(255,215,64)', 'rgb(64,196,255)', 'rgb(255,64,129)', 'rgb(100,252,218)', 'rgb(255,255,255)', 'rgb(176,190,197)', 'rgb(255,138,128)', 'rgb(185,246,202)', 'rgb(255,229,127)', 'rgb(128,216,255)', 'rgb(192,97,203)', 'rgb(167,253,235)', 'rgb(255,255,255)']
+use-system-font=false
+use-theme-colors=false
+visible-name='Material-Design'
+
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.17254901960784316, 0.1803921568627451, 0.21176470588235294, 1.0), (0.13333333333333333, 0.12156862745098039, 0.16078431372549021, 1.0), (1.0, 1.0, 1.0, 0.086274509803921567), (0.87058823529411766, 0.87058823529411766, 0.87058823529411766, 1.0), (0.10588235294117647, 0.10588235294117647, 0.10588235294117647, 1.0), (0.17254901960784313, 0.1803921568627451, 0.21176470588235294, 1.0), (0.46666666666666667, 0.46666666666666667, 0.46666666666666667, 1.0), (0.1713777777777778, 0.17949820788530466, 0.21333333333333335, 1.0)]
-selected-color=(true, 0.10588235294117647, 0.10588235294117647, 0.10588235294117647, 1.0)
+custom-colors=[(0.65490196078431373, 0.99215686274509807, 0.92156862745098023, 1.0), (0.20000000000000001, 0.7803921568627451, 0.87058823529411766, 1.0), (0.75294117647058822, 0.38039215686274502, 0.79607843137254897, 1.0), (0.50196078431372548, 0.84705882352941164, 1.0, 1.0), (0.16470588235294117, 0.4823529411764706, 0.87058823529411766, 1.0), (1.0, 0.89803921568627454, 0.49803921568627452, 1.0), (0.9137254901960784, 0.67843137254901964, 0.047058823529411764, 1.0), (0.72549019607843135, 0.96470588235294119, 0.79215686274509811, 1.0)]
+selected-color=(true, 1.0, 1.0, 1.0, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
@@ -748,7 +768,7 @@ show-type-column=true
 sidebar-width=178
 sort-column='name'
 sort-directories-first=true
-sort-order='ascending'
+sort-order='descending'
 type-format='category'
 window-position=(26, 23)
 window-size=(1444, 1006)

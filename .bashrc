@@ -11,7 +11,7 @@
 #	export BROWSER='firefox'
 #	export MOZ_ENABLE_WAYLAND=1
 #	export TERM='foot'
-	#export TERM='xterm-256color'
+#	export TERM='xterm-256color'
 #	export PATH=$PATH:$HOME/bin:$HOME/.local/bin/scripts/wofi/:/usr/local/sbin
 	shopt -s cdspell
 	shopt -s autocd
@@ -29,6 +29,10 @@
 	bind -m vi-insert "\C-h":backward-kill-word
 	bind -m vi-insert "\C-k":kill-line
 
+
+# ------Function binds:
+	bind '"\C-o":"fo\n"'
+	bind '"\C-x":"mdpdf\n"'
 
 # ------If not running interactively, don't do anything:
 	case $- in
@@ -141,8 +145,8 @@
 	
 
 # ------Functions definitions:
-	if [ -f ~/.bash_functions ]; then
-    	. ~/.bash_functions
+	if [ -f ~/.bash_functions.sh ]; then
+    	. ~/.bash_functions.sh
 	fi
 
 
