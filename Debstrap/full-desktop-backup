@@ -74,7 +74,7 @@ maximized=false
 size=(1080, 607)
 
 [org/gnome/control-center]
-last-panel='power'
+last-panel='keyboard'
 
 [org/gnome/deja-dup]
 backend='drive'
@@ -319,10 +319,21 @@ use-background-color=true
 
 [org/gnome/evince]
 document-directory=@ms 'file:///home/argos/Desktop/Operaciones_2021/4_Abstracci%C3%B3n/Solicitudes%20de%20derechos%20de%20im%C3%A1genes/Disco%20de%20piedra%20de%20Eynan'
-pictures-directory=@ms 'file:///home/argos/Desktop/Operaciones_2021/4_Abstracci%C3%B3n/Universidad%20Veritas'
+pictures-directory=@ms 'file:///home/argos/Desktop'
 
 [org/gnome/evince/default]
-window-ratio=(2.6203703703703702, 1.1790123456790123)
+continuous=true
+dual-page=false
+dual-page-odd-left=false
+enable-spellchecking=true
+fullscreen=false
+inverted-colors=false
+show-sidebar=true
+sidebar-page='thumbnails'
+sidebar-size=132
+sizing-mode='free'
+window-ratio=(1.3169934640522876, 1.143939393939394)
+zoom=1.4399999999999995
 
 [org/gnome/evolution-data-server]
 migrated=true
@@ -385,7 +396,7 @@ active-plugins=['spell', 'filebrowser', 'sort', 'modelines', 'docinfo']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/argos/Debstrap'
+virtual-root='file:///home/argos/Desktop/Proyectos%20Personales/LaTeX/LaTeX/Transcripci%C3%B3n/Burkhardt,Jacob_%20La%20Cultura%20del%20Renacimiento%20en%20Italia'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Hack Nerd Font 14'
@@ -403,7 +414,7 @@ open-recent=false
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(823, 784)
+size=(1255, 830)
 state=87168
 
 [org/gnome/gnome-screenshot]
@@ -525,8 +536,14 @@ night-light-enabled=true
 night-light-temperature=uint32 3210
 
 [org/gnome/settings-daemon/plugins/media-keys]
+area-screenshot=['<Shift><Super>s']
+area-screenshot-clip=['<Primary><Shift><Super>s']
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/']
 home=['<Super>f']
+screenshot=['<Super>s']
+screenshot-clip=['<Primary><Super>s']
+window-screenshot=['<Super>ssharp']
+window-screenshot-clip=['<Primary><Super>ssharp']
 www=['<Super>i']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
@@ -645,6 +662,7 @@ thermal-style='digit'
 
 [org/gnome/shell/keybindings]
 focus-active-notification=@as []
+toggle-overview=@as []
 
 [org/gnome/shell/world-clocks]
 locations=@av []
@@ -655,10 +673,10 @@ save-directory='file:///home/argos/Documents/'
 save-format='application/pdf'
 
 [org/gnome/software]
-check-timestamp=int64 1649019179
+check-timestamp=int64 1649623178
 first-run=false
 install-timestamp=int64 1633393044
-online-updates-timestamp=int64 1648842709
+online-updates-timestamp=int64 1649623190
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -755,8 +773,8 @@ use-theme-colors=false
 visible-name='Material-Design'
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.65490196078431373, 0.99215686274509807, 0.92156862745098023, 1.0), (0.20000000000000001, 0.7803921568627451, 0.87058823529411766, 1.0), (0.75294117647058822, 0.38039215686274502, 0.79607843137254897, 1.0), (0.50196078431372548, 0.84705882352941164, 1.0, 1.0), (0.16470588235294117, 0.4823529411764706, 0.87058823529411766, 1.0), (1.0, 0.89803921568627454, 0.49803921568627452, 1.0), (0.9137254901960784, 0.67843137254901964, 0.047058823529411764, 1.0), (0.72549019607843135, 0.96470588235294119, 0.79215686274509811, 1.0)]
-selected-color=(true, 1.0, 1.0, 1.0, 1.0)
+custom-colors=[(1.0, 0.32156862745098042, 0.32156862745098042, 1.0), (0.69019607843137254, 0.74509803921568629, 0.77254901960784317, 1.0), (0.14901960784313725, 0.19607843137254902, 0.2196078431372549, 1.0), (0.65490196078431373, 0.99215686274509807, 0.92156862745098023, 1.0), (0.20000000000000001, 0.7803921568627451, 0.87058823529411766, 1.0), (0.75294117647058822, 0.38039215686274502, 0.79607843137254897, 1.0), (0.50196078431372548, 0.84705882352941164, 1.0, 1.0), (0.16470588235294117, 0.4823529411764706, 0.87058823529411766, 1.0)]
+selected-color=(true, 1.0, 0.32156862745098042, 0.32156862745098042, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
