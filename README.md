@@ -29,6 +29,8 @@
  
  0. The use of the [Debian GNU/Linux Operating System](https://www.debian.org/), either Debian _Stable_ or Debian [Sid](https://wiki.debian.org/DebianUnstable) :skull:.
  1. The implementation of the [Wayland protocol](https://wayland.freedesktop.org/) through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor or through the [GNOME](https://www.gnome.org/) desktop environment. 
+
+![Debianelitism](https://user-images.githubusercontent.com/64110504/162901499-42a2b712-ffeb-4d29-9123-d7bfdb30dfb3.jpg)
        
  ---
     
