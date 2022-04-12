@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/argos/Desktop/vimwiki'
+let g:netrw_dirhist_9='/home/argos/Desktop'
 let g:netrw_dirhist_8='/home/argos/Desktop/vimwiki'
 let g:netrw_dirhist_7='/home/argos/Documents/Conner_McDaniel_dotfiles/Dotfiles'
 let g:netrw_dirhist_6='/home/argos/Documents/Conner_McDaniel_dotfiles'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_4='/home/argos/Desktop/vimwiki/Notas'
 let g:netrw_dirhist_3='/home/argos/Desktop/vimwiki/Bibliografía'
 let g:netrw_dirhist_2='/home/argos/Desktop/vimwiki'
 let g:netrw_dirhist_1='/home/argos/Desktop/vimwiki/Notas'
-let g:netrw_dirhist_0='/etc/apt/sources.list.d'
-let g:netrw_dirhist_9='/home/argos/Desktop/Notes'
