@@ -28,9 +28,10 @@
  The purpose of this repository is to contain the bare minimum of what is necessary to quickly bootstrap my current sensibilities on a Linux system. At its core, there are two assumptions: 
  
  0. The use of the [Debian GNU/Linux Operating System](https://www.debian.org/), either Debian _Stable_ or Debian [Sid](https://wiki.debian.org/DebianUnstable) :skull:.
- 1. The implementation of the [Wayland protocol](https://wayland.freedesktop.org/) through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor or through the [GNOME](https://www.gnome.org/) desktop environment. 
 
 ![Debianelitism](https://user-images.githubusercontent.com/64110504/162901499-42a2b712-ffeb-4d29-9123-d7bfdb30dfb3.jpg)
+
+ 1. The implementation of the [Wayland protocol](https://wayland.freedesktop.org/) through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor or through the [GNOME](https://www.gnome.org/) desktop environment. 
        
  ---
     
