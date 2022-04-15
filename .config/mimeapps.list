@@ -87,6 +87,7 @@ image/jp2=org.gimp.GIMP.desktop;org.gnome.eog.desktop;
 application/x-blender=blender.desktop;
 image/gif=firefox-esr.desktop;
 application/xhtml+xml=org.gnome.gedit.desktop;
+application/vnd.iccprofile=org.gnome.gedit.desktop;
 
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop

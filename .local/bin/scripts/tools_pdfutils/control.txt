@@ -1,0 +1,3 @@
+Image_RGB   apple_to_jNP_photo.icc       0   1   0
+Graphic_RGB apple_to_jNP_neutrals.icc    0   1   0
+Text_RGB    apple_to_jNP_neutrals.icc    0   1   0

@@ -38,12 +38,14 @@ commons() {
 		gnome-power-manager \
 		gucharmap \
 		htop \
+		icc-profiles \
 		intel-microcode \
 		librecad \
 		libreoffice \
 		libreoffice-java-common \
 		lm-sensors \
 		lollypop \
+		mupdf-tools \
 		neofetch \
 		neovim \
 		ocrmypdf \
