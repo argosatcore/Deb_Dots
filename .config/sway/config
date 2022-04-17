@@ -52,7 +52,7 @@
 	bindsym $mod+Shift+e exec swaynag -t warning -m 'End Wayland session?' -b 'Yes.' 'swaymsg exit'
 
 	# Wofi as a power menu:
-	# bindsym $mod+Shift+q exec bash .local/bin/scripts/wofi/poweroffreboot
+	# bindsym $mod+Shift+q exec bash .local/bin//poweroffreboot
 
 	# Use wlogout as a session menu:
 	bindsym $mod+Shift+q exec wlogout 
@@ -141,10 +141,10 @@
 	bindsym Ctrl+Print	exec grimshot --notify save window
 
 	# Window selector:
-	bindsym $mod+Tab exec ~/.local/bin/scripts/wofi/window_selector.sh 
+	bindsym $mod+Tab exec ~/.local/bin/window_selector.sh 
 
 	#Fuzzy find bookmarks
-	bindsym $mod+u exec $term -a=bookmark sh .local/bin/scripts/fzf/fuzzybook.sh
+	bindsym $mod+u exec $term -a=bookmark sh .local/bin/fuzzybook.sh
 
 
 #--------------------

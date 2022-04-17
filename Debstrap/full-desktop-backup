@@ -12,6 +12,7 @@ auto-update=true
 dark-ui=false
 flatpak-access-migration=true
 force-single-column=false
+import-advanced-artist-tags=false
 music-uris=['file:///home/argos/Music']
 network-access=true
 network-access-acl=1048572
@@ -20,8 +21,8 @@ repeat='none'
 shown-album-lists=[-2, -3, -4, -5, -8, -9, -10, -11, -13, -16, -101, -102, -103, -99]
 volume-rate=1.0
 web-search='SPOTIFY'
-window-maximized=false
-window-position=[26, 23]
+window-maximized=true
+window-position=[0, 0]
 window-size=[962, 859]
 
 [org/gnome/Mines]
@@ -183,6 +184,7 @@ xkb-options=['caps:swapescape', 'altwin:menu_win', 'lv3:ralt_switch']
 clock-format='12h'
 clock-show-weekday=true
 document-font-name='Cantarell 12'
+enable-hot-corners=true
 font-name='Cantarell 12'
 gtk-im-module='gtk-im-context-simple'
 gtk-theme='Adwaita'
@@ -190,7 +192,7 @@ show-battery-percentage=true
 text-scaling-factor=1.0
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-software', 'firefox-esr', 'org-gnome-lollypop', 'org-gnome-nautilus', 'gnome-power-panel', 'org-zotero-zotero', 'gnome-printers-panel', 'org-gnome-evince', 'org-inkscape-inkscape', 'libreoffice-writer', 'org-gnome-dejadup', 'org-gimp-gimp', 'org-mozilla-firefox', 'libreoffice-draw', 'org-kde-krita']
+application-children=['org-gnome-software', 'firefox-esr', 'org-gnome-lollypop', 'org-gnome-nautilus', 'gnome-power-panel', 'org-zotero-zotero', 'gnome-printers-panel', 'org-gnome-evince', 'org-inkscape-inkscape', 'libreoffice-writer', 'org-gnome-dejadup', 'org-gimp-gimp', 'org-mozilla-firefox', 'libreoffice-draw', 'org-kde-krita', 'net-scribus-scribus', 'org-gnome-gedit']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/firefox-esr]
@@ -208,6 +210,9 @@ application-id='libreoffice-draw.desktop'
 [org/gnome/desktop/notifications/application/libreoffice-writer]
 application-id='libreoffice-writer.desktop'
 
+[org/gnome/desktop/notifications/application/net-scribus-scribus]
+application-id='net.scribus.Scribus.desktop'
+
 [org/gnome/desktop/notifications/application/org-gimp-gimp]
 application-id='org.gimp.GIMP.desktop'
 
@@ -216,6 +221,9 @@ application-id='org.gnome.DejaDup.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-evince]
 application-id='org.gnome.Evince.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-gedit]
+application-id='org.gnome.gedit.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-lollypop]
 application-id='org.gnome.Lollypop.desktop'
@@ -247,6 +255,7 @@ repeat-interval=uint32 20
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='adaptive'
 left-handed=true
+natural-scroll=false
 speed=1.0
 
 [org/gnome/desktop/peripherals/stylus/default-056a:00de]
@@ -332,7 +341,7 @@ show-sidebar=true
 sidebar-page='thumbnails'
 sidebar-size=132
 sizing-mode='free'
-window-ratio=(1.3169934640522876, 1.143939393939394)
+window-ratio=(1.9052287581699345, 1.0795454545454546)
 zoom=1.4399999999999995
 
 [org/gnome/evolution-data-server]
@@ -387,7 +396,7 @@ sort-type='ascending'
 
 [org/gnome/file-roller/ui]
 sidebar-width=200
-window-height=480
+window-height=498
 window-width=600
 
 [org/gnome/gedit/plugins]
@@ -396,7 +405,7 @@ active-plugins=['spell', 'filebrowser', 'sort', 'modelines', 'docinfo']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/argos/Desktop/Proyectos%20Personales/LaTeX/LaTeX/Transcripci%C3%B3n/Burkhardt,Jacob_%20La%20Cultura%20del%20Renacimiento%20en%20Italia'
+virtual-root='file:///home/argos/.local/bin'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Hack Nerd Font 14'
@@ -414,7 +423,7 @@ open-recent=false
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(1255, 830)
+size=(1266, 672)
 state=87168
 
 [org/gnome/gnome-screenshot]
@@ -476,7 +485,7 @@ search-filter-time-type='last_modified'
 search-view='icon-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(970, 639)
+initial-size=(1116, 621)
 maximized=false
 sidebar-width=227
 start-with-sidebar=true
@@ -538,7 +547,7 @@ night-light-temperature=uint32 3210
 [org/gnome/settings-daemon/plugins/media-keys]
 area-screenshot=['<Shift><Super>s']
 area-screenshot-clip=['<Primary><Shift><Super>s']
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/']
 home=['<Super>f']
 screenshot=['<Super>s']
 screenshot-clip=['<Primary><Super>s']
@@ -553,12 +562,12 @@ name='Foot'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Shift><Super>u'
-command='foot -a=bookmark sh .local/bin/scripts/fzf/flatfuzzybook.sh'
+command='foot -a=bookmark sh .local/bin/flatfuzzybook.sh'
 name='Flatbookmarks'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
 binding='<Shift><Super>g'
-command='gnome-terminal  -- sh .local/bin/scripts/fzf/fuzzybook.sh'
+command='gnome-terminal  -- sh .local/bin/fuzzybook.sh'
 name='Gnome-terminal bookmarks'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
@@ -578,7 +587,7 @@ name='Blender-git'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6]
 binding='<Super>u'
-command='foot -a=bookmark sh .local/bin/scripts/fzf/fuzzybook.sh'
+command='foot -a=bookmark sh .local/bin/fuzzybook.sh'
 name='Bookmarks'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7]
@@ -586,14 +595,9 @@ binding='<Super>w'
 command='foot -a=wiki nvim Desktop/vimwiki/index.md'
 name='VimWiki'
 
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8]
-binding='<Super>x'
-command='foot -a=converter sh .local/bin/scripts/vimwiki/markdown_to_pdf.sh'
-name='Markdown_to_pdf'
-
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9]
 binding='<Super>n'
-command='foot -a=note sh .local/bin/scripts/vimwiki/date.sh'
+command='foot -a=note sh .local/bin/date.sh'
 name='Notes'
 
 [org/gnome/settings-daemon/plugins/power]
@@ -673,10 +677,10 @@ save-directory='file:///home/argos/Documents/'
 save-format='application/pdf'
 
 [org/gnome/software]
-check-timestamp=int64 1649623178
+check-timestamp=int64 1650141920
 first-run=false
 install-timestamp=int64 1633393044
-online-updates-timestamp=int64 1649623190
+online-updates-timestamp=int64 1649870455
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -774,13 +778,13 @@ visible-name='Material-Design'
 
 [org/gtk/settings/color-chooser]
 custom-colors=[(1.0, 0.32156862745098042, 0.32156862745098042, 1.0), (0.69019607843137254, 0.74509803921568629, 0.77254901960784317, 1.0), (0.14901960784313725, 0.19607843137254902, 0.2196078431372549, 1.0), (0.65490196078431373, 0.99215686274509807, 0.92156862745098023, 1.0), (0.20000000000000001, 0.7803921568627451, 0.87058823529411766, 1.0), (0.75294117647058822, 0.38039215686274502, 0.79607843137254897, 1.0), (0.50196078431372548, 0.84705882352941164, 1.0, 1.0), (0.16470588235294117, 0.4823529411764706, 0.87058823529411766, 1.0)]
-selected-color=(true, 1.0, 0.32156862745098042, 0.32156862745098042, 1.0)
+selected-color=(true, 0.0, 0.0, 0.0, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
 date-format='regular'
 location-mode='path-bar'
-show-hidden=false
+show-hidden=true
 show-size-column=true
 show-type-column=true
 sidebar-width=178

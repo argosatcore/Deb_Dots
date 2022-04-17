@@ -70,8 +70,8 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-wifi": " ({signalStrength}%) ",
-	"on-scroll-up":"bash .local/bin/scripts/wofi/netcon",
-	"on-scroll-down":" bash .local/bin/scripts/wofi/netdiscon",
+	"on-scroll-up":"bash .local/bin/netcon",
+	"on-scroll-down":" bash .local/bin/netdiscon",
         "on-click-right": "foot nmtui",
         "tooltip": false
     },
@@ -99,7 +99,7 @@
         "format": "{}",
         "interval": 60,
         "exec": "date +'%Y-%m-%d %l:%M %p'",
-        "on-click": "dash .local/bin/scripts/mako/cal.sh",
+        "on-click": "dash .local/bin/cal.sh",
 	"on-click-right": "foot calcurse",
         "tooltip": false
     },
