@@ -41,7 +41,7 @@
 	alias c='clear'
 	alias configheader='toilet -f pagga'
 	alias fp='ps aux | fzf'
-	alias lg='bash ~/.local/bin/scripts/lsix/lsix'
+	alias lg='bash ~/.local/bin//lsix'
 	alias ytopus='youtube-dl --add-metadata -i -x -f bestaudio/best'
 	alias gnomebu='dconf dump / > ~/Debstrap/full-desktop-backup'
 	alias gnomelb='dconf load / < ~/Debstrap/full-desktop-backup'
@@ -56,8 +56,8 @@
 	alias throwapt='sudo apt remove'
 	alias capture='sudo apt install'
 	alias debcount='apt-cache search "" | wc -l'
-	alias debup='bash .local/bin/scripts/Debian/update-debian.sh'
-	alias sidup='bash .local/bin/scripts/Debian/update-sid.sh'
+	alias debup='bash .local/bin/update-debian.sh'
+	alias sidup='bash .local/bin/update-sid.sh'
 
 
 	#Systemd:
