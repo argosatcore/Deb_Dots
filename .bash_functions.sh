@@ -46,14 +46,14 @@
 	}
 
 
-# ------Use fzf as a script opener:
+# ------Use fzf as a script editor:
 	fsh() {
-		cd $HOME/.local/bin/scripts/ 
+		cd $HOME/.local/bin/
 		script="$(fdfind -t f -H | fzf --cycle --reverse --color=border:#FFFFFF \
-		--preview="head -$LNIES {}" --bind="space:toggle-preview" \
+		--preview="head -$LINES {}" --bind="space:toggle-preview" \
 		--preview-window=wrap:hidden)"
 			if [ -n "$script" ]; then
-			sh "$script"
+			nvim "$script"
 			else
 				&>/dev/null
 			fi
