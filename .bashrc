@@ -33,6 +33,8 @@
 # ------Function binds:
 	bind '"\C-o":"fo\n"'
 	bind '"\C-x":"mdpdf\n"'
+	bind '"\C-b":"fsh\n"'
+
 
 # ------If not running interactively, don't do anything:
 	case $- in

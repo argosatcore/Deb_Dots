@@ -49,6 +49,7 @@ commons() {
 		neofetch \
 		neovim \
 		ocrmypdf \
+		opus-tools \
 		pandoc \
 		pandoc-citeproc \
 		pm-utils \

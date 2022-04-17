@@ -37,8 +37,23 @@
 		cd ~/Desktop/Notes/
 		note="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF \
 		--preview="head -$LINES {}" --bind="space:toggle-preview" --preview-window=wrap:hidden)"
-			if [ -n "$note" ]; then	
+			if [ -n "$note" ]; then
 			nvim "$note"
+			else
+				&>/dev/null
+			fi
+		cd
+	}
+
+
+# ------Use fzf as a script opener:
+	fsh() {
+		cd $HOME/.local/bin/scripts/ 
+		script="$(fdfind -t f -H | fzf --cycle --reverse --color=border:#FFFFFF \
+		--preview="head -$LNIES {}" --bind="space:toggle-preview" \
+		--preview-window=wrap:hidden)"
+			if [ -n "$script" ]; then
+			sh "$script"
 			else
 				&>/dev/null
 			fi

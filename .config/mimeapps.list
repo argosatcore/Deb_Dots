@@ -88,6 +88,7 @@ application/x-blender=blender.desktop;
 image/gif=firefox-esr.desktop;
 application/xhtml+xml=org.gnome.gedit.desktop;
 application/vnd.iccprofile=org.gnome.gedit.desktop;
+application/vnd.appimage=org.gnome.gedit.desktop;
 
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop

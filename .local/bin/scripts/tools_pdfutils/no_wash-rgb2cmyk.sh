@@ -17,6 +17,7 @@ op=$2
 pdftops ${bn}.pdf
 
 gs \
+-dSAFER \
 -dNOPAUSE \
 -dBATCH \
 -sDEVICE=pdfwrite \
