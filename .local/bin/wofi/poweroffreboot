@@ -1,0 +1,9 @@
+#!/bin/sh
+
+CHOICE=$(printf '%s\n' "Shutdown" "Reboot" | wofi -d -p "Power Menu" -W20% -L2 -x548 -y200)
+
+case "$CHOICE" in 
+	Shutdown) systemctl poweroff ;;
+	Reboot) systemctl reboot ;;
+esac
+		

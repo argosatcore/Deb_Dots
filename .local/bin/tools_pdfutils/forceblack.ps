@@ -1,0 +1,22 @@
+%!
+/sys_setcolorspace /setcolorspace load def
+/sys_setcolor /setcolor load def
+userdict/is_rgb false put
+/setcolorspace
+{
+	sys_setcolorspace
+	currentcolorspace 0 get /DeviceRGB eq
+	userdict/is_rgb 3 -1 roll put
+}bind def
+/setcolor
+{
+	userdict/is_rgb get not
+	{sys_setcolor}
+	{
+		3 copy
+		2 copy eq 4 1 roll eq exch pop and
+		{setgray pop pop (!\n)print flush}
+		{/DeviceRGB sys_setcolorspace sys_setcolor}ifelse
+	}ifelse
+}bind def
+%

@@ -1,0 +1,39 @@
+%!Convert from DeviceGray to custom spot color
+%Here we override two ps functions: setcolorspace and setcolor
+%works with ps files made with pdftops (because pdftops generates ps files that use the two functions)
+%won't work with ps files made with gs ps2write (because gs generates ps files that use setrgbcolor, setcmykcolor ans setgray)
+%bitmap images will be colour inverted. Change /Decode [0 1] to /Decode [1 0] in the source ps file to fix the issue
+
+%spotcolor begin
+/spotcolor [/Separation (PANTONE 705 U) /DeviceCMYK{dup 0.9 mul exch dup 0.1 mul exch dup 0.5 mul exch 0.1 mul}] def
+%spotcolor end
+  
+/oldsetcolor /setcolor load def
+/setcolor {
+    count
+    %if there is 1 value in the stack, this is a gray value
+    1 eq{
+        %we have to invert the value because
+        % "gray-value must be a number from 0 (black) to 1 (white)."
+        % "the color components must be between 0 (none) to 1 (full)."
+        %if there is 1 value in the stack, this is a gray value
+        -1 mul % =-value
+        1 add % =1-value
+    }
+    if
+    oldsetcolor
+} bind def
+
+/oldsetcolorspace /setcolorspace load def
+/setcolorspace {
+  dup
+  %if the color space is gray, change it to spotcolor!
+  /DeviceGray eq
+  {
+  pop
+  spotcolor
+  }
+  if
+
+  oldsetcolorspace
+} bind def

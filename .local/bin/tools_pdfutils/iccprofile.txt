@@ -1,0 +1,3 @@
+Image_RGB   ISOcoated_v2_300_eci.icc     0   1   0
+Graphic_RGB ISOcoated_v2_300_eci.icc     0   1   0
+Text_RGB    ISOcoated_v2_300_eci.icc     0   1   0

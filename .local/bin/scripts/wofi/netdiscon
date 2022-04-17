@@ -1,3 +1,0 @@
-#!/bin/sh
-
-nmcli con down id "$(nmcli -t -f name c | wofi --show dmenu -p Disconnect)" && notify-send "Network Disconnected"

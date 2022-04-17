@@ -1,3 +1,0 @@
-#!/bin/sh
-
-nmcli con up id "$(nmcli -t -f name c | wofi --show dmenu -p Connect)" && notify-send "Connected to $(nmcli con show --active | awk 'FNR == 2 {print $1}')"
