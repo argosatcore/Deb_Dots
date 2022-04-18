@@ -202,7 +202,6 @@ exodots() {
 	rm -rf ~/Deb_Dots/
 }
 
-
 sshkey() {
 	printf "Generating ssh key...\n"
 	ssh-keygen -t ed25519 
@@ -232,7 +231,6 @@ remember() {
 #------ Debstrap Options: ------
 #-------------------------------
 
-
 # 1---- Initialize script:
 while true; do
     read -p "Do you want to initialize this script?" yn
@@ -242,7 +240,6 @@ while true; do
         * ) printf "Please answer yes or no.\n";;
     esac
 done
-
 
 # 2----- Installation of the commons:
 while true; do
@@ -254,7 +251,6 @@ while true; do
     esac
 done
 
-
 # 3----- Installation of useful programs for Sid:
 while true; do
     read -p "Do you want to install sidtools?" yn
@@ -264,7 +260,6 @@ while true; do
         * ) printf "Please answer yes or no.\n";;
     esac
 done
-
 
 # 4----- Installation of useful Wayland programs:
 while true; do
@@ -276,7 +271,6 @@ while true; do
     esac
 done
 
-
 # 5----- Flathub set up:
 while true; do
     read -p "Do you want to set up flathub?" yn
@@ -286,7 +280,6 @@ while true; do
         * ) printf "Please answer yes or no.\n";;
     esac
 done
-
 
 # 6----- Installation of bibliographical programs:
 while true; do
@@ -298,7 +291,6 @@ while true; do
     esac
 done
 
-
 # 7----- Installation commonly used programs as flatpaks:
 while true; do
     read -p "Do you want to install commonly used programs as flatpaks?" yn
@@ -308,7 +300,6 @@ while true; do
         * ) printf "Please answer yes or no.\n";;
     esac
 done
-
 
 # 8----- Ssh key set up:
 while true; do
@@ -320,7 +311,6 @@ while true; do
     esac
 done
 
-
 # 9----- Dot files deployment:
 while true; do
     read -p "Are you Argos?" yn
@@ -330,7 +320,6 @@ while true; do
         * ) printf "Please answer yes or no.\n";;
     esac
 done
-
 
 # 10---- Load Gnome configuration for Stable:
 while true; do
@@ -342,7 +331,6 @@ while true; do
     esac
 done
 
-
 # 11---- Load Gnome configuration for Sid:
 while true; do
     read -p "Do you want to load Gnome configuration for Sid?" yn
@@ -352,7 +340,6 @@ while true; do
         * ) printf "Please answer yes or no.\n";;
     esac
 done
-
 
 # 12---- Do you remember?
 while true; do
