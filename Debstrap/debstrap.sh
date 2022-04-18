@@ -64,6 +64,7 @@ commons() {
 		torbrowser-launcher \
 		tree \
 		toilet \
+		unrar \
 		vim-gtk \
 		vlc 
 }
