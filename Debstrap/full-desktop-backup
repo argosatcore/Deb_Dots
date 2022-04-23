@@ -23,7 +23,7 @@ volume-rate=1.0
 web-search='SPOTIFY'
 window-maximized=true
 window-position=[0, 0]
-window-size=[962, 859]
+window-size=[966, 980]
 
 [org/gnome/Mines]
 use-animations=false
@@ -192,7 +192,7 @@ show-battery-percentage=true
 text-scaling-factor=1.0
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-software', 'firefox-esr', 'org-gnome-lollypop', 'org-gnome-nautilus', 'gnome-power-panel', 'org-zotero-zotero', 'gnome-printers-panel', 'org-gnome-evince', 'org-inkscape-inkscape', 'libreoffice-writer', 'org-gnome-dejadup', 'org-gimp-gimp', 'org-mozilla-firefox', 'libreoffice-draw', 'org-kde-krita', 'net-scribus-scribus', 'org-gnome-gedit']
+application-children=['org-gnome-software', 'firefox-esr', 'org-gnome-lollypop', 'org-gnome-nautilus', 'gnome-power-panel', 'org-zotero-zotero', 'gnome-printers-panel', 'org-gnome-evince', 'org-inkscape-inkscape', 'libreoffice-writer', 'org-gnome-dejadup', 'org-gimp-gimp', 'org-mozilla-firefox', 'libreoffice-draw', 'org-kde-krita', 'net-scribus-scribus', 'org-gnome-gedit', 'vlc']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/firefox-esr]
@@ -245,6 +245,9 @@ application-id='org.mozilla.firefox.desktop'
 
 [org/gnome/desktop/notifications/application/org-zotero-zotero]
 application-id='org.zotero.Zotero.desktop'
+
+[org/gnome/desktop/notifications/application/vlc]
+application-id='vlc.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
 delay=uint32 237
@@ -341,7 +344,7 @@ show-sidebar=true
 sidebar-page='thumbnails'
 sidebar-size=132
 sizing-mode='free'
-window-ratio=(1.9052287581699345, 1.0795454545454546)
+window-ratio=(1.3001761820865672, 1.1379161990273094)
 zoom=1.4399999999999995
 
 [org/gnome/evolution-data-server]
@@ -387,6 +390,10 @@ width=600
 [org/gnome/evolution/shell]
 attachment-view=0
 
+[org/gnome/file-roller/dialogs/extract]
+recreate-folders=true
+skip-newer=false
+
 [org/gnome/file-roller/listing]
 list-mode='as-folder'
 name-column-width=250
@@ -405,7 +412,7 @@ active-plugins=['spell', 'filebrowser', 'sort', 'modelines', 'docinfo']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/argos/.local/bin'
+virtual-root='file:///home/argos/.cache/zotcite'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Hack Nerd Font 14'
@@ -551,6 +558,9 @@ custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybin
 home=['<Super>f']
 screenshot=['<Super>s']
 screenshot-clip=['<Primary><Super>s']
+volume-down=['<Super>comma']
+volume-mute=['<Super>slash']
+volume-up=['<Super>period']
 window-screenshot=['<Super>ssharp']
 window-screenshot-clip=['<Primary><Super>ssharp']
 www=['<Super>i']
@@ -677,10 +687,10 @@ save-directory='file:///home/argos/Documents/'
 save-format='application/pdf'
 
 [org/gnome/software]
-check-timestamp=int64 1650141920
+check-timestamp=int64 1650654224
 first-run=false
 install-timestamp=int64 1633393044
-online-updates-timestamp=int64 1649870455
+online-updates-timestamp=int64 1650394004
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -784,7 +794,7 @@ selected-color=(true, 0.0, 0.0, 0.0, 1.0)
 clock-format='12h'
 date-format='regular'
 location-mode='path-bar'
-show-hidden=true
+show-hidden=false
 show-size-column=true
 show-type-column=true
 sidebar-width=178
