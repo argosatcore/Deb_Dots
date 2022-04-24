@@ -30,14 +30,6 @@ sudo apt full-upgrade
 
 }
 
-sidsafe() {
-printf "╔══════════════════════════╗\n"
-printf "║ Full Debian Sid Upgrade: ║\n"
-printf "╚══════════════════════════╝\n"
-sudo apt upgrade 
-
-}
-
 printf "╔═══════════════════════════╗\n"
 printf "║ Updating Debian packages: ║\n"
 printf "╚═══════════════════════════╝\n"
@@ -54,16 +46,6 @@ while true; do
 done
 
 # 1---- Perform a full upgrade:
-while true; do
-    read -p "Do you perform a full upgrade?" yn
-    case $yn in
-        [Yy]* ) sidfull; break;;
-        [Nn]* ) printf "Skipping full upgrade.\n"; break;;
-        * ) printf "Please answer yes or no.\n";;
-    esac
-done
-
-# 2---- Perform a safe upgrade:
 while true; do
     read -p "Do you perform a full upgrade?" yn
     case $yn in
