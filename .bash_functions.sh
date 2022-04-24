@@ -174,7 +174,7 @@
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
 			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
-		pdftoread="$(echo ${doc%%.*})"
+		pdftoread="${doc%%.*}"
 		cleanpdfname="${pdftoread##*/}"
 			if [ -n "$doc" ]; then
 			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
@@ -199,7 +199,7 @@
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
 			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
-		pdftoread="$(echo ${doc%%.*})"
+		pdftoread="${doc%%.*}"
 		cleanpdfname="${pdftoread##*/}"
 			if [ -n "$doc" ]; then
 			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
@@ -224,7 +224,7 @@
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
 			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
-		htmltoread="$(echo ${doc%%.*})"
+		htmltoread="${doc%%.*}"
 		cleanpdfname="${htmltoread##*/}"
 			if [ -n "$doc" ]; then
 			pandoc "$doc" -M lang:es -s -o $HOME/Desktop/vimwiki/Htmls/"$cleanpdfname".html \
@@ -246,13 +246,13 @@
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
 			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
-		pdftoread="$(echo ${doc%%.*})"
+		pdftoread="${doc%.*}"
 		cleanpdfname="${pdftoread##*/}"
 			if [ -n "$doc" ]; then
 			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
 			--variable monofont="Menlo" -V "geometry:margin=5.08cm" -V 'papersize:letter' \
 			-M lang:es -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
-			-F $HOME/.vim/pluged/zotcite/python3/zotref.py --citeproc \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
 			else
@@ -271,13 +271,13 @@
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
 			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
-		pdftoread="$(echo ${doc%%.*})"
+		pdftoread="${doc%.*}"
 		cleanpdfname="${pdftoread##*/}"
 			if [ -n "$doc" ]; then
 			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
 			--variable monofont="Menlo" -V "geometry:paperheight=21.6cm,paperwidth=14cm,margin=2.54cm" \
 			-V 'pdfa=true' -V 'pdfaiccprofile=default.cmyk' -M lang:es -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
-			-F $HOME/.vim/pluged/zotcite/python3/zotref.py --citeproc \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
 			else
@@ -296,11 +296,11 @@
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
 			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
-		htmltoread="$(echo ${doc%%.*})"
+		htmltoread="${doc%.*}"
 		cleanpdfname="${htmltoread##*/}"
 			if [ -n "$doc" ]; then
 			pandoc "$doc" -M lang:es -s -o $HOME/Desktop/vimwiki/Htmls/"$cleanpdfname".html \
-			-F $HOME/.vim/pluged/zotcite/python3/zotref.py --citeproc \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			fi
 	}
