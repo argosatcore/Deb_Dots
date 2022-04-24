@@ -1,10 +1,6 @@
-#!/usr/bin/bash
+#!/usr/bin/sh
 set -e 
 
-Title() {
-	printf -v Bar '%*s' $((${#1} + 2)) ' '
-	printf '%s\n║ %s ║\n%s\n' "╔${Bar// /═}╗" "$1" "╚${Bar// /═}╝"
-}
 
 if expr "$EUID" : '0' >/dev/null; then
     printf "already root\n"
@@ -18,9 +14,67 @@ else
     fi
 fi
 
-Title 'Updating Debian packages:'
-sudo apt-get update 
-sudo apt-get full-upgrade
+sidshow() {
+printf "╔═════════════════════════════════╗\n"
+printf "║ Debian Sid Upgradable Packages: ║\n"
+printf "╚═════════════════════════════════╝\n"
+apt list --upgradeable
+
+}
+
+sidfull() {
+printf "╔══════════════════════════╗\n"
+printf "║ Full Debian Sid Upgrade: ║\n"
+printf "╚══════════════════════════╝\n"
+sudo apt full-upgrade 
+
+}
+
+sidsafe() {
+printf "╔══════════════════════════╗\n"
+printf "║ Full Debian Sid Upgrade: ║\n"
+printf "╚══════════════════════════╝\n"
+sudo apt upgrade 
+
+}
+
+printf "╔═══════════════════════════╗\n"
+printf "║ Updating Debian packages: ║\n"
+printf "╚═══════════════════════════╝\n"
+sudo apt update 
+
+# 0---- Show upgradable packages:
+while true; do
+    read -p "Do you want to see a list of the upgradable packages?" yn
+    case $yn in
+        [Yy]* ) sidshow; break;;
+        [Nn]* ) printf "Skipping list.\n"; break;;
+        * ) printf "Please answer yes or no.\n";;
+    esac
+done
+
+# 1---- Perform a full upgrade:
+while true; do
+    read -p "Do you perform a full upgrade?" yn
+    case $yn in
+        [Yy]* ) sidfull; break;;
+        [Nn]* ) printf "Skipping full upgrade.\n"; break;;
+        * ) printf "Please answer yes or no.\n";;
+    esac
+done
+
+# 2---- Perform a safe upgrade:
+while true; do
+    read -p "Do you perform a full upgrade?" yn
+    case $yn in
+        [Yy]* ) sidfull; break;;
+        [Nn]* ) printf "Skipping full upgrade.\n"; break;;
+        * ) printf "Please answer yes or no.\n";;
+    esac
+done
+
 printf " \n"
-Title 'Updating flatpaks:'
+printf "╔════════════════════╗\n"
+printf "║ Updating Flatpaks: ║\n"
+printf "╚════════════════════╝\n"
 flatpak update
