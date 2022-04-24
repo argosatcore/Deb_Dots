@@ -121,7 +121,7 @@ name='Package Managers'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/1c3da104-2d9e-47b0-8087-76183d9272a2]
-apps=['im-config.desktop', 'kbd-layout-viewer5.desktop', 'uim.desktop', 'ghcal.desktop']
+apps=['kbd-layout-viewer5.desktop']
 name='Unnamed Folder'
 
 [org/gnome/desktop/app-folders/folders/55b9c2d6-31a6-4164-bc17-2c43e67eb937]
@@ -147,7 +147,7 @@ name='Writerly'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/Utilities]
-apps=['org.gnome.Calculator.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.seahorse.Application.desktop', 'simple-scan.desktop', 'yelp.desktop', 'org.gnome.Cheese.desktop', 'org.gnome.clocks.desktop', 'goldendict.desktop', 'org.gnome.Documents.desktop', 'kasumi.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Characters.desktop', 'org.gnome.font-viewer.desktop', 'gucharmap.desktop', 'setup-mozc.desktop', 'org.gnome.Maps.desktop', 'org.freedesktop.MalcontentControl.desktop', 'org.gnome.Todo.desktop', 'org.gnome.Weather.desktop', 'htop.desktop', 'shotwell.desktop', 'org.goldendict.GoldenDict.desktop']
+apps=['org.gnome.Calculator.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.seahorse.Application.desktop', 'simple-scan.desktop', 'yelp.desktop', 'org.gnome.Cheese.desktop', 'org.gnome.clocks.desktop', 'goldendict.desktop', 'org.gnome.Documents.desktop', 'kasumi.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Characters.desktop', 'org.gnome.font-viewer.desktop', 'gucharmap.desktop', 'setup-mozc.desktop', 'org.gnome.Maps.desktop', 'org.freedesktop.MalcontentControl.desktop', 'org.gnome.Todo.desktop', 'org.gnome.Weather.desktop', 'htop.desktop', 'shotwell.desktop', 'org.goldendict.GoldenDict.desktop', 'im-config.desktop', 'ghcal.desktop', 'uim.desktop']
 categories=['X-GNOME-Utilities']
 excluded-apps=['org.gnome.tweaks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.baobab.desktop', 'gnome-system-monitor.desktop', 'nm-connection-editor.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.DejaDup.desktop']
 name='X-GNOME-Utilities.directory'
@@ -209,11 +209,14 @@ show-battery-percentage=true
 text-scaling-factor=1.0
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-software', 'firefox-esr', 'org-gnome-lollypop', 'org-gnome-nautilus', 'gnome-power-panel', 'org-zotero-zotero', 'gnome-printers-panel', 'org-gnome-evince', 'org-inkscape-inkscape', 'libreoffice-writer', 'org-gnome-dejadup', 'org-gimp-gimp', 'org-mozilla-firefox', 'libreoffice-draw', 'org-kde-krita', 'net-scribus-scribus', 'org-gnome-gedit', 'vlc', 'rhythmbox', 'scribus']
+application-children=['org-gnome-software', 'firefox-esr', 'org-gnome-lollypop', 'org-gnome-nautilus', 'gnome-power-panel', 'org-zotero-zotero', 'gnome-printers-panel', 'org-gnome-evince', 'org-inkscape-inkscape', 'libreoffice-writer', 'org-gnome-dejadup', 'org-gimp-gimp', 'org-mozilla-firefox', 'libreoffice-draw', 'org-kde-krita', 'net-scribus-scribus', 'org-gnome-gedit', 'vlc', 'rhythmbox', 'scribus', 'firefox']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/firefox-esr]
 application-id='firefox-esr.desktop'
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
@@ -583,8 +586,9 @@ night-light-temperature=uint32 3210
 [org/gnome/settings-daemon/plugins/media-keys]
 area-screenshot=['<Shift><Super>s']
 area-screenshot-clip=['<Primary><Shift><Super>s']
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/']
 home=['<Super>f']
+screenreader=@as []
 screenshot=['<Super>s']
 screenshot-clip=['<Primary><Super>s']
 volume-down=['<Super>comma']
@@ -592,7 +596,7 @@ volume-mute=['<Super>slash']
 volume-up=['<Super>period']
 window-screenshot=['<Super>ssharp']
 window-screenshot-clip=['<Primary><Super>ssharp']
-www=['<Super>i']
+www=['<Shift><Super>i']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Super>t'
@@ -634,6 +638,11 @@ binding='<Super>w'
 command='foot -a=wiki nvim Desktop/vimwiki/index.md'
 name='VimWiki'
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8]
+binding='<Super>i'
+command='firefox'
+name='Firefox'
+
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9]
 binding='<Super>n'
 command='foot -a=note sh .local/bin/date.sh'
@@ -644,7 +653,7 @@ idle-dim=true
 sleep-inactive-battery-type='suspend'
 
 [org/gnome/shell]
-app-picker-layout=[{'c419eaf4-599c-48c3-8dfb-46797b2459e7': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'e44567bf-3f92-428f-9521-9be573e5beb8': <{'position': <2>}>, '101839c3-1a8a-43a5-9586-fea30b63bbb2': <{'position': <3>}>, '17abbebb-6979-41e2-950b-d2113cc91193': <{'position': <4>}>, '958f5a75-6e64-43e5-afdc-800aa15e854b': <{'position': <5>}>, '6b2cdc03-1872-4eec-bb64-64718647b314': <{'position': <6>}>, '758fff78-a416-4c6f-8b48-abcd1e3aa7e6': <{'position': <7>}>, 'c27e08af-525c-4261-9391-00e47fbc04ae': <{'position': <8>}>, '55b9c2d6-31a6-4164-bc17-2c43e67eb937': <{'position': <9>}>, 'b39768c5-4193-4166-bfdb-1e62212db637': <{'position': <10>}>, '7a414dbe-eb42-4608-ac12-862f7ef55a4c': <{'position': <11>}>, '1c3da104-2d9e-47b0-8087-76183d9272a2': <{'position': <12>}>}]
+app-picker-layout=[{'c419eaf4-599c-48c3-8dfb-46797b2459e7': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'e44567bf-3f92-428f-9521-9be573e5beb8': <{'position': <2>}>, '101839c3-1a8a-43a5-9586-fea30b63bbb2': <{'position': <3>}>, '17abbebb-6979-41e2-950b-d2113cc91193': <{'position': <4>}>, '958f5a75-6e64-43e5-afdc-800aa15e854b': <{'position': <5>}>, '6b2cdc03-1872-4eec-bb64-64718647b314': <{'position': <6>}>, '758fff78-a416-4c6f-8b48-abcd1e3aa7e6': <{'position': <7>}>, 'c27e08af-525c-4261-9391-00e47fbc04ae': <{'position': <8>}>, '55b9c2d6-31a6-4164-bc17-2c43e67eb937': <{'position': <9>}>, 'b39768c5-4193-4166-bfdb-1e62212db637': <{'position': <10>}>, '7a414dbe-eb42-4608-ac12-862f7ef55a4c': <{'position': <11>}>}]
 disable-user-extensions=true
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['system-monitor@paradoxxx.zero.gmail.com', 'ubuntu-appindicators@ubuntu.com', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
@@ -702,6 +711,9 @@ thermal-style='digit'
 
 [org/gnome/shell/keybindings]
 focus-active-notification=@as []
+screenshot=['<Super>s']
+screenshot-window=['<Alt><Super>s']
+show-screenshot-ui=['<Shift><Super>s']
 toggle-overview=@as []
 
 [org/gnome/shell/world-clocks]
@@ -845,7 +857,7 @@ sort-directories-first=true
 sort-order='descending'
 type-format='category'
 window-position=(26, 23)
-window-size=(1444, 1006)
+window-size=(1444, 1001)
 
 [system/proxy]
 mode='none'
