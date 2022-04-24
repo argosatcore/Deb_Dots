@@ -45,11 +45,19 @@ window-maximized=true
 window-position=[0, 0]
 window-size=[1920, 1006]
 
+[org/gnome/TextEditor]
+custom-font='Hack Nerd Font Mono 14'
+highlight-current-line=true
+show-line-numbers=true
+style-scheme='Adwaita-dark'
+use-system-font=false
+
 [org/gnome/Totem]
 active-plugins=['screenshot', 'rotation', 'skipto', 'movie-properties', 'autoload-subtitles', 'variable-rate', 'recent', 'vimeo', 'open-directory', 'save-file', 'screensaver', 'media-player-keys', 'apple-trailers']
 subtitle-encoding='UTF-8'
 
 [org/gnome/baobab/ui]
+is-maximized=false
 window-size=(1563, 914)
 window-state=87168
 
@@ -196,6 +204,7 @@ xkb-options=['caps:swapescape', 'altwin:menu_win', 'lv3:ralt_switch']
 
 [org/gnome/desktop/interface]
 clock-format='12h'
+clock-show-date=true
 clock-show-weekday=true
 color-scheme='prefer-dark'
 document-font-name='Cantarell 12'
@@ -519,7 +528,7 @@ search-filter-time-type='last_modified'
 search-view='icon-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1116, 621)
+initial-size=(819, 678)
 maximized=false
 sidebar-width=227
 start-with-sidebar=true
@@ -650,6 +659,7 @@ name='Notes'
 
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=true
+power-button-action='suspend'
 sleep-inactive-battery-type='suspend'
 
 [org/gnome/shell]
@@ -657,7 +667,7 @@ app-picker-layout=[{'c419eaf4-599c-48c3-8dfb-46797b2459e7': <{'position': <0>}>,
 disable-user-extensions=true
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['system-monitor@paradoxxx.zero.gmail.com', 'ubuntu-appindicators@ubuntu.com', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['foot.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'org.gnome.Lollypop.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'org.zotero.Zotero.desktop', 'org.gnome.Calculator.desktop']
+favorite-apps=['foot.desktop', 'org.gnome.Console.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'org.gnome.Lollypop.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'org.zotero.Zotero.desktop', 'org.gnome.Calculator.desktop']
 welcome-dialog-last-shown-version='42.0'
 
 [org/gnome/shell/extensions/dash-to-dock]
@@ -711,9 +721,9 @@ thermal-style='digit'
 
 [org/gnome/shell/keybindings]
 focus-active-notification=@as []
-screenshot=['<Super>s']
+screenshot=['<Shift><Super>s']
 screenshot-window=['<Alt><Super>s']
-show-screenshot-ui=['<Shift><Super>s']
+show-screenshot-ui=['<Super>s']
 toggle-overview=@as []
 
 [org/gnome/shell/world-clocks]
