@@ -80,6 +80,8 @@ sidtools() {
 		build-essential \
 		create-resources \
 		gimp \
+		gnome-text-editor \
+		gnome-console \
 		inkscape \
 		reportbug-gtk \
 		scribus \
