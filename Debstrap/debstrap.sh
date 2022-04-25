@@ -87,10 +87,10 @@ sidtools() {
 		reportbug-gtk \
 		scribus \
 		swaylock \
-		wireplumber
+		wireplumber \
 		youtube-dl
 	sudo apt remove \
-		pipewire-media-session \
+		pipewire-media-session 
 }
 
 waytools() {
