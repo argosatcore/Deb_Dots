@@ -83,10 +83,14 @@ sidtools() {
 		gnome-text-editor \
 		gnome-console \
 		inkscape \
+		pipewire-audio-client-libraries \
 		reportbug-gtk \
 		scribus \
 		swaylock \
+		wireplumber
 		youtube-dl
+	sudo apt remove \
+		pipewire-media-session \
 }
 
 waytools() {
