@@ -90,7 +90,8 @@ sidtools() {
 		wireplumber \
 		youtube-dl
 	sudo apt remove \
-		pipewire-media-session 
+		pipewire-media-session \
+		unattended-upgrades
 }
 
 waytools() {
