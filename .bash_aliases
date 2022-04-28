@@ -43,6 +43,7 @@
 	alias fp='ps aux | fzf'
 	alias lg='bash ~/.local/bin//lsix'
 	alias ytopus='youtube-dl --add-metadata -i -x -f bestaudio/best'
+	alias yt='yt-dlp --embed-metadata -i -x -f bestaudio/best'
 	alias gnomebu='dconf dump / > ~/Debstrap/full-desktop-backup'
 	alias gnomelb='dconf load / < ~/Debstrap/full-desktop-backup'
 	alias gnomebusid='dconf dump / > ~/Debstrap/full-desktop-backup-sid'

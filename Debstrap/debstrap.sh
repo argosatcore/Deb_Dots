@@ -88,7 +88,7 @@ sidtools() {
 		scribus \
 		swaylock \
 		wireplumber \
-		youtube-dl
+		yt-dlp
 	sudo apt remove \
 		pipewire-media-session \
 		unattended-upgrades
