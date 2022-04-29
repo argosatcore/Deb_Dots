@@ -174,7 +174,7 @@
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
 			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
-		pdftoread="$(echo ${doc%%.*})"
+		pdftoread="${doc%%.*}"
 		cleanpdfname="${pdftoread##*/}"
 			if [ -n "$doc" ]; then
 			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
@@ -199,7 +199,7 @@
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
 			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
-		pdftoread="$(echo ${doc%%.*})"
+		pdftoread="${doc%%.*}"
 		cleanpdfname="${pdftoread##*/}"
 			if [ -n "$doc" ]; then
 			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
@@ -224,7 +224,79 @@
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
 			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
-		htmltoread="$(echo ${doc%%.*})"
+		htmltoread="${doc%%.*}"
+		cleanpdfname="${htmltoread##*/}"
+			if [ -n "$doc" ]; then
+			pandoc "$doc" -M lang:es -s -o $HOME/Desktop/vimwiki/Htmls/"$cleanpdfname".html \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
+			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
+			fi
+	}
+
+
+# ------Sid exclusive functions:
+# -----Convert markdown notes into letter pdfs:
+# As a side note for this function, as Debian 11 uses an older version of
+# pandoc, the flag '-F pandoc-citeproc' is needed for this function to work.
+# However, on newer versions of Debian or distributions that use a more 
+# recent version of pandoc, this flag should not be used anymore. Instead, 
+# use the '--citeproc' flag.
+
+	sidmdpdf() {
+		cd $HOME/Desktop/vimwiki/
+		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
+			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
+		pdftoread="${doc%.*}"
+		cleanpdfname="${pdftoread##*/}"
+			if [ -n "$doc" ]; then
+			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
+			--variable monofont="Menlo" -V "geometry:margin=5.08cm" -V 'papersize:letter' \
+			-M lang:es -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
+			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
+			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
+			else
+				cd ; &>/dev/null 
+			fi
+	}
+
+# -----Convert markdown notes into half letter pdfs:
+# As a side note for this function, as Debian 11 uses an older version of
+# pandoc, the flag '-F pandoc-citeproc' is needed for this function to work.
+# However, on newer versions of Debian or distributions that use a more 
+# recent version of pandoc, this flag should not be used anymore. Instead, 
+# use the '--citeproc' flag.
+
+	sidhlpdf() {
+		cd $HOME/Desktop/vimwiki/
+		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
+			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
+		pdftoread="${doc%.*}"
+		cleanpdfname="${pdftoread##*/}"
+			if [ -n "$doc" ]; then
+			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
+			--variable monofont="Menlo" -V "geometry:paperheight=21.6cm,paperwidth=14cm,margin=2.54cm" \
+			-V 'pdfa=true' -V 'pdfaiccprofile=default.cmyk' -M lang:es -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
+			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
+			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
+			else
+				cd ; &>/dev/null 
+			fi
+	}
+
+# -----Convert markdown notes into simple html files:
+# As a side note for this function, as Debian 11 uses an older version of
+# pandoc, the flag '-F pandoc-citeproc' is needed for this function to work.
+# However, on newer versions of Debian or distributions that use a more 
+# recent version of pandoc, this flag should not be used anymore. Instead, 
+# use the '--citeproc' flag.
+
+	sidmdhtml() {
+		cd $HOME/Desktop/vimwiki/
+		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
+			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
+		htmltoread="${doc%.*}"
 		cleanpdfname="${htmltoread##*/}"
 			if [ -n "$doc" ]; then
 			pandoc "$doc" -M lang:es -s -o $HOME/Desktop/vimwiki/Htmls/"$cleanpdfname".html \

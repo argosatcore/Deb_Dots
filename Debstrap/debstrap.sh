@@ -80,11 +80,18 @@ sidtools() {
 		build-essential \
 		create-resources \
 		gimp \
+		gnome-text-editor \
+		gnome-console \
 		inkscape \
+		pipewire-audio-client-libraries \
 		reportbug-gtk \
 		scribus \
 		swaylock \
-		youtube-dl
+		wireplumber \
+		yt-dlp
+	sudo apt remove \
+		pipewire-media-session \
+		unattended-upgrades
 }
 
 waytools() {
@@ -101,7 +108,6 @@ waytools() {
 		sway \
 		swayidle \
 		waybar \
-		wdisplays \
 		wlogout \
 		wofi \
 		wf-recorder \

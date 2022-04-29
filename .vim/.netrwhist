@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =9
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/etc/ssh/ssh_config.d'
 let g:netrw_dirhist_9='/home/argos/.local/bin/Audio'
 let g:netrw_dirhist_8='/home/argos/Desktop/vimwiki'
 let g:netrw_dirhist_7='/home/argos/Desktop'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_4='/home/argos/Desktop/vimwiki'
 let g:netrw_dirhist_3='/home/argos/Desktop'
 let g:netrw_dirhist_2='/home/argos/Desktop/vimwiki'
 let g:netrw_dirhist_1='/home/argos/Desktop'
-let g:netrw_dirhist_0='/home/argos/Desktop/vimwiki'
