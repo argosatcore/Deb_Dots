@@ -108,7 +108,6 @@ waytools() {
 		sway \
 		swayidle \
 		waybar \
-		wdisplays \
 		wlogout \
 		wofi \
 		wf-recorder \
