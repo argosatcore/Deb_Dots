@@ -79,6 +79,7 @@ sidtools() {
 		bombadillo \
 		build-essential \
 		create-resources \
+		foliate \
 		gimp \
 		gnome-text-editor \
 		gnome-console \
