@@ -73,6 +73,9 @@
 	"Move lines when in visual mode up or down:
 		xnoremap K :move '<-2<CR>gv-gv
 		xnoremap J :move '>+1<CR>gv-gv
+	
+	"Insert citation characters for markdown notes:
+		nnoremap <Leader>n i^[[@,].]<Esc> 
 
 
 " ------Plug-ins: 
