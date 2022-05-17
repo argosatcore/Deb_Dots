@@ -338,7 +338,7 @@
 # recent version of pandoc, this flag should not be used anymore. Instead, 
 # use the '--citeproc' flag.
 
-	sidmdodt() {
+	sidmddocx() {
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
 			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
