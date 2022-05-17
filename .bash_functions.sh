@@ -329,3 +329,28 @@
 				cd ; &>/dev/null 
 			fi
 	}
+
+# -----Convert markdown notes into letter docxs:
+# As a side note for this function, as Debian 11 uses an older version of
+# As a side note for this function, as Debian 11 uses an older version of
+# pandoc, the flag '-F pandoc-citeproc' is needed for this function to work.
+# However, on newer versions of Debian or distributions that use a more 
+# recent version of pandoc, this flag should not be used anymore. Instead, 
+# use the '--citeproc' flag.
+
+	sidmdodt() {
+		cd $HOME/Desktop/vimwiki/
+		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
+			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
+		pdftoread="${doc%.*}"
+		cleanpdfname="${pdftoread##*/}"
+			if [ -n "$doc" ]; then
+			pandoc "$doc" \
+			-M lang:es-mx -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".docx \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
+			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
+			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".docx & disown; exit
+			else
+				cd ; &>/dev/null 
+			fi
+	}
