@@ -74,8 +74,9 @@
 		xnoremap K :move '<-2<CR>gv-gv
 		xnoremap J :move '>+1<CR>gv-gv
 	
-	"Insert citation characters for markdown notes:
-		nnoremap <Leader>n i^[[@,].]<Esc> 
+	"Insert citation characters for markdown notes, move three characters
+	"to the left and then switch to insert mode:
+		nnoremap <Leader>n a^[[@,].]<Esc><Left><Left><Left>i
 
 
 " ------Plug-ins: 
