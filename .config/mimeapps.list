@@ -1,7 +1,7 @@
 [Added Associations]
 image/png=org.gnome.eog.desktop;feh.desktop;
 image/jpeg=gimp.desktop;org.gnome.eog.desktop;
-text/plain=blender.desktop;nvim.desktop;org.gnome.gedit.desktop;
+text/plain=org.gnome.eog.desktop;blender.desktop;nvim.desktop;org.gnome.gedit.desktop;
 application/pdf=libreoffice-draw.desktop;org.gnome.Evince.desktop;
 video/mp4=vlc.desktop;org.gnome.Totem.desktop;mpv.desktop;
 image/svg+xml=org.inkscape.Inkscape.desktop;
@@ -86,11 +86,19 @@ application/octet-stream=blender.desktop;
 image/jp2=gimp.desktop;org.gimp.GIMP.desktop;org.gnome.eog.desktop;
 application/x-blender=blender.desktop;
 image/gif=firefox-esr.desktop;
-application/xhtml+xml=org.gnome.gedit.desktop;
+application/xhtml+xml=org.gnome.gedit.desktop;firefox.desktop;
 application/vnd.iccprofile=org.gnome.gedit.desktop;
 application/vnd.appimage=org.gnome.gedit.desktop;
 application/vnd.sqlite3=org.gnome.gedit.desktop;
 image/webp=gimp.desktop;org.gnome.eog.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/chrome=firefox.desktop;
+application/x-extension-htm=firefox.desktop;
+application/x-extension-html=firefox.desktop;
+application/x-extension-shtml=firefox.desktop;
+application/x-extension-xhtml=firefox.desktop;
+application/x-extension-xht=firefox.desktop;
 
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop
@@ -171,3 +179,13 @@ audio/mp3=org.gnome.Lollypop.desktop
 audio/ac3=org.gnome.Lollypop.desktop
 audio/flac=org.gnome.Lollypop.desktop
 audio/x-opus+ogg=org.gnome.Lollypop.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/chrome=firefox.desktop
+text/html=firefox.desktop
+application/x-extension-htm=firefox.desktop
+application/x-extension-html=firefox.desktop
+application/x-extension-shtml=firefox.desktop
+application/xhtml+xml=firefox.desktop
+application/x-extension-xhtml=firefox.desktop
+application/x-extension-xht=firefox.desktop
