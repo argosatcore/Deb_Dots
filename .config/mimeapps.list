@@ -99,6 +99,7 @@ application/x-extension-html=firefox.desktop;
 application/x-extension-shtml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
+application/epub+zip=com.github.johnfactotum.Foliate.desktop;org.gnome.Evince.desktop;
 
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop
