@@ -19,7 +19,6 @@ commons() {
 	printf "Installing commonly used packages...\n"
 	sudo apt install -y \
 		acpi-support \
-		alsa-utils \
 		bash-completion \
 		bookletimposer \
 		calcurse \
