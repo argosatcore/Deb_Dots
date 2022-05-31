@@ -15,24 +15,24 @@ else
 fi
 
 sidshow() {
-printf "╔═════════════════════════════════╗\n"
-printf "║ Debian Sid Upgradable Packages: ║\n"
-printf "╚═════════════════════════════════╝\n"
+printf "╔════════════════════════════════╗\n"
+printf "║ Debian Sid Upgradable Packages ║\n"
+printf "╚════════════════════════════════╝\n"
 apt list --upgradeable
 
 }
 
 sidfull() {
-printf "╔══════════════════════════╗\n"
-printf "║ Full Debian Sid Upgrade: ║\n"
-printf "╚══════════════════════════╝\n"
+printf "╔═════════════════════════╗\n"
+printf "║ Full Debian Sid Upgrade ║\n"
+printf "╚═════════════════════════╝\n"
 sudo apt full-upgrade 
 
 }
 
-printf "╔═══════════════════════════╗\n"
-printf "║ Updating Debian packages: ║\n"
-printf "╚═══════════════════════════╝\n"
+printf "╔══════════════════════════╗\n"
+printf "║ Updating Debian packages ║\n"
+printf "╚══════════════════════════╝\n"
 sudo apt update 
 
 # 0---- Show upgradable packages:
@@ -56,7 +56,7 @@ while true; do
 done
 
 printf " \n"
-printf "╔════════════════════╗\n"
-printf "║ Updating Flatpaks: ║\n"
-printf "╚════════════════════╝\n"
+printf "╔═══════════════════╗\n"
+printf "║ Updating Flatpaks ║\n"
+printf "╚═══════════════════╝\n"
 flatpak update
