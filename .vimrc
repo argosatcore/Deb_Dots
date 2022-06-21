@@ -9,6 +9,7 @@
 	let g:ShiftTabDefaultCompletionType = "<C-X><C-O>"
 	runtime! debian.vim
 	set autoread wildmode=longest,list,full
+	set background=dark
 	set complete+=k
 	set cursorline cursorcolumn
 	set dictionary+=/usr/share/dict/words
@@ -25,6 +26,7 @@
 	set nostartofline
 	set number relativenumber
 	set omnifunc=syntaxcomplete#Complete
+	set showcmd
 	set showmatch
 	set spell spelllang=es,en_us  	
 	set spellsuggest=10
@@ -38,6 +40,12 @@
 	set textwidth=0
 	set display=lastline
 	syntax on
+
+
+" -----Global autocommands:
+	" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 
 " ------Keybindings:
