@@ -96,8 +96,8 @@
 	input * {
 		xkb_options "caps:swapescape,, grp:win_space_toggle,, altwin:menu_win"
 		left_handed enabled
-		xkb_layout "latam,us"
-		xkb_variant ",altgr-intl"
+		xkb_layout "us,latam"
+		xkb_variant "altgr-intl,"
 		repeat_delay 200
 		repeat_rate 100
 		accel_profile "adaptive"
@@ -190,8 +190,8 @@
 #-----------------
 
 	# Move to the next or previous workspace:
-	bindsym $mod+Next workspace next_on_output --create
-	bindsym $mod+Prior workspace prev_on_output --create
+	bindsym $mod+Next workspace next_on_output
+	bindsym $mod+Prior workspace prev_on_output
 
 	# Move focused container to the next or previous existing workspace:
 	bindsym $mod+Shift+Next move container to workspace next_on_output 
