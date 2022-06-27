@@ -100,6 +100,7 @@ application/x-extension-shtml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
 application/epub+zip=com.github.johnfactotum.Foliate.desktop;org.gnome.Evince.desktop;
+text/x-csrc=nvim.desktop;
 
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop
@@ -190,3 +191,4 @@ application/x-extension-shtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
+text/x-csrc=nvim.desktop
