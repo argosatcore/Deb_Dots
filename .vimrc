@@ -89,86 +89,76 @@
 
 " ------Plug-ins: 
 
-	call plug#begin(expand('~/.vim/pluged'))
-	Plug 'arcticicestudio/nord-vim' 
-	Plug 'junegunn/goyo.vim'
-	Plug 'airblade/vim-gitgutter'
-	Plug 'vimwiki/vimwiki'
-	Plug 'junegunn/fzf'
-	Plug 'junegunn/fzf.vim'
-	Plug 'michal-h21/vim-zettel'
-	Plug 'jalvesaq/zotcite'
-	call plug#end()
+	"Plug-ins list:
+		call plug#begin(expand('~/.vim/pluged'))
+		Plug 'arcticicestudio/nord-vim' 
+		Plug 'junegunn/goyo.vim'
+		Plug 'airblade/vim-gitgutter'
+		Plug 'vimwiki/vimwiki'
+		Plug 'junegunn/fzf'
+		Plug 'junegunn/fzf.vim'
+		Plug 'michal-h21/vim-zettel'
+		Plug 'jalvesaq/zotcite'
+		call plug#end()
 
+	"Colorscheme:
+		colorscheme nord 
 
-" ------Colorscheme:
+		"Status line colors:
+			au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=black ctermbg=magenta
+			au InsertLeave * hi statusline guifg=black guibg=#8fbfdc ctermfg=black ctermbg=cyan
+			hi statusline guifg=black guibg=#8fbfdc ctermfg=black ctermbg=cyan
+		
+		"Status modes:
+			let g:currentmode={
+			    \ 'n'  : 'Normal',
+			    \ 'no' : 'Normal·Operator Pending',
+			    \ 'v'  : 'Visual',
+			    \ 'V'  : 'V·Line',
+			    \ "\<C-v>" : 'Visual·Block',
+			    \ 's'  : 'Select',
+			    \ 'S'  : 'S·Line',
+			    \ '^S' : 'S·Block',
+			    \ 'i'  : 'Insert',
+			    \ 'R'  : 'Replace',
+			    \ 'Rv' : 'V·Replace',
+			    \ 'c'  : 'Command',
+			    \ 'cv' : 'Vim Ex',
+			    \ 'ce' : 'Ex',
+			    \ 'r'  : 'Prompt',
+			    \ 'rm' : 'More',
+			    \ 'r?' : 'Confirm',
+			    \ '!'  : 'Shell',
+			    \ 't'  : 'Terminal'
+			    \}
+		
+		"Status modules:
+			set statusline=
+			set statusline+=\ \ %{toupper(g:currentmode[mode()])}\ 
+			set statusline+=%#Search#					
+			set statusline+=%1*\ %<%F%m%r%h%w\ [%{&spelllang}\]\ 		
+			set statusline+=%#Search#				
+			set statusline+=\ %y\ %{&fileencoding?&fileencoding:&encoding}\ 
+			set statusline+=%#Search#				
+			set statusline+=%1*\ ln:\ %02l/%L\ (%p%%)\ [col:%c] 
+			set statusline+=%=				
+			set statusline+=%0*\ %n\ 		
 
-	colorscheme nord 
-
-
-" ------Status Line:
-
-	"Status colors:
-		au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=black ctermbg=magenta
-		au InsertLeave * hi statusline guifg=black guibg=#8fbfdc ctermfg=black ctermbg=cyan
+	"Goyo functions: 
+		function! s:goyo_enter()
+		set cursorline nocursorcolumn 
+		endfunction
+		
+		function! s:goyo_leave()
 		hi statusline guifg=black guibg=#8fbfdc ctermfg=black ctermbg=cyan
+		set cursorline cursorcolumn
+		endfunction
 	
-	"Status modes:
-		let g:currentmode={
-		    \ 'n'  : 'Normal',
-		    \ 'no' : 'Normal·Operator Pending',
-		    \ 'v'  : 'Visual',
-		    \ 'V'  : 'V·Line',
-		    \ "\<C-v>" : 'Visual·Block',
-		    \ 's'  : 'Select',
-		    \ 'S'  : 'S·Line',
-		    \ '^S' : 'S·Block',
-		    \ 'i'  : 'Insert',
-		    \ 'R'  : 'Replace',
-		    \ 'Rv' : 'V·Replace',
-		    \ 'c'  : 'Command',
-		    \ 'cv' : 'Vim Ex',
-		    \ 'ce' : 'Ex',
-		    \ 'r'  : 'Prompt',
-		    \ 'rm' : 'More',
-		    \ 'r?' : 'Confirm',
-		    \ '!'  : 'Shell',
-		    \ 't'  : 'Terminal'
-		    \}
-	
-	"Status modules:
-		set statusline=
-		set statusline+=\ \ %{toupper(g:currentmode[mode()])}\ 
-		set statusline+=%#Visual#					
-		set statusline+=%1*\ %<%F%m%r%h%w\ [%{&spelllang}\]\ 		
-		set statusline+=%#Search#				
-		set statusline+=\ %y\ %{&fileencoding?&fileencoding:&encoding}\ 
-		set statusline+=%#IncSearch#				
-		set statusline+=%1*\ ln:\ %02l/%L\ (%p%%)\ [col:%c] 
-		set statusline+=%=				
-		set statusline+=%0*\ %n\ 		
+		autocmd! User GoyoEnter nested call <SID>goyo_enter()
+		autocmd! User GoyoLeave nested call <SID>goyo_leave() 
 
+	"Vimwiki:
+		let g:vimwiki_list = [{'path': '~/Desktop/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'auto_tags':1}]
 
-" ------Goyo functions: 
-
-	function! s:goyo_enter()
-	set cursorline nocursorcolumn 
-	endfunction
-	
-	function! s:goyo_leave()
-	hi statusline guifg=black guibg=#8fbfdc ctermfg=black ctermbg=cyan
-	set cursorline cursorcolumn
-	endfunction
-
-	autocmd! User GoyoEnter nested call <SID>goyo_enter()
-	autocmd! User GoyoLeave nested call <SID>goyo_leave() 
-
-
-" -----Vimwiki:
-
-	let g:vimwiki_list = [{'path': '~/Desktop/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'auto_tags':1}]
-
-
-" -----Zotcite:
-
-	let zotcite_filetypes = ['markdown', 'pandoc', 'rmd', 'vimwiki']
+	"Zotcite:
+		let zotcite_filetypes = ['markdown', 'pandoc', 'rmd', 'vimwiki']
