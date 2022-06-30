@@ -35,17 +35,18 @@
 	set wildmenu
 	set wrapmargin=0
 	set wrap
-	" Necessary order, ignore the alphabetical order for the next three lines
+	"Necessary order, ignore the alphabetical order for the next three lines:
 	set linebreak
 	set textwidth=0
 	set display=lastline
+	"End of alphabetical exception.
 	syntax on
 
 
 " -----Global autocommands:
-	" Uncomment the following to have Vim jump to the last position when
-" reopening a file
-	au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+"
+	"Jump to the last position when reopening a file:
+		au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 
 " ------Keybindings:
