@@ -190,6 +190,7 @@
 			fi
 	}
 
+
 # -----Convert markdown notes into half letter pdfs:
 	hlpdf() {
 		cd $HOME/Desktop/vimwiki/
@@ -208,6 +209,7 @@
 				cd ; &>/dev/null 
 			fi
 	}
+
 
 # -----Convert markdown notes into simple html files:
 	mdhtml() {
@@ -245,6 +247,7 @@
 			fi
 	}
 
+
 # -----Convert markdown notes into half letter pdfs:
 	sidhlpdf() {
 		cd $HOME/Desktop/vimwiki/
@@ -264,6 +267,7 @@
 			fi
 	}
 
+
 # -----Convert markdown notes into simple html files:
 	sidmdhtml() {
 		cd $HOME/Desktop/vimwiki/
@@ -277,6 +281,7 @@
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			fi
 	}
+
 
 # -----Convert markdown notes into letter odts:
 	sidmdodt() {
@@ -295,6 +300,7 @@
 				cd ; &>/dev/null 
 			fi
 	}
+
 
 # -----Convert markdown notes into letter docxs:
 	sidmddocx() {
