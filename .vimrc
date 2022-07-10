@@ -55,7 +55,7 @@
 		imap fd <Esc>
 		vmap fd <Esc> 
 
-	"Toggle Goyo: 
+	"Toggle Goyo on/off: 
 		nmap <Space> :Goyo <CR>
 
 	"Vim-like movement between splits:	
@@ -145,7 +145,10 @@
 			set statusline+=%=				
 			set statusline+=%0*\ %n\ 		
 
-	"Goyo functions: 
+	"Goyo: 
+		let g:goyo_width=90
+		let g:goyo_height=90
+
 		function! s:goyo_enter()
 		set cursorline nocursorcolumn 
 		endfunction
