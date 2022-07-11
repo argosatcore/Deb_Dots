@@ -105,7 +105,7 @@
 		--reverse --preview "apt-cache show {}" --preview-window=:80%:wrap:hidden \
 		--bind=space:toggle-preview)"
 		if [ -n "$repos" ]; then
-		apt search "$repos"
+		apt search --names-only "$repos"
 		else
 			&>/dev/null
 		fi
