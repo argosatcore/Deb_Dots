@@ -16,36 +16,44 @@
 
 
 # ------Make bash case insensitive:
-	set completion-ignore-case On
-
+	set completion-ignore-case on
+	set completion-map-case on
 
 # ------Reduce tab completion key presses and show suggestions:
 	set show-all-if-ambiguous on
 
 
 # ------Color files by types:
-	set colored-stats On
+	set colored-stats on
 
 
 # ------Append char to indicate type:
-	set visible-stats On
+	set visible-stats on
 
 
 # ------Mark symlinked directories:
-	set mark-symlinked-directories On
+	set mark-symlinked-directories on
 
 
 # ------Color the common prefix:
-	set colored-completion-prefix On
+	set colored-completion-prefix on
 
 
 # ------Color the common prefix in menu-complete:
-	set menu-complete-display-prefix On
+	set menu-complete-display-prefix on
 
 
 # ------Show matches instead of ringing the bell:
-	set show-all-if-unmodified On
+	set show-all-if-unmodified on
 
 
 # ------Do not repeat portions of the word following the cursor:	
-	set skip-completed-text On
+	set skip-completed-text on
+
+
+# ------Don't ask for completion if more than x completions
+	set completion-query-items -1
+
+
+# ------Don't use a pager but show everything at once
+	set page-completions off

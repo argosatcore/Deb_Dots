@@ -105,7 +105,7 @@
 		--reverse --preview "apt-cache show {}" --preview-window=:80%:wrap:hidden \
 		--bind=space:toggle-preview)"
 		if [ -n "$repos" ]; then
-		apt search "$repos"
+		apt search --names-only "$repos"
 		else
 			&>/dev/null
 		fi
@@ -163,12 +163,14 @@
 		|| printf '%s\n' 0
 	}
 
-# -----Convert markdown notes into letter pdfs:
-# As a side note for this function, as Debian 11 uses an older version of
+
+# As a side note for the following, as Debian 11 uses an older version of
 # pandoc, the flag '-F pandoc-citeproc' is needed for this function to work.
-# However, on newer versions of Debian or distributions that use a more 
-# recent version of pandoc, this flag should not be used anymore. Instead, 
-# use the '--citeproc' flag.
+# However, on newer versions of pandoc (pandoc-citeproc has been deprecated 
+# by upstream in favor of citeproc in pandoc v2.11.0.4 [2020-10-21]), this
+# flag should not be used anymore. Instead, use the '--citeproc' flag.
+
+# -----Convert markdown notes into letter pdfs:
 
 	mdpdf() {
 		cd $HOME/Desktop/vimwiki/
@@ -179,7 +181,7 @@
 			if [ -n "$doc" ]; then
 			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
 			--variable monofont="Menlo" -V "geometry:margin=5.08cm" -V 'papersize:letter' \
-			-M lang:es -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
+			-M lang:es-MX -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
 			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
@@ -188,13 +190,8 @@
 			fi
 	}
 
-# -----Convert markdown notes into half letter pdfs:
-# As a side note for this function, as Debian 11 uses an older version of
-# pandoc, the flag '-F pandoc-citeproc' is needed for this function to work.
-# However, on newer versions of Debian or distributions that use a more 
-# recent version of pandoc, this flag should not be used anymore. Instead, 
-# use the '--citeproc' flag.
 
+# -----Convert markdown notes into half letter pdfs:
 	hlpdf() {
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
@@ -204,7 +201,7 @@
 			if [ -n "$doc" ]; then
 			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
 			--variable monofont="Menlo" -V "geometry:paperheight=21.6cm,paperwidth=14cm,margin=2.54cm" \
-			-V 'pdfa=true' -V 'pdfaiccprofile=default.cmyk' -M lang:es -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
+			-V 'pdfa=true' -V 'pdfaiccprofile=default.cmyk' -M lang:es-MX -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
 			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
@@ -213,13 +210,8 @@
 			fi
 	}
 
-# -----Convert markdown notes into simple html files:
-# As a side note for this function, as Debian 11 uses an older version of
-# pandoc, the flag '-F pandoc-citeproc' is needed for this function to work.
-# However, on newer versions of Debian or distributions that use a more 
-# recent version of pandoc, this flag should not be used anymore. Instead, 
-# use the '--citeproc' flag.
 
+# -----Convert markdown notes into simple html files:
 	mdhtml() {
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
@@ -227,7 +219,7 @@
 		htmltoread="${doc%%.*}"
 		cleanpdfname="${htmltoread##*/}"
 			if [ -n "$doc" ]; then
-			pandoc "$doc" -M lang:es -s -o $HOME/Desktop/vimwiki/Htmls/"$cleanpdfname".html \
+			pandoc "$doc" -M lang:es-MX -s -o $HOME/Desktop/vimwiki/Htmls/"$cleanpdfname".html \
 			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			fi
@@ -235,13 +227,8 @@
 
 
 # ------Sid exclusive functions:
-# -----Convert markdown notes into letter pdfs:
-# As a side note for this function, as Debian 11 uses an older version of
-# pandoc, the flag '-F pandoc-citeproc' is needed for this function to work.
-# However, on newer versions of Debian or distributions that use a more 
-# recent version of pandoc, this flag should not be used anymore. Instead, 
-# use the '--citeproc' flag.
 
+# -----Convert markdown notes into letter pdfs:
 	sidmdpdf() {
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
@@ -251,7 +238,7 @@
 			if [ -n "$doc" ]; then
 			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
 			--variable monofont="Menlo" -V "geometry:margin=5.08cm" -V 'papersize:letter' \
-			-M lang:es -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
+			-M lang:es-MX -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
 			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
@@ -260,13 +247,8 @@
 			fi
 	}
 
-# -----Convert markdown notes into half letter pdfs:
-# As a side note for this function, as Debian 11 uses an older version of
-# pandoc, the flag '-F pandoc-citeproc' is needed for this function to work.
-# However, on newer versions of Debian or distributions that use a more 
-# recent version of pandoc, this flag should not be used anymore. Instead, 
-# use the '--citeproc' flag.
 
+# -----Convert markdown notes into half letter pdfs:
 	sidhlpdf() {
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
@@ -276,7 +258,7 @@
 			if [ -n "$doc" ]; then
 			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
 			--variable monofont="Menlo" -V "geometry:paperheight=21.6cm,paperwidth=14cm,margin=2.54cm" \
-			-V 'pdfa=true' -V 'pdfaiccprofile=default.cmyk' -M lang:es -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
+			-V 'pdfa=true' -V 'pdfaiccprofile=default.cmyk' -M lang:es-MX -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
 			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
@@ -285,13 +267,8 @@
 			fi
 	}
 
-# -----Convert markdown notes into simple html files:
-# As a side note for this function, as Debian 11 uses an older version of
-# pandoc, the flag '-F pandoc-citeproc' is needed for this function to work.
-# However, on newer versions of Debian or distributions that use a more 
-# recent version of pandoc, this flag should not be used anymore. Instead, 
-# use the '--citeproc' flag.
 
+# -----Convert markdown notes into simple html files:
 	sidmdhtml() {
 		cd $HOME/Desktop/vimwiki/
 		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
@@ -299,8 +276,46 @@
 		htmltoread="${doc%.*}"
 		cleanpdfname="${htmltoread##*/}"
 			if [ -n "$doc" ]; then
-			pandoc "$doc" -M lang:es -s -o $HOME/Desktop/vimwiki/Htmls/"$cleanpdfname".html \
+			pandoc "$doc" -M lang:es-MX -s -o $HOME/Desktop/vimwiki/Htmls/"$cleanpdfname".html \
 			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
+			fi
+	}
+
+
+# -----Convert markdown notes into letter odts:
+	sidmdodt() {
+		cd $HOME/Desktop/vimwiki/
+		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
+			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
+		pdftoread="${doc%.*}"
+		cleanpdfname="${pdftoread##*/}"
+			if [ -n "$doc" ]; then
+			pandoc "$doc" \
+			-M lang:es-MX -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".odt \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
+			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
+			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".odt & disown; exit
+			else
+				cd ; &>/dev/null 
+			fi
+	}
+
+
+# -----Convert markdown notes into letter docxs:
+	sidmddocx() {
+		cd $HOME/Desktop/vimwiki/
+		doc="$(fdfind -t f -H | fzf --reverse --color=border:#FFFFFF --preview="less {}" \
+			--bind="space:toggle-preview" --preview-window=:80%:wrap:hidden)"
+		pdftoread="${doc%.*}"
+		cleanpdfname="${pdftoread##*/}"
+			if [ -n "$doc" ]; then
+			pandoc "$doc" \
+			-M lang:es-MX -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".docx \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
+			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
+			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".docx & disown; exit
+			else
+				cd ; &>/dev/null 
 			fi
 	}

@@ -36,6 +36,7 @@
 	alias dst='nvim ~/Debstrap/debstrap.sh'
 	alias v='nvim'
 	alias t='tmux'
+	alias tree='tree -C'
 	alias m='tmux -f ~/.2tmux.conf'
 	alias ws='watch sensors'
 	alias c='clear'
