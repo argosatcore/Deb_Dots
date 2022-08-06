@@ -12,7 +12,7 @@ initialize() {
 	printf " \n"
 	printf "Updating system...\n"
 	printf " \n"
-	sudo apt update 
+	sudo apt update
 }
 
 commons() {
@@ -21,7 +21,6 @@ commons() {
 		acpi-support \
 		bash-completion \
 		bookletimposer \
-		calcurse \
 		cups \
 		citation-style-language-locales \
 		citation-style-language-styles \
@@ -57,7 +56,7 @@ commons() {
 		python3-pyqt5 \
 		silversearcher-ag \
 		sqlite3 \
-		texlive-full \
+		texlive \
 		thermald \
 		tmux \
 		torbrowser-launcher \
@@ -76,26 +75,24 @@ sidtools() {
 		apt-utils \
 		blender \
 		bombadillo \
-		build-essential \
 		create-resources \
 		foliate \
 		gimp \
 		gnome-text-editor \
 		gnome-console \
 		inkscape \
-		pipewire-audio-client-libraries \
 		reportbug-gtk \
 		scribus \
 		swaylock \
 		wireplumber \
 		yt-dlp
-	sudo apt remove \
+	sudo apt purge \
 		pipewire-media-session \
 		unattended-upgrades
 }
 
-waytools() {
-	printf "Installing Wayland related packages...\n"
+swaytools() {
+	printf "Installing Sway related packages...\n"
 	sudo apt install -y \
 		brightnessctl \
 		eog \
@@ -124,6 +121,8 @@ gnome_setup_stable() {
 	sudo apt install -y \
 		gnome-core
 	printf "Setting up Gnome...\n"
+	sudo rm /etc/apt/sources.list
+	sudo mv $HOME/Debstrap/debian_stable.sources /etc/apt/sources.list.d/debian.sources
 	mkdir ~/Pictures/Wallpapers
 	cp ~/Debstrap/kh.png  ~/Pictures/Wallpapers/
 	dconf load / < ~/Debstrap/full-desktop-backup
@@ -269,12 +268,12 @@ while true; do
     esac
 done
 
-# 4----- Installation of useful Wayland programs:
+# 4----- Installation of useful Sway programs:
 while true; do
-    read -p "Do you want to install waytools?" yn
+    read -p "Do you want to install swaytools?" yn
     case $yn in
-        [Yy]* ) waytools; break;;
-        [Nn]* ) printf "Skipping waytools installation.\n"; break;;
+        [Yy]* ) swaytools; break;;
+        [Nn]* ) printf "Skipping swaytools installation.\n"; break;;
         * ) printf "Please answer yes or no.\n";;
     esac
 done
