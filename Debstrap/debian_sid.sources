@@ -1,0 +1,4 @@
+Types: deb deb-src
+URIs: http://deb.debian.org/debian
+Suites: unstable
+Components: main contrib non-free
