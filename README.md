@@ -37,7 +37,7 @@
     
 ## Bootstrap
  
-The script assumes you are on a Debian Stable or Debian Sid system and has not been tested on other distributions. Depending on your distribution, the packages listed in the script may not be available or have a different name. If the latter is the case, modify the script accordingly, otherwise, it **will** fail. 
+The script assumes you are on a Debian Stable or Debian Sid system and has not been tested on other distributions. Depending on your distribution, the packages listed in the script may not be available or have a different name. If this is the case, modify the script accordingly, otherwise, it **will** fail. 
 
 1. Use `wget` to download and run the bootstrapping script called `debstrap.sh`, which is located inside the `Debstrap` directory within this repository.  
         
@@ -47,7 +47,7 @@ The script assumes you are on a Debian Stable or Debian Sid system and has not b
 
         chmod +x debstrap.sh
         
-3. Deploy `debstrap.sh`. To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled ["Debstrap Options"](./Debstrap/debstrap.sh/#L237).
+3. Deploy `debstrap.sh`. To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled ["Debstrap Options"](./Debstrap/debstrap.sh/#L238).
 
         ./debstrap.sh
 
