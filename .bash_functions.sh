@@ -239,7 +239,7 @@
 			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
 			--variable monofont="Menlo" -V "geometry:margin=5.08cm" -V 'papersize:letter' \
 			-M lang:es-MX -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
-			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py --citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
 			else
@@ -259,7 +259,7 @@
 			pandoc "$doc" --pdf-engine=xelatex -V 'fontsize:10pt' -V 'indent:yes' \
 			--variable monofont="Menlo" -V "geometry:paperheight=21.6cm,paperwidth=14cm,margin=2.54cm" \
 			-V 'pdfa=true' -V 'pdfaiccprofile=default.cmyk' -M lang:es-MX -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf \
-			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py --citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
 			else
@@ -277,7 +277,7 @@
 		cleanpdfname="${htmltoread##*/}"
 			if [ -n "$doc" ]; then
 			pandoc "$doc" -M lang:es-MX -s -o $HOME/Desktop/vimwiki/Htmls/"$cleanpdfname".html \
-			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py --citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			fi
 	}
@@ -293,7 +293,7 @@
 			if [ -n "$doc" ]; then
 			pandoc "$doc" \
 			-M lang:es-MX -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".odt \
-			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py --citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".odt & disown; exit
 			else
@@ -312,7 +312,7 @@
 			if [ -n "$doc" ]; then
 			pandoc "$doc" \
 			-M lang:es-MX -s -o $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".docx \
-			-F $HOME/.vim/pluged/zotcite/python3/zotref.py -F pandoc-citeproc \
+			-F $HOME/.vim/pluged/zotcite/python3/zotref.py --citeproc \
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".docx & disown; exit
 			else
