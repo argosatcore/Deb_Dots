@@ -6,4 +6,4 @@ Components: main contrib non-free
 Types: deb deb-src
 URIs: http://security.debian.org
 Suites: bullseye-security
-Components: main contrib non-free 
+Components: main contrib non-free
