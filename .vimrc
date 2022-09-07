@@ -32,6 +32,7 @@
 	set spellsuggest=10
 	set splitbelow
 	set splitright
+	set termguicolors
 	set wildmenu
 	set wrapmargin=0
 	set wrap
@@ -103,7 +104,7 @@
 		call plug#end()
 
 	"Colorscheme:
-		colorscheme nord 
+		colorscheme apprentice
 
 		"Status line colors:
 			au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=black ctermbg=magenta
@@ -154,7 +155,6 @@
 		endfunction
 		
 		function! s:goyo_leave()
-		hi statusline guifg=black guibg=#8fbfdc ctermfg=black ctermbg=cyan
 		set cursorline cursorcolumn
 		endfunction
 	
