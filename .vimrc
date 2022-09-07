@@ -93,7 +93,6 @@
 
 	"Plug-ins list:
 		call plug#begin(expand('~/.vim/pluged'))
-		Plug 'arcticicestudio/nord-vim' 
 		Plug 'junegunn/goyo.vim'
 		Plug 'airblade/vim-gitgutter'
 		Plug 'vimwiki/vimwiki'
