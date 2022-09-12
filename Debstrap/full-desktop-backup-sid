@@ -1,3 +1,22 @@
+[com/github/johnfactotum/Foliate/library]
+height=600
+maximized=false
+width=800
+
+[com/github/johnfactotum/Foliate/view]
+bg-color='#fff'
+fg-color='#000'
+invert=false
+link-color='blue'
+prefer-dark-theme=false
+
+[com/github/johnfactotum/Foliate/window-state]
+fullscreen=false
+height=1001
+last-file='/home/argos/Desktop/Biblioteca/Historia y Teoría del Arte/Georges Didi-Huberman/Cuando las imágenes toman posición (Brecht, BertoltDidi-Huberman, Georges) (z-lib.org).epub'
+maximized=true
+width=1920
+
 [org/freedesktop/tracker/miner/files]
 index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&PICTURES', '&VIDEOS']
 index-single-directories=['&DOWNLOAD']
@@ -32,7 +51,7 @@ volume-rate=1.0
 web-search='SPOTIFY'
 window-maximized=false
 window-position=[26, 23]
-window-size=[1018, 1032]
+window-size=[946, 998]
 
 [org/gnome/Mines]
 use-animations=false
@@ -53,7 +72,7 @@ style-scheme='Adwaita-dark'
 use-system-font=false
 
 [org/gnome/Totem]
-active-plugins=['screenshot', 'rotation', 'skipto', 'movie-properties', 'autoload-subtitles', 'variable-rate', 'recent', 'vimeo', 'open-directory', 'save-file', 'screensaver', 'media-player-keys', 'apple-trailers']
+active-plugins=['screenshot', 'rotation', 'skipto', 'movie-properties', 'autoload-subtitles', 'variable-rate', 'recent', 'vimeo', 'open-directory', 'save-file', 'screensaver', 'mpris', 'apple-trailers']
 subtitle-encoding='UTF-8'
 
 [org/gnome/baobab/ui]
@@ -92,20 +111,24 @@ maximized=false
 size=(1080, 607)
 
 [org/gnome/control-center]
-last-panel='keyboard'
-window-state=(980, 640, true)
+last-panel='background'
+window-state=(1225, 785, false)
 
 [org/gnome/deja-dup]
 backend='drive'
+delete-after=0
 exclude-list=['$TRASH', '/home/argos/Public', '/home/argos/Templates', '/home/argos/blender-git', '/home/argos/Downloads']
-last-backup='2022-04-24T01:10:48.009259Z'
+last-backup='2022-07-31T22:21:18.158607Z'
 last-restore='2021-11-20T03:57:28.410345Z'
-last-run='2022-04-23T23:07:11.379693Z'
-nag-check='2022-04-24T01:11:24.625444Z'
+last-run='2022-07-31T19:46:23.554491Z'
+nag-check='2022-07-31T22:22:04.957131Z'
+periodic-period=7
 prompt-check='2021-09-17T21:48:09.155623Z'
+window-height=500
+window-width=700
 
 [org/gnome/deja-dup/drive]
-folder='Respaldos_Carlos/Respaldo_23_04_2022'
+folder='Respaldos_Carlos/Respaldo_31_07_2022'
 icon='. GThemedIcon drive-harddisk-usb drive-harddisk drive drive-harddisk-usb-symbolic drive-harddisk-symbolic drive-symbolic'
 name='2.0 TB Volume'
 uuid='1365-665A'
@@ -120,7 +143,7 @@ mousekeys-enable=false
 folder-children=['Utilities', 'YaST', '958f5a75-6e64-43e5-afdc-800aa15e854b', 'b39768c5-4193-4166-bfdb-1e62212db637', '7a414dbe-eb42-4608-ac12-862f7ef55a4c', '1c3da104-2d9e-47b0-8087-76183d9272a2', 'c27e08af-525c-4261-9391-00e47fbc04ae', '55b9c2d6-31a6-4164-bc17-2c43e67eb937', '101839c3-1a8a-43a5-9586-fea30b63bbb2', '17abbebb-6979-41e2-950b-d2113cc91193', '6b2cdc03-1872-4eec-bb64-64718647b314', '758fff78-a416-4c6f-8b48-abcd1e3aa7e6', 'e44567bf-3f92-428f-9521-9be573e5beb8', 'c419eaf4-599c-48c3-8dfb-46797b2459e7']
 
 [org/gnome/desktop/app-folders/folders/101839c3-1a8a-43a5-9586-fea30b63bbb2]
-apps=['org.gnome.Music.desktop', 'rhythmbox.desktop', 'org.gnome.SoundRecorder.desktop', 'org.gnome.Lollypop.desktop', 'mpv.desktop', 'org.gnome.Totem.desktop', 'vlc.desktop']
+apps=['org.gnome.Music.desktop', 'rhythmbox.desktop', 'org.gnome.SoundRecorder.desktop', 'org.gnome.Lollypop.desktop', 'mpv.desktop', 'org.gnome.Totem.desktop', 'vlc.desktop', 'org.gnome.Rhythmbox3.desktop']
 name='Sound & Video'
 
 [org/gnome/desktop/app-folders/folders/17abbebb-6979-41e2-950b-d2113cc91193]
@@ -157,7 +180,7 @@ translate=false
 [org/gnome/desktop/app-folders/folders/Utilities]
 apps=['org.gnome.Calculator.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.seahorse.Application.desktop', 'simple-scan.desktop', 'yelp.desktop', 'org.gnome.Cheese.desktop', 'org.gnome.clocks.desktop', 'goldendict.desktop', 'org.gnome.Documents.desktop', 'kasumi.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Characters.desktop', 'org.gnome.font-viewer.desktop', 'gucharmap.desktop', 'setup-mozc.desktop', 'org.gnome.Maps.desktop', 'org.freedesktop.MalcontentControl.desktop', 'org.gnome.Todo.desktop', 'org.gnome.Weather.desktop', 'htop.desktop', 'shotwell.desktop', 'org.goldendict.GoldenDict.desktop', 'im-config.desktop', 'ghcal.desktop', 'uim.desktop']
 categories=['X-GNOME-Utilities']
-excluded-apps=['org.gnome.tweaks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.baobab.desktop', 'gnome-system-monitor.desktop', 'nm-connection-editor.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.DejaDup.desktop']
+excluded-apps=['org.gnome.tweaks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.baobab.desktop', 'gnome-system-monitor.desktop', 'nm-connection-editor.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Console.desktop']
 name='X-GNOME-Utilities.directory'
 translate=true
 
@@ -172,7 +195,7 @@ name='Fctix'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/c27e08af-525c-4261-9391-00e47fbc04ae]
-apps=['nvim.desktop', 'vim.desktop', 'gvim.desktop', 'org.gnome.gedit.desktop', 'prerex.desktop', 'vprerex.desktop', 'info.desktop', 'texdoctk.desktop']
+apps=['nvim.desktop', 'vim.desktop', 'gvim.desktop', 'org.gnome.gedit.desktop', 'prerex.desktop', 'vprerex.desktop', 'info.desktop', 'texdoctk.desktop', 'org.gnome.TextEditor.desktop']
 name='Editors'
 translate=false
 
@@ -188,8 +211,8 @@ name='Preferences'
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/argos/.local/share/backgrounds/2022-03-06-20-23-36-kh.png'
-picture-uri-dark='file:///home/argos/.local/share/backgrounds/2022-03-06-20-23-36-kh.png'
+picture-uri='/home/argos/.config/background'
+picture-uri-dark='/home/argos/.config/background'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -218,8 +241,8 @@ show-battery-percentage=true
 text-scaling-factor=1.0
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-software', 'firefox-esr', 'org-gnome-lollypop', 'org-gnome-nautilus', 'gnome-power-panel', 'org-zotero-zotero', 'gnome-printers-panel', 'org-gnome-evince', 'org-inkscape-inkscape', 'libreoffice-writer', 'org-gnome-dejadup', 'org-gimp-gimp', 'org-mozilla-firefox', 'libreoffice-draw', 'org-kde-krita', 'net-scribus-scribus', 'org-gnome-gedit', 'vlc', 'rhythmbox', 'scribus', 'firefox']
-show-in-lock-screen=false
+application-children=['org-gnome-software', 'firefox-esr', 'org-gnome-lollypop', 'org-gnome-nautilus', 'gnome-power-panel', 'org-zotero-zotero', 'gnome-printers-panel', 'org-gnome-evince', 'org-inkscape-inkscape', 'libreoffice-writer', 'org-gnome-dejadup', 'org-gimp-gimp', 'org-mozilla-firefox', 'libreoffice-draw', 'org-kde-krita', 'net-scribus-scribus', 'org-gnome-gedit', 'vlc', 'rhythmbox', 'scribus', 'firefox', 'org-gnome-eog', 'org-gnome-settings']
+show-in-lock-screen=true
 
 [org/gnome/desktop/notifications/application/firefox-esr]
 application-id='firefox-esr.desktop'
@@ -248,6 +271,9 @@ application-id='org.gimp.GIMP.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-dejadup]
 application-id='org.gnome.DejaDup.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-eog]
+application-id='org.gnome.eog.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-evince]
 application-id='org.gnome.Evince.desktop'
 
@@ -259,6 +285,9 @@ application-id='org.gnome.Lollypop.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-settings]
+application-id='org.gnome.Settings.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
@@ -292,12 +321,13 @@ repeat-interval=uint32 20
 
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='adaptive'
-left-handed=true
+left-handed=false
 natural-scroll=false
 speed=1.0
 
 [org/gnome/desktop/peripherals/stylus/default-056a:00de]
 button-action='default'
+eraser-pressure-curve=[0, 0, 100, 100]
 pressure-curve=[0, 50, 50, 100]
 secondary-button-action='default'
 tertiary-button-action='default'
@@ -313,7 +343,9 @@ two-finger-scrolling-enabled=true
 
 [org/gnome/desktop/privacy]
 disable-camera=true
-disable-microphone=false
+disable-microphone=true
+old-files-age=uint32 7
+recent-files-max-age=-1
 remember-recent-files=false
 remove-old-temp-files=true
 report-technical-problems=true
@@ -321,13 +353,15 @@ report-technical-problems=true
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
 lock-delay=uint32 0
+lock-enabled=true
 picture-options='zoom'
 picture-uri='file:///home/argos/.local/share/backgrounds/2022-03-06-20-23-36-kh.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
 [org/gnome/desktop/search-providers]
-disabled=['org.gnome.Contacts.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Lollypop.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Software.desktop']
+disable-external=false
+disabled=['org.gnome.Contacts.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Characters.desktop', 'org.gnome.clocks.desktop', 'org.gnome.Lollypop.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Software.desktop', 'org.gnome.Terminal.desktop']
 sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
 
 [org/gnome/desktop/session]
@@ -365,8 +399,8 @@ background-color='rgb(0,0,0)'
 use-background-color=true
 
 [org/gnome/evince]
-document-directory=@ms 'file:///home/argos/Desktop/Operaciones_2021/4_Abstracci%C3%B3n/Solicitudes%20de%20derechos%20de%20im%C3%A1genes/Disco%20de%20piedra%20de%20Eynan'
-pictures-directory=@ms 'file:///home/argos/Desktop'
+document-directory=@ms 'file:///home/argos/Desktop/Biblioteca/Historia%20y%20Teor%C3%ADa%20del%20Arte/White%20Chapel'
+pictures-directory=@ms nothing
 
 [org/gnome/evince/default]
 continuous=true
@@ -379,7 +413,7 @@ show-sidebar=true
 sidebar-page='thumbnails'
 sidebar-size=132
 sizing-mode='free'
-window-ratio=(2.0913686649842069, 1.1949307893752332)
+window-ratio=(2.5642737896494157, 1.2446555819477434)
 zoom=1.4399999999999995
 
 [org/gnome/evolution-data-server]
@@ -387,7 +421,7 @@ migrated=true
 network-monitor-gio-name=''
 
 [org/gnome/evolution]
-version='3.38.3'
+version='3.45.3'
 
 [org/gnome/evolution/addressbook]
 completion-minimum-query-length=3
@@ -414,8 +448,10 @@ composer-visually-wrap-long-lines=false
 forward-style-name='attached'
 image-loading-policy='never'
 junk-check-incoming=true
+paned-size=1143730
 reply-style-name='quoted'
 search-gravatar-for-photo=false
+to-do-bar-width=1150000
 
 [org/gnome/evolution/mail/composer-window]
 height=500
@@ -424,6 +460,19 @@ width=600
 
 [org/gnome/evolution/shell]
 attachment-view=0
+buttons-visible=true
+default-component-id='mail'
+menubar-visible=true
+sidebar-visible=true
+statusbar-visible=true
+toolbar-visible=true
+
+[org/gnome/evolution/shell/window]
+height=654
+maximized=false
+width=1146
+x=26
+y=23
 
 [org/gnome/file-roller/dialogs/extract]
 recreate-folders=true
@@ -474,12 +523,12 @@ include-pointer=false
 last-save-directory='file:///home/argos/Pictures'
 
 [org/gnome/gnome-system-monitor]
-current-tab='processes'
-maximized=true
+current-tab='resources'
+maximized=false
 network-total-in-bits=false
 show-dependencies=false
 show-whose-processes='user'
-window-state=(1920, 1048, 0, 0)
+window-state=(877, 715, 26, 23)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-4-visible=false
@@ -497,7 +546,7 @@ sort-col=15
 sort-order=0
 
 [org/gnome/maps]
-last-viewed-location=[9.856632532059642, -83.931427001953125]
+last-viewed-location=[9.8566338533683293, -83.931427001953125]
 map-type='MapsStreetSource'
 transportation-type='pedestrian'
 window-maximized=true
@@ -519,6 +568,7 @@ default-zoom-level='standard'
 [org/gnome/nautilus/list-view]
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'recency', 'starred', 'detailed_type']
 default-visible-columns=['name', 'size', 'date_modified', 'starred']
+default-zoom-level='standard'
 use-tree-view=true
 
 [org/gnome/nautilus/preferences]
@@ -526,9 +576,10 @@ click-policy='single'
 default-folder-viewer='icon-view'
 search-filter-time-type='last_modified'
 search-view='icon-view'
+show-create-link=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(819, 678)
+initial-size=(1070, 608)
 maximized=false
 sidebar-width=227
 start-with-sidebar=true
@@ -590,12 +641,12 @@ visible-columns=['post-time', 'duration', 'track-number', 'album', 'genre', 'art
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=true
-night-light-temperature=uint32 3210
+night-light-temperature=uint32 3176
 
 [org/gnome/settings-daemon/plugins/media-keys]
 area-screenshot=['<Shift><Super>s']
 area-screenshot-clip=['<Primary><Shift><Super>s']
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/']
 home=['<Super>f']
 screenreader=@as []
 screenshot=['<Super>s']
@@ -616,6 +667,11 @@ name='Foot'
 binding='<Shift><Super>u'
 command='foot -a=bookmark sh .local/bin/flatfuzzybook.sh'
 name='Flatbookmarks'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10]
+binding='<Super>k'
+command='kgx'
+name="King's Cross"
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
 binding='<Shift><Super>g'
@@ -660,14 +716,18 @@ name='Notes'
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=true
 power-button-action='suspend'
+power-saver-profile-on-low-battery=true
+sleep-inactive-ac-timeout=1200
+sleep-inactive-ac-type='suspend'
+sleep-inactive-battery-timeout=1200
 sleep-inactive-battery-type='suspend'
 
 [org/gnome/shell]
-app-picker-layout=[{'c419eaf4-599c-48c3-8dfb-46797b2459e7': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'e44567bf-3f92-428f-9521-9be573e5beb8': <{'position': <2>}>, '101839c3-1a8a-43a5-9586-fea30b63bbb2': <{'position': <3>}>, '17abbebb-6979-41e2-950b-d2113cc91193': <{'position': <4>}>, '958f5a75-6e64-43e5-afdc-800aa15e854b': <{'position': <5>}>, '6b2cdc03-1872-4eec-bb64-64718647b314': <{'position': <6>}>, '758fff78-a416-4c6f-8b48-abcd1e3aa7e6': <{'position': <7>}>, 'c27e08af-525c-4261-9391-00e47fbc04ae': <{'position': <8>}>, '55b9c2d6-31a6-4164-bc17-2c43e67eb937': <{'position': <9>}>, 'b39768c5-4193-4166-bfdb-1e62212db637': <{'position': <10>}>, '7a414dbe-eb42-4608-ac12-862f7ef55a4c': <{'position': <11>}>}]
+app-picker-layout=[{'c419eaf4-599c-48c3-8dfb-46797b2459e7': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'e44567bf-3f92-428f-9521-9be573e5beb8': <{'position': <2>}>, '101839c3-1a8a-43a5-9586-fea30b63bbb2': <{'position': <3>}>, '17abbebb-6979-41e2-950b-d2113cc91193': <{'position': <4>}>, '958f5a75-6e64-43e5-afdc-800aa15e854b': <{'position': <5>}>, '6b2cdc03-1872-4eec-bb64-64718647b314': <{'position': <6>}>, '758fff78-a416-4c6f-8b48-abcd1e3aa7e6': <{'position': <7>}>, 'c27e08af-525c-4261-9391-00e47fbc04ae': <{'position': <8>}>, '55b9c2d6-31a6-4164-bc17-2c43e67eb937': <{'position': <9>}>, '7a414dbe-eb42-4608-ac12-862f7ef55a4c': <{'position': <10>}>}]
 disable-user-extensions=true
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['system-monitor@paradoxxx.zero.gmail.com', 'ubuntu-appindicators@ubuntu.com', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['foot.desktop', 'org.gnome.Console.desktop', 'org.gnome.Terminal.desktop', 'firefox.desktop', 'org.gnome.Lollypop.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'org.zotero.Zotero.desktop', 'org.gnome.Calculator.desktop']
+favorite-apps=['foot.desktop', 'firefox.desktop', 'org.gnome.Lollypop.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'org.zotero.Zotero.desktop', 'org.gnome.Calculator.desktop']
 welcome-dialog-last-shown-version='42.0'
 
 [org/gnome/shell/extensions/dash-to-dock]
@@ -731,14 +791,18 @@ locations=@av []
 
 [org/gnome/simple-scan]
 document-type='photo'
-save-directory='file:///home/argos/Documents/'
+page-side='both'
+save-directory='file:///home/argos/Desktop/Biblioteca/Filosof%C3%ADa/Giorgio%20Agamben/'
 save-format='application/pdf'
 
 [org/gnome/software]
-check-timestamp=int64 1650736690
+check-timestamp=int64 1650822753
+download-updates=false
+download-updates-notify=false
 first-run=false
 install-timestamp=int64 1633393044
 online-updates-timestamp=int64 1650394004
+update-notification-timestamp=int64 1662500680
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -750,8 +814,8 @@ width=800
 enabled=false
 
 [org/gnome/terminal/legacy/profiles:]
-default='ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee'
-list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '97f283fe-a5f2-43e8-b211-2167a0b6791f', '20ffb462-23e2-4b52-826b-2132096fb015', '676e63be-5d38-4625-9629-d4bba4f78905', '69abc0e8-6b75-487b-af69-4f0dcc82ad36', 'b89d7d4a-8e6c-4162-b384-9705198a0695', 'ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee']
+default='977976cd-f8a7-4e44-ae9f-420b738d85ed'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '97f283fe-a5f2-43e8-b211-2167a0b6791f', '20ffb462-23e2-4b52-826b-2132096fb015', '676e63be-5d38-4625-9629-d4bba4f78905', '69abc0e8-6b75-487b-af69-4f0dcc82ad36', 'b89d7d4a-8e6c-4162-b384-9705198a0695', 'ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee', '977976cd-f8a7-4e44-ae9f-420b738d85ed']
 
 [org/gnome/terminal/legacy/profiles:/:20ffb462-23e2-4b52-826b-2132096fb015]
 background-color='rgb(23,20,33)'
@@ -785,6 +849,14 @@ palette=['rgb(21,21,21)', 'rgb(188,86,83)', 'rgb(144,157,99)', 'rgb(235,193,122)
 use-system-font=false
 use-theme-colors=false
 visible-name='MaterialDeb'
+
+[org/gnome/terminal/legacy/profiles:/:977976cd-f8a7-4e44-ae9f-420b738d85ed]
+background-color='rgb(38,38,38)'
+bold-is-bright=true
+foreground-color='rgb(188,188,188)'
+palette=['rgb(46,52,54)', 'rgb(174,94,94)', 'rgb(95,135,95)', 'rgb(135,135,95)', 'rgb(95,135,175)', 'rgb(95,95,135)', 'rgb(95,135,135)', 'rgb(108,108,108)', 'rgb(68,68,68)', 'rgb(255,135,0)', 'rgb(135,175,135)', 'rgb(255,255,175)', 'rgb(143,175,215)', 'rgb(135,135,175)', 'rgb(95,175,175)', 'rgb(255,255,255)']
+use-theme-colors=false
+visible-name='Apprentice'
 
 [org/gnome/terminal/legacy/profiles:/:97f283fe-a5f2-43e8-b211-2167a0b6791f]
 background-color='rgb(29,32,33)'
@@ -834,6 +906,12 @@ use-system-font=false
 use-theme-colors=false
 visible-name='Material-Design'
 
+[org/gnome/todo]
+default-provider='local'
+view='grid'
+window-maximized=false
+window-size=(800, 600)
+
 [org/gnome/tweaks]
 show-extensions-notice=false
 
@@ -848,11 +926,11 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-size=(943, 327)
+window-size=(943, 374)
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(1.0, 0.32156862745098042, 0.32156862745098042, 1.0), (0.69019607843137254, 0.74509803921568629, 0.77254901960784317, 1.0), (0.14901960784313725, 0.19607843137254902, 0.2196078431372549, 1.0), (0.65490196078431373, 0.99215686274509807, 0.92156862745098023, 1.0), (0.20000000000000001, 0.7803921568627451, 0.87058823529411766, 1.0), (0.75294117647058822, 0.38039215686274502, 0.79607843137254897, 1.0), (0.50196078431372548, 0.84705882352941164, 1.0, 1.0), (0.16470588235294117, 0.4823529411764706, 0.87058823529411766, 1.0)]
-selected-color=(true, 0.0, 0.0, 0.0, 1.0)
+custom-colors=[(0.37333333333333335, 0.37333333333333335, 0.37333333333333335, 1.0), (0.26666666666666666, 0.26666666666666666, 0.26666666666666666, 1.0), (0.10980392156862745, 0.10980392156862745, 0.10980392156862745, 1.0), (0.73725490196078436, 0.73725490196078436, 0.73725490196078436, 1.0), (0.14901960784313725, 0.14901960784313725, 0.14901960784313725, 1.0), (0.090196078431372548, 0.078431372549019607, 0.12941176470588237, 1.0), (0.3725490196078432, 0.68627450980392157, 0.68627450980392157, 1.0), (0.20000000000000001, 0.7803921568627451, 0.87058823529411766, 1.0)]
+selected-color=(true, 0.26666666666666666, 0.26666666666666666, 0.26666666666666666, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
@@ -864,10 +942,30 @@ show-type-column=true
 sidebar-width=178
 sort-column='name'
 sort-directories-first=true
-sort-order='descending'
+sort-order='ascending'
 type-format='category'
 window-position=(26, 23)
 window-size=(1444, 1001)
+
+[org/yorba/shotwell/preferences/ui]
+display-basic-properties=true
+display-extended-properties=false
+display-photo-comments=false
+display-photo-ratings=true
+display-photo-tags=true
+display-photo-titles=false
+display-search-bar=false
+display-sidebar=true
+events-sort-ascending=false
+library-photos-sort-ascending=false
+library-photos-sort-by=2
+show-welcome-dialog=false
+sidebar-position=180
+
+[org/yorba/shotwell/preferences/window]
+library-height=768
+library-maximize=false
+library-width=1024
 
 [system/proxy]
 mode='none'
