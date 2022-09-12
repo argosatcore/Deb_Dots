@@ -79,7 +79,7 @@
 
 # ------Use fzf to move between directories:
 	fd() {
-		cd "$(fdfind -t d -H | fzf --cycle --reverse --color=border:#FFFFFF \
+		cd;cd "$(fdfind -t d -H | fzf --cycle --reverse --color=border:#FFFFFF \
 		--preview="tree -L 1 {}" --bind="space:toggle-preview" \
 		--preview-window=wrap:hidden)" && clear
 	}
