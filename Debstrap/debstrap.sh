@@ -64,7 +64,7 @@ commons() {
 		toilet \
 		unrar \
 		vim-gtk \
-		vlc 
+		vlc
 }
 
 sidtools() {
@@ -113,7 +113,7 @@ swaytools() {
 		xdg-desktop-portal-wlr \
 		xdg-user-dirs-gtk \
 		xdg-utils \
-		xwayland 
+		xwayland
 }
 
 gnome_setup_stable() {
@@ -156,7 +156,7 @@ bibliographical() {
 
 flatapps() {
 	printf "Installing commonly used flatpaks...\n"
-	flatpak install flathub org.gimp.GIMP	
+	flatpak install flathub org.gimp.GIMP
 	flatpak install flathub org.inkscape.Inkscape
 	flatpak install flathub net.scribus.Scribus
 	flatpak install flathub org.kde.krita
@@ -166,7 +166,7 @@ flatapps() {
 argodots() {
 	printf "Capturing dotfiles...\n"
 	printf " \n"
-	git clone git@github.com:argosatcore/Deb_Dots.git 
+	git clone git@github.com:argosatcore/Deb_Dots.git
 	printf " \n" 
 	printf "Deploying  dotfiles...\n"
 	printf " \n"
@@ -211,7 +211,7 @@ exodots() {
 
 sshkey() {
 	printf "Generating ssh key...\n"
-	ssh-keygen -t ed25519 
+	ssh-keygen -t ed25519
 	eval "$(ssh-agent -s)"
 	ssh-add ~/.ssh/id_ed25519
 	printf "Add the SSH key to your github account\n"
