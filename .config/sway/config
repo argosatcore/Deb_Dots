@@ -28,7 +28,7 @@
         # Floating modifier:
 	floating_modifier $mod normal
 
-	# Include system sway variables:
+		# Include system sway variables:
 	include /etc/sway/config-vars.d/*
 
 	# Floating windows list:
@@ -63,7 +63,7 @@
 #--------------------
 
 	# output * bg #64727D solid_color 
-	output * bg ~/Debstrap/kh.png fill 
+	output * bg ~/Debstrap/kh2.png fill 
 
 
 #----------------------
@@ -96,7 +96,7 @@
 	input * {
 		xkb_options "caps:swapescape,, grp:win_space_toggle,, altwin:menu_win"
 		left_handed enabled
-		xkb_layout "us,latam"
+		xkb_layout "us, latam"
 		xkb_variant "altgr-intl,"
 		repeat_delay 200
 		repeat_rate 100
@@ -352,7 +352,7 @@
 	default_border pixel 2
 	smart_borders on
 	default_floating_border normal 2
-	
+
 	# Toggle border style:
 	bindsym $mod+Shift+b exec swaymsg border toggle
 

@@ -28,7 +28,7 @@
 	set omnifunc=syntaxcomplete#Complete
 	set showcmd
 	set showmatch
-	set spell spelllang=es,en_us  	
+	set spell spelllang=es,en_us
 	set spellsuggest=10
 	set splitbelow
 	set splitright
@@ -54,16 +54,16 @@
 
 	"Return to normal mode:
 		imap fd <Esc>
-		vmap fd <Esc> 
+		vmap fd <Esc>
 
-	"Toggle Goyo on/off: 
+	"Toggle Goyo on/off:
 		nmap <Space> :Goyo <CR>
 
-	"Vim-like movement between splits:	
+	"Vim-like movement between splits:
 		nnoremap <C-h> <C-W>h
 		nnoremap <C-j> <C-W>j
 		nnoremap <C-k> <C-W>k
-		nnoremap <C-l> <C-W>l  
+		nnoremap <C-l> <C-W>l 
 
 	"Resize splits with arrow keys:
 		nnoremap <Left>  :vertical resize +2<CR>
@@ -136,7 +136,7 @@
 		"Status modules:
 			set statusline=
 			set statusline+=\ \ %{toupper(g:currentmode[mode()])}\ 
-			set statusline+=%#Search#					
+			set statusline+=%#Search#
 			set statusline+=%1*\ %<%F%m%r%h%w\ [%{&spelllang}\]\ 		
 			set statusline+=%#Search#				
 			set statusline+=\ %y\ %{&fileencoding?&fileencoding:&encoding}\ 
@@ -152,13 +152,14 @@
 		function! s:goyo_enter()
 		set cursorline nocursorcolumn 
 		endfunction
-		
+
 		function! s:goyo_leave()
 		set cursorline cursorcolumn
+		hi statusline guifg=black guibg=#8fbfdc ctermfg=black ctermbg=cyan
 		endfunction
-	
+
 		autocmd! User GoyoEnter nested call <SID>goyo_enter()
-		autocmd! User GoyoLeave nested call <SID>goyo_leave() 
+		autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 	"Vimwiki:
 		let g:vimwiki_list = [{'path': '~/Desktop/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'auto_tags':1}]
