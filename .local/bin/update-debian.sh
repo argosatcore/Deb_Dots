@@ -13,13 +13,13 @@ else
     fi
 fi
 
-printf "╔═══════════════════════════╗\n"
-printf "║ Updating Debian packages: ║\n"
-printf "╚═══════════════════════════╝\n"
+printf "╔══════════════════════════╗\n"
+printf "║ Updating Debian Packages ║\n"
+printf "╚══════════════════════════╝\n"
 sudo apt update 
 sudo apt upgrade
 printf " \n"
-printf "╔════════════════════╗\n"
-printf "║ Updating flatpaks: ║\n"
-printf "╚════════════════════╝\n"
+printf "╔═══════════════════╗\n"
+printf "║ Updating Flatpaks ║\n"
+printf "╚═══════════════════╝\n"
 flatpak update
