@@ -50,6 +50,7 @@
 	alias gnomebusid='dconf dump / > ~/Debstrap/full-desktop-backup-sid'
 	alias gnomelsidb='dconf load / < ~/Debstrap/full-desktop-backup-sid'
 	alias bb='v ~/Debstrap/Imposition_tips.md'
+	alias cp="rsync --archive --human-readable --progress --verbose --whole-file"
 
 	#Apt:
 	alias aptdate='sudo apt update'
