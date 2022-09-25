@@ -6,36 +6,32 @@
    
 ---
 
-A collection of my experiences with Linux in the form of dot files. These dotfiles were started with a minimal installation of Debian 10 Buster on 09/10/2020. The layout for this README.md as well as the contents of this dotfiles were heavily influenced by those of [Spencer Tipping](https://github.com/spencertipping/dotfiles) and [Conne McDaniel](https://github.com/connermcd/dotfiles). Now that I have been running GNU/Linux for quite some time, I feel that my configurations have become mature enough to be of the interest of other people. Just as the people mentioned above made theirs available -and in the spirit of GNU-, so do I. Reader, may you find something useful in them. 
+A collection of my experiences with Linux in the form of dot files. These dotfiles were started with a minimal installation of Debian 10 Buster on 09/10/2020. The layout for this README.md as well as the contents of this dotfiles were heavily influenced by those of [Spencer Tipping](https://github.com/spencertipping/dotfiles) and [Conner McDaniel](https://github.com/connermcd/dotfiles). Now that I have been running GNU/Linux for quite some time, I feel that my configurations have become mature enough to be of the interest of other people. Just as the people mentioned above made theirs available -and in the spirit of GNU-, so do I. Reader, may you find something useful in them. 
 
 ---
 
-## Introduction
+## Bootstrap
 
  The purpose of this repository is to contain the bare minimum of what is necessary to quickly bootstrap my current sensibilities on a Linux system. At its core, there are two assumptions: 
  
- 0. The use of the [Debian GNU/Linux Operating System](https://www.debian.org/), either Debian _Stable_ or Debian [Sid](https://wiki.debian.org/DebianUnstable) :skull:.
+ 0. The use of the [Debian GNU/Linux Operating System](https://www.debian.org/), either Debian _Stable_ or Debian [Sid](https://wiki.debian.org/DebianUnstable) :skull:. The script assumes you are on a Debian Stable or Debian Sid system and has not been tested on other distributions. Depending on your distribution, the packages listed in the script may not be available or have a different name. If this is the case, modify the script accordingly, otherwise, it **will** fail. 
  1. The implementation of the [Wayland protocol](https://wayland.freedesktop.org/) through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor or through the [GNOME](https://www.gnome.org/) desktop environment. 
        
- ---
-    
-## Bootstrap
- 
-The script assumes you are on a Debian Stable or Debian Sid system and has not been tested on other distributions. Depending on your distribution, the packages listed in the script may not be available or have a different name. If this is the case, modify the script accordingly, otherwise, it **will** fail. 
+To start the bootstrap script follow this steps:
 
-1. Use `wget` to download and run the bootstrapping script called `debstrap.sh`, which is located inside the `Debstrap` directory within this repository.  
+0. Use `wget` to download and run the bootstrapping script called `debstrap.sh`, which is located inside the `Debstrap` directory within this repository.  
         
         wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/debstrap.sh
 
-2. Make it executable.
+1. Make it executable.
 
         chmod +x debstrap.sh
         
-3. Deploy `debstrap.sh`. To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled ["Debstrap Options"](./Debstrap/debstrap.sh/#L238).
+2. Deploy `debstrap.sh`. To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled ["Debstrap Options"](./Debstrap/debstrap.sh/#L238).
 
         ./debstrap.sh
 
-4. Profit:
+3. Profit:
 
 | Sway | GNOME |
 | ---  | ---   |   
