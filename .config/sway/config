@@ -23,7 +23,7 @@
 	set $term foot 
 
 	# Your preferred application launcher:
-	set $menu wofi --show=drun --insensitive --width=20% --prompt=""  
+	set $menu wofi --show=drun --insensitive --width=25% --prompt=""
 
         # Floating modifier:
 	floating_modifier $mod normal
@@ -63,7 +63,7 @@
 #--------------------
 
 	# output * bg #64727D solid_color 
-	output * bg ~/Debstrap/kh.png fill 
+	output * bg ~/Debstrap/kh2.png fill 
 
 
 #----------------------
@@ -365,7 +365,7 @@
 	set $ta		#FFFFFF
 
 	# Window Border color:		border:		backgr:		text:		indicator:
-	client.focused			$ac		$ac		$ta		$ac
-	client.focused_inactive		$bg     	$bg		$uf		$ac
-	client.unfocused		$bg     	$bg		$uf		$ac
-	client.urgent			$bg     	$bg		$fg		$ac
+	client.focused			$ta		$ac		$ta		$ac
+	client.focused_inactive		$uf     	$bg		$uf		$ac
+	client.unfocused		$uf     	$bg		$uf		$ac
+	client.urgent			$uf     	$bg		$fg		$ac
