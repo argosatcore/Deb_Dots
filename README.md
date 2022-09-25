@@ -19,7 +19,6 @@
 - [Bootstrap](#bootstrap)
 - [Programs referenced by these configs](#programs-referenced-by-these-configs)
 - [Unexpected features you get right out of the gate](#unexpected-features-you-get-right-out-of-the-gate)
-- [Sway-specific](#sway-specific)
 
 ---
 
@@ -28,9 +27,6 @@
  The purpose of this repository is to contain the bare minimum of what is necessary to quickly bootstrap my current sensibilities on a Linux system. At its core, there are two assumptions: 
  
  0. The use of the [Debian GNU/Linux Operating System](https://www.debian.org/), either Debian _Stable_ or Debian [Sid](https://wiki.debian.org/DebianUnstable) :skull:.
-
-![Debianelitism](https://user-images.githubusercontent.com/64110504/162901499-42a2b712-ffeb-4d29-9123-d7bfdb30dfb3.jpg)
-
  1. The implementation of the [Wayland protocol](https://wayland.freedesktop.org/) through the use of the [Sway](https://swaywm.org/) tiling Wayland compositor or through the [GNOME](https://www.gnome.org/) desktop environment. 
        
  ---
@@ -95,22 +91,3 @@ All of which are `apt install`able on Debian _Stable_ -except for `swaylock`, wh
 | **[Ridiculously fast key repeat rate](./.config/sway/config/#L102):** Like, really fast.                                                                                                                                                                                     | Yes  | Yes         |
 | **[Alternate Keyboard layout set to Latin American](./.config/sway/config/#L99):** It is set as a second option and can be toggled by pressing `Super`+`Space`.                                                                                                             | Yes  | Yes         |
 | **[Gapless single client](./.config/sway/config/#L344):** If there is only one client on a given workspace, gaps and borders will be disabled. As soon as another client is launched on the same workspace, gaps and borders will be activated.                             | Yes  | Unnecessary |
-
-## Sway-specific:
-
-### Sway Keybindings:
-
-| Session | Windows | Mouse | Programs |
-| ---     | ---     | ---   | ---      |
-| `Super`+`Shift+c`: reload Sway. | `Super`+`q`: close. | `Super`+`Click1`: move window. | `Super`+`Return`: run a terminal. |
-| `Super`+`Shift`+`e`: exit Wayland session. | `Super`+`f`: fullscreen. | `Super`+`Click2`: resize window. | `Super`+`i`: run firefox. |
-| `Alt`+`Shift`+`x`: lock screen. | `Super`+`Escape`: toggle floating. Remember, `Caps Lock` now works as `Escape` and viceversa. | - | `Super`+`n`: run nautilus. |
-| `Super`+`Shift`+`minus`: hide/unhide scratchpad. | `Super`+`(h,j,k,l)`: change the selection of a window in a given direction. | - | `Super`+`d`: run wofi as an application launcher. |
-| `Super`+`PageUp`: switch to the next workspace. If there is no next workspace occupied, it will automatically create a new one. | `Super`+`Alt`+`(h,j,k,l)`: swap focused window with any window in a given direction. | - | `Super`+`Tab`: run wofi as a window switcher. |
-| `Super`+`PageDown`: switch to the previous workspace. If there is no previously occupied workspace, it will automatically create a new one. | `Super`+`Shift`+`(h,j,k,l)`: move window in a given direction.| - | `Super`+`Shift`+`q`: run wlogout. |
-| `Super`+`x`: toggle Waybar on/off. | `Super`+`w`: tab windows. | - | - |
-| `Super`+`Shift`+`b`: toggle window border on/off. | `Super`+`s`: stack windows. | - | - |
-| `Super`+`(1,2,3,4,5,6,7,8,9,0)`: Switch to workspace 1-10. | `Super`+`e`: split tabbed or stacked windows. | - | - |
-| `Super`+`Shitft`+`(1,2,3,4,5,6,7,8,9,0)`: Move an application to workspace 1-10. | `Alt`+`Tab`: switch focus between tiling and floating areas. | - | - |
-| `Super`+`Space`: Switch keyboard layout. Options are: Latin American (default) and US-International. | - | - | - |
-
