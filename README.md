@@ -17,7 +17,6 @@
 
 - [Introduction](#introduction)
 - [Bootstrap](#bootstrap)
-- [Programs referenced by these configs](#programs-referenced-by-these-configs)
 - [Unexpected features you get right out of the gate](#unexpected-features-you-get-right-out-of-the-gate)
 
 ---
@@ -52,29 +51,6 @@ The script assumes you are on a Debian Stable or Debian Sid system and has not b
 | Sway | GNOME |
 | ---  | ---   |   
 | <img src="https://user-images.githubusercontent.com/64110504/146632072-aabfe18b-f28b-4a3d-85ee-8509fca82092.png" />| <img src="https://user-images.githubusercontent.com/64110504/145700568-8996890a-4ab5-4618-94b1-eaba17196b79.png" /> |
-
----
-
-## Programs referenced by these configs 
-All of which are `apt install`able on Debian _Stable_ -except for `swaylock`, which at the moment remains, unfortunately, exclusive to Sid-:
-
-| Program         | Description                                                                           |
-| ---             | ---                                                                                   |
-| `foot`          | Wayland native minimalist terminal emulator.                                          |
-| `gammastep`     | Screen temperature manager.                                                           |
-| `gnome`         | Wayland desktop environment.                                                          |
-| `grimshot`      | Wayland native screenshot tool.                                                       |
-| `mako-notifier` | Wayland native notification daemon.                                                   |
-| `nautilus`      | File manager.                                                                         |
-| `neovim`        | Text editor.                                                                          |
-| `swaybg`        | Wayland native wallpaper utility.                                                     | 
-| `swaylock`      | Wayland native screen locker.                                                         | 
-| `sway`          | Wayland compositor.                                                                   | 
-| `tmux`          | Terminal multiplexer.                                                                 | 
-| `vim-gtk`       | (Neo)Vim's clipboard integration.                                                     | 
-| `waybar`        | Wayland native panel.                                                                 | 
-| `wlogout`       | Wayland session menu.                                                                 |
-| `wofi`          | Wayland native highly configurable launcher.                                          |
 
 ---
 
