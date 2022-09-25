@@ -124,7 +124,7 @@ gnome_setup_stable() {
 		gnome-core
 	printf "Setting up Gnome...\n"
 	sudo rm /etc/apt/sources.list
-	sudo mv $HOME/Debstrap/debian_stable.sources /etc/apt/sources.list.d/debian.sources
+	sudo cp $HOME/Debstrap/debian_stable.sources /etc/apt/sources.list.d/debian.sources
 	mkdir ~/Pictures/Wallpapers
 	cp ~/Debstrap/kh.png  ~/Pictures/Wallpapers/
 	dconf load / < ~/Debstrap/full-desktop-backup
@@ -136,7 +136,7 @@ gnome_setup_sid() {
 		gnome-core
 	printf "Setting up Gnome...\n"
 	sudo rm /etc/apt/sources.list
-	sudo mv $HOME/Debstrap/debian_sid.sources /etc/apt/sources.list.d/debian.sources
+	sudo cp $HOME/Debstrap/debian_sid.sources /etc/apt/sources.list.d/debian.sources
 	mkdir ~/Pictures/Wallpapers
 	cp ~/Debstrap/kh.png  ~/Pictures/Wallpapers/
 	dconf load / < ~/Debstrap/full-desktop-backup-sid
