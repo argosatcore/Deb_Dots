@@ -1,19 +1,9 @@
-<img src= https://user-images.githubusercontent.com/64110504/176301413-f6670192-7074-4575-8853-14ff029fa438.png width="35%" align="left" />
-<h1 align="left">Argos's Debian GNU/Linux Dot Files<sup>0</sup> </h1>  
-<p align="left">A collection of my experiences with Linux in the form of dot files. These dotfiles were started with a minimal installation of Debian 10 Buster on 09/10/2020.</p>
+<h1>Argos's Debian GNU/Linux Dot Files<sup>0</sup> </h1>  
+<p>A collection of my experiences with Linux in the form of dot files. These dotfiles were started with a minimal installation of Debian 10 Buster on 09/10/2020.</p>
 
  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
    
 <sup>0.The layout for this README.md was heavily influenced by those of [Spencer Tipping](https://github.com/spencertipping/dotfiles) and [Dylan Araps](https://github.com/dylanaraps/pure-sh-bible).</sup>
-
-&#x200B;
-
-
-<h2 align="left">Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Bootstrap](#bootstrap)
-- [Unexpected features you get right out of the gate](#unexpected-features-you-get-right-out-of-the-gate)
 
 ---
 
