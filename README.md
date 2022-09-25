@@ -1,6 +1,6 @@
 # Deb_Dots
-⢀⣴⠾⠻⢶⣦   |
-⣾⠁⢠⠒⠀⣿⡁  | 
+⢀⣴⠾⠻⢶⣦   | A collection of my experiences with Linux in the form of dot files.
+⣾⠁⢠⠒⠀⣿⡁  | These dotfiles were started with a minimal installation of Debian 10 Buster on 09/10/2020.
 ⢿⡄⠘⠷⠚⠋   | 
 ⠈⠳⣄      |
    
