@@ -1,3 +1,14 @@
+# Deb_Dots
+⢀⣴⠾⠻⢶⣦⠀ |
+⣾⠁⢠⠒⠀⣿⡁ | 
+⢿⡄⠘⠷⠚⠋⠀ | 
+⠈⠳⣄⠀⠀⠀  |
+   
+--- 
+
+
+
+
 <h1>Argos's Debian GNU/Linux Dot Files<sup>0</sup> </h1>  
 <p>A collection of my experiences with Linux in the form of dot files. These dotfiles were started with a minimal installation of Debian 10 Buster on 09/10/2020.</p>
 
