@@ -40,6 +40,7 @@ commons() {
 		intel-microcode \
 		librecad \
 		libreoffice \
+		liblibreofficekitgtk \
 		libreoffice-java-common \
 		lm-sensors \
 		lollypop \
@@ -101,6 +102,7 @@ swaytools() {
 		grimshot \
 		mako-notifier \
 		nautilus \
+		ncal \
 		pavucontrol \
 		sway \
 		swayidle \
