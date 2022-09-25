@@ -63,7 +63,7 @@ commons() {
 		tree \
 		toilet \
 		unrar \
-		vim-gtk \
+		vim-gtk3 \
 		vlc
 }
 
