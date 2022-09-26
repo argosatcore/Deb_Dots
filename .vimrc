@@ -103,7 +103,7 @@
 		call plug#end()
 
 	"Colorscheme:
-		colorscheme apprentice
+		colorscheme monochrome 
 
 		"Status line colors:
 			au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=black ctermbg=magenta

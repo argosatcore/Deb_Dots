@@ -1,7 +1,7 @@
 #!/bin/sh
 #Bootstrapping script for Debian (Stable or Sid) systems.
 
-set -e 
+set -e
 
 #---------------------------------
 #------ Debstrap Functions: ------
