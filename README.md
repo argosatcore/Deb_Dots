@@ -32,9 +32,7 @@ To start the bootstrap script follow this steps:
 
 3. Profit:
 
-| Sway | GNOME |
-| ---  | ---   |   
-| <img src="https://user-images.githubusercontent.com/64110504/146632072-aabfe18b-f28b-4a3d-85ee-8509fca82092.png" />| <img src="https://user-images.githubusercontent.com/64110504/145700568-8996890a-4ab5-4618-94b1-eaba17196b79.png" /> |
+![Screenshot from 2022-09-25 19-18-45](https://user-images.githubusercontent.com/64110504/192176127-dd3ca0c8-68d5-4fe9-a082-637fc7e8b2f3.png)
 
 ---
 
