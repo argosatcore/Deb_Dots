@@ -6,6 +6,7 @@
 " ------Global configs:
 
 	filetype plugin on
+	let g:monochrome_italic_comments = 1
 	let g:ShiftTabDefaultCompletionType = "<C-X><C-O>"
 	runtime! debian.vim
 	set autoread wildmode=longest,list,full
