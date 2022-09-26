@@ -1,10 +1,10 @@
 # Deb_Dots
-⢀⣴⠾⠻⢶⣦⠀  
-⣾⠁⢠⠒⠀⣿⡁  
-⢿⡄⠘⠷⠚⠋⠀  
-⠈⠳⣄⠀⠀⠀
+⢀⣴⠾⠻⢶⣦
+⣾⠁⢠⠒⠀⣿⡁
+⢿⡄⠘⠷⠚⠋
+⠈⠳⣄
 
-A collection of my experiences with Linux in the form of dot files. These dotfiles were started with a minimal installation of Debian 10 Buster on 09/10/2020. The contents of this dotfiles were heavily influenced by those of [Spencer Tipping](https://github.com/spencertipping/dotfiles) and [Conner McDaniel](https://github.com/connermcd/dotfiles). Now that I have been running GNU/Linux for quite some time, I feel that my configurations have become mature enough to be of the interest of other people. Just as the people mentioned above made theirs available -and in the spirit of GNU-, so do I. Reader, may you find something useful in them. 
+A collection of my experiences with Linux in the form of dot files, started with a minimal installation of Debian 10 Buster on 2020-10-09. The contents of this dotfiles were heavily influenced by those of [Spencer Tipping](https://github.com/spencertipping/dotfiles) and [Conner McDaniel](https://github.com/connermcd/dotfiles). Now that I have been running GNU/Linux for quite some time, I feel that my configurations have become mature enough to be of the interest of other people. Just as the people mentioned above made theirs available -and in the spirit of GNU-, so do I. Reader, may you find something useful in them.
 
 
 ---
@@ -24,10 +24,9 @@ To start the bootstrap script follow this steps:
 
 1. Make it executable.
 
-        chmod +x debstrap.sh
-        
-2. Deploy `debstrap.sh`. To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled ["Debstrap Options"](./Debstrap/debstrap.sh/#L238).
+2. Make `debstrap.sh` executable and deploy it. To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled ["Debstrap Options"](./Debstrap/debstrap.sh/#L238).
 
+        chmod +x debstrap.sh
         ./debstrap.sh
 
 3. Profit:
