@@ -111,8 +111,8 @@ maximized=false
 size=(1080, 607)
 
 [org/gnome/control-center]
-last-panel='background'
-window-state=(1225, 785, false)
+last-panel='keyboard'
+window-state=(945, 1041, false)
 
 [org/gnome/deja-dup]
 backend='drive'
@@ -236,7 +236,7 @@ font-antialiasing='grayscale'
 font-hinting='slight'
 font-name='Cantarell 12'
 gtk-theme='Adwaita'
-monospace-font-name='Hack Nerd Font 14'
+monospace-font-name='Inconsolata Nerd Font 16'
 show-battery-percentage=true
 text-scaling-factor=1.0
 
@@ -413,7 +413,7 @@ show-sidebar=true
 sidebar-page='thumbnails'
 sidebar-size=132
 sizing-mode='free'
-window-ratio=(2.5642737896494157, 1.2446555819477434)
+window-ratio=(1.5683333333333334, 0.87333333333333329)
 zoom=1.4399999999999995
 
 [org/gnome/evolution-data-server]
@@ -523,12 +523,12 @@ include-pointer=false
 last-save-directory='file:///home/argos/Pictures'
 
 [org/gnome/gnome-system-monitor]
-current-tab='resources'
-maximized=false
+current-tab='processes'
+maximized=true
 network-total-in-bits=false
 show-dependencies=false
 show-whose-processes='user'
-window-state=(877, 715, 26, 23)
+window-state=(1920, 1048, 0, 0)
 
 [org/gnome/gnome-system-monitor/disktreenew]
 col-4-visible=false
@@ -542,7 +542,7 @@ col-23-width=144
 col-25-visible=true
 col-25-width=95
 columns-order=[0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
-sort-col=15
+sort-col=0
 sort-order=0
 
 [org/gnome/maps]
@@ -563,7 +563,7 @@ restore-shortcuts=['<Alt>Escape']
 default-compression-format='zip'
 
 [org/gnome/nautilus/icon-view]
-default-zoom-level='standard'
+default-zoom-level='small'
 
 [org/gnome/nautilus/list-view]
 default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'where', 'date_modified', 'date_modified_with_time', 'date_accessed', 'recency', 'starred', 'detailed_type']
@@ -646,8 +646,7 @@ night-light-temperature=uint32 3176
 [org/gnome/settings-daemon/plugins/media-keys]
 area-screenshot=['<Shift><Super>s']
 area-screenshot-clip=['<Primary><Shift><Super>s']
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/']
-home=['<Super>f']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom9/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom8/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom10/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11/']
 screenreader=@as []
 screenshot=['<Super>s']
 screenshot-clip=['<Primary><Super>s']
@@ -672,6 +671,11 @@ name='Flatbookmarks'
 binding='<Super>k'
 command='kgx'
 name="King's Cross"
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom11]
+binding='<Super>f'
+command='nautilus'
+name='Nautilus'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
 binding='<Shift><Super>g'
@@ -802,7 +806,7 @@ download-updates-notify=false
 first-run=false
 install-timestamp=int64 1633393044
 online-updates-timestamp=int64 1650394004
-update-notification-timestamp=int64 1662500680
+update-notification-timestamp=int64 1663719905
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -814,8 +818,8 @@ width=800
 enabled=false
 
 [org/gnome/terminal/legacy/profiles:]
-default='977976cd-f8a7-4e44-ae9f-420b738d85ed'
-list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '97f283fe-a5f2-43e8-b211-2167a0b6791f', '20ffb462-23e2-4b52-826b-2132096fb015', '676e63be-5d38-4625-9629-d4bba4f78905', '69abc0e8-6b75-487b-af69-4f0dcc82ad36', 'b89d7d4a-8e6c-4162-b384-9705198a0695', 'ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee', '977976cd-f8a7-4e44-ae9f-420b738d85ed']
+default='ac3ffde4-abf2-4772-a00b-a054f0ed7cbe'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '97f283fe-a5f2-43e8-b211-2167a0b6791f', '20ffb462-23e2-4b52-826b-2132096fb015', '676e63be-5d38-4625-9629-d4bba4f78905', '69abc0e8-6b75-487b-af69-4f0dcc82ad36', 'b89d7d4a-8e6c-4162-b384-9705198a0695', 'ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee', '977976cd-f8a7-4e44-ae9f-420b738d85ed', 'ac3ffde4-abf2-4772-a00b-a054f0ed7cbe']
 
 [org/gnome/terminal/legacy/profiles:/:20ffb462-23e2-4b52-826b-2132096fb015]
 background-color='rgb(23,20,33)'
@@ -852,9 +856,17 @@ visible-name='MaterialDeb'
 
 [org/gnome/terminal/legacy/profiles:/:977976cd-f8a7-4e44-ae9f-420b738d85ed]
 background-color='rgb(38,38,38)'
+bold-color-same-as-fg=true
 bold-is-bright=true
+cursor-background-color='rgb(108,108,108)'
+cursor-colors-set=true
+font='Hack Nerd Font 14'
 foreground-color='rgb(188,188,188)'
-palette=['rgb(46,52,54)', 'rgb(174,94,94)', 'rgb(95,135,95)', 'rgb(135,135,95)', 'rgb(95,135,175)', 'rgb(95,95,135)', 'rgb(95,135,135)', 'rgb(108,108,108)', 'rgb(68,68,68)', 'rgb(255,135,0)', 'rgb(135,175,135)', 'rgb(255,255,175)', 'rgb(143,175,215)', 'rgb(135,135,175)', 'rgb(95,175,175)', 'rgb(255,255,255)']
+highlight-background-color='rgb(58,62,78)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(188,188,188)'
+palette=['rgb(28,28,28)', 'rgb(175,95,95)', 'rgb(95,135,95)', 'rgb(135,135,95)', 'rgb(95,135,175)', 'rgb(95,95,135)', 'rgb(95,135,135)', 'rgb(108,108,108)', 'rgb(68,68,68)', 'rgb(255,135,0)', 'rgb(135,175,135)', 'rgb(255,255,175)', 'rgb(143,175,215)', 'rgb(135,135,175)', 'rgb(95,175,175)', 'rgb(255,255,255)']
+use-system-font=false
 use-theme-colors=false
 visible-name='Apprentice'
 
@@ -867,6 +879,22 @@ palette=['rgb(29,32,33)', 'rgb(204,36,29)', 'rgb(152,151,26)', 'rgb(215,153,33)'
 use-system-font=false
 use-theme-colors=false
 visible-name='GruvDeb'
+
+[org/gnome/terminal/legacy/profiles:/:ac3ffde4-abf2-4772-a00b-a054f0ed7cbe]
+background-color='rgb(8,15,32)'
+bold-color-same-as-fg=true
+bold-is-bright=true
+cursor-background-color='rgb(108,108,108)'
+cursor-colors-set=true
+font='Hack Nerd Font 14'
+foreground-color='rgb(195,192,184)'
+highlight-background-color='rgb(211,208,200)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(8,15,32)'
+palette=['rgb(56,56,56)', 'rgb(242,119,122)', 'rgb(92,241,158)', 'rgb(230,197,71)', 'rgb(78,144,221)', 'rgb(195,151,216)', 'rgb(112,192,186)', 'rgb(255,255,255)', 'rgb(136,136,136)', 'rgb(255,51,52)', 'rgb(185,246,202)', 'rgb(250,223,122)', 'rgb(122,166,218)', 'rgb(183,126,224)', 'rgb(84,206,214)', 'rgb(255,255,255)']
+use-system-font=false
+use-theme-colors=false
+visible-name='DeVault'
 
 [org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 background-color='rgb(33,33,33)'
@@ -929,8 +957,8 @@ type-format='category'
 window-size=(943, 374)
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.37333333333333335, 0.37333333333333335, 0.37333333333333335, 1.0), (0.26666666666666666, 0.26666666666666666, 0.26666666666666666, 1.0), (0.10980392156862745, 0.10980392156862745, 0.10980392156862745, 1.0), (0.73725490196078436, 0.73725490196078436, 0.73725490196078436, 1.0), (0.14901960784313725, 0.14901960784313725, 0.14901960784313725, 1.0), (0.090196078431372548, 0.078431372549019607, 0.12941176470588237, 1.0), (0.3725490196078432, 0.68627450980392157, 0.68627450980392157, 1.0), (0.20000000000000001, 0.7803921568627451, 0.87058823529411766, 1.0)]
-selected-color=(true, 0.26666666666666666, 0.26666666666666666, 0.26666666666666666, 1.0)
+custom-colors=[(0.98000000000000009, 0.87309833333333342, 0.47693333333333332, 1.0), (0.98000000000000009, 0.87309833333333353, 0.47693333333333338, 1.0), (0.90588235294117647, 0.77254901960784328, 0.27843137254901962, 1.0), (1.0, 1.0, 0.68627450980392157, 1.0), (0.72549019607843135, 0.96470588235294119, 0.79215686274509811, 1.0), (0.52941176470588236, 0.68627450980392157, 0.52941176470588236, 1.0), (1.0, 0.19999999999999996, 0.20392156862745092, 1.0), (1.0, 0.52941176470588236, 0.0, 1.0)]
+selected-color=(true, 0.98000000000000009, 0.87309833333333342, 0.47693333333333332, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
