@@ -88,7 +88,7 @@
 	fi
 	
 	if [ "$color_prompt" = yes ]; then
-		PS1='${debian_chroot:+($debian_chroot)}';	 
+		PS1='${debian_chroot:+($debian_chroot)}'; 
 		PS1+='\[\033[01;00m\]['; 
 		PS1+='\[\033[01;96m\]\w';
 		PS1+='\[\033[01;00m\]]';
