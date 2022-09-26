@@ -120,13 +120,13 @@
 	bindsym $mod+q kill
 	
 	# Start your launcher:
-	bindsym $mod+d exec $menu 
+	bindsym $mod+d exec $menu
 	
 	# Launch file manager:
 	bindsym $mod+n exec nautilus -w
 	
 	# Lock screen:
-	bindsym $mod+Shift+x exec swaylock -f -c 000000  
+	bindsym $mod+Shift+x exec swaylock -f -c 000000
 	
 	# Launch web browser:
 	bindsym $mod+i exec firefox
