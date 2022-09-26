@@ -96,16 +96,16 @@ swaytools() {
 	printf "Installing Sway related packages...\n"
 	sudo apt install -y \
 		brightnessctl \
-		eog \
 		evince \
 		gammastep \
 		grimshot \
+		lf \
 		mako-notifier \
-		nautilus \
 		ncal \
 		pavucontrol \
 		sway \
 		swayidle \
+		swayimg \
 		waybar \
 		wlogout \
 		wofi \
