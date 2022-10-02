@@ -80,7 +80,7 @@
 #-------------------------
 #-- Idle configuration: --
 #-------------------------
-	
+
 	# Launch swayidle after 5 minutes of inactivity:
 	exec swayidle -w \
 	          timeout 300 'swaylock -f -c 000000' \
