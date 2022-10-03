@@ -18,7 +18,7 @@ maximized=true
 width=1920
 
 [org/freedesktop/tracker/miner/files]
-index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&PICTURES', '&VIDEOS']
+index-recursive-directories=['&DESKTOP', '&DOCUMENTS', '&PICTURES', '&VIDEOS', '/home/argos/Desktop/Biblioteca']
 index-single-directories=['&DOWNLOAD']
 
 [org/gnome/2048]
@@ -33,6 +33,7 @@ maximized=false
 width=700
 
 [org/gnome/Console]
+last-window-size=(892, 601)
 theme='auto'
 
 [org/gnome/Lollypop]
@@ -111,8 +112,8 @@ maximized=false
 size=(1080, 607)
 
 [org/gnome/control-center]
-last-panel='keyboard'
-window-state=(945, 1041, false)
+last-panel='search'
+window-state=(959, 912, false)
 
 [org/gnome/deja-dup]
 backend='drive'
@@ -143,7 +144,7 @@ mousekeys-enable=false
 folder-children=['Utilities', 'YaST', '958f5a75-6e64-43e5-afdc-800aa15e854b', 'b39768c5-4193-4166-bfdb-1e62212db637', '7a414dbe-eb42-4608-ac12-862f7ef55a4c', '1c3da104-2d9e-47b0-8087-76183d9272a2', 'c27e08af-525c-4261-9391-00e47fbc04ae', '55b9c2d6-31a6-4164-bc17-2c43e67eb937', '101839c3-1a8a-43a5-9586-fea30b63bbb2', '17abbebb-6979-41e2-950b-d2113cc91193', '6b2cdc03-1872-4eec-bb64-64718647b314', '758fff78-a416-4c6f-8b48-abcd1e3aa7e6', 'e44567bf-3f92-428f-9521-9be573e5beb8', 'c419eaf4-599c-48c3-8dfb-46797b2459e7']
 
 [org/gnome/desktop/app-folders/folders/101839c3-1a8a-43a5-9586-fea30b63bbb2]
-apps=['org.gnome.Music.desktop', 'rhythmbox.desktop', 'org.gnome.SoundRecorder.desktop', 'org.gnome.Lollypop.desktop', 'mpv.desktop', 'org.gnome.Totem.desktop', 'vlc.desktop', 'org.gnome.Rhythmbox3.desktop']
+apps=['org.gnome.Music.desktop', 'rhythmbox.desktop', 'org.gnome.SoundRecorder.desktop', 'org.gnome.Lollypop.desktop', 'mpv.desktop', 'org.gnome.Totem.desktop', 'vlc.desktop', 'org.gnome.Rhythmbox3.desktop', 'pavucontrol.desktop']
 name='Sound & Video'
 
 [org/gnome/desktop/app-folders/folders/17abbebb-6979-41e2-950b-d2113cc91193]
@@ -178,7 +179,7 @@ name='Writerly'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/Utilities]
-apps=['org.gnome.Calculator.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.seahorse.Application.desktop', 'simple-scan.desktop', 'yelp.desktop', 'org.gnome.Cheese.desktop', 'org.gnome.clocks.desktop', 'goldendict.desktop', 'org.gnome.Documents.desktop', 'kasumi.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Characters.desktop', 'org.gnome.font-viewer.desktop', 'gucharmap.desktop', 'setup-mozc.desktop', 'org.gnome.Maps.desktop', 'org.freedesktop.MalcontentControl.desktop', 'org.gnome.Todo.desktop', 'org.gnome.Weather.desktop', 'htop.desktop', 'shotwell.desktop', 'org.goldendict.GoldenDict.desktop', 'im-config.desktop', 'ghcal.desktop', 'uim.desktop']
+apps=['org.gnome.Calculator.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.seahorse.Application.desktop', 'simple-scan.desktop', 'yelp.desktop', 'org.gnome.Cheese.desktop', 'org.gnome.clocks.desktop', 'goldendict.desktop', 'org.gnome.Documents.desktop', 'kasumi.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Characters.desktop', 'org.gnome.font-viewer.desktop', 'gucharmap.desktop', 'setup-mozc.desktop', 'org.gnome.Maps.desktop', 'org.freedesktop.MalcontentControl.desktop', 'org.gnome.Todo.desktop', 'org.gnome.Weather.desktop', 'htop.desktop', 'shotwell.desktop', 'org.goldendict.GoldenDict.desktop', 'im-config.desktop', 'ghcal.desktop', 'uim.desktop', 'gammastep-indicator.desktop']
 categories=['X-GNOME-Utilities']
 excluded-apps=['org.gnome.tweaks.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.baobab.desktop', 'gnome-system-monitor.desktop', 'nm-connection-editor.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'org.gnome.Evolution.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Console.desktop']
 name='X-GNOME-Utilities.directory'
@@ -211,8 +212,8 @@ name='Preferences'
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='/home/argos/.config/background'
-picture-uri-dark='/home/argos/.config/background'
+picture-uri='file:///home/argos/.local/share/backgrounds/2022-03-06-20-23-36-kh.png'
+picture-uri-dark='file:///home/argos/.local/share/backgrounds/2022-03-06-20-23-36-kh.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -413,7 +414,7 @@ show-sidebar=true
 sidebar-page='thumbnails'
 sidebar-size=132
 sizing-mode='free'
-window-ratio=(1.5683333333333334, 0.87333333333333329)
+window-ratio=(2.022875816993464, 0.72979797979797978)
 zoom=1.4399999999999995
 
 [org/gnome/evolution-data-server]
@@ -579,7 +580,7 @@ search-view='icon-view'
 show-create-link=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1070, 608)
+initial-size=(1063, 622)
 maximized=false
 sidebar-width=227
 start-with-sidebar=true
@@ -732,6 +733,7 @@ disable-user-extensions=true
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['system-monitor@paradoxxx.zero.gmail.com', 'ubuntu-appindicators@ubuntu.com', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
 favorite-apps=['foot.desktop', 'firefox.desktop', 'org.gnome.Lollypop.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'org.zotero.Zotero.desktop', 'org.gnome.Calculator.desktop']
+last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='42.0'
 
 [org/gnome/shell/extensions/dash-to-dock]
@@ -957,8 +959,8 @@ type-format='category'
 window-size=(943, 374)
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.98000000000000009, 0.87309833333333342, 0.47693333333333332, 1.0), (0.98000000000000009, 0.87309833333333353, 0.47693333333333338, 1.0), (0.90588235294117647, 0.77254901960784328, 0.27843137254901962, 1.0), (1.0, 1.0, 0.68627450980392157, 1.0), (0.72549019607843135, 0.96470588235294119, 0.79215686274509811, 1.0), (0.52941176470588236, 0.68627450980392157, 0.52941176470588236, 1.0), (1.0, 0.19999999999999996, 0.20392156862745092, 1.0), (1.0, 0.52941176470588236, 0.0, 1.0)]
-selected-color=(true, 0.98000000000000009, 0.87309833333333342, 0.47693333333333332, 1.0)
+custom-colors=[(0.94901960784313721, 0.46666666666666667, 0.47843137254902013, 1.0), (0.94901960784313721, 0.46666666666666667, 0.47843137254901968, 1.0), (0.68627450980392157, 0.37254901960784315, 0.37254901960784315, 1.0), (0.2196078431372549, 0.2196078431372549, 0.2196078431372549, 1.0), (0.10980392156862745, 0.10980392156862745, 0.10980392156862745, 1.0), (0.031372549019607843, 0.058823529411764691, 0.12549019607843137, 1.0), (0.14901960784313725, 0.14901960784313725, 0.14901960784313725, 1.0), (0.76470588235294112, 0.75294117647058822, 0.72156862745098038, 1.0)]
+selected-color=(true, 0.94901960784313721, 0.46666666666666667, 0.47843137254902013, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
