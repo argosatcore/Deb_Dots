@@ -4,7 +4,7 @@
 ⢿⡄⠘⠷⠚⠋⠀  
 ⠈⠳⣄⠀⠀⠀
 
-A collection of my experiences with Linux in the form of dot files, started with a minimal installation of Debian 10 Buster on 2020-10-09. The contents of this dotfiles were heavily influenced by those of [Spencer Tipping](https://github.com/spencertipping/dotfiles) and [Conner McDaniel](https://github.com/connermcd/dotfiles). Now that I have been running GNU/Linux for quite some time, I feel that my configurations have become mature enough to be of the interest of other people. Just as the people mentioned above made theirs available -and in the spirit of GNU-, so do I. Reader, may you find something useful in them.
+A collection of my experiences with Linux in the form of dot files, started with a minimal installation of Debian 10 Buster on 2020-10-09. The contents of this dotfiles were heavily influenced by those of [Spencer Tipping](https://github.com/spencertipping/dotfiles) and [Conner McDaniel](https://github.com/connermcd/dotfiles). Just as the people mentioned above made theirs available -and in the spirit of GNU-, so do I. Reader, may you find something useful in them.
 
 
 ---
