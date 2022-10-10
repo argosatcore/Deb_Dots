@@ -81,7 +81,7 @@ maximized=false
 size=(1080, 607)
 
 [org/gnome/control-center]
-last-panel='search'
+last-panel='keyboard'
 
 [org/gnome/deja-dup]
 backend='drive'
@@ -127,7 +127,7 @@ apps=['firefox-esr.desktop', 'thunderbird.desktop', 'transmission-gtk.desktop', 
 name='Internet'
 
 [org/gnome/desktop/app-folders/folders/758fff78-a416-4c6f-8b48-abcd1e3aa7e6]
-apps=['librecad.desktop', 'display-im6.q16.desktop', 'org.gimp.GIMP.desktop', 'org.inkscape.Inkscape.desktop', 'net.scribus.Scribus.desktop', 'org.kde.krita.desktop', 'org.freecadweb.FreeCAD.desktop', 'blender.desktop', 'bookletimposer.desktop']
+apps=['librecad.desktop', 'display-im6.q16.desktop', 'org.gimp.GIMP.desktop', 'org.inkscape.Inkscape.desktop', 'net.scribus.Scribus.desktop', 'org.kde.krita.desktop', 'org.freecadweb.FreeCAD.desktop', 'blender.desktop', 'bookletimposer.desktop', 'org.blender.Blender.desktop']
 name='Graphics'
 
 [org/gnome/desktop/app-folders/folders/7a414dbe-eb42-4608-ac12-862f7ef55a4c]
@@ -350,7 +350,7 @@ show-sidebar=true
 sidebar-page='thumbnails'
 sidebar-size=132
 sizing-mode='free'
-window-ratio=(1.2996031746031746, 1.1373456790123457)
+window-ratio=(1.2990196078431373, 1.1376262626262625)
 zoom=1.4399999999999995
 
 [org/gnome/evolution-data-server]
@@ -498,7 +498,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1134, 539)
+initial-size=(919, 492)
 maximized=false
 sidebar-width=227
 start-with-sidebar=true
@@ -625,7 +625,7 @@ antialiasing='grayscale'
 hinting='slight'
 
 [org/gnome/shell]
-app-picker-layout=[{'c419eaf4-599c-48c3-8dfb-46797b2459e7': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'e44567bf-3f92-428f-9521-9be573e5beb8': <{'position': <2>}>, '101839c3-1a8a-43a5-9586-fea30b63bbb2': <{'position': <3>}>, '17abbebb-6979-41e2-950b-d2113cc91193': <{'position': <4>}>, 'org.gnome.Nautilus.desktop': <{'position': <5>}>, '958f5a75-6e64-43e5-afdc-800aa15e854b': <{'position': <6>}>, '6b2cdc03-1872-4eec-bb64-64718647b314': <{'position': <7>}>, '758fff78-a416-4c6f-8b48-abcd1e3aa7e6': <{'position': <8>}>, 'c27e08af-525c-4261-9391-00e47fbc04ae': <{'position': <9>}>, '55b9c2d6-31a6-4164-bc17-2c43e67eb937': <{'position': <10>}>, '7a414dbe-eb42-4608-ac12-862f7ef55a4c': <{'position': <11>}>, '1c3da104-2d9e-47b0-8087-76183d9272a2': <{'position': <12>}>, 'im-config.desktop': <{'position': <13>}>}]
+app-picker-layout=[{'c419eaf4-599c-48c3-8dfb-46797b2459e7': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'e44567bf-3f92-428f-9521-9be573e5beb8': <{'position': <2>}>, '101839c3-1a8a-43a5-9586-fea30b63bbb2': <{'position': <3>}>, '17abbebb-6979-41e2-950b-d2113cc91193': <{'position': <4>}>, 'org.gnome.Nautilus.desktop': <{'position': <5>}>, '958f5a75-6e64-43e5-afdc-800aa15e854b': <{'position': <6>}>, '6b2cdc03-1872-4eec-bb64-64718647b314': <{'position': <7>}>, '758fff78-a416-4c6f-8b48-abcd1e3aa7e6': <{'position': <8>}>, 'c27e08af-525c-4261-9391-00e47fbc04ae': <{'position': <9>}>, '55b9c2d6-31a6-4164-bc17-2c43e67eb937': <{'position': <10>}>, '7a414dbe-eb42-4608-ac12-862f7ef55a4c': <{'position': <11>}>}]
 disable-user-extensions=true
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['system-monitor@paradoxxx.zero.gmail.com', 'ubuntu-appindicators@ubuntu.com', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
