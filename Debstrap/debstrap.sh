@@ -36,6 +36,7 @@ commons() {
 		gnome-power-manager \
 		gucharmap \
 		htop \
+		hunspell-es\
 		icc-profiles \
 		intel-microcode \
 		librecad \
