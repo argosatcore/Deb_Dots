@@ -75,7 +75,7 @@ maximized=false
 size=(1080, 607)
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='search'
 
 [org/gnome/deja-dup]
 backend='drive'
@@ -108,7 +108,7 @@ name='Package Managers'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/1c3da104-2d9e-47b0-8087-76183d9272a2]
-apps=['im-config.desktop', 'kbd-layout-viewer5.desktop', 'uim.desktop', 'ghcal.desktop']
+apps=['kbd-layout-viewer5.desktop', 'uim.desktop', 'ghcal.desktop']
 name='Unnamed Folder'
 
 [org/gnome/desktop/app-folders/folders/55b9c2d6-31a6-4164-bc17-2c43e67eb937]
@@ -129,7 +129,7 @@ apps=['org.gnome.Hitori.desktop', 'org.gnome.LightsOff.desktop', 'org.gnome.five
 name='Games'
 
 [org/gnome/desktop/app-folders/folders/958f5a75-6e64-43e5-afdc-800aa15e854b]
-apps=['libreoffice-writer.desktop', 'libreoffice-impress.desktop', 'libreoffice-draw.desktop', 'libreoffice-calc.desktop', 'libreoffice-startcenter.desktop', 'com.github.johnfactotum.Foliate.desktop', 'org.zotero.Zotero.desktop']
+apps=['libreoffice-writer.desktop', 'libreoffice-impress.desktop', 'libreoffice-draw.desktop', 'libreoffice-calc.desktop', 'libreoffice-startcenter.desktop', 'com.github.johnfactotum.Foliate.desktop', 'org.zotero.Zotero.desktop', 'libreoffice-base.desktop']
 name='Writerly'
 translate=false
 
@@ -156,7 +156,7 @@ name='Editors'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/c419eaf4-599c-48c3-8dfb-46797b2459e7]
-apps=['org.gnome.Firmware.desktop', 'org.gnome.baobab.desktop', 'gnome-system-monitor.desktop', 'nm-connection-editor.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'debian-reference-common.desktop', 'org.gnome.PowerStats.desktop', 'org.gnome.DejaDup.desktop']
+apps=['org.gnome.Firmware.desktop', 'org.gnome.baobab.desktop', 'gnome-system-monitor.desktop', 'nm-connection-editor.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'debian-reference-common.desktop', 'org.gnome.PowerStats.desktop', 'org.gnome.DejaDup.desktop', 'im-config.desktop']
 name='System'
 translate=false
 
@@ -167,7 +167,7 @@ name='Preferences'
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/argos/.local/share/backgrounds/2022-03-06-20-23-36-kh.png'
+picture-uri='file:///home/argos/.local/share/backgrounds/2022-10-10-10-54-19-kh.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -257,7 +257,7 @@ repeat-interval=uint32 20
 
 [org/gnome/desktop/peripherals/mouse]
 accel-profile='adaptive'
-left-handed=true
+left-handed=false
 natural-scroll=false
 speed=1.0
 
@@ -287,7 +287,7 @@ report-technical-problems=true
 color-shading-type='solid'
 lock-delay=uint32 0
 picture-options='zoom'
-picture-uri='file:///home/argos/.local/share/backgrounds/2022-03-06-20-23-36-kh.png'
+picture-uri='file:///home/argos/.local/share/backgrounds/2022-10-10-10-54-19-kh.png'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -489,10 +489,10 @@ use-tree-view=true
 click-policy='single'
 default-folder-viewer='icon-view'
 search-filter-time-type='last_modified'
-search-view='icon-view'
+search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1116, 621)
+initial-size=(1755, 778)
 maximized=false
 sidebar-width=227
 start-with-sidebar=true
@@ -619,7 +619,7 @@ antialiasing='grayscale'
 hinting='slight'
 
 [org/gnome/shell]
-app-picker-layout=[{'c419eaf4-599c-48c3-8dfb-46797b2459e7': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'e44567bf-3f92-428f-9521-9be573e5beb8': <{'position': <2>}>, '101839c3-1a8a-43a5-9586-fea30b63bbb2': <{'position': <3>}>, '17abbebb-6979-41e2-950b-d2113cc91193': <{'position': <4>}>, 'org.gnome.Nautilus.desktop': <{'position': <5>}>, '958f5a75-6e64-43e5-afdc-800aa15e854b': <{'position': <6>}>, '6b2cdc03-1872-4eec-bb64-64718647b314': <{'position': <7>}>, '758fff78-a416-4c6f-8b48-abcd1e3aa7e6': <{'position': <8>}>, 'c27e08af-525c-4261-9391-00e47fbc04ae': <{'position': <9>}>, '55b9c2d6-31a6-4164-bc17-2c43e67eb937': <{'position': <10>}>, 'b39768c5-4193-4166-bfdb-1e62212db637': <{'position': <11>}>, '7a414dbe-eb42-4608-ac12-862f7ef55a4c': <{'position': <12>}>, '1c3da104-2d9e-47b0-8087-76183d9272a2': <{'position': <13>}>}]
+app-picker-layout=[{'c419eaf4-599c-48c3-8dfb-46797b2459e7': <{'position': <0>}>, 'Utilities': <{'position': <1>}>, 'e44567bf-3f92-428f-9521-9be573e5beb8': <{'position': <2>}>, '101839c3-1a8a-43a5-9586-fea30b63bbb2': <{'position': <3>}>, '17abbebb-6979-41e2-950b-d2113cc91193': <{'position': <4>}>, 'org.gnome.Nautilus.desktop': <{'position': <5>}>, '958f5a75-6e64-43e5-afdc-800aa15e854b': <{'position': <6>}>, '6b2cdc03-1872-4eec-bb64-64718647b314': <{'position': <7>}>, '758fff78-a416-4c6f-8b48-abcd1e3aa7e6': <{'position': <8>}>, 'c27e08af-525c-4261-9391-00e47fbc04ae': <{'position': <9>}>, '55b9c2d6-31a6-4164-bc17-2c43e67eb937': <{'position': <10>}>, '7a414dbe-eb42-4608-ac12-862f7ef55a4c': <{'position': <11>}>, '1c3da104-2d9e-47b0-8087-76183d9272a2': <{'position': <12>}>, 'im-config.desktop': <{'position': <13>}>}]
 disable-user-extensions=true
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['system-monitor@paradoxxx.zero.gmail.com', 'ubuntu-appindicators@ubuntu.com', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
@@ -687,7 +687,7 @@ save-directory='file:///home/argos/Documents/'
 save-format='application/pdf'
 
 [org/gnome/software]
-check-timestamp=int64 1650654224
+check-timestamp=int64 1665421743
 first-run=false
 install-timestamp=int64 1633393044
 online-updates-timestamp=int64 1650394004
@@ -702,8 +702,21 @@ width=800
 enabled=false
 
 [org/gnome/terminal/legacy/profiles:]
-default='ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee'
-list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '97f283fe-a5f2-43e8-b211-2167a0b6791f', '20ffb462-23e2-4b52-826b-2132096fb015', '676e63be-5d38-4625-9629-d4bba4f78905', '69abc0e8-6b75-487b-af69-4f0dcc82ad36', 'b89d7d4a-8e6c-4162-b384-9705198a0695', 'ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee']
+default='0d93c8fa-a4bc-4dd6-a6d9-3fdfdd464cb3'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '97f283fe-a5f2-43e8-b211-2167a0b6791f', '20ffb462-23e2-4b52-826b-2132096fb015', '676e63be-5d38-4625-9629-d4bba4f78905', '69abc0e8-6b75-487b-af69-4f0dcc82ad36', 'b89d7d4a-8e6c-4162-b384-9705198a0695', 'ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee', '0d93c8fa-a4bc-4dd6-a6d9-3fdfdd464cb3']
+
+[org/gnome/terminal/legacy/profiles:/:0d93c8fa-a4bc-4dd6-a6d9-3fdfdd464cb3]
+background-color='rgb(8,15,32)'
+bold-is-bright=true
+font='Inconsolata Nerd Font Mono 14'
+foreground-color='rgb(195,192,184)'
+highlight-background-color='rgb(96,125,139)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(236,239,241)'
+palette=['rgb(56,56,56)', 'rgb(242,119,122)', 'rgb(92,241,158)', 'rgb(230,197,71)', 'rgb(78,144,221)', 'rgb(195,151,216)', 'rgb(100,252,218)', 'rgb(255,255,255)', 'rgb(136,136,136)', 'rgb(255,51,52)', 'rgb(185,246,202)', 'rgb(250,223,122)', 'rgb(122,166,218)', 'rgb(192,97,203)', 'rgb(84,206,214)', 'rgb(255,255,255)']
+use-system-font=false
+use-theme-colors=false
+visible-name='DeVault'
 
 [org/gnome/terminal/legacy/profiles:/:20ffb462-23e2-4b52-826b-2132096fb015]
 background-color='rgb(23,20,33)'
@@ -776,7 +789,7 @@ visible-name='Debby (Copy)'
 [org/gnome/terminal/legacy/profiles:/:ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee]
 background-color='rgb(38,50,56)'
 bold-is-bright=true
-font='Hack Nerd Font 14'
+font='InconsolataLGC Nerd Font Mono Medium 12'
 foreground-color='rgb(236,239,241)'
 highlight-background-color='rgb(96,125,139)'
 highlight-colors-set=true
@@ -787,8 +800,8 @@ use-theme-colors=false
 visible-name='Material-Design'
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(1.0, 0.32156862745098042, 0.32156862745098042, 1.0), (0.69019607843137254, 0.74509803921568629, 0.77254901960784317, 1.0), (0.14901960784313725, 0.19607843137254902, 0.2196078431372549, 1.0), (0.65490196078431373, 0.99215686274509807, 0.92156862745098023, 1.0), (0.20000000000000001, 0.7803921568627451, 0.87058823529411766, 1.0), (0.75294117647058822, 0.38039215686274502, 0.79607843137254897, 1.0), (0.50196078431372548, 0.84705882352941164, 1.0, 1.0), (0.16470588235294117, 0.4823529411764706, 0.87058823529411766, 1.0)]
-selected-color=(true, 0.0, 0.0, 0.0, 1.0)
+custom-colors=[(0.3294117647058824, 0.80784313725490209, 0.83921568627450982, 1.0), (0.65490196078431373, 0.99215686274509807, 0.92156862745098034, 1.0), (0.75294117647058822, 0.38039215686274502, 0.79607843137254897, 1.0), (0.47843137254901957, 0.65098039215686265, 0.85490196078431369, 1.0), (0.50196078431372548, 0.84705882352941175, 1.0, 1.0), (0.98039215686274506, 0.87450980392156863, 0.47843137254901957, 1.0), (1.0, 0.89803921568627454, 0.49803921568627452, 1.0), (0.72549019607843135, 0.96470588235294119, 0.79215686274509811, 1.0)]
+selected-color=(true, 0.3294117647058824, 0.80784313725490209, 0.83921568627450982, 1.0)
 
 [org/gtk/settings/file-chooser]
 clock-format='12h'
@@ -800,7 +813,7 @@ show-type-column=true
 sidebar-width=178
 sort-column='name'
 sort-directories-first=true
-sort-order='descending'
+sort-order='ascending'
 type-format='category'
 window-position=(26, 23)
 window-size=(1444, 1006)
