@@ -125,8 +125,6 @@ gnome_setup_stable() {
 	printf "Setting up Gnome...\n"
 	sudo rm /etc/apt/sources.list
 	sudo cp $HOME/Debstrap/debian_stable.sources /etc/apt/sources.list.d/debian.sources
-	mkdir ~/Pictures/Wallpapers
-	cp ~/Debstrap/kh.png  ~/Pictures/Wallpapers/
 	dconf load / < ~/Debstrap/full-desktop-backup
 }
 
@@ -137,8 +135,6 @@ gnome_setup_sid() {
 	printf "Setting up Gnome...\n"
 	sudo rm /etc/apt/sources.list
 	sudo cp $HOME/Debstrap/debian_sid.sources /etc/apt/sources.list.d/debian.sources
-	mkdir ~/Pictures/Wallpapers
-	cp ~/Debstrap/kh.png  ~/Pictures/Wallpapers/
 	dconf load / < ~/Debstrap/full-desktop-backup-sid
 }
 
@@ -162,7 +158,7 @@ flatapps() {
 	flatpak install flathub org.inkscape.Inkscape
 	flatpak install flathub net.scribus.Scribus
 	flatpak install flathub org.kde.krita
-	flatpak install flathub org.mozilla.firefox
+	flatpak install flathub org.blender.Blender
 }
 
 argodots() {
