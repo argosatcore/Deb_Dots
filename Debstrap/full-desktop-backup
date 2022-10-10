@@ -7,6 +7,12 @@ window-height=600
 window-maximized=false
 window-width=600
 
+[org/gnome/Chess]
+height=550
+last-played-as='white'
+maximized=false
+width=700
+
 [org/gnome/Lollypop]
 auto-update=true
 dark-ui=false
@@ -344,7 +350,7 @@ show-sidebar=true
 sidebar-page='thumbnails'
 sidebar-size=132
 sizing-mode='free'
-window-ratio=(1.3001761820865672, 1.1379161990273094)
+window-ratio=(1.2996031746031746, 1.1373456790123457)
 zoom=1.4399999999999995
 
 [org/gnome/evolution-data-server]
@@ -407,12 +413,12 @@ window-height=498
 window-width=600
 
 [org/gnome/gedit/plugins]
-active-plugins=['spell', 'filebrowser', 'sort', 'modelines', 'docinfo']
+active-plugins=['modelines', 'filebrowser', 'docinfo', 'sort', 'spell']
 
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/argos/.cache/zotcite'
+virtual-root='file:///home/argos/Dots/.local/share'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Hack Nerd Font 14'
@@ -492,7 +498,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(1755, 778)
+initial-size=(1134, 539)
 maximized=false
 sidebar-width=227
 start-with-sidebar=true
