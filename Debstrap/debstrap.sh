@@ -61,7 +61,6 @@ commons() {
 		texlive \
 		thermald \
 		tmux \
-		torbrowser-launcher \
 		tree \
 		toilet \
 		unrar \
@@ -160,6 +159,7 @@ flatapps() {
 	flatpak install flathub net.scribus.Scribus
 	flatpak install flathub org.kde.krita
 	flatpak install flathub org.blender.Blender
+	flatpak install flathub com.github.micahflee.torbrowser-launcher
 }
 
 argodots() {
