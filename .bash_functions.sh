@@ -13,10 +13,10 @@
 
 
 # ------Create quick notes on random topics:
- 	jot() {
- 		touch ~/Desktop/Notes/"$1"
+	jot() {
+		touch ~/Desktop/Notes/"$1"
 		nvim ~/Desktop/Notes/"$1"
- 	}
+	}
 
 
 # ------Kill processes in a fuzzy way:
@@ -116,7 +116,7 @@
 	debclean() {
 		sudo apt clean
 		sudo apt autoclean
-		sudo apt autoremove --purge 
+		sudo apt autoremove --purge
 		flatpak uninstall --unused
 	}
 

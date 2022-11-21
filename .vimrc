@@ -6,7 +6,6 @@
 " ------Global configs:
 
 	filetype plugin on
-	let g:monochrome_italic_comments = 1
 	let g:ShiftTabDefaultCompletionType = "<C-X><C-O>"
 	runtime! debian.vim
 	set autoread wildmode=longest,list,full
@@ -104,7 +103,8 @@
 		call plug#end()
 
 	"Colorscheme:
-		colorscheme monochrome 
+		colorscheme apprentice
+
 
 		"Status line colors:
 			au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=black ctermbg=magenta
