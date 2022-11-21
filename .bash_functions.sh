@@ -145,15 +145,6 @@
 	}
 
 
-# ------Update Blender:
-	buildblend() {
-		cd
-		cd $HOME/blender-git/blender
-		make update
-		make
-	}
-
-
 # ------Count files or directories in directory:
 	count() {
 		# Usage: count /path/to/dir/*
