@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec libreoffice --headless --convert-to pdf "$@"
