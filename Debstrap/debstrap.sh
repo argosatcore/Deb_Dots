@@ -171,6 +171,7 @@ argodots() {
 	printf " \n"
 	mv ~/Deb_Dots/.local/bin/ ~/.local/
 	mv ~/Deb_Dots/.local/share/fonts/ ~/.local/share/
+	mv ~/Deb_Dots/.local/share/nautilus/scripts/ ~/.local/share/nautilus/scripts/
 	mv -f ~/Deb_Dots/.config/* ~/.config/
 	mv ~/Deb_Dots/README.md ~/
 	mv ~/Deb_Dots/LICENSE ~/
