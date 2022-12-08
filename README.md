@@ -29,7 +29,7 @@ To start the bootstrap script follow this steps:
 
 3. Profit:
 
-![Screenshot from 2022-11-24 15-29-24](https://user-images.githubusercontent.com/64110504/203865374-c2ed5d4b-5656-4e05-ba07-bb4c69ace2d9.png)
+![Screenshot from 2022-12-08 14-01-06](https://user-images.githubusercontent.com/64110504/206556428-2fede8f1-74a5-45bd-bf43-36f848aab272.png)
 
 ---
 
