@@ -114,7 +114,7 @@
 	let g:gruvbox_termcolors = '1'
 	let g:gruvbox_contrast_dark = 'hard'
 	let g:gruvbox_italic = '0'
-        colorscheme gruvbox 
+        colorscheme gruvbox
 
 		"Status line colors:
 			au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=black ctermbg=magenta
