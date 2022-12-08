@@ -107,13 +107,13 @@
         if has('termguicolors')
           set termguicolors
         endif
-	let g:gruvbox_bold = 1
-	let g:gruvbox_itallic = 1
-	let g:gruvbox_transparent_bg = 1
-	let g:gruvbox_underline = 1
-	let g:gruvbox_termcolors = 1
-	let g:gruvbox_contrast_dark = 1
-	let g:gruvbox_italic = 0
+	let g:gruvbox_bold = '1'
+	let g:gruvbox_itallic = '1'
+	let g:gruvbox_transparent_bg = '1'
+	let g:gruvbox_underline = '1'
+	let g:gruvbox_termcolors = '1'
+	let g:gruvbox_contrast_dark = 'hard'
+	let g:gruvbox_italic = '0'
         colorscheme gruvbox 
 
 		"Status line colors:
