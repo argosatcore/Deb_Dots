@@ -50,6 +50,45 @@ subtitle-encoding='UTF-8'
 window-size=(1563, 914)
 window-state=87168
 
+[org/gnome/brasero/plugins/audio2cue]
+priority=0
+
+[org/gnome/brasero/plugins/burn-uri]
+priority=0
+
+[org/gnome/brasero/plugins/cdrdao]
+priority=0
+
+[org/gnome/brasero/plugins/dvd-rw-format]
+priority=0
+
+[org/gnome/brasero/plugins/dvdcss]
+priority=0
+
+[org/gnome/brasero/plugins/file-checksum]
+priority=0
+
+[org/gnome/brasero/plugins/file-downloader]
+priority=0
+
+[org/gnome/brasero/plugins/image-checksum]
+priority=0
+
+[org/gnome/brasero/plugins/libburn]
+priority=0
+
+[org/gnome/brasero/plugins/libisofs]
+priority=0
+
+[org/gnome/brasero/plugins/normalize]
+priority=0
+
+[org/gnome/brasero/plugins/transcode]
+priority=0
+
+[org/gnome/brasero/plugins/vcdimager]
+priority=0
+
 [org/gnome/calculator]
 accuracy=9
 angle-units='degrees'
@@ -74,14 +113,14 @@ window-size=(1920, 1006)
 [org/gnome/charmap]
 font=@ms 'Hack Nerd Font 26'
 group-by='block'
-last-char=uint32 10206
+last-char=uint32 11143
 
 [org/gnome/charmap/window-state]
 maximized=false
 size=(1080, 607)
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='printers'
 
 [org/gnome/deja-dup]
 backend='drive'
@@ -123,7 +162,7 @@ name='Terminals'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/6b2cdc03-1872-4eec-bb64-64718647b314]
-apps=['firefox-esr.desktop', 'thunderbird.desktop', 'transmission-gtk.desktop', 'org.gnome.Evolution.desktop', 'org.mozilla.firefox.desktop', 'torbrowser.desktop', 'torbrowser-settings.desktop']
+apps=['firefox-esr.desktop', 'thunderbird.desktop', 'transmission-gtk.desktop', 'org.gnome.Evolution.desktop', 'org.mozilla.firefox.desktop', 'torbrowser.desktop', 'torbrowser-settings.desktop', 'com.github.micahflee.torbrowser-launcher.settings.desktop', 'com.github.micahflee.torbrowser-launcher.desktop']
 name='Internet'
 
 [org/gnome/desktop/app-folders/folders/758fff78-a416-4c6f-8b48-abcd1e3aa7e6]
@@ -198,7 +237,7 @@ show-battery-percentage=true
 text-scaling-factor=1.0
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-software', 'firefox-esr', 'org-gnome-lollypop', 'org-gnome-nautilus', 'gnome-power-panel', 'org-zotero-zotero', 'gnome-printers-panel', 'org-gnome-evince', 'org-inkscape-inkscape', 'libreoffice-writer', 'org-gnome-dejadup', 'org-gimp-gimp', 'org-mozilla-firefox', 'libreoffice-draw', 'org-kde-krita', 'net-scribus-scribus', 'org-gnome-gedit', 'vlc']
+application-children=['org-gnome-software', 'firefox-esr', 'org-gnome-lollypop', 'org-gnome-nautilus', 'gnome-power-panel', 'org-zotero-zotero', 'gnome-printers-panel', 'org-gnome-evince', 'org-inkscape-inkscape', 'libreoffice-writer', 'org-gnome-dejadup', 'org-gimp-gimp', 'org-mozilla-firefox', 'libreoffice-draw', 'org-kde-krita', 'net-scribus-scribus', 'org-gnome-gedit', 'vlc', 'libreoffice-impress']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/firefox-esr]
@@ -212,6 +251,9 @@ application-id='gnome-printers-panel.desktop'
 
 [org/gnome/desktop/notifications/application/libreoffice-draw]
 application-id='libreoffice-draw.desktop'
+
+[org/gnome/desktop/notifications/application/libreoffice-impress]
+application-id='libreoffice-impress.desktop'
 
 [org/gnome/desktop/notifications/application/libreoffice-writer]
 application-id='libreoffice-writer.desktop'
@@ -350,7 +392,7 @@ show-sidebar=true
 sidebar-page='thumbnails'
 sidebar-size=132
 sizing-mode='free'
-window-ratio=(1.2990196078431373, 1.1376262626262625)
+window-ratio=(1.4183006535947713, 1.077020202020202)
 zoom=1.4399999999999995
 
 [org/gnome/evolution-data-server]
@@ -418,7 +460,7 @@ active-plugins=['modelines', 'filebrowser', 'docinfo', 'sort', 'spell']
 [org/gnome/gedit/plugins/filebrowser]
 root='file:///'
 tree-view=true
-virtual-root='file:///home/argos/Dots/.local/share'
+virtual-root='file:///home/argos/.vim/autoload'
 
 [org/gnome/gedit/preferences/editor]
 editor-font='Hack Nerd Font 14'
@@ -436,8 +478,8 @@ open-recent=false
 bottom-panel-size=140
 side-panel-active-page='GeditWindowDocumentsPanel'
 side-panel-size=200
-size=(1266, 672)
-state=87168
+size=(1920, 1006)
+state=43908
 
 [org/gnome/gnome-screenshot]
 delay=0
@@ -498,7 +540,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(919, 492)
+initial-size=(1048, 527)
 maximized=false
 sidebar-width=227
 start-with-sidebar=true
@@ -629,7 +671,8 @@ app-picker-layout=[{'c419eaf4-599c-48c3-8dfb-46797b2459e7': <{'position': <0>}>,
 disable-user-extensions=true
 disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['system-monitor@paradoxxx.zero.gmail.com', 'ubuntu-appindicators@ubuntu.com', 'dash-to-dock@micxgx.gmail.com', 'user-theme@gnome-shell-extensions.gcampax.github.com']
-favorite-apps=['foot.desktop', 'org.gnome.Terminal.desktop', 'firefox-esr.desktop', 'org.gnome.Lollypop.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'org.zotero.Zotero.desktop', 'org.gnome.Calculator.desktop', 'blender.desktop', 'org.gimp.GIMP.desktop', 'org.inkscape.Inkscape.desktop']
+favorite-apps=['foot.desktop', 'org.gnome.Terminal.desktop', 'firefox-esr.desktop', 'org.gnome.Lollypop.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-writer.desktop', 'org.zotero.Zotero.desktop', 'org.gnome.Calculator.desktop', 'com.github.micahflee.torbrowser-launcher.desktop']
+remember-mount-password=false
 
 [org/gnome/shell/extensions/dash-to-dock]
 animate-show-apps=false
@@ -693,10 +736,10 @@ save-directory='file:///home/argos/Documents/'
 save-format='application/pdf'
 
 [org/gnome/software]
-check-timestamp=int64 1665421743
+check-timestamp=int64 1670617460
 first-run=false
 install-timestamp=int64 1633393044
-online-updates-timestamp=int64 1650394004
+online-updates-timestamp=int64 1669668053
 
 [org/gnome/solitaire/window-state]
 fullscreen=false
@@ -708,8 +751,8 @@ width=800
 enabled=false
 
 [org/gnome/terminal/legacy/profiles:]
-default='0d93c8fa-a4bc-4dd6-a6d9-3fdfdd464cb3'
-list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '97f283fe-a5f2-43e8-b211-2167a0b6791f', '20ffb462-23e2-4b52-826b-2132096fb015', '676e63be-5d38-4625-9629-d4bba4f78905', '69abc0e8-6b75-487b-af69-4f0dcc82ad36', 'b89d7d4a-8e6c-4162-b384-9705198a0695', 'ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee', '0d93c8fa-a4bc-4dd6-a6d9-3fdfdd464cb3']
+default='97f283fe-a5f2-43e8-b211-2167a0b6791f'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '97f283fe-a5f2-43e8-b211-2167a0b6791f', '20ffb462-23e2-4b52-826b-2132096fb015', '676e63be-5d38-4625-9629-d4bba4f78905', '69abc0e8-6b75-487b-af69-4f0dcc82ad36', 'b89d7d4a-8e6c-4162-b384-9705198a0695', 'ce8f293d-437b-4e63-bdc7-dbbceb6dc3ee', '0d93c8fa-a4bc-4dd6-a6d9-3fdfdd464cb3', '72b5c1b2-7b3a-49cc-b895-804d95534653']
 
 [org/gnome/terminal/legacy/profiles:/:0d93c8fa-a4bc-4dd6-a6d9-3fdfdd464cb3]
 background-color='rgb(8,15,32)'
@@ -757,10 +800,23 @@ use-system-font=false
 use-theme-colors=false
 visible-name='MaterialDeb'
 
+[org/gnome/terminal/legacy/profiles:/:72b5c1b2-7b3a-49cc-b895-804d95534653]
+background-color='rgb(0,43,54)'
+bold-is-bright=true
+font='Inconsolata Nerd Font Mono 16'
+foreground-color='rgb(131,148,150)'
+highlight-background-color='rgb(211,208,200)'
+highlight-colors-set=true
+highlight-foreground-color='rgb(8,15,32)'
+palette=['rgb(56,56,56)', 'rgb(242,119,122)', 'rgb(92,241,158)', 'rgb(230,197,71)', 'rgb(78,144,221)', 'rgb(195,151,216)', 'rgb(112,192,186)', 'rgb(255,255,255)', 'rgb(136,136,136)', 'rgb(255,51,52)', 'rgb(185,246,202)', 'rgb(250,223,122)', 'rgb(122,166,218)', 'rgb(192,97,203)', 'rgb(84,206,214)', 'rgb(255,255,255)']
+use-system-font=false
+use-theme-colors=false
+visible-name='Solarized'
+
 [org/gnome/terminal/legacy/profiles:/:97f283fe-a5f2-43e8-b211-2167a0b6791f]
 background-color='rgb(29,32,33)'
 bold-is-bright=true
-font='Hack Nerd Font 14'
+font='Inconsolata Nerd Font Mono 16'
 foreground-color='rgb(235,219,178)'
 palette=['rgb(29,32,33)', 'rgb(204,36,29)', 'rgb(152,151,26)', 'rgb(215,153,33)', 'rgb(69,133,136)', 'rgb(177,98,134)', 'rgb(104,157,106)', 'rgb(168,153,132)', 'rgb(146,131,116)', 'rgb(251,73,52)', 'rgb(184,187,38)', 'rgb(250,189,47)', 'rgb(131,165,152)', 'rgb(211,134,155)', 'rgb(142,192,124)', 'rgb(235,219,178)']
 use-system-font=false
