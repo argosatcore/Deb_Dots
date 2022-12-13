@@ -85,6 +85,7 @@ sidtools() {
 		reportbug-gtk \
 		scribus \
 		swaylock \
+		swayimg \
 		wireplumber \
 		yt-dlp
 	sudo apt purge \
@@ -105,7 +106,6 @@ swaytools() {
 		pavucontrol \
 		sway \
 		swayidle \
-		swayimg \
 		waybar \
 		wlogout \
 		wofi \
@@ -160,6 +160,7 @@ flatapps() {
 	flatpak install flathub org.kde.krita
 	flatpak install flathub org.blender.Blender
 	flatpak install flathub com.github.micahflee.torbrowser-launcher
+	flatpak install flathub com.github.tchx84.Flatseal
 }
 
 argodots() {

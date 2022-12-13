@@ -22,7 +22,7 @@ To start the bootstrap script follow this steps:
 
         wget https://raw.githubusercontent.com/argosatcore/Deb_Dots/main/Debstrap/debstrap.sh
 
-1. Make `debstrap.sh` executable and deploy it. To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled ["Debstrap Options"](./Debstrap/debstrap.sh/#L238).
+1. Make `debstrap.sh` executable and deploy it. To customize your bootstrap installation, answer debstrap.sh's questions at your discretion. There are twelve questions total, which can be found at the final section of the script, titled ["Debstrap Options"](./Debstrap/debstrap.sh/#L239).
 
         chmod +x debstrap.sh
         ./debstrap.sh
