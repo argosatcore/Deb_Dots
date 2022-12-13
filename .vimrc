@@ -41,6 +41,7 @@
 	set display=lastline
 	"End of alphabetical exception.
 	syntax on
+	syntax enable
 
 
 " -----Global autocommands:
@@ -99,24 +100,14 @@
 		Plug 'junegunn/fzf.vim'
 		Plug 'michal-h21/vim-zettel'
 		Plug 'jalvesaq/zotcite'
-		Plug 'morhetz/gruvbox'
 		call plug#end()
 
 	"Colorscheme:
 	"
         if has('termguicolors')
 		set termguicolors
-		let &t_8f = "\<Esc>[38:2::%lu:%lu:%lum"
-		let &t_8b = "\<Esc>[48:2::%lu:%lu:%lum"
         endif
-	let g:gruvbox_bold = '1'
-	let g:gruvbox_itallic = '1'
-	let g:gruvbox_transparent_bg = '1'
-	let g:gruvbox_underline = '1'
-	let g:gruvbox_termcolors = '1'
-	let g:gruvbox_contrast_dark = 'hard'
-	let g:gruvbox_italic = '0'
-        colorscheme gruvbox
+        colorscheme solarized
 
 		"Status line colors:
 			au InsertEnter * hi statusline guifg=black guibg=#d7afff ctermfg=black ctermbg=magenta
