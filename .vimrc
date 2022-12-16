@@ -88,8 +88,8 @@
 		nnoremap <Leader>n a^[[@,].]<Esc><Left><Left><Left>i
 
 	"Use vim's built-in file browser:
-		inoremap <C-b> <Esc>:Lex<cr>:vertical resize 30<cr>
-		nnoremap <C-b> <Esc>:Lex<cr>:vertical resize 30<cr>
+		inoremap <C-b> <Esc>:Lex<CR>:vertical resize 30<CR>
+		nnoremap <C-b> <Esc>:Lex<CR>:vertical resize 30<CR>
 
 
 " ------Plug-ins: 
