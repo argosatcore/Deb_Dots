@@ -87,6 +87,10 @@
 	"to the left and then switch to insert mode:
 		nnoremap <Leader>n a^[[@,].]<Esc><Left><Left><Left>i
 
+	"Use vim's built-in file browser:
+		inoremap <C-b> <Esc>:Lex<cr>:vertical resize 30<cr>
+		nnoremap <C-b> <Esc>:Lex<cr>:vertical resize 30<cr>
+
 
 " ------Plug-ins: 
 
@@ -100,6 +104,12 @@
 		Plug 'michal-h21/vim-zettel'
 		Plug 'jalvesaq/zotcite'
 		call plug#end()
+
+	"fzf.vim
+		nmap <Leader>f :Files<CR>
+
+	"vim-zetterl
+		let g:nv_search_paths = ['$HOME/Desktop/vimwiki/']
 
 	"Colorscheme:
 	"
