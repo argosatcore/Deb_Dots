@@ -8,9 +8,9 @@
 }
 
 window#waybar {
-    background-color: rgba(246, 245, 244, 1.0);
+    background-color: rgba(0, 43, 54, 1.0);
     border-bottom: 0px solid rgba(100, 114, 125, 0.5);
-    color: #000000;
+    color: #839496;
     transition-property: background-color;
     transition-duration: .5s;
     border-radius: 0px;
@@ -23,7 +23,7 @@ window#waybar.hidden {
 #workspaces button {
     padding: 0px 5px;
     background-color: transparent;
-    color: #9F9F9F;
+    color: #839496;
     box-shadow: inset 0px -2px transparent;
     border-radius: 0px;
 }
@@ -37,21 +37,21 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-    background-color: #3584E4;
-    color: #FFFFFF;
+    background-color: #073642;
+    color: #ffffff;
     box-shadow: inset 0px -0px #ffffff;
     outline-style: none;
     text-shadow: none;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: #f2777a;
     outline-style: none;
     text-shadow: none;
 }
 
 #mode {
-    background-color: #E01B24;
+    background-color: #f2777a;
     border-bottom: 0px solid #ffffff;
     border-radius: 0px;
 }
@@ -70,7 +70,7 @@ window#waybar.hidden {
 #idle_inhibitor {
     padding: 2px 5px;
     margin: 0px 5px;
-    color: #ffffff;
+    color: #839496;
     border-radius: 5px
 }
 
@@ -97,16 +97,16 @@ window#waybar.hidden {
 }
 
 #battery {
-    color: #000000;
+    color: #839496;
 }
 
 #battery.charging {
-    color: #000000;
+    color: #839496;
 }
 
 @keyframes blink {
     to {
-        background-color: #F6F5F4;
+        background-color: #f2777a;
         color: #DEDEDE;
     }
 }
@@ -122,64 +122,62 @@ window#waybar.hidden {
 }
 
 label:focus {
-    background-color: #000000;
+    background-color: #839496;
 }
 
 #cpu {
-    color: #000000;
+    color: #839496;
 }
 
 #memory {
-    color: #000000;
+    color: #839496;
 
 }
 
 #backlight {
-    color: #000000;
+    color: #839496;
 }
 
 #network {
-    color: #000000;
+    color: #839496;
 }
 
 #network.disconnected {
-    background-color: #BF616A;
+    background-color: #f2777a;
 }
 
 #pulseaudio {
-    color: #000000;
+    color: #839496;
 
 }
 
 #pulseaudio.muted {
-    color: #9F9F9F;
+    color: #5e5C64;
 }
 
 #temperature {
-    color: #000000;
+    color: #839496;
 }
 
 #temperature.critical {
-    background-color: #E01B24;
+    background-color: #f2777a;
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: #002b36;
 }
 
 #idle_inhibitor {
-    color: #9F9F9F;
+    color: #5e5C64;
 }
 
 #idle_inhibitor.activated {
-    color: #000000;
+    color: #839496;
     border-radius: 10px;
     margin: 0px 5px;
     box-shadow: inset 0px 0px #ecF0F1;
 }
 
 #custom-date {
-    color: #000000;
+    color: #839496;
 }
-
-

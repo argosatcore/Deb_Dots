@@ -62,8 +62,8 @@
 #-- Set wallpaper: --
 #--------------------
 
-	# output * bg #64727D solid_color 
-	output * bg ~/Debstrap/kh2.png fill 
+	output * bg #002b36 solid_color 
+	#voutput * bg ~/Debstrap/sw.jpg fill 
 
 
 #----------------------
@@ -357,10 +357,11 @@
 	bindsym $mod+Shift+b exec swaymsg border toggle
 
 	# Colors:
-	set $ac		#3584E4
-	set $uf		#9F9F9F
+	set $ac		#839496
+	set $uf		#888888
 	set $fg		#283337
-	set $bg		#57595A
+	set $bg		#383838
+	set $ub		#f2777a
 	set $bar	#4B4B4B
 	set $ta		#FFFFFF
 
@@ -368,4 +369,4 @@
 	client.focused			$ta		$ac		$ta		$ac
 	client.focused_inactive		$uf     	$bg		$uf		$ac
 	client.unfocused		$uf     	$bg		$uf		$ac
-	client.urgent			$uf     	$bg		$fg		$ac
+	client.urgent			$uf     	$ub		$fg		$ac

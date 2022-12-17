@@ -1,12 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/argos/.vim/pack/themes/opt/vim-solarized8'
+let g:netrw_dirhist_1='/home/argos/.vim/pack/themes/opt'
+let g:netrw_dirhist_0='/home/argos/.vim/pack/themes/opt/vim-solarized8/colors'
+let g:netrw_dirhist_9='/home/argos/.vim/pack/themes/opt/vim-solarized8'
 let g:netrw_dirhist_8='/home/argos/.config/environment.d'
 let g:netrw_dirhist_7='/home/argos/Desktop/vimwiki/diary'
 let g:netrw_dirhist_6='/home/argos'
 let g:netrw_dirhist_5='/home/argos/.local/bin'
 let g:netrw_dirhist_4='/home/argos/.local'
 let g:netrw_dirhist_3='/home/argos'
-let g:netrw_dirhist_2='/home/argos/Debstrap'
-let g:netrw_dirhist_1='/home/argos'
-let g:netrw_dirhist_0='/etc/ssh/ssh_config.d'
-let g:netrw_dirhist_9='/home/argos/.local/bin/Audio'
