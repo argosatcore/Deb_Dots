@@ -96,13 +96,13 @@
 
 	"Plug-ins list:
 		call plug#begin(expand('~/.vim/pluged'))
-		Plug 'junegunn/goyo.vim'
 		Plug 'airblade/vim-gitgutter'
-		Plug 'vimwiki/vimwiki'
+		Plug 'jalvesaq/zotcite'
+		Plug 'junegunn/goyo.vim'
 		Plug 'junegunn/fzf'
 		Plug 'junegunn/fzf.vim'
 		Plug 'michal-h21/vim-zettel'
-		Plug 'jalvesaq/zotcite'
+		Plug 'vimwiki/vimwiki'
 		call plug#end()
 
 	"fzf.vim
@@ -180,6 +180,7 @@
 
 	"Vimwiki:
 		let g:vimwiki_list = [{'path': '~/Desktop/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+		let g:vimwiki_global_ext = 0
 
 	"Zotcite:
 		let zotcite_filetypes = ['markdown', 'pandoc', 'rmd', 'vimwiki']
