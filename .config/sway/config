@@ -62,8 +62,8 @@
 #-- Set wallpaper: --
 #--------------------
 
-	output * bg #002b36 solid_color 
-	#voutput * bg ~/Debstrap/sw.jpg fill 
+	output * bg #002b36 solid_color
+	#voutput * bg ~/Debstrap/sw.jpg fill
 
 
 #----------------------
@@ -145,6 +145,9 @@
 
 	#Fuzzy find bookmarks
 	bindsym $mod+u exec $term -a=bookmark sh .local/bin/fuzzybook.sh
+
+	# Vimwiki
+	bindsym $mod+Shift+w exec $term -a=wiki nvim Desktop/vimwiki/index.md
 
 
 #--------------------
