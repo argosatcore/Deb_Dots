@@ -179,7 +179,7 @@
 		autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 	"Vimwiki:
-		let g:vimwiki_list = [{'path': '~/Desktop/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+		let g:vimwiki_list = [{'path': '~/Desktop/vimwiki/', 'syntax': 'markdown', 'ext': '.md', 'auto_diary_index': 1, 'auto_generate_links': 1, 'auto_generate_tags': 1, 'auto_tags': 1}]
 		let g:vimwiki_global_ext = 0
 
 	"Zotcite:
