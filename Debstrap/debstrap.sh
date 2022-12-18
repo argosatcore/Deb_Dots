@@ -147,7 +147,7 @@ flathub() {
 
 bibliographical() {
 	printf "Installing academic related flatpaks\n"
-	printf " \n" 
+	printf " \n"
 	flatpak install flathub org.zotero.Zotero
 	flatpak install flathub com.github.johnfactotum.Foliate
 }
@@ -167,7 +167,7 @@ argodots() {
 	printf "Capturing dotfiles...\n"
 	printf " \n"
 	git clone git@github.com:argosatcore/Deb_Dots.git
-	printf " \n" 
+	printf " \n"
 	printf "Deploying  dotfiles...\n"
 	printf " \n"
 	mv ~/Deb_Dots/.local/bin/ ~/.local/
@@ -190,8 +190,8 @@ argodots() {
 exodots() {
 	printf "May this dotfiles serve you well, fellow stranger...\n"
 	printf " \n"
-	git clone https://github.com/argosatcore/Deb_Dots.git  
-	printf " \n" 
+	git clone https://github.com/argosatcore/Deb_Dots.git
+	printf " \n"
 	printf "Deploying  dotfiles...\n"
 	printf " \n"
 	mv ~/Deb_Dots/.local/bin/ ~/.local/

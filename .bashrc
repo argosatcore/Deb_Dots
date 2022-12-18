@@ -10,7 +10,7 @@
 
 
 # ------Vim mode:
-	set -o vi 
+	set -o vi
 	bind 'set show-mode-in-prompt on'
 	bind 'set vi-ins-mode-string +'
 	bind 'set vi-cmd-mode-string -'
@@ -86,14 +86,14 @@
 		color_prompt=
 	    fi
 	fi
-	
+
 	if [ "$color_prompt" = yes ]; then
 		PS1='${debian_chroot:+($debian_chroot)}';
 		PS1+='\[\033[01;00m\][';
 		PS1+='\[\033[01;96m\]\w';
 		PS1+='\[\033[01;00m\]]';
 		PS1+='\[\033[00;00m\]: ';
-	
+
 	else
 	    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 	fi
@@ -135,7 +135,7 @@
 	if [ -f ~/.bash_aliases ]; then
     	. ~/.bash_aliases
 	fi
-	
+
 
 # ------Functions definitions:
 	if [ -f ~/.bash_functions.sh ]; then

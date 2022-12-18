@@ -157,7 +157,7 @@
 
 # As a side note for the following, as Debian 11 uses an older version of
 # pandoc, the flag '-F pandoc-citeproc' is needed for this function to work.
-# However, on newer versions of pandoc (pandoc-citeproc has been deprecated 
+# However, on newer versions of pandoc (pandoc-citeproc has been deprecated
 # by upstream in favor of citeproc in pandoc v2.11.0.4 [2020-10-21]), this
 # flag should not be used anymore. Instead, use the '--citeproc' flag.
 
@@ -177,7 +177,7 @@
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
 			else
-				cd ; &>/dev/null 
+				cd ; &>/dev/null
 			fi
 	}
 
@@ -197,7 +197,7 @@
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
 			else
-				cd ; &>/dev/null 
+				cd ; &>/dev/null
 			fi
 	}
 
@@ -234,7 +234,7 @@
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
 			else
-				cd ; &>/dev/null 
+				cd ; &>/dev/null
 			fi
 	}
 
@@ -254,7 +254,7 @@
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".pdf & disown; exit
 			else
-				cd ; &>/dev/null 
+				cd ; &>/dev/null
 			fi
 	}
 
@@ -288,7 +288,7 @@
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".odt & disown; exit
 			else
-				cd ; &>/dev/null 
+				cd ; &>/dev/null
 			fi
 	}
 
@@ -307,6 +307,6 @@
 			--csl=$HOME/Zotero/styles/chicago-fullnote-bibliography.csl ;\
 			xdg-open  $HOME/Desktop/vimwiki/Pdfs/"$cleanpdfname".docx & disown; exit
 			else
-				cd ; &>/dev/null 
+				cd ; &>/dev/null
 			fi
 	}

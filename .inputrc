@@ -47,8 +47,8 @@
 	set show-all-if-unmodified on
 
 
-# ------Do not repeat portions of the word following the 
-# 	cursor:	
+# ------Do not repeat portions of the word following the
+# 	cursor:
 	set skip-completed-text on
 
 
@@ -60,8 +60,8 @@
 	set page-completions off
 
 
-# ------Use the text that has already been typed as the prefix 
-# 	for searching through commands (i.e. more intelligent 
+# ------Use the text that has already been typed as the prefix
+# 	for searching through commands (i.e. more intelligent
 # 	Up/Down behavior)
 	"\e[B": history-search-forward
 	"\e[A": history-search-backward
