@@ -82,6 +82,7 @@ sidtools() {
 		gnome-text-editor \
 		gnome-console \
 		inkscape \
+		lf \
 		reportbug-gtk \
 		scribus \
 		swaylock \
@@ -100,7 +101,6 @@ swaytools() {
 		evince \
 		gammastep \
 		grimshot \
-		lf \
 		mako-notifier \
 		ncal \
 		pavucontrol \
