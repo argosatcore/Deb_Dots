@@ -169,7 +169,7 @@
 			set statusline+=%1*\ ln:\ %02l/%L\ (%p%%)\ [col:%c]
 			set statusline+=%=
 			set statusline+=%#WildMenu#
-			set statusline+=\%0*\ %n\
+			set statusline+=\%0*\ %n\ 
 
 	"Goyo:
 		let g:goyo_width=90
