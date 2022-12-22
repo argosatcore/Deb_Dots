@@ -1,5 +1,5 @@
 # ⚠️ DEPRECATION NOTICE ⚠️
-## In oppostion to monopolisitc practices and to support truly free/libre code hosting platforms, I have migrated my configuration files over to [Codeberg](https://codeberg.org/). If you are interested in tracking their changes, you can find my dotfiles at: https://codeberg.org/argosatcore
+## In the spirit of supporting truly free/libre code hosting plaforms and in oppostion to monopolisitc practices s, I have migrated my configuration files over to [Codeberg](https://codeberg.org/). If you are interested in tracking their changes, you can find my dotfiles at: https://codeberg.org/argosatcore
 ## I will keep this dotfiles here for archival purposes, but they will not be updated any more. See you on the other side.
 
 # Deb_Dots
